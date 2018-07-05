@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- database demos -->
+      <definitions>
+	    <option name="indent-output" value="yes"/>
+        <template id="P" location="../templates/p_template.xml"/> 
+		<transformation id="vindb2" location="content/dbvin2.xsl"/>
+		<transformation id="maketable" location="maketable.xsl"/>
+        <logfile location="../buildlog.txt" />  
+		<command id="extractxml" line="${_scriptcatalog}/makeit.bat" wait="yes" />		
+      </definitions>
+        
+     <module description="Demonstration of DB-import" location="index.html" 
+	        name="Welcome" id="welcome"  template="P" books="all">            
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+    <module description="Demonstration of DB-import" location="page1.html" 
+	        name="Page1" id="page1"  template="P" books="all">            
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+
+    <module description="Demonstration of DB-production, XML extract" location="page2.html" 
+	        name="Page2" id="page2"  template="P" books="all"
+			runbefore="extractxml">            
+        <xmlcontent location="content/page2.xml"/>
+	</module>
+	
+ </wscript>

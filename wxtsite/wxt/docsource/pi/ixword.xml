@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: ixword</h1>
+<p>
+  The purpose of a ixword is to mark a word as a candidate for an 
+  <?_wxt xlink id="IndexTable"?>.
+</p>
+<pre class="piline">
+&lt;?_wxt ixword word=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>word</strong> (mandatory)</td>
+    <td>The word we want to index.
+     </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>category</strong> (optional)</td>
+    <td>The category or categories we want to put the word in(comma separated).
+        Default is <em>_all</em>.
+     </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>comment</strong> (optional)</td>
+    <td>Any comment we want to make, will be shown in indextables
+     </td>
+  </tr> 
+    <tr>
+    <td  style="vertical-align:top"><strong>markword</strong> (optional)</td>
+    <td>If markword is set it will represent the word in the running text,
+	except if it is <em>_none</em>. In this case the word will not be present
+	in the text and the module will be referenced directly from an indextable.
+     </td>
+  </tr>
+</table>
+
+<p class="stylefoot">
+Styleclass describing this PI is: <em>ixword</em>, 
+see distributed std styles.
+</p>
+
+
+<h2>Examples:</h2>
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+Similarities between
+&lt;?_wxt ixword word="Napoleon" category="cesar" comment="bad luck at Waterloo"?&gt;
+and my neighbour &lt;?_wxt ixword word="Jensen" category="person" comment="neighbour"?&gt;
+&lt;/div&gt;
+</pre>
+
+
+
+</body>
+</html>

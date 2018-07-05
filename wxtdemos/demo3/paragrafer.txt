@@ -1,0 +1,32 @@
+﻿This a textfile
+par1
+Dette er paragraf 1
+eofpar1
+par2
+Dette er paragraf 2
+eofpar2
+par3
+Dette er paragraf 3
+eofpar3
+par4
+Dette er paragraf 4
+eofpar4
+par5
+Dette er paragraf 5
+eofpar5
+
+start
+første
+stop
+start
+andre
+stop
+start
+tredje
+stop
+start
+fjerde
+stop
+start
+femte
+stop

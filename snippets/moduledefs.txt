@@ -1,0 +1,25 @@
+// snippet separator:#
+// each snippet:name;description;value
+module;Produces a moduletag;
+<module name="" location=""  template="" id="optional" books="optional"
+        transformation="optional" description="optional"
+        runbefore="optional" runafter="optional" ouput-format="optional" anchor="optional" >
+      
+</module>
+#
+summary;Produces a summary tag within a module;<summary>
+<![CDATA[
+]]>
+</summary>
+#
+textcontent;Produces a textcontent tag;<txtcontent location="" transformation="optional" id="optional" backuplocation="optional"/>
+#
+xmlcontent;Produces a xmlcontent tag;<xmlcontent location="" transformation="optional" id="optional" backuplocation="optional"/>
+#
+modulelist;Produces a modulelist within a module;<modulelist catalog=""  template="optional"  sourcesuffix="optional"  targetsuffix="optional"  books="optional"/>
+#
+txtcontentlist;Produces a txtcontent list within a module;<txtcontentlist catalog="" sourcesuffix="optional"/>
+#
+xmlcontentlist;Produces a xmlcontent list within a module;<xmlcontentlist catalog="" sourcesuffix="optional"/>
+
+

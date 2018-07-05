@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>PathFragment</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Script">Script</a>
+</div>
+<div class="level3">
+<a href="definitions.html" title="Definitions">Definitions</a>
+</div>
+<div class="level4">
+<a href="addressing.html" title="Addressing">Addressing</a>
+</div>
+<div class="level4">
+<a href="author.html" title="Author">Author</a>
+</div>
+<div class="level4">
+<a href="authors.html" title="Authors">Authors</a>
+</div>
+<div class="level4">
+<a href="command.html" title="Command">Command</a>
+</div>
+<div class="level4">
+<a href="formuladef.html" title="Formulas">Formulas</a>
+</div>
+<div class="level4">
+<a href="fragment.html" title="Fragment">Fragment</a>
+</div>
+<div class="level4">
+<a href="fragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level4">
+<a href="imagelist.html" title="Images">Images</a>
+</div>
+<div class="level4">
+<a href="logfile.html" title="Logfile">Logfile</a>
+</div>
+<div class="level4">
+<a href="odtformuladef.html" title="ODTFormulas">ODTFormulas</a>
+</div>
+<div class="level4">
+<a href="options.html" title="Options">Options</a>
+</div>
+<div class="level4 wxtselected">PathFragment</div>
+<div class="level4">
+<a href="reflist.html" title="References">References</a>
+</div>
+<div class="level4">
+<a href="template.html" title="Template">Template</a>
+</div>
+<div class="level4">
+<a href="transformation.html" title="Transformation">Transformation</a>
+</div>
+<div class="level3">
+<a href="module.html" title="Module">Module</a>
+</div>
+<div class="level3">
+<a href="dating.html" title="*Dating">*Dating</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Script: pathfragment-element</h1>
+<p>
+  The purpose of a pathfragment is to define a path that can be used in other parts of the script,
+  and in most processing instructions that has a location as attribute.  
+  This is helpfull if we want to rearrange our filestructure.
+  A pathfragment may be any part of a path.
+  The definition-element may contain any number of pathfragments.
+ </p>
+<pre class="lang readyandpretty skiptranslate">
+&lt;pathfragmet id="" value=""/&gt;</pre>
+<table cellpadding="10px">
+  <tr>
+    <td style="vertical-align:top">
+<strong>id</strong>(mandatory)</td>
+    <td>Any string that will identify the pathfragment.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>value</strong>(mandatory)</td>
+    <td>Any string that is a legal part of an URI or a filepath.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>alternative</strong>(optional)</td>
+    <td>Any string that is a legal part of an URI or a filepath.
+	If your script is used both on windows and an operating system with unix-like filepaths,
+	you may use <em>value</em> and <em>alternative</em> to describe both alternatives. 
+	WXT will select the one that is most likely to be matching the current operating system.
+	(looking for cases like 'n:\' or '\' or '/'). 
+	When <em>alternative</em> is not used, WXT does not discriminate between \ and /.
+    </td>
+  </tr>
+</table>
+<p>The pathfragment  <em>_scriptcatalog</em> is predefined as 
+  the filepath to the catalog containing the script</p>
+<p>The pathfragment <em>_scripturi</em> is predefined as 
+  the URI defining the script, as string</p>
+<p>A pathfragment is treated "as is".</p>
+<p>Pathfragments are used like this: <em>${fragmentid}</em>, see for instance <span class="wxtxlink">
+<a href="command.html" title="Command">Command</a>
+</span>
+</p>
+<p>Examples:</p>
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;pathfragment id="<span class="str">myroot"</span> value="<span class="str">/mydir"</span> /&gt;
+&lt;pathfragment id="<span class="str">antpath"</span> 
+              value="<span class="str">c:/fixed/apache-ant/bin"</span> /&gt;
+&lt;pathfragment id="<span class="str">princepath"</span> 
+              value="<span class="str">c:/fixed/prince/Engine/bin"</span> /&gt;
+&lt;pathfragment id="<span class="str">mydata"</span> 
+              value="<span class="str">c:\fixed\data\ "</span>
+              alternative="<span class="str">/home/fixed/data/"</span> /&gt;
+</pre>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: expandable</h1>
+<p>
+  The purpose of an expandable PI is to allow an expansion/unexpansion of
+  parts of a module.
+</p>
+<pre class="piline">
+&lt;?_wxt expandable location="" expanded=""?&gt;
+</pre>
+
+
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong> (mandatory if no fragmentid)</td>
+    <td>The URI of the file we want to expand.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>fragmentid</strong> (mandatory if no location)</td>
+    <td>The fragment we want to expand.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>title</strong> (optional)</td>
+    <td>Deprecated, use text
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>text</strong> (optional)</td>
+    <td>The text appearing in the header.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>expanded</strong> (optional)</td>
+    <td>If you want the fragment to be initially expanded,
+        expanded is set to <em>yes</em>. <em>no</em> is default.<br/>
+		<span style="color:red">NOTE</span> that global option <em>expand-all</em> 
+		will override this parameter if it is set to <em>yes</em>.
+     </td>
+  </tr>
+ <tr>
+    <td  style="vertical-align:top"><strong>transformation</strong> (optional)</td>
+    <td>A transformation identifier 
+    (see: <?_wxt xlink id="Transformation"?>).
+    This transformation may have parameters:
+    T(name='ole' address='halden'). This transformation is applied before
+    we attempt to extract text. The transformation used here will normally
+    produce text.
+    </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>leftpar</strong> (optional)</td>
+    <td>A string that serves as left parenthesis of the text we want to extract
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>rightpar</strong> (optional)</td>
+    <td>A string that serves as right parenthesis of the text we want to extract
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>select</strong> (optional)</td>
+    <td>
+        Will select which of the occurances of the marked (leftpar, rightpar) 
+        textpieces we want to use. Default is all.
+        Possible values are: <em>_all</em>, <em>_random</em>, commaseparated list of integers
+        or "slice": 
+        <br/>
+        [a:b]->   [a..b>
+        <br/>
+        [a:]->    [a..limit>
+        <br/>
+        [:b]->    [0..b>
+        <br/>
+        [:-b]   [limit-b..limit>     
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>replace</strong> (optional)</td>
+    <td>
+        Replaces text. We may have any number of replaces: 
+        <em>replace</em>, <em>replace1</em>, <em>replace2</em>, etc.
+        The form is replace="out|in".
+     </td>
+  </tr>
+    <tr>
+    <td  style="vertical-align:top"><strong>encoding</strong> (optional)</td>
+    <td>The encoding of the text we import.
+     </td>
+  </tr>
+
+  
+
+ 
+  <tr>
+    <td  style="vertical-align:top"><strong>lang</strong> (optional)</td>
+    <td>The text will be colorcoded. Mainly used for programming languages.
+	The value of <em>lang</em> may be any value supported by the stylesheet and the involved javascript. The basic encoding is based on
+	Google's prettyprint. The module <?_wxt xlink id="codefragments"?> describes the setup and values supported.. 
+	<br/>
+	When WXT prepares material with option <em>preformat-language=yes</em>, WXT's own colorencoding is used. This is mainly to 
+	prepare for PDF. WXT's encoding supports the following codetypes:
+	<ul>
+	<li>lang-j (java)</li>
+	<li>lang-js (javascript)</li>
+	<li>lang-c (c)</li>
+	<li>lang-cpp (c++)</li>
+	<li>lang-csh (c#)</li>
+	<li>lang-css (Cascading Style Sheets)</li>
+	<li>lang-xml (XML)</li>
+	<li>lang-sql (SQL)</li>
+	<li>lang-aspx (ASPX)</li>
+	<li>lang-cs3 (actionscript)</li>
+	<li>lang-mal (matlab)</li>
+	<li>lang-py (python)</li>
+	<li>lang (generic without colorencoding. All encoding defaults to this on failure on others)</li>
+	</ul>
+      </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>parse</strong> (optional)</td>
+    <td>If set to <em>yes</em> the extracted text is supposed to be
+    a XML-fragment and an attempt is done to parse it and 
+    return it as a documentfragment. 
+    <em>parse</em> is ignored if <em>lang</em> is set.
+     </td>
+  </tr>
+  
+</table>
+
+<p class="stylefoot">
+Styleclass(es) describing this PI is: <em>wxtexpandable</em>. See distributed std styles.
+</p>
+
+<h2>Examples:</h2>
+<p>This:</p>
+
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt expandable location="myfile.js" lang="lang-js" expanded="no" ?&gt;
+&lt;/div&gt;
+</pre>
+
+
+
+</body>
+</html>

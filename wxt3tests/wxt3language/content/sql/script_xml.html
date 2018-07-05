@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords">
+	<meta content="wxt3" name="GENERATOR">
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="stylesheet" type="text/css">
+	<link href="../../../templates/templatestyle.css" rel="stylesheet" type="text/css">
+	
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="skiptranslate prettyprint lang-xml" id="welcome16">&lt;?xml version="1.0" encoding="utf-8" standalone="no"?&gt;
+&lt;wscript version="1.0"&gt;    
+      &lt;!-- language demos --&gt;
+      &lt;definitions&gt;
+      &lt;option name="indent-output" value="no"/&gt;
+      &lt;option name="expand-all" value="yes"/&gt;
+      &lt;option name="preformat-language" value="no"/&gt;
+        &lt;template id="P" location="../templates/p_template.xml"/&gt; 
+        &lt;logfile location="../buildlog.txt" /&gt;
+     &lt;/definitions&gt;
+        
+     &lt;module description="Demonstration of languages" location="index.html" 
+            name="Welcome" id="welcome" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/welcome.xml"/&gt;
+    &lt;/module&gt;
+    &lt;module description="Demonstration of expandable languages" location="code1.html" 
+            name="Expanded Code" id="prettycode1" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/code1.xml"/&gt;
+    &lt;/module&gt;
+    &lt;module description="Demonstration of imported languages" location="code2.html" 
+            name="Imported Code" id="prettycode2" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/code2.xml"/&gt;
+    &lt;/module&gt;
+    
+     &lt;module description="Demonstration of imported xml-html" location="code3.html" 
+            name="Imported MLCode" id="prettycode3" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/code3.xml"/&gt;
+    &lt;/module&gt;
+&lt;/wscript&gt;
+</pre><script type="text/javascript">preparePage('welcome16');</script></body>
+</html>

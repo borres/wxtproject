@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:ref and foootnotes</h1>
+<h2>References used in this site</h2>
+ 
+<p>
+<?_wxt reflist scope="global"?>
+</p>
+ 
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt popup location="ref_xml.html" sourcelocation="ref.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

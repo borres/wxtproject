@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>References</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="../script/start.html" title="Script">Script</a>
+</div>
+<div class="level2">
+<a href="../pi/start.html" title="PI">PI</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Concepts">Concepts</a>
+</div>
+<div class="level3">
+<a href="styles.html" title="Styles">Styles</a>
+</div>
+<div class="level3">
+<a href="codefragments.html" title="Code">Code</a>
+</div>
+<div class="level3 wxtselected">References</div>
+<div class="level3">
+<a href="aboutformulas.html" title="Formulas">Formulas</a>
+</div>
+<div class="level3">
+<a href="aboutimages.html" title="Images">Images</a>
+</div>
+<div class="level3">
+<a href="aboutfragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level3">
+<a href="javascript.html" title="Javascript">Javascript</a>
+</div>
+<div class="level3">
+<a href="xpath.html" title="XPath">XPath</a>
+</div>
+<div class="level3">
+<a href="cssselector.html" title="CSSselect">CSSselect</a>
+</div>
+<div class="level3">
+<a href="publication.html" title="Publication">Publication</a>
+</div>
+<div class="level3">
+<a href="references.html" title="References">References</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>References</h1>
+<p>
+  You can manage references in WXT in may ways. 
+  You can of course introduce a webreference anywhere as simple html (a-tag).
+  In addition to that WXT has some mechanismes for reference handling.
+</p>
+<ol>
+<li>
+<strong>Crossrefs</strong> References within a site (as defined in a script), from module to module is best
+ handled with an xlink, see <span class="wxtxlink">
+<a href="../pi/xlink.html" title="Xlink">Xlink</a>
+</span>. The PI takes a modules id as parameter
+ and will work as long you have unique id for modules in the script. You may thus rename the module and/or 
+ move it on your disk without breaking the link.
+</li>
+<li>
+<strong>Demolink</strong> a demolink, see <span class="wxtxlink">
+<a href="../pi/demolink.html" title="Demolink">Demolink</a>
+</span>, is a general 
+ PI that has been introduced  to produce a XHTML-fragment that links to any webpage, with any style. 
+ Since the PI lets you control the styleclass, you may work with many categories of links, each with
+ its own styling. 
+</li>
+<li>
+<strong>General references</strong> This is the most ambitious referencehandling in WXT.
+ It attempts to organize references of many types and display them in three basic forms: SIMPLE, IEEE and HARVARD.
+ This referencehandling involves three steps: 
+ <ul>
+	 <li>One or more files with a description of all references you intend to use, <span class="wxtxlink">
+<a href="../script/reflist.html" title="References">References</a>
+</span>.
+	 </li>
+	 <li>a PI to display one reference in the running text,  <span class="wxtxlink">
+<a href="../pi/reference.html" title="Ref">Ref</a>
+</span>.
+	 </li>
+	 <li>a PI to display reference lists, <span class="wxtxlink">
+<a href="../pi/referencelist.html" title="RefList">RefList</a>
+</span>.	 
+	 </li>
+ </ul>
+</li>
+</ol>
+<p>
+ The schema for controlling reference files:
+</p>
+<div>
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tag">xs:schema</span> <span class="atn">xmlns:xs</span>="<span class="atv">http://www.w3.org/2001/XMLSchema</span>"&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">reflist</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:choice</span> <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"&gt;
+               &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">ref</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+            &lt;/<span class="tag">xs:choice</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">version</span>" <span class="atn">type</span>="<span class="atv">xs:decimal</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">ref</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:all</span>&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">title</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">authors</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">year</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">chaptertitle</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">journal</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">editor</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">place</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">publisher</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">pages</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">isbn</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">uri</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">text</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">categories</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+             &lt;/<span class="tag">xs:all</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;!--<span class="com"> this is the definitions </span>--&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">title</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">authors</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">year</span>" <span class="atn">type</span>="<span class="atv">xs:short</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">chaptertitle</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">journal</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">editor</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">place</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">publisher</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">pages</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">isbn</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">uri</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:simpleContent</span>&gt;
+                &lt;<span class="tag">xs:extension</span> <span class="atn">base</span>="<span class="atv">xs:anyURI</span>"&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">dateread</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                &lt;/<span class="tag">xs:extension</span>&gt;
+            &lt;/<span class="tag">xs:simpleContent</span>&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">text</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">categories</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+&lt;/<span class="tag">xs:schema</span>&gt;</pre>
+</div>
+<h2>A sample file</h2>
+<div>
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tag">reflist</span> <span class="atn">version</span>="<span class="atv">1.0</span>"&gt;   
+         
+    &lt;<span class="tag">ref</span> <span class="atn">id</span>="<span class="atv">As we may think</span>"&gt;
+        &lt;<span class="tag">uri</span> <span class="atn">dateread</span>="<span class="atv">14-03-20009</span>"&gt;http://www.theatlantic.com/doc/194507/bush&lt;/<span class="tag">uri</span>&gt;
+        &lt;<span class="tag">year</span>&gt;1945&lt;/<span class="tag">year</span>&gt;
+        &lt;<span class="tag">title</span>&gt;As we may think&lt;/<span class="tag">title</span>&gt;
+        &lt;<span class="tag">publisher</span>&gt;the Atlantic&lt;/<span class="tag">publisher</span>&gt;
+        &lt;<span class="tag">authors</span>&gt;Bush,Vannevar&lt;/<span class="tag">authors</span>&gt;
+        &lt;<span class="tag">categories</span>&gt;tec&lt;/<span class="tag">categories</span>&gt;
+    &lt;/<span class="tag">ref</span>&gt;
+    
+    &lt;<span class="tag">ref</span> <span class="atn">id</span>="<span class="atv">Mindstorms</span>"&gt;
+        &lt;<span class="tag">authors</span>&gt;Papert,Seymour&lt;/<span class="tag">authors</span>&gt;
+        &lt;<span class="tag">publisher</span>&gt;Harvester Press&lt;/<span class="tag">publisher</span>&gt;
+        &lt;<span class="tag">title</span>&gt;Mindstorms, Children Computers and Powerful Ideas&lt;/<span class="tag">title</span>&gt; 
+        &lt;<span class="tag">year</span>&gt;1980&lt;/<span class="tag">year</span>&gt;
+        &lt;<span class="tag">isbn</span>&gt;0-85527-163-9&lt;/<span class="tag">isbn</span>&gt;
+        &lt;<span class="tag">categories</span>&gt;ped&lt;/<span class="tag">categories</span>&gt;
+    &lt;/<span class="tag">ref</span>&gt;
+    
+    &lt;<span class="tag">ref</span> <span class="atn">id</span>="<span class="atv">web2</span>"&gt;
+        &lt;<span class="tag">title</span>&gt;Web 2.0&lt;/<span class="tag">title</span>&gt;
+        &lt;<span class="tag">year</span>&gt;2005&lt;/<span class="tag">year</span>&gt;
+        &lt;<span class="tag">uri</span> <span class="atn">dateread</span>="<span class="atv">14-03-20009</span>"&gt;http://en.wikipedia.org/wiki/Web_2.0&lt;/<span class="tag">uri</span>&gt;
+    &lt;/<span class="tag">ref</span>&gt;    
+&lt;/<span class="tag">reflist</span>&gt;</pre>
+</div>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

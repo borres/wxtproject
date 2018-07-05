@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OlympicGame place="Barcelona" year="1992">
+	<event track="100m">
+		<athlet>
+			<name>Dennis Mitchell</name>
+			<nation>USA</nation>
+			<result>10.04</result>
+		</athlet>
+		<athlet>
+			<name>Bruny Surin</name>
+			<nation>CAN</nation>
+			<result>10.09</result>
+		</athlet>
+	</event>
+</OlympicGame>

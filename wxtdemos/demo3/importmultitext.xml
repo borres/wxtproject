@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<div class="content">    
+	<h1>Import Multiple Text</h1>
+	<hr/>
+	<div>Source:</div>
+	<div><?_wxt expand location="exp_importmultitext.xml" 
+			 sourcelocation="importmultitext.xml" code="xmlcode"?>
+	</div>
+	<hr/>
+	<div>Paragraf3: 
+	<?_wxt importtxt location="paragrafer.txt" 
+	       leftpar="par3" rightpar="eofpar3"?></div>
+<hr/> 
+	<div>del 2 og 4: 
+	<?_wxt importtxt location="paragrafer.txt" 
+	       leftpar="start" rightpar="stop" select="2,4"?></div>
+ </div>
+</data>

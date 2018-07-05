@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>Page 1</title>
+	<link href="commons/wxtstyle.css" rel="STYLESHEET"/>
+	<link href="commons/mathstyles.css" rel="STYLESHEET"/>
+	<script src="commons/prototype.js" type="text/javascript"> </script>
+	<script src="commons/std.js" type="text/javascript"> </script>
+</head>
+
+<body>   
+	<div>
+      <div class="wxtimage" style="width:77px">
+        <img alt="bs-2" src="images/bs-2.png" title="bs-2"/>
+      </div>
+	<hr/>
+    </div>
+	<table>
+	<tr>
+	<td style="width:160px" valign="top">
+		<div class="wxtmodulemenu">
+            <div class="level1">Page 1</div>
+            <div class="level1">
+              <a href="page2/p2.html" title="test a page">Page 2</a>
+            </div>
+            <div class="level1">
+              <a href="page3/p3.html" title="test a page">Page 3</a>
+            </div>
+          </div>
+		<div style="margin-left:20px; margin-top:20px">
+		</div>
+	</td>
+
+	<td valign="top">
+	<p>
+	In stead of using a template that is filled with content from content-files,
+	we use the content-files as templates and wrap the content with fragments.
+	</p>
+	<p>
+	This is probably not an efficient strategy for material with many modules, but
+	in some cases it may be usefull. You may also consider a combination of 
+	the traditional template-strategy and extended use of fragments.
+	</p>
+	</td>
+   
+	</tr>
+	</table>
+	<hr/>
+	<div>
+	<span class="wxtpopup" onclick="javascript:simplepopup('script_xml.html','popup','*')" title="popup">Script</span>
+	| <span class="wxtpopup" onclick="javascript:simplepopup('page1_xml.html','popup','*')" title="popup">PageSource</span>
+	| <span class="wxtpopup" onclick="javascript:simplepopup('myfragments_xml.html','popup','*')" title="popup">Fragments</span>
+	| <span class="wxtpopup" onclick="javascript:simplepopup('myimages_xml.html','popup','*')" title="popup">Images</span>
+    </div>
+	
+	<p>
+      <hr/>
+	<div>bs with <span class="wxtstamp">
+          <a class="external" href="http://www.it.hiof.no/wxt/wxtsite/">WXT</a>
+        </span>
+      </div>
+    </p>
+</body>
+</html>

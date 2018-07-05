@@ -1,0 +1,37 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Popup&lt;/<span class="tagname">h1</span>&gt;
+
+    &lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_popups.xml" 
+             sourcelocation="popups.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">div</span>&gt;
+       with txt: <span class="process">&lt;?_wxt popup location="fragfile.html" title="pop" text="popme"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;
+        
+    &lt;<span class="tagname">div</span>&gt;
+       without txt: <span class="process">&lt;?_wxt popup location="fragfile.html" title="pop"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt; 
+      &lt;<span class="tagname">hr</span>/&gt;
+  &lt;<span class="tagname">div</span>&gt;
+   Popme: <span class="process">&lt;?_wxt popup location="popped.html"
+      leftpar="//popup" rightpar="//eofpopup" 
+      sourcelocation="jscase.js"
+      code="javascriptcode"
+      text="Javascript function"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;
+   
+   &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">p</span>&gt;Some indexwords&lt;/<span class="tagname">p</span>&gt;
+   &lt;<span class="tagname">p</span>&gt;
+       It is not many similarities between 
+       <span class="process">&lt;?_wxt ixword word="Napoleon" category="person" comment="the one from France"?&gt;</span>
+        and my neighbour 
+       <span class="process">&lt;?_wxt ixword word="Hansen" category="person" comment="neighbour with dog"?&gt;</span>.
+   &lt;/<span class="tagname">p</span>&gt;
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head>
+</head>
+<body>
+<div class="content">    
+<h1>Images</h1>
+
+
+
+<h3>Case 1</h3>
+<p>	Testing import of images from local file and remote source, both with zoom effect</p>
+<div><?_wxt image  id="bs-orig1" newid="heisann" subtext="yes"?></div>
+<hr/>
+<div style="border-width:thin;padding:7px">
+	<?_wxt image  id="bs-orig1" width="40px"?>
+</div>
+<hr/>
+
+<div>
+<?_wxt image id="self"?>
+</div>
+<h3>Case 2</h3>
+<p>Testing import of images from remote file and remote source</p>
+<div><?_wxt image  id="bs5-remote-remote" subtext="yes"?></div>
+<hr/>
+
+<h3>Case 3</h3>
+<p>Testing import of images from remote file and other remote source</p>
+<div><?_wxt image  id="bs6-remote-other-remote" subtext="yes"?></div>
+<hr/>
+
+<h3>Case 4</h3>
+<p>Testing import of images from local file and local source</p>
+<div>
+<a href="http://www.ia.hiof.no/~borres/"><?_wxt image  id="bs1-local" subtext="yes"?></a>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Indexes&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_ix.xml" 
+             sourcelocation="ix.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">h2</span>&gt;ixwords&lt;/<span class="tagname">h2</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+        It is suprisingly many similarities between <span class="process">&lt;?_wxt ixword word="Napoleon" category="person" comment="bad luck at Waterloo"?&gt;</span>
+        and my neighbour <span class="process">&lt;?_wxt ixword word="Jensen" category="person" comment="neighbour"?&gt;</span>.
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">h2</span>&gt;ixtable&lt;/<span class="tagname">h2</span>&gt;
+    <span class="process">&lt;?_wxt ixtable category="person"?&gt;</span>
+    &lt;<span class="tagname">hr</span>/&gt;
+   &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

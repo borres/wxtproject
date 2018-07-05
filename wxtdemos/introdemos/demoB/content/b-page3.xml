@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<div class="mainblock">
+<h1>Page 3</h1>
+<p>This page is bulit with the simple template.</p>
+<p>The only purpose is to show the scrip:
+</p>
+
+<div>
+<?_wxt expandsimple location="../script.xml" code="xmlcode"?>
+</div>
+</div>
+</root>
+

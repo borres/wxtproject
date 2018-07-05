@@ -1,0 +1,54 @@
+@media screen{ 
+body {
+	color: black;
+	font-family:Georgia,'Times New Roman',times,serif;
+	font-size: 11px;
+	text-align:left;
+	margin:0px;
+	margin-right:5px;
+	padding:0px;
+}
+
+div#logo{position:absolute;left:0px;top:10px}
+div#banner{height:80px;border-bottom:solid;border-width:thin;background-color:#EEE8CD;padding-top:1px}
+div#banner #dep{font-size:14px;line-height:120%;font-weight:bold;text-align:right;}
+div#banner #sitename{margin-left:130px;font-size:20px;line-height:120%;font-weight:bold;text-align:left;}
+div#menu{position:absolute;left:0px;top:82px;width:128px;}
+
+div.fact{float:right;background-color:white; border:solid;border-width:thin;
+       }
+.fact legend{font-size:14px;color:gray;}
+
+div#all{background-image: url(bckgnd.gif); background-repeat:repeat-y;}
+
+div.content{
+		border-top:solid; border-top-width:thin; border-top-color:white;
+		border-bottom:solid; border-bottom-width:thin; border-bottom-color:white;	
+		margin-left:135px;  padding-right:0px;
+		background-color:white;		
+		}
+div.collectable{
+		margin-left:-4px;
+		padding-left:5px;
+		border-left-color:black; border-left-width:thin;		
+		}
+
+.footer{
+		margin-top:0px;
+		border-top:solid;
+		border-width:thin;
+        background-color:white;
+		padding-left:5px;
+		padding-top:7px;
+		clear:both;
+		text-align:right
+		}
+}
+
+@media print{
+	#menu{display:none}	
+	#footer{display:none}
+	#banner{display:none}
+	h1{page-break-before:always}
+}
+

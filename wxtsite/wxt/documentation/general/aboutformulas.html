@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Formulas</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="../script/start.html" title="Script">Script</a>
+</div>
+<div class="level2">
+<a href="../pi/start.html" title="PI">PI</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Concepts">Concepts</a>
+</div>
+<div class="level3">
+<a href="styles.html" title="Styles">Styles</a>
+</div>
+<div class="level3">
+<a href="codefragments.html" title="Code">Code</a>
+</div>
+<div class="level3">
+<a href="aboutreferences.html" title="References">References</a>
+</div>
+<div class="level3 wxtselected">Formulas</div>
+<div class="level3">
+<a href="aboutimages.html" title="Images">Images</a>
+</div>
+<div class="level3">
+<a href="aboutfragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level3">
+<a href="javascript.html" title="Javascript">Javascript</a>
+</div>
+<div class="level3">
+<a href="xpath.html" title="XPath">XPath</a>
+</div>
+<div class="level3">
+<a href="cssselector.html" title="CSSselect">CSSselect</a>
+</div>
+<div class="level3">
+<a href="publication.html" title="Publication">Publication</a>
+</div>
+<div class="level3">
+<a href="references.html" title="References">References</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Formulas</h1>
+<p>
+ If you want to present mathemathical formulas in your material,
+ you can do this in many ways:
+</p>
+<ol>
+<li>
+<strong>Images.</strong> You may use a program like Open Office or Microsoft Office.
+ Use the Formula editor and make formula objects on a page.
+ You can then freeze a screenshot of the page, clip out the formula and save it as an image.
+</li>
+<li>
+<strong>Images again</strong>You may use one of the many tools, online or offline, that 
+produce imgages from LaTex.
+</li>
+<li>
+<strong>MathML.</strong> You may write MathML code directly in your material.
+</li>
+<li>
+<strong>Google.</strong> You may write LaTeX code directly in a the src attribute in an img-element
+and let Google prepare an image of the formula, See Google Chart Formulas<span class="wxtref" title="Google Chart Formulas | http://code.google.com/apis/chart/docs/gallery/formulas.html">
+<a href="http://code.google.com/apis/chart/docs/gallery/formulas.html"> [19] </a>
+</span>.
+The robustness of this approach depends of course on the stability of the Google tool.
+</li>
+<li>
+<strong>LaTex</strong> You may write let WXT convert LaTex to images.
+</li>
+<li>
+<strong>Open Office</strong> You may make an Open Office document and let 
+ WXT extract the formulas as MatML, see <span class="wxtxlink">
+<a href="../script/odtformuladef.html" title="ODTFormulas">ODTFormulas</a>
+</span>.
+ </li>
+ 
+ <li>You may use an XML document describing formulas either as LaTex (latex), MathMl (mathml), 
+     LaTeX (google) or image (image).
+ See <span class="wxtxlink">
+<a href="../script/formuladef.html" title="Formulas">Formulas</a>
+</span>.
+ </li>
+ 
+  <li>You may define one formula either as matml, latex, google or imagel.
+   See <span class="wxtxlink">
+<a href="../pi/formula.html" title="Formula">Formula</a>
+</span>.
+ </li>
+
+ </ol>
+<p>
+ The advantages of involving WXT (5,6,7,8) is that you may find and edit your formulas in one (or a limited)
+ places and you may produce lists of used formulas, <span class="wxtxlink">
+<a href="../pi/formulalist.html" title="Formula List">Formula List</a>
+</span>
+</p>
+<h3>Browsers</h3>
+<p>
+ <strong>Note</strong> that browsers haved different capabilities when we get to MathML.
+ You should check this out before deciding how to present math to a wider audience.
+ </p>
+<p>
+ WXT is at the moment aimed as HTML5, which means that generated MatML may not work on all browser.
+</p>
+<h3>Formula file</h3>
+<p>Sample</p>
+<div>
+ <pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tag">formulas</span>&gt;
+ 
+    &lt;<span class="tag">formula</span> <span class="atn">id</span>="<span class="atv">f1</span>" <span class="atn">type</span>="<span class="atv">latex</span>"&gt;
+    &lt;<span class="tag">value</span>&gt;\sqrt[3]{x^3 + y^3 \over 2}&lt;/<span class="tag">value</span>&gt;
+    &lt;/<span class="tag">formula</span>&gt;
+ 
+    &lt;<span class="tag">formula</span> <span class="atn">id</span>="<span class="atv">f21</span>" <span class="atn">type</span>="<span class="atv">image</span>"&gt;
+    &lt;<span class="tag">subtext</span>&gt;Vector length&lt;/<span class="tag">subtext</span>&gt;
+    &lt;<span class="tag">value</span>&gt;vektor1.gif&lt;/<span class="tag">value</span>&gt;
+    &lt;/<span class="tag">formula</span>&gt;
+ 
+    &lt;<span class="tag">formula</span> <span class="atn">id</span>="<span class="atv">f31</span>" <span class="atn">type</span>="<span class="atv">mathml</span>"&gt;
+    &lt;<span class="tag">subtext</span>&gt;Simple sum&lt;/<span class="tag">subtext</span>&gt;
+    &lt;<span class="tag">value</span>&gt;&lt;![CDATA[&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+              &lt;semantics&gt;
+                &lt;mrow&gt;
+                  &lt;mrow&gt;
+                    &lt;mo stretchy="false"&gt;∑&lt;/mo&gt;
+                    &lt;mi&gt;f&lt;/mi&gt;
+                  &lt;/mrow&gt;
+                  &lt;mrow&gt;
+                    &lt;mo stretchy="false"&gt;(&lt;/mo&gt;
+                    &lt;mi&gt;x&lt;/mi&gt;
+                    &lt;mo stretchy="false"&gt;)&lt;/mo&gt;
+                  &lt;/mrow&gt;
+                &lt;/mrow&gt;
+              &lt;/semantics&gt;
+            &lt;/math&gt;]]&gt;
+    &lt;/<span class="tag">value</span>&gt;
+    &lt;/<span class="tag">formula</span>&gt;
+ 
+&lt;/<span class="tag">formulas</span>&gt;</pre>
+ </div>
+<p>Schema for formula files</p>
+<div>
+ <pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!--<span class="com">W3C Schema generated by XMLSpy v2011 (http://www.altova.com)</span>--&gt;
+&lt;<span class="tag">xs:schema</span> <span class="atn">xmlns:xs</span>="<span class="atv">http://www.w3.org/2001/XMLSchema</span>"&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">value</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">subtext</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">formulas</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:sequence</span>&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">formula</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+            &lt;/<span class="tag">xs:sequence</span>&gt;
+                        &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">catalog</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">formula</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:sequence</span>&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">subtext</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">value</span>" <span class="atn">minOccurs</span>="<span class="atv">1</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+            &lt;/<span class="tag">xs:sequence</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">type</span>" <span class="atn">use</span>="<span class="atv">required</span>"&gt;
+                &lt;<span class="tag">xs:simpleType</span>&gt;
+                    &lt;<span class="tag">xs:restriction</span> <span class="atn">base</span>="<span class="atv">xs:string</span>"&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">image</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">latex</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">mathml</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">google</span>"/&gt;
+                    &lt;/<span class="tag">xs:restriction</span>&gt;
+                &lt;/<span class="tag">xs:simpleType</span>&gt;
+            &lt;/<span class="tag">xs:attribute</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+&lt;/<span class="tag">xs:schema</span>&gt;</pre>
+ </div>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

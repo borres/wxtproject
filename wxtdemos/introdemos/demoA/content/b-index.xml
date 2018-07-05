@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>source index</title>
+</head>
+
+<body>
+<div class="mainblock">
+<h1>This</h1>
+<p>
+ is a demo of a minimal site. The only WXT features involved is simple
+ use of fragments, basic import of content, generation of a modulemenu 
+ and display of xmlcode. 
+</p>
+<p>
+ You should inspect the only template:
+</p>
+<div>
+<?_wxt expandsimple location="${_scriptcatalog}/gfx/p_template.xml" code="xmlcode"?>
+</div>
+<p>
+ and the source for this page:
+</p>
+<div>
+<?_wxt expandsimple location="b-index.xml" code="xmlcode"?>
+</div>
+<p> 
+You should also inspect the two stylesheets that you find in the catalog gfx.
+Note that the stylsheet <em>wxtstyles.css</em> contains a 
+lot of definitions not used in this site.
+</p>
+<p>
+ The script for this site:
+</p>
+<div>
+<?_wxt expandsimple location="${_scriptcatalog}/script.xml" code="xmlcode"?>
+</div>
+</div>
+</body>
+</html>
+

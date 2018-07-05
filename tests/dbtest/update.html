@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Update</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/std.js" type="text/javascript"> </script>
+	<link href="templates/template.css" rel="STYLESHEET">
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="modulemenu"><div class="level1"><a href="index.html" title="Welcome to databasetesting">Welcome</a></div><div class="level1">Update</div><div class="level1"><a href="simple.html" title="Fragment">Fragment</a></div><div class="level1"><a href="transformation.html" title="Transformation">Transform</a></div><div class="level1"><a href="table.html" title="table">Table</a></div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>Update</h1><p>
+	Reestablish a database with data from an sql-file'
+</p><hr><pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=borres&amp;password=pw"
+    sqlfile="establish.txt"?&gt;
+</pre><hr><div>
+
+</div><pre>
+use fragments;
+DROP TABLE IF EXISTS material;
+CREATE TABLE material(
+fragid INT PRIMARY KEY,
+content TEXT
+);
+INSERT INTO material(fragid,content)
+values
+(
+1,'&lt;h1&gt;Fragment 1&lt;/h1&gt;&lt;p&gt;dette er fragment 1&lt;/p&gt;'
+),
+(
+2,'&lt;h1&gt;Fragment 2&lt;/h1&gt;&lt;p&gt;&lt;a href="http://www.it.hiof.no/~borres/ml"&gt;Dokumenter og web&lt;/a&gt;&lt;/p&gt;'
+),
+(
+3, '&lt;h1&gt;Fragment 3&lt;/h1&gt;
+&lt;p&gt;&lt;img src="http://www.it.hiof.no/~borres/allround/selfimages/bs1.gif"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;?_wxt date?&gt;&lt;/p&gt;'
+)
+
+</pre>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

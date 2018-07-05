@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- gadgets tests -->
+      <definitions>
+	  <option name="indent-output" value="yes"/>
+        <template id="P" location="../templates/p_template.xml"/> 
+		<fragments location="content/myfragments.xml"/>
+		<fragments location="content/googlefragments.xml"/>
+        <logfile location="../buildlog.txt" />
+     </definitions>
+        
+     <module description="Demonstration of gadgets" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+	<module description="Demonstration of Google gadgets" location="code.html" 
+	        name="Google gadgets" id="googlegadgets" template="P" books="all">
+        <xmlcontent location="content/google.xml"/>
+	</module>
+
+	
+ </wscript>

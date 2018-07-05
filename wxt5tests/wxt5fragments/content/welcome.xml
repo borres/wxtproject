@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:fragment</h1>
+ <p>
+   A fragment is any piece of HTML or text that can be defined and
+   used anywhere. A fragment must be defined in the script
+   or in a separate fragments file.
+   A fragment may be imported in the template directly or as part of 
+   content. A fragment  may contain PIs.
+</p>
+<p>
+Written by: <?_wxt fragment id="_defaultauthor"?>
+</p>
+     
+<!-- simple text, as is -->
+<h2>Simple text</h2>
+<p>txt - as is in a div-tag</p>
+<div>
+<?_wxt fragment id="sonette"?>
+</div>
+ 
+<!-- simple text, as is -->
+<h2>Simple text</h2>
+<p>txt - as is in a pre-tag</p>
+<pre>
+<?_wxt fragment id="sonette"?>
+</pre>    
+ 
+<!-- HTML -->
+<h2>Formatted HTML</h2>
+<div>
+<?_wxt fragment id="warning"?>
+</div>
+ 
+<!-- HTML with scripttag -->
+<h2>Formatted HTML</h2>
+<p>HTML with a scripttag launching a google gadget</p>
+<div>
+<?_wxt fragment id="today"?>
+</div>
+
+
+    
+<hr/>
+    
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

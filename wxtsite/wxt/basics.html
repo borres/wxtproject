@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Basics</title>
+	<link href="../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<!--<link rel="STYLESHEET" href="../commons/helpstyle.css"/>-->
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+     <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">Basics</span> | 
+        <span class="level1">
+<a href="download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1"> <a href="documentation.html" title="Documentation">Documentation</a>
+</span> | 
+        <span class="level1">
+<a href="samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<div class="maincontent">
+
+
+	<h1>Basics</h1>
+	<div>[ <span class="wxtmoduletoc">
+<span class="wxtmoduletocinner">
+<span class="level1">
+<a href="#Basics3">The script</a>
+</span>] [<span class="level1">
+<a href="#Basics4">Processing Instructions</a>
+</span>] [<span class="level1">
+<a href="#Basics5">Running WXT</a>
+</span>
+</span>
+</span> ]</div>
+	<p>
+	WXT is based on two concepts: 
+	</p>
+	<ul>
+	<li>a <em>script</em> that describes the structure and the modules we want to build.
+	</li>
+	<li>the interpretation of <em>Processing Instructions</em> (PI) which are standard XML-nodes. 
+	</li>
+	</ul>
+	<p>Both are explained in detail in 
+	<span class="wxtxlink">
+<a href="documentation.html" title="Documentation">Documentation</a>
+</span>.
+	</p>
+	<h3 id="Basics3">The script</h3>
+	<div style="float:left;margin:7px">
+<img alt="" src="structure1.png"/>
+</div>
+	<p>
+	The functionality of WXT is based on a script, which is a XML-file. The basic concept is a module.
+	A module is described by a template and any number of sources. The sources may be 
+	XML, Database, XHTML, Text, HTML(5).
+	HTML-content that are not well formed and out of the authors control(typically Wiki) may be tidied on the fly.
+	The template must always be a XML or XHTML file.
+	</p>
+	<p>
+	One of the key-concepts in this kind of module building is addressing. WXT recalculates
+	references in fragments that are moved.
+	</p>
+	<p>
+	Although the main focus in WXT is on XML-structures, you can also use plain text as content.
+	Typically you can import program code snippets an get them color coded as HTML on your module.
+	</p>
+	<div style="float:right;margin:7px">
+<img alt="" src="structure2.png"/>
+</div>
+	<p>
+	Since the main target of WXT is to share material on the web (or on paper) a lot of
+	the concepts in WXT is (X)HTML oriented. You may however use the basic building 
+	mechanisms in WXT to produce any kind of XML, or text for that matter.
+	</p>
+	<p>
+	One key to this flexibility is the use of XSLT. You may transform content before
+	you bring it to the template and you may transform a module before you save it.
+	</p>
+	
+	<h3 id="Basics4">Processing Instructions</h3>
+	<p>
+	The other key concept in WXT is the use of processing instructions.
+	A processing instruction (PI) is legal XML in any XML-file. The program that
+	parses a XML-file will detect the PI's and may act on them. The format of a PI is 
+	like this:
+	</p>
+	<pre class="source">
+&lt;?name data?&gt;
+	</pre>
+	<p>
+	The name and data may have any value. WXT will recognize and react on 
+	PI's with name <em>_wxt</em>. The data part is interpreted as a command identifier followed by 
+	a series of name, value pairs.
+	Just like attributes in a XML-element.
+	For instance:
+	</p>
+	<pre class="source">
+&lt;?_wxt importxml location="myfile.xml" xpath="//div[@id='export']"?&gt;
+	</pre>
+	<p>
+	will instruct WXT to extract the div with id="export" from the file myfile.xml and replace the PI with the result.
+	The following:
+	</p>
+	<pre class="source">
+&lt;?_wxt modulemap books="math"?&gt;
+	</pre>
+	<p>
+	will instruct WXT to produce links to all modules that are marked with book="math" in the script.
+	</p>
+	
+	<h3 id="Basics5">Running WXT</h3>
+	<p>
+	You can run WXT from the command line with the following syntax (windows):
+	</p>
+	<pre>
+java -jar wxtn.jar script.xml [-m module1[,module2]]
+	</pre>
+	<p>For instance:
+	</p>
+	<pre>
+java -jar C:\myWxt\dist\wxt6.jar C:\mysite\script.xml 
+
+java -jar C:\myWxt\dist\wxt6.jar C:\mysite\script.xml -m firstpage,lastpage
+	</pre>
+	<p>
+	You may also download the GUI, see <span class="wxtxlink">
+<a href="download.html" title="download page">Download</a>
+</span>, and control the building in more detail.
+	</p>
+
+</div>
+
+    <div id="footer">
+    Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+    </div>
+
+</body>
+</html>

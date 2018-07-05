@@ -1,0 +1,45 @@
+body{background-color:white}
+
+/* thumbs */
+.wxtthumbwrapper{line-height:120px;
+              padding:5px 2px 5px 2px;
+			  }
+.wxtthumbwrapper img{vertical-align:top;
+              height:100px;
+              border-style:solid;
+			  border-color:#8B7D7B;
+			  border-width:thin;
+			  display:inline-block;
+			  padding:2px;
+			  }
+
+/* hidden / expandable image */			  
+.wxtimcontainer{z-index:1000;
+      position:absolute;
+	  display:block;
+	  top:-10000px;
+	  background-color:#8B7D7B;
+	  padding:1px;
+	  border-color:black;border-style:outset}
+
+.wxtimcontainer div{line-height:normal;
+         width:inherit;
+		 background-color:white;
+         padding:7px 1px 7px 12px;
+		 }
+
+.wxtimcontainer div div{ /* the text */
+        border-top-style:solid;
+        border-width:thin;
+		width:inherit}	
+.wxtimcontainer div img{} /* the image */		 
+
+
+/* image in running text */
+.wxtimage{
+		 padding:7px 7px 7px 12px;
+         margin:10px;
+         border-style:solid;border-color:#8B7D7B;
+		 border-width:1px}
+.wxtimage img{}
+.wxtimage div{color:gray}

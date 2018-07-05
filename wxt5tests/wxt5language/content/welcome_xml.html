@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "-//W3C//DTD XHTML 1.0 Strict//EN"&gt;
+&lt;<span class="tag">html</span> <span class="atn">xmlns</span>="<span class="atv">http://www.w3.org/1999/xhtml</span>" <span class="atn">lang</span>="<span class="atv">en</span>" <span class="atn">lang</span>="<span class="atv">en</span>"&gt;
+    &lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">title</span>&gt;welcome&lt;/<span class="tag">title</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+        
+&lt;<span class="tag">div</span> <span class="atn">class</span>="<span class="atv">mainblock</span>"&gt;
+&lt;<span class="tag">h1</span>&gt;Testing languages&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+Depending on  
+   &lt;<span class="tag">a</span> <span class="atn">href</span>="<span class="atv">http://code.google.com/p/prettyprint/</span>" <span class="atn">class</span>="<span class="atv">external</span>"&gt;
+   Googles prettyprint&lt;/<span class="tag">a</span>&gt;.
+   See 
+   &lt;<span class="tag">a</span>
+           <span class="atn">href</span>="<span class="atv">http://google-code-prettify.googlecode.com/svn/trunk/README.html</span>"
+           <span class="atn">class</span>="<span class="atv">external</span>"&gt;
+   Googles Readme&lt;/<span class="tag">a</span>&gt;. 
+&lt;/<span class="tag">p</span>&gt;
+    
+&lt;!--<span class="com"> simple text, as is </span>--&gt;
+&lt;<span class="tag">h2</span>&gt;Popup&lt;/<span class="tag">h2</span>&gt;
+ &lt;<span class="tag">p</span>&gt;
+   Testing popup for "pretty" code. 
+&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+Depending on  
+   &lt;<span class="tag">a</span> <span class="atn">href</span>="<span class="atv">http://code.google.com/p/prettyprint/</span>" <span class="atn">class</span>="<span class="atv">external</span>"&gt;Googles prettyprint&lt;/<span class="tag">a</span>&gt;.
+   See &lt;<span class="tag">a</span>
+           <span class="atn">href</span>="<span class="atv">http://google-code-prettify.googlecode.com/svn/trunk/README.html</span>"
+           <span class="atn">class</span>="<span class="atv">external</span>"&gt;
+   Googles Readme&lt;/<span class="tag">a</span>&gt;. 
+&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+The necessary javascript is imported to this page, see source.
+&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">h3</span>&gt;Java&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">p</span>&gt;short and simple using pages template&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup location="java/simple1-java.html" 
+      sourcelocation="java/simple1.java" lang="lang-j"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">p</span>&gt;short and simple using pages template left justifying&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup location="java/simple1justified-java.html" 
+      sourcelocation="java/simple1spaced.java" lang="lang-j"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">p</span>&gt;longer file using own special template&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup template="CODE" location="java/accessutils-java.html" 
+       sourcelocation="java/accessutils.java" lang="lang-j"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">p</span>&gt;extract from longer file using pages template&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup location="java/accessutilsextract-java.html" 
+       leftpar="// appendtotextfile" rightpar="// eofappendtotextfile"
+       sourcelocation="java/accessutils.java" lang="lang-j"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">h3</span>&gt;Python&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">p</span>&gt;simple and pages template&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup location="python/domore-py.html" 
+       sourcelocation="python/domore.py" lang="lang-py"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">h3</span>&gt;SQL&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">p</span>&gt;simple and pages template&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup location="sql/do-txt.html" text="some expressions"
+       sourcelocation="sql/do.txt" lang="lang-sql"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">h3</span>&gt;XML&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">p</span>&gt;simple and pages template&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup location="sql/Xscript_xml.html" text="The script"
+       sourcelocation="../script.xml" lang="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">p</span>&gt;large (too large for Google prettify ?)&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup location="viner_xml.html" text="Viner"
+       sourcelocation="viner.xml" lang="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">hr</span>/&gt;
+&lt;<span class="tag">h2</span>&gt;Content file for this page&lt;/<span class="tag">h2</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">popup location="welcome_xml.html" sourcelocation="welcome.xml" 
+       lang="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">div</span>&gt; &lt;!--<span class="com"> mainblock </span>--&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;</pre></body>
+</html>

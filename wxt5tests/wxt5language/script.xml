@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- language demos -->
+      <definitions>
+	  <option name="indent-output" value="no"/>
+      <option name="expand-all" value="yes"/>
+	  <option name="preformat-language" value="yes"/>
+      
+	  <template id="P" location="../templates/p_template.xml"/> 
+      <logfile location="../buildlog.txt" />
+     </definitions>
+        
+     <module description="Demonstration of languages" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+	<module description="Demonstration of expandable languages" location="code1.html" 
+	        name="Expanded Code" id="prettycode1" template="P" books="all">
+        <xmlcontent location="content/code1.xml"/>
+	</module>
+
+	<module description="Demonstration of imported languages" location="code2.html" 
+	        name="Imported Code" id="prettycode2" template="P" books="all">
+        <xmlcontent location="content/code2.xml"/>
+	</module>
+	
+ 	<module description="Demonstration of imported xml-html" location="code3.html" 
+	        name="Imported MLCode" id="prettycode3" template="P" books="all">
+        <xmlcontent location="content/code3.xml"/>
+	</module>
+</wscript>

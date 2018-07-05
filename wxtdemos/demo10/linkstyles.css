@@ -1,0 +1,30 @@
+/* 
+samples of styles for linking
+(padding is:top,right,bottom,left)
+*/
+@media screen{  
+	.demo{text-decoration: none;}
+	.demo .print{display:none}
+	a.demo:link{background: url(images/demo.gif) no-repeat 0% 3px;padding: 0 0 0 45px;}
+	a.demo:visited{color: purple;
+	              background: url(images/demo.gif) no-repeat 0% -100px;padding: 0  0 0 45px;}
+	a.demo:hover{color: red;
+	             background: url(images/demo.gif) no-repeat 0% -200px;padding: 0 0 0 45px;}
+
+	 
+	a.external{text-decoration: none;}
+	a.external .print{display:none}
+	a.external:link{background: url(images/exicon.gif) no-repeat 100% 0;padding: 0 22px 0 0;}
+	a.external:visited{color: purple;
+	            background: url(images/exicon.gif) no-repeat 100% -100px;padding: 0 22px 0 0;}
+	a.external:hover{color: red;
+	          background: url(images/exicon.gif) no-repeat 100% -200px;padding: 0 22px 0 0;}
+}
+
+@media print
+{  
+	.demo{text-decoration: none;}
+	.demo .screen{text-decoration:none;font-weight:bold;color:black}
+    .demo .print{color:silver;text-decoration: none;}	
+	.external .screen{display:none}
+}

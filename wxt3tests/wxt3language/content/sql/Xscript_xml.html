@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8" standalone="no"?&gt;
+&lt;<span class="tag">wscript</span> <span class="atn">version</span>="<span class="atv">1.0</span>"&gt;    
+      &lt;!--<span class="com"> language demos </span>--&gt;
+      &lt;<span class="tag">definitions</span>&gt;
+      &lt;<span class="tag">option</span> <span class="atn">name</span>="<span class="atv">indent-output</span>" <span class="atn">value</span>="<span class="atv">no</span>"/&gt;
+      &lt;<span class="tag">option</span> <span class="atn">name</span>="<span class="atv">expand-all</span>" <span class="atn">value</span>="<span class="atv">yes</span>"/&gt;
+      &lt;<span class="tag">option</span> <span class="atn">name</span>="<span class="atv">preformat-language</span>" <span class="atn">value</span>="<span class="atv">yes</span>"/&gt;
+      
+      &lt;<span class="tag">template</span> <span class="atn">id</span>="<span class="atv">P</span>" <span class="atn">location</span>="<span class="atv">../templates/p_template.xml</span>"/&gt; 
+      &lt;<span class="tag">logfile</span> <span class="atn">location</span>="<span class="atv">../buildlog.txt</span>"/&gt;
+     &lt;/<span class="tag">definitions</span>&gt;
+        
+     &lt;<span class="tag">module</span> <span class="atn">description</span>="<span class="atv">Demonstration of languages</span>" <span class="atn">location</span>="<span class="atv">index.html</span>"
+          <span class="atn">name</span>="<span class="atv">Welcome</span>" <span class="atn">id</span>="<span class="atv">welcome</span>" <span class="atn">template</span>="<span class="atv">P</span>" <span class="atn">books</span>="<span class="atv">all</span>"&gt;
+        &lt;<span class="tag">xmlcontent</span> <span class="atn">location</span>="<span class="atv">content/welcome.xml</span>"/&gt;
+    &lt;/<span class="tag">module</span>&gt;
+    &lt;<span class="tag">module</span> <span class="atn">description</span>="<span class="atv">Demonstration of expandable languages</span>"
+          <span class="atn">location</span>="<span class="atv">code1.html</span>" <span class="atn">name</span>="<span class="atv">Expanded Code</span>" <span class="atn">id</span>="<span class="atv">prettycode1</span>" <span class="atn">template</span>="<span class="atv">P</span>"
+          <span class="atn">books</span>="<span class="atv">all</span>"&gt;
+        &lt;<span class="tag">xmlcontent</span> <span class="atn">location</span>="<span class="atv">content/code1.xml</span>"/&gt;
+    &lt;/<span class="tag">module</span>&gt;
+    &lt;<span class="tag">module</span> <span class="atn">description</span>="<span class="atv">Demonstration of imported languages</span>"
+          <span class="atn">location</span>="<span class="atv">code2.html</span>" <span class="atn">name</span>="<span class="atv">Imported Code</span>" <span class="atn">id</span>="<span class="atv">prettycode2</span>" <span class="atn">template</span>="<span class="atv">P</span>"
+          <span class="atn">books</span>="<span class="atv">all</span>"&gt;
+        &lt;<span class="tag">xmlcontent</span> <span class="atn">location</span>="<span class="atv">content/code2.xml</span>"/&gt;
+    &lt;/<span class="tag">module</span>&gt;
+    
+     &lt;<span class="tag">module</span> <span class="atn">description</span>="<span class="atv">Demonstration of imported xml-html</span>" <span class="atn">location</span>="<span class="atv">code3.html</span>"
+          <span class="atn">name</span>="<span class="atv">Imported MLCode</span>" <span class="atn">id</span>="<span class="atv">prettycode3</span>" <span class="atn">template</span>="<span class="atv">P</span>" <span class="atn">books</span>="<span class="atv">all</span>"&gt;
+        &lt;<span class="tag">xmlcontent</span> <span class="atn">location</span>="<span class="atv">content/code3.xml</span>"/&gt;
+    &lt;/<span class="tag">module</span>&gt;
+&lt;/<span class="tag">wscript</span>&gt;</pre></body>
+</html>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<?_wxt fragment id="head"?>
+</head>
+
+<body> 
+	<div><?_wxt fragment id="banner"?></div>  
+	<table>
+	<tr>
+	<td valign="top" style="width:160px">
+		<?_wxt fragment id="leftcolumn"?>
+	</td>
+
+	<td valign="top">
+	This is the content of Page2
+	</td>
+	</tr>
+	</table>
+	
+	<hr/>
+	<div>
+	<?_wxt popup text="PageSource" sourcelocation="page2.xml" location="page2_xml.html" code="xmlcode"?>
+	</div>
+	
+	<p><?_wxt fragment id="signature"?></p>
+</body>
+</html>

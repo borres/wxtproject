@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+</head>
+<body>
+<div id="main">
+<h1>Module 2</h1>
+<img style="float:left" src="http://www.ia.hiof.no/~borres/self/bs2.png" alt="bs2"/>
+<p>
+Vegetalt duftpreg av solbærblader og gress. 
+Fersk, saftig og middels fyldig solbærsmak, litt tørrhet og lett 
+snerp i ettersmaken. Mørk rødfiolett vin med søtlig solbærpreg i duft og smak. 
+Ukomplisert og lettdrikkelig med middels fylde og lett snerpende ettersmak. 
+Kirsebærfruktighet og myntesødme i duften. 
+Mykt smaksanslag og fin balanse mellom bærsødme og syrlighet som 
+gir passelig fasthet og syretørrhet i ettersmaken. 
+Duften gir assosiasjoner til kirsebær og varm hud. 
+Ren og frisk smak med middels fylde og bra syretørrhet i ettersmaken. 
+Velegnet til pasta med fløtesaus. 600 flasker. 
+Fersk stil med duft av kirsebær, urter og eikefat. 
+Saftig bærsmak, middels fylde og frisk ettersmak med lett snerp. 
+</p>
+</div><!-- main -->
+<div id="pagesource" style="clear:both">
+		<hr/>
+<div>Source:</div>
+	<div>
+	<?_wxt expand location="page2coded.txt" 
+			 sourcelocation="page2.xml" 
+			 expanded="no" code="xmlcode"?>
+	</div>
+</div>
+</body>
+</html>

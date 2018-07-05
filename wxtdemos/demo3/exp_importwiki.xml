@@ -1,0 +1,34 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+&lt;<span class="tagname">h1</span>&gt;WIKI import&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_importwiki.xml"  title="importwiki.xml"
+             sourcelocation="importwiki.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+  <span class="process">&lt;?_wxt moduletoc tags=",h2,h3" cols="1"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">p</span>&gt;
+Testing import av WIKI fragments
+&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt importwiki location="handbok.html" dpath="//Trac"?&gt;</span> 
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+  <span class="process">&lt;?_wxt importwiki location="hovedside.html" dpath="/Aktuelle kurs"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+  <span class="process">&lt;?_wxt importwiki location="hovedside.html" dpath="/Møtereferater"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+  <span class="process">&lt;?_wxt importwiki location="hovedside.html" dpath="//NU-søknad 2008"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

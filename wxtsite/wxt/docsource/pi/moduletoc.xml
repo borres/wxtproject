@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: moduletoc</h1>
+<p>
+  The purpose of a moduletoc is to produce 
+  a table of content for one module on this module.
+</p>
+<pre class="piline">
+&lt;?_wxt moduletoc cols=""?&gt;
+</pre>
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>tags</strong> (optional)</td>
+    <td>The tags we want to build the toc for.
+    Default is:"h1,h2,h3,h4,h5,h6".
+    For instance: ",,h3" will build a toc for h3-entries only,
+    and they will be marked (by style) as on level 3.
+    The value: "h3" will build a toc for h3-entries only,
+    and they will be marked (by style) as on level 1.
+    </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>cols</strong> (optional)</td>
+    <td>The number of columns we want. Default is 0,
+    which means a "horisontal" list.
+    </td>
+  </tr>
+  
+    <tr>
+    <td  style="vertical-align:top"><strong>divider</strong> (optional)</td>
+    <td>String that separates the entries. Only effective when cols=0.
+    
+     </td>
+  </tr>
+</table>
+
+<p class="stylefoot">
+Styleclass describing this PI is: <em>wxtmoduletocn</em>, where n is the number of columns selected( >0).
+See distributed std styles.
+</p>
+
+<h2>Examples:</h2>
+
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt moduletoc?&gt;
+&lt;/div&gt;
+</pre>
+
+
+</body>
+</html>

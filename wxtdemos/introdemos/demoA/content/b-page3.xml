@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<div class="mainblock">
+<h1>Page 3</h1>
+<p>This is the content of page 3</p>
+<p>Note that the source for this program is "generic" XML-page, while
+ the source for <?_wxt xlink id="Page2"?> is a complete XHTML-page. Which to use is up to you,
+ as long as it is wellformed. If you use an HTML-editor to prepare your pagecontent,
+ you will use XHTML. On the other hand if you use a straight text editor, you may as well
+ prepare "minimalistic" content.
+</p>
+<p>The source of this page:</p>
+<div>
+<?_wxt importtxt location="b-page3.xml" code="xmlcode"?>
+</div>
+</div>
+</root>
+

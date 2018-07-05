@@ -1,0 +1,11 @@
+/* table output from dbimport*/
+div.db table{margin-top:80px}
+.dbresult .sql{margin:10px;color:red}
+.dbresult table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+				border-collapse: collapse;width: 320px;}
+
+.dbresult th{padding: 0 0.5em;text-align: left;
+			 border-bottom: 1px solid #CCC;}
+.dbresult td{border-bottom: 1px solid #CCC;	padding: 0 0.5em;}
+.dbresult td:first-child {	width: 40px;	}
+.dbresult td+td {	border-left: 1px solid #CCC;text-align: center;}

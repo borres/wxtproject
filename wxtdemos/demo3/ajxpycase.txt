@@ -1,0 +1,8 @@
+<pre class="pythoncode">
+<span class="comment"># convert on output</span>
+<span class="word">def</span> setPrint():
+    """<span class="literal"> Convert Unicode -&gt; UTF-8</span>"""
+    (e,d,sr,sw) = codecs.lookup('<span class="literal">utf-8'</span>)
+    unicode_to_utf8 = sw(sys.stdout)
+    sys.stdout = unicode_to_utf8
+</pre>

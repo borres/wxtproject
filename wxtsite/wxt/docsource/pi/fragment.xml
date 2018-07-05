@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: fragment</h1>
+<p>
+    The purpose is to import a fragment defined in the script:
+<?_wxt xlink id="Fragment"?>.
+</p>
+<pre class="piline">
+&lt;?_wxt fragment id="" ?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (mandatory)</td>
+    <td>The id of the fragment we want to import.
+    The following fragments are always defined for a module:
+	<ul>
+	<li><em>_name</em></li>
+    <li><em>_id</em></li>
+	<li><em> _summary</em></li>
+	<li><em>_description</em></li>
+	<li><em>_author</em> </li>
+	</ul>
+	and will always
+    produce a value.
+
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>form</strong> (optional)</td>
+    <td>Possible values are <em>id</em>, <em>short</em> and <em>full</em>.
+    <em>full</em> is default and displays the content of the fragment. 
+    If <em>short</em>, only the short value of the fragment is
+    displayed.
+    <br/>
+    <em>form</em> has no effect on fragments: <em>_id</em>, <em>_name</em>,<em>_description</em>
+    and <em>_summary.</em>
+     </td>
+  </tr>
+  
+</table>
+
+<h2>Examples:</h2>
+<p>This:</p>
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt fragment id="_name"?&gt;
+&lt;/div&gt;
+</pre>
+<p>may produce this:</p>
+<pre class="result">
+&lt;div&gt;
+My module
+&lt;/div&gt;
+</pre>
+
+<p>This:</p>
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt fragment id="f1"?&gt;
+&lt;/div&gt;
+</pre>
+<p>may produce this:</p>
+<pre class="result">
+&lt;div&gt;
+&lt;span&gt;&lt;img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+<p>assuming that the following is defined in the script</p>
+<pre  class="prettyprint lang-html">
+&lt;fragment id="f1"&gt;
+&lt;![CDATA[
+&lt;span&gt;&lt;img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif"&gt;&lt;/span&gt;
+]]&gt;
+&lt;/fragment&gt;
+</pre>
+
+<p>This:</p>
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt fragment id="f1"?&gt;
+&lt;/div&gt;
+</pre>
+<p>may produce this:</p>
+<pre class="result">
+&lt;div&gt;
+&lt;span&gt;&lt;img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+<p>assuming that the following is defined in the script</p>
+<pre  class="prettyprint lang-html">
+&lt;fragment id="f1" location="fragfile.txt"/&gt;
+</pre>
+<p>and the file, fragfile.txt, has this content:</p>
+<pre class="result">
+&lt;span&gt;&lt;img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif"&gt;&lt;/span&gt;
+</pre>
+</body>
+</html>

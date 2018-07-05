@@ -1,0 +1,323 @@
+@media screen{    
+    /* date time stamp */
+    span.date{color: black;} 
+    span.time{color: black;}
+    span.stamp{color:blue; font-style: italic; font-weight: bolder;}
+    
+    /* footnotes */
+    span.fnmarker{color:black;vertical-align:30%;padding-left:2px;padding-right:2px}
+    span.fn{display:none}
+    div.footnote{font-style:italic}
+    
+    /* popups */
+    span.popup{cursor:pointer;color:red}
+    
+    /* collecting */
+    div.collect{color:green}
+    
+    /* collecting summaries */
+    div.collectsummary{margin-left:30px}
+    div.summaryheading{font-weight:bold;margin-top:20px;text-decoration: underline;}
+    div.summarycontent{color:gray}
+    
+    /* moduletoc */
+    .moduletoc .level1{margin-left:2px}
+    .moduletoc .level2{margin-left:3px}
+    .moduletoc .level3{margin-left:4px}
+    .moduletoc a{color:blue; text-decoration: none;}
+    
+    /*modulemenu*/
+    div.modulemenu{margin-top:30px;font-size:10px;}
+    .modulemenu .level1{margin-left:5px;line-height:110%;font-size:11px;font-weight:bold}
+    .modulemenu .level2{margin-left:15px;line-height:110%;font-size:10px}
+    .modulemenu .level3{margin-left:25px;line-height:110%;font-size:10px}
+	.modulemenu .level4{margin-left:35px;line-height:110%;font-size:10px}
+	.modulemenu .level5{margin-left:40px;line-height:110%;font-size:10px}
+    .modulemenu a{text-decoration: none;}
+    .modulemenu a:link{color:black;}
+    .modulemenu a:visited{color:#8B795E;}
+    .modulemenu a:hover{border-style:solid;border-width:thin}
+    .modulemenu a:active{color:red;}
+
+    /*modulemap*/
+    span.modulemap{background-color: white;}
+    span.modulemap .level1{margin-left:0px}
+    span.modulemap .level2{margin-left:0px}
+    span.modulemap .level3{margin-left:0px}   
+	
+    div.modulemap{background-color: white;}/*top,right,bottom,left*/
+    div.modulemap .level1{padding:0px 0px 5px 10px;font-weight:bold}
+    div.modulemap .level2{padding:0px 0px 5px 20px}
+    div.modulemap .level3{padding:0px 0px 5px 30px}
+	div.modulemap .level4{padding:0px 0px 5px 40px}
+	div.modulemap .level5{padding:0px 0px 5px 40px}
+    
+    .modulemap a{text-decoration: none;}    
+    .modulemap a:link{color:blue;}
+    .modulemap a:visited{color:#8B795E;}
+    .modulemap a:hover{border-style:solid;border-width:thin}
+    .modulemap a:active{color:red;}
+	
+	.modulemap table {width:100%}
+	.modulemap table tbody th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    .modulemap table tbody td{	padding: 0 0.5em;}
+    .modulemap table tbody td:first-child {}
+    .modulemap table tbody td+td {	border-left: 1px solid #CCC;text-align: center;}
+    
+	/*path*/
+    div.path{}
+    .path .level1,.level2,.level3{margin-left:5px;margin-right:5px}
+    .path a{ text-decoration: none;}
+    
+    /*ixword*/
+    .ixword{font-style:italic; font-weight:bold}
+     
+    /*ixtable*/
+    div.ixtable{ font-size:48px}
+	.ixtable table {width:100%}
+	.ixtable table tbody th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    .ixtable table tbody td{padding: 0 0.5em;} /*border-bottom: 1px solid #CCC;	*/
+    .ixtable table tbody td:first-child {}
+    .ixtable table tbody td+td {	border-left: 1px solid #CCC;text-align: center;}
+    
+	.ixtable .word{font-weight:bold;font-size:10px}
+    .ixtable .comment{color:gray; margin-left:20px;display:block;font-size:10px}
+    .ixtable a{margin-left:10px;display:block;text-decoration: none;font-size:10px;display:list-item}
+    
+     /*demolink, or the style(s) set in demolink PI*/
+    .demo{text-decoration: none;}
+    .demo span.print{display:none}
+    .demo .screen{}
+	 a.demo:link{background: url(demo.gif) no-repeat 0% 0;padding: 0 0 0 45px;}
+	 a.demo:visited{color: purple;background: url(demo.gif) no-repeat 0% -100px;padding: 0  0 0 45px;}
+	 a.demo:hover{color: red;background: url(demo.gif) no-repeat 0% -200px;padding: 0 0 0 45px;}
+	
+	/* pdfbook link as in demolink */
+    .pdf{text-decoration: none;}
+    .pdf span.print{display:none}
+    .pdf.screen{}
+	 a.pdf:link{background: url(print.gif) no-repeat 0% 0;padding: 0 0 0 30px;}
+	 a.pdf:visited{color: purple;background: url(print.gif) no-repeat 0% -100px;padding: 0  0 0 30px;}
+	 a.pdf:hover{color: red;background: url(print.gif) no-repeat 0% -200px;padding: 0 0 0 30px;}
+	
+	/* marking external links from demolink*/
+	 a.external{text-decoration: none;}
+	 .external span.print{display:none}
+	 .external .screen{}
+	 a.external:link
+		{
+		background: url(exicon.gif) no-repeat 100% 0;
+		padding: 0 20px 0 0;
+		}
+
+	a.external:visited
+		{
+		color: purple;
+		background: url(exicon.gif) no-repeat 100% -100px;
+		padding: 0 20px 0 0;
+		}
+
+
+	a.external:hover
+		{
+		color: red;
+		background: url(exicon.gif) no-repeat 100% -200px;
+		padding: 0 20px 0 0;
+		}
+
+    
+    /*xlink*/
+    span.xlink{}
+    .xlink a{font-style: italic;}
+	.xlink img {border: 0px none}
+    .xlink a{ text-decoration: none;}
+    
+    /*xlinklist*/
+    div.xlinklist{}
+    .xlinklist a{ text-decoration: none;}
+    
+    /* table output from dbimport*/
+    div.db table{margin-top:80px}
+    .dbresult .sql{margin:10px;color:red}
+    .dbresult table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 320px;}
+
+    .dbresult th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    .dbresult td{border-bottom: 1px solid #CCC;	padding: 0 0.5em;}
+    .dbresult td:first-child {	width: 40px;	}
+    .dbresult td+td {	border-left: 1px solid #CCC;text-align: center;}
+
+    
+    /*code*/
+    .cppcode,.ccode,.csharpcode,.javacode,.javascriptcode,.pythoncode,.mlcode,.xmlcode,.code,.xsltcode,.aspxcode {
+	font-size:11px;
+	line-height:120%;
+	white-space: pre;
+	font-family: "Courier new","Courier",mono-space;
+	background-color: #EEEEFF;
+	display: block;
+	border-style:dashed;
+	border-width:1px;
+	padding:5px;
+	background: url('paperbg.gif');
+    }
+	
+	pre.ccode{background-color:#F5FFFA;}
+	.ccode .word{color:blue;font-weight:bolder}
+    .ccode .literal{color:green}
+    .ccode .comment{font-style:italic;color:#DD0000}
+
+	pre.cppcode{background-color:#F5FFFA;}
+	.cppcode .word{color:blue;font-weight:bolder}
+    .cppcode .literal{color:green}
+    .cppcode .comment{font-style:italic;color:#DD0000}
+	
+	pre.pythoncode{background-color:#FDFCDC}
+    .pythoncode .word{color:blue;font-weight:bold}
+    .pythoncode .literal{color:green}
+    .pythoncode .comment{font-style:italic;color:#DD0000}
+    
+    pre.xsltcode{background-color: #F0FFF0;}
+    .xsltcode .word{color:blue}
+    .xsltcode .literal{color:#8B0000}
+    .xsltcode .comment{font-style:italic;color:#DD0000}
+    
+	pre.aspxcode{background-color: #F0FFF0;}
+    .aspxcode .word{color:blue}
+    .aspxcode .literal{color:#8B0000}
+    .aspxcode .comment{font-style:italic;color:#DD0000}
+    
+	pre.csharpcode{background-color: #F5FFFA;}
+    .csharpcode .word{color:blue;font-weight:bolder}
+    .csharpcode .literal{color:green}
+    .csharpcode .comment{font-style:italic;color:#DD0000}    
+
+    pre.javacode{background-color: #F8F8FF}
+    .javacode .word{color:blue;font-weight:bold}
+    .javacode .literal{color:#228B22}
+    .javacode .comment{font-style:italic;color:#8B1A1A}    
+
+    pre.javascriptcode{background-color: #F8F8FF}
+    .javascriptcode .word{color:blue;font-weight:bold}
+    .javascriptcode .literal{color:#228B22}
+    .javascriptcode .comment{font-style:italic;color:#8B1A1A} 
+
+	pre.xmlcode{background-color: #F7F7F7;line-height:150%}
+	.xmlcode .tagname{font-weight:bold; color:blue;font-weight:bolder}
+	.xmlcode .attvalue{font-weight:bold; color:green}
+	.xmlcode .attname{font-weight:bold; color:#8B3A62}
+	.xmlcode .comment{font-style:italic;color:#DD0000}
+    
+    
+	/* ajax expansion*/
+	.expand .on,.expand .off{font-size:1px;display:block;color:green;
+                cursor:pointer;
+				text-align:center;
+				width:24px;height:24px;
+                padding:0px 2px 0px 2px}
+    .expand .on{background:url(expand-a.png) no-repeat}
+    .expand .off{background:url(unexpand.png) no-repeat}
+	
+	/* expand by style */
+	.expand-on,.expand-off{font-size:1px;font-weight:bold;color:black;
+                cursor:pointer;
+				width:24px;height:20px;
+				text-align:center;
+                padding:0px 2px 2px 0px}
+	.expand-on{background:url(expand.png) no-repeat }
+	.expand-off{background:url(unexpand.png) no-repeat }
+	
+	/* intext reference */
+	.ref{font-weight:bold;margin-left:5px}
+	
+	/* ieeelist */
+	.ieeelist{background-color:white;margin-left:10px}
+	.ieeelist .index  {font-weight:bold}
+	.ieeelist .refitem  {padding-left:0px}
+	.ieeelist .refitem  div{padding-left:2px}
+	.ieeelist .refitem .dateread{font-size:8px}
+	.ieeelist span{display:block}
+	
+	/*harvard list */
+	.harvardlist{background-color:white;margin-left:10px}
+	.harvardlist .ref{font-weight:bold;margin-left:5px}
+	.harvardlist  .refitem  {padding-left:10px;}
+	.harvardlist  .refitem  div{padding-left:2px}
+	.harvardlist  .refitem  .key{font-weight:bold}
+	.harvardlist span{display:block}
+
+	
+	/*modulewise refs in global list for local reference strategy*/
+	.modref{padding-left:2px;font-size:16px;font-weight:bold;}
+	.modref a {text-decoration:none; color:black}
+	.modref .reflist{display:inline}
+
+	
+	 /*summary acosiated with xlinks used in modulemap, modulemenu*/
+    .summary {
+            color: #000000;
+            font-size: 11px;
+            padding: 5px;
+            border: 1px solid #324C48;
+            background-color: #EEE8CD;/*yellow;/*#F09450;*/
+            visibility: hidden;
+            position: absolute;
+            left: 50px;
+            z-index: 2000;
+            top: 0px;
+			font-weight:normal;
+			min-width:150px
+        }
+	.summary .header{display:none}
+	
+	/*summary acosiated with popfragment*/
+    .popsummary {
+            color: #000000;
+            font-size: 12px;
+            padding: 5px;
+            border: 1px solid #324C48;
+            background-color: #EEE8CD;/*yellow;/*#F09450;*/
+            visibility: hidden;
+            position: absolute;
+            left: 50px;
+            z-index: 2000;
+            top: 0px;
+            width: 300px;
+
+        }
+	div.imagewrapper{display:inline}
+	div.imagewrapper div{display:block;font-style:italic}
+	
+	/* internal wxt errors*/
+    .wxt-error{background-color:yellow}
+}
+
+
+@media print
+{  
+    .demo .screen{display:none}
+	.external .screen{display:none}
+    .path{display:none}
+
+}
+
+@media projection
+{  
+    .demo .screen{display:none}
+	.external .screen{display:none}
+    .path{display:none}
+    .cppcode,.ccode,.csharpcode,.javacode,.javascriptcode,.pythoncode,.mlcode,.xmlcode,.code,.xsltcode,.aspxcode 
+	{
+	font-size:18px;
+	font-weight:bold;
+	line-height:120%;
+	white-space: pre;
+	font-family: "Courier new","Courier",mono-space;
+	background-color: #EEEEFF;
+	display: block;
+	border-style:dashed;
+	border-width:1px;
+	padding:5px;
+    }
+
+}

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Processing Instructions</h1>
+<p>
+  Processing Instructions (PI) are legal XML elements.
+  PIs have the general form:
+</p>
+<pre class="piline">
+&lt;?name ..any text interpreted by the interested program ...?&gt;
+</pre>
+<p>
+  WXT has defined its own PIs which has the name <strong>_wxt</strong>.
+  PIs may occur in template files and content files.
+  Typically we embed PIs in the template to populate it with extracts from
+  content.
+ </p>
+ <p>
+     A PI may request something( an import, some xmlfragment etc), 
+	 or it may produce something ( a referencelist, a Table of Content etc). 
+	 WXT simply replaces the PI with this material. If it for some reason is not possible
+     to do so, a report is given.
+ </p>
+
+<p>
+  The text in a _wxt PI is organized as name=value pairs, like attributes of an element.
+  This document use the term parameter. This example instructs WXT to import
+  the div element with attribute id main from myfile.xml:
+</p>
+<pre class="prettyprint lang-html">
+&lt;?_wxt importxml location="myfile.xml" xpath="//div[@id='main']"?&gt;
+</pre>
+
+<p>
+    The PI below will produce a modulemap with link to all modules
+    which are children of the module that request the map:
+</p>
+<pre  class="prettyprint lang-html">
+&lt;?_wxt modulemap select="_children"?&gt;
+</pre>
+
+
+<p>
+ PIs may be dated, just like script elements, see <?_wxt xlink id="PIdating"?>.
+ You can specify a first and/or last date for a PI to
+ be effective. The dateform is yyyy:mm:dd
+</p>
+<pre  class="prettyprint lang-html">
+&lt;?_wxt importxml location="myfile.xml" 
+         xpath="//div[@id='xmas']" 
+         firstdate="2005:12:24" 
+         lastdate"2006:01:01"?&gt;
+</pre>
+<p>
+    Most PI's produce (X)HTML-fragments with style-classes. Usually a PI wraps it production in a tag (span or div)
+    with a CSS class which is the same as the PI name prefixed with <em>wxt</em>, for instance 
+</p>
+<pre  class="prettyprint lang-html"><![CDATA[<div class="wxtmodulemenu">]]>
+</pre>
+<p>See <?_wxt xlink id="Styles"?> for information on how WXT produce styling.
+</p>
+
+</body>
+</html>

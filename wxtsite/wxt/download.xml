@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="../commons/frontstyle.css"/>
+ 	<!--<link rel="STYLESHEET" href="../commons/helpstyle.css"/>-->
+    <?_wxt fragment id="resources"?>
+</head>
+<body>
+
+<?_wxt fragment id="banner"?>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1"><a href="../index.html" title="Project">Project</a></span> | 
+        <span class="level1"><a href="wxt.html" title="Wxt">WXT</a></span> | 
+        <span class="level1"><a href="basics.html" title="Basics">Basics</a></span> | 
+        <span class="level1">Download</span> | 
+        <span class="level1"><a href="documentation.html" title="Documentation">Documentation</a></span> | 
+        <span class="level1"> <a href="samples.html" title="samples page">Samples</a></span>
+      </span>
+
+
+    </div>
+
+<div class="maincontent">
+
+
+
+<h2>Download</h2>
+	 <div style="font-size:13px">
+	 <!--
+	 <a style="float:right;padding-left:15px" href="http://www.java.com"><img src="get_java_blue-button.gif" alt="java"/></a>
+	 -->
+	 <p>
+	 <strong>Note: </strong>Both the WXT-engine and the WXT-GUI are beta versions and changes may occur in specifications due to testing and feedback.
+		See changes below.	
+
+	 Both the WXT-engine(wxt6.jar) and WXT-GUI(wxtFace.jar) are built with Java 1.7.
+If you have not installed a new version of JRE, you should do that first. 
+<br/>
+
+</p>
+	 </div>
+
+	 
+	 
+	 
+	 
+	 <div class="dwnloadtable">
+<table style="width:100%">
+<tr>
+	<th>WXT engine
+	</th>
+	<th>WXT GUI
+	</th>
+
+</tr>	
+<tr>
+	<td  style="vertical-align:top">
+		<p>
+	 Last update Saturday 01 06 2013. Version:<strong><span><?_wxt importtxt location="wxtversion.txt"?></span></strong>
+	 </p>
+	 <p>
+	 Download this zip-file and unpack it anywhere on a local disk:
+	<a href="wxt6.zip">wxt6.zip</a>.<br/>	 
+	 Leave the wxt6-folder as is.
+	 </p>
+	 <p>
+	 wx6 is the main wxt-engine and the jarfile wxt6.jar may be run from the commandline.
+	 </p>
+	 
+ <hr/>        
+	<dl>
+	<dt>Changes in latest version</dt>
+	<dd>Major restructuring of code</dd>
+	<dd>Support of ODT-documents are discontinued</dd>
+	<dd>jsoup is used as tidy-tool</dd>
+ </dl>
+
+	 
+	 </td>
+	
+	
+	<td  style="vertical-align:top">
+
+	 <p>
+	 Last update Saturday 01 06 2013. Version:<strong><span><?_wxt importtxt location="wxtfaceversion.txt"?></span></strong>
+	 </p>
+
+	 <p>
+	 Download this zip-file and unpack it anywhere on a local disk:
+	<a href="wxtFace.zip">wxtFace.zip</a>.
+	Leave the wxtFace-folder as is.
+	</p>
+	<p>
+	When you start wxtFace it will ask you to localize wxt6, the wxt engine.
+	</p>
+	<p style="cursor:pointer">
+	View a screenshot of the gui with explanations: 
+	<?_wxt popup location="../wxt/gui.html" text="gui.html" title="popup" ?>
+	</p>
+	<hr/>
+     <dl>
+	 <dt>Changes from earlier versions</dt>
+	 <dd>
+	 Major restructuring of code
+	 </dd>
+	 </dl>	 
+
+	 
+	
+	
+	</td>
+
+</tr>
+</table>
+
+
+
+</div><!-- dwnloadtable -->
+<hr/>
+
+</div><!-- main -->
+
+    <div id="footer">
+    <?_wxt fragment id="footer"?>
+    </div>
+
+</body>
+</html>

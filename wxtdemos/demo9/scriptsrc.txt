@@ -1,0 +1,25 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;<span class="tagname">wscript</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>"&gt;      
+  &lt;<span class="tagname">definitions</span>&gt;
+    &lt;<span class="tagname">pathfragment</span> <span class="attname">id</span>="<span class="attvalue">princepath</span>" <span class="attname">value</span>="<span class="attvalue">c:/fixed/prince/Engine/bin</span>"/&gt;
+    &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">indent-output</span>" <span class="attname">value</span>="<span class="attvalue">yes</span>"/&gt;
+    &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">output-format</span>" <span class="attname">value</span>="<span class="attvalue">xhtml</span>"/&gt;
+    &lt;<span class="tagname">fragments</span> <span class="attname">location</span>="<span class="attvalue">fragments.xml</span>"/&gt;
+    &lt;<span class="tagname">formulas</span> <span class="attname">location</span>="<span class="attvalue">Bezier.odt</span>"/&gt;
+    &lt;<span class="tagname">images</span> <span class="attname">location</span>="<span class="attvalue">images.xml</span>"/&gt;
+    &lt;<span class="tagname">command</span> <span class="attname">id</span>="<span class="attvalue">makepdf</span>"
+             <span class="attname">line</span>="<span class="attvalue">{princepath}\prince
+           -i xml -s {_scriptcatalog}\pdfstyle.css
+           {_scriptcatalog}\collected.xhtml</span>"
+             <span class="attname">wait</span>="<span class="attvalue">no</span>"/&gt;
+  &lt;/<span class="tagname">definitions</span>&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">location</span>="<span class="attvalue">index.xhtml</span>" <span class="attname">name</span>="<span class="attvalue">Introduction</span>" <span class="attname">template</span>="<span class="attvalue">welcomesrc.xml</span>"/&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">location</span>="<span class="attvalue">Bezier.xhtml</span>" <span class="attname">name</span>="<span class="attvalue">Bezier</span>" <span class="attname">template</span>="<span class="attvalue">bezier.xml</span>"&gt;    
+    &lt;<span class="tagname">modulelist</span> <span class="attname">catalog</span>="<span class="attvalue">each_of_them</span>" <span class="attname">template</span>="<span class="attvalue">p_template.xml</span>"
+                <span class="attname">targetsuffix</span>="<span class="attvalue">xhtml</span>" <span class="attname">books</span>="<span class="attvalue">pages</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+  &lt;!--<span class="comment"> NOTE that the runafter parameter has no meaning if you dont have Prince installed 
+       If you dont, you may remove the parameter and inspect file: collected.xhtml </span>--&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">_never</span>" <span class="attname">location</span>="<span class="attvalue">collected.xhtml</span>" <span class="attname">name</span>="<span class="attvalue">All</span>" <span class="attname">runafter</span>="<span class="attvalue">makepdf</span>"
+          <span class="attname">output-format</span>="<span class="attvalue">xhtml</span>" <span class="attname">template</span>="<span class="attvalue">collector.xml</span>"/&gt;
+&lt;/<span class="tagname">wscript</span>&gt;</pre>

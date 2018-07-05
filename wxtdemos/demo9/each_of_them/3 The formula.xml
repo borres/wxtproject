@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head> 
+</head>
+<body>
+<div class="content">    
+
+<div class="main">
+<h1><?_wxt fragment id="_name"?></h1>
+
+<div class="ingress">
+<p>The general form of the formula</p>
+</div>
+
+<div>
+ <?_wxt importodf location="../Bezier.odt" dpath="/The formula[*,-h2]"?>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importodf</h1>
+<p>
+   Testing import of material from Open Office textdocuments, 
+   <a href="http://www.openoffice.org/" class="external">OpenOffice.org</a>.
+   This is in an experimental stage and some work remains to be done.
+   The rawmaterial for this site is a Open Office file: <a href="doc1.odt">doc1.odt</a>
+</p>
+  
+<!-- extract a header with following text -->
+<h2>A section</h2>
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/*/Purpose"?>
+</div>
+  
+<h2>An other section</h2>
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/*/Limitations"?>
+</div>
+  
+<h2>Images</h2>
+<p>Selecting only images</p>
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/*/Illustrations[img]"?>
+</div>
+  
+<h2>A section with list and image</h2>
+<p>Selecting list and image</p>
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/*/El Classico[ul,img]"?>
+</div>
+ 
+<h2>A section with table and image and text</h2>
+<p>Selecting a section, no style for table</p>
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/*/Portraits"?>
+</div>
+ 
+<hr/>
+  
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

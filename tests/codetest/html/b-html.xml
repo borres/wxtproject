@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>HTML</title>
+</head>
+    <body>
+        
+        <div class="mainblock">
+		<h1>HTML</h1>
+
+<h2>Textimport</h2>
+<p>Simple with XML-header</p>
+<div>
+<?_wxt importtxt location="simple1.html" code="htmlcode"?>
+</div>
+
+<p>Simple without XML-header</p>
+<!-- -->
+<div>
+<?_wxt importtxt location="simple2.html" code="htmlcode"?>
+</div>
+
+
+
+<h2>pre</h2>
+<pre class="htmlcode">
+<![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>XML</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>XML</h1>
+<!-- dette er bare en test
+over flere linjer-->
+<h2>textimport</h2>
+<p>Simple</p>
+<div>
+and some more
+</div>
+</div>
+</body>
+</html>
+
+]]>
+</pre>
+<h2>pre with cdata</h2>
+<pre class="htmlcode"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>XML</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>XML</h1>
+
+<h2>textimport</h2>
+<p>Simple</p>
+<div>
+and some more
+</div>
+</div>
+</body>
+</html>
+]]></pre>
+
+</div>
+
+</body>
+</html>

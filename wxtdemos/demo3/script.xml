@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">    
+      
+	<definitions>
+		<option name="indent-output" value="yes"/>
+		<option name="expand-all" value="no"/>
+		<option name="use-copy" value="yes"/>
+		<template id="P" location="p_template.xml"/>
+		<template id="T" location="t_template.xml"/>
+		<transformation id="vin1" location="vin.xsl"/>
+		<transformation id="vindb1" location="dbvin1.xsl"/>
+		<transformation id="vindb2" location="dbvin2.xsl"/>
+        <transformation id="T1" location="transolympic.xsl"/>
+        <transformation id="T2" location="transolympic2.xsl"/>
+		<pathfragment id="home" value="http://www.ia.hiof.no/~borres/self/"/>                
+		<fragments location="demopopfragment.xml"/>
+		<fragment id="f1">
+		<![CDATA[
+		<span><img src="http://www.ia.hiof.no/~borres/self/bs1.gif" alt="self1"/></span>
+		]]>
+		 </fragment>
+		 <fragment id="f2">
+		<![CDATA[
+		<span><img src="{home}bs1.gif" alt="self1"/></span>
+		]]>
+		 </fragment>
+		<fragment id="pf1">
+		<![CDATA[
+		<img src="{home}bs1.gif" alt="self1"/>og en masse text
+		]]>
+		</fragment>
+		<fragment id="fiso" location="isotext.txt"/>
+		<fragment encoding="iso-8859-1" id="fisoexplisitt" location="isotext.txt"/>
+		<fragment id="futf" location="utftext.txt"/>                 
+		<fragment id="nextimage"><![CDATA[<img src="next.gif" alt="next"/>]]></fragment>
+		<fragment id="homeimage"><![CDATA[<img src="home.gif" alt="home"/>]]></fragment>
+		<fragment id="previmage"><![CDATA[<img src="prev.gif" alt="prev"/>]]></fragment>
+	</definitions>
+
+	<module books="init" description="testing wxt PIs" id="index" location="index.html" name="Welcome" template="P">
+		<xmlcontent location="index.xml"/>
+		<xmlcontent location="index2.xhtml"/>
+		<module books="all" description="test wiki import" location="importwiki.html" name="WIKI" template="P">
+			<xmlcontent location="importwiki.xml"/>
+		</module>
+		<module books="all" description="test wikipedia import" location="importwikipedia.html" name="WIKIPEDIA" template="P">
+			<xmlcontent location="importwikipedia.xml"/>
+		</module>                
+		<module books="all" description="test transformed output" location="transformed.html" name="Transformed Out" template="P" transformation="T1(place='Beijing')">
+			<xmlcontent location="transformed.xml"/>
+		</module>                
+		<module books="all" description="test transformed input" location="transformedin.html" name="Transformed In" template="P">
+			<xmlcontent location="transformedin.xml"/>
+		</module>                
+		<module books="all" description="Date  Time Stamp" location="dts.html" name="DTS" template="P">
+			<xmlcontent location="dts.xml"/>
+		</module>
+		<module books="all" description="testing fragments" id="fid" location="fragments.html" name="Fragments" template="P">
+			<xmlcontent location="fragments.xml"/>
+			<summary>
+			<![CDATA[
+			<img style="float:right" src="http://www.ia.hiof.no/~borres/self/bs1.gif" alt="self1"/>
+             <div style="font-weight:bold">bs was here</div>
+			]]>
+			</summary>
+		</module>
+		<module books="all" description="testing popfragments" location="popfragments.html" name="PopFragments" template="P">
+			<xmlcontent location="popfragments.xml"/>
+		</module>
+		<module books="all" description="testing popfragments" location="fragmentxlink.html" name="Fragmentlinks" template="P">
+			<xmlcontent location="fragmentxlink.xml"/>
+		</module>
+
+		<module books="all" description="testing footnotes" location="footnotes.html" name="Foots" template="P">
+			<xmlcontent location="footnotes.xml"/>
+			<summary>
+			<![CDATA[
+			<img src="http://www.ia.hiof.no/~borres/self/bs1.gif" alt="self1"/>
+                        <span style="font-weight:bold">bs was here leaving footprints</span>
+			]]>
+			</summary>
+		</module>
+		<module books="all" description="testing collection of summaries" location="collectsummaries.html" name="Summaries" template="P">
+			<xmlcontent location="collectsummaries.xml"/>
+		</module>  
+		<module books="all" description="testing demolinks" location="demolinks.html" name="Demolinks" template="P">
+			<xmlcontent location="demolinks.xml"/>
+		</module>
+		<module books="all" description="testing collections" location="collecting.html" name="Collecting" template="P">
+			<xmlcontent location="collecting.xml"/>
+		</module>            
+		<module books="all" description="testing local TOC" location="moduletoc.html" name="ModuleTOC" template="P">
+			<xmlcontent location="moduletoc.xml"/>
+		</module>  
+		<module books="all" description="testing Module map" location="modulemap.html" name="ModuleMap" template="P">
+			<xmlcontent location="modulemap.xml"/>
+		</module>             
+		<module books="all" description="testing path" location="path.html" name="Path" template="P">
+			<xmlcontent location="path.xml"/>
+		</module>             
+		<module books="all" description="testing ixword and ixtable" location="ix.html" name="Index" template="P">
+			<xmlcontent location="ix.xml"/>
+		</module>            
+		<module books="all" description="testing xlink and xlinklist" location="xlink.html" name="xlink" template="P">
+			<xmlcontent location="xlink.xml"/>
+		</module>
+		<module books="all" description="testing encoding" location="encoding.html" name="Encoding" template="P">
+			<xmlcontent location="encoding.xml"/>
+		</module>           
+		<module books="all" description="testing database access" location="importdb.html" name="Database" template="P">
+			<xmlcontent location="importdb.xml"/>
+		</module>            
+		<module books="all" description="testing xml import" location="importxml.html" name="ImportXML" template="P">
+			<xmlcontent location="importxml.xml"/>
+		</module>           
+		<module books="all" description="testing text import" location="importtext.html" name="ImportTXT" template="P">
+			<xmlcontent location="importtext.xml"/>
+		</module>           
+		<module books="all" description="testing text import from script" location="importscripttext.html" name="ImportScriptTXT" template="T">
+			<txtcontent location="importscripttext.txt"/>
+		</module>           
+		<module books="all" description="testing text import from script" location="importscriptdb.html" name="ImportScriptDB" template="T">
+			<dbcontent connection="jdbc:mysql://frigg.hiof.no/vin?user=student&amp;password=student"/>
+			<wikicontent location="http://en.wikipedia.org/wiki/Denmark"/>
+		</module>                      
+		<module books="all" description="testing text import" location="importmultitext.html" name="ImportMultiTXT" template="P">
+			<xmlcontent location="importmultitext.xml"/>
+		</module>           
+		<module books="all" description="testing popups" location="popups.html" name="Pops" template="P">
+			<xmlcontent location="popups.xml"/>
+		</module>
+		<module books="all" description="testing ajax expand" location="expand.html" name="Expand" template="P">
+			<xmlcontent location="expand.xml"/>
+		</module>
+		<module books="all" description="testing backup" location="backup.html" name="Backup" template="P">
+			<xmlcontent backuplocation="{_scriptcatalog}/backup.xml" location="tullball.xml"/>
+			<xmlcontent backuplocation="{_scriptcatalog}/backup.xml" location="existing.xml"/>
+		</module>
+
+	</module>
+  <!-- end of velkommen -->
+</wscript>

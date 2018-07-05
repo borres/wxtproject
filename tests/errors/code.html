@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Code</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/std.js" type="text/javascript"> </script>
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">	
+	<link href="templates/template.css" rel="STYLESHEET">
+
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="modulemenu"><div class="level1"><a href="index.html" title="errortester">Welcome</a></div><div class="level1">Code</div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>When code goes wrong</h1><p>
+	Testing of errormessages
+</p><p>Non existent:</p><div>
+<div class="wxt-error">Evaluation of: &lt;?_wxt importtxt  location="blocks/mypython.py" code="pythoncode" ?&gt; failed</div>
+</div><p>Bad syntax</p><div>
+<pre class="pythoncode"><span class="comment"># -*- coding: cp1252 -*-</span>
+"""<span class="literal">
+This module simply takes a natural number and
+returns the digits as text
+</span>"""
+wordlist=['<span class="literal">null'</span>,'<span class="literal">en'</span>,'<span class="literal">to'</span>,'<span class="literal">tre'</span>,'<span class="literal">fire'</span>,'<span class="literal">fem'</span>,'<span class="literal">seks'</span>,'<span class="literal">sju'</span>,'<span class="literal">&aring;tte'</span>,'<span class="literal">ni'</span>]
+<span class="word">def</span> convert(N):
+    T=str(N)
+    res='<span class="literal">'</span>
+    <span class="word">for</span> c <span class="word">in</span> T:
+        pos='<span class="literal">0123456789'</span>.find(c)
+        <span class="word">if</span> pos!=-1:
+            res+=wordlist[pos]+'<span class="literal"> '</span>
+        <span class="word">else</span>:
+            res='<span class="literal">ikke et naturlig tall what
+            return res
+    return res[:-1]</span></pre>
+</div><p>Bad syntax</p><div>
+<pre class="javacode"><span class="word">public</span> <span class="word">class</span> wxtError {
+
+     <span class="comment">/**
+     * Produce a system.out msg and/or a visible errorelement
+     * @param doc The doc that will own the message
+     * @param cmd The cmd causing the error
+     * @param msg A message
+     * @return A span element
+     */</span> 
+    <span class="word">public</span> <span class="word">static</span> Element makeErrorMsgForDebugging(Document doc,PIcommand cmd,String msg)
+    {
+        <span class="word">if</span>(msg==null)
+            msg="<span class="literal"> "</span>;
+        String cmds="<span class="literal"> "</span>;
+        <span class="word">if</span>(cmd!=null)
+            cmds=cmd.getOriginalData();
+        String all="<span class="literal">Internal WXTError: "</span>+msg+"<span class="literal"> in "</span>+cmds;
+        
+        <span class="comment">// print to system.out always</span>
+        System.out.println(all);
+        
+        <span class="comment">// return an element if doc exists</span>
+        <span class="word">if</span>(doc!=null)
+        {
+            Element erElt=doc.createElement("<span class="literal">span"</span>);
+            erElt.setAttribute("<span class="literal">class"</span>, "<span class="literal">wxt-error"</span>);
+            erElt.appendChild(doc.createTextNode(all));
+            <span class="word">return</span> erElt;
+        }
+        <span class="word">else</span>
+            <span class="word">return</span> null;
+    }
+}
+
+
+</pre>
+</div>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

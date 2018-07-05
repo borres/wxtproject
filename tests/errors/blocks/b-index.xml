@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Velkommen</title>
+</head>
+    <body>
+        
+<div class="mainblock">
+
+<h1>Welcome</h1>
+<p>
+	Testing of errormessages
+</p>
+<p>
+<?_wxt ref id="r12"?>
+</p>
+<p>
+<?_wxt fragment id="f12"?>
+</p>
+<!-- bad import -->
+<!--
+
+<div> 
+<?_wxt importxml xpath="//img[position()='1']" location="http://www.it.hiof.no/~borres/index.html"?>
+</div>
+
+<div> 
+<?_wxt importwiki dpath="/Report\" location="http://www.it.hiof.no/~borres/tullball1.xml"?>
+</div>
+
+<div> 
+<?_wxt importwiki location="http://www.it.hiof.no/~borres/tullball1.xml"?>
+</div>
+
+-->
+<!--
+<td id="showcard" valign="top" onclick="javascript:showCard('x')"> 
+	<img alt="card" src="http://www.it.hiof.no/~borres/common-new/templates/card.png" style="border:0px;margin-top:0px"/>
+</td>
+-->
+<div class="self">
+<?_wxt expand location="self.txt" sourcelocation="http://www.it.hiof.no/~borres/cgi-bin/signature/ajaxsignature.py" ?>
+</div>
+
+<div class="self">
+<?_wxt expandsimple location="http://www.it.hiof.no/~borres/cgi-bin/signature/ajaxsignature.py" ?>
+</div>
+
+<div class="self">
+<?_wxt importtxt location="http://www.it.hiof.no/~borres/cgi-bin/signature/ajaxsignature.py" parse="yes"?>
+</div>
+</div>
+
+</body>
+</html>

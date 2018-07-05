@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Code Fragments</h1>
+<p>
+ WXT offers to colorcode or "prettprint" some languages, mainly programcode.
+ This is achived with two diffrenet mechanismes:
+ </p>
+ <ul>
+ <li>Google's prettyprint<?_wxt ref id="googlecodeprettyfy"?>. This is the preferred tool since it is flexible and fast. Depends on Javascript</li>
+ <li>WXT's own codeparser. This is necessary if the material is not shown in a web-browser as HTML.</li>
+ </ul>
+ <p>
+  Which tool to use depends on the option <em>preformat-language</em>. If <em>preformat-language</em> is set to <em>yes</em> WXT's parser is used, otherwise Google's prettyprint is used.
+  <em>no</em> is default. The reason for using WXT's preformatting is normally to prepare for
+  PDF-conversion.
+ </p>
+ 
+ 
+ 
+ 
+ 
+ <h2>Google prettyprint</h2>
+ <p>
+  This tool is described in Google Code Prettify <?_wxt ref id="googlecodeprettyfy"?>.
+  To make this work you must download and include the necessary javascriptcode in your templates. See source of this page
+  to get the idea.
+ </p>
+ <p>
+  You must also define and, if you like, redefine the  styles to get the result you want.
+  The original styles from google, as of june 2010, is set up like this:
+ </p>
+ <div>
+ <?_wxt importtxt location="google-prettify.css" lang="lang-css"?>
+ </div>
+ <p>
+  You will seeom the discussion of styles, <?_wxt xlink id="Styles"?>, that the standard stylesheet distrubuted with WXT
+  have modified this.
+ </p>
+<p>
+ You may achieve colorcoding in two ways:
+</p>
+<h3>Directly</h3>
+<p>You may simply put the following code on your page:</p>
+<pre class="code">
+&lt;pre class="prettyprint lang-js"&gt;
+&lt;![CDATA[
+function simplepopup(theURL,wname,wstyle)
+{
+    // just a sample function
+	try{
+      newwindow=window.open(theURL, wname, wstyle);
+      if (window.focus) {newwindow.focus()}
+    }
+    catch(E){
+      alert('You may have blocked popups');
+    }
+  }]]&gt;
+&lt;/pre&gt;
+</pre>
+<div>to achieve this:</div>
+<pre class="prettyprint lang-js">
+<![CDATA[
+function simplepopup(theURL,wname,wstyle)
+{
+    // just a sample function
+	try{
+      newwindow=window.open(theURL, wname, wstyle);
+      if (window.focus) {newwindow.focus()}
+    }
+    catch(E){
+      alert('You may have blocked popups');
+    }
+  }]]>
+</pre>
+
+<h3>With a PI</h3>
+<div>
+You may import files ,or fragments from files, and get them colorcoded with the following PIs:
+<em>importtxt</em>, <em>expandable</em>, <em>popup</em>.
+</div>
+<div>You may put this on your page:</div>
+<pre class="code">
+&lt;div&gt;
+&lt;?_wxt importtxt location="wxtjs.js" 
+       leftpar="//popup" rightpar="//eofpopup" lang="lang-js"?&gt;
+&lt;/div&gt;
+</pre>
+<div>to achive this:</div>
+<div>
+<?_wxt importtxt location="wxtjs.js" 
+       leftpar="//popup" rightpar="//eofpopup" lang="lang-js"?>
+</div>
+ 
+ 
+<h2>WXTs codeparser</h2>
+<p>
+  WXT has its own codeparser that prepares all material on the webpages before they reach the browser. That is it is not
+  dependant of javascript. WXT's parser is more limited that the general Google-concept.
+  It supports the following langages:
+ </p>
+	<ul>
+	<li>lang-j (java)</li>
+	<li>lang-js (javascript)</li>
+	<li>lang-c (c)</li>
+	<li>lang-cpp (c++)</li>
+	<li>lang-csh (c#)</li>
+	<li>lang-css (Cascading Style Sheets)</li>
+	<li>lang-xml (XML)</li>
+	<li>lang-sql (SQL)</li>
+	<li>lang-aspx (ASPX)</li>
+	<li>lang-cs3 (actionscript)</li>
+	<li>lang-mal (matlab)</li>
+	<li>lang-py (python)</li>
+	<li>lang (generic without colorencoding. All encoding defaults to this on failure on others)</li>
+	</ul>
+ <p>
+  WXT's parser reads your material in the same way as Google's tool, and the examples above work the same way.
+ </p> 
+
+
+
+
+</body>
+</html>

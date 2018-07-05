@@ -1,0 +1,874 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	
+    <title>ImportScriptDB</title>
+	
+    <link href="../commons/wxtstyle.css" rel="STYLESHEET">
+	
+    <script src="../commons/prototype.js" type="text/javascript"> </script>
+	<script src="../commons/wxtjs.js" type="text/javascript"> </script>
+	
+    <style>
+	.prev img,.home img,.next img{border:none}
+	</style>
+
+  </head>
+
+
+  <body>   
+	
+    <table>
+	
+      <tr>
+	
+        <td style="width:160px" valign="top">
+		
+          <div class="wxtmodulemenu">
+            <div class="level1">
+              <a href="index.html" onclick="javascript:document.getElementById('ImportScriptDB1').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB1').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB1').style.visibility='visible'">Welcome</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB1" style="visibility:hidden;">
+                  <div class="header">Welcome</div>testing wxt PIs</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importwiki.html" onclick="javascript:document.getElementById('ImportScriptDB2').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB2').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB2').style.visibility='visible'">WIKI</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB2" style="visibility:hidden;">
+                  <div class="header">WIKI</div>test wiki import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importwikipedia.html" onclick="javascript:document.getElementById('ImportScriptDB3').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB3').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB3').style.visibility='visible'">WIKIPEDIA</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB3" style="visibility:hidden;">
+                  <div class="header">WIKIPEDIA</div>test wikipedia import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="transformed.html" onclick="javascript:document.getElementById('ImportScriptDB4').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB4').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB4').style.visibility='visible'">Transformed Out</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB4" style="visibility:hidden;">
+                  <div class="header">Transformed Out</div>test transformed output</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="transformedin.html" onclick="javascript:document.getElementById('ImportScriptDB5').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB5').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB5').style.visibility='visible'">Transformed In</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB5" style="visibility:hidden;">
+                  <div class="header">Transformed In</div>test transformed input</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="dts.html" onclick="javascript:document.getElementById('ImportScriptDB6').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB6').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB6').style.visibility='visible'">DTS</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB6" style="visibility:hidden;">
+                  <div class="header">DTS</div>Date  Time Stamp</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="fragments.html" onclick="javascript:document.getElementById('ImportScriptDB7').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB7').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB7').style.visibility='visible'">Fragments</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB7" style="visibility:hidden;">
+                  <div class="header">Fragments</div>
+                  <img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif" style="float:right">
+             <div style="font-weight:bold">bs was here</div>
+                </div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="popfragments.html" onclick="javascript:document.getElementById('ImportScriptDB8').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB8').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB8').style.visibility='visible'">PopFragments</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB8" style="visibility:hidden;">
+                  <div class="header">PopFragments</div>testing popfragments</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="fragmentxlink.html" onclick="javascript:document.getElementById('ImportScriptDB9').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB9').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB9').style.visibility='visible'">Fragmentlinks</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB9" style="visibility:hidden;">
+                  <div class="header">Fragmentlinks</div>testing popfragments</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="footnotes.html" onclick="javascript:document.getElementById('ImportScriptDB10').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB10').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB10').style.visibility='visible'">Foots</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB10" style="visibility:hidden;">
+                  <div class="header">Foots</div>
+                  <img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif">
+                        <span style="font-weight:bold">bs was here leaving footprints</span>
+                </div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="collectsummaries.html" onclick="javascript:document.getElementById('ImportScriptDB11').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB11').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB11').style.visibility='visible'">Summaries</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB11" style="visibility:hidden;">
+                  <div class="header">Summaries</div>testing collection of summaries</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="demolinks.html" onclick="javascript:document.getElementById('ImportScriptDB12').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB12').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB12').style.visibility='visible'">Demolinks</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB12" style="visibility:hidden;">
+                  <div class="header">Demolinks</div>testing demolinks</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="collecting.html" onclick="javascript:document.getElementById('ImportScriptDB13').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB13').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB13').style.visibility='visible'">Collecting</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB13" style="visibility:hidden;">
+                  <div class="header">Collecting</div>testing collections</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="moduletoc.html" onclick="javascript:document.getElementById('ImportScriptDB14').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB14').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB14').style.visibility='visible'">ModuleTOC</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB14" style="visibility:hidden;">
+                  <div class="header">ModuleTOC</div>testing local TOC</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="modulemap.html" onclick="javascript:document.getElementById('ImportScriptDB15').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB15').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB15').style.visibility='visible'">ModuleMap</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB15" style="visibility:hidden;">
+                  <div class="header">ModuleMap</div>testing Module map</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="path.html" onclick="javascript:document.getElementById('ImportScriptDB16').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB16').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB16').style.visibility='visible'">Path</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB16" style="visibility:hidden;">
+                  <div class="header">Path</div>testing path</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="ix.html" onclick="javascript:document.getElementById('ImportScriptDB17').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB17').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB17').style.visibility='visible'">Index</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB17" style="visibility:hidden;">
+                  <div class="header">Index</div>testing ixword and ixtable</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="xlink.html" onclick="javascript:document.getElementById('ImportScriptDB18').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB18').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB18').style.visibility='visible'">xlink</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB18" style="visibility:hidden;">
+                  <div class="header">xlink</div>testing xlink and xlinklist</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="encoding.html" onclick="javascript:document.getElementById('ImportScriptDB19').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB19').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB19').style.visibility='visible'">Encoding</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB19" style="visibility:hidden;">
+                  <div class="header">Encoding</div>testing encoding</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importdb.html" onclick="javascript:document.getElementById('ImportScriptDB20').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB20').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB20').style.visibility='visible'">Database</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB20" style="visibility:hidden;">
+                  <div class="header">Database</div>testing database access</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importxml.html" onclick="javascript:document.getElementById('ImportScriptDB21').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB21').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB21').style.visibility='visible'">ImportXML</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB21" style="visibility:hidden;">
+                  <div class="header">ImportXML</div>testing xml import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importtext.html" onclick="javascript:document.getElementById('ImportScriptDB22').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB22').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB22').style.visibility='visible'">ImportTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB22" style="visibility:hidden;">
+                  <div class="header">ImportTXT</div>testing text import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importscripttext.html" onclick="javascript:document.getElementById('ImportScriptDB23').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB23').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB23').style.visibility='visible'">ImportScriptTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB23" style="visibility:hidden;">
+                  <div class="header">ImportScriptTXT</div>testing text import from script</div>
+              </div>
+            </div>
+            <div class="level2">ImportScriptDB</div>
+            <div class="level2">
+              <a href="importmultitext.html" onclick="javascript:document.getElementById('ImportScriptDB24').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB24').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB24').style.visibility='visible'">ImportMultiTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB24" style="visibility:hidden;">
+                  <div class="header">ImportMultiTXT</div>testing text import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="popups.html" onclick="javascript:document.getElementById('ImportScriptDB25').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB25').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB25').style.visibility='visible'">Pops</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB25" style="visibility:hidden;">
+                  <div class="header">Pops</div>testing popups</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="expand.html" onclick="javascript:document.getElementById('ImportScriptDB26').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB26').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB26').style.visibility='visible'">Expand</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB26" style="visibility:hidden;">
+                  <div class="header">Expand</div>testing ajax expand</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="backup.html" onclick="javascript:document.getElementById('ImportScriptDB27').style.visibility='hidden'" onmouseout="javascript:document.getElementById('ImportScriptDB27').style.visibility='hidden'" onmouseover="javascript:document.getElementById('ImportScriptDB27').style.visibility='visible'">Backup</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="ImportScriptDB27" style="visibility:hidden;">
+                  <div class="header">Backup</div>testing backup</div>
+              </div>
+            </div>
+          </div>
+		
+          <div style="margin-left:20px; margin-top:20px">
+		
+            <span class="prev"><span class="wxtxlink"><a href="importscripttext.html" title="testing text import from script"><img alt="prev" src="prev.gif"></a></span></span>
+		<span class="home"><span class="wxtxlink"><a href="index.html" title="testing wxt PIs"><img alt="home" src="home.gif"></a></span></span>
+		<span class="next"><span class="wxtxlink"><a href="importmultitext.html" title="testing text import"><img alt="next" src="next.gif"></a></span></span>
+		
+          </div>
+	
+        </td>
+
+	<td valign="top">
+	
+          <div></div>
+	
+          <hr>
+	
+          <div></div>
+
+	
+          <hr>
+	
+          <div>
+	
+            <div class="importwiki">
+    
+              <table class="infobox geography vcard">
+
+                <tr class="adr">
+
+                  <th align="center" class="mergedtoprow fn org country-name" colspan="3">
+          <span>Kingdom of Denmark</span>
+
+                    <div>
+            
+                      <span>
+              <i>Kongeriget Danmark</i>
+            </span>
+          
+                    </div>
+
+                  </th>
+
+                </tr>
+
+                <tr class="mergedtoprow">
+
+                  <td align="center" class="maptable" colspan="3">
+
+                    <table align="center">
+
+                      <tr>
+
+                        <td align="center">
+                
+                  <img alt="" class="thumbborder" height="95" src="wikiback/en_wikipedia_org_wiki_Denmark/__table__class__infobox_geography_vcard__/125px_Flag_of_Denmark.svg.png" width="125">
+                
+              </td>
+<td align="center">
+                
+                  <img alt="" height="149" src="wikiback/en_wikipedia_org_wiki_Denmark/__table__class__infobox_geography_vcard__/85px_COA_of_Denmark.svg.png" width="85">
+                
+              </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td align="center">
+                <small>
+                  Flag
+                </small>
+              </td>
+<td align="center">
+                <small>
+                  Coat of arms
+                </small>
+              </td>
+
+                      </tr>
+
+                    </table>
+
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td colspan="3">
+          <b>
+            Motto:&nbsp;</b>none<br>
+(Royal motto: <i>Guds hj&aelig;lp, Folkets k&aelig;rlighed, Danmarks styrke</i>
+          
+                    <br>
+
+                    <small>"The Help of God, the Love of the People, the Strength of Denmark"</small>)</td>
+
+                </tr>
+
+                <tr>
+
+                  <td class="anthem" colspan="3">
+          <b>
+            Anthem:&nbsp;</b>
+          <i>
+            Der er et yndigt land
+          </i>&nbsp;<small>(national)</small>
+          
+                    <br>
+
+                    <b>
+            Royal anthem:&nbsp;</b>
+          <i>
+            Kong Christian stod ved h&oslash;jen mast
+          </i>&nbsp;<small>(royal and national)</small>
+        </td>
+
+                </tr>
+
+                <tr>
+
+                  <td colspan="3">
+
+                    <div class="center">
+
+                      <div class="floatnone">
+              
+                
+                        <img alt="" height="210" src="wikiback/en_wikipedia_org_wiki_Denmark/__table__class__infobox_geography_vcard__/250px_EU_Denmark.svg.png" width="250">
+              
+            </div>
+
+                    </div>
+
+                    <div>
+
+                      <div>
+              
+                        <small>
+                <span>Location of <span>&nbsp;</span>
+                  <strong class="selflink">Denmark</strong>
+                  <span>
+                    <span>&nbsp;&nbsp;</span>
+                  </span>(<span>dark green</span>)</span>
+              </small>
+
+                        <p>&ndash;&nbsp;on the European continent
+                <span>
+                  <span>&nbsp;&nbsp;</span>
+                </span>(<span>light green &amp;&nbsp;dark grey</span>)<br>
+&ndash;&nbsp;in the European Union
+                <span>
+                  <span>&nbsp;&nbsp;</span>
+                </span>(<span>light green</span>)&nbsp; &mdash;&nbsp; [<span>
+                  Legend
+                </span>]</p>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+                </tr>
+
+                <tr class="mergedtoprow">
+
+                  <td colspan="2">
+          <b>
+            Capital
+          </b>
+          
+                    <br>
+(and largest city)
+        </td>
+<td>
+          Copenhagen
+          <br>
+
+                    <small>
+            <span>
+              <span class="plainlinks nourlexpansion">
+                
+                  <span class="geo-default">
+                    <span class="geo-dms" title="Maps, aerial photos, and other data for this location">
+                      <span class="latitude">55&deg;43&prime;N</span> <span class="longitude">12&deg;34&prime;E</span>
+                    </span>
+                  </span>
+                  <span class="geo-multi-punct">﻿ / ﻿</span>
+                  <span class="geo-nondefault">
+                    <span class="geo-dec" title="Maps, aerial photos, and other data for this location">55.717&deg;N 12.567&deg;E</span>
+                    <span>﻿ / <span class="geo">55.717; 12.567</span>
+                    </span>
+                  </span>
+                
+              </span>
+            </span>
+          </small>
+        </td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">
+          Official languages
+        </th>
+<td>
+          Danish
+          
+        </td>
+
+                </tr>
+
+                <tr>
+
+                  <td colspan="2">
+          <b>
+            Ethnic groups
+          </b>&nbsp;</td>
+<td>90.5% Danish, 9.5% other groups (Germans, Swedes, Norwegians, Bosnians, Turks, Arabs, Pakistanis, Dutch, Kurds)
+        </td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">
+          Demonym
+        </th>
+<td>
+          Danish or Dane/Danes</td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">
+          Government
+        </th>
+<td>
+          Parliamentary democracy and Constitutional monarchy
+        </td>
+
+                </tr>
+
+                <tr class="mergedrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>
+          Monarch
+        </td>
+<td>
+          Margrethe II
+        </td>
+
+                </tr>
+
+                <tr class="mergedrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>
+          Prime Minister
+        </td>
+<td>
+          Lars L&oslash;kke Rasmussen
+        </td>
+
+                </tr>
+
+                <tr class="mergedbottomrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>
+          Folketing Speaker
+        </td>
+<td>
+          Thor Pedersen
+        </td>
+
+                </tr>
+
+                <tr class="mergedbottomrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>
+          Current coalition
+        </td>
+<td>
+          VK Coalition
+        </td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">Consolidation</th>
+<td>8th century&nbsp;</td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">
+          EU accession
+        </th>
+<td>1 January 1973 (7)</td>
+
+                </tr>
+
+                <tr class="mergedtoprow">
+
+                  <th colspan="3">
+          Area
+        </th>
+
+                </tr>
+
+                <tr class="mergedrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>Total</td>
+<td>
+          43,098.31&nbsp;km
+          &nbsp;(134th&sup2;)<br>
+16,640&nbsp;sq&nbsp;mi&nbsp;</td>
+
+                </tr>
+
+                <tr class="mergedrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>
+          Water&nbsp;(%)</td>
+<td>1.6&sup2;</td>
+
+                </tr>
+
+                <tr class="mergedtoprow">
+
+                  <th colspan="3">
+          Population
+        </th>
+
+                </tr>
+
+                <tr class="mergedrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>1 October 2009&nbsp;estimate</td>
+<td>5,532,531&nbsp;(108th)</td>
+
+                </tr>
+
+                <tr class="mergedbottomrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>
+          Density
+        </td>
+<td>127.9/km&nbsp;(78th&sup2;)<br>
+331.2/sq&nbsp;mi</td>
+
+                </tr>
+
+                <tr class="mergedtoprow">
+
+                  <td colspan="2">
+          <b>
+            GDP
+          </b>&nbsp;(PPP)</td>
+<td>2008&nbsp;estimate</td>
+
+                </tr>
+
+                <tr class="mergedrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>Total</td>
+<td>$204.269 billion&nbsp;(49th)</td>
+
+                </tr>
+
+                <tr class="mergedbottomrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>
+          Per capita
+        </td>
+<td>$37,304&nbsp;(16th)</td>
+
+                </tr>
+
+                <tr class="mergedtoprow">
+
+                  <td colspan="2">
+          <b>
+            GDP
+          </b> (nominal)</td>
+<td>2008&nbsp;estimate</td>
+
+                </tr>
+
+                <tr class="mergedrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>Total</td>
+<td>$340.029 billion&nbsp;(27th)</td>
+
+                </tr>
+
+                <tr class="mergedbottomrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>
+          Per capita
+        </td>
+<td>$62,097&nbsp;(5th)</td>
+
+                </tr>
+
+                <tr>
+
+                  <td colspan="2">
+          <b>
+            Gini
+          </b>&nbsp;(2009)</td>
+<td>24.7&nbsp;(<span>low</span>)&nbsp;(1st)</td>
+
+                </tr>
+
+                <tr>
+
+                  <td colspan="2">
+          <b>
+            HDI
+          </b>&nbsp;(2007)</td>
+<td>
+          <span>▲</span> 0.955&nbsp;(<span>very&nbsp;high</span>)&nbsp;(16th)</td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">
+          Currency
+        </th>
+<td>
+          Danish krone (<code>
+            DKK
+          </code>)</td>
+
+                </tr>
+
+                <tr class="mergedtoprow">
+
+                  <th colspan="2">
+          Time zone
+        </th>
+<td>
+          CET&sup2; <span>(UTC+1)</span>
+        </td>
+
+                </tr>
+
+                <tr class="mergedbottomrow">
+
+                  <td>&nbsp;-&nbsp;</td>
+<td>Summer&nbsp;(DST)</td>
+<td>
+          CEST&sup2;&nbsp;(UTC+2)</td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">
+          Drives on the
+        </th>
+<td>right</td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">
+          Internet TLD
+        </th>
+<td>
+          .dk
+          
+        </td>
+
+                </tr>
+
+                <tr>
+
+                  <th colspan="2">
+          Calling code
+        </th>
+<td>
+          45
+          
+        </td>
+
+                </tr>
+
+                <tr>
+
+                  <td colspan="3">
+          <small>
+             Co-official with Greenlandic in Greenland, and Faroese in the Faroe Islands. German is recognised as a protected minority language in the South Jutland (S&oslash;nderjylland) area of Denmark. Danish is recognised as a protected minority language in the Schleswig-Holstein region of Germany.<br>
+&sup2; For Denmark excluding the Faroe Islands and Greenland.<br>
+&sup3; The TLD .eu is shared with other European Union countries.<br>
+ The Faroe Islands use +298 and Greenland uses +299.</small>
+        </td>
+
+                </tr>
+
+              </table>
+  
+            </div>
+	
+          </div>
+
+	
+          <div>
+
+            <div class="dbresult" xmlns="">
+              <table>
+                <thead>
+                  <tr>
+                    <th>type</th><th>name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>white</td><td>Argento Chardonnay 2002</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Astica Chardonnay 2003</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Lurton Pinot Gris 2004</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Astica Chardonnay 2003</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Santa Florentina Pinot Gris 2003</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Furia Sauvignon Blanc 2003</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Astica Chardonnay 2004</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Nacari Pinot Grigio 2004</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Tierra del Fuego Pinot Gris 2004</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Astica Chardonnay 2005</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Astica Chardonnay 2005</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+    
+          </div>
+	
+          <hr>
+
+	
+          <div>
+
+            <div class="dbresult">
+              <table>
+                <thead>
+                  <tr>
+                    <th>type</th><th>name</th><th>dice</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>white</td><td>Soave Classico San Michele 2002</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Il Falchetto Moscato dAsti Tenuta del Fant 2003</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Soave Classico San Michele 2003</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Saracco Moscato dAsti 2003</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Bianco di Custoza 2003</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Planeta Chardonnay 2002</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Ben Ry&eacute; Passito di Pantelleria 2003</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Planeta La Segreta Bianco 2003</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Pietramarina Etna Bianco Superiore 2000</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Planeta Chardonnay 2003</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Camastra Nero dAvola Merlot 2001</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Planeta Santa Cecilia 2001</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Campanaro Fiano di Avellino 2003</td><td>6</td>
+                  </tr>
+                  <tr>
+                    <td>white</td><td>Poderi di Carlo Sauvignon 2004</td><td>6</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+    
+          </div> 
+	
+        </td>	
+	
+      </tr>
+	
+    </table>
+
+  </body>
+
+</html>

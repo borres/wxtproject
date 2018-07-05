@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>xlinks</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_xlink.xml" 
+             sourcelocation="xlink.xml" code="xmlcode"?>
+</div>
+<hr/>
+    <h2>xlink</h2>
+        <div>name: <?_wxt xlink id="_prev"?></div>
+        <hr/>
+        <div>name: <?_wxt xlink id="_parent"?></div>
+     <hr/>
+     <h2>Modulemaps</h2>   
+        <div><?_wxt modulemap ?></div>
+        <hr/>
+        <div><?_wxt modulemap idlist="fid,Foots" ?></div> 
+        <hr/>
+        <div><?_wxt modulemap cols="2"?></div>
+   </div>
+</data>

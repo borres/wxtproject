@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<div id="main">
+	<h1>Places</h1>
+	<div>
+	<?_wxt fragment id="_summary"?>
+	</div>
+	<div>
+	[ <?_wxt modulemap books="place" cols="0" summary="yes" divider=" ][ "?> ]
+	</div>
+	<hr/>
+	<div>
+	<?_wxt modulemap books="place" cols="1" fragment="_summary"?>
+	</div>
+	<hr/>
+	<div>
+	<?_wxt modulemap select="_children" cols="1" summary="yes"?>
+	</div>
+</div> <!-- main -->
+<div id="pagesource" style="clear:both">
+	Inspect source:
+	<div>
+	<?_wxt expand location="placescoded.txt" title="places.xml" 
+			 sourcelocation="places.xml" 
+			 expanded="no" code="xmlcode"?>
+	</div>
+</div>
+</root>

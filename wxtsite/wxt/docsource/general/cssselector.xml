@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>CSSSelector in short</h1>
+  <p>CSSSelector was inroduced as part of the HTML5/CSS2 initiativ.
+	In many ways you may say that it is for webprogrammers what XPATH is for XML-programmers.
+	A CSSselector make it possible to identify element(s) on a webpage combing 
+	the structure (HTML) and the stylesheet (CSS).
+  </p>
+
+  <p>
+  WXT use CSSSelector when importing HTML fragments from HTML-pages.
+  The syntax is rather involved and you may find support at jsoup<?_wxt ref id="jsoup"?>,
+  at w3schools<?_wxt ref id="w3SchoolCSS"?> and the reference document at w3org<?_wxt ref id="w3orgCSS"?>.
+  </p>
+<p>
+Just a few very simple examples
+</p>
+<h3>Enkle selektorer</h3>
+<table >
+<tr>
+	<th>Form</th>
+	<th>Explanation</th>	
+</tr>
+<tbody>
+<tr>
+	<td>e</td>
+	<td>all element av type e</td>
+
+</tr>
+<tr>
+	<td>#c</td>
+	<td>element with id c</td>
+
+</tr>
+<tr>
+	<td>.c</td>
+	<td>allelements with class)c</td>
+
+</tr>
+<tr>
+	<td>e.c</td>
+	<td>all e-elements with class c</td>
+
+</tr>
+<tr>
+	<td>*</td>
+	<td>all element</td>
+
+</tr>
+</tbody>
+</table>
+<h3>Attributt selektorer</h3>
+<table >
+<tr>
+	<th>Form</th>
+	<th>Explanation</th>	
+
+</tr>
+<tbody>
+<tr>
+	<td>e[a]</td>
+	<td>all e-elements with a attribute</td>
+
+</tr>
+<tr>
+	<td>e[a="b"]</td>
+	<td>all e-elements with a attribute with value b</td>
+
+</tr>
+<tr>
+	<td>e[a~="b"]</td>
+	<td>all e-elements with a attribute where value b exist in a whitespace-separated list  of values</td>
+
+</tr>
+<tr>
+	<td>e[a^="b"]</td>
+	<td>all e-elements with   a attribute where the value starts with  b</td>
+
+</tr>
+<tr>
+	<td>e[a$="b"]</td>
+	<td>all e-elements with a attribute where the value ends with  b</td>
+
+</tr>
+<tr>
+	<td>e[a*="b"]</td>
+	<td>all e-elements with a attribute  containing b</td>
+
+</tr>
+
+</tbody>
+</table>
+
+  
+
+
+</body>
+</html>

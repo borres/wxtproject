@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wscript version="1.0">
+<!--Script for website demoA - bs dec. 2009-->	
+<definitions>
+		<option name="output-format" value="xhtml"/>
+
+		<fragment id="sitename">WXT Demo A</fragment>
+		<fragment id="dep">Dep. for Information Technology, Østfold University College</fragment>
+
+		<fragment id="keywords">
+		<![CDATA[<meta name="KEYWORDS" xmlcontent="WXT,XML,WebSite"/>]]>
+		</fragment>
+		
+		<template id="P" location="gfx/p_template.xml"/>
+</definitions>
+
+<module name="Welcome" template="P" location="index.html" books="all"
+	description="Introduction to the site">
+	<xmlcontent location="content/b-index.xml"/>
+</module>
+
+<module name="Page2" template="P" location="pages\page2.html" books="all"
+	description="All the modules">
+	<xmlcontent location="content\b-page2.xml"/>
+</module>
+<module name="Page3" template="P" location="pages\page3.html" books="all"
+	description="All the modules">
+	<xmlcontent location="content\b-page3.xml"/>
+</module>
+<module name="Page4" template="P" location="pages\page4.html" books="all"
+	description="All the modules">
+	<xmlcontent location="content\b-page4.xml"/>
+</module>
+</wscript>

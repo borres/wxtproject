@@ -1,0 +1,21 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+&lt;<span class="tagname">h1</span>&gt;Import Transformed XML&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_transformedin.xml" 
+             sourcelocation="transformedin.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt importxml transformation="T2(place='Beijing',distance='200m')" 
+        location="all_results.xml" xpath="//body/*"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt importxml transformation="T2(place='Barcelona',distance='400m')" 
+            location="all_results.xml" xpath="//body/*"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

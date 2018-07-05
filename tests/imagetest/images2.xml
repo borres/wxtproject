@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head>
+</head>
+<body>
+<div class="content">    
+<h1>Images</h1>
+
+<h3>many</h3>
+<table>
+<tr>
+	<td><?_wxt image id="oliver" display="1"?></td>	
+	<td><?_wxt image id="oliver" display="2"?></td>
+	<td><?_wxt image id="oliver" display="3"?></td>
+</tr>
+
+<tr>
+	<td><?_wxt image id="oliver" display="4"?></td>	
+	<td><?_wxt image id="bs1-new" width="50%"?></td>
+	<td><?_wxt image id="d1"?></td>
+</tr>
+
+<tr>
+	<td><?_wxt image id="oliver" heigth="75"?></td>	
+	<td><?_wxt image id="oliver" height="50%" ?></td>
+	<td><?_wxt image id="oliver" width="50% "?></td>
+</tr>
+<tr>
+	<td><?_wxt image id="marching"?></td>
+	<td><?_wxt image id="bs2-new"?></td>
+    <td><?_wxt image id="d2"?></td>	
+</tr>
+
+<tr>
+	<td><?_wxt image id="self" ?></td>
+	<td><?_wxt image id="bs-orig1"?></td>
+    <td><?_wxt image id="bs-orig1"?></td>	
+</tr>
+</table>
+
+
+</div>
+</body>
+</html>

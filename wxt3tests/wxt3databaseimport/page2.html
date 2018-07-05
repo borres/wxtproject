@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('page21',event);" onmouseover="javascript:popunpop('page21',event);">Welcome</a>
+<div class="wxtsummary" id="page21" style="display: none;">
+<div class="header">Welcome</div>Demonstration of DB-import</div>
+</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('page22',event);" onmouseover="javascript:popunpop('page22',event);">Page1</a>
+<div class="wxtsummary" id="page22" style="display: none;">
+<div class="header">Page1</div>Demonstration of DB-import</div>
+</div>
+<div class="level1 wxtselected">Page2</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing mysql select</h1>
+<h2>Case 1</h2>
+<p>
+ Performing a mysql -select as a command, and then using a transformation to html.
+</p>
+<p>
+ The commandline, executed as a command from WXT:
+</p>
+<pre>
+<span class="wxtpopup" onclick="javascript:simplepopup('makeit.bat','popup','*')" title="popup">makeit.bat</span>
+</pre>
+<p>  The transformation:
+</p>
+<div>
+ <div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>maketable.xsl</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xslt skiptranslate" id="page25">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format"&gt;
+&lt;xsl:output method="html" encoding="utf-8" /&gt;
+&lt;xsl:template match="/"&gt;
+&lt;table&gt;
+    &lt;tbody&gt;
+        &lt;xsl:call-template name="header"/&gt;
+        &lt;xsl:apply-templates select="resultset/row"/&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/xsl:template&gt;
+&lt;xsl:template match="row"&gt;
+&lt;tr&gt;
+    &lt;xsl:apply-templates select="field"/&gt;
+&lt;/tr&gt;
+&lt;/xsl:template&gt;
+&lt;xsl:template match="field"&gt;
+&lt;td&gt;
+    &lt;xsl:value-of select="."/&gt;
+&lt;/td&gt;
+&lt;/xsl:template&gt;
+&lt;xsl:template name="header"&gt;
+    &lt;tr&gt;
+        &lt;xsl:for-each select="//row[position()=1]/field"&gt;
+        &lt;th&gt;&lt;xsl:value-of select="@name"/&gt;&lt;/th&gt;
+        &lt;/xsl:for-each&gt;
+    &lt;/tr&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</pre>
+</div>
+</div>
+</div>
+<p>Some good wines from Spain</p>
+<div class="dbresult">
+<table xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns="">
+<tbody>
+<tr>
+<th>dice</th>
+<th>name</th>
+</tr>
+<tr>
+<td>6</td>
+<td>Muga Reserva 1999</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Marqués de Murrieta Ygay Capellanía Gran Reserva 1997</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Castillo Ygay Gran Reserva Especial 1994</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Castillo Ygay Gran Reserva Especial 1978</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Viña Izadi Crianza 2000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Montesierra Merlot Cabernet 2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Gran Feudo Reserva 1998</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Viña Alberdi Reserva 1999</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Hermanos Lurton 2003</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Marqués de Cáceres Gran Reserva 1994</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Montesierra Merlot Cabernet 2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Viña Alberdi Reserva 1999</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Condado de Haza Crianza 2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Gran Feudo Reserva 1998</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Muga Reserva 2000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Faustino I Gran Reserva 1995</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Marqués de Monistrol Reserva Brut</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Marqués de Monistrol Reserva Brut</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Marques de Riscal  Rueda Superior 2003</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Las Campanas Crianza 2000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Señorio de los Llanos Reserva 2000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Las Campanas Reserva 1997</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Raimat Abadia 2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Las Campanas Reserva 1997</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Marqués de Murrieta Ygay Capellanía Gran Reserva 1998</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Rejadorada Crianza 2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Muga Reserva 2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Viña Ardanza Reserva 1998</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Marqués de Monistrol Reserva Brut</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Pujanza 2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Divus Monastrell 2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Peique Selección de Viñedos Viejos 2002</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Pie Franco 2000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Casa de la Ermita Monastrell Crianza 2001</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/page2.xml</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="page26">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;welcome&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing mysql select&lt;/h1&gt;
+ 
+ 
+&lt;h2&gt;Case 1&lt;/h2&gt;
+&lt;p&gt;
+ Performing a mysql -select as a command, and then using a transformation to html.
+&lt;/p&gt;
+&lt;p&gt;
+ The commandline, executed as a command from WXT:
+&lt;/p&gt;
+&lt;pre&gt;
+&lt;?_wxt popup location="../makeit.bat"?&gt;
+&lt;/pre&gt;
+&lt;p&gt;  The transformation:
+&lt;/p&gt;
+&lt;div&gt;
+ &lt;?_wxt expandable location="../maketable.xsl" lang="lang-xslt"?&gt;
+&lt;/div&gt;
+&lt;p&gt;Some good wines from Spain&lt;/p&gt;
+&lt;div class="dbresult"&gt;
+&lt;?_wxt importxml xpath="table" location="../batselect.xml" transformation="maketable"?&gt;
+&lt;/div&gt; 
+    
+&lt;hr/&gt;
+     
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="page2.xml" lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<!-- empty: <?_wxt reflist  scope="local" ?> --> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

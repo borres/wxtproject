@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: wscript-element</h1>
+<p>
+  The script may contain only one oscript-element, which must be the
+  root-element.
+</p>
+
+<pre class="mlcode">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;wscript version="1.0"&gt;
+    ...
+ &lt/script&gt;   
+</pre>
+
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>version</strong>(mandatory)</td>
+    <td>The actual version of the script. Must be "1.0".</td>
+  </tr>
+  <tr>
+    <td></td>    
+    <td  style="vertical-align:top">The namespace and schema is optional
+    but necessary to perform validation tests on the script</td>
+  </tr>
+</table>
+
+
+<p>
+The scriptelement may contain:
+</p>
+<ul>
+<li>one element of type: <a href="definitions.html">definition</a></li>
+<li>any number of elements of type: <a href="module.html">module</a></li>
+</ul>
+
+
+</body>
+</html>

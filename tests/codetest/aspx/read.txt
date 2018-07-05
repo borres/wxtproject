@@ -1,0 +1,42 @@
+<pre class="aspxcode">
+&lt;%@ Page Language="<span class="literal">C#</span>" AutoEventWireup="<span class="literal">true</span>"  
+         CodeFile="<span class="literal">Default.aspx.cs</span>" Inherits="<span class="literal">_Default</span>" %&gt;
+
+&lt;!DOCTYPE html PUBLIC "<span class="literal">-//W3C//DTD XHTML 1.0 Transitional//EN</span>" 
+          "<span class="literal">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</span>"&gt;
+
+&lt;html xmlns="<span class="literal">http://www.w3.org/1999/xhtml</span>"&gt;
+&lt;head runat="<span class="literal">server</span>"&gt;
+    &lt;title&gt;Histogram&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Lag histogram&lt;/h1&gt;
+    &lt;form id="<span class="literal">form1</span>" runat="<span class="literal">server</span>"&gt;
+    &lt;table&gt;
+    &lt;tr&gt;
+    &lt;td&gt;&lt;div&gt;
+    &lt;<span class="word">asp:TextBox</span> ID="<span class="literal">TextBox1</span>" runat="<span class="literal">server</span>" Rows="<span class="literal">12</span>" 
+                 TextMode="<span class="literal">MultiLine</span>" 
+                 Font-Size="<span class="literal">Large</span>" Width="<span class="literal">128px</span>"&gt;&lt;<span class="word">/asp:TextBox</span>&gt;    
+    &lt;/div&gt;
+    &lt;div&gt;        
+        &lt;<span class="word">asp:Button</span> ID="<span class="literal">Button1</span>" runat="<span class="literal">server</span>" Text="<span class="literal">Lag histogram</span>" 
+            onclick="<span class="literal">Button1_Click</span>" /&gt;
+    &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+        &lt;<span class="word">asp:Image</span> ID="<span class="literal">Image1</span>" runat="<span class="literal">server</span>" 
+                   ImageUrl="<span class="literal">~/bilde.gif</span>"  
+                   AlternateText="<span class="literal">Histogram</span>"
+                   Width="<span class="literal">286px</span>" Height="<span class="literal">271px</span>"/&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div&gt;
+        &lt;<span class="word">asp:Label</span> ID="<span class="literal">LabelMsg</span>" runat="<span class="literal">server</span>" Text="<span class="literal">:</span>"&gt;
+        &lt;<span class="word">/asp:Label</span>&gt;
+    &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>

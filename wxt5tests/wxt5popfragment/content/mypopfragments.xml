@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragments>
+ 
+<fragment id="Ronaldinho">
+<![CDATA[
+<div>
+<div style="font-weight:bold">Ronaldo de Assis Moreira </div>
+<img alt=" " src="content/ronaldinho.jpg" style="float:left; margin:10px"/>
+<div>
+born 21 March 1980 in Porto Alegre, commonly known as Ronaldinho or Ronaldinho Gaúcho, is a Brazilian footballer who plays for Italian Serie A club A.C. Milan and the Brazilian national team. He is a free-kick specialist and has exceptional dribbling ability.
+Ronaldinho, Portuguese for "Little Ronaldo," is known in Brazil by the nickname "Gaúcho," in order to distinguish him from Ronaldo, who was already called "Ronaldinho" in Brazil. Ronaldo simply went by his first name upon his move to Europe, thereby allowing Ronaldinho to drop the "Gaúcho" and remain simply as Ronaldinho.		
+</div>
+</div>
+]]>
+</fragment>
+ 
+<fragment id="Kaka">
+<![CDATA[
+<div >
+<div style="font-weight:bold">Ricardo Izecson dos Santos Leite</div>
+<img alt="kaka" src="content/kaka.jpg" style="float:left; margin:10px"/>
+<div>
+born 22 April 1982, commonly known as Kaká, is a Brazilian football midfielder who currently plays for Spanish La Liga club Real Madrid and the Brazilian national team. He also holds an Italian passport, which enables him to play as an EU player. He started his footballing career at the age of eight, when he began playing for a local club. At the time, he also played tennis, and it was not until he moved on to São Paulo FC and signed his first professional contract with the club at the age of fifteen that he chose to focus on football.	
+</div>
+</div>
+]]>
+</fragment>
+ 
+<fragment id="milan">
+<![CDATA[
+<div >
+<div style="font-weight:bold">Associazione Calcio Milan</div>
+<img alt="Milan" src="content/milan.jpg" style="float:left; margin:10px"/>
+<div>
+Associazione Calcio Milan, commonly referred to as A.C. Milan or simply Milan, is an Italian professional football club based in Milan, Lombardy. It was founded in 1899. The club has spent most of its history in Serie A, the top-flight of Italian football, having played only two seasons in Serie B in the early 1980
+</div>
+<div>
+Milan's home games are played at San Siro, also known as the Stadio Giuseppe Meazza. The stadium, which is shared with Inter, is the largest in Italian football, with a total capacity of 80,074
+</div>
+</div>
+]]>
+</fragment>
+
+
+
+</fragments>

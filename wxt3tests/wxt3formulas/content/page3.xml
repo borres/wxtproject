@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+
+<div id="title">Page1</div>
+        
+<div class="mainblock">
+<h1>Testing PI:formulas</h1>
+<p>MathML-formulas for HTML5. No namespace and no special doctype
+</p>
+
+<h2>From formula-file</h2>
+<div>
+<?_wxt formula id="f31"?>
+</div>
+
+ 
+
+<div>
+<?_wxt formula id="f32"?>
+</div>
+
+<h2>location</h2>
+<div>
+<?_wxt formula id="f33" type="mathml" location="mathml1.txt"?>
+</div>
+
+<h2>source</h2>
+<div>
+<?_wxt formula id="f331" type="mathml" 
+style="font-weigth:bold;font-size:18px"
+source="<math >
+   <mi>r</mi>
+   <mo>=</mo>
+   <msqrt>
+      <mrow>
+         <mo>(</mo>
+         <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+         </msup>
+         <mo>+</mo>
+         <msup>
+            <mi>y</mi>
+            <mn>2</mn>
+         </msup>
+         <mo>)</mo>
+      </mrow>
+   </msqrt>
+</math>
+"?>
+</div>
+
+<div>
+<?_wxt formula id="f331" style="font-weigth:bold;font-size:24px;color:red"?>
+</div>
+
+ 
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page3.xml" lang="lang-xml"?>
+</div>
+<h2>Formulas</h2>
+<div>
+<?_wxt expandable location="mathmlformulas.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+
+</html>

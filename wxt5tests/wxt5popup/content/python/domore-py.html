@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="skiptranslate prettyprint lang-py" id="prettycode10">import httplib, urllib
+try:
+    # prepare parameters
+    params = urllib.urlencode({'navn': 'ole', 'adresse': 'mysen'})
+    # prepare header
+    headers = {"Content-type": "application/x-www-form-urlencoded",
+               "Accept": "text/plain"}
+    # connect
+    conn = httplib.HTTPConnection("www.ia.hiof.no")
+    conn.request("POST", "/~borres/cgi-bin/forms/std.py", params, headers)
+    r1 = conn.getresponse()
+    # ok ?
+    if r1.status!=200:
+        print 'access problem'
+        print r1.status, r1.reason
+    else:
+        # get data
+        data = r1.read()
+        print data
+    conn.close()
+except:
+    print 'cannot access data'</pre></body>
+</html>

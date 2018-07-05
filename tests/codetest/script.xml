@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      
+      <definitions>
+
+        <template id="P" location="templates/p_template.xml"/>
+        
+       
+     </definitions>
+        
+     <module description="Velkommen til colorcoding" location="index.html" 
+	        name="Velkommen" template="P" books="all">
+        <xmlcontent location="velkommen.xml"/>
+	</module>
+ 
+    <module description="Java" location="Java.html" 
+	        name="Java" template="P" books="all">
+        <xmlcontent location="java/b-java.xml"/>
+	</module>
+	
+    <module description="Javascript" location="Javascript.html" 
+	        name="Javascript" template="P" books="all">
+        <xmlcontent location="javascript/b-javascript.xml"/>
+	</module>
+
+    <module description="Python" location="Python.html" 
+	        name="Python" template="P" books="all">
+        <xmlcontent location="python/b-python.xml"/>
+	</module>	
+     
+	 <module description="XML" location="XML.html" 
+	        name="XML" template="P" books="all">
+        <xmlcontent location="xml/b-XML.xml"/>
+	</module>
+
+	<module description="XSLT" location="XSLT.html" 
+	        name="XSLT" template="P" books="all">
+        <xmlcontent location="xslt/b-xslt.xml"/>
+	</module>
+
+	<module description="C#" id="csharp" location="CSHARP.html" 
+	        name="C#" template="P" books="all">
+        <xmlcontent location="csharp/b-csharp.xml"/>
+	</module>
+
+	<module description="ASPX"  location="ASPX.html" 
+	        name="ASPX" template="P" books="all">
+        <xmlcontent location="aspx/b-aspx.xml"/>
+	</module>
+
+	<module description="C"  location="C.html" 
+	        name="C" template="P" books="all">
+        <xmlcontent location="C/b-c.xml"/>
+	</module>
+
+	<module description="HTML"  location="HTML.html" 
+	        name="HTML" template="P" books="all">
+        <xmlcontent location="html/b-html.xml"/>
+	</module>
+
+	
+ </wscript>

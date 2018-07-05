@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fragments>
+
+<fragment id="head">
+	<![CDATA[
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+	<title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="wxtstyle.css"/>
+	<link rel="STYLESHEET" href="mathstyles.css"/>
+	<script type="text/javascript" src="prototype.js"> </script>
+	<script type="text/javascript" src="std.js"> </script>
+	]]>
+</fragment>
+
+<fragment id="banner">
+	<![CDATA[
+	<?_wxt image id="bs-2" link="yes"?>
+	<hr/>
+	]]>
+</fragment>
+
+<fragment id="leftcolumn">
+	<![CDATA[
+	<?_wxt modulemenu summary="no"?>
+		<div style="margin-left:20px; margin-top:20px">
+		</div>
+	]]>
+</fragment>
+
+<fragment id="signature">
+	<![CDATA[
+	<hr/>
+	<div>bs with <?_wxt stamp?></div>
+	]]>
+</fragment>
+</fragments>

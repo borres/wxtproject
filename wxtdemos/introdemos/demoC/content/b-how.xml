@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>source page2</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="GENERATOR" content="WXT"></meta>
+	<link rel="STYLESHEET" href="template.css"/>
+	<link rel="STYLESHEET" href="wxtstyle.css"/>
+</head>
+
+<body>
+<h1>How</h1>
+
+
+<div class="mainblock">
+<p>
+ Not how to travel, but how this site is built.
+</p>
+<p>
+ The script:
+</p>
+<div>
+<?_wxt expandsimple location="${_scriptcatalog}/script.xml" code="xmlcode"?>
+</div>
+
+<p>
+ Template for this page and the welcome page:
+</p>
+<div>
+<?_wxt expandsimple location="${_scriptcatalog}/gfx/p_template.xml" code="xmlcode"?>
+</div>
+<p>
+ Template for the pages for each destination:
+</p>
+<div>
+<?_wxt expandsimple location="${_scriptcatalog}/gfx/q_template.xml" code="xmlcode"?>
+</div>
+<p>
+ and the fragments:
+</p>
+<div>
+<?_wxt expandsimple location="../gfx/myfragments.xml" code="xmlcode"?>
+</div>
+<p>
+ The sitespesific styles:
+</p>
+<div>
+<?_wxt expandsimple location="../gfx/template.css" code="mlcode"?>
+</div>
+</div><!-- mainblock -->
+
+</body>
+</html>
+

@@ -1,0 +1,69 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">html</span>&gt;
+&lt;<span class="tagname">head</span>&gt;
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+&lt;<span class="tagname">h1</span>&gt;Images&lt;/<span class="tagname">h1</span>&gt;
+
+&lt;<span class="tagname">div</span>&gt;Inspect content source:
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand location="imagessource.txt" sourcelocation="images1.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;Inspect script source:
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand location="scriptsource.txt" sourcelocation="script.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;Inspect script source of imagesfile:imagedescription.xml:
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand location="desc1.txt" sourcelocation="myimages/imagedescription.xml"  code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;Inspect script source of imagesfile:imagedescription2.xml:
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand location="desc2.txt" sourcelocation="myimages/imagedescription2.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;Inspect script source of imagesfile:imagedescription3.xml:
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand location="desc3.txt" sourcelocation="{absolutes}imagedescription3.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;Inspect script source of imagesfile:imagedescription4.xml:
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand location="desc4.txt" sourcelocation="{absolutes}imagedescription4.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+
+&lt;<span class="tagname">hr</span>/&gt;
+
+&lt;<span class="tagname">h3</span>&gt;Case 1&lt;/<span class="tagname">h3</span>&gt;
+&lt;<span class="tagname">p</span>&gt;    Testing import of images from local file and remote source, both with zoom effect&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt image  id="bs-orig1" newid="heisann" subtext="yes"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span> <span class="attname">style</span>="<span class="attvalue">border-width:thin;padding:7px</span>"&gt;
+    <span class="process">&lt;?_wxt image  id="bs-orig1" width="40px"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+
+&lt;<span class="tagname">h3</span>&gt;Case 2&lt;/<span class="tagname">h3</span>&gt;
+&lt;<span class="tagname">p</span>&gt;Testing import of images from remote file and remote source&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt image  id="bs5-remote-remote" subtext="yes"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+
+&lt;<span class="tagname">h3</span>&gt;Case 3&lt;/<span class="tagname">h3</span>&gt;
+&lt;<span class="tagname">p</span>&gt;Testing import of images from remote file and other remote source&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt image  id="bs6-remote-other-remote" subtext="yes"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+
+&lt;<span class="tagname">h3</span>&gt;Case 4&lt;/<span class="tagname">h3</span>&gt;
+&lt;<span class="tagname">p</span>&gt;Testing import of images from local file and local source&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">a</span> <span class="attname">href</span>="<span class="attvalue">http://www.ia.hiof.no/~borres/</span>"&gt;<span class="process">&lt;?_wxt image  id="bs1-local" subtext="yes"?&gt;</span>&lt;/<span class="tagname">a</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

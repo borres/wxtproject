@@ -1,0 +1,150 @@
+<pre class="csharpcode">
+<span class="word">using</span> System;
+<span class="word">using</span> System.Collections.Generic;
+<span class="word">using</span> System.Linq;
+<span class="word">using</span> System.Text;
+<span class="word">using</span> System.Drawing;
+<span class="word">using</span> System.Drawing.Drawing2D;
+<span class="word">using</span> System.Windows.Forms;
+
+<span class="word">namespace</span> pieces
+{
+
+    <span class="word">class</span> brikke
+    {
+        #region init
+        <span class="comment">// attributter</span>
+        PointF[] polygon;
+        Rectangle box;
+        Point center;
+        Brush HILITE_BRUSH = Brushes.Red;
+        Brush NORMAL_BRUSH = Brushes.Blue;
+        Brush m_brush;
+        Control m_owner;
+        Matrix m_Matrix=<span class="word">new</span> Matrix();
+        
+
+        <span class="word">public</span> brikke(Control owner,PointF[] p)
+        {
+            <span class="comment">// polygon is closed</span>
+            polygon = p;
+            m_brush = NORMAL_BRUSH;
+            m_owner = owner;
+            makeBox();
+            makeCenter();
+        }
+        
+        <span class="word">private</span> <span class="word">void</span> makeBox()
+        {
+            <span class="word">float</span> minx = Int32.MaxValue;
+            <span class="word">float</span> miny = Int32.MaxValue;
+            <span class="word">float</span> maxx = Int32.MinValue;
+            <span class="word">float</span> maxy = Int32.MinValue;
+            <span class="word">for</span> (<span class="word">int</span> ix = 0; ix &lt; polygon.Length; ix++)
+            {
+                minx = Math.Min(minx, polygon[ix].X);
+                miny = Math.Min(miny, polygon[ix].Y);
+                maxx = Math.Max(maxx, polygon[ix].X);
+                maxy = Math.Max(maxy, polygon[ix].Y);
+            }
+            box = <span class="word">new</span> Rectangle((<span class="word">int</span>)minx - 2, (<span class="word">int</span>)miny - 2,
+                (<span class="word">int</span>)maxx - (<span class="word">int</span>)minx + 4, (<span class="word">int</span>)maxy - (<span class="word">int</span>)miny + 4);
+        }
+        
+        <span class="word">private</span> <span class="word">void</span> makeCenter()
+        {
+            <span class="word">float</span> xsum=0;
+            <span class="word">float</span> ysum = 0;
+            <span class="word">for</span> (<span class="word">int</span> ix = 0; ix &lt; polygon.Length - 1; ix++)
+            {
+                xsum += polygon[ix].X-box.Left;
+                ysum += polygon[ix].Y-box.Top;
+            }
+            center.X = Convert.ToInt32(box.Left+(xsum / (polygon.Length - 1)));
+            center.Y = Convert.ToInt32(box.Top+(ysum / (polygon.Length - 1)));
+        }
+        #endregion init
+
+#region invalreg
+        <span class="word">public</span> Region Reg
+        {
+           get {Region r=<span class="word">new</span> Region(<span class="word">new</span> Rectangle(box.X-2,box.Top-2,box.Width+4,box.Height+4)); 
+               r.Transform(m_Matrix); 
+               <span class="word">return</span> r;}
+        }
+#endregion invalreg
+
+        <span class="word">public</span> <span class="word">void</span> hiLite(Boolean on)
+        {
+            <span class="word">if</span> (on)
+                m_brush = HILITE_BRUSH;
+            <span class="word">else</span>
+                m_brush = NORMAL_BRUSH;
+        }
+        #region action
+        <span class="word">public</span> <span class="word">void</span> move(<span class="word">int</span> dx, <span class="word">int</span> dy)
+        {
+            m_Matrix.Translate(dx, dy,MatrixOrder.Append);
+        }
+
+        <span class="word">public</span> <span class="word">void</span> rotate(<span class="word">int</span> x, <span class="word">int</span> lastX, <span class="word">int</span> y, <span class="word">int</span> lastY)
+        {
+            Matrix m = m_Matrix.Clone();
+            m.Invert();
+            Point[] pts = <span class="word">new</span> Point[2] { <span class="word">new</span> Point(x, y), <span class="word">new</span> Point(lastX, lastY) };
+            m.TransformPoints(pts);
+            <span class="comment">// fixed anglesize</span>
+            <span class="word">float</span> v = 2.0f;
+            <span class="comment">// direction based on quadrant and direction</span>
+            <span class="word">if</span> (   ((pts[0].X &gt; center.X)  &amp;&amp; (pts[0].Y &lt; pts[1].Y))
+                || ((pts[0].X &lt;= center.X) &amp;&amp; (pts[0].Y &gt;= pts[1].Y)))
+                v = -v;            
+            m_Matrix.RotateAt(v,center, MatrixOrder.Prepend);
+        }
+
+        <span class="word">public</span> <span class="word">void</span> Draw()
+        {
+            Graphics DC = m_owner.CreateGraphics();
+            DC.ResetTransform();
+            DC.MultiplyTransform(m_Matrix);
+            
+            DC.FillPolygon(m_brush, polygon);
+            DC.DrawLines(<span class="word">new</span> Pen(Brushes.Black), polygon);
+
+            <span class="comment">// mark center</span>
+            DC.DrawLine(<span class="word">new</span> Pen(Brushes.Black), center.X-10,center.Y,center.X+10,center.Y);
+            DC.DrawLine(<span class="word">new</span> Pen(Brushes.Black), center.X,center.Y-10,center.X,center.Y+10);
+
+            <span class="comment">// mark box</span>
+            DC.DrawRectangle(<span class="word">new</span> Pen(Brushes.DarkGray), box);
+            DC.ResetTransform();
+        }
+        #endregion action
+
+        <span class="word">public</span> Boolean polygonHit(Point p)
+        {
+            Matrix m = m_Matrix.Clone();
+            m.Invert();
+            Point[] pts = <span class="word">new</span> Point[1] { <span class="word">new</span> Point(p.X, p.Y) };
+            m.TransformPoints(pts);
+            <span class="word">return</span> calculations.InsidePolygon(polygon, pts[0].X,pts[0].Y);
+        }
+
+        <span class="word">public</span> Boolean WillRotate(Point p)
+        {
+            Matrix m = m_Matrix.Clone();
+            m.Invert();
+            Point[] pts = <span class="word">new</span> Point[1] { <span class="word">new</span> Point(p.X, p.Y) };
+            m.TransformPoints(pts);
+            
+            <span class="comment">// reasonable distance from center ?</span>
+            <span class="word">double</span> dist = Math.Sqrt(
+                (pts[0].X - center.X) * (pts[0].X - center.X) + 
+                (pts[0].Y - center.Y) * (pts[0].Y - center.Y));
+            
+            <span class="word">return</span> dist &gt; Math.Min(box.Width, box.Height) / 3;
+        }
+
+    }
+}
+</pre>

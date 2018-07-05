@@ -1,0 +1,1521 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="no">
+<head>
+<title>Tiger - Wikipedia</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta content="text/css" http-equiv="Content-Style-Type"/>
+<meta content="MediaWiki 1.16wmf4" name="generator"/>
+<link href="/w/index.php?title=Tiger&amp;action=edit" rel="alternate" title="Rediger" type="application/x-wiki"/>
+<link href="/w/index.php?title=Tiger&amp;action=edit" rel="edit" title="Rediger"/>
+<link href="http://no.wikipedia.org/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/w/opensearch_desc.php" rel="search" title="Wikipedia (no)" type="application/opensearchdescription+xml"/>
+<link href="http://creativecommons.org/licenses/by-sa/3.0/" rel="copyright"/>
+<link href="/w/index.php?title=Spesial:Siste_endringer&amp;feed=atom" rel="alternate" title="Wikipedia Atom-mating" type="application/atom+xml"/>
+<link href="http://bits.wikimedia.org/skins-1.5/vector/main-ltr.css?283u" media="screen" rel="stylesheet" type="text/css"/>
+<link href="http://bits.wikimedia.org/skins-1.5/common/shared.css?283u" media="screen" rel="stylesheet" type="text/css"/>
+<link href="http://bits.wikimedia.org/skins-1.5/common/commonPrint.css?283u" media="print" rel="stylesheet" type="text/css"/>
+<link href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/combined.min.css?117" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" media="all" rel="stylesheet" type="text/css"/>
+<link href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" media="all" rel="stylesheet" type="text/css"/>
+<link href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" media="print" rel="stylesheet" type="text/css"/>
+<link href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" media="handheld" rel="stylesheet" type="text/css"/>
+<link href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" media="all" rel="stylesheet" type="text/css"/>
+<link href="/w/index.php?title=-&amp;action=raw&amp;maxage=2678400&amp;gen=css" media="all" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+var skin="vector",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://no.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Tiger",
+wgTitle="Tiger",
+wgAction="view",
+wgArticleId=34790,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="no",
+wgContentLanguage="no",
+wgBreakFrames=false,
+wgCurRevisionId=7735346,
+wgVersion="1.16wmf4",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=[",	.", " 	,"],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Portal:Forside",
+wgFormattedNamespaces={"-2": "Medium", "-1": "Spesial", "0": "", "1": "Diskusjon", "2": "Bruker", "3": "Brukerdiskusjon", "4": "Wikipedia", "5": "Wikipedia-diskusjon", "6": "Fil", "7": "Fildiskusjon", "8": "MediaWiki", "9": "MediaWiki-diskusjon", "10": "Mal", "11": "Maldiskusjon", "12": "Hjelp", "13": "Hjelpdiskusjon", "14": "Kategori", "15": "Kategoridiskusjon", "100": "Portal", "101": "Portaldiskusjon"},
+wgNamespaceIds={"medium": -2, "spesial": -1, "": 0, "diskusjon": 1, "bruker": 2, "brukerdiskusjon": 3, "wikipedia": 4, "wikipedia-diskusjon": 5, "fil": 6, "fildiskusjon": 7, "mediawiki": 8, "mediawiki-diskusjon": 9, "mal": 10, "maldiskusjon": 11, "hjelp": 12, "hjelpdiskusjon": 13, "kategori": 14, "kategoridiskusjon": 15, "portal": 100, "portaldiskusjon": 101, "bilde": 6, "bildediskusjon": 7, "image": 6, "image_talk": 7},
+wgSiteName="Wikipedia",
+wgCategories=["Utmerkede artikler", "Store kattedyr", "Anbefalte artikler/de", "Utmerkede artikler/fi", "Utmerkede artikler/ru", "Utmerkede artikler/th", "Utmerkede artikler/vi", "Utmerkede artikler/uk", "Utmerkede artikler/ar", "Utmerkede artikler/la", "Utmerkede artikler/mr", "Anbefalte artikler/fr", "Utmerkede artikler/mk", "Utmerkede artikler/ms", "Anbefalte artikler/uk"],
+wgDBname="nowiki",
+wgMWSuggestTemplate="http://no.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["med forslag", "ingen forslag"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgCollapsibleNavBucketTest=false,
+wgCollapsibleNavForceNewVersion=false,
+wgVectorPreferences={"collapsiblenav": {"enable": 1}, "editwarning": {"enable": 1}, "simplesearch": {"enable": 1, "disablesuggest": 0}},
+wgVectorEnabledModules={"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "simplesearch": true},
+Geo={"city": "", "country": ""},
+wgNoticeProject="wikipedia";
+</script>
+    <script src="http://bits.wikimedia.org/skins-1.5/common/wikibits.js?283u" type="text/javascript"/>
+<script src="http://bits.wikimedia.org/skins-1.5/common/jquery.min.js?283u" type="text/javascript"/>
+<script src="http://bits.wikimedia.org/skins-1.5/common/ajax.js?283u" type="text/javascript"/>
+<script src="http://bits.wikimedia.org/skins-1.5/common/mwsuggest.js?283u" type="text/javascript"/>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?283u" type="text/javascript"/>
+<script src="http://bits.wikimedia.org/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?283u" type="text/javascript"/>
+<script type="text/javascript">mw.usability.addMessages({'vector-collapsiblenav-more':'Flere språk','vector-editwarning-warning':'Ved å forlate siden vil du miste alle endringer du har utført.\nDenne advarselen kan slås av under Redigering i instillingene dine.','vector-simplesearch-search':'Søk','vector-simplesearch-containing':'inneholder …'});</script>
+<script src="/wiki/Spesial:BannerController?283u" type="text/javascript"/>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.5/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;283u" type="text/javascript"/>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Tiger skin-vector">
+		<div class="noprint" id="mw-page-base"/>
+		<div class="noprint" id="mw-head-base"/>
+		<!-- content -->
+		<div id="content">
+			<a id="top"/>
+			<div id="mw-js-message" style="display:none;"/>
+						<!-- sitenotice -->
+			<div id="siteNotice">
+        <!-- centralNotice loads here -->
+      </div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 class="firstHeading" id="firstHeading">Tiger</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">Fra Wikipedia, den frie encyklopedi</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"/>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Gå til: <a href="#mw-head">navigasjon</a>,
+					<a href="#p-search">søk</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<div class="noprint dablink">
+          <span id="bksicon" style="position:relative;top:-2px;left:-2px;">
+            <img alt="" height="14" src="wikiback/no_wikipedia_org_wiki_Tiger/18px_Disambig_dark.svg.png" width="18"/>
+          </span>
+          <i>«Tiger» har <a href="/wiki/Tiger_(andre_betydninger)" title="Tiger (andre betydninger)">flere betydninger</a>.</i>
+        </div>
+<table align="right" border="1" cellpadding="4" cellspacing="0" style="margin: 0 0 2em 2em; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 96%;" width="260px">
+<tr>
+<th align="center" bgcolor="#66CC33" colspan="2">
+              <font>
+                <b>Tiger</b>
+              </font>
+            </th>
+</tr>
+<tr>
+<td align="center" colspan="2">
+              <a class="image" href="/wiki/Fil:Panthera_tigris_tigris.jpg" title="Bengaltiger. Foto: John og Karen Hollingsworth / U.S. Fish and Wildlife Service">
+                <img alt="Bengaltiger. Foto: John og Karen Hollingsworth / U.S. Fish and Wildlife Service" height="174" src="wikiback/no_wikipedia_org_wiki_Tiger/260px_Panthera_tigris_tigris.jpg" width="260"/>
+              </a>
+              <br/>
+<small>Bengaltiger. Foto: John og Karen Hollingsworth / U.S. Fish and Wildlife Service</small>
+            </td>
+</tr>
+<tr>
+<td bgcolor="#CCFF99" nowrap="nowrap" valign="top">
+              <a href="/wiki/Nomenklatur_(biologi)" title="Nomenklatur (biologi)">Vitenskapelig(e)<br/>
+navn</a>:</td>
+<td>
+              <i>
+                <b>Panthera tigris</b>
+              </i>
+              <br/>
+<small>
+                <a href="/wiki/Carl_von_Linn%C3%A9" title="Carl von Linné">L.</a>, <a href="/wiki/1758" title="1758">1758</a>
+              </small>
+            </td>
+</tr>
+<tr>
+<td bgcolor="#CCFF99" valign="top">Norsk(e) navn:</td>
+<td>tiger</td>
+</tr>
+<tr>
+<td bgcolor="#CCFF99" valign="top">
+              <a href="/wiki/Gruppe_(biologi)#Overordnede_og_delgrupper" title="Gruppe (biologi)">Hører til</a>:</td>
+<td>
+              <a href="/wiki/Br%C3%B8lekatter" title="Brølekatter">brølekatter</a>,<br/>
+<a href="/wiki/Store_kattedyr" title="Store kattedyr">store kattedyr</a>,<br/>
+<a class="mw-redirect" href="/wiki/Kattedyr" title="Kattedyr">kattedyr</a>
+            </td>
+</tr>
+<tr>
+<td bgcolor="#CCFF99" colspan="2" valign="top">
+              <a href="/wiki/IUCNs_r%C3%B8dliste" title="IUCNs rødliste">IUCNs rødliste</a>: <sup class="reference" id="cite_ref-0">
+                <a href="#cite_note-0">[1]</a>
+              </sup>
+            </td>
+</tr>
+<tr>
+<td colspan="2">
+              <small>
+                <b>ver 3.1</b>
+              </small>
+<div>
+                <map id="ImageMap_1_1623003513" name="ImageMap_1_1623003513">
+<area alt="Utryddet" coords="23,47,16" href="/wiki/IUCNs_r%C3%B8dliste" shape="circle" title="Utryddet"/>
+<area alt="Utryddet i vill tilstand" coords="55,47,16" href="/wiki/IUCNs_r%C3%B8dliste" shape="circle" title="Utryddet i vill tilstand"/>
+<area alt="Kritisk truet" coords="87,47,16" href="/wiki/IUCNs_r%C3%B8dliste" shape="circle" title="Kritisk truet"/>
+<area alt="Sterkt truet" coords="119,47,16" href="/wiki/IUCNs_r%C3%B8dliste" shape="circle" title="Sterkt truet"/>
+<area alt="Sårbar" coords="150,47,16" href="/wiki/IUCNs_r%C3%B8dliste" shape="circle" title="Sårbar"/>
+<area alt="Nær truet" coords="182,47,16" href="/wiki/IUCNs_r%C3%B8dliste" shape="circle" title="Nær truet"/>
+<area alt="Livskraftig" coords="213,47,16" href="/wiki/IUCNs_r%C3%B8dliste" shape="circle" title="Livskraftig"/>
+                </map>
+                <img alt="Status iucn3.1 EN-no.svg" height="64" src="wikiback/no_wikipedia_org_wiki_Tiger/240px_Status_iucn3.1_EN_no.svg.png" usemap="#ImageMap_1_1623003513" width="240"/>
+              </div>
+<p>EN — <a href="/wiki/IUCNs_r%C3%B8dliste#R.C3.B8dlistestatus:_versjon_3.1" title="IUCNs rødliste">
+                  <i>Sterkt truet</i>
+                </a>
+              </p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#CCFF99" valign="top">
+              <a href="/wiki/Habitat" title="Habitat">Habitat</a>:</td>
+<td>fra <a href="/wiki/Tropisk_regnskog" title="Tropisk regnskog">tropisk regnskog</a> til <a href="/wiki/Boreal_barskog" title="Boreal barskog">boreal barskog</a>
+            </td>
+</tr>
+<tr>
+<td bgcolor="#CCFF99" valign="top">Utbredelse:</td>
+<td>se kartet</td>
+</tr>
+<tr>
+<td colspan="2">
+              <a class="image" href="/wiki/Fil:Tiger_distribution3.PNG" title="Utbredelseskart for Tiger">
+                <img alt="Utbredelseskart for Tiger" height="203" src="wikiback/no_wikipedia_org_wiki_Tiger/260px_Tiger_distribution3.PNG" width="260"/>
+              </a>
+              <br/>
+<small>Utbredelse av tiger i <a href="/wiki/1900" title="1900">1900</a> og i <a href="/wiki/1990" title="1990">1990</a>
+              </small>
+            </td>
+</tr>
+<tr>
+<td bgcolor="#CCFF99" valign="top">
+              <a href="/wiki/Underart" title="Underart">Underarter</a>:</td>
+<td>
+<ul>
+<li>
+                  <a href="/wiki/Bengaltiger" title="Bengaltiger">bengaltiger</a>
+                </li>
+<li>
+                  <a href="/wiki/Indokinatiger" title="Indokinatiger">indokinatiger</a>
+                </li>
+<li>
+                  <a href="/wiki/Malaysiatiger" title="Malaysiatiger">malaysiatiger</a>
+                </li>
+<li>
+                  <a href="/wiki/Sibirtiger" title="Sibirtiger">sibirtiger</a>
+                </li>
+<li>
+                  <a href="/wiki/Sumatratiger" title="Sumatratiger">sumatratiger</a>
+                </li>
+<li>
+                  <a href="/wiki/S%C3%B8rkinatiger" title="Sørkinatiger">sørkinatiger</a>
+                </li>
+</ul>
+</td>
+</tr>
+</table>
+<p>
+          <b>Tiger</b> (<i>Panthera tigris</i>) er et stort <a href="/wiki/Rovpattedyr" title="Rovpattedyr">rovpattedyr</a> og det største av alle <a class="mw-redirect" href="/wiki/Kattedyr" title="Kattedyr">kattedyr</a>. <a href="/wiki/Art" title="Art">Arten</a> er idag sterkt truet (EN). Tigrene skilte seg ut som gruppe for ca. 72 000–108 000 <a href="/wiki/%C3%85r" title="År">år</a> siden. De siste 100 år har 94% av alle verdens tigre blitt utryddet. Trolig finnes kun ca. 5 000-7 000 ville tigre igjen i verden. I tillegg kommer et antall som lever i fangenskap. Opprinnelig var åtte <a href="/wiki/Underart" title="Underart">underarter</a> klassifisert, men tre av disse regnes som utdødd. Et 20-årig forskningsprosjekt som endte i <a href="/wiki/Desember" title="Desember">desember</a> <a href="/wiki/2004" title="2004">2004</a> og omhandlet en genetisk studie av 134 tigre spredd over hele <a href="/wiki/Asia" title="Asia">Asia</a>, anbefalte imidlertid å dele tigrene inn i ni underarter.</p>
+<table class="toc" id="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Innhold</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1">
+                  <a href="#Beskrivelse">
+                    <span class="tocnumber">1</span> <span class="toctext">Beskrivelse</span>
+                  </a>
+                </li>
+<li class="toclevel-1 tocsection-2">
+                  <a href="#Utbredelse">
+                    <span class="tocnumber">2</span> <span class="toctext">Utbredelse</span>
+                  </a>
+                </li>
+<li class="toclevel-1 tocsection-3">
+                  <a href="#Habitat">
+                    <span class="tocnumber">3</span> <span class="toctext">Habitat</span>
+                  </a>
+                </li>
+<li class="toclevel-1 tocsection-4">
+                  <a href="#Atferd">
+                    <span class="tocnumber">4</span> <span class="toctext">Atferd</span>
+                  </a>
+<ul>
+<li class="toclevel-2 tocsection-5">
+                      <a href="#Ern.C3.A6ring">
+                        <span class="tocnumber">4.1</span> <span class="toctext">Ernæring</span>
+                      </a>
+                    </li>
+<li class="toclevel-2 tocsection-6">
+                      <a href="#Reproduksjon">
+                        <span class="tocnumber">4.2</span> <span class="toctext">Reproduksjon</span>
+                      </a>
+                    </li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7">
+                  <a href="#Systematikk">
+                    <span class="tocnumber">5</span> <span class="toctext">Systematikk</span>
+                  </a>
+<ul>
+<li class="toclevel-2 tocsection-8">
+                      <a href="#Underarter">
+                        <span class="tocnumber">5.1</span> <span class="toctext">Underarter</span>
+                      </a>
+<ul>
+<li class="toclevel-3 tocsection-9">
+                          <a href="#Sibirtiger">
+                            <span class="tocnumber">5.1.1</span> <span class="toctext">Sibirtiger</span>
+                          </a>
+                        </li>
+<li class="toclevel-3 tocsection-10">
+                          <a href="#S.C3.B8rkinatiger">
+                            <span class="tocnumber">5.1.2</span> <span class="toctext">Sørkinatiger</span>
+                          </a>
+                        </li>
+<li class="toclevel-3 tocsection-11">
+                          <a href="#Indokinatiger">
+                            <span class="tocnumber">5.1.3</span> <span class="toctext">Indokinatiger</span>
+                          </a>
+                        </li>
+<li class="toclevel-3 tocsection-12">
+                          <a href="#Malaysiatiger">
+                            <span class="tocnumber">5.1.4</span> <span class="toctext">Malaysiatiger</span>
+                          </a>
+                        </li>
+<li class="toclevel-3 tocsection-13">
+                          <a href="#Sumatratiger">
+                            <span class="tocnumber">5.1.5</span> <span class="toctext">Sumatratiger</span>
+                          </a>
+                        </li>
+<li class="toclevel-3 tocsection-14">
+                          <a href="#Bengaltiger">
+                            <span class="tocnumber">5.1.6</span> <span class="toctext">Bengaltiger</span>
+                          </a>
+                        </li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-15">
+                      <a href="#Utd.C3.B8dde_underarter">
+                        <span class="tocnumber">5.2</span> <span class="toctext">Utdødde underarter</span>
+                      </a>
+<ul>
+<li class="toclevel-3 tocsection-16">
+                          <a href="#Balitiger">
+                            <span class="tocnumber">5.2.1</span> <span class="toctext">Balitiger</span>
+                          </a>
+                        </li>
+<li class="toclevel-3 tocsection-17">
+                          <a href="#Javatiger">
+                            <span class="tocnumber">5.2.2</span> <span class="toctext">Javatiger</span>
+                          </a>
+                        </li>
+<li class="toclevel-3 tocsection-18">
+                          <a href="#Kaspitiger">
+                            <span class="tocnumber">5.2.3</span> <span class="toctext">Kaspitiger</span>
+                          </a>
+                        </li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19">
+                      <a href="#Trusler">
+                        <span class="tocnumber">5.3</span> <span class="toctext">Trusler</span>
+                      </a>
+                    </li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20">
+                  <a href="#Annet">
+                    <span class="tocnumber">6</span> <span class="toctext">Annet</span>
+                  </a>
+                </li>
+<li class="toclevel-1 tocsection-21">
+                  <a href="#Referanser">
+                    <span class="tocnumber">7</span> <span class="toctext">Referanser</span>
+                  </a>
+                </li>
+<li class="toclevel-1 tocsection-22">
+                  <a href="#Litteratur">
+                    <span class="tocnumber">8</span> <span class="toctext">Litteratur</span>
+                  </a>
+                </li>
+<li class="toclevel-1 tocsection-23">
+                  <a href="#Eksterne_lenker">
+                    <span class="tocnumber">9</span> <span class="toctext">Eksterne lenker</span>
+                  </a>
+                </li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "vis"; var tocHideText = "skjul"; showTocToggle(); } 
+//]]>
+</script>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=1" title="Rediger avsnitt: Beskrivelse">rediger</a>]</span> <span class="mw-headline" id="Beskrivelse">Beskrivelse</span>
+        </h2>
+<p>Tigre er lett gjenkjennelige på grunn av sitt karakteristiske stripemønster. Som oftest er de gulorange i grunnfargen. Grunnfargen varierer imidlertid fra nærmest hvit, via gyllengul og rødlig orange, til nesten sort. Det forekommer også helhvite tigre (kalt snøhvit) uten synlig stripemønster. Helsorte tigre er ikke kjent, men en sort tiger med lysere striper langs flankene ble felt i <a href="/wiki/India" title="India">India</a> på <a class="mw-redirect" href="/wiki/1990-tallet" title="1990-tallet">1990-tallet</a>. Skinnet ble beslaglagt fra en krypskytter i hovedstadsterritoriet <a href="/wiki/Delhi" title="Delhi">Delhi</a> i <a href="/wiki/1992" title="1992">1992</a>. Det går også rykter om en blå tiger (kalt <i>maltesertiger</i>). Den skal ha en blåaktig grunnfarge med mørk grå striper langs sidene. De fleste rapporter om slike tigre er fra <a href="/wiki/Fujian" title="Fujian">Fujian</a>-provinsen i <a href="/wiki/Folkerepublikken_Kina" title="Folkerepublikken Kina">Kina</a>, men de har ikke latt seg verifisere så langt.</p>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:222px;">
+            <a class="image" href="/wiki/Fil:White_tigers_drinking.jpg">
+              <img alt="" class="thumbimage" height="214" src="wikiback/no_wikipedia_org_wiki_Tiger/220px_White_tigers_drinking.jpg" width="220"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:White_tigers_drinking.jpg" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Hvite tigre er verken ekte <a class="mw-redirect" href="/wiki/Albino" title="Albino">albinoer</a> eller en egen underart, men en fargevarietet som har blå øyne. Det finnes også helt hvite tigre uten striper, men det har aldri vært registrert helt sorte eksemplarer.
+<div style="font-size:85%">Foto: Shuan Lo</div>
+</div>
+</div>
+</div>
+<p>Generelt kan man si at tigre som holder til i <a href="/wiki/Tropisk_klima" title="Tropisk klima">tropiske strøk</a> har kortere og mindre tett pels enn tigre i <a href="/wiki/Temperert_klima" title="Temperert klima">tempererte strøk</a>. Pelshårene er gjerne ca. 7–35 <a href="/wiki/Millimeter" title="Millimeter">mm</a> lange i tropiske strøk, mens pelshårene på en sibirtiger gjerne er ca. 40–105 mm lange. En sumatratiger har gjerne ca. 1700 pelshår per <a class="mw-redirect" href="/wiki/Cm%C2%B2" title="Cm²">cm²</a>, mens sibirtigeren har ca. 3 000 pelshår per cm².</p>
+<p>Den generelle kroppsstørrelsen varierer mellom underartene. <a href="/wiki/Balitiger" title="Balitiger">Balitiger</a> var den minste av alle underartene da den levde. Den var ikke særlig mye større enn en <a class="mw-redirect" href="/wiki/Leopard_(dyr)" title="Leopard (dyr)">leopard</a>. Hannen veide gjerne ca. 90–100 kg, mens hunnen ikke veide mer enn ca. 65–80 kg. Den største tigeren er <a href="/wiki/Sibirtiger" title="Sibirtiger">sibirtiger</a>. Hannen kan veie opp mot 325 kg og bli nærmere 330 cm lang, målt fra snutespiss til halerot. Hunnen blir imidlertid mye mindre, som regel ca. 100–167 kg.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+            <a class="image" href="/wiki/Fil:Tigergebiss.jpg">
+              <img alt="" class="thumbimage" height="330" src="wikiback/no_wikipedia_org_wiki_Tiger/220px_Tigergebiss.jpg" width="220"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:Tigergebiss.jpg" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Tigre har formidable rovtenner</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+            <a class="image" href="/wiki/Fil:Sib_tiger.jpg">
+              <img alt="" class="thumbimage" height="227" src="wikiback/no_wikipedia_org_wiki_Tiger/220px_Sib_tiger.jpg" width="220"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:Sib_tiger.jpg" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Sibirtiger</div>
+</div>
+</div>
+<p>Tigre har en langstrakt og svært muskuløs kropp med kraftige lemmer og store labber. Som alle katter, unntatt <a href="/wiki/Gepard" title="Gepard">geparden</a>, har også tigeren klør som kan trekkes inn. Klørne i seg selv blir gjerne ca. 8–12 <a href="/wiki/Centimeter" title="Centimeter">cm</a> lange, avhengig av dyrets generelle størrelse. Baklemmene er lenger enn framlemmene, noe som setter dem i stand til å hoppe svært høyt eller langt. Hopp på nærmere 10 m i lengde er blitt målt.</p>
+<p>Hodet er rundt og er utstyrt med svært kraftige kjever og forholdsvis små runde ører. Øynene er helst ravgule (blå hos hvite individer) og har runde pupiller. Som andre katter har også tigre et reflekterende belegg i øyet som setter dem i stand til å se bedre i mørke. I så måte regner man med at tigre ser opp mot 6 ganger bedre enn et <a href="/wiki/Menneske" title="Menneske">menneske</a>. Voksne tigre har 30 tenner, der rovtennene (hjørnetennene) kan bli ca. 5,5–6,6 cm lange.</p>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=2" title="Rediger avsnitt: Utbredelse">rediger</a>]</span> <span class="mw-headline" id="Utbredelse">Utbredelse</span>
+        </h2>
+<p>Tigeren er i dag utbredt i kun fjorten av de opprinnelige tjuefire landene den hadde tilhold i. Dette er <a href="/wiki/Bangladesh" title="Bangladesh">Bangladesh</a>, <a href="/wiki/Bhutan" title="Bhutan">Bhutan</a>, <a href="/wiki/India" title="India">India</a>, <a class="mw-redirect" href="/wiki/Myanmar" title="Myanmar">Myanmar</a> (tidligere <a href="/wiki/Burma" title="Burma">Burma</a>), <a href="/wiki/Nepal" title="Nepal">Nepal</a>, <a href="/wiki/Folkerepublikken_Kina" title="Folkerepublikken Kina">Kina</a>, <a href="/wiki/Nord-Korea" title="Nord-Korea">Nord-Korea</a>, <a href="/wiki/Russland" title="Russland">Russland</a>, <a href="/wiki/Kambodsja" title="Kambodsja">Kambodsja</a>, <a href="/wiki/Laos" title="Laos">Laos</a>, <a href="/wiki/Malaysia" title="Malaysia">Malaysia</a>, <a href="/wiki/Thailand" title="Thailand">Thailand</a>, <a href="/wiki/Indonesia" title="Indonesia">Indonesia</a> og <a href="/wiki/Vietnam" title="Vietnam">Vietnam</a>. Om man ser bort fra populasjonen av <a href="/wiki/Bengaltiger" title="Bengaltiger">bengaltiger</a> i India, kan man nesten ikke snakke om bestander av tiger, men kun om spredte individer</p>
+<p>I hovedsak kan man hevde at tigerens levesteder finnes sør og øst i Asia, samt i regn- og nåleskogene i Amurområdet og Ussuri i Sibir i Russland.</p>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=3" title="Rediger avsnitt: Habitat">rediger</a>]</span> <span class="mw-headline" id="Habitat">Habitat</span>
+        </h2>
+<p>Tigerens <a href="/wiki/Habitat" title="Habitat">habitat</a> er svært variert. De forekommer i <a href="/wiki/Tropisk_regnskog" title="Tropisk regnskog">tropisk regnskog</a>, <a href="/wiki/Tropisk_lauvfellende_skog" title="Tropisk lauvfellende skog">tropisk lauvfellende skog</a>, <a href="/wiki/Temperert_lauvskog" title="Temperert lauvskog">temperert lauvskog</a> og <a class="mw-redirect" href="/wiki/Boreale_barskoger" title="Boreale barskoger">boreale barskoger</a> dekket med <a href="/wiki/Sn%C3%B8" title="Snø">snø</a>. Den trives best når <a href="/wiki/Skog" title="Skog">skogen</a> ikke står for tett, men det er også kjent at den ferdes der det finnes <a href="/wiki/Mangrove" title="Mangrove">mangrovetrær</a>. Tigre er også utmerkede svømmere og trives godt i nær tilknytning til <a href="/wiki/Vann" title="Vann">vann</a>, der de av og til kan tilbringe deler av den varmeste perioden på dagen. Det er også kjent at tigeren kan pare seg i dette elementet. Det finnes også tigre der det er <a href="/wiki/Fjell" title="Fjell">fjell</a> og <a href="/wiki/Savanne" title="Savanne">savanne</a>.</p>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=4" title="Rediger avsnitt: Atferd">rediger</a>]</span> <span class="mw-headline" id="Atferd">Atferd</span>
+        </h2>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:222px;">
+            <a class="image" href="/wiki/Fil:11-67.jpg">
+              <img alt="" class="thumbimage" height="161" src="wikiback/no_wikipedia_org_wiki_Tiger/220px_11_67.jpg" width="220"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:11-67.jpg" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Tigre elsker vann
+<div style="font-size:85%">Foto: Eva Hejda</div>
+</div>
+</div>
+</div>
+<p>Tigre lever som solitære dyr utenom paringstiden. De etablerer et territorium og er gjerne svært territoriale. Territorienes størrelse avhenger av hvor de holder til. I områder med rikelig tilgang på byttedyr, kan territoriene være fra 10 til 20 <a class="mw-redirect" href="/wiki/Km%C2%B2" title="Km²">km²</a> for hunner og fra 30 til 70 km² for hanner. I Russland, hvor det er mindre byttedyr kan territoriene variere fra 200-400 km² for hunnene og 800-1 000 km² for hannene.</p>
+<p>Tigere kan ha det samme territorium i mange år, men ved mangel på byttedyr begir den seg ofte ut på lange vandringer. Både hanner og hunner markerer sine territorier gjennom å urinere på objekter, gjerne buskelegger og lignende. De bruker også et sekret fra analkjertelen for å markere, og av og til også regulær avføring og kloremerker. Både hanner og hunner vil angripe fremmede tigre som kommer inn på deres territorium, uansett kjønn. Likeledes vil de angripe andre rovpattedyr som konkurrerer i kosten, herunder også av og til mennesker.</p>
+<p>Tigeren er en typisk snikjeger, som benytter såvel bakholdsangrep som krypeteknikk for å nærme seg et bytte. Den glimrende <a href="/wiki/Kamuflasje" title="Kamuflasje">kamuflasjefargen</a> gjør at de nærmest er umulige å oppdage, både i høyt gress og underskog. De bruker sin hurtighet og den store kroppsvekten til å slå byttet i bakken, for deretter å drepe med et velrettet bitt fra de kraftfulle kjevene. Til tross for dette er kun 1 av 20 anfall vellykket. Et felt bytte blir dratt med inn i skjul av den tette underskogen, der tigeren starter måltidet med å begynne å spise fra bakparten av byttet. Det er anslått at en tiger kan spise 20–35 kg kjøtt i ett måltid, selv om 15–18 kg i døgnet er det normale.</p>
+<h3>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=5" title="Rediger avsnitt: Ernæring">rediger</a>]</span> <span class="mw-headline" id="Ern.C3.A6ring">Ernæring</span>
+        </h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+            <a class="image" href="/wiki/Fil:Tiger_chasing_a_deer.jpg">
+              <img alt="" class="thumbimage" height="136" src="wikiback/no_wikipedia_org_wiki_Tiger/220px_Tiger_chasing_a_deer.jpg" width="220"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:Tiger_chasing_a_deer.jpg" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+<a href="/wiki/Sibirtiger" title="Sibirtiger">Sibirtiger</a> på <a href="/wiki/Hjort" title="Hjort">hjortejakt</a>.</div>
+</div>
+</div>
+<p>Tigeren står på toppen av næringskjeden som det største av alle kattedyr. Den er en utpreget kjøtteter som livnærer seg i hovedsak av store <a href="/wiki/Hovdyr" title="Hovdyr">hovdyr</a>, men den vil også ta annet bytte om anledningen byr seg. Om tilgangen på tradisjonelle byttedyr uteblir jakter den også på <a href="/wiki/Bufe" title="Bufe">bufe</a>, noe som kan føre til konflikter med mennesket.</p>
+<h3>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=6" title="Rediger avsnitt: Reproduksjon">rediger</a>]</span> <span class="mw-headline" id="Reproduksjon">Reproduksjon</span>
+        </h3>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:222px;">
+            <a class="image" href="/wiki/Fil:Amersfoort_Zoo_Siberian_Tigers.jpg">
+              <img alt="" class="thumbimage" height="131" src="wikiback/no_wikipedia_org_wiki_Tiger/220px_Amersfoort_Zoo_Siberian_Tigers.jpg" width="220"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:Amersfoort_Zoo_Siberian_Tigers.jpg" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Sibirhunn med unge
+<div style="font-size:85%">Foto: Wilma Verburg</div>
+</div>
+</div>
+</div>
+<p>Tigre lever alene utenom paringstiden. Hunntigre regnes som forplantningsdyktige fra de er ca tre år gamle, hannen fra ca fire år. I tropiske områder parer tigre seg året rundt, men i tempererte soner skjer paringen sesongvis.</p>
+<p>Selve paringsakten varer kun i 2–3 <a href="/wiki/Minutt" title="Minutt">minutter</a>, men gjentas hyppig over noen dager. Hunnen går drektig i ca. 103 dager før hun føder. Selve nedkomsten skjer som regel i åpent lende med høyt gress.</p>
+<p>Et kull består normalt av 2–3 unger. Ungene veier ca. 1–2 kg ved fødselen og fødes blinde og med lukkede ører. Øyne og ører åpner seg vanligvis etter 10–14 dager. Ungene dier moren til de blir ca. 5–6 måneder gamle, men de begynner å spise kjøtt allerede når de er seks til åtte uker gamle. Moren tar vare på ungene til de er ca 18 <a href="/wiki/M%C3%A5ned" title="Måned">måneder</a> gamle, da ungene kan jakte selv. I denne perioden er ungene svært utsatte, i det hanntigre gjerne dreper ungene om den får anledning. Slik kommer nemlig hunnen i <a href="/wiki/Brunst" title="Brunst">brunst</a> igjen. Ofte blir ungene sammen med mora til de blir ca. to år gamle. Hannene forlater gjerne mora først.</p>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=7" title="Rediger avsnitt: Systematikk">rediger</a>]</span> <span class="mw-headline" id="Systematikk">Systematikk</span>
+        </h2>
+<p>Opprinnelig regnet man tigre inn i åtte underarter, men teknologiske framskritt og moderne genforskning har gitt oss ny kunnskap på en rekke områder. I dag er det derfor mer vanlig å dele tigrene inn i ni underarter, hvorav seks fortsatt eksisterer og tre regnes som utdødde. Oppdagelsen av <i>malaysiatigeren</i>, som nylig ble foreslått å være en egen underart, ble dokumentert vitenskapelig mot slutten av 2004. Ny kunnskap om <i>sumatratiger</i> har dessuten reist spørsmål ved hvorvidt dette er en underart eller om den kanskje må regnes som en helt egen art.</p>
+<h3>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=8" title="Rediger avsnitt: Underarter">rediger</a>]</span> <span class="mw-headline" id="Underarter">Underarter</span>
+        </h3>
+<p>IUCN anerkjenner seks nålevende underarter. Flere av disse er truet av utryddelse. Mange av dem lever dessuten i så fjerne og uframkommelige strøk at man vitenskapelig sett ikke kan konkludere med at nye studier ikke vil kunne avdekke ny og uventet informasjon. Tre tidligere anerkjente underarter regnes alt som utdødd.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=9" title="Rediger avsnitt: Sibirtiger">rediger</a>]</span> <span class="mw-headline" id="Sibirtiger">Sibirtiger</span>
+        </h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+            <a class="image" href="/wiki/Fil:P_tigris_altaica_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_altaica_map.png" width="150"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:P_tigris_altaica_map.png" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Sibirtigerens utbredelse</div>
+</div>
+</div>
+<p>
+          <a href="/wiki/Sibirtiger" title="Sibirtiger">Sibirtiger</a> (<i>P. t. altaica</i>) er en kritisk truet (CR) underart. Den kalles også <a class="mw-redirect" href="/wiki/Amurtiger" title="Amurtiger">amurtiger</a> og er den fysisk største av alle underartene. Bestanden i Russland har siden 1996 hatt en positiv utvikling, og er på om lag 500 dyr, totalbestanden er estimert til å være om lag 600 <a class="external autonumber" href="http://news.independent.co.uk/world/asia/article2447636.ece" rel="nofollow">[1]</a>. I tillegg finnes nærmere 600  sibirtigre i fangenskap.</p>
+<p>Sibirtigeren finnes først og fremst i <a href="/wiki/Sikhote-Alin" title="Sikhote-Alin">Sikhote-Alinfjellene</a> i <a href="/wiki/Russland" title="Russland">Øst-Russland</a>, men noen få holder også til i <a href="/wiki/Changbaifjellene" title="Changbaifjellene">Changbaifjellene</a> i <a href="/wiki/Folkerepublikken_Kina" title="Folkerepublikken Kina">Nordøst-Kina</a> og helt nord i <a href="/wiki/Nord-Korea" title="Nord-Korea">Nord-Korea</a>.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=10" title="Rediger avsnitt: Sørkinatiger">rediger</a>]</span> <span class="mw-headline" id="S.C3.B8rkinatiger">Sørkinatiger</span>
+        </h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+            <a class="image" href="/wiki/Fil:P_tigris_amoyensis_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_amoyensis_map.png" width="150"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:P_tigris_amoyensis_map.png" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Sørkinatigerens utbredelse</div>
+</div>
+</div>
+<p>
+          <a href="/wiki/S%C3%B8rkinatiger" title="Sørkinatiger">Sørkinatiger</a> (<i>P. t. amoyensis</i>) er en kritisk truet (CR) underart og kalles også <a class="mw-redirect" href="/wiki/Amoytiger" title="Amoytiger">amoytiger</a>, <a class="mw-redirect" href="/wiki/Xiamentiger" title="Xiamentiger">xiamentiger</a> og <a class="mw-redirect" href="/wiki/Kinatiger" title="Kinatiger">kinatiger</a>. Det finnes i dag 47 (<a href="/wiki/2004" title="2004">2004</a>) sørkinatigre som overlever i 18 dyrhager, alle etterkommere av 6 viltfangede tigre.</p>
+<p>Sørkinatiger er dessverre så godt som utryddet i vill tilstand. Forskere antar at det er færre enn 20 viltlevende individer igjen, og den har ikke vært observert av offisielle representanter siden tidlig på <a class="mw-redirect" href="/wiki/1980-tallet" title="1980-tallet">1980-tallet</a>. Fra <a href="/wiki/Fujian" title="Fujian">Fujian-provinsen</a> er det spredd rykter om en såkalt <i>maltesertiger</i>, som skal være blå i fargen og ha lysere grå striper langs sidene. Den har imidlertid ikke latt seg verifisere så langt. Om den eksisterer er den trolig i fargevarietet.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=11" title="Rediger avsnitt: Indokinatiger">rediger</a>]</span> <span class="mw-headline" id="Indokinatiger">Indokinatiger</span>
+        </h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+            <a class="image" href="/wiki/Fil:P_tigris_corbetti_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_corbetti_map.png" width="150"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:P_tigris_corbetti_map.png" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Indokinatigerens utbredelse</div>
+</div>
+</div>
+<p>
+          <a href="/wiki/Indokinatiger" title="Indokinatiger">Indokinatiger</a> (<i>P. t. corbetti</i>) kalles også <a class="mw-redirect" href="/wiki/Corbettstiger" title="Corbettstiger">corbettstiger</a>, og er en truet underart som først ble oppdaget og beskrevet i <a href="/wiki/1968" title="1968">1968</a>.</p>
+<p>Indokinatigeren lever i et stort område, som bl.a. inkluderer land som <a href="/wiki/Kambodsja" title="Kambodsja">Kambodsja</a>, <a href="/wiki/Folkerepublikken_Kina" title="Folkerepublikken Kina">Folkerepublikken Kina</a> (sørlige deler), <a href="/wiki/Laos" title="Laos">Laos</a>, <a class="mw-redirect" href="/wiki/Myanmar" title="Myanmar">Myanmar</a> (østlige deler), <a href="/wiki/Thailand" title="Thailand">Thailand</a> og <a href="/wiki/Vietnam" title="Vietnam">Vietnam</a>. Det er estimert at det finnes ca 1200–1800 individer igjen, men antallet minsker som følge av liten eller ingen beskyttelse i flere av landene. Såvidt kjent finnes det pr. <a href="/wiki/2005" title="2005">2005</a> ca 60 indokinatigre i fangenskap, fordelt på land i Asia og <a class="mw-redirect" href="/wiki/USA" title="USA">USA</a>.</p>
+<p>Fram til <a href="/wiki/Desember" title="Desember">desember</a> 2004 ble den også kalt <a href="/wiki/Malaysiatiger" title="Malaysiatiger">malaysiatiger</a>, men da oppdaget man at tigerne som levde i de mer sørlige strøkene var så unike at de måtte klassifiseres som en egen underart.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=12" title="Rediger avsnitt: Malaysiatiger">rediger</a>]</span> <span class="mw-headline" id="Malaysiatiger">Malaysiatiger</span>
+        </h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+            <a class="image" href="/wiki/Fil:P_tigris_jacksoni.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_jacksoni.png" width="150"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:P_tigris_jacksoni.png" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Malaysiatigerens utbredelse</div>
+</div>
+</div>
+<p>
+          <a href="/wiki/Malaysiatiger" title="Malaysiatiger">Malaysiatiger</a> (<i>P. t. jacksoni</i>) er trolig en kritisk truet underart som holder til på <a href="/wiki/Malayahalv%C3%B8ya" title="Malayahalvøya">Malayahalvøya</a> i <a href="/wiki/Malaysia" title="Malaysia">Malaysia</a>. Den ble oppdaget av et team av forskere ledet av Stephen J. O'Brien. De tok for seg 134 tigre fra Russland, India, Kina og andre land i området og utførte en omfattende DNA-analyse av disse dyrenes genmateriale. Det ble da oppdaget at de sydlige tigrene på Malayahalvøya var nokså forskjellige fra indokinatigeren, og ble omklassifisert som en egen underart.</p>
+<p>Malaysiatigeren er altså så lik indokinatigeren at de hittil har vært betraktet som en og samme underart, men det er distinkte forskjeller mellom dem. Den skal ha en liten utbredelse syd for <a class="mw-redirect" href="/wiki/Phuket" title="Phuket">Phuket</a> i Thailand, men hovedbestanden finnes syd for <a href="/wiki/Songkhla" title="Songkhla">Songkhla</a> i Thailand og sydover inn i de sentrale fjellstrøkene på Malayahalvøya.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=13" title="Rediger avsnitt: Sumatratiger">rediger</a>]</span> <span class="mw-headline" id="Sumatratiger">Sumatratiger</span>
+        </h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+            <a class="image" href="/wiki/Fil:P_tigris_sumatrae_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_sumatrae_map.png" width="150"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:P_tigris_sumatrae_map.png" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Sumatratigerens utbredelse</div>
+</div>
+</div>
+<p>
+          <a href="/wiki/Sumatratiger" title="Sumatratiger">Sumatratiger</a> (<i>P. t. sumatrae</i>) er en kritisk truet (CR) underart som kun finnes på øya <a href="/wiki/Sumatra" title="Sumatra">Sumatra</a> i <a href="/wiki/Indonesia" title="Indonesia">Indonesia</a>, der den i all vesentlighet overlever i fem nasjonalreservater. Man tror den har vært isolert på øya i ca 10 000–12 000 år.</p>
+<p>Moderne forskning med <a href="/wiki/DNA" title="DNA">DNA</a> har nylig avdekket at denne tigeren kanskje må reklassifiseres som en egen art (altså i stedet for en underart), selv om det er for tidlig å dra en slik konklusjon.</p>
+<p>Man antar at ca 400–500 individer overlever i vill tilstand. I tillegg kommer ca 235 tigre som overlever i fangenskap, alle etterkommere av 37 viltfangende tigre. 61 tigre (32 hanner og 29 hunner) har blitt omplassert til øya <a href="/wiki/Java_(%C3%B8y)" title="Java (øy)">Java</a>.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=14" title="Rediger avsnitt: Bengaltiger">rediger</a>]</span> <span class="mw-headline" id="Bengaltiger">Bengaltiger</span>
+        </h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+            <a class="image" href="/wiki/Fil:P_tigris_tigris_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_tigris_map.png" width="150"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:P_tigris_tigris_map.png" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+Bengaltigerens utbredelse</div>
+</div>
+</div>
+<p>
+          <a href="/wiki/Bengaltiger" title="Bengaltiger">Bengaltiger</a> (<i>P. t. tigris</i>) kalles også <a class="mw-redirect" href="/wiki/Kongetiger" title="Kongetiger">kongetiger</a> og er den mest tallrike av dagens underarter. Den finnes i primært i <a href="/wiki/India" title="India">India</a>, selv om små populasjoner også eksisterer i <a href="/wiki/Bangladesh" title="Bangladesh">Bangladesh</a>, <a href="/wiki/Bhutan" title="Bhutan">Bhutan</a>, <a href="/wiki/Nepal" title="Nepal">Nepal</a> og deler av Kina.</p>
+<p>Man har til nå antatt at det fantes omkring 3 000–4 750 bengaltigre igjen i verden, selv om tallene har vært usikre, hvorav cirka 3 642 i India (2002), men bruk av ny teknikk har gitt nye og svært nedslående estimater. En indisk rapport fra uke 8 i <a href="/wiki/2008" title="2008">2008</a> estimerer antallet tigre i Indida til kun 1 411 dyr<sup class="reference" id="cite_ref-1">
+            <a href="#cite_note-1">[2]</a>
+          </sup>. I tillegg kommer ca 200 bengaltigre som lever i fangenskap rundt om i verden. Bengaltigeren er mindre enn sibirtigeren, og gjerne mørkere og klarere i fargene. Det finnes også noen hvite eksemplarer.</p>
+<h3>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=15" title="Rediger avsnitt: Utdødde underarter">rediger</a>]</span> <span class="mw-headline" id="Utd.C3.B8dde_underarter">Utdødde underarter</span>
+        </h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+            <a class="image" href="/wiki/Fil:Panthera_tigris_balica.jpg">
+              <img alt="" class="thumbimage" height="165" src="wikiback/no_wikipedia_org_wiki_Tiger/220px_Panthera_tigris_balica.jpg" width="220"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:Panthera_tigris_balica.jpg" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+<a href="/wiki/Balitiger" title="Balitiger">Balitigeren</a> er dessverre utdødd, og hunnen på bildet ble skutt på <a href="/wiki/Bali" title="Bali">Bali</a> i <a href="/wiki/1925" title="1925">1925</a>
+            </div>
+</div>
+</div>
+<p>Av de ni distinkte underartene er tre antatt utdødde, selv om man ikke har kunnet fastslå dette med hundre prosents sikkerhet. Det går f.eks. rykter om at kaspitigeren kan ha overlevd.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=16" title="Rediger avsnitt: Balitiger">rediger</a>]</span> <span class="mw-headline" id="Balitiger">Balitiger</span>
+        </h4>
+<p>
+          <a href="/wiki/Balitiger" title="Balitiger">Balitiger</a> (<i>P. t. balica</i>) er antatt utdødd (EX), men det finnes bevarte skinn og skjelett. Den var den minste av alle tigre, ikke særlig mye større enn en leopard.</p>
+<p>Den siste dokumenterte observasjonen av balitiger skjedde på Vest-Bali på <a class="mw-redirect" href="/wiki/1930-tallet" title="1930-tallet">1930-tallet</a>, men forskerne tror at underarten kan ha overlevd fram til begynnelsen av <a class="mw-redirect" href="/wiki/1950-tallet" title="1950-tallet">1950-tallet</a>. Det finnes ingen slike tigre i fangenskap.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=17" title="Rediger avsnitt: Javatiger">rediger</a>]</span> <span class="mw-headline" id="Javatiger">Javatiger</span>
+        </h4>
+<p>
+          <a href="/wiki/Javatiger" title="Javatiger">Javatiger</a> (<i>P. t. sondaicus</i>) er antatt utdødd (EX), men det finnes bevarte skinn og skjelett. Javatigeren var svært lik sumatratigeren, men hadde flere og mer distinkte striper. Det finnes ingen slike tigre i fangenskap. Også denne tigeren var ganske liten av vekst, men allikevel klart større enn balitigeren.</p>
+<p>Den siste dokumenterte observasjonen skjedde i <a href="/wiki/1976" title="1976">1976</a>, selv om også det ble registrert sport etter 3 tigre i <a href="/wiki/1979" title="1979">1979</a>. Trolig døde den ut på <a class="mw-redirect" href="/wiki/1980-tallet" title="1980-tallet">1980-tallet</a>, men ingen vet nøyaktig når det skjedde.</p>
+<p>Det går fortsatt rykter om observasjoner av javatiger på Øst-Java, der jungelen er tett og nærmest fullstendig ugjennomtrengelig. <i>Meru Betiri nasjonalreservat</i> ligger i dette området og er i så fall det mest aktuelle området for eventuelle overlevinger. Området er imidlertid under stort press fra gruvedrift, bl.a. etter <a href="/wiki/Gull" title="Gull">gull</a>.</p>
+<h4>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=18" title="Rediger avsnitt: Kaspitiger">rediger</a>]</span> <span class="mw-headline" id="Kaspitiger">Kaspitiger</span>
+        </h4>
+<p>
+          <a href="/wiki/Kaspitiger" title="Kaspitiger">Kaspitiger</a> (<i>P. t. virgata</i>) er antatt utdødd (EX). Den var også kjent som <a class="mw-redirect" href="/wiki/Turantiger" title="Turantiger">turantiger</a> og <a class="mw-redirect" href="/wiki/Persisk_tiger" title="Persisk tiger">persisk tiger</a>, men det finnes kun bevarte skinn og skjelett etter denne underarten. Kaspitigeren, som var en forholdsvis stor tiger, lignet på bengaltigeren i sine markeringer og farger, men den hadde lengre og tykkere pels. Det finnes ingen slike tigre i fangenskap.</p>
+<p>De siste dokumenterte observasjonene sies å være fra perioden <a href="/wiki/1972" title="1972">1972</a>-<a href="/wiki/1976" title="1976">1976</a>, da bl.a. en forsker estimerte bestanden til å være færre enn 100 dyr. Noen hevder at den siste kaspitigeren ble fanget i det nordøstre <a href="/wiki/Afghanistan" title="Afghanistan">Afghanistan</a> i <a href="/wiki/1997" title="1997">1997</a>, mens andre mener den døde ut alt på <a class="mw-redirect" href="/wiki/1950-tallet" title="1950-tallet">1950-tallet</a>. Fortsatt kommer det inn rapporter om påståtte observasjoner, bl.a. fra Afghanistan og <a href="/wiki/Turkmenistan" title="Turkmenistan">Turkmenistan</a>, men ekspertene har ikke kunnet stadfeste noen av disse så langt. I det siste har det også blitt antydet at det kan ha overlevd kaspitiger helt øst i <a href="/wiki/Tyrkia" title="Tyrkia">Tyrkia</a>, men disse påstandene har ennå ikke blitt verifisert.</p>
+<h3>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=19" title="Rediger avsnitt: Trusler">rediger</a>]</span> <span class="mw-headline" id="Trusler">Trusler</span>
+        </h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+            <a class="image" href="/wiki/Fil:Tiger_032.jpg">
+              <img alt="" class="thumbimage" height="150" src="wikiback/no_wikipedia_org_wiki_Tiger/220px_Tiger_032.jpg" width="220"/>
+            </a>
+<div class="thumbcaption">
+<div class="magnify">
+                <a class="internal" href="/wiki/Fil:Tiger_032.jpg" title="Forstørr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15"/>
+                </a>
+              </div>
+<a href="/wiki/Indokinatiger" title="Indokinatiger">Indokinatiger</a>
+<div style="font-size:85%">Foto: Kabir Bakie</div>
+</div>
+</div>
+</div>
+<p>
+          <a class="mw-redirect" href="/wiki/IUCN" title="IUCN">IUCN</a>/Cat Specialist Group regner tigeren som en truet (EN) art. Den står også oppført i <a href="/wiki/CITES" title="CITES">CITES</a> Appendix I, som omfatter de mest truede artene i verden og handel i praksis stort sett er forbudt. Ved inngangen til det <a href="/wiki/20._%C3%A5rhundre" title="20. århundre">20. århundre</a> fantes det ca 100 000 tigere i verden, fra <a href="/wiki/Tyrkia" title="Tyrkia">Tyrkia</a> i <a href="/wiki/Vest" title="Vest">vest</a> til øyene utenfor Øst-Asia i <a href="/wiki/%C3%98st" title="Øst">øst</a>. I dag (<a href="/wiki/2005" title="2005">2005</a>) er det estimert at omkring 5 000-7 000 tigere overlever, og at tre av ni underarter alt er utdødde. De største truslene er tap av primærhabitat og krypskyting. Mest truet i øyeblikket er sørkinatigeren, der trolig kun 20–50 tigere overlever for øyeblikket.</p>
+<p>Tidligere var <a href="/wiki/Trof%C3%A9jakt" title="Troféjakt">troféjakt</a> populært, spesielt blant <a href="/wiki/Adel" title="Adel">adelen</a> og rikfolk. Slik <a href="/wiki/Jakt" title="Jakt">jakt</a> forgikk ofte fra ryggen av en <a class="mw-redirect" href="/wiki/Elefant" title="Elefant">elefant</a>, ofte i store følger der dusinvis av tigere kunne bli skutt. Også kongelige deltok i slik jakt. Det er nemlig ikke på grunn av sitt flotte utseende at bengaltigeren også kalles kongetiger. Arbeidet med å utrydde tigeren har pågått siden midten på <a class="mw-redirect" href="/wiki/1800-tallet" title="1800-tallet">1800-tallet</a>, men etter <a href="/wiki/Andre_verdenskrig" title="Andre verdenskrig">andre verdenskrig</a> ble dette arbeidet trappet opp ytterligere. I så måte erklærte <a href="/wiki/Mao_Zedong" title="Mao Zedong">Mao Zedong</a> krig mot sørkinatigeren i <a href="/wiki/1959" title="1959">1959</a>. Dette vedtaket ble ikke omgjort før i <a href="/wiki/1977" title="1977">1977</a>, men da var det nesten for sent. Lignende episoder har utspilt seg over hele Asia.</p>
+<p>
+          <a class="mw-redirect" href="/wiki/WWF" title="WWF">WWF</a> regner i dag tigeren som en av verdens mest utrydningstruede arter, fordi menneskene fortsatt ødelegger leveområdene deres i stor skala. Generell avskogning er trolig den største årsaken, men de blir også forgiftet, drept med elektrisitet, sprengt med landminer, fanget i feller og snarer eller skutt, blant annet på grunn av det verdifulle skinnet og beina<sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">[3]</a>
+          </sup>. Av beina lages det tradisjonell østlig medisin og såkalt <i>tigervin</i>, som det produseres omkring 100 000 flasker av om året. Tidligere inneholdt også <a href="/wiki/Tigerbalsam" title="Tigerbalsam">Tigerbalsam</a> bena. Det tilsvarer ca 100 døde tigere hvert år.</p>
+<p>Eksperter engasjert av <a href="/wiki/FN" title="FN">FN</a> frykter at arten kan gå tapt, til tross for en rekke tiltak for å bevare den. De mener det må gjøres mer for å bevare tigerens habitat, samt å stoppe krypskyting og etterspørsel<sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">[4]</a>
+          </sup>.</p>
+<p>Mange steder blir fortsatt tigere regnet som «menneskedrepere», fordi disse store kattene av og til dreper mennesker som trenger inn på dens territorium. Som oftest kan slike menneskedrap tilskrives tigrenes tap av habitat, fordi vi mennesker tar i bruk stadig nytt land for å brødfø en økende befolkning.</p>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=20" title="Rediger avsnitt: Annet">rediger</a>]</span> <span class="mw-headline" id="Annet">Annet</span>
+        </h2>
+<ul>
+<li>Ordet <i>tiger</i> kom inn i de europeiske språk fra <a href="/wiki/Persisk" title="Persisk">persisk</a>.</li>
+<li>Tiger som begrep har alltid vært synonymt med kraft og styrke, f.eks. «sterk som en tiger» eller «putt en tiger på tanken» (<a class="mw-redirect" href="/wiki/ESSO" title="ESSO">ESSO</a>).</li>
+<li>Da <a href="/wiki/Japan" title="Japan">Japan</a> angrep <a class="mw-redirect" href="/wiki/USA" title="USA">USAs</a> baser ved <a href="/wiki/Angrepet_p%C3%A5_Pearl_Harbor" title="Angrepet på Pearl Harbor">Pearl Harbor</a> på <a href="/wiki/Hawaii" title="Hawaii">Hawaii</a> i <a href="/wiki/1941" title="1941">1941</a> lød angrepsordren til pilotene <i>tora, tora, tora</i>. Det betyr <i>tiger, tiger, tiger</i>.</li>
+</ul>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=21" title="Rediger avsnitt: Referanser">rediger</a>]</span> <span class="mw-headline" id="Referanser">Referanser</span>
+        </h2>
+<div class="references-small">
+<ol class="references">
+<li id="cite_note-0">
+              <b>
+                <a href="#cite_ref-0">^</a>
+              </b> <a class="external text" href="http://www.iucnredlist.org/details/15955/0" rel="nofollow">Chundawat, R.S., Habib, B., Karanth, U., Kawanishi, K., Ahmad Khan, J., Lynam, T., Miquelle, D., Nyhus, P., Sunarto, Tilson, R. &amp; Sonam Wang 2008. Panthera tigris. In: IUCN 2009. IUCN Red List of Threatened Species. Version 2009.1.</a> Besøkt <a href="/wiki/18._juni" title="18. juni">18. juni</a> <a href="/wiki/2009" title="2009">2009</a>.</li>
+<li id="cite_note-1">
+              <b>
+                <a href="#cite_ref-1">^</a>
+              </b> <a class="external text" href="http://www.wikipedia.no" rel="nofollow">Pallava Bagla. 2008. <i>SPECIES CONSERVATION: Tigers in Decline, Indian Survey Finds</i>. Science 22 February 2008: Vol. 319. no. 5866, p. 1027. DOI: 10.1126/science.319.5866.1027a</a>. Besøkt 22. februar 2008</li>
+<li id="cite_note-2">
+              <b>
+                <a href="#cite_ref-2">^</a>
+              </b> <a class="external text" href="http://www.panda.org/about_wwf/what_we_do/species/showspecies.cfm?SID=25&amp;LID=1&amp;FH=E" rel="nofollow">Endangered Species (WWF)</a>
+            </li>
+<li id="cite_note-3">
+              <b>
+                <a href="#cite_ref-3">^</a>
+              </b> <a class="external text" href="http://www.un.org/earthwatch/biodiversity/tiger.html" rel="nofollow">Biodiversity (R. Hepworth, 2000. UNEP/DEWA/Earthwatch)</a>
+            </li>
+</ol>
+</div>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=22" title="Rediger avsnitt: Litteratur">rediger</a>]</span> <span class="mw-headline" id="Litteratur">Litteratur</span>
+        </h2>
+<ul>
+<li>Vivek R. Sinha: «<i>The vanishing tiger</i>». Salamander Books, London 2003. <a class="internal mw-magiclink-isbn" href="/wiki/Spesial:Bokkilder/1840654414">ISBN 1-84065-441-4</a>
+          </li>
+<li>Iain Green: «<i>Wild tigers of Bandhargarh, Encounters in a fragile Forest</i>». Tiger Books, Crowborough 2002. <a class="internal mw-magiclink-isbn" href="/wiki/Spesial:Bokkilder/0954311507">ISBN 0-9543115-0-7</a>
+          </li>
+<li>K. Ullas Karanth: «<i>Tigers</i>». Colin Baxter, Grantown-on-Spey 2001. <a class="internal mw-magiclink-isbn" href="/wiki/Spesial:Bokkilder/1841070815">ISBN 1-84107-081-5</a>
+          </li>
+<li>Ernest Pillsbury Walker, R. M. Nowak: «<i>Walker's Mammals of the World</i>». Bd 1. Johns Hopkins University Press, Baltimore 1964, 1999, S.825ff. <a class="internal mw-magiclink-isbn" href="/wiki/Spesial:Bokkilder/080183970X">ISBN 0-8018-3970-X</a>
+          </li>
+<li>Vratislav Mazak: «<i>Der Tiger</i>». Westarp Wissenschaften; Auflage: 5., unveränd. Aufl. (April 2004) <a class="internal mw-magiclink-isbn" href="/wiki/Spesial:Bokkilder/3894327596">ISBN 3-89432-759-6</a>
+          </li>
+</ul>
+<h2>
+          <span class="editsection">[<a href="/w/index.php?title=Tiger&amp;action=edit&amp;section=23" title="Rediger avsnitt: Eksterne lenker">rediger</a>]</span> <span class="mw-headline" id="Eksterne_lenker">Eksterne lenker</span>
+        </h2>
+<table border="0" cellspacing="1" style="background-color:transparent">
+<tr valign="middle">
+<td>
+              <a href="http://commons.wikimedia.org/wiki/Hovedside" title="commons:Hovedside">
+                <img alt="Commons-logo.svg" height="19" src="wikiback/no_wikipedia_org_wiki_Tiger/14px_Commons_logo.svg.png" width="14"/>
+              </a>
+            </td>
+<td align="left">
+              <a href="/wiki/Wikimedia_Commons" title="Wikimedia Commons">Commons</a>: <span class="plainlinks">
+                <a class="external text" href="http://commons.wikimedia.org/wiki/Category:Panthera_tigris?uselang=no" rel="nofollow">Kategori:Panthera tigris</a>
+              </span> – bilder, video eller lyd</td>
+</tr>
+</table>
+<table border="0" cellspacing="1" style="background-color:transparent">
+<tr valign="middle">
+<td>
+              <a href="http://species.wikimedia.org/wiki/Main_page" title="wikispecies:Main page">
+                <img alt="Wikispecies-logo.svg" height="16" src="wikiback/no_wikipedia_org_wiki_Tiger/14px_Wikispecies_logo.svg.png" width="14"/>
+              </a>
+            </td>
+<td align="left">
+              <a href="/wiki/Wikispecies" title="Wikispecies">Wikispecies</a>: <a class="extiw" href="http://species.wikimedia.org/wiki/Panthera_tigris" title="wikispecies:Panthera tigris">Panthera tigris</a> – detaljert artsinformasjon</td>
+</tr>
+</table>
+<ul>
+<li>
+            <span class="bjeller" style="color: gray;cursor:help;" title="Engelsk side">
+              <small>(engelsk)</small>
+            </span> <a class="external text" href="http://www.iucn.org/webfiles/doc/SSC/SSCwebsite/News/CN_42_Tiger_article.pdf" rel="nofollow">Molecular Genetic Analysis Reveals Six Living Subspecies of Tiger (PDF)</a>
+          </li>
+<li>
+            <span class="bjeller" style="color: gray;cursor:help;" title="Engelsk side">
+              <small>(engelsk)</small>
+            </span> <a class="external text" href="http://www.iucn.org/webfiles/doc/SSC/SSCwebsite/News/Six_Living_Tiger_Subspecies_distribution_map3.pdf" rel="nofollow">Historisk og nåværende distribusjon av tigere (PDF)</a>
+          </li>
+<li>
+            <span class="bjeller" style="color: gray;cursor:help;" title="Engelsk side">
+              <small>(engelsk)</small>
+            </span> <a class="external text" href="http://www.redlist.org/search/details.php?species=15955" rel="nofollow">IUCN Truete arter</a>
+          </li>
+<li>
+            <span class="bjeller" style="color: gray;cursor:help;" title="Engelsk side">
+              <small>(engelsk)</small>
+            </span> <a class="external text" href="http://www.lioncrusher.com/animal.asp?animal=71" rel="nofollow">Lioncrusher's Domain</a>
+          </li>
+<li>
+            <span class="bjeller" style="color: gray;cursor:help;" title="Engelsk side">
+              <small>(engelsk)</small>
+            </span> <a class="external text" href="http://www.arkive.org/species/GES/mammals/Panthera_tigris/" rel="nofollow">ARKive</a>
+          </li>
+</ul>
+<div class="artikkelklassifisering">
+<p>
+            <span class="UA-merke">
+              <a href="/wiki/Wikipedia:Utmerkede_artikler" title="Utmerket artikkel">
+                <img alt="Utmerket artikkel" height="19" src="wikiback/no_wikipedia_org_wiki_Tiger/20px_Cscr_featured.svg.png" width="20"/>
+              </a>
+            </span>
+          </p>
+</div>
+<p>
+          <span class="AA" id="de" style="display:none;"/> <span class="FA" id="fi" style="display:none;"/> <span class="FA" id="ru" style="display:none;"/> <span class="FA" id="th" style="display:none;"/> <span class="FA" id="vi" style="display:none;"/> <span class="FA" id="uk" style="display:none;"/> <span class="FA" id="ar" style="display:none;"/> <span class="FA" id="la" style="display:none;"/> <span class="FA" id="mr" style="display:none;"/>
+        </p>
+<p>
+          <span class="AA" id="fr" style="display:none;"/> <span class="FA" id="mk" style="display:none;"/> <span class="FA" id="ms" style="display:none;"/> <span class="AA" id="uk" style="display:none;"/>
+        </p>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 715/1000000
+Post-expand include size: 6433/2048000 bytes
+Template argument size: 1532/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key nowiki:pcache:idhash:34790-0!1!0!!no!4 and timestamp 20101002081125 -->
+<div class="printfooter">
+Hentet fra «<a href="http://no.wikipedia.org/wiki/Tiger">http://no.wikipedia.org/wiki/Tiger</a>»</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div class="catlinks" id="catlinks">
+          <div id="mw-normal-catlinks">
+            <a href="/wiki/Wikipedia:Kategorier" title="Wikipedia:Kategorier">Kategori</a>: <span dir="ltr">
+              <a href="/wiki/Kategori:Store_kattedyr" title="Kategori:Store kattedyr">Store kattedyr</a>
+            </span>
+          </div>
+          <div class="mw-hidden-cats-hidden" id="mw-hidden-catlinks">Skjulte kategorier: <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler" title="Kategori:Utmerkede artikler">Utmerkede artikler</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Anbefalte_artikler/de" title="Kategori:Anbefalte artikler/de">Anbefalte artikler/de</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/fi" title="Kategori:Utmerkede artikler/fi">Utmerkede artikler/fi</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/ru" title="Kategori:Utmerkede artikler/ru">Utmerkede artikler/ru</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/th" title="Kategori:Utmerkede artikler/th">Utmerkede artikler/th</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/vi" title="Kategori:Utmerkede artikler/vi">Utmerkede artikler/vi</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/uk" title="Kategori:Utmerkede artikler/uk">Utmerkede artikler/uk</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/ar" title="Kategori:Utmerkede artikler/ar">Utmerkede artikler/ar</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/la" title="Kategori:Utmerkede artikler/la">Utmerkede artikler/la</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/mr" title="Kategori:Utmerkede artikler/mr">Utmerkede artikler/mr</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Anbefalte_artikler/fr" title="Kategori:Anbefalte artikler/fr">Anbefalte artikler/fr</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/mk" title="Kategori:Utmerkede artikler/mk">Utmerkede artikler/mk</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Utmerkede_artikler/ms" title="Kategori:Utmerkede artikler/ms">Utmerkede artikler/ms</a>
+            </span> | <span dir="ltr">
+              <a href="/wiki/Kategori:Anbefalte_artikler/uk" title="Kategori:Anbefalte artikler/uk">Anbefalte artikler/uk</a>
+            </span>
+          </div>
+        </div>				<!-- /catlinks -->
+												<div class="visualClear"/>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div class="noprint" id="mw-head">
+			
+<!-- 0 -->
+<div class="" id="p-personal">
+	<h5>Personlig</h5>
+	<ul>
+					<li id="pt-prefswitch-link-anon">
+            <a class="no-text-transform" href="http://no.wikipedia.org/w/index.php?title=Spesial:UsabilityInitiativePrefSwitch&amp;from=Tiger" title="Lær mer om de nye funksjonene">Nye funksjoner</a>
+          </li>
+					<li id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Spesial:Logg_inn&amp;returnto=Tiger" title="Du oppfordres til å logge inn, men det er ikke obligatorisk [o]">Logg inn eller opprett en konto</a>
+          </li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div class="vectorTabs" id="p-namespaces">
+	<h5>Navnerom</h5>
+	<ul>
+					<li class="selected" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Tiger" title="Vis innholdssiden [c]">
+                <span>Artikkel</span>
+              </a>
+            </li>
+					<li id="ca-talk">
+              <a accesskey="t" href="/wiki/Diskusjon:Tiger" title="Diskusjon om innholdssiden [t]">
+                <span>Diskusjon</span>
+              </a>
+            </li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-variants">
+		<h5>
+            <span>Varianter</span>
+            <a href="#"/>
+          </h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div class="vectorTabs" id="p-views">
+	<h5>Visninger</h5>
+	<ul>
+					<li class="selected" id="ca-view">
+              <a href="/wiki/Tiger">
+                <span>Les</span>
+              </a>
+            </li>
+					<li id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Tiger&amp;action=edit" title="Du kan redigere denne siden. Vennligst bruk forhåndsvisningsknappen før du lagrer. [e]">
+                <span>Rediger</span>
+              </a>
+            </li>
+					<li class="collapsible " id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Tiger&amp;action=history" title="Tidligere revisjoner av denne siden [h]">
+                <span>Vis historikk</span>
+              </a>
+            </li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div class="vectorMenu emptyPortlet" id="p-cactions">
+	<h5>
+            <span>Handlinger</span>
+            <a href="#"/>
+          </h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5>
+            <label for="searchInput">Søk</label>
+          </h5>
+	<form action="/w/index.php" id="searchform">
+		<input name="title" type="hidden" value="Spesial:Søk"/>
+				<div id="simpleSearch">
+			<input accesskey="f" id="searchInput" name="search" title="Søk i Wikipedia [f]" type="text" value=""/>
+			<button id="searchButton" name="button" title="Søk etter sider som innholder denne teksten" type="submit">
+                <img alt="Søk" src="wikiback/no_wikipedia_org_wiki_Tiger/search_ltr.png_283u"/>
+              </button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div class="noprint" id="mw-panel">
+				<!-- logo -->
+					<div id="p-logo">
+        <a href="/wiki/Portal:Forside" style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/cf/Wikipedia-logo-v2-no.png);" title="Hovedside"/>
+      </div>
+				<!-- /logo -->
+				
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- navigation -->
+<div class="portal" id="p-navigation">
+	<h5>Navigasjon</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Portal:Forside" title="Gå til hovedsiden [z]">Forside</a>
+            </li>
+					<li id="n-svaksynte">
+              <a href="http://no.wikipedia.org/w/index.php?title=Wikipedia:Svaksynte&amp;useskin=simple">Svaksynte</a>
+            </li>
+					<li id="n-randompage">
+              <a accesskey="x" href="/wiki/Spesial:Tilfeldig_side" title="Vis en tilfeldig side [x]">Tilfeldig side</a>
+            </li>
+					<li id="n-AA">
+              <a href="/wiki/Wikipedia:Anbefalte_artikler">Anbefalte artikler</a>
+            </li>
+					<li id="n-UA">
+              <a href="/wiki/Wikipedia:Utmerkede_artikler">Utmerkede artikler</a>
+            </li>
+					<li id="n-dugnadskontoret">
+              <a href="/wiki/Wikipedia:Dugnadskontor">Dugnadskontoret</a>
+            </li>
+					<li id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Spesial:Siste_endringer" title="Liste over siste endringer på wikien. [r]">Siste endringer</a>
+            </li>
+					<li id="n-tinget">
+              <a href="/wiki/Wikipedia:Tinget">Tinget</a>
+            </li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- prosjekt -->
+<div class="portal" id="p-prosjekt">
+	<h5>prosjekt</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help">
+              <a href="/wiki/Hjelp:Portal" title="Stedet for å få hjelp">Hjelp</a>
+            </li>
+					<li id="n-introduksjon">
+              <a href="/wiki/Wikipedia:Introduksjon">Ny bruker?</a>
+            </li>
+					<li id="n-stilmanual">
+              <a href="/wiki/Wikipedia:Stilmanual">Stilmanual</a>
+            </li>
+					<li id="n-portal">
+              <a href="/wiki/Wikipedia:Portal" title="Om prosjektet, hva du kan gjøre, hvor du kan finne ting">Prosjektportal</a>
+            </li>
+					<li id="n-bilde-hjelp">
+              <a href="/wiki/Hjelp:Bildeopplasting">Last opp fil</a>
+            </li>
+					<li id="n-upload-commons">
+              <a href="http://commons.wikimedia.org/w/index.php?title=Special:Upload&amp;uselang=no">Commons-opplasting</a>
+            </li>
+					<li id="n-sitesupport">
+              <a href="http://wikimediafoundation.org/wiki/Innsamling_(nb)" title="Støtt oss">Donasjoner</a>
+            </li>
+					<li id="n-kontakt">
+              <a href="/wiki/Wikipedia:Kontakt">Kontakt Wikipedia</a>
+            </li>
+					<li id="n-Wmf">
+              <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation</a>
+            </li>
+					<li id="n-Wmno">
+              <a href="http://no.wikimedia.org/">Wikimedia Norge</a>
+            </li>
+				</ul>
+			</div>
+</div>
+
+<!-- /prosjekt -->
+
+<!-- other -->
+<div class="portal" id="p-other">
+	<h5>Andre</h5>
+	<div class="body">
+				<ul>
+				</ul>
+			</div>
+</div>
+
+<!-- /other -->
+
+<!-- query -->
+<div class="portal" id="p-query">
+	<h5>Eksternt</h5>
+	<div class="body">
+				<ul>
+				</ul>
+			</div>
+</div>
+
+<!-- /query -->
+
+<!-- coll-print_export -->
+<div class="portal" id="p-coll-print_export">
+	<h5>utskrift</h5>
+	<div class="body">
+				<ul id="collectionPortletList">
+            <li id="coll-create_a_book">
+              <a href="/w/index.php?title=Spesial:Samling&amp;bookcmd=book_creator&amp;referer=Tiger" rel="nofollow" title="Lag ei bok eller en artikkelsamling">Opprett en bok</a>
+            </li>
+            <li id="coll-download-as-rl">
+              <a href="/w/index.php?title=Spesial:Samling&amp;bookcmd=render_article&amp;arttitle=Tiger&amp;oldid=7735346&amp;writer=rl" rel="nofollow" title="Last ned denne wikisida i PDF-format">Last ned som PDF</a>
+            </li>
+            <li id="t-print">
+              <a accesskey="p" href="/w/index.php?title=Tiger&amp;printable=yes" title="Utskriftsvennlig versjon av denne siden [p]">Utskriftsversjon</a>
+            </li>
+          </ul>			</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Verktøy</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere">
+              <a accesskey="j" href="/wiki/Spesial:Lenker_hit/Tiger" title="Liste over alle wikisider som lenker hit [j]">Lenker hit</a>
+            </li>
+						<li id="t-recentchangeslinked">
+              <a accesskey="k" href="/wiki/Spesial:Relaterte_endringer/Tiger" title="Siste endringer i sider som blir lenket fra denne siden [k]">Relaterte endringer</a>
+            </li>
+																																										<li id="t-specialpages">
+              <a accesskey="q" href="/wiki/Spesial:Spesialsider" title="Liste over alle spesialsider [q]">Spesialsider</a>
+            </li>
+											<li id="t-permalink">
+              <a href="/w/index.php?title=Tiger&amp;oldid=7735346" title="Permanent lenke til denne revisjonen av siden">Permanent lenke</a>
+            </li>
+				<li id="t-cite">
+              <a href="/w/index.php?title=Spesial:Siteringshjelp&amp;page=Tiger&amp;id=7735346" title="Informasjon om hvordan denne siden kan siteres">Siter artikkelen</a>
+            </li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>På andre språk</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ace">
+              <a href="http://ace.wikipedia.org/wiki/Rimu%C3%ABng" title="Rimuëng">Acèh</a>
+            </li>
+					<li class="interwiki-als">
+              <a href="http://als.wikipedia.org/wiki/Tiger" title="Tiger">Alemannisch</a>
+            </li>
+					<li class="interwiki-ang">
+              <a href="http://ang.wikipedia.org/wiki/Tiger" title="Tiger">Ænglisc</a>
+            </li>
+					<li class="interwiki-ar">
+              <a href="http://ar.wikipedia.org/wiki/%D8%A8%D8%A8%D8%B1" title="ببر">العربية</a>
+            </li>
+					<li class="interwiki-ast">
+              <a href="http://ast.wikipedia.org/wiki/Panthera_tigris" title="Panthera tigris">Asturianu</a>
+            </li>
+					<li class="interwiki-az">
+              <a href="http://az.wikipedia.org/wiki/P%C9%99l%C9%99ng" title="Pələng">Azərbaycanca</a>
+            </li>
+					<li class="interwiki-bn">
+              <a href="http://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A6%BE%E0%A6%98" title="বাঘ">বাংলা</a>
+            </li>
+					<li class="interwiki-zh-min-nan">
+              <a href="http://zh-min-nan.wikipedia.org/wiki/H%C3%B3%CD%98" title="Hó͘">Bân-lâm-gú</a>
+            </li>
+					<li class="interwiki-ba">
+              <a href="http://ba.wikipedia.org/wiki/%D0%AE%D0%BB%D0%B1%D0%B0%D1%80%D1%8B%D2%AB" title="Юлбарыҫ">Башҡорт</a>
+            </li>
+					<li class="interwiki-be">
+              <a href="http://be.wikipedia.org/wiki/%D0%A2%D1%8B%D0%B3%D1%80" title="Тыгр">Беларуская</a>
+            </li>
+					<li class="interwiki-be-x-old">
+              <a href="http://be-x-old.wikipedia.org/wiki/%D0%A2%D1%8B%D0%B3%D1%80" title="Тыгр">Беларуская (тарашкевіца)</a>
+            </li>
+					<li class="interwiki-bo">
+              <a href="http://bo.wikipedia.org/wiki/%E0%BD%A6%E0%BE%9F%E0%BD%82" title="སྟག">བོད་ཡིག</a>
+            </li>
+					<li class="interwiki-br">
+              <a href="http://br.wikipedia.org/wiki/Tigr" title="Tigr">Brezhoneg</a>
+            </li>
+					<li class="interwiki-bg">
+              <a href="http://bg.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%8A%D1%80" title="Тигър">Български</a>
+            </li>
+					<li class="interwiki-ca">
+              <a href="http://ca.wikipedia.org/wiki/Tigre" title="Tigre">Català</a>
+            </li>
+					<li class="interwiki-cv">
+              <a href="http://cv.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80" title="Тигр">Чӑвашла</a>
+            </li>
+					<li class="interwiki-cs">
+              <a href="http://cs.wikipedia.org/wiki/Tygr_d%C5%BEunglov%C3%BD" title="Tygr džunglový">Česky</a>
+            </li>
+					<li class="interwiki-cy">
+              <a href="http://cy.wikipedia.org/wiki/Teigr" title="Teigr">Cymraeg</a>
+            </li>
+					<li class="interwiki-da">
+              <a href="http://da.wikipedia.org/wiki/Tiger" title="Tiger">Dansk</a>
+            </li>
+					<li class="interwiki-de">
+              <a href="http://de.wikipedia.org/wiki/Tiger" title="Tiger">Deutsch</a>
+            </li>
+					<li class="interwiki-nv">
+              <a href="http://nv.wikipedia.org/wiki/N%C3%A1shd%C3%B3%C3%ADtsoh_nood%C7%AB%CC%81z%C3%ADg%C3%AD%C3%AD" title="Náshdóítsoh noodǫ́zígíí">Diné bizaad</a>
+            </li>
+					<li class="interwiki-el">
+              <a href="http://el.wikipedia.org/wiki/%CE%A4%CE%AF%CE%B3%CF%81%CE%B7%CF%82" title="Τίγρης">Ελληνικά</a>
+            </li>
+					<li class="interwiki-en">
+              <a href="http://en.wikipedia.org/wiki/Tiger" title="Tiger">English</a>
+            </li>
+					<li class="interwiki-es">
+              <a href="http://es.wikipedia.org/wiki/Panthera_tigris" title="Panthera tigris">Español</a>
+            </li>
+					<li class="interwiki-eo">
+              <a href="http://eo.wikipedia.org/wiki/Tigro" title="Tigro">Esperanto</a>
+            </li>
+					<li class="interwiki-eu">
+              <a href="http://eu.wikipedia.org/wiki/Tigre" title="Tigre">Euskara</a>
+            </li>
+					<li class="interwiki-fa">
+              <a href="http://fa.wikipedia.org/wiki/%D8%A8%D8%A8%D8%B1" title="ببر">فارسی</a>
+            </li>
+					<li class="interwiki-fr">
+              <a href="http://fr.wikipedia.org/wiki/Tigre" title="Tigre">Français</a>
+            </li>
+					<li class="interwiki-ga">
+              <a href="http://ga.wikipedia.org/wiki/T%C3%ADogar" title="Tíogar">Gaeilge</a>
+            </li>
+					<li class="interwiki-gl">
+              <a href="http://gl.wikipedia.org/wiki/Tigre" title="Tigre">Galego</a>
+            </li>
+					<li class="interwiki-gan">
+              <a href="http://gan.wikipedia.org/wiki/%E8%80%81%E8%99%8E" title="老虎">贛語</a>
+            </li>
+					<li class="interwiki-gu">
+              <a href="http://gu.wikipedia.org/wiki/%E0%AA%B5%E0%AA%BE%E0%AA%98" title="વાઘ">ગુજરાતી</a>
+            </li>
+					<li class="interwiki-got">
+              <a href="http://got.wikipedia.org/wiki/%F0%90%8D%84%F0%90%8C%B9%F0%90%8C%B2%F0%90%8D%82%F0%90%8D%83" title="160&#66372;160&#66372;&#66361;160&#66372;&#66361;&#66354;160&#66372;&#66361;&#66354;&#66370;160&#66372;&#66361;&#66354;&#66370;&#66371;">&#66354;&#66367;&#66372;&#66361;&#66371;&#66362;</a>
+            </li>
+					<li class="interwiki-hak">
+              <a href="http://hak.wikipedia.org/wiki/Lo-f%C3%BA" title="Lo-fú">Hak-kâ-fa</a>
+            </li>
+					<li class="interwiki-ko">
+              <a href="http://ko.wikipedia.org/wiki/%ED%98%B8%EB%9E%91%EC%9D%B4" title="호랑이">한국어</a>
+            </li>
+					<li class="interwiki-hy">
+              <a href="http://hy.wikipedia.org/wiki/%D5%8E%D5%A1%D5%A3%D6%80" title="Վագր">Հայերեն</a>
+            </li>
+					<li class="interwiki-hi">
+              <a href="http://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%98" title="बाघ">हिन्दी</a>
+            </li>
+					<li class="interwiki-hsb">
+              <a href="http://hsb.wikipedia.org/wiki/Tiger" title="Tiger">Hornjoserbsce</a>
+            </li>
+					<li class="interwiki-hr">
+              <a href="http://hr.wikipedia.org/wiki/Tigar" title="Tigar">Hrvatski</a>
+            </li>
+					<li class="interwiki-io">
+              <a href="http://io.wikipedia.org/wiki/Tigro" title="Tigro">Ido</a>
+            </li>
+					<li class="interwiki-ilo">
+              <a href="http://ilo.wikipedia.org/wiki/Tigre" title="Tigre">Ilokano</a>
+            </li>
+					<li class="interwiki-id">
+              <a href="http://id.wikipedia.org/wiki/Harimau" title="Harimau">Bahasa Indonesia</a>
+            </li>
+					<li class="interwiki-ia">
+              <a href="http://ia.wikipedia.org/wiki/Tigre" title="Tigre">Interlingua</a>
+            </li>
+					<li class="interwiki-os">
+              <a href="http://os.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80" title="Тигр">Иронау</a>
+            </li>
+					<li class="interwiki-is">
+              <a href="http://is.wikipedia.org/wiki/T%C3%ADgrisd%C3%BDr" title="Tígrisdýr">Íslenska</a>
+            </li>
+					<li class="interwiki-it">
+              <a href="http://it.wikipedia.org/wiki/Panthera_tigris" title="Panthera tigris">Italiano</a>
+            </li>
+					<li class="interwiki-he">
+              <a href="http://he.wikipedia.org/wiki/%D7%98%D7%99%D7%92%D7%A8%D7%99%D7%A1" title="טיגריס">עברית</a>
+            </li>
+					<li class="interwiki-kn">
+              <a href="http://kn.wikipedia.org/wiki/%E0%B2%B9%E0%B3%81%E0%B2%B2%E0%B2%BF" title="ಹುಲಿ">ಕನ್ನಡ</a>
+            </li>
+					<li class="interwiki-ka">
+              <a href="http://ka.wikipedia.org/wiki/%E1%83%95%E1%83%94%E1%83%A4%E1%83%AE%E1%83%95%E1%83%98" title="ვეფხვი">ქართული</a>
+            </li>
+					<li class="interwiki-sw">
+              <a href="http://sw.wikipedia.org/wiki/Tiger" title="Tiger">Kiswahili</a>
+            </li>
+					<li class="interwiki-ht">
+              <a href="http://ht.wikipedia.org/wiki/Tig" title="Tig">Kreyòl ayisyen</a>
+            </li>
+					<li class="interwiki-ku">
+              <a href="http://ku.wikipedia.org/wiki/Piling" title="Piling">Kurdî</a>
+            </li>
+					<li class="interwiki-la">
+              <a href="http://la.wikipedia.org/wiki/Tigris" title="Tigris">Latina</a>
+            </li>
+					<li class="interwiki-lv">
+              <a href="http://lv.wikipedia.org/wiki/T%C4%AB%C4%A3eris" title="Tīģeris">Latviešu</a>
+            </li>
+					<li class="interwiki-lb">
+              <a href="http://lb.wikipedia.org/wiki/Tiger" title="Tiger">Lëtzebuergesch</a>
+            </li>
+					<li class="interwiki-lt">
+              <a href="http://lt.wikipedia.org/wiki/Tigras" title="Tigras">Lietuvių</a>
+            </li>
+					<li class="interwiki-lij">
+              <a href="http://lij.wikipedia.org/wiki/Tigre" title="Tigre">Líguru</a>
+            </li>
+					<li class="interwiki-li">
+              <a href="http://li.wikipedia.org/wiki/Tieger" title="Tieger">Limburgs</a>
+            </li>
+					<li class="interwiki-jbo">
+              <a href="http://jbo.wikipedia.org/wiki/tirxu" title="tirxu">Lojban</a>
+            </li>
+					<li class="interwiki-hu">
+              <a href="http://hu.wikipedia.org/wiki/Tigris" title="Tigris">Magyar</a>
+            </li>
+					<li class="interwiki-mk">
+              <a href="http://mk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D0%B0%D1%80" title="Тигар">Македонски</a>
+            </li>
+					<li class="interwiki-ml">
+              <a href="http://ml.wikipedia.org/wiki/%E0%B4%95%E0%B4%9F%E0%B5%81%E0%B4%B5" title="കടുവ">മലയാളം</a>
+            </li>
+					<li class="interwiki-mi">
+              <a href="http://mi.wikipedia.org/wiki/Taika" title="Taika">Māori</a>
+            </li>
+					<li class="interwiki-mr">
+              <a href="http://mr.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BE%E0%A4%98" title="वाघ">मराठी</a>
+            </li>
+					<li class="interwiki-arz">
+              <a href="http://arz.wikipedia.org/wiki/%D9%86%D9%85%D8%B1" title="نمر">مصرى</a>
+            </li>
+					<li class="interwiki-ms">
+              <a href="http://ms.wikipedia.org/wiki/Harimau" title="Harimau">Bahasa Melayu</a>
+            </li>
+					<li class="interwiki-mdf">
+              <a href="http://mdf.wikipedia.org/wiki/%D0%91%D0%B0%D0%B1%D1%80%D0%B8" title="Бабри">Мокшень</a>
+            </li>
+					<li class="interwiki-mn">
+              <a href="http://mn.wikipedia.org/wiki/%D0%91%D0%B0%D1%80" title="Бар">Монгол</a>
+            </li>
+					<li class="interwiki-my">
+              <a href="http://my.wikipedia.org/wiki/%E1%80%80%E1%80%BB%E1%80%AC%E1%80%B8" title="ကျား">မြန်မာဘာသာ</a>
+            </li>
+					<li class="interwiki-nl">
+              <a href="http://nl.wikipedia.org/wiki/Tijger" title="Tijger">Nederlands</a>
+            </li>
+					<li class="interwiki-ne">
+              <a href="http://ne.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%98" title="बाघ">नेपाली</a>
+            </li>
+					<li class="interwiki-ja">
+              <a href="http://ja.wikipedia.org/wiki/%E3%83%88%E3%83%A9" title="トラ">日本語</a>
+            </li>
+					<li class="interwiki-ce">
+              <a href="http://ce.wikipedia.org/wiki/%D0%A6%D3%80%D0%BE%D1%8C%D0%BA%D1%8A%D0%B0%D0%BB%D0%BE%D0%BC" title="ЦӀоькъалом">Нохчийн</a>
+            </li>
+					<li class="interwiki-nn">
+              <a href="http://nn.wikipedia.org/wiki/Tiger" title="Tiger">‪Norsk (nynorsk)‬</a>
+            </li>
+					<li class="interwiki-pa">
+              <a href="http://pa.wikipedia.org/wiki/%E0%A8%9F%E0%A8%BE%E0%A8%88%E0%A8%97%E0%A8%B0" title="ਟਾਈਗਰ">ਪੰਜਾਬੀ</a>
+            </li>
+					<li class="interwiki-pl">
+              <a href="http://pl.wikipedia.org/wiki/Tygrys" title="Tygrys">Polski</a>
+            </li>
+					<li class="interwiki-pt">
+              <a href="http://pt.wikipedia.org/wiki/Tigre" title="Tigre">Português</a>
+            </li>
+					<li class="interwiki-ro">
+              <a href="http://ro.wikipedia.org/wiki/Tigru" title="Tigru">Română</a>
+            </li>
+					<li class="interwiki-qu">
+              <a href="http://qu.wikipedia.org/wiki/Tigri" title="Tigri">Runa Simi</a>
+            </li>
+					<li class="interwiki-ru">
+              <a href="http://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80" title="Тигр">Русский</a>
+            </li>
+					<li class="interwiki-sah">
+              <a href="http://sah.wikipedia.org/wiki/%D0%91%D0%B0%D0%B0%D0%B1%D1%8B%D1%80" title="Баабыр">Саха тыла</a>
+            </li>
+					<li class="interwiki-sa">
+              <a href="http://sa.wikipedia.org/wiki/%E0%A4%B5%E0%A5%8D%E2%80%8D%E0%A4%AF%E0%A4%BE%E0%A4%98%E0%A5%8D%E0%A4%B0:" title="व्‍याघ्र:">संस्कृत</a>
+            </li>
+					<li class="interwiki-sco">
+              <a href="http://sco.wikipedia.org/wiki/Teeger" title="Teeger">Scots</a>
+            </li>
+					<li class="interwiki-sq">
+              <a href="http://sq.wikipedia.org/wiki/Tigri" title="Tigri">Shqip</a>
+            </li>
+					<li class="interwiki-simple">
+              <a href="http://simple.wikipedia.org/wiki/Tiger" title="Tiger">Simple English</a>
+            </li>
+					<li class="interwiki-sk">
+              <a href="http://sk.wikipedia.org/wiki/Tiger_d%C5%BEung%C4%BEov%C3%BD" title="Tiger džungľový">Slovenčina</a>
+            </li>
+					<li class="interwiki-cu">
+              <a href="http://cu.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80%D1%8A" title="Тигръ">Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ</a>
+            </li>
+					<li class="interwiki-sl">
+              <a href="http://sl.wikipedia.org/wiki/Tiger" title="Tiger">Slovenščina</a>
+            </li>
+					<li class="interwiki-so">
+              <a href="http://so.wikipedia.org/wiki/Shabeel" title="Shabeel">Soomaaliga</a>
+            </li>
+					<li class="interwiki-sr">
+              <a href="http://sr.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D0%B0%D1%80" title="Тигар">Српски / Srpski</a>
+            </li>
+					<li class="interwiki-su">
+              <a href="http://su.wikipedia.org/wiki/Lodaya" title="Lodaya">Basa Sunda</a>
+            </li>
+					<li class="interwiki-fi">
+              <a href="http://fi.wikipedia.org/wiki/Tiikeri" title="Tiikeri">Suomi</a>
+            </li>
+					<li class="interwiki-sv">
+              <a href="http://sv.wikipedia.org/wiki/Tiger" title="Tiger">Svenska</a>
+            </li>
+					<li class="interwiki-tl">
+              <a href="http://tl.wikipedia.org/wiki/Tigre" title="Tigre">Tagalog</a>
+            </li>
+					<li class="interwiki-ta">
+              <a href="http://ta.wikipedia.org/wiki/%E0%AE%AA%E0%AF%81%E0%AE%B2%E0%AE%BF" title="புலி">தமிழ்</a>
+            </li>
+					<li class="interwiki-te">
+              <a href="http://te.wikipedia.org/wiki/%E0%B0%AA%E0%B1%81%E0%B0%B2%E0%B0%BF" title="పులి">తెలుగు</a>
+            </li>
+					<li class="interwiki-th">
+              <a href="http://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B9%88%E0%B8%87" title="เสือโคร่ง">ไทย</a>
+            </li>
+					<li class="interwiki-tg">
+              <a href="http://tg.wikipedia.org/wiki/%D0%91%D0%B0%D0%B1%D1%80" title="Бабр">Тоҷикӣ</a>
+            </li>
+					<li class="interwiki-ve">
+              <a href="http://ve.wikipedia.org/wiki/Nngwe" title="Nngwe">Tshivenda</a>
+            </li>
+					<li class="interwiki-tr">
+              <a href="http://tr.wikipedia.org/wiki/Kaplan" title="Kaplan">Türkçe</a>
+            </li>
+					<li class="interwiki-uk">
+              <a href="http://uk.wikipedia.org/wiki/%D0%A2%D0%B8%D0%B3%D1%80" title="Тигр">Українська</a>
+            </li>
+					<li class="interwiki-ur">
+              <a href="http://ur.wikipedia.org/wiki/%D8%B4%DB%8C%D8%B1" title="شیر">اردو</a>
+            </li>
+					<li class="interwiki-ug">
+              <a href="http://ug.wikipedia.org/wiki/%D8%A8%D8%A7%D8%B1%D8%B3" title="بارس">ئۇيغۇرچە / Uyghurche‎</a>
+            </li>
+					<li class="interwiki-vi">
+              <a href="http://vi.wikipedia.org/wiki/H%E1%BB%95" title="Hổ">Tiếng Việt</a>
+            </li>
+					<li class="interwiki-wo">
+              <a href="http://wo.wikipedia.org/wiki/S%C3%A9gg" title="Ségg">Wolof</a>
+            </li>
+					<li class="interwiki-yi">
+              <a href="http://yi.wikipedia.org/wiki/%D7%98%D7%99%D7%92%D7%A2%D7%A8" title="טיגער">ייִדיש</a>
+            </li>
+					<li class="interwiki-zh-yue">
+              <a href="http://zh-yue.wikipedia.org/wiki/%E8%80%81%E8%99%8E" title="老虎">粵語</a>
+            </li>
+					<li class="interwiki-zh">
+              <a href="http://zh.wikipedia.org/wiki/%E8%99%8E" title="虎">中文</a>
+            </li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> Denne siden ble sist endret 1. okt 2010 kl. 18:43.</li>
+																							<li id="footer-info-copyright">Innholdet er tilgjengelig under <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.no">Creative Commons-lisensen Navngivelse-Del på samme vilkår</a>, men ytterligere betingelser kan gjelde. Se <a href="http://no.wikipedia.org/wiki/WP:VILKÅR">bruksvilkårene</a> for detaljer.</li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy">
+          <a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Personvern</a>
+        </li>
+																							<li id="footer-places-about">
+          <a href="/wiki/Wikipedia:Om" title="Wikipedia:Om">Om Wikipedia</a>
+        </li>
+																							<li id="footer-places-disclaimer">
+          <a href="/wiki/Wikipedia:Generelle_forbehold" title="Wikipedia:Generelle forbehold">Forbehold</a>
+        </li>
+															</ul>
+										<ul class="noprint" id="footer-icons">
+								<li id="footer-icon-poweredby">
+          <a href="http://www.mediawiki.org/">
+            <img alt="Powered by MediaWiki" height="31" src="wikiback/no_wikipedia_org_wiki_Tiger/poweredby_mediawiki_88x31.png" width="88"/>
+          </a>
+        </li>
+												<li id="footer-icon-copyright">
+          <a href="http://wikimediafoundation.org/">
+            <img alt="Wikimedia Foundation" height="31" src="/images/wikimedia-button.png" width="88"/>
+          </a>
+        </li>
+							</ul>
+			<div style="clear:both"/>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+		<!-- Served by srv204 in 0.470 secs. -->			</body>
+</html>

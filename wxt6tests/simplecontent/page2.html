@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>Testing</title>
+	<link href="templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.min.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('page21',event);" onmouseover="javascript:popunpop('page21',event);">Welcome</a>
+<div class="wxtsummary" id="page21" style="display: none;">
+<div class="header">Welcome</div>Demonstration of simple XML-import</div>
+</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('page22',event);" onmouseover="javascript:popunpop('page22',event);">Page1</a>
+<div class="wxtsummary" id="page22" style="display: none;">
+<div class="header">Page1</div>More demonstration of XML-import</div>
+</div>
+<div class="level1 wxtselected">Page2</div>
+<div class="level1">
+<a href="page3.html" onmouseout="javascript:popunpop('page23',event);" onmouseover="javascript:popunpop('page23',event);">Page3</a>
+<div class="wxtsummary" id="page23" style="display: none;">
+<div class="header">Page3</div>Incomplete content to be tidyed</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importxml</h1>
+<p>Using  material that is not well formed.
+</p>
+<div>
+<div class="source1"> 
+  <p>Hallo dette er importert tekst pakket i en p-tag på en side som ikke er wellformet. Rammen mangler en div-tag.</p> 
+  <div class="source2"> 
+   <p>Hallo dette er importert tekst pakket i en p-tag på en side som ikke er wellformet. Mangler slutt på p-tag </p>
+  </div> 
+ </div>
+</div>
+<div>
+<div class="source2"> 
+   <p>Hallo dette er importert tekst pakket i en p-tag på en side som ikke er wellformet. Mangler slutt på p-tag </p>
+  </div>
+</div>
+<hr/>
+<h3>Content file for this page</h3>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/page2.xml</div>
+<div class="content" style="display:none">
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;<span class="tag">html</span>&gt;
+&lt;<span class="tag">head</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+        
+&lt;<span class="tag">div</span> <span class="atn">class</span>="<span class="atv">mainblock</span>"&gt;
+&lt;<span class="tag">h1</span>&gt;Testing PI:importxml&lt;/<span class="tag">h1</span>&gt;
+ 
+&lt;<span class="tag">p</span>&gt;Using  material that is not well formed.
+&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importxml location="simplenotwellxml.xml" 
+       xpath="//div[@class='source1']"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importxml location="simplenotwellxml.xml" 
+       xpath="//div[@class='source2']"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">hr</span>/&gt;
+&lt;<span class="tag">h3</span>&gt;Content file for this page&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="page2.xml" 
+       lang="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+ 
+&lt;/<span class="tag">div</span>&gt; &lt;!--<span class="com"> mainblock </span>--&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;</pre>
+</div>
+</div>
+</div>
+		</div>
+
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

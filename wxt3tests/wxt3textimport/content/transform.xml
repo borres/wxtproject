@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importtxt</h1>
+ <p>
+   Testing use of transformation and importtxt.
+   Transforming a XML-file to text before importing from that text.<br/> 
+   Two files are involved:  
+   <span>
+   <?_wxt popup sourcelocation="transform/all_results.xml" 
+          location="transform/all_results_xml.html"
+          lang="lang-xml" text="XML file"?></span>
+	and
+   <span>
+   <?_wxt popup sourcelocation="transform/trans1.xsl" 
+          location="transform/trans1_xsl.html"
+          lang="lang-xml" text="transformation"?></span></p>
+<div >
+<?_wxt importtxt location="transform/all_results.xml" 
+       transformation="T1(OL='Athens',DISTANCE='400m')"
+	   leftpar="<body>" rightpar="</body>"
+	   parse="yes"?>
+</div>
+
+
+
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt importtxt location="transform.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

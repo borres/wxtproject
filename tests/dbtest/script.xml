@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      
+      <definitions>
+
+        <template id="P" location="templates/p_template.xml"/>
+
+		<transformation id="vindb1" location="dbvin1.xsl"/>
+		<transformation id="vindb2" location="dbvin2.xsl"/>
+        
+       
+     </definitions>
+        
+    <module description="Welcome to databasetesting" location="index.html" 
+	        name="Welcome" template="P" books="all">
+        <xmlcontent location="blocks/b-index.xml"/>
+	</module>
+    
+	<module description="Update" location="update.html" 
+	        name="Update" template="P" books="all">
+        <xmlcontent location="blocks/b-update.xml"/>
+	</module>
+	
+    <module description="Fragment" location="simple.html" 
+	        name="Fragment" template="P" books="all">
+        <xmlcontent location="blocks/b-simple.xml"/>
+	</module>
+
+    <module description="Transformation" location="transformation.html" 
+	        name="Transform" template="P" books="all">
+        <xmlcontent location="blocks/b-transformation.xml"/>
+	</module>	
+ 
+    <module description="table" location="table.html" 
+	        name="Table" template="P" books="all">
+        <xmlcontent location="blocks/b-table.xml"/>
+	</module>
+     
+ </wscript>

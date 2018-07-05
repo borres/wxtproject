@@ -1,0 +1,30 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">root</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">main</span>"&gt;
+    &lt;<span class="tagname">h1</span>&gt;Eidsvoll&lt;/<span class="tagname">h1</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt fragment id="_summary"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">img</span> <span class="attname">style</span>="<span class="attvalue">float:right</span>" <span class="attname">src</span>="<span class="attvalue">eidsvoll.png</span>" <span class="attname">alt</span>="<span class="attvalue"></span>"/&gt;
+    &lt;<span class="tagname">p</span>&gt;
+        Eidsvoll is situated at the southern end of 
+        Mjøsa&lt;<span class="tagname">span</span> <span class="attname">class</span>="<span class="attvalue">fn</span>"&gt;Mjøsa is the greatest lake in Norway&lt;/<span class="tagname">span</span>&gt; and 
+        about 100km north of 
+        Oslo&lt;<span class="tagname">span</span> <span class="attname">class</span>="<span class="attvalue">fn</span>"&gt;Oslo is the capital of Norway&lt;/<span class="tagname">span</span>&gt;.
+    &lt;/<span class="tagname">p</span>&gt;
+    &lt;<span class="tagname">p</span>&gt;
+    <span class="process">&lt;?_wxt importxml location="eidsvoll1814.xml" xpath="//body/child::node()"?&gt;</span>
+    &lt;/<span class="tagname">p</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt footnote?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt; &lt;!--<span class="comment"> main </span>--&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">pagesource</span>" <span class="attname">style</span>="<span class="attvalue">clear:both</span>"&gt;
+    Inspect source:
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt expand location="hcoded.txt" title="eidsvoll.xml"
+                    sourcelocation="eidsvoll.xml" 
+                    expanded="no" code="xmlcode"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">root</span>&gt;</pre>

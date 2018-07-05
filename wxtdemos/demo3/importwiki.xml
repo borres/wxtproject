@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<div class="content">    
+<h1>WIKI import</h1>
+
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_importwiki.xml"  title="importwiki.xml"
+             sourcelocation="importwiki.xml" code="xmlcode"?>
+</div>
+<hr/>
+<div>
+	<?_wxt moduletoc tags=",h2,h3" cols="1"?>
+</div>
+<hr/>
+<p>
+Testing import av WIKI fragments
+</p>
+<div>
+<?_wxt importwiki location="handbok.html" dpath="//Trac"?> 
+</div>
+<hr/>
+<div>
+	<?_wxt importwiki location="hovedside.html" dpath="/Aktuelle kurs"?>
+</div>
+<hr/>
+<div>
+	<?_wxt importwiki location="hovedside.html" dpath="/Møtereferater"?>
+</div>
+<hr/>
+<div>
+	<?_wxt importwiki location="hovedside.html" dpath="//NU-søknad 2008"?>
+</div>
+
+</div>
+</data>

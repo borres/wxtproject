@@ -1,0 +1,3167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<query id="1">
+<sql>select type,description,dice from wines where country = 'Frankrike'</sql>
+
+	<record>
+		<type>sparkling</type>
+		<description>Test. Duften minner mest om epler og har et lite streif av gjærbakst. Syrefrisk og harmonisk smak med god fylde, fin  syrefasthet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Test. Duft av modne epler og gjær. Syrlig anslag, deretter streif av honning i smaken. Litt lite  nyansert.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Aromatisk duft av solbærblader, stikkelsbær, nesle og urter. Smaksrik og lang, med frisk  bitterhet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Rik duft av blomster, honning, skifer og petroleum. Helstøpt riesling med smaksnyanser av markjordbær, epler og tropiske frukter. Harmonisk totalinntrykk med en liten restsødme og fint krydret ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis. Rik duft av mineraler, sitrus og toast. Velbalansert og fyldig smak med både syretørrhet og fruktsødme. Kompleks og lang ettersmak med en liten brentkarakter i avslutningen.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Søt og moden duft av rosiner og aprikos. Myk og rund smak med innslag av tørkete frukter og karamellsødme. Bra syrefasthet og en utpreget brentkarakter i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 1200 flasker. Kompleks duft av mørke bær, fioler, lakris, urter og eikevanilje. Bløt og fyldig smak, god ettersmak med passelig snerp og litt brent avslutning.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Kompleks duft av solbær, lær og eikefat. Mykt anslag og moden smak med fine smaksnyanser. God fylde og fin tørrhet i ettersmaken. Parker gir 86 poeng og antyder holdbarhet til 2007.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Klassiske Bordeaux-toner i duften med sedertre, solbær, tobakk og kaffe. God fruktsødme og fasthet i smaken, ikke mer snerp i ettersmaken enn at vinen kan nytes allerede. Parker gir 88 poeng og antyder holdbarhet til 2011. Fem flasker av denne koster mindre enn én flaske Ch.Margaux av samme årgang!</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Søtlig krydret duft med bjørnebærfruktighet. Bløt og rund smak med en glatt munnfølelse. Litt lakriskarakter og lett snerp i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Fatpreg og aroma av mørke bær i duften. Fyldig og fast solbær/lakrissmak med bra konsentrasjon, syrefrisk ettersmak med passelig snerpende avslutning.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Søtlig krydder og et litt tørt preg i duften. Mykt smaksanslag og en middels fyldig, sødmerik og krydret smak. Syretørr ettersmak med moderat snerp.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Søtlig krydret duft med elementer av bjørnebær, pinjer og røyk. Rund og fyldig smak med god bærsødme og frisk  ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 480 flasker. Edelt fatpreg i duften med litt brent undertone. Lakris og bjørnebær i smaken, kraftig snerpende  ettersmak med en kaffeaktig brentkarakter helt til slutt.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Syrah-typisk duft av bjørnebær, pinjer, skogbunn og røyk. Intens smak med rik bærkarakter, lakrissødme og urtepreg. Ganske stram og snerpende ettersmak. Parker gir 88 poeng og mener vinen bør drikkes innen 2007.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Solbærblader og solbær er tydeligste elementer i duften. Ganske syrlig og tørr smak,  med litt rustikt preg på ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Ferskt bærpreg og en brent undertone i duften. Bløt og saftig smak med middels fylde og lett snerp i den syretørre ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Søtlig duft av røde bær, vanilje og blomster. Mykt smaksanslag og bløt fruktighet først i  smaksbildet, med en viss syretørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Duft av mørke bær, urter og eikefat. Moden smak med tørket fruktkarakter, ganske tørr og snerpende  ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Moden duft av tørket frukt og eikelagring. Utviklet smak av tørkete frukter og tobakk, tørr ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Duften minner om solbær, eikefat og kaffe. Middels fyldig smak, moderat snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Fruktig duft med  nyanser av melon, fersken og aprikos. Ren og frisk smak med god fruktsødme  og en liten bitterhet som gir fin fasthet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Lite tiltalende duft som gir assosiasjoner til våt papp blir mindre påtrengende etter at vinen har fått lufte seg en  stund. Smaken er bedre, med stilren syre, men fruktigheten mangler  karakter.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Dufter solbær, karamell og kamfer. Syrah-preget er ikke tydelig. Ferskt bærpreg i smaken,  bra balanse og fasthet, bitter tørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbær og vaniljesødme i duften, med et streif av skogbunn og røyk. Smaken følger ikke opp, blir for enkel og kort.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>test</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av tropiske frukter, toast og mineraler. Fyldig og smaksrik vin med bra  syrlighet og litt krydret ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Diskret pinot-karakter av jordbær og fioler. Frisk og tørr smak med en liten  bringebærsødme, elegant vin med lang ettersmak. Flott matvin til ikke for   kraftige viltretter.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ren og frisk duft av fioler og bringebær. Slank og elegant smak, fin syretørrhet i ettersmaken. Flott vin til milde viltretter.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften minner om skogsbær, multesteiner, pepper og pinjer. Kjølig fruktighet med bjørnebær og lakris i smaken, bra syre og tannin i ettersmaken som snerper skikkelig. Vin til smakskraftige viltretter.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Frisk bringebærfruktighet i duften. Saftig og syrefrisk smak, stilig ettersmak med fin tørrhet og fast snerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Modne og animalske toner i duften med hint av lær, pinjer, tobakk og skogbunn. Bløt og fyldig smak  med plomme, morell, lakris og sjokolade. Fin tørrhet i ettersmaken, vil passe til middels kraftige viltretter.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Første duftassosiasjon er møkkakjeller, for dette er kraftige saker, og et spørsmål om like eller ikke like. Shit-lukta blir mindre framtredende med litt lufting og kan da karakteriseres som gjødsel-tendenser som kompletteres av bjørnebær, lakris, sjokolade og kaffe. Fyldig og syrerik vin med kraftig snerpende ettersmak som vil egne seg bra til de tøffest tenkelige viltretter. Også interessant vin å lagre i fem til sju år.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søte bær og pinjekarakter i duften. Plomme, morell og lakrissødme i den ganske glatte smaken, med litt  kaffeaktig brenthet og fin syretørrhet i ettersmaken. Prøvet avkjølt til   bacalao, og fungerte bra.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Fin duft av bjørnebær, lakris, lær og pepper. Smaken følger ikke helt opp, virker litt overmoden og for tørr. Tobakksaktig tørrhet i ettersmaken. Kan bare anbefales til middels kraftige viltretter.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duft av velhengt kjøtt, vanilje, medisinskap, pepper, tobakk og skogbunn. Smak med friske bærtoner, lakris og litt honningsødme, tørket frukt og ganske snerpende ettersmak. Tøff nok til kraftige viltretter.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Modent duftpreg med tørket frukt og tobakk. Bløt og litt melen frukt i munnen, syrebitter ettersmak. Til enkle viltretter.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetalt duftpreg med litt jordbærsødme og snev av skogbunn. 99-årgangen var bedre, dette er litt for spinkelt og syrlig, holder bare til lette viltretter.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sødmerik duft av roser, melon og honning. Oljeaktig munnfølelse med smak av sukat og aprikos, harmonisk totalinntrykk, men lav syre gir kort ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Masse blomster og tropiske frukter i duften. Rund og fyldig smak med snev av aprikos, marsipan og honning. Velbalansert takket være ganske god syrlighet til å være gewürztraminer, litt mandelbitterhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av tropiske frukter og mineraler. Bra friskhet men ikke så stor fylde i smaken, med innslag av aprikos og clementiner. Lett og ganske  kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Blomsteraktig duft og smak med innslag av melon urter. Mangler frukt og blir litt spinkel smaksmessig, ettersmaken er ganske syrebitter.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bærpreg i duften. Rik og saftig smak med fyldig bærsødme, litt sjokoladeaktig bitterhet i  ettersmaken. Fin matvin nå, men også interessant å lagre ett år eller to.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Mektig duft av skogsbær, urter, lær og pinjer. Glatt og fyldig smak med rik fruktsødme og behagelig syrlighet. God  ettersmak med modne tanniner og lett snerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig, animalsk og varmt krydret duft med streif av skogsbær, lakris, mokka og pinjer. God smaksintenstitet takket være fin balanse mellom fruktsødme og syrlighet og et pent integrert fatpreg. Grei  syretørrhet og modne tanniner i ettersmaken. Flott viltvin.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Moden duft av jordbær, eukalyptus, kamfer, tobakk og pinjer. Sviskeaktig smak med en karamellisert fattone, fin  tørrhet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Rik duft av søte mørke bær, anis, lær, pinjer og julekrydder. Harmonisk smak med stor konsentrasjon, lang og spenstig ettersmak med  vaniljearoma og myke tanniner.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Eukalyptus, kamfer, bjørnebær og lakris i duften. Tett og konsentrert vin med muskuløs fruktighet og fast, tobakkstørr avslutning. God matvin nå, men vil utvikle enda større  kompleksitet med noen års lagring.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig krydret duft med streif av røde bær, urter og lakris. Rund og god bærsødme i smaken, med snerpende fasthet og  syretørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Fersk bærduft med lakrissødme og pinjeaktig syrlighet. Saftig og bløt smak med plommesødme,  god fylde, lett syretørrhet i ettersmaken. Drikkeklar til ikke for  smakskraftige matretter.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Lær, lakris, bjørnebær og pinjer i duften. Bløt og krydret smak, syrefrisk og litt brent ettersmak med bra lengde.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt brent duftpreg med streif av bjørnebær, multesteiner, kamfer og lakris. Saftig  smak med sødme av bær og karamell. Varmt krydret ettersmak med   kreklingbitterhet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Moden, søtlig duft av solbær, karamell og pinjer. Bløt og utviklet smak med solbær og lakrissødme, og ettersmak med en tobakksaktig tørrhet. Denne vinen har utviklet seg raskt,  mens 2000-årgangen virker mer motstandsdyktig.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt vegetalt duftpreg med urter, bringebær og pinjer. Saftig og frisk smak med kirsebær og pepper, lett  syretørrhet og relativt kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Sødmerik duft som minner  om fioler og bringebær. Elegant smak med friskt og saftig bringebærpreg,  ettersmaken er ganske syrlig med litt snerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Endelig en rødvin med skrukork som kan anbefales. Duften har en fersk solbær/kirsebærsødme og snev av urter og pepper, smaken er saftig og  middels fyldig med hint av plommer, ettersmaken er ganske syretørr.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Moden stil duftmessig. Jordbær/bringebærsødme og fine små bobler først i smaken, elegant ferskenaktig fruktighet og behagelig syrlighet, velkomponert totalinntrykk.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Moden fruktighet med duft av søte epler, gjærbakst og nøtter. Rik og fyldig smak med god friskhet. Fin syretørrhet i ettersmaken gjør Palmer til en god matchampagne.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Tiltalende duft av roser, moden frukt, gjærbakst og mineraler. Intens smak med myke bobler og nyanser av  jordbær og nøtter, lang ettersmak med flott syrebitt.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Innbydende duft av blomster, sitrus og gjærbakst. Elegant smak med både søte epler og ripsaktig syrlighet. Moden og behagelig champagne med avrundet ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Lime-aktig fruktighet og fin autolysekarakter i duften. Søtlig midtparti med honningaktig aroma som balanserer bra mot syretørrheten i  ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>På første og andre forsøk traff vi på flasker med urent innhold. Tredje flaske stemte heldigvis bedre med våre forventninger til denne vinen. Frisk duft av lime med mineralsk tørrhet. Modne epler og litt stikkelsbærsødme i smaken, bra syrlighet og litt kjernebitterhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Brødtoner, gule plommer, søte epler og fatvanilje i duften. Frisk og ren smak med myke bobler og sødme av mandarin og honning. Brukbar syre og et harmonisk totalinntrykk.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Sitrusfrisk duft. God mousse i smaken, ung og spenstig fruktighet med nyanser av grønne epler. Velkomponert champagne med frisk og lang ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Moden fruktighet og gjærbakst i duften. Stilig smak med myke  bobler, syrefrisk ettersmak. Fin aperitif-champagne.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av mineraler, gjærbakst og moden frukt. Rund og behagelig smak med fine bobler, frisk  syretørrhet i avslutningen.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Moden stil duftmessig. God mousse, men smaken virker litt overmoden og ikke så frisk som for et halvt år  siden. Såpass besk ettersmak at her må det mat til.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Modne epler, vanilje og brødtoner i duften. Bløt og harmonisk smak med melonsødme og fine bobler. Fin sitrussyrlighet og et lite mineralpreg i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Moden duft med brødpreg og snev av mandler. Rik og behagelig smak med myk mousse og godt  modningspreg, bra syrefriskhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Blek strågul farge og syrefrisk duft med et lite gjærpreg. Honningaktig sødme først i smaken, litt grove bobler, lite kropp og litt bitter ettersmak som  minner om eplekart.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Honningmelon i duften. Ren og mild smak med god  mousse, bør drikkes godt avkjølt, ellers virker den slapp.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av mineraler, gress, roser, moden frukt og gjærbakst. Smaken følger ikke helt opp, og ettersmaken har en grapefruktaktig bitterhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av gule plommer, karamell og honning. Gode bobler og søte epler i smaken, men litt for endimensjonal og enkel smaksmessig. Grei syreavslutning.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Søte epler , gjærbakst og mineraler i duften. Smaken virker litt overmoden og oksydert, men har også en epleaktig sødme.  Ettersmaken har en tyttebæraktig syrlighet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Søtlig, ferskenaktig duft med mineralsk tørrhet. Modne epler, vanilje og fersken i  smaken, litt kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Virker grov og uelegant, ikke så god som da vi smakte den i mai 2003. Harde bobler i smaken, urter og grapefrukt i smaken, uelegant totalinntrykk med for bitter ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Gress, sitrus og brødtoner i duften. Litt diffus smak, fruktighet og syrlighet  harmonerer ikke helt. Ettersmaken blir uelegant og syrebitter.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av mineraler og sursøt frukt. Grove bobler og nyanser av pærer og nøtter i  smaken, ganske besk ettersmak. Skuffende.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 260 flasker. Toast, mineraler, sitrus og nøtteaktig duft. Elegant og velbalansert smak, lang og syretørr ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Sødme i duften minner om anis og fennikel. Stikkelsbærsødme og sitrusfriskhet i smaken, litt vandig ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis. Toast og sitrus i duften. Rund og fyldig smak med litt tropisk fruktsødme, frisk og lang ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 480 flasker. Duft av toast, sitrus og mineraler. Eikepreget og fyldig smak med innslag av nøtter, intens syrlighet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Frisk duft av sitrus og mineraler. Enkel fruktighet i den ganske tørre smaken, syrlig ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Et dempet preg av sitrus, toast og litt mineraler i duft og smak. Elegant og velbalansert smak, men prisen er 70-80 kroner for høy.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Mørke søte bær og et varmt krydderpreg i duften. Harmonisk og rund smak med god fylde, passelig fasthet og snerp i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Frisk bringebærfruktighet i duften. Saftig og syrefrisk smak, stilig ettersmak med fin tørrhet og fast snerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Kompleks duft av toast, solbær, lakris og kaffe. Fersk bærsmak, god fylde og fasthet, god matvin i dag som også kan lagres to-tre år.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Solbær, sedertre og tobakk i duften. Lovende vin med flott smakskonsentrasjon, ettersmaken snerper godt, så vinen kan gjerne lagres to-tre år.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Duft av solbær og sedertre. Smaken virker litt umoden, med middels fylde og lett snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Trepreg, tørket frukt og tobakk i duften. Bløt og moden smak med god fylde, fin tørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 240 flasker. Tett og mørk vin med edel duft av sedertre og solbær. Fyldig smak med lakrissødme, kaffeaktig brentkarakter i ettersmaken. Snerper skikkelig, bør lagres minst et par år, gjerne i 10 år.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Varmt krydret duft med solbærpreg. Søtlig og enkel smak med lite frukt. Syretørr ettersmak med lett snerp.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Duft av mørke søte bær og eikelagring. Vegetal og hard smak, besk ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Varmt duftpreg med innslag av eikevanilje. Ganske tørr smak med lite fruktighet og middels fylde, ettersmaken tørker ut.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Lovende duft av bjørnebær, kamfer, lær og pinjer, men smaken følger ikke opp, den er for vegetal og bitter. Ettersmaken snerper ganske mye.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Tørr duft med solbær og eiketoner. Umoden fruktighet i smaken, ikke konsentrert nok, og med tørr og snerpende ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Utviklet duft med innslag av tørket frukt og treverk. Smaken virker overmoden, ettersmaken tørker ut.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Lysebrun og gjennomsiktig vin med utviklet jordbærsødme i duften. Bløt smak med lite frukt og for tørr ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Søtlig duft med innslag av kamfer og et varmt preg. Litt for syltetøyaktig smak, og for tørr ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Lys rødbrun vin med uren duft. Spinkel smak, syrespiss ettersmak med besk avslutning.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Under skrukorken er det en markant aroma av solbærblader, nyslått gress og nesle. Velbalansert og fyldig smak av sitrus, stikkelsbær og anis. Behagelig syretørrhet i ettersmaken. 3 liters kartong med varenummer 41262 har fått prisen økt med 15 kroner til kr 324,00 som tilsvarer kr 81,00 pr 75 cl.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Blomsteraktig og søtlig parfymert duft. Myk og rund ferskenaktig smak med moderat syrlighet. En liten bitterhet i ettersmaken gir nødvendig fasthet. Samme vin i tre liters kartong med varenummer 33893 koster kr 297,00.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Mild duft med litt melonsødme. Enkel smak med lite syre og litt appelsinaktig sødme. Avrundet og kort ettersmak. Men billig. Finnes nå også i 300 cl kartong med varenummer 42025 til kr 279,90.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Aromatisk duft av stikkelsbær, solbærblader og nyslått gress. Ren og bløt smak med middels fylde og lett fruktsødme med anstrøk av gule epler og aprikos. Litt vandig og ganske kort ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrusblomster og et snev av aprikos i duften. Bløt og fruktig smak med fin syrespenst og fylde, og en liten bitterhet i den behagelig krydrete ettersmaken. Treliters versjonen med varenummer 33166 koster 313 kroner, kr 78,25 pr 75 cl.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Blomsteraktig og litt søtlig duft. Ren og bløt smak med innslag av ananas og mango. Vinen er ikke like frisk som i april 2003, og ettersmaken er ganske kort.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Snev av fersken og melon i duften. Enkel og middels fyldig fruktsødme i smaken, lett syrlighet i ettersmaken. samme vin på treliters kartong koster kr 299,90.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus, grønne epler og litt mineralsk preg i duften. Middels fyldig fruktsødme med en touch av tropiske frukter, men litt for syrebitter ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duften er ganske tung og har nyanser av stikkelsbær, nøtter og urter. Ren og middels fyldig smak, men fruktigheten kunne med fordel vært friskere. Nå blir ettersmaken litt for bitter.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duften har streif av fersken og aprikos. Bløt og litt slapp smak med middels fylde og ganske kort ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Blomstersødme og sitrus i duften. Bløt fruktighet uten syrespenst, enkel vin med veldig kort ettersmak. To flasker prøvet, skuffende utgave av Tariquet.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av nøtter, mineraler og urter. Ikke så frisk fruktighet i smaken som sist sommer, ettersmaken virker litt vandig og kort.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Mursteinsrød vin med en utviklet duft av tørket frukt, karamell og lær. Bløt og moden smak med middels fylde, passelig tørr ettersmak, og ikke minst: gunstig pris til å komme fra Bordeaux!</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Aroma av  solbærblader og eikevanilje i duften. Ren og bløt smak med solbærsødme og fin syrefriskhet. Passelig snerpende ettersmak med litt vegetal bitterhet.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften har elementer av bjørnebær, lakris, pepper og en gasbindaktig tørrhet. Saftig og bløt bærsmak med rund og god fylde, fin syretørrhet og lett snerpende ettersmak. På treliters kartong koster vinen 325 kroner.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Utviklet stil med typeriktig Rhône-duft med varmt krydret pinjekarakter. Bløt, moden og lettdrikkelig vin med søtlig tobakk og urter på slutten av smaksbildet og lett tørrhet i ettersmaken. Samme vin på 300 cl kartong koster kr 334,10. (kr 83,53 pr 75 cl)</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbærsødme og sjokoladearoma i duften. Ren og fruktig smak med nyanser blåbær og solbær. Bra fylde og velintegrert fatpreg, lett kreklingbitterhet og god snerp i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bærpreg og litt mineralsk tørrhet i duften. Saftig og bløt bærsmak med fin rundhet og fylde til å være såpass billig. Lett syretørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetalt duftpreg som minner om solbærblader. Ganske frisk smak av kirsebær/solbær, kort smakskurve med litt tobakksaktig tørrhet i avslutningen. Grei matvin til hverdags. Samme vin på kartong koster 277 kroner, dvs. kr 69,25 pr 75 cl.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt og søtlig bærpreg i duften med et rustikt anstrøk. Litt bringebæraktig, saftig og syrlig smak med varmt krydret og lett snerpende ettersmak. Samme vin i 300 cl kartong har gått opp 45 kroner til 325 !</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetalsk duft av solbærblader. Bløt og søtlig smak med middels fylde og ganske syrebesk ettersmak. Finnes også på kartong til kr 279,00, men da på varenummer 45653.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt portvinsaktig duft med nyanser av mørke bær og en rustikk undertone. Syrlig og fast smak som burde hatt mer fruktsødme, syrebitter ettersmak med litt brent karakter på slutten.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetalt duftpreg med innslag av paprika og solbærblader. Litt brent smak med fast tørrhet, middels fylde og ganske snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bjørnebær, mynte og paprika i duften. Mørk og fyldig vin med ganske fast smak med litt lakrissødme og større syrebitterhet med snerpende avslutning.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt preget duft med innslag av mørke søte bær og urter. Smaken minner mest om plommesyltetøy, denne årgangen er ikke så frisk og saftig som den forrige vi smakte. Bløt vin med god fylde og kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt svidd gummipreg (for mye svovel) skjemmer vinen. Kokt bærpreg i smaken og middels fylde, litt stilkbitter ettersmak. Finnes også på kartong til kr 309,00.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sødme i duften med hint av epler, aprikos og honning. Ganske intetsigende førsteinntrykk av smaken, men den kommer seg med lufting og blir både smøraktig og syrlig. Ettersmaken har en liten mineralsk bitterhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Ganske tung og kraftig stil med duft av melne epler og skifer. Moden smak med mandarinsødme, krydret ettersmak med bra syresnert.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Friskt bærpreg i duften med nyanser av kirsebær og blåbær og nellik. Fersk fruktighet med morellsødme i smaken, ganske kort ettersmak med en liten kjernebitterhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Svakt søtlig duft uten karakteristiske trekk. Bløt og enkel smak som burde hatt litt større syrefriskhet. Vi forventer mer smak og større spenst i en vin laget av sauvignon blanc-druer.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duften minner om sitronmelisse og grønne epler. Smaken er enkel, anonym og syrlig, med et vegetalt preg av umodne druer i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Uren og støvaktig duft. Emmen smak av honning, fersken og aprikos er tross alt det beste ved denne vinen. Ettersmaken har en metallisk bitterhet.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Emmen duft og dvaskt søtlig smak. Uharmonisk vin med utpreget bitterhet i ettersmaken.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt mineralpreg og fersk bærsødme i duften med en brent undertone. Saftig og syretørr fruktighet med litt kjernekarakter og middels fylde, lett snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig bærpreg med en brent undertone i duften. Bløt fruktighet og middels fylde i smaken, lett syresnerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bærpreg med en brent undertone i duften. Nøytral og enkel vin med en vegetal bitterhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Mineraltoner (ørlite svovel)og et ferskt bærpreg i duften. Enkel og pregløs vin i en rustikk stil med vegetal bitterhet og lett snerp i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften har en anonym bærsødme i en varm stil. Smaken har fersk fruktighet og middels fylde, men mangler syrah-karakter. Ettersmaken er lett snerpende.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetalt solbærpreg i duften. Spinkel og tretørr smak, tørt snerpende ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Utiltalende duft med et urent preg som noen syntes minnet om myrvann. Kokt og saftaktig smak, uharmonisk tørrhet i ettersmaken.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Nyanser av solbærblader og rips i duften. Smaken  har en rips/tyttebæraktig syrlighet og virker litt oksydert, men det er en grei syretørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus, nøtter, toast og mineraler i duften. Ren og velbalansert smak med innslag av lime, nøtter og smør. Bra lengde på ettersmaken, selv om den ikke er like syrefrisk som La Palotte på flaske.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrussyrlighet og en søtlig krydderkarakter i duften. Middels fyldig smak med hint av aprikos og melon, lett bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Vegetal duft som minner om solbærblader og urter. Bløt smak med stikkelsbærsødme og grapefruktaktig bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Frisk sitrusduft med litt sødme og mineralpreg. Frisk og fyldig smak med toastsødme og syretørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Søtlig duft med nyanser av melon, fersken og aprikos. Utviklet, marmeladeaktig fruktighet i smaken og utpreget bitterhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Søtlig krydret og litt emmen duft. Bløt smak med litt tropisk fruktsødme, men vinen mangler syrefriskhet og slutter ganske bittert.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Preg av våt ull, anis og toast i duften. Vinen taper seg i glasset og det oksyderte preget blir tydeligere. Stilkbitter ettersmak. La Chablisienne Bourgogne Chardonnay 2001 på flaske til kr 119,90 er fyldigere og friskere.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Svakt søtlig fruktkarakter i duften med litt toast og mineralpreg. Lett vandig smak, og mineralsk tørrhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Kraftig gul farge som er tegn på oksydasjon. Søtlig marmeladeduft og smak som minner om utvannet marsala-vin. Kort og besk ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Blårød vin med flott duft av bjørnebær, eukalyptus og lakris. Fin druekarakter og meget god smak med glatt og kjølig fruktighet. Behagelig avrundet ettersmak. Le Midi Syrah 2001 på flaske er prøvesmakt for sammenligningens skyld, og pappvinen var  faktisk best!</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften har elementer av krekling, lakris, furunål og pinjer. Slank  og syrefrisk smak med et elegant bærpreg, og fint krydret ettersmak med tyttebæraktig syrlighet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duft av paprika, solbær, lakris og urter. Middels fyldig solbærsmak med innslag av lakris og lett  snerpende syretørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt, søtlig solbærpreg i duften. Ganske frisk smak av kirsebær/solbær, middels  fylde og ganske snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften har innslag av tørket frukt og solvarm jord. Middels fylde og moden sviskesmak med et hint av bjørnebær helt på slutten av smakskurven. Lett syretørrhet  i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig bærduft med et varmt preg. Søtlig fruktighet og middels smaksfylde, syrlig ettersmak med lett snerp.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig duft med hint av jordbær og lakris. Ferskt bærpreg i smaken  med middels fylde og anissødme. Lett syrlig ettersmak og lett snerp.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ørlite svovel og et brent preg i duften. Kokt smak, men litt fyldigere fruktsødme enn i fjor. Stilkaktig bitterhet i den relativt korte ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt solbærpreg i duften med et lite svovelstikk. Vegetal smak av  solbærblader, tørr og snerpende ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt preget duft med litt paprika-aroma. Bløt og kokt smak av sursøte bær, men ikke like spinkel som for ett år siden. Ettersmaken blir  enda mer emmen når vinen har stått litt i glasset.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Brent duftkarakter med kjernepreg. Frukten mangler friskhet og virker oksydert, ettersmaken domineres av vegetal  bitterhet.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrusfriskhet, tropisk fruktsødme og litt mineralpreg i duften. Rund og frisk smak med melonsødme og smørtoner, avrundet ettersmak med lett syrlighet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Mørk rød vin med dempet duft av søte bær og et svakt streif av pinjer. Bløt og drikkeklar vin med smak med bjørnebær og lakris. Middels fylde og ganske kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Syrlig duft av sitrus og grønne epler. Sødme og syre i smaken spriker, syrligheten blir for dominerende og gnager i magen på dem som er ømfintlige for syre.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Markant syrahduft med innslag av bjørnebær, lakris og kamfertre. Ganske slank og fast i smaken, med en touch av tjære i den lett snerpende ettersmaken. Godt håndverk i den for området vanskelige 2002-årgangen.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt krydret duft med hint av kanel, bjørnebær og lakris. Elegant og sødmerik smak med god fylde og modne tanniner som gir en middels snerpende ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt preget duft med bjørnebærsødme. Slank og saftig vin med litt lakrissødme i smaken. Syrefrisk og relativt kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Rik duft av sitrus, søte epler, gjærbakst og nøtter. Myke bobler som gir en kremete munnfølelse, meget elegant og smaksrik champagne som gir et harmonisk totalinntrykk.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Moden duft som minner om tørket frukt, toast og sjokolade. Velbalansert champagne med snev av pasjonsfruktsødme og intens syrlighet i smaken. Flott matchampagne med lang ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Sitrus, epler og gjærbakst i duften. Smaken er både moden og syrefrisk, men boblene blir litt fort borte. Fin bittertone i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Sitrusfrisk duft med et litt syntetisk preg. Glassepler og rips i den ganske slanke smaken, korte bobler og litt  endimensjonalt totalinntrykk.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Snev av svovel i duften trekker ned. Smak av epler, litt for grove  bobler, mineralsk bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Litt metallisk og ellers pregløs duft. Taper seg fort i glasset, virker for slapp med lite fruktsødme og lite syre, kort ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus, mineraler og et pent dempet fatpreg i duften. Velbalansert smak med toastaktig sødme og fin syrefriskhet, lang og nyanserik ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Typeriktig aroma av solbærblader, nyslått gress og nesle. Sitrus, stikkelsbær og anissødme i smaken som likevel virker litt vandig og syreslapp mot slutten.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus, toast og mineraler i duften. Tørr og frisk smak, slank vin med fin nerve, syrlig og ren ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duften minner om sitrus og våt skifer. Ren og frisk smak med innslag av sitrus, pærer og papaya. Middels fylde, og syrefrisk ettersmak med god mineralitet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sødme av tropiske frukter og litt mineralsk preg i duften. Middels fyldig smak med litt utvannet nektarinsødme og lett syrlig ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Litt oksydert preg i duften med innslag av nøtter, mineraler og urter. Smaken har en utviklet fruktighet som minner litt om bitre appelsiner, ettersmaken blir litt vandig og kort.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av sitrus, urter og mineraler. Smaken er ikke så frisk lenger, og har en mer  utpreget mineralsk bitterhet. Ganske tungt krydret ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Floral duft med et ferskt bærpreg. Frisk og saftig smak av bringebær og blåbær med et snev av  banan, syrefrisk ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bærpreg i duften med nyanser av bringebær og bananer. Bløt og saftig smak  med god fruktfylde, frisk syrlighet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Veldig ferskt og søtlig bringebærpreg i duften. Syrlig og druemostaktig smak som  prikker på tunga, ettersmaken er svært syrlig. For fersk?</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt brent duftpreg med innslag av kaffe og hint av svovel. Overmoden bringebærsmak, like overmoden tyttebærsyrlighet og tobakksaktig snerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig duft av mørke bær og lakris. Bløt, saftig og syretørr smak. Ettersmak med en liten  beskhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt jordlig og varmt preget duft. Lite frukt igjen i smaken, ettersmaken er tørr og  bitter. Vinen virker for gammel og bør få avløsning av den bedre årgang  2003.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften har et jordlig preg og virker litt urteaktig. Smaken virker gammelmodig og  uttørkende, ettersmaken er veldig tørr.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Jordlig og vegetalt duftpreg med hint av gresskompost og nesle. Smaken mangler frukt  og virker trå og gammel, med syrlig bitterhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Svakt jordlig duft med snev av rips. Bløt og slapp smak, besk og ekstremt kort ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Varmt preget og litt ufrisk duft med hint av grappa. Syrlig og mager smak, stilkbitter  ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Veik duft med ørlite bringebærsødme. Syntetisk smak som miner mest om  husholdningssaft, rognebærbitterhet i ettersmaken.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrusblomster og roser i duften. Frisk og fyldig smak av lime og nektariner med god munnfølelse. Fin syretørrhet og en liten kryddersnert i den lange ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Kompleks duft av sitrus, toast og mineraler. Velbalansert smak med sødme av gule epler mot sitrusfriskhet, og en liten mineralsk bitterhet som gir bra lengde på ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Aromatisk duft av stikkelsbær, solbærblader og nyslått gress. Ren og bløt smak med middels fylde og lett fruktsødme med anstrøk av gule epler og aprikos.  Litt vandig og ganske kort ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Kraftig duft av solbærblader og nesle. Stikkelsbærkarakter i  smaken, med litt skarp syrlighet. Lang ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Frisk bringebærfruktighet i duften. Saftig og syrefrisk smak, stilig ettersmak  med fin tørrhet og fast snerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Dette er den ultimate pinsevin! Sødmerik duft som minner om fioler og bringebær. Elegant smak med friskt og saftig bringebærpreg, ettersmaken er ganske syrlig med litt snerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig krydret duft med streif av røde bær, urter og lakris. Rund og god bærsødme i smaken, med snerpende fasthet og  syretørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Ren og frisk duft med aroma av sitron, solbærblader, gress og nesle. Stikkelsbærsødme og fin syrlighet i smaken, bra lengde på ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Søtlig duft med hint av stikkelsbær, melon og urter. Vegetal og litt vandig smak, Lurton Sauvignon 2003 på kartong har mye større smaksrikdom. Kort ettersmak med en liten bitterhet.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbær, paprika og et ørlite lærpreg i duften. Vegetal smak med middels fylde og litt besk ettersmak med lett snerp.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften har hint av aceton, smaken virker sliten og treen med et surt trepreg i ettersmaken.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Pent utviklet preg av tørket frukt, pinjer og søtlig krydder. Myk og rund smak med moden syrahkarakter av svisker, lakris og lær. Friskt totalintrykk takket være syretørrheten i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Edel duft av sedertre, mynte, tørket frukt, tobakk hasselnøtter og lær. Frisk fruktighet og fin fasthet i smaken, pent integrert fatpreg og behagelig tanninsnerp i ettersmaken. Parker gir 88 poeng og antyder holdbarhet til 2011.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Edel modenhet i duften med innslag av tørkete frukter tobakk, lær og pinjer. Bløt og rund smak med sviskekarakter og fatpreg fint utviklet ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt lukket duft med et vegetalt og ferskt solbærpreg og hint av pinjer og lær. Smaken snerper mye, så denne vinen trenger karftig matfølge hvis den skal drikkes nå.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ganske lukket og vegetal duftmessig, med en anelse solbær, vanilje, tobakk og toast. Bør luftes grundig på karaffel hvis den skal drikkes nå, eller lagres noen år til større modenhet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Moden og kompleks duft med nyanser av sedertre svisker, tobakk og ristede nøtter. Velutviklet, bløt og fyldig smak med elegant tørrhet i ettersmaken. Parker gir 86 poeng og er enig med oss i at vinen er drikkemoden nå, samtidig som han tror den er holdbar til 2012.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bærpreg i duften, og en bløt og saftig smak i beaujolais-stil med lett syrlig ettersmak. Aroma som vi forbinder med syrah finner vi ikke i denne vinen.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ganske nøytral duft med et ferskt bærpreg. Bløt og saftig smak med litt dropsaktig sødme, og en vegetal bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duft av sedertre, tørket frukt og kompost. Smaken er litt for syrlig og spinkel, og ettersmaken ganske tørr med en liten beskhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Aroma av solbærblader og eikevanilje i duften. Ganske nøytral og litt for slank smak med saftig, kirsebæraktig syrlighet og kreklingbitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bærpreg og ørlite lærsødme i duften. Saftig og litt skarp smak med lite frukt, middels fylde og kort ettersmak med en brent undertone.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Årgang 2000 var en god billig-Bordeaux som kostet 100 kroner da den kom i november 2002. Med årgang 2001 har vi fått en vin med mindre smakskraft, men likevel er prisen økt kraftig. Duft av toast og solbær, middels fyldig smak med ganske kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Moden og søtlig krydret duft av jordbær, tobakk og pinjer. Sviskeaktig fruktighet og et brent fatpreg, konsentrasjon og fylde ikke helt som forventet, lett syresnerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Blomster og honningmelon i duften. Ren og bløt smak med god fylde og lett syrlighet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av appelsinskall, nøtter og hvit pepper. Frisk fruktighet i smaken fordi fatpreget er bedre integrert enn hva som har vært tilfelle med tidligere årganger. Fin mineralsk tørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Blekgul vin med duft av grønne epler og sitrus. Litt stikkelsbærsødme i smaksanslaget, enkelt og middels fyldig smaksbilde, litt vegetal bitterhet i den relativt korte ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Rett etter åpning luktet og smakte det ingenting. Etter en halv times lufting kan vi registrere en ferskensøtlig duft. Rustikk stil på grensen til uren, slapp og tung smak, veldig kort ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vinen virker i utgangspunktet ganske lukket, men gi den en time på karaffel! Da får den et tydelig og typeriktig pinotpreg i duften med nyanser av bringebær og fioler. Saftig og elegant smak med flott bærkonsentrasjon og fin syretørrhet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetalt preg av solbærbusk i duften. Bløtt anslag med ferskt solbærpreg og litt vaniljesødme i smaken, middels fylde og lett snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Antydning til autolysepreg i duften. Gjærbakst og sitrustoner med myke bobler i smaken, ettersmaken virker litt for stilkbitter. Bitterheten gjør Jeanmaire uegnet til jordbær.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av gjærbakst, sitrus og ørlite honning. Gode bobler og søte epler i smaken, men ganske syrebitter ettersmak som gir en besk smak sammen med jordbær.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Metallisk beskhet i duft og smak. Emmen smak med besk ettersmak. Diskvalifisert til jordbær.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus, toast og mineraler i duften. Tørr og frisk smak, slank vin med fin nerve, syrlig og ren ettersmak med flott mineralkarakter.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Ferskenaktig sødme i duften. Ren og frisk smak i all sin enkelhet, kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Søtlig duft med tropisk fruktaroma. Sødmerikt smaksanslag med stikkelsbærkarakter, men midtpartiet blir ganske vandig og ettersmaken kort på grunn av for lav syrlighet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Søtlig bærpreg i duften. Bløt og sødmerik smak med brukbar syrefriskhet. Relativt kort og vandig ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Prisen har klatret fra 400 til 480 kroner på ett år! Melonsødme og litt mineralpreg i duften. Bløt og ganske smaksnøytral fruktsødme med lett syrebitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Mindre sitrusfriskhet og mineralpreg enn i 2002-årgangen, her er det bløt fruktsødme som er mest fremtredende. Ganske lik pappvinen, med litt pregløs fruktsødme og et svakt mineralpreg.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Syrlig duft av sitrus og grønne epler. Syrligere og fastere smak enn Tariquet på kartong. Sødme og syre i smaken spriker syrligheten blir for dominerende og gnager i magen på dem som er ømfintlige for syre.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duften virker lett oksydert med en mineralsk undertone. Vandig frukt med lite sødme i den ganske tamme smaken, mineralsk tørrhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Nøytral sødme i duften og intetsigende, vandig og kort smak. For gammel allerede?</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Cuvée S står for Syrah som er eneste druesort denne vinen er laget av. Ferskt bjørnebærpreg i duften. Saftig og sødmerik smak med flott bærkonsentrasjon, god fylde og lett snerpende ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bør åpnes minst en halvtime på forhånd for å få sjansen til å vise hva den er god for. Da får man en bringebærpreget duft med en touch av eikesødme, og en saftig og velbalansert smak med bringebærsødme og fin syretørrhet. Dette er en slank og elegant hverdagsburgunder.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bringebærpreg i duften. Smaken er saftig og bløt med behagelig bærsødme og lett syrlig ettersmak. Kan med fordel drikkes avkjølt til 10-12 grader.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbærsødme, en anelse lær og fatpreg i duften. Bløt og rund smak med god fruktfylde, litt brentkarakter og moderat snerpende ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Pussig nok lanseres årgang 1998 etter 1999 som kom i fjor høst. Animalske toner, tørket frukt og søtlig tobakk i duften. Varm og tørr smak med velutviklet bærpreg, fine kryddertoner og en moden tørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bærsøtlig og varmt krydret duft med litt mineralsk tørrhet. Fyldig smak med god bærkonsentrasjon og ganske snerpende ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt preget duft med innslag av mørke søte bær og urter. Smaken er bløt og middels fyldig, men virker litt kokt og syltetøyaktig, noe som ikke harmonerer helt med ettersmakens syrebitterhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Fersk, bærsøtlig og varmt krydret duft. Rund og bløt smak med god fruktighet og litt lakrisaktig sødme. Middels fylde og fin syretørrhet. Vi har også smakt årgang 2001, som vi synes smaker bedre i dag og fortjener terningkast fem: Velutviklet duftpreg av tørkete frukter og pinjer. Bløt smak med et fint krydderslør og behagelig tørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duft av grønn paprika, solbær og toastede eikefat. Vegetal og litt hard smaksmessig, så denne vinen bør lagres minst to år for å bli mer moden. Ettersmaken er ganske stram, men ikke så lang.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig bringebærpreg i duften, men en relativt lett burgunder. Bløt og saftig smak med en lett syretørrhet. Spinklere og med kortere ettersmak enn 2000-årgangen.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Fatpreg, paprika, solbær og blyantspiss i duften. Ganske vegetal og hard smak med solid snerpende ettersmak, så denne vinen trenger å luftes minst et par timer hvis den skal drikkes nå, men helst lagres minst tre år til større modenhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Dufter lite, det eneste vi kan registrere er et litt brent preg. Smaken er vegetal og småsur, med ganske besk avslutning.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetalt og råferskt bærpreg i duft og smak. Litt blekkaktig smak med ganske besk ettersmak. For dårlig fruktsødme til grillmat.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbærsødme, anis, lær og varm jord i duften er det beste ved denne vinen. Ganske «grønn» og syrlig smak med litt lakrissødme, middels fylde og lett bitterhet i ettersmaken. Sørgelig høy pris.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Bringebærsødme i duft og smak. Enkel, bløt og saftig vin med lett syrebeskhet i ettersmaken som gjør at det skjærer seg i forhold til jordbær.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duften er best med innslag av sitrus, blomster og nyslått gress. Frisk og saftig stil, med en syredominert smak som minner mest om grønne epler.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sursøt duft som virker ufrisk og har duftnyanser som minner om sukat og smørmalt. Flat og slapp smak med kort ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>En sjelden gang er kartongvinen bedre enn flaskevinen, og dette er et eksempel på det. Varmt preget duft med litt rustikk karakter. Bløt og kokt solbærsmak med et sukkertøysøtt preg.  Lett syrlig ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ørlite svovel og et brent preg i duften. Bløtt smaksanslag, smaken er ganske kokt og minner om plommesyltetøy. Vegetal bitterhet i den relativt korte ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt bærpreg i duften. Bløt og enkel smak med lett snerpende tørrhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Kokt bærpreg i duften og en spinkel, saftaktig smak. Vegetal bitterhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Rik duft av blomster, honning, skifer og petroleum. Helstøpt riesling med smaksnyanser av markjordbær, epler og tropiske frukter. Harmonisk totalinntrykk med en liten restsødme og fint krydret ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duften minner om sitrus og våt skifer. Ren og frisk smak med innslag av sitrus, pærer og papaya. Middels fylde, og syrefrisk ettersmak med god mineralitet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Pæresødme, kalkstein og noe som minner om våt ull i duften. Sitrusfrisk og fyldig smak med fin syretørrhet, urtepreg og mineralkarakter i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Tiltalende duft av lime, grapefrukt, nyslått gress, fersken og pasjonsfrukt. Ren og saftig smak med hint av fatpreg, litt lav syrlighet og middels ettersmakslengde.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrusfrisk duft med mineraltoner. Ren og vellaget vin med ripsaktig syrlighet pent avstemt mot stikkelsbærsødme i smaken. Syretørr og mineralsk ettersmak med bra lengde.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Det er sjelden å få så bra burgunder for 120 kroner her til lands! Veldig tydelig pinot noir-duft med nyanser av jordbær og jordsmonn. Saftig, ren og syrefrisk smak med bra lengde på ettersmaken. Kjempekjøp!</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt søtlig bærpreg i duften. Bløt og fyldig smak med god bærsødme og tørr syrlighet samt litt brentkarakter som minner om marsipansjokolade helt på slutten av smakskurven.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Pinjepreget duft med god bærsødme og en brent undertone. Bløt og saftig smak med god fylde og grei syresnerp i ettersmaken. Bedre enn årgang 2001 og 2002 av Campuget.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig krydret duft med streif av plommer, lakris, eikefat og pepper. Moden bærsødme i smaken, litt pinjeaktig tørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Rik pinot noir-duft med et flott terroir-preg. Saftig smak med sødme av jordbær og anis, frisk og kirsebæraktig ettersmak med syretørr og lett snerpende avslutning.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Frisk bringebærfruktighet i duften. Bløt vin med saftig og syrefrisk smak, stilig ettersmak med fin tørrhet og fast snerp.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Råferskt bærpreg og en liten brentkarakter i duften. Saftig og bløtt smaksanslag, men smaken er enkel og har ikke nok frukt i seg til å matche bittersnerpen i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig krydret duft med et varmt bærpreg og hint av krekling og pepper. Bjørnebærsødme i den bløte og middels fyldige smaken, med litt pinjeaktig tørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Noe animalsk, litt buljongaktig over duften. Syrlig smak i en rustikk stil, med litt brent og barkbitter ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Moden jordbærsødme og en jordlig tørrhet i duften. Slank og tørr smak med såpass syrebitterhet i ettersmaken at denne vinen kan gå til mat med fet saus.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Moden og søtlig krydret duft av jordbær, tobakk og pinjer. Sviskeaktig fruktighet og et brent fatpreg, konsentrasjon og fylde ikke helt som forventet, lett syresnerp i ettersmaken. Holder bare til middels kraftige viltretter.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig kokt bærpreg i duften. Spinkel smak uten de karakteristika vi forbinder med grenache, cinsault og syrah som vinen er laget av. Syntetisk og litt blekkaktig ettersmak med en liten beskhet.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Jordlig preg duftmessig. Bløt, middels fyldig og nøytral smak, med lett syrebitterhet og kort ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Tørt, støvete og litt barkaktig duftpreg. Bløt smak med for dårlig konsentrasjon, litt mtallisk ettersmak med syretørr avslutning. Nedtur fra 2001-årgangen.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetalt duftpreg med snev av blyantspiss. Råfersk og småbesk smak med middels fylde og syrebitter ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ganske anonym duft med et utiltalende blekkaktig preg. Kantete og kreklingbitter smak, ettersmaken er stram og besk. Skuffende fra Faiveley.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Pent utviklet preg av tørket frukt, pinjer og søtlig krydder. Myk og rund smak med moden syrahkarakter av svisker, lakris og lær. Friskt totalintrykk takket være syretørrheten i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Markant syrahduft med innslag av bjørnebær, lakris og kamfertre. Ganske slank og fast i smaken, med en touch av tjære i den lett snerpende ettersmaken. Godt håndverk i den for området vanskelige 2002-årgangen. Prisen er bare 12 kroner over prisen i Sverige.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Tydelig pinotduft med elementer av jordbær, vanilje og kaffe. Myk, saftig og smaksrik vin med bra fylde og fruktsødme som bør kunne matche så kraftig mat som rype. Definitivt bedre enn 2000-årgangen.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bjørnebærsødme, pinjer, lær, kaffe, skogbunn og røykaroma i duften. Glatt og elegant fruktighet med veldig bra konsentrasjon, fyldig og lang ettersmak med god tanninsnerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Blomsteraktig og sødmerik duft. Ren og elegant smak med frisk fruktighet og anissødme, god fylde og solid tanninsnerp.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Utviklet duftpreg med tørket frukt, pinjer og tobakk. Moden bærsmak med lakrissødme, bra syre og tjæreaktig brentkarakter med et fint tanninpreg i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig krydret duft med innslag av bjørnebær, lær og pinjer. Bløt, moden og litt brent smak med sødme av tørkete frukter, flott syretørrhet i den lange ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Paprika, solbær og eikepreg i duften. Bløtt smaksanslag med fersk fruktighet, pent integrert fatpreg og god fylde, harmonisk ettersmak med passelig snerp og litt tobakksaktig tørrhet. Minner om kvalitetsvin fra Bordeaux, men er vesentlig billigere fordi den kommer fra et nabodistrikt som ikke har like høy status.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis/Grunnsortiment. Bjørnebærsødme, lakris, pepper, pinjer og røyk i duften. Bløt smak med sødme av moreller, plommer og sjokolade. Bra syrefriskhet og silkemyke tanniner i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis/Grunnsortiment. Lærpreg, mørke bær og pepper i duften. Bløtt smaksanslag med god bærsødme, middels fylde og fast ettersmak som snerper godt.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 227 flasker. Kompleks duft av bjørnebær, lakris, lær og urter. Mykt og fyldig smaksanslag med konsentrert bærsødme, tanninene i ettersmaken sparker godt.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 360 flasker. Søtlig duft av skogsbær, pinjer og røyk. Mykt smaksanslag og stor fruktkonsentrasjon med sødme av bjørnebær og gelésjokolade, men såpass barske tanniner i ettersmaken at denne vinen bør lagres i minst fem år.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 600 flasker. Fin duft av skogsbær, fat og urter. Bløt og rund smak med god bærsødme, godt modne tanniner som gir en behagelig snerpende ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 202 flasker. Litt animalsk preg først i duften, som ellers har sødme av bjørenbær og lakris med en pepret undertone. Stor fruktkonsentrasjon i smaken, kraftig tanninsnerp i ettersmaken indikerer lagringsbehov.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 480 flasker. Godt utviklet duft av sedrtre, tørkete frukter og tobakk, men heldigvis ikke så overmoden som 97-99 årgangene av Batailley har vært. Moden og bløt smak med god fylde, avrundet ettersmak med passelig tørrhet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 76 flasker. Sødme av bjørnebær, lakris og kamfertre i duften. Moden fruktighet med stor smakskonsentrasjon, pinjeaktig tørrhet i den moderat snerpende ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 480 flasker. Duften har elementer av solbærsødme, sedertre og jordsmonn. Smaken er fast og syrerik, med moderat snerpende tanniner. Kan drikkes nå, men også lagres i 10-12 år.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Skogsbær, lakrisaktig sødme og en brent undertone i duften. Blåbærsaftig smak med middels fylde og syretørr ettersmak som snerper lett.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Syrah-typisk duft med nyanser av bjørnebær, lakris og urter. Ganske slank smak som minner om krekling med litt lakrissødme, syrlig og snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Ganske lukket duft i utgangspunktet, men lufting bringer frem sødme av bjørnebær og lakris. God fruktkonsentrasjon og middels fylde i smaken, passelig snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 600 flasker. Ferskt og søtlig bærpreg i duften med hint av urter. Bløtt smaksanslag, grei bærsødme med middels fylde, syretørr og snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 600 flasker. Bjørnebær, fatpreg og hint av svette i duften. Søtlig krydret smak med god fylde, såpass kraftig snerpende ettersmak at denne vinen bør lagres i minst tre år.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 600 flasker. Duften preges av jordsmonn, solbærsødme og eikefat. Bærsødme, pepper og kaffearoma i smaken, med moden tanninsnerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 600 flasker. Bjørnebær, pepper og fatpreg i duften. Behagelig smaksanslag med god bærsødme, lang ettersmak med kraftig tanninsnerp.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 480 flasker. Solbær, sedertre og preg av jordsmonn i duften. Nyansert smak med solbær som mest fremtredende smakselement, solid tanninsnerp og kaffeaktig brentkarakter i ettersmaken. Bør lagres minst fem år til større modenhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 480 flasker. Typeriktig duft av solbær og sedertre med en jordlig undertone. Barsk og snerpende vin med utpreget bitterhet i ettersmaken, bør lagres i minst tre år, og tåler sikkert ti år til.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 240 flasker. Animalsk og jordlig duftpreg med innslag av tørkete frukter, eikevanilje og tobakk. Moden smak med sødme av svisker og lakris, stor fylde og syretørr ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Floral duft med et ferskt bærpreg. Frisk og saftig smak av bringebær og blåbær med et snev av banan, syrefrisk ettersmak. Godt alternativ for dem som vil ha rødvin til juletorsken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Denne vinen trenger å luftes på karaffel for å kunne vise hva den er god for. Solbær, krekling, paprika og lakris i duften, fyldig smak med bra fruktkonsentrasjon, en god munnfull med solid tanninsnerp i ettersmaken. Tøff nok til pinnekjøtt.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften minner om paprika, solbær, lær og eikefat. Bløt smak med ganske moden fruktsødme, middels fylde og litt tjæreaktig snerp i ettersmaken. Som julevin vil denne vinen passe best til svineribbe.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt svidd jordsmonn, bringebær og en anelse kjøttaroma i duften. Saftig og syrefrisk smak med såpass fasthet at denne vinen vil passe bra til julekalkun med smaksrik saus.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Billig til å være hvit burgunder, med tropisk fruktsødme og et svakt mineralpreg i duften. Smaken blir litt konturløs på grunn av for lite syre, og av samme grunn er ettersmaken svært kort. Årgang 2002 var bedre, synd at den ble så fort utsolgt.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Menthol og bjørnebærsødme i duften. Saftig og bløt smak med lakrissødme, middels fylde og en ettersmak som er ganske tørr og snerpende.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Krydret bærsødme i duften med hint av kamfer. Søtlig fruktighet i smaksanslaget, middels fyldig og ganske anonym smak med vegetal bitterhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>En anelse autolyse (gjærpreg), gule epler og mineraltoner i duften. Jordbær/bringebærsødme og fine små bobler først i smaken, elegant ferskenaktig fruktighet og behagelig syretørrhet, velkomponert totalinntrykk.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duften har nyanser av gule epler og fersk gjærbakst. Fyldig og rik smak med godt skum, og flott syrefriskhet som gir en lang ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Sitrus, hasselnøtter og toast i duften. God mousse i smaken, ren og elegant fruktighet med jordbærsødme og sitrusfriskhet. Velkomponert champagne med frisk og lang ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Gjærpreg og sitrus i duften. Frisk og elegant champagne med fine bobler og litt nøtteaktig smak. Fin syretørrhet og mineralitet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Moden duft av søte epler og gjærbakst. Frisk og rik smak med gode bobler og sødme av hvit sjokolade, etterfulgt av flott syrestruktur og lang ettersmak med gjærpreg og mineralsk tørrhet.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Rik og kompleks duft av moden frukt, gjærbakst og mineraler. Modne epler og sitrusfriskhet i smaken, myke bobler som gir en god munnfølelse, lang ettersmak med flott syrebitt.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Rik duft av gjærbakst, søte epler og mineraler. Slank og elegant smak med små bobler, behagelig syretørrhet og frisk ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Sitrus, mineraler og et ørlite gjærpreg i duften. Ren, frisk og syrlig smak med litt grove bobler. Litt mer fruktsødme ville gitt en rikere vin. Ettersmaken preges av en mineralsk bitterhet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duften minner mest om epler og har et lite streif av gjærbakst. Syrefrisk og harmonisk smak med god fylde, lett syrebitterhet i ettersmaken. God attest for denne champagnen at Master of Wine Steven Spurrier vil servere den som apéritif på Christmas Day.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Gjærpreg, modne epler, nøtter og sitrusfriskhet i duften. Bløtt og modent smaksanslag, god fruktsødme og bedre syrefriskhet enn 98-årgangen. Saftig og frisk ettersmak med passelig tørrhet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Gjærbakst, skogbunn og et utviklet fruktpreg i duften. Meditasjonschampagne med moden smak av litchi, nøtter og toast. Ripsaktig syrlighet i den småbitre ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Utviklet fruktighet med duft av gule epler, gjærbakst og røstede nøtter. Moden og fyldig smak med sødme av melon og sukat som balanserer fint mot sitrusfriskheten i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Litt autolyse og godt moden frukt i duften. Myke bobler og søtlig smaksanslag, smaksrik champagne med avrundet ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Søte epler, sitrus, gjærbakst og mineraler i duften. Delikat smak med god mousse og lett fruktsødme, men litt mer syrefriskhet ville gitt en lengre ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av sitrus, gjærbakst og mineraler. Fyldig smak med fin balanse mellom sødme og syrlighet, men totalinntrykket er mer syrlig og mineralsk nå enn for ett år siden.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Spesiell champagne med duft som minner om hvitost og salvie. Rik smak med myke bobler og enda tydeligere nyanser av moden ost, nøtter og sopp. Bra syre og mineralsk tørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Sitrusfrisk duft med et lite gjærpreg. Ripsaktig syrlighet og toast i den ganske nøytrale og middels fyldige smaken, ettersmaken har en syrebitterhet som minner om glassepler.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Modne epler og gjærtoner i duften. Saftig smak med fine bobler og nyanser av sitrongelé og nøtter. Frisk stil med lett syrebitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Vinen virker nøytral og frisk det første minuttet, men deretter går det fort nedover. Vinen tåler ikke kontakt med luft, og utvikler raskt aroma av våt ull, svidd gummi og sitronsyre med en metallisk ettersmak. To flasker prøvet, begge var like ille.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Test. Et lett mineralpreg og aroma av gule epler i duften. Epleskallaktig smak med grove bobler og litt kjernebitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Duften minner om hermetiske clementiner. Søtlig, slapp smak med overmoden fruktsødme og lav syre. Litt grape-bitterhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Duft av stikkelsbærsødme med mindre friskhet enn vi forventer av en vin fra Sancerre. Fyldig smak med en mineralsk undertone, men syrefriskheten mangler og ettersmaken blir kort.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 480 flasker. Transparent rødbrun farge og moden, rasepreget duft med nyanser av sedertre, lær, svisker og tobakk. Flott smak av tørkete frukter, lakris og urter, kompleks vin med behagelig ettersmak. Parker vurderte i mars 2001 denne vinen til 86 poeng og til å være moden mellom 2006 og 2018, men med litt lufting er dette edelt drikke allerede nå.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Tiltalende duft av sedertre og solbær. Frisk og fast smak med bra fruktkonsentrasjon, og en ettersmak som snerper skikkelig. Kan godt lagres et par år til større modenhet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Solbærsødme, lakris og urtepreg i duften. God blåbærsødme i den fyldige og faste smaken, god munnfølelse og fin tannintørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Solbær, anis, blyantspiss, toast og kaffe i duften. Fast smak med bra fruktkonsentrasjon og ganske tanninsnerpende ettersmak. Bør dekanteres hvis den skal drikkes nå, men helst modnes på flaske et par år til.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 480 flasker. Edel duft av terroir, sedertre, solbær og kaffe. Ganske bløt og moden smak allerede takket være 51% Merlot i drueblandingen, elegant og frisk fruktighet med harmonisk tørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Ferskt bærpreg i duften med en vegetal undertone. Saftig smak med middels fylde og lett syretørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Bærsødme og preg av varmt jordsmonn i duften. Fyldig smak med frisk bærsødme, god fasthet og ganske snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Bærsødme og pinjepreg i duften. Ganske slank og saftig smak med bringebærsødme, lakris og pinjearoma. Syretørr, middels snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Frisk rødfarge, solbær og fatpreg i duften. Frisk, saftig og slank smak som burde hatt større kompleksitet. Lett snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 420 flasker. Ganske lukket duftmessig, trenger tid i glasset for å åpne seg. Frisk og saftig smak med myk og diskret eleganse, lett syresnerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Kaffe, lakrissødme og utrepreg i duften. Bløt smak med et brent preg, middels fylde og syretørr ettersmak med lett tanninsnerp.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Sukkertøyaktig sødme i duften. Spinkel og søtlig smak med brent karamellsødme i ettersmaken.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Edel duft av sedertre, mynte, tørket frukt, kaffe, tobakk, hasselnøtter og lær. Frisk fruktighet og fin fasthet i smaken, pent integrert fatpreg og behagelig tanninsnerp i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbær, paprika, sedertre og røyk i duften. Fyldig smak med solbærsødme, et toastet fatpreg og litt kreklingbitterhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duft av grønn paprika, solbær og lær. Frisk fruktighet i den ganske slanke smaken, med litt lakrisbitter ettersmak. Vinen kan med fordel dekanteres hvis den skal drikkes nå, og gjerne lagres ett til to år. Vi har også smakt 2002-årgangen som kommer snart, den er spinklere og saftigere enn 2001.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften minner om paprika, solbær, lær og eikefat. Bløt smak med ganske moden plomme- og lakrisaktig fruktsødme, middels fylde og litt tjæreaktig snerp i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Fatpreg, paprika, solbær og blyantspiss i duften. Eikepreget smak med hint av solbær, lakris, sjokolade og kaffe. God fasthet og tannintørrhet i ettersmaken. Bør dekanteres før konsum nå, må gjerne lagres to-tre år for å bli mer drikkemoden.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Tiltalende duft av svisker, lær, sedertre og tobakk. Harmonisk smak med litt sjokoladesødme og fin syretørrhet, middels fylde og fast ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Moden og kompleks duft med nyanser av sedertre, svisker, tobakk og ristede nøtter. Velutviklet, bløt og fyldig smak med avrundet ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Enkel vin med duft av paprika, gress og solbær. Bløt fruktighet i den middels fyldige smaken med en viss fasthet i avslutningen.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetal duft som minner om solbærblader og paprika med en touch av mineraler. Enkel og syrlig smak med ganske syrlige bitterstoffer i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften minner om grønn paprika, solbær og lær. Moden smak av dill, solbær og lakris med middels fruktkonsentrasjon og litt vegetal bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Toastet fatpreg og kaffeaktig brentaroma i duften. Bløtt smaksanslag, deretter ganske fast smak med tanniner som overdøver fruktigheten. Utpreget lagringsvin som bør ligge tre til fem år.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbær, paprika, lakris og toast i duften. Smaken mangler den kompleksiteten vi forventer ut fra duften, her kommer ikke nyansene så tydelig frem. Middels fylde og fast ettersmak som slutter med en vegetal bitterhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus, nøtter og litt toast i duften. Stilren og frisk vin med fruktdreven smak, uten særlig preg av jordsmonn. Behagelig ettersmak med fin snert i avslutningen.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften har et utviklet trepreg med nyanser av lær, tobakk og vått løv. Moden smak med god konsentrasjon av tørket frukt, trepreget syretørrhet i ettersmaken. Vi trodde for fire år siden at denne vinen var holdbar til 2008, men den er så moden nå at ytterligere lagring ikke har noen hensikt. Prisen ble satt ned med 100 kroner fra årsskiftet.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ganske lukket duft, men med lufting blir nyanser av kirsebær, eikefat og mineraler tydeligere. Saftig og elegant smak med morellsødme, og fast syrlighet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt råferskt bærpreg i duften som minner mest om tyttebær. Saftig, frisk og slank smak, lett bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Ren fruktighet(sitrus, fersken, banan), toastede fattoner og mineralpreg i duften. Rasepreget smaksinngang, elegant og delikat vin med fin bittersnert i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duften minner om sitrus, aprikos og søte epler. God smaksintensitet, men litt varmt preg med innslag av toast og popcorn. Litt flintaktig ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Modne eplearoma, banan, velintegrert fatpreg og jordsmonn i duften. Harmonisk smak av gule plommer og toast, frisk syrlighet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Rik duft av jordbær, eikevanilje, lær og kaffe. God smakskonsentrasjon som gir fyldig munnfølelse, godt spenn mellom sødme og syrlighet.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Elegant pinot noir-duft med nyanser av bringebær, lær og jordsmonn. Saftig, bløt og moden smak med god fylde, passelig syretørrhet i ettersmaken. NB! Denne vinen mangler i bestillingslista for januar-februar, men den kan bestilles likevel.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bringebær, lakris, urter og et pent integrert fatpreg i duften. Fyldig og rund smak med god fruktkonsentrasjon, bra syre og lang ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Moden duft av jordbær, plommer og nøttesjokolade. Harmonisk og fyldig smak med god sødme av karamell og toast, lang og frisk ettersmak med passelig tørrhet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ganske lukket duftmessig med litt morellsødme. Frisk og kjølig fruktighet med preg av plommer og lær, fin syretørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Kompleks duft av bringebær, kirsebær, sopp og tobakk. Stilren smak med sødme av jordbær og anis, flott syretørrhet som gir en lang ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Typisk pinot noir-aroma i duften med sødme av jordbær og kanel med en animalsk undertone. Moden smak med vaniljesødme, lett syretørrhet og et litt læraktig brentpreg på ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Småråtten duft av overmodne jordbær, kål og løv. Smaken virker vegetal og hard, ettersmaken blir for stilkbitter.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften minner om kokt kål, rotfrukter og tørt høy. Smaken mangler fruktsødme og blir for ensidig syrlig, ettersmaken er ganske bitter.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Test. Tørt duftpreg med en mineralsk undertone. Moden fruktighet i smaken, med en touch av gjærbakst. Middelmådig champagne med en litt for høy pris.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Kraftig jordsmonnspreg på duften. Fyldig, rik og kompleks smak med innslag av smør, nøtter, sitrus og mineraler. Lang ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 360 flasker. Duft av sitrus og aprikos. Fyldig og velbalansert smak med både honningsødme og lime-friskhet, lang ettersmak med innslag av urter og mineraler.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 96 flasker. Solbær, sedertre og kaffe i duften. Drikkemoden vin med mykt smaksanslag, stor smakskompleksitet og elegant tørrhet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 120 flasker. Fint avstemt duft med solbær, paprika, sedertre, tobakk og mineraler. Elegant smak med begynnende modenhet, passelig tørrhet i ettersmaken. Parker gir 95 poeng og antyder modenhet mellom 2008 og 2035.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Karamellaktig sødme og solbærpreg i duften. Vinen er ganske bløt og rund i anslaget, med bra fruktkonsentrasjon og fasthet i smaken. Ganske tanninsnerpende ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 102 flasker. Ung og lukket duftmessig, med aroma av solbær og eikefat. Tett og konsentrert fruktighet som vil utvikle nyanser med lagring. Parker gir 100 poeng, antyder at vinen bør lagres ihvertfall til 2010, og at den tåler å ligge til 2050.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Søtlig krydret duft med innslag av kamfer. Bløt smak med et ferskt bærpreg, fast og snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Ferskt og søtlig bærpreg i duften. Bløt og saftig smak med god fylde, syretørr ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Diskret pinot noir-preg på duften. Bløtt og saftig smaksanslag, men ikke god nok fruktsødme og ganske tanninbitter ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 60 flasker. Årgangen er et dårlig eksempel på Latour. Mye grønn paprika i duften, fruktigheten i smaken er for kokt og utviklet, og ettersmaken tørker ut.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 96 flasker. Dill, tørket fruktpreg og treverk i duften. Bløt og litt overmoden smak med ganske tretørr ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Frisk og nøytral duft med streif av sitrus og stikkelsbær. Rent druepreg i den enkle smaken, og ettersmaken har en syrlighet som minner om grønne epler.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Aromatisk duft som minner om solbærblader og urter. Litt vegetal stikkelsbærkarakter i smaken, og grapefruktaktig bitterhet i den lange ettersmaken. Prisen har gått opp 16 kroner på ett år.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Frisk duft med sitrussyrlighet og mineralsk tørrhet. Eplesødme i smaken, frisk syretørrhet og mineralpreg i ettersmaken. Prisen har gått opp 24 kroner på ett år.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Blomsteraktig duft med sødme av melon, fersken og aprikos. Smaken har innslag av lime og noe søtlig parfymert over seg som ikke harmonerer med bitterheten i ettersmaken. Og prisen er økt med 18 kroner på ett år...</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Søtlig og tung duft på en vin med oksydert preg. Slapp og litt brent smak, frukten mangler friskhet og tyder på at vinen er for gammel. Tappekoden på kartongen er L4188C01C015, og det betyr antageligvis at den er tappet på dag 188 i 2004, dvs. tidlig i juli i fjor.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbær, karamell og søtlig krydder i duften. Bløt og fyldig smak med god bærsødme og fin tanninfasthet med lett snerp i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Utviklet duftpreg med innslag av korinter og pinjer. Bløt og moden vin med fin bærsødme i smaken og ganske tørr ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bærsødme med et varmt preg i duften. Bringebæraktig sødme i den bløte smaken, snill og mild vin med lett syrebitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varm og litt syntetisk duft med streif av solbær og apoteklakris. Middels fyldig solbærsmak med litt skarp syrlighet og lett snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften minner om bringebærsukkertøy, og det er dropsaktig sødme i den saftige smaken også. Knekkebrødaktig brentkarakter og lett snerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varm og søtlig duft med innslag av plommer, lakris og lær. Saftig og varm smak, syretørr og litt brent ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varm duft med nyanser av pinjer, mørke bær, lakris og røyk. Fast smak med god fruktkonsentrasjon, men ikke like elegant som fjorårsutgaven, og ettersmaken er for stilkbitter.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bjørnebærsødme og kamfer i duften. Fast smak med god fruktkonsentrasjon, litt for bitter tørrhet i ettersmaken. Prisen har gått opp 16 kroner.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig solbærpreg i duften. Syltetøyaktig sviskesødme i den bløte og tamme smaken, enkel og pregløs vin med syrebitter ettersmak. Kvaliteten har gått ned, men likevel er prisen er satt opp med 18 kroner på ett år.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Rustikk stil med brent fatpreg og plommesødme i duften. Kokt og overmoden smak, ufrisk ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig solbærpreg i duften med en brent undertone. Varm og litt tung sødme i smaken, vinen mangler frisk fruktighet. Litt vegetal bitterhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt, søtlig bærpreg i duften. Endimensjonal solbærsmak med grei fylde, men uten smaksnyanser. Snerpende bitterhet i ettersmaken. 23 kroner dyrere på ett år...</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrusfriskhet, eplesødme og mineraler i duften. Slank smak med litt smøraktig sødme, syrefrisk ettersmak med mineralsk tørrhet i avslutningen.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus og stikkelsbær i duften. Frisk og ren smak, middels fylde, ganske kort ettersmak. Praktisk med skrukork!</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Frisk og typeriktig pinot-duft med nyanser av bringebær og jordbær. Ung og saftig smak med god fruktighet, middels fylde og frisk syrlighet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Edel duft av sedertre, solbær, paprika, lær, kaffe og tobakk. Tørket fruktkarakter og fin fasthet i smaken, lang ettersmak med fin syretørrhet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt syrlig jordbærpreg i duften med en gressaktig undertone. Ganske syrefrisk smak med litt sødme av jordbær og karamell, slank og syrebitter ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften minner om bringebærdrops og bruspulver. Spinkel smak med et søtlig saftpreg, fransk bordvin av enkleste sort med for høy pris.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Prisen senkes med 15 kroner fra 2.mai. Stikkelsbærpreget duft, og fyldig smak med eple/melon-sødme og litt grapefruktaktig syrlighet i ettersmaken. Friskere enn forrige årgang (2003).</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Dette er den reduserte prisen som gjelder fra 2.mai. Frisk sitrusduft, ren og ukomplisert smak med litt eplesødme, en grei sommervin med friskere ettersmak enn 2003 årgangen.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft med streif av nøtter og aprikos med et fint integrert eikepreg. Bløt og fyldig smak med litt kjernebitter ettersmak. Bedre syrefriskhet ville gjort susen.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Fatpreget duft med litt tung sødme av vanilje og fersken. Myk, rund og fyldig i smaksanslaget, men resten av smakskurven mangler friskhet. Bitre tretanniner dominerer ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duft av grønn paprika, solbær og fatvanilje. Rustikk stil med solid fruktighet, pent integrert fatpreg og god fylde, harmonisk ettersmak med passelig snerp og litt tobakksaktig tørrhet. Minner om kvalitetsvin fra Bordeaux, men er vesentlig billigere fordi den kommer fra et nabodistrikt som ikke har like høy status.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duft av jordsmonn og paprika, med morellsødme. Den friske bærsødmen gir en god munnfølelse, smaken er fyldig og velbalansert, og ettersmakens modne tanniner gir en lang og behagelig avslutning.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Kompleks duft av sedertre, solbær, lakris, urter og jordsmonn. Fyldig smak med god fruktkonsentrasjon, toastet fatpreg og god snert i ettersmaken. Fin matvin som kan lagres to-tre år til.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt preget duft med innslag av solbær og tjære. Bløt og sødmerik smak med god fylde og litt kokt bærpreg, ettersmakens tanniner virker litt brent.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Basis. Gyldengul champagne med fint gjærpreg i duften. Rik og moden smak, syrefrisk ettersmak med fin tørrhet i avslutningen. Kjempekjøp!</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Basis. Delikat fruktsødme i duften. Myke bobler i den litt for nøytrale smaken, frisk ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Test.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis. Utpreget mineralitet i duften. Sitrusfriskhet og mineralpreg i smaken, rik og lang ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis. Sitrus og mineraler i duften. Frisk og fyldig smak med fin syresnert og mineralpreg i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Duften har streif av sitrus, mineraler og toast. Smaken har en fin mineralsk tørrhet, men burde ideelt sett ha litt større bredde mellom fruktsødme og syrlighet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Sitrus og urtepreg i duften. Stikkelsbærsødme i smaken, syrlig ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis. Sitrus og skifer i duften. Syrlig smak med preg av urter og mineraler, lang og kraftig ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Partikjøp 120 flasker. Rasepreget duft med innslag av sedertre, solbær og kaffe. Elegant fruktighet i smaken, ettersmaken snerper godt, men vinen kan drikkes allerede.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Nøytral bærsødme i duften, og en bløt smak med like nøytral karakter. Rund, fyldig og anonym vin med lett syrlig ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Basis.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av stikkelsbær og solbærblader. Myk og frisk fruktighet i smaken, bedre fylde og rundhet enn i kartongversjonen som selges på samme varenummer for kr 325,00 og får terningkast fire.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Urteaktig eikepreg og litt aprikossødme i duften. Smaken minner mest om ferske aprikoser, og vil nok utvikle større bredde med noen måneders flaskemodning. Passelig syrebitterhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Mineralsk duftpreg med innslag av stikkelsbær. Frisk og smaksrik vin med fin snert av grapefrukt og mineraler i den lange ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Diskret duft av solbærblader, stikkelsbær og mineraler. Slank og elegant vin med frisk smak og ren og behagelig syrlighet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Urter, fatpreg og mineralitet i duften. Sitrus, stikkelsbær og anissødme i smaken som gjerne kunne hatt en mer syrefrisk avslutning. Skrukork er bra!</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Enkel vin i en tung og rustikk stil med svak aroma av sauvignon blanc-druer. Grov og litt uren smak med for mye bitterhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Dropspreget duft med hint av ripsgelé. Saftig smak med nøytral bærsødme, litt for bitter ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Aroma av solbærblader og hint av svovel i duften. Sukkertøysødme à la jordbær og et lite maltpreg i smaken, litt for emmen ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Edelt fatpreg i rioja-stil, stilig og moden jordbærsmak som sitter som et skudd. Saftig, behagelig og lang ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften har nyanser av bringebær, bananer, høy og urter. Saftig bringebærsmak, litt tørr syrlighet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bringebærpreget duft med snev av banan. God fylde og bærkonsentrasjon på smaken, tyttebæraktig syrlighet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>De vegetale tonene i duften er sterkere enn bærpreget. Smaken er bedre med et slankt og saftig bringebærpreg, syrefrisk ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt duftpreg med innslag av modne mørke bær og jordsmonn. Litt kokt bærpreg i smaken, med uttørrende syrlighet og vegetal bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Floral duft med nyanser av bringebærsukkertøy og ørlite aceton. Frisk og saftig smak med ganske tørr ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt vegetalt førsteinntrykk av duften, som også har sødme av bringebær og mandler. Ung og frisk vin med saftig og delikat smak, litt tørt mineralpreg i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Grønt preg og en støvaktig tørrhet i duften. Smaken burde vært friskere og saftigere, det er mulig at vinen er for nytappet og at den vil bli bedre med litt flaskemodning.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bringebærpreg, støvaktig tørrhet og hint av svovel i duften. Smaken er fast og syrlig, vinen har på dette stadium for lite fruktsødme og smaksbredde.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Test. Sitrus og mineralpreg i duften. Gode bobler, frisk eplesmak og fin syretørrhet i ettersmaken. Kostet 20 kroner mer som bestillingsvin.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Test. Duft av sitrus, gjærbakst og mineraler. Fyldig smak med en anelse honningsødme, fint balansert syrlighet som gir en lang ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Tropisk fruktsødme i duften. Ren og fyldig vin med en ganske nøytral smak og en lett krydret ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 360 flasker.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Sødme av solbær og mynte i duften. God bærkonsentrasjon i smaken, såpass snerpende ettersmak at matfølge er påkrevet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Vegetalt duftpreg med litt solbærsødme. Fersk fruktighet i den ganske nøytrale smaken, noe snerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Moden stil med varmt preg av søte bær og eikefat. Tørkete frukter og trepreg i den bløte og modne smaken, tretørr ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Flott syrahpreg i duften med nyanser av bjørnebær, pinjer og lakris. Saftig smak med kjølig fruktighet, fin fylde og behagelig ettersmak med lett snerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Testsalg. Duft av sitrus, sjøbunn og gjærbakst. Gode bobler og litt honningaktig sødme i smaken, fin syresnert i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Testsalg.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Testsalg.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Ferskt, søtlig bærpreg i duften. Litt emmensøtlig smak, enkel, saftig og litt beaujolais-aktig vin med lett syretørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg. Utviklet duft av tørkete frukter og fatpreg. Moden smak med tretørr syrlighet, middels fylde og ganske tørr ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg. Rustikk stil med solbærsødme og fatpreg. Varm smak med ganske fast fruktighet, syretørr ettersmak med solid snerp.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg. Modent duftpreg av tørkete frukter og eikefat (tobakk og kaffe). Moden og velbalansert smak, god tørrhet og snerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Testsalg. (kr 110,30)</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Veldig moden fruktighet med småråtne tendenser i duften. Ikke mye frukt igjen i smaken, dette er en vin som er på vei ned.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Mer aromatisk friskhet i duften enn det var på 2003-årgangen. Smaksrik vin med aroma av sitrus og stikkelsbær, fin fylde og lang ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Beklageligvis strøket fra fullsortimentet, men heldigvis i mange polutsalgs tilleggsutvalg. Markert mineralpreg og sitrus i duften. Smaksrik vin med frisk syrlighet og fin syresnert i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrusblomster og litt stikkelsbærsødme i duften. Eplefrisk smak med middels fylde og lett grapefruktbitterhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av stikkelsbær og solbærblader. Melonsødme og frisk eplekarakter i smaken, god fylde og lett syretørrhet  i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Streif av sitrus og mineraler i duften. Middels fyldig fruktsødme i smaken og lett syrlighet i ettersmaken med en mineralsk snert i avslutningen. Forrige vurdering til terningkast seks var basert på en prøving i slutten av august, ingen av tre flasker smakt senere har vært på samme nivå når det gjelder syrefriskhet og mineralpreg.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus og mineraler i duften. Frisk og fyldig smak med fin syresnert og mineralpreg i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av ananas, aprikos og grapefrukt. Ganske tung fruktsødme i smaken og litt urteaktig bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft med nyanser av sitrusblomster, pærebrus og nyslått gress. Litt pæresødme først i den ganske spinkle smaken. Større syrefriskhet enn 2003-årgangen hadde får ettersmaken til å minne om tørr sitronsaft.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Litt tropisk fruktsødme som minner mest om clementiner i duften. Bløt og lettdrikkelig vin med en liten bitterhet av sitrusskall i ettersmaken som redder vinen fra å bli for slapp.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrus, epler og mineraler («våt ull») i duften. Smaken har et hint av karamellaktig sødme og utvikler seg positivt i glasset mot den mineralske syretørrheten i ettersmaken. Men alt i alt er dette en litt for kommersiell og nøytral chablis.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Honnør til Laroche som tar sjansen på å selge en så dyr vin med skrukork! Duften har preg av toast og mineraler, smaken har litt aprikosaktig sødme, og ettersmaken har både syrefriskhet og litt kjernebitterhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sødme som minner om pærer med et hint av honning i duften. Smaken er pregløs og for bitter, totalinntrykket blir uharmonisk.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig krydret duft med et varmt bærpreg og hint av krekling og gelésjokolade. Bringebærsødme i den bløte og middels fyldige smaken, med litt pinjeaktig tørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Søtlig duft av plommer, kamfer, nøtter og knekk. Bløtt og sødmerikt smaksanslag, men kjernebitterheten i ettersmaken blir litt for dominerende. 2003-årgangen var bedre.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Et varmt duftpreg med innslag av kamfer og kaffe. Utviklet og litt spinkel fruktighet i smaken, med ganske bittertørr ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Årg.03 12/6-04: Vegetalt preg av solbærbusk i duften. Bløtt anslag med ferskt solbærpreg og litt vaniljesødme i smaken, middels fylde og lett snerpende ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>rose</type>
+		<description>Med litt godvilje aner vi et streif av rips/tyttebær/rognebær i duften. Spinkel smak med lite frukt, kort og uinteressant ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Typeriktig pinot noir med bringebær som tydeligste duftelement. Fersk, saftig og slank smak med fin syretørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Frisk bringebærfruktighet i duften. Bløt vin med saftig og typisk pinot noir-smak, stilig ettersmak med fin tørrhet og fast snerp.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varm bærsødme og pinjepreg i duften. Bløtt smaksanslag, god fylde og fast tørrhet mot slutten av smakskurven.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Røykaktig fatpreg i duften med nyanser som minner om bacon. Mørk og fersk vin med lakrissødme, kamfer og peppertoner i smaken, god tanninsnerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ble lansert i september 2002 til 169 kroner, men selv om vinen har blitt mer moden siden den gang synes vi ikke det forsvarer prisøkningen. Frisk bærsødme og eikepreg i duften, moden, bløt og saftig smak med et tydeligere innslag av eik i smaken enn i duften.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>En anelse autolyse (gjærpreg), gule epler og mineraltoner i duften. Jordbær/bringebærsødme og fine små bobler først i smaken, elegant ferskenaktig fruktighet og behagelig syretørrhet, velkomponert totalinntrykk.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av gjærbakst, glassepler, sitrus og mineraler. Myke bobler og flott spenn mellom sødme og syrefriskhet. Lang og skikkelig syretørr ettersmak, veldig god mat-champagne med sympatisk prislapp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Søte epler, sitrus, gjærbakst og mineraler i duften. Delikat smak med god mousse og frisk fruktsødme, fin matchampagne med syretørrhet som renser godt opp i munnen.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av sitrus, gjærbakst og mineraler. Smaksrik vin med gode bobler og en anelse honningsødme, fint balansert syretørrhet som gir en lang ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Modent duftanslag med nyanser av sitrus, autolyse, maltsødme og mineraler. God mousse i den stilige og syrefriske smaken, flott matchampagne med epleskallbitterhet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Moden duft av gule epler, nøtter, brøddeig, toast og honning. Nydelig mousse, rik og harmonisk smak, stilig syrlighet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Sitrus, epler og et lite gjærpreg i duften. Ren og frisk smak med litt grove bobler. Fin tørrhet og en liten bitterhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Gyldengul champagne med fint gjærpreg, sitrus og modne glassepler i duften. God mousse og rik smak, litt siderpreg på den syrefriske ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Sitrusfrisk duft med snev av gjærbakst og mineraler. Gode bobler, frisk eplesmak, ørlite honningsødme, og fin syretørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Klassisk champagneduft med nyanser av autolyse, modne epler og bringebærsødme. Saftig, rik og velbalansert smak med ripsaktig syrlighet og fin tørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Kompleks duft av autolyse, sitrus, sjø og mineraler. Fyldig smak av godt modne epler, nøtter og kaffe, fin syrlighet som gir en lang ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av sitrus, epler, gjærbakst og mineraler. Myke bobler, mild fruktsødme i smaken, elegant syrefriskhet og behagelig ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Rik duft av gjærbakst, søte epler og mineraler. Moden fruktsødme og store bobler i smaken, toast og syrlighet i ettersmaken. God apéritif-champagne.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av sitrus, gress, mineraler og toast. Fin mousse i den behagelige smaken, velbalansert vin med moden fruktsødme og frisk syrlighet.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Litt autolyse og godt moden frukt i duften. Myke bobler og søtlig smaksanslag, smaksrik champagne med avrundet ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Rik duft av gule epler, gjærbakst og mineraler. Moden eplesødme og sitrusfriskhet i smaken, syrlig og lang ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Duft av sitrus og gjærbakst. Kremete smak med fine bobler, moden eplesødme og frisk syrlighet. En relativt lett årgang som er drikkemoden allerede.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Autolyse, lime, rips, glassepler og et røykaktig trepreg i duften. Myk og elegant smak med god fruktsødme og en lang og syrefrisk ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Markjordbær og mineralpreg i duften. Ren og syrefrisk smak med kremete mousse, mineraler og grapefruktbitterhet i ettersmaken. Polets billigste champagne!</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Modne epler, hasselnøtter og snev av autolyse i duften. Frisk eplesødme og god mousse i smaken, litt kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Diskret duft med hint av sitrus og autolyse. Eplesødme og friske bobler i smaken, syrlig ettersmak med litt mineralsk tørrhet.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Lett gjærpreg og moden fruktighet i duften. Ganske mild smak med myk mousse som ebber fort ut, ripsaktig syrlighet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Pent utviklet fruktighet med duft av gule epler, gjærbakst og røstede nøtter. Gode bobler og fruktsødme først i smaken, deretter er det årgangens ganske harde syrlighet som dominerer.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Søte epler, hint av autolyse og mineraler i duften. Ren fruktighet og middels fylde i smaken, litt grapefruktaktig bitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Syrlige epler og mineralpreg i duften. Lime og ripskarakter i smaken med ganske hard syrlighet, lang ettersmak takket være den intense syrligheten.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Basis. Lakserød musserende vin med duft av bringebær. Både jordbærsødme og ripsaktig syrlighet i smaken, tørr og lett syrebitter ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Basis.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis/Grunnsortiment. Duft av solbærblader. Ren og frisk smak med stikkelsbæraroma, middels lengde og lett syretørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Ananasfruktighet, anis og eikesødme i duften. Stikkelsbær og fersken i smaken, litt mer syre ville gitt større friskhet og lengde.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Harmonisk duft med elementer av morellsødme og fatpreg. Frisk og saftig smak med god fylde og lett snerpende tørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Lærpreget førsteinntrykk av duften, med hint av vanilje og kaffe. Rund og fyldig smak, god tanninsnerp i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Et jordlig preg og bærsødme i duften. Bløtt smaksanslag med solbærsødme, saftig vin med ripsaktig syrlighet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis. Vegetalt duftpreg med innslag av rips og kirsebær. Syrlig smak og middels fylde, litt brent preg på ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Det står dyp fiolettrød i prislistene, men vinen vi fikk i glasset var lys rødbrun. To flasker ble sjekket med samme resultat. Smaken er søtlig og bløt, overraskende langt utviklet til å være fra 2004.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Utviklet duftpreg med innslag av tørkete frukter og lær. Bløt og moden smak, tørr ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Ganske nøytralt førsteinntrykk med et syrlig streif av sitrus. Men vinen utvikler en blekkaktig aroma etter noen minutter i glasset. Grove bobler og spinkel frukt med kort ettersmak. Det står 1999 i prislistene, men ingen årgang på flaske-etiketten.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Sitrusblomster, smør, toast og mineralpreg i duften. Ren og konsentrert fruktighet med litt aprikosaktig sødme, fin fylde og lang ettersmak med mineralsk tørrhet i avslutningen.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av honning, smørkaramell og vanilje. Veldig moden fruktkarakter med nyanser av aprikos og honning. Samtidig har vinen friskhet, og appelsinskallbitterhet i ettersmaken. Vin for spesielt interesserte.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Blomsterpreget duft med epleaktig sødme. Bløt, ren og syrlig smak, men litt rikere fruktighet ville gitt en lengre ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Typisk rieslingduft med innslag av flint, honning og sitrus. Moden fruktsødme og mineralsk tørrhet i smaken, men vinen er ikke så syrefrisk som forventet og derfor blir ettersmaken ganske kort.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Meget spesiell vin som må være laget av veldig modne druer. Fet og kraftig smak med nyanser av honning og kvistlakk, litt for bitter ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Lær, shit, pinjer og bjørnebær i duften. Solid smakskonsentrasjon med solbær- og morellsødme, lakris og eukalyptus. Fast ettersmak med kraftig tanninsnerp.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vinen har duft av bjørnebær og pinjer og utvikler seg positivt i glasset. Saftig og kjølig fruktighet med tyttebæraktig syrlighet og litt kreklingaktig bitterhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt krydret duft med innslag av kamfer, lær, tobakk og jordsmonn. Tørr og fast fruktighet med en røykaktig undertone i smaken, syrlig og litt tretørt snerpende ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bjørnebær, urter, pinjer og mineraler i duften. Ganske slank og kjølig frukt med kirsebær og ripskarakter, fin syretørrhet og snerp i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Litt animalsk og pepret duft med sødme av mynte, moreller og lakris. Fersk og åpen smak med fin syrlighet, solid snerp med tobakksaktig tørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vegetal duft med innslag av grønn paprika, eukalyptus og furunål. Slank og fast smak med pinjepreg og tørt snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duft av bjørnebær og pinjer. Bløt smaksinngang, men resten av smaken er ganske fast og stram med litt stilkbitre tanniner i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Duften ga assosiasjoner til svovel, krutt, tjære og gjødselkjeller. Kokt bærpreg i smaken, enkel og litt grov ettersmak.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Støvaktig tørrhet i den ganske pregløse duften. Slapp smak med nøytral bærsødme, kort og kjedelig ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Flott duft med innslag av sitrus, toast, nøtter og mineraler. God munnfølelse takket være fin balanse mellom frukt og syre, lang ettersmak med fruktkjernekarakter.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av sitrus, nøtter og mineraler. Ikke like rik fruktighet som 2002-årgangen, en syrligere vin med mineralsk tørrhet i avslutningen.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Diskret duft av sitrus og mineraler. Ren og stilig smak med litt nøtteaktig sødme, syrefrisk ettersmak og mineralsk tørrhet i avslutningen. 2002-årgangen var bedre.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av sitrus, fennikel, eikefat og mineraler. Vinen er ren og frisk, men smaksmessig ganske lukket. En time på karaffel hjelper, og et par års flaskemodning vil gi en enda bedre vin. Ettersmaken er lang og syrefrisk.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bringebær/jordbær-preg i duften. Mykt smaksanslag, ung og saftig pinot noir-smak, lang og stilig ettersmak med fin syretørrhet i avslutningen.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vi har tatt med denne vinen i håp om at det kan få Vinmonopolet til å gjøre vinene i spesialutvalget tilgjengelig for liebhabere som ikke kan møte opp på Briskeby. Typeriktig pinotkarakter i duften med jordbærsødme og et animalsk tilsnitt. Myk og saftig vin med flott fruktkonsentrasjon og lett syretørrhet som gir en lang og behagelig ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>I utgangspunktet er denne vinen veldig lukket, så den tåler fint og har godt av 3-4 timer på karaffel. Den er verdt å vente på for dem som vil ha en stor burgunder i glasset! Fyldig smak med stilig bærsødme, og behagelig tørrhet i den lange ettersmaken. Kan gjerne flaskemodnes i fem til 10 år.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Lett pinot-karakter med hint av jordbær i duften. Saftig smak med tydeligere pinot-preg, middels fylde og fin syretørrhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Varmt krydret duft med moden jordbærsødme. Mykt smaksanslag, sødmen i den slanke fruktigheten går ganske raskt over i en ganske tørr ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ferskt bærpreg med en anelse pinotkarakter i duften. Ren og saftig smak uten den helt store smaksdybden, men det er mulig vinen vil utvikle større kompleksitet med to-tre års modning. Lett syrlig ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Mektig pinotduft med innslag av jordbær og nyper. Saftig smak med god fruktkonsentrasjon og fin syretørrhet i ettersmaken. Vinen virker ennå såpass ung at den har godt av å luftes en time på karaffel.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bærsødmen i duften har foreløpig en lite utviklet pinot-karakter. Bra fruktkonsentrasjon i smaken, men vinen trenger å flaskemodnes noen år for å utvikle smaksnyansene. Syrlig og snerpende ettersmak.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ganske lukket duftmessig med lett brent bærsødme. Denne vinen må luftes et par timer, ellers gir den veldig lite fra seg. Ungt bærpreg med en anelse pinotkarakter i smaken, og ganske tørr og snerpende ettersmak. Lovende vin for lagring i tre til fem år.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Lukket duftmessig med streif av bærsødme og jordsmonn. Smaksmessig er vinen helt stum rett etter åpning, den åpner seg litt etter et par timer, men bør absolutt modnes noen år til og tåler sikkert 10 år på langs. Nå er ettersmaken fast og snerpende.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bringebærpreget fruktighet i duften. Vinen virker ung til å være i sitt femte år, men til denne prisen er ikke smaken så elegant som forventet, og ettersmaken er kirsebærsyrlig med lett snerp i avslutningen.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>sparkling</type>
+		<description>Test. Blekrosa champagne med lett preg av gjærbakst og sitrus i duften. Litt honningaktig sødme først i smaken, men for mye skallbitterhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis/Grunnsortiment.Typeriktig duft og smak med nyanser av sitrus, fersken, honning og mineraler. Ung og frisk smak med småbitter tørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 360 flasker. Veldig honningsøt duft med et mineralsk anstrøk. Mektig sødme i smaken med innslag av tørkete frukter og nøtter, og litt trepreget ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 480 flasker. Mest fatpreg (nøtter og toast) og litt sitrus i duft og smak. Fyldig vin med lang ettersmak, men forventer mer eleganse i en vin til denne prisen.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 240 flasker. Litt gasbindaktig tørrhet og honningsødme i duften. Søtlig krydret smak med litt bitter tretørrhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 120 flasker. Søtlig duft og smak av honning og marsipan. For lite syre gjør at smaken virker slapp, så da hjelper det ikke med kryddersnert i ettersmaken.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Basis/Grunnsortiment. Den kloraktige duften ga ikke noe godt førsteinntrykk. Merkelig smak også, noe i nærheten av lær og skokrem.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Veldig fatpreget duft som minner mest om nøtter. Aprikos og fruktkjernepreg i smaken, men dette blir for fatpreget.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Test. Duften gir assosiasjoner til møllkuler. Fargen tyder ikke på oksydasjon, men vinen virker likevel for gammel.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Partikjøp 600 flasker. Rustikt preg på grensen til urent både i duft og smak. Dufter for mye av våt ull, og smaken er grov og uelegant.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Tydelig pinotpreg med bringebær og jordbær i duften. Ferskt og saftig smaksanslag med god bringebærsødme, frisk syretørrhet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Sedertre, solbær og kaffe i duften. God fruktkonsentrasjon i smakenn, med fin balanse mellom fruktighet og fatpreg. Godt snerpende ettersmak, fin matvin.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Bjørnebær, lakris og et læraktig fatpreg i duften. Saftig og syrlig smak med middels fylde og litt tanninsnerp i ettersmaken. Ikke like imponerende som tidligere årganger vi har smakt.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Varmt jordsmonn og litt solbærbusk i duften. Litt solbærsødme i smaksanslaget, middels fylde og ganske fast og snerpende ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Diskret duft av sedertre, solbær og tobakk. Moden men ganske nøytral smak, middels fylde og litt vegetal tørrhet i ettersmaken.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Sukkertøysøt duft med et syntetisk preg. Sødmen dominerer smaken for mye også, og vinen virker overmoden og spinkel med ganske utpreget tørrhet i ettersmaken.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Svidd duftpreg, og kokt bærsødme i smaken. Fruktfattig vin med lett bitter ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Basis/Grunnsortiment. Læraktig fatpreg i duften. Det samme lærpreget kler ikke smaken like godt. Vinen har middels fylde og syrlig, lett snerpende ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Test. Vegetalt, litt apargesaktig og kokt duftpreg. For mye vegetal tørrhet i smaken, uharmonisk vin med uttørket ettersmak.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Edel duft av bjørnebær, anis og mynte. Velkomponert fruktighet, livlig syrlighet og behagelig tannintørrhet i ettersmaken. Flott å drikke nå, men også lovende for noen års lagring.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Første burgunder med skrukork på det norske markedet? Tiltalende pinotduft med innslag av bringebær og anis. Saftig og elegant fruktighet med en behagelig munnfølelse og en fin overgang til syretørrheten i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Fersk pinotduft med nyanser av kirsebær, jordbær, anis og urter. Saftig smak i en kjølig stil, lovende vin med ganske fast og snerpende ettersmak. Kan drikkes nå, men vil bli enda bedre om et par år.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Kompleks duft av sedertre, kamfer, pinjer og lær med et animalsk tilsnitt. Kjølig frukt med stilig fruktsødme, stor fylde og fin sjokoladeaktig bitterhet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Vinen virker først litt ung og uforløst, men avslører en herlig aroma av bringebær og jordbær etter noen minutter i glasset. Mykt smaksanslag, elegant og velbalansert vin med jordbær og la krissødme i smaken og passelig syretørr ettersmak.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Rik bærsødme med hint av anis og eikefat i duften. Saftig smak med god sødme og friskhet, lett syresnerp i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Kjempegod duft med sekundæraromaer av hengt kjøtt og tørkete frukter. krydret stil med fin bærsødme og en behagelig tørr pinjekarakter i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Markant duft av bjørnebær, multesteiner og pinjer. Saftig, fløyelsglatt og kjølig fruktighet i den konsentrerte smaken, behagelig snerp av modne tanniner i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Fersk og litt tung bærsødme i duften. Stor fruktkonsentrasjon i smaken, ung og barsk vin med ganske mye tanninsnerp i ettersmaken. Synd å drikke nå, bør absolutt lagres tre til fem år.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Lukket førsteinntrykk, men etter noen minutter blir pinotpreget tydelig. Mørke bær, skogbunn og fatpreg i duften. Ung og uforløst smak med stor fruktkonsentrasjon, kraftig snerpende ettersmak, bør absolutt lagres en fem års tid, og kan godt glemmes i 10 år.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Aromatisk duft av blomster, mandariner og sitron. Frisk og ren smak med litt aprikossødme, og fin syrespenst i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Ren aroma av pære, eple og sitrus med en diskret underliggende mineraltone. Her er det frisk fruktighet (epler, rips og sitrusfrukter) med en fin mineralsk ryggrad. Lett syrebitterhet i ettersmaken.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Duft av stikkelsbærblader med hint av gress og nesle. Glassepler og Fox i smaken, med litt restsødme som minner om riesling. Syrefattig og kort ettersmak.</description>
+		<dice>4</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Parfymert duftpreg med en anelse tropisk fruktsødme. Tung og slapp fruktighet i smaken, og en besk stilkbitterhet i ettersmaken.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Oksydert preg på duften med sødme som minner om nøtter og toast. Tam og fruktfattig smak, litt krydderpreg i den ganske beske ettersmaken.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Svovelpreget duft og smak blir veldig forstyrrende for smaksopplevelsen. Samme vin på flaske er friskere og og har et fint mineralpreg.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Ulekker duft av for gammel vin. Det lille som er igjen forsvinner etter noen få minutter i glasset. Tappet på dag 160 (15.juni) i 2005, og det er altfor lenge siden for en Bag-in-Box vin.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<description>Denne tapningen var god i fjor sommer, men nå er den altfor gammel. Null frukt igjen, surt og bittert. Tappet på dag 154 (9.juni) i 2005, og burde ikke lenger være i salg.</description>
+		<dice>1</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Fersk solbæraroma i duften (endelig uten svovelstikk!). Frisk og saftig fruktighet i smaken, middels fylde, god syrlighet og lett tørrhet i ettersmaken.</description>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Bjørnebærsødme, eukalyptus og pinjer i duften. Saftig og slank fruktighet i smaken med innslag av kirsebær, lakris og urter. Litt vegetal ettersmak med lett tanninsnerp.</description>
+		<dice>5</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Solbær og litt jordlig preg på duften. Den lille fruktigheten i smaken er saftig, men vinen er hul og kort med nøytral ettersmak. Polets mest solgte vin.</description>
+		<dice>3</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Ganske nøytral duft med hint av leverpostei-boks. Identitetsløs og fruktfattig smak, stilkbitter ettersmak.</description>
+		<dice>2</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<description>Brunlig vin nesten helt uten duft. Mager og pregløs smak, med bitter ettersmak. Vinen virker for gammel, og smakspanelet ga denne vinen lavest score av samtlige rødviner i blindtesten.</description>
+		<dice>1</dice>
+	</record>
+</query>
+</root>

@@ -1,0 +1,27 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">reflist</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>"&gt;   
+         
+  &lt;<span class="tagname">ref</span> <span class="attname">id</span>="<span class="attvalue">As we may think</span>"&gt;
+    &lt;<span class="tagname">uri</span> <span class="attname">dateread</span>="<span class="attvalue">14-03-20009</span>"&gt;http://www.theatlantic.com/doc/194507/bush&lt;/<span class="tagname">uri</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;1945&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">title</span>&gt;As we may think&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;the Atlantic&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">authors</span>&gt;Bush,Vannevar&lt;/<span class="tagname">authors</span>&gt;
+    &lt;<span class="tagname">categories</span>&gt;tec&lt;/<span class="tagname">categories</span>&gt;
+  &lt;/<span class="tagname">ref</span>&gt;
+  
+  &lt;<span class="tagname">ref</span> <span class="attname">id</span>="<span class="attvalue">Mindstorms</span>"&gt;
+    &lt;<span class="tagname">authors</span>&gt;Papert,Seymour&lt;/<span class="tagname">authors</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Harvester Press&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">title</span>&gt;Mindstorms, Children Computers and Powerful Ideas&lt;/<span class="tagname">title</span>&gt; 
+    &lt;<span class="tagname">year</span>&gt;1980&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">isbn</span>&gt;0-85527-163-9&lt;/<span class="tagname">isbn</span>&gt;
+    &lt;<span class="tagname">categories</span>&gt;ped&lt;/<span class="tagname">categories</span>&gt;
+    &lt;/<span class="tagname">ref</span>&gt;
+  
+  &lt;<span class="tagname">ref</span> <span class="attname">id</span>="<span class="attvalue">web2</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;Web 2.0&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2005&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">uri</span> <span class="attname">dateread</span>="<span class="attvalue">14-03-20009</span>"&gt;http://en.wikipedia.org/wiki/Web_2.0&lt;/<span class="tagname">uri</span>&gt;
+  &lt;/<span class="tagname">ref</span>&gt;    
+&lt;/<span class="tagname">reflist</span>&gt;</pre>

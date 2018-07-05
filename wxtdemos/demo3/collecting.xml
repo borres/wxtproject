@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Collecting</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_collecting.xml" 
+             sourcelocation="collecting.xml" code="xmlcode"?>
+</div>
+<hr/>    
+   <div>
+       <?_wxt collect  books="all" xpath="//h1"?>
+   </div>       
+   <hr/>
+    <h2>Collecting Module content</h2>        
+    <div>
+       <?_wxt collect  books="all" xpath="//div[@class='content']"?>
+   </div>          
+   </div>
+</data>

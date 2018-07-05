@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+
+<div id="title">Page4</div>
+
+       
+<div class="mainblock">
+<h1>Albrecht Dürer</h1>
+<div>(1471 – 1528)</div>
+<div style="float:right">
+<?_wxt imagethumb id="durer1"?>
+</div>
+<div>
+<p>Dürer's work on geometry is called the Four Books on Measurement (Underweysung der Messung mit dem Zirckel und Richtscheyt). 
+</p><p>The first book focuses on linear geometry. Dürer's geometric constructions include helices, conchoids and epicycloids. He also draws on Apollonius, and Johannes Werner's 'Libellus super viginti duobus elementis conicis' of 1522. 
+</p><p>The second book moves onto two dimensional geometry, i.e. the construction of regular polygons. Here Dürer favours the methods of Ptolemy over Euclid. 
+</p>
+<div style="float:left">
+<?_wxt imagethumb id="durer2"?>
+</div>
+<p>The third book applies these principles of geometry to architecture, engineering and typography. In architecture Dürer cites Vitruvius but elaborates his own classical designs and columns. In typography, Dürer depicts the geometric construction of the Latin alphabet, relying on Italian precedent. However, his construction of the Gothic alphabet is based upon an entirely different modular system. 
+</p><p>The fourth book completes the progression of the first and second by moving to three-dimensional forms and the construction of polyhedrons. Here Dürer discusses the five Platonic solids, as well as seven Archimedean semi-regular solids, as well as several of his own invention. In all these, Dürer shows the objects in net. Finally, Dürer discusses the Delian Problem and moves on to the 'construzione legittima', a method of depicting a cube in two dimensions through linear perspective. It was in Bologna that Dürer was taught (possibly by Luca Pacioli or Bramante) the principles of linear perspective, and evidently became familiar with the 'costruzione legittima' in a written description of these principles found only, at this time, in the unpublished treatise of Piero della Francesca. He was also familiar with the 'abbreviated construction' as described by Alberti and the geometrical construction of shadows, a technique of Leonardo da Vinci. Although Dürer made no innovations in these areas, he is notable as the first Northern European to treat matters of visual representation in a scientific way, and with understanding of Euclidean principles. In addition to these geometrical constructions, Dürer discusses in this last book of Underweysung der Messung an assortment of mechanisms for drawing in perspective from models, such as the camera lucida and provides woodcut illustrations of these methods that are often reproduced in discussions of perspective
+</p>
+(fra wikipedia:<a href="http://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer" class="external">Albrecht Dürer</a>)
+</div>
+
+
+
+ 
+
+<hr/>
+
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page2.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

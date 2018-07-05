@@ -1,0 +1,58 @@
+@media screen{ 
+body {
+	color: black;
+	background-color:EEE8CD;
+	font-family:Georgia,'Times New Roman',times,serif;
+	font-size: 11px;
+	line-height: 120%;
+	text-align:left;
+	margin:0px;
+	margin-right:5px;
+	padding:0px;
+}
+
+
+div#logo{position:absolute;left:0px;top:10px}
+div#banner{height:80px;border-bottom:solid;border-width:thin;background-color:#EEE8CD;padding-top:1px}
+div#banner #dep{font-size:14px;line-height:120%;font-weight:bold;text-align:right;}
+div#banner #sitename{margin-left:130px;font-size:20px;line-height:120%;font-weight:bold;text-align:left;}
+
+div#menu{		 
+		position:absolute;left:0px;top:82px;
+		width:128px; 
+		}
+.content,.collectable{
+		border-top:solid; border-top-width:thin; border-top-color:white;
+		border-bottom:solid; border-bottom-width:thin; border-bottom-color:white;
+		border-left-style:solid;
+		}
+.content{
+		border-left-color:#EEE8CD; border-left-width:129px;		
+		padding-left:5px;  padding-right:0px;
+		background-color:white;
+		}
+.collectable{
+		margin-left:-4px;
+		padding-left:5px;
+		border-left-color:black; border-left-width:thin;		
+		}
+
+.footer{
+		margin-top:0px;
+		border-top:solid;
+		border-width:thin;
+        background-color:white;
+		padding-left:5px;
+		padding-top:7px;
+		clear:both;
+		text-align:right
+		}
+}
+
+@media print{
+	#menu{display:none}	
+	#footer{display:none}
+	#banner{display:none}
+	h1{page-break-before:always}
+}
+

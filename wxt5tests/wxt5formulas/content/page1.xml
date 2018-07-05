@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+
+<div id="title">Page1</div>
+        
+<div class="mainblock">
+<h1>Testing PI:texformulas</h1>
+<p>
+ Latex formulas built by WXT / JLaTeXMath from 
+</p>
+ 
+<h2>direct source</h2>
+<div>
+<?_wxt formula id="f11" subtext="Bezier again" type="latex" source="\Huge B(t)=\sum_{i=0}^{n}{B_{i}^{n}t^{i}(1-t)^{n-i}P_{i}}"?>
+</div>
+ 
+
+<div>
+<?_wxt formula id="f12"  type="latex" source="\left| \begin{array}{cc} x_{11} & x_{12} \\ x_{21} & x_{22}\\x_{31} & x_{32}  \end{array} \right|"?>
+</div>
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page1.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+
+</html>

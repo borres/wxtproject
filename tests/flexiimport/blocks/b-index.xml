@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Velkommen</title>
+</head>
+    <body>
+        
+<div class="mainblock">
+
+<h1>Welcome</h1>
+<p>
+	Testing of flexible import. Import adapts to what is possible:
+</p>
+<ol>
+<li>directly from URI</li>
+<li>source without header</li>
+<li>tidied source</li>
+</ol>
+<p>
+Page CGI show how we can make fragments with CGI.
+</p>
+<p>
+Page Page show how we can import complete pages.
+</p>
+</div>
+
+</body>
+</html>

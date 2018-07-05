@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <hr/>
+    <h1>This is a primary file</h1>
+
+    <p>
+        Available for module <?_wxt fragment id="_name"?>
+    </p>
+     <hr/>
+
+   
+   </div>
+</data>

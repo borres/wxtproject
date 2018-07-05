@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>The script</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<meta content="WXT" name="GENERATOR"/>
+	<meta name="KEYWORDS" xmlcontent="WXT,XML,WebSite"/>
+	<link href="../gfx/template.css" rel="STYLESHEET"/>
+	<link href="../gfx/wxtstyle.css" rel="STYLESHEET"/>
+</head>
+
+<body>
+
+<!-- header -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no/wxt/wxtsite/"> 
+	<img alt="logo" src="../gfx/wxtlogo.gif" style="border:none"/> 
+	</a> 
+</div> 
+<div id="banner">
+  <p id="dep">Dep. for Information Technology, Østfold University College</p>
+  <p id="sitename"> WXT Demo B</p>
+</div>
+<!-- header -->
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="modulemenu"><div class="level1"><a href="../index.html" title="Introduction to the site">Welcome</a></div><div class="level1"><a href="page2.html" title="All the modules">Page2</a></div><div class="level1">The script</div></div>
+</div><!-- left menu -->
+
+<!-- content -->
+<div class="content">
+	<div class="collectable">
+		<div class="main">
+			<h1>Page 3</h1><p>This page is bulit with the simple template.</p><p>The only purpose is to show the scrip:
+</p><div>
+<div class="expand-on" id="The_script3on" onclick="javascript:document.getElementById('The_script3on').style.display='none';document.getElementById('The_script3off').style.display='block';" style="display:block">+</div><div id="The_script3off" style="display:none"><div class="expand-off" onclick="javascript:document.getElementById('The_script3off').style.display='none';document.getElementById('The_script3on').style.display='block';">-</div><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">wscript</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>"&gt;
+&lt;!--<span class="comment">Script for website demoB - bs dec. 2009</span>--&gt;  
+&lt;<span class="tagname">definitions</span>&gt;
+    &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">output-format</span>" <span class="attname">value</span>="<span class="attvalue">xhtml</span>"/&gt;
+    
+    &lt;<span class="tagname">fragments</span> <span class="attname">location</span>="<span class="attvalue">gfx/myfragments.xml</span>"/&gt;
+    
+    &lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">gfx/p_template.xml</span>"/&gt;
+    &lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">Q</span>" <span class="attname">location</span>="<span class="attvalue">gfx/q_template.xml</span>"/&gt;
+&lt;/<span class="tagname">definitions</span>&gt;
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">Welcome</span>" <span class="attname">template</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">index.html</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">Introduction to the site</span>"&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">content/b-index.xml</span>"/&gt;
+&lt;/<span class="tagname">module</span>&gt;
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">Page2</span>" <span class="attname">template</span>="<span class="attvalue">Q</span>" <span class="attname">location</span>="<span class="attvalue">pages\page2.html</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">All the modules</span>"&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">content\b-page2.xml</span>"/&gt;
+&lt;/<span class="tagname">module</span>&gt;
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">The script</span>" <span class="attname">template</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">pages\page3.html</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">All the modules</span>"&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">content\b-page3.xml</span>"/&gt;
+&lt;/<span class="tagname">module</span>&gt;
+
+&lt;/<span class="tagname">wscript</span>&gt;</pre></div>
+</div>
+		</div>
+	</div>
+</div><!-- content -->
+
+
+<!-- footer -->
+<div class="footer">
+	<a href="http://validator.w3.org/check?uri=referer">
+	<img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border:0px"/>
+	</a> 
+</div>
+<!-- footer -->
+
+
+</body>
+</html>

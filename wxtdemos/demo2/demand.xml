@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+</head>
+<body>
+<div id="main">
+<h1>Produce your own book</h1>
+<hr/>
+<script type="text/javascript">
+//<![CDATA[
+function swap(a,b)
+{
+	try{
+	var aelt=document.getElementById('_modulepos'+a);
+	var aval=aelt.getElementsByTagName('input')[0].checked;
+	var belt=document.getElementById('_modulepos'+b);
+	var bval=belt.getElementsByTagName('input')[0].checked;
+
+	var T=aelt.innerHTML;
+	aelt.innerHTML=belt.innerHTML;
+	belt.innerHTML=T;
+
+	aelt.getElementsByTagName('input')[0].checked=bval;
+	belt.getElementsByTagName('input')[0].checked=aval;
+	}
+	catch(e)
+	{
+		alert('error '+e);
+	}
+}
+function moveUp(ix){
+	if(ix <= 1)
+		return;
+	swap(ix,ix-1);
+}
+function moveDown(ix){
+	if(document.getElementById('_modulepos'+(ix+1))==null)
+	  return;
+	swap(ix,ix+1);
+}
+// ]]>
+</script>
+<p>
+  Change the sequence and select the modules you want to include.
+ </p>
+<div class="selecttable">
+
+<?_wxt bookondemand 
+        scriptaddress="/home/wxt/html/wxtdemos/demo2/script.xml" 
+        serveraddress="http://www.ia.hiof.no/wxt/cgi-bin/wxtservice/makebook/doit.py"
+        targetfile="/home/wxt/html/wxtdemos/demo2/stuff/book_template.xml"
+        htmlfile="/home/wxt/html/wxtdemos/demo2/stuff/collectedbook.html"
+        stylesheet="/home/wxt/html/wxtdemos/demo2/stuff/pdfstyle.css"
+        pdf="yes"?>
+
+</div>
+</div>
+<div id="pagesource">
+	<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_demand.xml" 
+             sourcelocation="demand.xml" code="xmlcode"?>
+</div>
+</div>
+<!--
+<?_wxt bookondemand 
+        scriptaddress="/home/borres/html/wxtdemos/demo2/script.xml" 
+        serveraddress="http://www.ia.hiof.no/~borres/cgi-bin/wxtservice/makebook/doit.py"
+        targetfile="/home/borres/html/wxtdemos/demo2/stuff/book_template.xml"
+        htmlfile="/home/borres/html/wxtdemos/demo2/stuff/collectedbook.html"?>
+-->
+</body>
+</html>

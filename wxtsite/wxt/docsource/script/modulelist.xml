@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: moduleList-element</h1>
+<p>
+  The purpose of modulelists is to introduce a shorthand form
+  for homogen modules. 
+  The module lists are transformed to modules before the
+  modulestructure is set up. The script may contain any number of modulelists.
+  A module list must be contained in a module.
+ </p>
+ <p>
+ <em>Note</em> that modulelists introduce some limitations on 
+ remotecollections, see <?_wxt xlink id="CollectRemote"?>. It also takes over control of the
+ sequence of modules. 
+ You should consider modulelists only in special cases where you want a large number of
+ homogen modules for special purposes, like producing modules for a set of products, a calendar,
+ a team of people.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<modulelist catalog="" 
+              template=""  
+              sourcesuffix=""  
+              targetsuffixr="" 
+              books=""/>]]>
+</pre>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>catalog</strong>(mandatory)</td>
+    <td>Any string that represents a catalog, absolute or relative to the scripts catalog.
+    Contentfiles are supposed to be in this catalog, and prepared modules will be 
+    placed in this catalog.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>template</strong>(optional)</td>
+    <td>Identification of a template by id. If template is ommitted,
+    the source file is considered template (with no content-file)
+    </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>sourcesuffix</strong>(optional)</td>
+    <td>Suffix of actual content-files. Default is xml
+    </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>targetsuffix</strong>(optional)</td>
+    <td>Suffix of resulting modules. Default is html.
+    </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>books</strong>(optional)</td>
+    <td>A commaseparted string of books that these
+        modules should be a part of. Default value is <em>_all</em>.
+    </td>
+  </tr>
+</table>
+
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<modulelist template="P" 
+            sourcesuffix="xml" 
+            targetsuffix="html" 
+            catalog="${lists}" 
+            books="personer"/>]]>
+</pre>
+
+
+</body>
+</html>

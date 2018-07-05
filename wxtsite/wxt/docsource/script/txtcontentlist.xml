@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: txtcontentList-element</h1>
+<p>
+  A Module may contain any number of txtcontentList elements.
+  The purpose is to have a shorthand introduction of
+  many contentfiles to a module.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<txtcontentList catalog="" sourcesuffix=""/>]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>catalog</strong>(mandatory)</td>
+    <td>Any string that represents a catalog, either as an absolute URI or 
+    as an URI relative to the active anchor.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>sourcesuffix</strong>(optional)</td>
+    <td>Default is <em>txt</em>
+    </td>
+  </tr>
+</table>
+
+
+<p>A txtcontentlist element may not  contain any elements
+</p>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<txtcontentlist catalog="blocks"/>]]>
+</pre>
+
+
+</body>
+</html>

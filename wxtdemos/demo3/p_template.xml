@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+	<title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="../commons/wxtstyle.css"/>
+	<script type="text/javascript" src="../commons/prototype.js"> </script>
+	<script type="text/javascript" src="../commons/wxtjs.js"> </script>
+	<style>
+	.prev img,.home img,.next img{border:none}
+	</style>
+</head>
+
+<body>   
+	<table>
+	<tr>
+	<td valign="top" style="width:160px">
+		<?_wxt modulemenu summary="yes"?>
+		<div style="margin-left:20px; margin-top:20px">
+		<span class="prev"><?_wxt xlink id="_prev"  fragment="previmage"?></span>
+		<span class="home"><?_wxt xlink id="_home"  fragment="homeimage"?></span>
+		<span class="next"><?_wxt xlink id="_next"  fragment="nextimage"?></span>
+		</div>
+	</td>
+
+<td valign="top">
+<?_wxt importxml xpath="//div[@class='content']"?>
+</td>
+   
+	</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Own Gadgets</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<meta content="wxt2" name="GENERATOR"/>
+	<link href="../commons/wxtstyle.css" rel="STYLESHEET"/>
+	<link href="gfx/template.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+    <script src="../commons/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+        <div class="level1">
+          <a href="index.xhtml" onclick="javascript:document.getElementById('Own_Gadgets1').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Own_Gadgets1').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Own_Gadgets1').style.visibility='visible'">What</a>
+          <div style="position: absolute; z-index: 10">
+            <div class="wxtsummary" id="Own_Gadgets1" style="visibility:hidden;">
+              <div class="header">What</div>What</div>
+          </div>
+        </div>
+        <div class="level1">Own Gadgets</div>
+        <div class="level1">
+          <a href="gad2.html" onclick="javascript:document.getElementById('Own_Gadgets2').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Own_Gadgets2').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Own_Gadgets2').style.visibility='visible'">Google Gadgets</a>
+          <div style="position: absolute; z-index: 10">
+            <div class="wxtsummary" id="Own_Gadgets2" style="visibility:hidden;">
+              <div class="header">Google Gadgets</div>Google Gadgets</div>
+          </div>
+        </div>
+        <div class="level1">
+          <a href="exp1.html" onclick="javascript:document.getElementById('Own_Gadgets3').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Own_Gadgets3').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Own_Gadgets3').style.visibility='visible'">AjaxExpansion</a>
+          <div style="position: absolute; z-index: 10">
+            <div class="wxtsummary" id="Own_Gadgets3" style="visibility:hidden;">
+              <div class="header">AjaxExpansion</div>AjaxExpansion</div>
+          </div>
+        </div>
+        <div class="level1">
+          <a href="simpleexp1.html" onclick="javascript:document.getElementById('Own_Gadgets4').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Own_Gadgets4').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Own_Gadgets4').style.visibility='visible'">SimpleExpansion</a>
+          <div style="position: absolute; z-index: 10">
+            <div class="wxtsummary" id="Own_Gadgets4" style="visibility:hidden;">
+              <div class="header">SimpleExpansion</div>SimpleExpansion</div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+
+		<div class="main">
+			<h1>Testing gadgets</h1>
+        <p>absolute</p>
+        <div>
+	<div class="wxtgadget" id="Tegn_trekant" style="width:405px;">
+            <div class="header">
+              <span class="off" onclick="toggleGadget(this);">_</span>Tegn trekant</div>
+            <div class="content" style="display:none">
+              <iframe height="450px" src="http://www.it.hiof.no/~borres/gadgets/geometri2/b-eks11.html" width="400px"> </iframe>
+            </div>
+          </div>
+	</div>
+        <p>movable and fixed</p>
+        <div>
+	<div class="wxtgadget" id="Self" style="left:10px;top:10px;width:85px;position:fixed">
+            <div class="header" style="cursor:move">
+              <span class="off" onclick="toggleGadget(this);">_</span>Self</div>
+            <div class="content" style="display:none">
+              <iframe height="85px" src="gadgets/bs.png" width="80px"> </iframe>
+            </div>
+            <script type="text/javascript">dragDrop.initElement('Self');</script>
+          </div>
+	</div>
+        <p>youtube</p>
+        <div>
+      <div class="wxtgadget" id="Lasers" style="width:645px;">
+            <div class="header">
+              <span class="off" onclick="toggleGadget(this);">_</span>Lasers</div>
+            <div class="content" style="display:none">
+              <object height="385" width="640">
+                <param name="movie" value="http://www.youtube.com/v/HKRPfa66_po&amp;hl=en_US&amp;fs=1&amp;"/>
+                <param name="allowFullScreen" value="true"/>
+                <param name="allowscriptaccess" value="always"/>
+                <embed allowfullscreen="true" allowscriptaccess="always" height="385" src="http://www.youtube.com/v/HKRPfa66_po&amp;hl=en_US&amp;fs=1&amp;" type="application/x-shockwave-flash" width="640"/>
+              </object>
+            </div>
+          </div>
+	</div>
+        <p>youtube movable</p>
+        <div>
+      <div class="wxtgadget" id="La_Vida_Tombola" style="width:485px;position:absolute">
+            <div class="header" style="cursor:move">
+              <span class="off" onclick="toggleGadget(this);">_</span>La Vida Tombola</div>
+            <div class="content" style="display:none">
+              <object height="385" width="480">
+                <param name="movie" value="http://www.youtube.com/v/ZlSm-wMf2yk&amp;hl=en_US&amp;fs=1&amp;rel=0"/>
+                <param name="allowFullScreen" value="true"/>
+                <param name="allowscriptaccess" value="always"/>
+                <embed allowfullscreen="true" allowscriptaccess="always" height="385" src="http://www.youtube.com/v/ZlSm-wMf2yk&amp;hl=en_US&amp;fs=1&amp;rel=0" type="application/x-shockwave-flash" width="480"/>
+              </object>
+            </div>
+            <script type="text/javascript">dragDrop.initElement('La_Vida_Tombola');</script>
+          </div>
+	</div>
+		</div>
+
+</div>
+    <!-- content -->
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+&lt;<span class="tagname">h1</span>&gt;DTS&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_dts.xml" 
+             sourcelocation="dts.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">h2</span>&gt;Dates&lt;/<span class="tagname">h2</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="short"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="medium"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="long"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="full"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="full" country="fr"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="full" country="en"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="full" country="no"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="full" country="fi"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date form="full" actualdate="2008:12:24" country="no"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">h2</span>&gt;Time&lt;/<span class="tagname">h2</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time form="short"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time form="medium"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time form="long"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time form="full"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;      
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time form="full" country="fr"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time form="full" country="en"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time form="full" country="no"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt time form="full" country="fi"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+
+    <span class="process">&lt;?_wxt time form="full" country="fi"?&gt;</span>-<span class="process">&lt;?_wxt date form="full" country="fi"?&gt;</span>
+    
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">h2</span>&gt;Stamp&lt;/<span class="tagname">h2</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt stamp?&gt;</span>&lt;/<span class="tagname">div</span>&gt;    
+    &lt;<span class="tagname">div</span>&gt;Produced by <span class="process">&lt;?_wxt stamp?&gt;</span>&lt;/<span class="tagname">div</span>&gt;    
+
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

@@ -1,0 +1,26 @@
+<pre class="xsltcode">
+&lt;?xml version="<span class="literal">1.0</span>" encoding="<span class="literal">ISO-8859-1</span>"?&gt;
+&lt;<span class="word">xsl:stylesheet</span> version="<span class="literal">1.0</span>" 
+                        xmlns:xsl="<span class="literal">http://www.w3.org/1999/XSL/Transform</span>"&gt;
+    &lt;<span class="word">xsl:output</span> method="<span class="literal">xml</span>" 
+                     version="<span class="literal">1.0</span>" 
+                     encoding="<span class="literal">UTF-8</span>" 
+                     indent="<span class="literal">yes</span>"/&gt;
+&lt;<span class="word">xsl:template</span> match="<span class="literal">/</span>"&gt;
+&lt;geonames&gt;
+    &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">//country</span>"/&gt;
+&lt;/geonames&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+<span class="comment">&lt;!-- for each country --&gt;</span>
+&lt;<span class="word">xsl:template</span> match="<span class="literal">country</span>"&gt;
+    &lt;<span class="word">xsl:element</span> name="<span class="literal">country</span>"&gt;
+        &lt;<span class="word">xsl:attribute</span> name="<span class="literal">geonameId</span>"&gt;
+            &lt;<span class="word">xsl:value-of</span> select="<span class="literal">geonameId</span>"/&gt;
+        &lt;<span class="word">/xsl:attribute</span>&gt;
+        &lt;<span class="word">xsl:attribute</span> name="<span class="literal">countryName</span>"&gt;
+            &lt;<span class="word">xsl:value-of</span> select="<span class="literal">countryName</span>"/&gt;
+        &lt;<span class="word">/xsl:attribute</span>&gt;
+    &lt;<span class="word">/xsl:element</span>&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+&lt;<span class="word">/xsl:stylesheet</span>&gt;
+</pre>

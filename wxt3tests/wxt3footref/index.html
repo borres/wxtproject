@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">Welcome</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">Page1</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">Page1</div>More demonstration of footers and references</div>
+</div>
+<div class="level1">
+<a href="ref.html" onmouseout="javascript:popunpop('welcome2',event);" onmouseover="javascript:popunpop('welcome2',event);">References</a>
+<div class="wxtsummary" id="welcome2" style="display: none;">
+<div class="header">References</div>References</div>
+</div>
+<div class="level1">
+<a href="ix.html" onmouseout="javascript:popunpop('welcome3',event);" onmouseover="javascript:popunpop('welcome3',event);">Index</a>
+<div class="wxtsummary" id="welcome3" style="display: none;">
+<div class="header">Index</div>Index</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:ref and foootnotes</h1>
+<h2>Some text</h2>
+<p>
+ Whenever you read some text relating to computers and the WWW<span class="wxtfnmarker">1</span>
+<span class="fn">World Wide Web</span>, 
+ you find a lot of lingo<span class="wxtfnmarker">2</span>
+<span class="fn">a characteristic language of a particular group</span>.
+ Some examples are WYSIWYG<span class="wxtfnmarker">3</span>
+<span class="fn">what you see is what you get</span>, 
+ AJAX<span class="wxtfnmarker">4</span>
+<span class="fn">Asynchronous JavaScript And XML</span> 
+ and CAPTCHA<span class="wxtfnmarker">5</span>
+<span class="fn">Completely Automated Turing Test To Tell Computers and Humans Apart. 
+ More on Turing tests at The Alan Turing Home Page<span class="wxtref" title="The Alan Turing Home Page | http://www.turing.org.uk/turing/">
+<a href="http://www.turing.org.uk/turing/"> [1] </a>
+</span> or at <a class="external" href="http://en.wikipedia.org/wiki/Turing_test">Wikipedia</a>
+</span>,
+ inspired from the works of Alan Turing<span class="wxtref" title="The Alan Turing Home Page | http://www.turing.org.uk/turing/">
+<a href="http://www.turing.org.uk/turing/"> [1] </a>
+</span>.
+ </p>
+<p>
+ Of course this lingo is usefull for precision and ease of discussion. We need some precision to
+ discuss the differences and similarities between for instance MVC<span class="wxtfnmarker">6</span>
+<span class="fn">Model View Controller</span>
+ as introduced by Trygve Reenskaug<span class="wxtref" title="The Model-View-Controller | http://heim.ifi.uio.no/~trygver/2003/javazone-jaoo/MVC_pattern.pdf">
+<a href="http://heim.ifi.uio.no/~trygver/2003/javazone-jaoo/MVC_pattern.pdf"> [2] </a>
+</span> and the more
+ recently coined principle of SoC<span class="wxtfnmarker">7</span>
+<span class="fn">Separation of Concerns</span>, Wikipedia
+ has an introduction<span class="wxtref" title="Separation of Concerns | http://en.wikipedia.org/wiki/Separation_of_concerns">
+<a href="http://en.wikipedia.org/wiki/Separation_of_concerns"> [3] </a>
+</span>. 
+</p>
+<p>
+ On the other hand you sometimes get the feeling that the lingo serves the same purpose as 
+ one can suspect that <span class="wxtixword" id="ixwordlatin">latin</span> did in medieval services; To mystify more than to clearify.
+</p>
+<p>Personally I think we should try to apply the KISS<span class="wxtfnmarker">8</span>
+<span class="fn">Keep It Simple Stupid</span>-principle,
+ in most situations of life.
+</p>
+<div style="display:none">
+<span class="wxtixword" id="ixwordfootnote">footnote</span>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<span class="wxtpopup" onclick="javascript:simplepopup('content/welcome_xml.html','popup','*')" title="popup">content/welcome_xml.html</span>
+</div>
+		</div>
+		<div>
+<div class="wxtfootnote">
+<ol>
+<li>
+<span class="fndisplay">World Wide Web</span>
+</li>
+<li>
+<span class="fndisplay">a characteristic language of a particular group</span>
+</li>
+<li>
+<span class="fndisplay">what you see is what you get</span>
+</li>
+<li>
+<span class="fndisplay">Asynchronous JavaScript And XML</span>
+</li>
+<li>
+<span class="fndisplay">Completely Automated Turing Test To Tell Computers and Humans Apart. 
+ More on Turing tests at The Alan Turing Home Page<span class="wxtref" title="The Alan Turing Home Page | http://www.turing.org.uk/turing/">
+<a href="http://www.turing.org.uk/turing/"> [1] </a>
+</span> or at <a class="external" href="http://en.wikipedia.org/wiki/Turing_test">Wikipedia</a>
+</span>
+</li>
+<li>
+<span class="fndisplay">Model View Controller</span>
+</li>
+<li>
+<span class="fndisplay">Separation of Concerns</span>
+</li>
+<li>
+<span class="fndisplay">Keep It Simple Stupid</span>
+</li>
+</ol>
+</div> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner">
+<ol start="1">
+<li class="refitem skiptranslate simple">
+<span class="title">The Model-View-Controller</span>
+<span class="authorsinlist">Trygve Reenskaug</span>
+<span class="year">2003</span>
+<span class="publisher">University of Oslo</span>
+<a class="external" href="http://heim.ifi.uio.no/~trygver/2003/javazone-jaoo/MVC_pattern.pdf" title="external link">heim.ifi.uio.no/~trygver/2003/javazone-jaoo/MVC_pattern.pdf</a>
+<span class="dateread">11-12-2010</span>
+</li>
+</ol>
+<ol start="2">
+<li class="refitem skiptranslate simple">
+<span class="title">Separation of Concerns</span>
+<span class="publisher">Wikipedia</span>
+<a class="external" href="http://en.wikipedia.org/wiki/Separation_of_concerns" title="external link">en.wikipedia.org/wiki/Separation_of_concerns</a>
+<span class="dateread">11-12-2010</span>
+</li>
+</ol>
+<ol start="3">
+<li class="refitem skiptranslate simple">
+<span class="title">The Alan Turing Home Page</span>
+<span class="authorsinlist">Andrew Hodges</span>
+<span class="year">2003</span>
+<span class="publisher">University of Oslo</span>
+<a class="external" href="http://www.turing.org.uk/turing/" title="external link">www.turing.org.uk/turing/</a>
+<span class="dateread">11-12-2010</span>
+</li>
+</ol>
+</div>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

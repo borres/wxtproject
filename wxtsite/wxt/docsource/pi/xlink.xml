@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: xlink</h1>
+<p>
+  The purpose of a xlink is to produce 
+  a XHTML-fragment that links to another module in the same script.
+</p>
+<pre class="piline">
+&lt;?_wxt xlink id="" fragment="" summary=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (mandatory)</td>
+    <td>The id of the module we want to link to.
+        Predefined ids are:<em>_next</em>, <em>_prev</em>, 
+        <em>_nextsibling</em>, <em>_prevsibling</em>, <em>_parent</em>,
+        <em>_root</em> or
+        <em>_home</em>. <em>_home</em> is interpreted as the first
+        module in the script.
+     </td>
+  </tr>
+  <tr>
+     <td  style="vertical-align:top"><strong>fragment</strong> (optional)</td>
+    <td>The id of a defined fragment. This fragment will 
+        replace the modules name. A possible value is <em>_summary</em>.
+     </td>     
+  </tr>
+  
+  <tr>
+     <td  style="vertical-align:top"><strong>summary</strong> (optional)</td>
+     <td>Possible vaules are <em>yes</em> and <em>no</em>.
+         If <em>yes</em>, the summary of the references module  will 
+         expand on mouseover. Default is <em>no</em>, which expands the modules name.
+     </td>     
+  </tr>
+</table>
+
+<p class="stylefoot">
+Styleclass describing this PI is: <em>wxtxlink</em> and <em>wxtxlinkself</em>.
+See distributed std styles.
+</p>
+
+<h2>Examples:</h2>
+
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt xlink id="_parent"?&gt;
+&lt;/div&gt;
+</pre>
+
+
+<p>This:</p>
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt xlink id="_next" fragment="nextimage"?&gt;
+&lt;/div&gt;
+</pre>
+<p>may produce this:</p>
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;span class="wxtxlink"&gt;
+&lt;a href="mypage.html" title="testing wxt PIs"&gt;
+  &lt;img alt="next" src="../common/templates/next.gif"&gt;
+&lt;/a&gt;
+&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+<p>Given that nextimage is defined:</p>
+<pre  class="prettyprint lang-html">
+...
+&lt;fragment id="nextimage"&gt;
+ &lt;![CDATA[&lt;img src="{common}/templates/next.gif" alt="next"&gt;]]/&gt;
+&lt;/fragment&gt;
+...
+</pre>
+
+</body>
+</html>

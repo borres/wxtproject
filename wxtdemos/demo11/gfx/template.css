@@ -1,0 +1,115 @@
+@media screen{ 
+body {
+	color: black;
+	background-color:white;
+	font-family:Georgia,'Times New Roman',times,serif;
+	font-size: 11px;
+	line-height: 150%;
+	text-align:left;
+	margin:0px;
+	margin-right:5px;
+	padding:0px;
+}
+p,div,td,th{	
+    color: black;
+	font-family:Georgia,'Times New Roman',times,serif;
+	font-size: 11px;
+	line-height: 150%;
+	text-align:left;
+	margin:0px;
+	margin-right:5px;
+	padding-bottom:10px;
+  }
+th{font-weight:bold}
+
+h2{padding-top:10px;padding-bottom:10px;background-color:#EEE8CD}
+
+img{padding:5px}
+
+ul{list-style-position:outside}
+
+
+.svnaddress{color:green;font-style:italic}
+
+div#logo{position:absolute;left:0px;top:10px}
+div#banner{height:55px;border-bottom:solid;border-width:thin;background-color:#EEE8CD}
+div#banner .topright{font-size:14px;line-height:120%;font-weight:bold;text-align:right;}
+div#banner .sitename{margin-left:120px;font-size:20px;line-height:120%;font-weight:bold;text-align:left;}
+
+.clickable{cursor:pointer}
+
+fieldset{background-color:#FAFAFA}
+
+.intro{margin:10px}
+.intro{margin-top:10px}
+.intro legend{font-weight:bold}
+.intro fieldset{padding:10px}
+.ingress{margin-top:10px}
+
+div#all{
+       background-image: url(bckgnd130.gif); background-repeat:repeat-y;
+       padding-bottom:0px
+	   }
+div.searchblock{
+		margin-left:5px; 
+		border-top:solid;border-width:thin;border-color:gray;
+		padding:3px
+		}
+/*div#menu{width:128px; position:absolute;top:70px;left:5px;}*/ 
+div#menu{width:128px; float:left;}
+
+.content{
+		border-top:solid;
+		border-top-width:thin;	
+		border-top-color:white;		
+		padding-left:5px; padding-right:0px;
+		background-color:white;
+		margin-left:130px;
+		}
+
+.references{margin-top:10px}
+.references legend{font-weight:bold}
+.references fieldset{padding:10px}
+
+.maintainance{margin-top:10px}
+.maintainance legend{font-weight:bold}
+.maintainance fieldset{padding:10px}
+
+.ratingwrapper{margin-top:10px}
+.ratingwrapper legend{font-weight:bold}
+.ratingwrapper fieldset{padding:10px}
+
+
+
+.footer{clear:both;border-top:solid;border-width:thin;
+        background-color:white;
+		padding-left:5px;padding-top:10px;padding-bottom:0px; 
+		margin-bottom:0px; 
+		}
+
+#_navigate{margin-left:130px}
+#showcard{margin-left:50px;width:200px;text-align:right;}
+#_wxt{margin-left:50px}
+#_validate{margin-left:50px}
+
+.hiddenwords,.hiddenrefs{display:none}
+
+}
+
+@media print{
+	#menu{display:none}	
+	#footer{display:none}
+	#banner{display:none}
+	.ratingwrapper,.maintainance,.footer,.hiddenwords,.localtoc,.summary{display:none}
+	/*h1{page-break-before:always}*/
+}
+
+
+
+
+@media projection{
+	#menu{display:none}
+	#footer{display:none}
+	#banner{display:none}
+	.ratingwrapper,.maintainance,.footer,.hiddenwords{display:none}
+}

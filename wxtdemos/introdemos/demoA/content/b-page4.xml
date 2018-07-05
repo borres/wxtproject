@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+</head>
+
+<body>
+<div class="mainblock">
+<h1>Page 4</h1>
+<p>
+ The source of this page is XHTML-page without XML-header. This indicates that
+ you should be able to use wellformed webpages without XML-header as rawmaterial for your pages.
+ Your own pages, built in an other site, is one example, Wikipedia pages is another.
+</p>
+<div>
+<?_wxt importtxt location="b-page4.xml" code="mlcode"?>
+</div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<OBJECT CLASSID="clsid:32F66A20-7614-11D4-BD11-00104BD3F987" ID="mathplayer"> 
+	<!--comment required to prevent this becoming an empty tag--></OBJECT>
+	<?IMPORT NAMESPACE="m" IMPLEMENTATION="#mathplayer" ?>
+
+	<title>4 Segments</title>
+	<link href="../../commons/wxtstyle.css" rel="STYLESHEET"/>
+	<link href="../specialstyles.css" rel="STYLESHEET"/>
+	<script src="../../commons/prototype.js" type="text/javascript"> </script>
+	<script src="../../commons/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body> 
+	<div>
+	<div>
+	<img alt="sigma" src="../images/sigma.png"/>  WXT demo: A document with many sources
+	</div>
+	<hr/>
+	<p/>
+	</div>  
+	
+	<table class="mainpage">
+	<tr>
+	
+	<td valign="top" width="160px">
+		<div class="wxtmodulemenu">
+            <div class="level1">
+              <a href="../index.xhtml" title="Introduction">Introduction</a>
+            </div>
+            <div class="level1">
+              <a href="../Bezier.xhtml" title="Bezier">Bezier</a>
+            </div>
+            <div class="level2">
+              <a href="1%20Polynom.xhtml" title="1 Polynom">1 Polynom</a>
+            </div>
+            <div class="level2">
+              <a href="2%20de%20Casteljau.xhtml" title="2 de Casteljau">2 de Casteljau</a>
+            </div>
+            <div class="level2">
+              <a href="3%20The%20formula.xhtml" title="3 The formula">3 The formula</a>
+            </div>
+            <div class="level2">4 Segments</div>
+            <div class="level2">
+              <a href="5%20OpenGL.xhtml" title="5 OpenGL">5 OpenGL</a>
+            </div>
+          </div>
+	</td>
+
+	<td valign="top">
+	<div class="content"> 
+
+<div class="main">   
+<h1>4 Segments</h1>
+
+<div class="ingress">
+<p>
+ How to connect curves to achieve "smoothness":
+</p>
+</div>
+
+
+<div>
+ <div class="wxtimportodf">
+                  <h2>Segments</h2>
+                  <p>The general shape of the Bezier curve gives us the possibility to specify more control points. We can for example let n=5 and get: </p>
+                  <div class="formula">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <semantics>
+                        <mrow>
+                          <mrow>
+                            <mi>B</mi>
+                            <mrow>
+                              <mrow>
+                                <mo stretchy="false">(</mo>
+                                <mi>t</mi>
+                                <mo stretchy="false">)</mo>
+                              </mrow>
+                              <mo stretchy="false">=</mo>
+                              <mrow>
+                                <mrow>
+                                  <mrow>
+                                    <mrow>
+                                      <mrow>
+                                        <msup>
+                                          <mrow>
+                                            <mo stretchy="false">(</mo>
+                                            <mrow>
+                                              <mn>1</mn>
+                                              <mo stretchy="false">−</mo>
+                                              <mi>t</mi>
+                                            </mrow>
+                                            <mo stretchy="false">)</mo>
+                                          </mrow>
+                                          <mn>4</mn>
+                                        </msup>
+                                        <mo stretchy="false">⋅</mo>
+                                        <msub>
+                                          <mi>P</mi>
+                                          <mn>0</mn>
+                                        </msub>
+                                      </mrow>
+                                      <mo stretchy="false">+</mo>
+                                      <mrow>
+                                        <mrow>
+                                          <mrow>
+                                            <mn>4</mn>
+                                            <mo stretchy="false">⋅</mo>
+                                            <mi>t</mi>
+                                          </mrow>
+                                          <mo stretchy="false">⋅</mo>
+                                          <msup>
+                                            <mrow>
+                                              <mo stretchy="false">(</mo>
+                                              <mrow>
+                                                <mn>1</mn>
+                                                <mo stretchy="false">−</mo>
+                                                <mi>t</mi>
+                                              </mrow>
+                                              <mo stretchy="false">)</mo>
+                                            </mrow>
+                                            <mn>3</mn>
+                                          </msup>
+                                        </mrow>
+                                        <mo stretchy="false">⋅</mo>
+                                        <msub>
+                                          <mi>P</mi>
+                                          <mn>1</mn>
+                                        </msub>
+                                      </mrow>
+                                    </mrow>
+                                    <mo stretchy="false">+</mo>
+                                    <mrow>
+                                      <mrow>
+                                        <mn>6</mn>
+                                        <mo stretchy="false">⋅</mo>
+                                        <msup>
+                                          <mi>t</mi>
+                                          <mn>2</mn>
+                                        </msup>
+                                      </mrow>
+                                      <mo stretchy="false">⋅</mo>
+                                      <msup>
+                                        <mrow>
+                                          <mo stretchy="false">(</mo>
+                                          <mrow>
+                                            <mn>1</mn>
+                                            <mo stretchy="false">−</mo>
+                                            <mi>t</mi>
+                                          </mrow>
+                                          <mo stretchy="false">)</mo>
+                                        </mrow>
+                                        <mn>2</mn>
+                                      </msup>
+                                    </mrow>
+                                  </mrow>
+                                  <mo stretchy="false">+</mo>
+                                  <mrow>
+                                    <mrow>
+                                      <mrow>
+                                        <mn>4</mn>
+                                        <mo stretchy="false">⋅</mo>
+                                        <msup>
+                                          <mi>t</mi>
+                                          <mn>3</mn>
+                                        </msup>
+                                      </mrow>
+                                      <mo stretchy="false">⋅</mo>
+                                      <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <mrow>
+                                          <mn>1</mn>
+                                          <mo stretchy="false">−</mo>
+                                          <mi>t</mi>
+                                        </mrow>
+                                        <mo stretchy="false">)</mo>
+                                      </mrow>
+                                    </mrow>
+                                    <mo stretchy="false">⋅</mo>
+                                    <msub>
+                                      <mi>P</mi>
+                                      <mn>3</mn>
+                                    </msub>
+                                  </mrow>
+                                </mrow>
+                                <mo stretchy="false">+</mo>
+                                <mrow>
+                                  <msup>
+                                    <mi>t</mi>
+                                    <mn>4</mn>
+                                  </msup>
+                                  <mo stretchy="false">⋅</mo>
+                                  <msub>
+                                    <mi>P</mi>
+                                    <mn>4</mn>
+                                  </msub>
+                                </mrow>
+                              </mrow>
+                            </mrow>
+                          </mrow>
+                        </mrow>
+                      </semantics>
+                    </math>
+                  </div>
+                  <p>We will not develop this reasoning to handle longer curves. We will in stead regard a curve as put together by several curve segments. </p>
+                  <p>We want to look at how we can join curves and gain different degrees of smoothness. We will concentrate on what conditions that has to be fulfilled if two segments are going to hang together in a "smooth" way. We'll look at four degrees of geometric continuity. We'll regard Bezier curves and represent them as they are represented in drawing programs. The lines between the control points is represented as "handles" that we can use to change the shape of the curve. </p>
+                  <table class="odt-table" id="Tabell2">
+                    <tr>
+                      <td>
+                        <img alt="bilder4" class="image" src="odt_docs/___Bezier/Pictures/10000000000000CE000000BADB27E50D.png" title="bilder4"/>
+                      </td>
+                      <td>
+                        <p>No continuity. The two curve segments don't have a common point. </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img alt="bilder5" class="image" src="odt_docs/___Bezier/Pictures/10000000000000BE000000D6E3B3D233.png" title="bilder5"/>
+                      </td>
+                      <td>
+                        <p>The two curve segments have a common point. The curves are connected, but with an obvious break in direction. The derivatives (for right and left segment) are different both in direction and size in this point. </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img alt="bilder6" class="image" src="odt_docs/___Bezier/Pictures/10000000000000CC000000D7F56A8B72.png" title="bilder6"/>
+                      </td>
+                      <td>
+                        <p>The two curve segments have a common point, and the joint is quite smooth. The derivatives in this point have the same direction, but not the same size. </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img alt="bilder7" class="image" src="odt_docs/___Bezier/Pictures/10000000000000AA000000B68DC81453.png" title="bilder7"/>
+                      </td>
+                      <td>
+                        <p>The two curve segments have a common point, and the joint is smooth. The derivatives in this point have the same direction and size. </p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+</div>
+</div>
+
+
+</div>
+	</td>
+   
+	</tr>
+	</table>
+	
+	<div>
+      <div style="margin-top:10px">
+	<span>
+          <a href="../collected.pdf"> PDF-version</a>
+        </span>
+	<span style="margin-left:70px">BS with <span class="wxtstamp">
+            <a class="external" href="http://www.it.hiof.no/wxt/wxtsite/">WXT</a>
+          </span> on: <span class="wxtdate">Oct 3, 2010</span>
+        </span>
+	</div>
+    </div>
+</body>
+</html>

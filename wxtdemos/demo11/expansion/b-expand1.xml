@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+		<title>testing links</title> 
+		<link href="style3.css" rel="STYLESHEET"/>
+		<script src="js3.js" type="text/javascript"> </script>
+		
+	</head>
+	<body>
+    <div class="mainblock">
+	<h1>Testing Ajax Expansion</h1>
+	
+    <p>Code</p>
+    
+	<div>
+	<?_wxt expand title="the code" sourcelocation="../../commons/wxtjs.js" location="js3_js.txt" code="javascriptcode"?>
+	</div>
+
+
+	<p>Code expanded</p>
+	<div>
+	<?_wxt expand title="the code again"  sourcelocation="../../commons/wxtjs.js" location="js3_js.txt" code="javascriptcode" expanded="yes"?>
+	</div>
+
+	<p>simple</p>
+	<div>
+	<?_wxt expand location="image.txt" expanded="yes"?>
+	</div>
+	<div>
+	<?_wxt expand location="image.txt" expanded="no"?>
+	</div> 
+   
+    </div><!-- main -->
+	</body>
+</html>

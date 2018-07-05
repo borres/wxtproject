@@ -1,0 +1,82 @@
+@page{
+	size: A4;
+}
+
+@page{ 
+       /* top, right, bottom and left */
+       margin: 2.0cm 1.25cm 2.0cm 1.5875cm;
+        @top-left {
+	        content:" ";
+        }
+        @top-right {
+	        content: string(doctitle);
+	        font-size:18px;
+        }
+        @bottom-right {
+          vertical-align:top;
+          content: counter(page);
+	      font-style: italic;
+	      font-size:11px;
+          border-top-style:solid;
+          border-top-width:thin;
+        }
+        @bottom-left {
+          vertical-align:top;
+          content:"ObamaDoc";
+	      font-style: italic;
+	      font-size:11px;
+          border-top-style:solid;
+          border-top-width:thin;
+        }
+
+}
+
+@page:first {
+        margin:  2.0cm 1.5875cm 2.0cm 1.25cm;
+        @top-left {
+	        content:"";
+        }
+        @top-right {
+	        content:" ";
+	        font-size:24px;
+        }
+        @bottom-center{
+	        content:" ";
+        }
+        @bottom-right {
+          content:" ";
+	       border-top-style:none;
+
+        }
+        @bottom-left {
+          content:" ";
+          border-top-style:none;
+        }
+}
+
+body{	font-size:12px;}
+.hideinpdf{display:none}
+
+h1{ string-set: doctitle content() }
+h1 { page-break-before: always; }
+.somh1{font-size:34px;font-weight:bold;}
+#innhold,#forord{page-break-before:always}
+a{text-decoration:none}
+
+.moduletocfinal{margin-left:40px;margin-right:40px}
+.moduletocfinal div{margin-top:5px;font-size:14px}
+.moduletocfinal a::after { content: leader(".") target-counter(attr(href), page); } 
+
+    table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 520px; 
+            margin-top:20px}
+
+    th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    td{border-bottom: 1px solid #CCC;padding: 0 0.5em;   line-height: 170%;
+    }
+    td:first-child {width: 40px;	}
+    td+td {	border-left: 1px solid #CCC;}
+
+
+
+

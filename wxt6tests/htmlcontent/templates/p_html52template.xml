@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Testing</title>
+	<link href="templatestyle.css" rel="stylesheet"  type="text/css"/>
+	<link rel="STYLESHEET" href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.min.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="logo.png" style="border:none" /> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<?_wxt modulemenu summary="yes" books="all"?>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+
+	<div class="collectable">
+		<div class="main">
+			<!--<?_wxt importhtml remote="no" xpath="//p" keeplinks="no"?>-->
+			<?_wxt importhtml cssselector="body p" usecopy="no" remote="yes" keeplinks="no"?>
+			<!--<?_wxt importhtml cssselector="p:contains(Dag Solstad)" remote="yes" keeplinks="yes"?>-->
+		</div>
+
+	</div>
+</div><!-- content -->
+
+
+</div><!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div><!-- eof footer -->
+
+
+
+</body>
+</html>

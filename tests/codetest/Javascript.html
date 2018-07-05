@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Javascript</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/wxtjs.js" type="text/javascript"> </script>
+	<link href="templates/template.css" rel="STYLESHEET">
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="wxtmodulemenu"><div class="level1"><a href="index.html" title="Velkommen til colorcoding">Velkommen</a></div><div class="level1"><a href="Java.html" title="Java">Java</a></div><div class="level1">Javascript</div><div class="level1"><a href="Python.html" title="Python">Python</a></div><div class="level1"><a href="XML.html" title="XML">XML</a></div><div class="level1"><a href="XSLT.html" title="XSLT">XSLT</a></div><div class="level1"><a href="CSHARP.html" title="C#">C#</a></div><div class="level1"><a href="ASPX.html" title="ASPX">ASPX</a></div><div class="level1"><a href="C.html" title="C">C</a></div><div class="level1"><a href="HTML.html" title="HTML">HTML</a></div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>JavaScript</h1><p>
+   encoding
+</p><h2>textimport</h2><p>Simple</p><div>
+<pre class="javascriptcode">
+
+<span class="word">function</span> expand(address,targetNode){
+  <span class="word">new</span> Ajax.Request(address,
+                   {method:'<span class="literal">get'</span>,
+           onSuccess:<span class="word">function</span>(transport){
+            <span class="word">var</span> T=transport.responseText;
+            <span class="word">var</span> pos1=T.indexOf('<span class="literal">&lt;pre'</span>);
+            <span class="word">var</span> pos2=T.lastIndexOf('<span class="literal">&lt;/pre'</span>);
+            <span class="word">if</span> ((pos1 !=-1) &amp;&amp; (pos2 &gt; pos1))
+              T=T.substring(pos1,pos2+6);
+            T='<span class="literal">&lt;span class="expand" '</span>+
+              '<span class="literal">onclick="unexpand(\''</span>+address+
+              '<span class="literal">\',this.parentNode)"&gt;&lt;span class="off"&gt;-&lt;/span&gt;&lt;/span&gt;'</span>
+              +T;
+            targetNode.innerHTML=T;
+           },
+           onFailure:<span class="word">function</span>(){targetNode.innerHTML="<span class="literal">Could not access content"</span>}
+           });
+}
+</pre>
+</div><p>bad syntax 1, not closed literal</p><div>
+<pre class="javascriptcode">
+<span class="word">function</span> unexpand(address,targetNode){
+    T='<span class="literal">&lt;span class="expand" '</span>+
+    '<span class="literal">onclick="expand(\''</span>+address+'<span class="literal">\',this.parentNode);"&gt;&lt;span class="on"&gt;+&lt;/span&gt;&lt;/span&gt;;
+    targetNode.innerHTML=T;
+}
+</span></pre>
+</div><h2>Dynamic </h2><p>Simple</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('javascript/std1.txt',this)">_</span>javascript/std.js</div><div class="content"> </div></div>
+</div><h2>preexpand</h2><p>Simple</p><pre class="javascriptcode"> <span class="word">function</span> simplepopup(theURL,wname,wstyle)
+ {
+   <span class="word">if</span>(wstyle=='<span class="literal">*'</span>)
+     wstyle='<span class="literal">scrollbars=yes,resizable=yes,width=600,height=600,status=no'</span>;
+   <span class="word">try</span>{
+     newwindow=window.open(theURL, wname, wstyle);
+     <span class="word">if</span> (window.focus) {newwindow.focus()}
+   }
+   <span class="word">catch</span>(E){
+     alert('<span class="literal">You may have blocked popups'</span>);
+   }
+ }
+</pre><p>bad syntax 1, not closed literal</p><pre class="javascriptcode">
+<span class="word">function</span> unexpand(address,targetNode){
+    T='<span class="literal">&lt;span class="expand" '</span>+
+    '<span class="literal">onclick="expand(\''</span>+address+'<span class="literal">\',this.parentNode);"&gt;&lt;span class="on"&gt;+&lt;/span&gt;&lt;/span&gt;;
+    targetNode.innerHTML=T;
+}
+</span></pre><p>CDATA</p><div>must be tight in the sense that the CDATA node must be the only one</div><pre class="javascriptcode"> <span class="word">function</span> changestyle(eltId, style) 
+ {
+   <span class="word">var</span> elt=document.getElementById(eltId);
+   <span class="word">if</span>(elt)
+     elt.style.visibility = style;
+                     
+ }
+</pre>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

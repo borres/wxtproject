@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> </meta>
+	<title>content</title>
+</head>
+<body>
+<div class="content">    
+<h1>Systematic WXT test</h1>
+
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_index.xml" title="index.xml" title="index.xml"
+             sourcelocation="index.xml" code="xmlcode"?>
+</div>
+<hr/>
+
+	
+	<p>The content of these pages is partly English and partly Norwegian.
+	   Most of it does not make much sense as readable text. The purpose
+	   is to demonstrate the common Processing Instructions in WXT
+	 </p>
+	
+	<p>We should allow Norwegian letters: æøå</p>
+
+</div>
+</body>
+</html>

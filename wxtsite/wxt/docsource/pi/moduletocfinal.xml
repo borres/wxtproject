@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: moduletocfinal</h1>
+<p>
+  The purpose of a moduletocfinal is to produce 
+  a table of content for one module. It is identical to 
+  <?_wxt xlink id="ModuleToc"?>,
+  except that it is invoked after all modules have been built.
+  This is to make sure that collections are done before we make the TOC.
+</p>
+<p>
+ A moduletocfinal will erase moduletocs (and moduletocfinlas) set earlier.
+</p>
+<p>Note also that the wrapping div-element has class <em>moduletocfinal</em> in stead of <em>moduletoc</em> .</p>
+<pre class="piline">
+&lt;?_wxt moduletocfinal cols=""?&gt;
+</pre>
+
+<p class="stylefoot">
+Styleclass describing this PI is: <em>wxtmoduletocfinaln</em>, where n is the number of columns selected( >0).
+See distributed std styles.
+</p>
+
+</body>
+</html>

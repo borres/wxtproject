@@ -1,0 +1,53 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Import Text&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_importtext.xml" 
+             sourcelocation="importtext.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+    
+    &lt;<span class="tagname">div</span>&gt;Strait text: <span class="process">&lt;?_wxt importtxt location="utftext.txt"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+   &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt importtxt location="parsable.txt" parse="yes"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+   &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">div</span>&gt;BOMed: <span class="process">&lt;?_wxt importtxt location="utfbomtext.txt"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+   &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">p</span>&gt;Pythonode (selected):&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;       
+<span class="process">&lt;?_wxt importtxt location="pycase.py" code="pythoncode" leftpar="#start" rightpar="#stop"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">p</span>&gt;Pythonode (pre-placed): &lt;/<span class="tagname">p</span>&gt;
+   &lt;<span class="tagname">div</span>&gt;
+
+&lt;<span class="tagname">pre</span> <span class="attname">class</span>="<span class="attvalue">pythoncode</span>"&gt;
+
+# convert on output
+def setPrint():
+    """ Convert Unicode -> UTF-8"""
+    (e,d,sr,sw) = codecs.lookup('utf-8')
+    unicode_to_utf8 = sw(sys.stdout)
+    sys.stdout = unicode_to_utf8
+&lt;/<span class="tagname">pre</span>&gt;
+   &lt;/<span class="tagname">div</span>&gt;
+    
+    &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">div</span>&gt;
+       XSLTcode: 
+<span class="process">&lt;?_wxt importtxt location="xsltcase.xslt" code="xsltcode"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;    
+    &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">div</span>&gt;
+       C# kode:
+<span class="process">&lt;?_wxt importtxt location="csharpcase.cs" code="csharpcode"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">div</span>&gt;
+       Javascript kode (selected):
+       <span class="process">&lt;?_wxt importtxt location="jscase.js" code="javascriptcode" leftpar="//popup" rightpar="//eofpopup"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;
+     &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: importdb</h1>
+<p>
+  The purpose of an import PI is to produce an XML-fragment 
+  from a database request.
+</p>
+<pre class="piline">
+&lt;?_wxt importdb connection="" 
+         sql="" 
+         driver="" 
+         xpath="" targetlocation="" 
+         transformation=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>connection</strong> (mandatory)</td>
+    <td>A connectionstring. In templates this parameter may be skipped.
+	In this case  the connection in contentelement (dbcontent) in the script is used.
+	</td>
+  </tr>
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>sql</strong> (optional)</td>
+    <td>A sql string. If <em>sql</em> is set, <em>sqlfile</em>  is ignored. </td>
+  </tr>
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>sqlfile</strong> (optional)</td>
+    <td>The location of a file containing a sql string. 
+    If <em>sql</em> is set, <em>sqlfile</em>  is ignored.</td>
+  </tr>
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>targetlocation</strong> (optional)</td>
+    <td>
+        The result of the sqlquery, or queries, are saved as an XML-file.
+        This XML-structure is base for transformation and following xpath extraction.
+        <em>targetlocation</em> is optional, but it is very usefull to 
+        inspect this file when writing and debugging a transformation.
+     </td>
+  </tr>
+
+ 
+  <tr>
+    <td  style="vertical-align:top"><strong>encoding</strong> (optional)</td>
+    <td>The encoding for the resulting xml. Default is UTF-8
+    if not changed in scrip (option:default-encoding)</td>
+  </tr>
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>xpath</strong> (optional)</td>
+    <td>Any xpath expression that identifies a nodeset that
+        will be treated like a XML-fragment.</td>
+  </tr>
+
+  
+   <tr>
+    <td  style="vertical-align:top"><strong>parse</strong> (optional)</td>
+    <td>Possible values are <em>yes</em> and <em>no</em>, width default <em>no</em>.
+	If parse is set to <em>yes</em> the imported material is supposed to be a parsable 
+	XML-fragment (XHTML-fragment) and WXT will include this fragment as is in the module.
+	If xpath is used the fragment imported is considered "current node".
+	</td>
+  </tr> 
+  
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>transformation</strong> (optional)</td>
+    <td>A transformation identifier 
+    (see:  <?_wxt xlink id="Transformation"?>).
+    This transformation may have parameters.
+    Transformation <em>_table</em> is predefined and produces a simple 
+    table from the extracted data. <em>_table</em> can take no parameters.
+    </td>
+  </tr>
+  
+  
+  <!--
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (optional)</td>
+    <td>An id that match the id of the actual dbimport 
+    in script. Has only meaning if <em>connection</em> is not set.
+    </td>
+  </tr>
+  -->
+
+</table>
+
+<p class="stylefoot">
+Styleclass describing a possible table-output from this PI is: <em>dbresult</em>,
+see distributed std styles.
+</p>
+
+
+
+
+<p>Examples:</p>
+<p>Importing a fragment of XHTMLcode</p>
+<pre class="source">
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=a&amp;password=b"
+    sql="use fragments;
+        select content from material where fragid = 3;"
+    encoding="UTF-8"
+    parse="yes"
+    targetlocation="dbdump4.xml"?&gt;
+</pre>
+<p>Importing and showing the result as a table</p>
+<pre class="source">
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=a&amp;password=b"
+    sql="use vin;
+        select type,name,dice,price from wines 
+		where country='Spania' and type='white';
+        select type,name,dice from wines 
+		where country = 'Frankrike' and type='sparkling' and dice=6;"
+    encoding="UTF-8"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?&gt;
+</pre>
+<p>
+ Note the xpath stating that we will show the first of, in this case, two dbresults.
+</p>
+
+<p>Importing and showing with a written transformation</p>
+<pre class="source">
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=a&amp;password=b"
+    sql="use vin;
+        select type,description,dice,name from wines 
+		where country = 'Frankrike';"
+    encoding="UTF-8"
+    transformation="vindb1(type='red',dice='1')"
+    xpath="//div[@id='root']/*"
+    targetlocation="dbdump1.xml"?&gt;
+</pre>
+
+</body>
+</html>

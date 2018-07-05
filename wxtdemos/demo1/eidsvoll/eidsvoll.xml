@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<div id="main">
+	<h1>Eidsvoll</h1>
+	<div>
+	<?_wxt fragment id="_summary"?>
+	</div>
+	<img style="float:right" src="eidsvoll.png" alt=""/>
+	<p>
+		Eidsvoll is situated at the southern end of 
+		Mjøsa<span class="fn">Mjøsa is the greatest lake in Norway</span> and 
+		about 100km north of 
+		Oslo<span class="fn">Oslo is the capital of Norway</span>.
+	</p>
+	<p>
+	<?_wxt importxml location="eidsvoll1814.xml" xpath="//body/child::node()"?>
+	</p>
+	<div>
+	<?_wxt footnote?>
+	</div>
+</div> <!-- main -->
+<div id="pagesource" style="clear:both">
+	Inspect source:
+	<div>
+	<?_wxt expand location="hcoded.txt" title="eidsvoll.xml"
+					sourcelocation="eidsvoll.xml" 
+					expanded="no" code="xmlcode"?>
+	</div>
+</div>
+</root>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: importwiki</h1>
+<p>
+  The purpose of an importwiki PI is to produce an XML-fragment 
+  from extracts from a wiki-page and replace the PI with this fragment. 
+</p>
+<p>
+<strong>NOTE:</strong> That the form of this PI may change.
+Specially the use of <em>dpath</em>, and the form of the dpath may be changed.
+It is present at an experimental stage.
+</p>
+<pre class="piline">
+&lt;?_wxt importwiki dpath="" location=""?&gt;
+</pre>
+<p>
+ As wikipages by their nature are changing, WXT apply a strategy that backs up the latest
+ successfull import, and use this if an import fails. The backup strategy does not
+ consider changes in content, but if your <em>dpath</em> or <em>xpath</em>, se below, fails to
+ identify any material at all, the backup is used. More about <?_wxt xlink id="DPath"?> 
+ and <?_wxt xlink id="XPath"?>.
+</p>
+<p>
+ This backup strategy cost processing time. You may change the strategy by parameter
+ usecopy, see below.
+</p>
+
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>dpath</strong> optional</td>
+    <td>The content of any header(h1, h2,.., h6) in the wikipage.
+    Content will be extracted until we meet a heading with same or higher
+    significance. dpath (documentpath) has the form:
+	h1/h2/h3. For instance /Report/summary will extract content in 
+	h3:summary "under" h2:report.<br/>
+    Either <em>dpath</em> or <em>xpath</em> must be set. 
+	If<em>dpath</em> is set, <em>xpath</em> is ignored.
+    dpath may also have a specification part. <br/>
+    /Report/summary[p] will collect only paragraphs in the selected part.
+	See <?_wxt xlink id="DPath"?>.
+	</td>
+  </tr>
+ <tr>
+    <td  style="vertical-align:top"><strong>xpath</strong> optional</td>
+    <td>Defaults to //body.  <br/>   
+	Either <em>dpath</em> or <em>xpath</em> must be set. 
+	If<em>dpath</em> is set, <em>xpath</em> is ignored
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong> mandatory</td>
+    <td>The URI of the file we want to import from.
+	In templates the location parameter is usually skipped.
+        In this case all content files (wikicontent) listed in the script
+        as direct children of the module are 
+        searched for appropriate content.
+        You can reduce the search with parameter <em>id</em>, see below.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>keeprefs</strong> optional</td>
+    <td>Possible values ar: <em>yes</em> and <em>no</em>. If <em>yes</em>
+    all references in the imported material is recalculated and kept.
+    If <em>no</em> all references are removed.
+    <em>no</em> is default.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>encoding</strong> optional</td>
+    <td>You can spesify expected encoding.
+    Default encoding is default (UTF-8 if not set otherwise in script).
+     </td>
+  </tr>
+ <tr>
+    <td  style="vertical-align:top"><strong>backup</strong> optional</td>
+    <td>You may spesify the catalog you want to use for backup.
+	Default is catalog <em>wikibck</em> in the same catalog as the module requesting the material.
+	You may also use the value <em>no</em> to suppress the backup strategy.
+     </td>
+  </tr>
+ <tr>
+    <td  style="vertical-align:top"><strong>usecopy</strong> optional</td>
+    <td>Possible values are <em>yes</em> and <em>no</em>.
+	<em>yes</em> will load the backup without attempting to 
+	load the wiki-page. This will save time, but it does of course only have meaning
+	if you have accessed and loaded the material at least once before.
+	Default is <em>no</em>. This setting will be overridden by the option <em>use-copy</em>,
+	see <?_wxt xlink id="Options"?>
+     </td>
+  </tr>
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (optional)</td>
+    <td>An id that match the id of the actual xmlimport 
+    in script. Has only meaning when
+    this element has no location. One reason to use an id is 
+    processing time if you have many contentfiles to a module.
+	Another reason may be that you have similar structures in different contentfiles and you
+	want to be selective.
+    </td>
+  </tr>
+
+  
+  </table>
+
+<p>
+    <strong>NOTE 1: </strong>
+    WXT does not consider styles, most elements are copied "as is".
+</p>
+<p>
+    <strong>NOTE 2: </strong>
+    WXT is not set up to collect from https (Secure connentions). If you want to 
+    access protected files, you should use normal access through a webbrowser and save the
+    page on your disk. Then you can access the downloaded file locally.
+</p>
+<p>
+    <strong>NOTE 3: </strong>
+    The backup strategy makes it possible to inspect and even change the
+	downloaded content.
+</p>
+<p>
+    <strong>NOTE 4: </strong>
+    In many cases you can achive your result by importing the wikipage by importxml and a xpath.
+	WXT will attempt to tidy the import.
+</p>
+<h2>Examples:</h2>
+<pre class="source">
+&lt;?_wxt importwiki 
+         location="mycopiedwikifile.html" 
+         dpath="/All students"?&gt;
+</pre>
+<p>
+ will extract the header on level 2, All students, and all
+ material until the next heading at level 2, or level1.
+</p>
+<pre class="source">
+&lt;?_wxt importwiki  keeprefs="no" 
+       location="http://en.wikipedia.org/wiki/Cougar" 
+	   dpath="//Subspecies"?&gt;
+</pre>
+<p>
+ will extract a description of Subspecies (placed at header level3)
+ in a wikipedia - page about cougars.
+</p>
+<pre class="source">
+&lt;?_wxt importwiki dpath="/Nature" 
+     location="http://en.wikipedia.org/wiki/Halden"?&gt;
+</pre>
+<p>
+will produce this (as of june 2009)
+</p>
+<pre class="result">
+&lt;div class="importwiki"&gt;&lt;h2&gt; Nature&lt;/h2&gt;
+&lt;p&gt;Halden is surrounded by forests and water so hiking and fishing
+locations can easily be found. Deer and elk are a common sight, 
+and wolves have also been observed
+in the district along the border with Sweden. 
+Raspberries, blackberries, blueberries, wild cranberries, and many 
+varieties of mushroom can be found in
+the woods in the early autumn. Popular destinations for hikers and
+other nature lovers include Prestebakke and Kornsjø.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+
+</body>
+</html>

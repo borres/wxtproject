@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Testing</title>
+	<link href="templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.min.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('page11',event);" onmouseover="javascript:popunpop('page11',event);">Welcome</a>
+<div class="wxtsummary" id="page11" style="display: none;">
+<div class="header">Welcome</div>Demonstration of simple XML-import</div>
+</div>
+<div class="level1 wxtselected">Page1</div>
+<div class="level1">
+<a href="page2.html" onmouseout="javascript:popunpop('page12',event);" onmouseover="javascript:popunpop('page12',event);">Page2</a>
+<div class="wxtsummary" id="page12" style="display: none;">
+<div class="header">Page2</div>Incomplete content to be tidyed</div>
+</div>
+<div class="level1">
+<a href="page3.html" onmouseout="javascript:popunpop('page13',event);" onmouseover="javascript:popunpop('page13',event);">Page3</a>
+<div class="wxtsummary" id="page13" style="display: none;">
+<div class="header">Page3</div>Incomplete content to be tidyed</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+</p>
+<h2>A simple import of xml</h2>
+<div>
+<div class="source3">
+<p>Bygger på en template som ikke har xml-header, men er en ren html5 side</p>
+<p>Denne parses, uten tidy, men hvordan kommuniseres encoding ?</p>
+</div>
+</div>
+<hr/>
+<h3>Content file for this page</h3>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/page1.xml</div>
+<div class="content" style="display:none">
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tag">root</span>&gt;
+        
+&lt;<span class="tag">div</span> <span class="atn">class</span>="<span class="atv">mainblock</span>"&gt;
+&lt;<span class="tag">h1</span>&gt;Testing PI:importxml&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+&lt;/<span class="tag">p</span>&gt;
+  
+&lt;!--<span class="com"> extract a header with following text </span>--&gt;
+&lt;<span class="tag">h2</span>&gt;A simple import of xml&lt;/<span class="tag">h2</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importxml location="simplexml.xml" 
+       xpath="//div[@class='source3']"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">hr</span>/&gt;
+  
+&lt;<span class="tag">h3</span>&gt;Content file for this page&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="page1.xml" 
+       lang="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">div</span>&gt; &lt;!--<span class="com"> mainblock </span>--&gt;
+&lt;/<span class="tag">root</span>&gt;</pre>
+</div>
+</div>
+</div>
+		</div>
+
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

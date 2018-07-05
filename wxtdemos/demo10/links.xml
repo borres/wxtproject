@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+		<title>testing links</title> 
+		<link href="linkstyles.css" rel="STYLESHEET"/>
+		
+	</head>
+	<body>
+	<h2>Testing Link Styles</h2>
+	<hr/>
+	<p>
+	Using style <em>demo</em> to point at: <?_wxt  demolink uri="http://www.ia.hiof.no/~borres/dummy.xhtml" 
+			text="dummy"?>
+	</p>
+	<hr/>
+	<p>
+	Using style <em>external</em> to point at: <?_wxt  demolink uri="http://www.ia.hiof.no/~borres/dummy.xhtml" 
+			text="dummy"
+			style="external"?>  which also turns out to be a rather silly web page.
+	</p>
+	<hr/>
+	<p>	The styles used:</p>
+	<div style="background-color:LemonChiffon;border-style:solid;border-width:thin">
+	<?_wxt importtxt location="linkstyles.css" code="mlcode"?>
+	</div>
+	</body>
+</html>

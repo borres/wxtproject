@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Velkommen</title>
+</head>
+    <body>
+        
+<div class="mainblock">
+
+<h1>From a WXT module</h1>
+<p>Import  from  webpages without xml-header</p>
+<hr/>
+<div>
+<?_wxt importxml location="http://www.it.hiof.no/~borres/dn/links/p-links.html" xpath="//p[@class='sitename']"?>
+</div>
+<hr/>
+<div>
+<?_wxt importxml location="http://www.it.hiof.no/~borres/dn/links/p-links.html" xpath="//div[@id='collect']"?>
+</div>
+
+</div>
+
+</body>
+</html>

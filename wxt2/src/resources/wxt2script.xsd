@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="transformation">
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:string" use="required"/>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="fragment">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="id" type="xs:string" use="required"/>
+					<xs:attribute name="location" type="xs:string" use="optional"/>
+					<xs:attribute name="encoding" type="xs:string" use="optional"/>
+                                        <xs:attribute name="short" type="xs:string" use="optional"/>
+					<xs:attributeGroup ref="dategroup"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+    
+	<xs:element name="fragments">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="location" type="xs:string" use="optional"/>
+					<xs:attribute name="encoding" type="xs:string" use="optional"/>
+					<xs:attributeGroup ref="dategroup"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+    <xs:element name="summary">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="location" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="template">
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:string" use="required"/>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="xmlcontent">
+		<xs:complexType>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+			<xs:attribute name="backuplocation" type="xs:string" use="optional"/>
+			<xs:attribute name="transformation" type="xs:string" use="optional"/>
+			<xs:attribute name="id" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="txtcontent">
+		<xs:complexType>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+			<xs:attribute name="backuplocation" type="xs:string" use="optional"/>
+			<xs:attribute name="transformation" type="xs:string" use="optional"/>
+			<xs:attribute name="id" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="wikicontent">
+		<xs:complexType>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+			<xs:attribute name="backuplocation" type="xs:string" use="optional"/>
+			<xs:attribute name="transformation" type="xs:string" use="optional"/>
+			<xs:attribute name="id" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="odfcontent">
+		<xs:complexType>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+			<xs:attribute name="backuplocation" type="xs:string" use="optional"/>
+			<xs:attribute name="transformation" type="xs:string" use="optional"/>
+			<xs:attribute name="id" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="dbcontent">
+		<xs:complexType>
+			<xs:attribute name="connection" type="xs:string" use="required"/>
+			<xs:attribute name="id" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+
+
+
+	<xs:element name="wscript">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="definitions"/>
+				<xs:element ref="module" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:enumeration value="1.0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			</xs:complexType>
+	</xs:element>
+	<xs:element name="pathfragment">
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:string" use="required"/>
+			<xs:attribute name="value" type="xs:string" use="required"/>
+            <xs:attribute name="alternative" type="xs:string"/>
+            <xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="module">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="xmlcontent" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="xmlcontentlist" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="txtcontent" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="txtcontentlist" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element ref="dbcontent" minOccurs="0" maxOccurs="1"/>
+                                <xs:element ref="wikicontent" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element ref="odfcontent" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="module" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="modulelist" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="summary" minOccurs="0"/>
+			</xs:choice>
+			<xs:attribute name="name" type="xs:string" use="optional"/>
+                        <xs:attribute name="author" type="xs:string" use="optional"/>
+			<xs:attribute name="location" type="xs:string" use="optional"/>
+			<xs:attribute name="id" type="xs:string" use="optional"/>
+			<xs:attribute name="description" type="xs:string" use="optional"/>
+			<xs:attribute name="anchor" type="xs:string" use="optional"/>
+			<xs:attribute name="template" type="xs:string" use="optional"/>
+			<xs:attribute name="transformation" type="xs:string" use="optional"/>
+			<xs:attribute name="books" type="xs:string" use="optional"/>
+			<xs:attribute name="runbefore" type="xs:string" use="optional"/>
+			<xs:attribute name="runafter" type="xs:string" use="optional"/>
+			<xs:attribute name="output-format" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="xmlcontentlist">
+		<xs:complexType>
+			<xs:attribute name="catalog" type="xs:string" use="required"/>
+			<xs:attribute name="sourcesuffix" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="txtcontentlist">
+		<xs:complexType>
+			<xs:attribute name="catalog" type="xs:string" use="required"/>
+			<xs:attribute name="sourcesuffix" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="modulelist">
+		<xs:complexType>
+			<xs:attribute name="catalog" type="xs:string" use="required"/>
+			<xs:attribute name="template" type="xs:string" use="optional"/>
+			<xs:attribute name="sourcesuffix" type="xs:string" use="optional"/>
+			<xs:attribute name="targetsuffix" type="xs:string" use="optional"/>
+			<xs:attribute name="books" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="dategroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="definitions">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="pathfragment" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="template" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="transformation" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="fragment" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element ref="fragments" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element ref="command" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="addressing" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="references" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="formulas" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="images" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="option" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="logfile" minOccurs="0" maxOccurs="1"/>
+			</xs:choice>
+			<xs:attribute name="anchor" type="xs:string" use="optional"/>
+            <xs:attribute name="pubanchor" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="option">
+		<xs:complexType>
+			<xs:attribute name="name" use="required">
+			<xs:simpleType>
+			<xs:restriction base="xs:string">
+			<xs:enumeration value="color-code"/>
+			<xs:enumeration value="expand-all"/>
+			<xs:enumeration value="indent-output"/>
+			<xs:enumeration value="default-encoding"/>
+			<xs:enumeration value="output-format"/>
+            <xs:enumeration value="reference-form"/>
+            <xs:enumeration value="reference-indexing"/>
+            <xs:enumeration value="use-copy"/>
+            <xs:enumeration value="drop-books"/>
+			</xs:restriction>
+			</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="value" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="references">
+		<xs:complexType>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="formulas">
+		<xs:complexType>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="images">
+		<xs:complexType>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="logfile">
+		<xs:complexType>
+			<xs:attribute name="location" type="xs:string" use="required"/>
+            <xs:attribute name="maxlog" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="command">
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:string" use="required"/>
+			<xs:attribute name="line" type="xs:string" use="required"/>
+			<xs:attribute name="wait" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="addressing">
+		<xs:complexType>
+			<xs:attribute name="tag" type="xs:string" use="required"/>
+			<xs:attribute name="attribute" type="xs:string" use="required"/>
+                        <xs:attribute name="cancel" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="dategroup">
+		<xs:attribute name="firstdate" type="xs:string" use="optional"/>
+		<xs:attribute name="lastdate" type="xs:string" use="optional"/>
+	</xs:attributeGroup>
+</xs:schema>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/xml; charset=UTF-8" http-equiv="Content-Type"/>
+	<title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="stdstyle.css"/>
+	<link rel="STYLESHEET" href="demostyle.css"/>
+	<script type="text/javascript" src="prototype.js"> </script>
+	<script type="text/javascript" src="newstd.js"> </script> </head>
+<body>
+
+<div class="likeh1" style="margin-top:100px">BOOK ON DEMAND</div>
+
+<p><?_wxt date?></p>
+
+<p style="margin-top:50px">
+Extracts from: demo2
+</p>
+
+<p style="margin-top:10px">
+at: http://www.ia.hiof.no/~borres/wxtdemos/demo2
+</p>
+
+<h1>Content</h1>
+<p>
+Your book as you ordered it.
+</p>
+
+<div>
+<?_wxt moduletocfinal tags="h1" cols="1"?>
+</div>
+
+<!-- start_collect -->
+<div id="modulecollect">
+<?_wxt collect idlist="Welcome" xpath="//div[@class='maincontent']"?>
+</div>
+<!-- stop_collect -->
+
+
+</body>
+</html>

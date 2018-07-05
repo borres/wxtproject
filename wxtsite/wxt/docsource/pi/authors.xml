@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+
+<h1>PI: authors</h1>
+<p>
+  The purpose is to produce 
+  a simple list of all authors.
+</p>
+<pre class="piline">
+&lt;?_wxt authors?&gt;
+</pre>
+
+
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>form</strong> (optional)</td>
+    <td>Possible values are <em>id</em>, <em>short</em> and <em>full</em>.
+    <em>full</em> is default and displays the content of the fragment. 
+    If <em>short</em>, only the short value of the author fragment is
+    displayed.
+     </td>
+
+  </tr>
+     <tr>
+    <td  style="vertical-align:top"><strong>cols</strong> (optional)</td>
+    <td>The number of columns.
+	 Default is 1.  
+     </td>
+  </tr>
+</table>
+
+<p class="stylefoot">
+Styleclass(es) describing this PI is: <em>wxtauthorsn</em>, where n is the number of columns selected,
+se distributed std styles.
+</p>
+</body>
+</html>

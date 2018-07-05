@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<html>
+        
+<div class="mainblock">
+<h1>Testing PI:formula</h1>
+
+<p>
+ Latex formulas built by WXT / JLaTeXMath from a formulas file.
+</p>
+      
+
+<h2>From formula-file</h2>
+<div>
+<?_wxt formula id="f1" color="#FF0000"?>
+<?_wxt formula id="f1" color="#00FF00"?>
+</div>
+ 
+
+<div>
+<?_wxt formula id="f2"?>
+</div>
+ 
+
+<div>
+<?_wxt formula id="f3" color="#FF0000" size="tiny"?>
+<?_wxt formula id="f3" color="#FF00FF" size="small"?>
+<?_wxt formula id="f3" color="#0000FF"?>
+<?_wxt formula id="f3" color="#00FFFF" size="large"?>
+<?_wxt formula id="f3" color="#FF0000" size="huge"?>
+</div>
+  
+
+<div>
+<?_wxt formula id="f4" backcolor="#00FFFF"?>
+</div> 
+ 
+
+<p>Normals on the surface</p>
+<div style="float:left">
+<?_wxt image id="ellipsoide" location="ellipsoidedrawing.gif" subtext="superellipsoide"?>
+</div>
+
+
+<div >
+<?_wxt formula id="f5a"?>
+<br/>
+<?_wxt formula id="f5b"?>
+<br/>
+<?_wxt formula id="f5c"?>
+</div>
+<hr style="clear:both"/>
+    
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" lang="lang-xml"?>
+</div>
+<h2>Formulas</h2>
+<div>
+<?_wxt expandable location="latformulas.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+
+</html>

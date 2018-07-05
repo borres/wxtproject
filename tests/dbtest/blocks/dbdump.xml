@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<query id="1">
+<sql>select name,description from wines where country = &apos;Frankrike&apos; and type=&apos;sparkling&apos; and dice=6</sql>
+
+	<record>
+		<name>Crémant De Bourgogne Blanc De Noirs</name>
+		<description>Moden stil duftmessig. Jordbær/bringebærsødme og fine små bobler først i smaken, elegant ferskenaktig fruktighet og behagelig syrlighet, velkomponert totalinntrykk.</description>
+	</record>
+	<record>
+		<name>Palmer Brut 1992</name>
+		<description>Moden fruktighet med duft av søte epler, gjærbakst og nøtter. Rik og fyldig smak med god friskhet. Fin syretørrhet i ettersmaken gjør Palmer til en god matchampagne.</description>
+	</record>
+	<record>
+		<name>Bollinger Spécial Cuvée, Brut</name>
+		<description>Tiltalende duft av roser, moden frukt, gjærbakst og mineraler. Intens smak med myke bobler og nyanser av  jordbær og nøtter, lang ettersmak med flott syrebitt.</description>
+	</record>
+	<record>
+		<name>Charles Heidsieck Mis En Cave 1996</name>
+		<description>Innbydende duft av blomster, sitrus og gjærbakst. Elegant smak med både søte epler og ripsaktig syrlighet. Moden og behagelig champagne med avrundet ettersmak.</description>
+	</record>
+	<record>
+		<name>Champagne Palmer Blanc de Blancs Brut 1995</name>
+		<description>Rik duft av sitrus, søte epler, gjærbakst og nøtter. Myke bobler som gir en kremete munnfølelse, meget elegant og smaksrik champagne som gir et harmonisk totalinntrykk.</description>
+	</record>
+	<record>
+		<name>Bollinger Grande Année Brut 1995</name>
+		<description>Moden duft som minner om tørket frukt, toast og sjokolade. Velbalansert champagne med snev av pasjonsfruktsødme og intens syrlighet i smaken. Flott matchampagne med lang ettersmak.</description>
+	</record>
+	<record>
+		<name>Crémant de Bourgogne Blanc de Noirs Brut</name>
+		<description>En anelse autolyse (gjærpreg), gule epler og mineraltoner i duften. Jordbær/bringebærsødme og fine små bobler først i smaken, elegant ferskenaktig fruktighet og behagelig syretørrhet, velkomponert totalinntrykk.</description>
+	</record>
+	<record>
+		<name>Arnould Grand Cru Blanc de Noir Brut</name>
+		<description>Duften har nyanser av gule epler og fersk gjærbakst. Fyldig og rik smak med godt skum, og flott syrefriskhet som gir en lang ettersmak.</description>
+	</record>
+	<record>
+		<name>Jacquart Blanc de Blancs Grand Cru Brut 1998</name>
+		<description>Sitrus, hasselnøtter og toast i duften. God mousse i smaken, ren og elegant fruktighet med jordbærsødme og sitrusfriskhet. Velkomponert champagne med frisk og lang ettersmak.</description>
+	</record>
+	<record>
+		<name>Les Crayères Premier Cru Brut</name>
+		<description>Gjærpreg og sitrus i duften. Frisk og elegant champagne med fine bobler og litt nøtteaktig smak. Fin syretørrhet og mineralitet i ettersmaken.</description>
+	</record>
+	<record>
+		<name>Chardonnay de Vieilles Vignes Grand Cru Brut 1995</name>
+		<description>Moden duft av søte epler og gjærbakst. Frisk og rik smak med gode bobler og sødme av hvit sjokolade, etterfulgt av flott syrestruktur og lang ettersmak med gjærpreg og mineralsk tørrhet.</description>
+	</record>
+	<record>
+		<name>Bollinger Spécial Cuvée Brut</name>
+		<description>Rik og kompleks duft av moden frukt, gjærbakst og mineraler. Modne epler og sitrusfriskhet i smaken, myke bobler som gir en god munnfølelse, lang ettersmak med flott syrebitt.</description>
+	</record>
+	<record>
+		<name>Agrapart Minéral Blanc de Blancs Brut 1998</name>
+		<description>Rik duft av gjærbakst, søte epler og mineraler. Slank og elegant smak med små bobler, behagelig syretørrhet og frisk ettersmak.</description>
+	</record>
+	<record>
+		<name>Tarlant Brut Zero</name>
+		<description>Basis. Gyldengul champagne med fint gjærpreg i duften. Rik og moden smak, syrefrisk ettersmak med fin tørrhet i avslutningen. Kjempekjøp!</description>
+	</record>
+	<record>
+		<name>Crémant de Bourgogne Blanc de Noirs Brut</name>
+		<description>En anelse autolyse (gjærpreg), gule epler og mineraltoner i duften. Jordbær/bringebærsødme og fine små bobler først i smaken, elegant ferskenaktig fruktighet og behagelig syretørrhet, velkomponert totalinntrykk.</description>
+	</record>
+	<record>
+		<name>Guy Charlemagne Blanc de Blancs Réserve Brut</name>
+		<description>Duft av gjærbakst, glassepler, sitrus og mineraler. Myke bobler og flott spenn mellom sødme og syrefriskhet. Lang og skikkelig syretørr ettersmak, veldig god mat-champagne med sympatisk prislapp.</description>
+	</record>
+	<record>
+		<name>Pol Roger Réserve Brut</name>
+		<description>Søte epler, sitrus, gjærbakst og mineraler i duften. Delikat smak med god mousse og frisk fruktsødme, fin matchampagne med syretørrhet som renser godt opp i munnen.</description>
+	</record>
+	<record>
+		<name>Heidsieck Brut Réserve mis en Cave en 2000</name>
+		<description>Duft av sitrus, gjærbakst og mineraler. Smaksrik vin med gode bobler og en anelse honningsødme, fint balansert syretørrhet som gir en lang ettersmak.</description>
+	</record>
+	<record>
+		<name>Jacquesson Avize Grand Cru Recolté 1996</name>
+		<description>Modent duftanslag med nyanser av sitrus, autolyse, maltsødme og mineraler. God mousse i den stilige og syrefriske smaken, flott matchampagne med epleskallbitterhet i ettersmaken.</description>
+	</record>
+	<record>
+		<name>Jacquesson Grand Vin Signature Extra Brut 1995</name>
+		<description>Moden duft av gule epler, nøtter, brøddeig, toast og honning. Nydelig mousse, rik og harmonisk smak, stilig syrlighet i ettersmaken.</description>
+	</record>
+</query>
+</root>

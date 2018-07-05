@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<job>
+<!-- Result from: INSERT INTO material(fragid,content)
+values
+(
+1,'<h1>Fragment 1</h1><p>dette er fragment 1</p>'
+),
+(
+2,'<h1>Fragment 2</h1><p><a href="http://www.it.hiof.no/~borres/ml">Dokumenter og web</a></p>'
+),
+(
+3, '<h1>Fragment 3</h1><p><img src="http://www.it.hiof.no/~borres/allround/selfimages/bs1.gif"/></p>'
+)  -->
+result:3 rows affected
+</job>
+</root>

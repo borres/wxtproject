@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<?_wxt fragment id="header"?>
+    <title><?_wxt importxml xpath="//div[@id='title']/text()" ?></title>
+</head>
+
+<body>
+
+
+
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<?_wxt modulemenu summary="yes" books="all"?>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div><?_wxt path divider=" > "?></div>
+	<div class="collectable">
+		<div class="main">
+			<?_wxt importxml xpath="//div[@class='mainblock']/*"?>
+		</div>
+		<div><?_wxt footnote form="normal"?> </div>
+		<div><?_wxt reflist scope="local"?> </div>
+	</div>
+</div><!-- content -->
+
+
+</div><!-- all -->
+
+<!-- footer -->
+<div class="footer">
+<?_wxt fragment id="footer"?>
+</div><!-- eof footer -->
+
+
+
+</body>
+</html>

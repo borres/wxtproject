@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:gadget</h1>
+ <p>
+   A gadget in WXT's context is simply any HTML-fragment that may
+   shown or hidden and movable.<br/>
+   It may be a simple HTML-fragment, a HTML-fragment that establish an iframe
+   or it may be a location that will appear in an iframe..
+   The fragments must be defined somewhere, a freagment in the script or in a fragments file.
+   <?_wxt popup lang="lang-xml" sourcelocation="myfragments.xml" 
+          location="myfragments_xml.html" text="myfragments"?>
+</p>
+ 
+<!-- simple html -->
+<h2>Simple HTML</h2>
+<p>The fragment is simple HTML</p>
+<div>
+<?_wxt gadget fragmentid="warning" 
+            title="Warning"
+            movable="yes"
+            width="200px" height="410px"?>
+</div>
+ 
+<!-- youtube -->
+<h2>From youtube</h2>
+<p>Fragment copied from YouTube</p>
+<div>
+<?_wxt gadget fragmentid="tombola" 
+            title="La Vida Tombola"
+            movable="yes"
+            width="480px" height="410px"?>
+</div>
+ 
+<!-- applet -->
+<h2>An applet</h2>
+<p>HTML Loading an applet</p>
+<div>
+<?_wxt gadget fragmentid="runner" 
+            title="Runner"
+            movable="yes"
+            width="120px" height="200px"?>
+</div>
+ 
+<!-- latin -->
+<h2>Latin quotes</h2>
+<p>Launching a location in an iFrame</p>
+<div>
+<?_wxt gadget location="http://donau.hiof.no/borres/dn/demosite2/gadget.html" 
+            title="Latin to Norwegian"
+            movable="yes"
+            width="320px" height="100px"?>
+</div>
+ 
+<hr/>
+ 
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

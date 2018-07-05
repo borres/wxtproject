@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu"><div class="level1"><a href="index.html" onmouseout="javascript:popunpop('prettycode31',event);" onmouseover="javascript:popunpop('prettycode31',event);">Welcome</a><div class="wxtsummary" id="prettycode31" style="display: none;"><div class="header">Welcome</div>Demonstration of languages</div></div><div class="level1"><a href="code1.html" onmouseout="javascript:popunpop('prettycode32',event);" onmouseover="javascript:popunpop('prettycode32',event);">Expanded Code</a><div class="wxtsummary" id="prettycode32" style="display: none;"><div class="header">Expanded Code</div>Demonstration of expandable languages</div></div><div class="level1"><a href="code2.html" onmouseout="javascript:popunpop('prettycode33',event);" onmouseover="javascript:popunpop('prettycode33',event);">Imported Code</a><div class="wxtsummary" id="prettycode33" style="display: none;"><div class="header">Imported Code</div>Demonstration of imported languages</div></div><div class="level1">Imported MLCode</div></div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div><!-- empty: <?_wxt path  divider=" > " ?> --></div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing languages</h1><p>
+   Testing import XML/HTML. 
+</p><h2>Text import</h2><h3>XML</h3><p>Complete</p><div>
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tag">OlympicGame</span> <span class="atn">place</span>="<span class="atv">Barcelona</span>" <span class="atn">year</span>="<span class="atv">1992</span>"&gt;
+    &lt;<span class="tag">event</span> <span class="atn">track</span>="<span class="atv">100m</span>"&gt;
+        &lt;<span class="tag">athlet</span>&gt;
+            &lt;<span class="tag">name</span>&gt;Dennis Mitchell&lt;/<span class="tag">name</span>&gt;
+            &lt;<span class="tag">nation</span>&gt;USA&lt;/<span class="tag">nation</span>&gt;
+            &lt;<span class="tag">result</span>&gt;10.04&lt;/<span class="tag">result</span>&gt;
+        &lt;/<span class="tag">athlet</span>&gt;
+        &lt;<span class="tag">athlet</span>&gt;
+            &lt;<span class="tag">name</span>&gt;Bruny Surin&lt;/<span class="tag">name</span>&gt;
+            &lt;<span class="tag">nation</span>&gt;CAN&lt;/<span class="tag">nation</span>&gt;
+            &lt;<span class="tag">result</span>&gt;10.09&lt;/<span class="tag">result</span>&gt;
+        &lt;/<span class="tag">athlet</span>&gt;
+    &lt;/<span class="tag">event</span>&gt;
+&lt;/<span class="tag">OlympicGame</span>&gt;</pre>
+</div><h3>HTML</h3><p>complete</p><div>
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;!DOCTYPE <span class="tag">html</span> PUBLIC "<span class="str">-//W3C//DTD XHTML 1.0 Strict//EN"</span> 
+    "<span class="str">http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span>&gt;
+&lt;<span class="tag">html</span> xmlns="<span class="str">http://www.w3.org/1999/xhtml"</span> lang="<span class="str">en"</span> xml:lang="<span class="str">en"</span>&gt;
+&lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">meta</span> content="<span class="str">text/html; charset=utf-8"</span> http-equiv="<span class="str">Content-Type"</span>&gt;
+    &lt;<span class="tag">title</span>&gt;test&lt;/<span class="tag">title</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+&lt;<span class="tag">h1</span>&gt;Just <span class="tag">a</span> test&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+    Testing <span class="tag">a</span> complte <span class="tag">html</span>-file without XML-header
+&lt;/<span class="tag">p</span>&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;
+</pre>
+</div><p>fraction</p><div>
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;<span class="tag">h1</span>&gt;OpenGL&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+   OpenGL is:
+&lt;/<span class="tag">p</span>&gt;
+&lt;!--<span class="com"> list of things </span>--&gt;
+&lt;<span class="tag">ul</span>&gt;
+&lt;<span class="tag">li</span>&gt;is <span class="tag">a</span> library for programming of 2D and 3D graphics.&lt;/<span class="tag">li</span>&gt;
+&lt;<span class="tag">li</span>&gt;is established as an industry standard and reference standard.&lt;/<span class="tag">li</span>&gt;
+&lt;<span class="tag">li</span>&gt;is developed by Silicon Graphics.&lt;/<span class="tag">li</span>&gt;
+&lt;<span class="tag">li</span>&gt;has <span class="tag">a</span> long history under other names, GL.&lt;/<span class="tag">li</span>&gt;
+&lt;<span class="tag">li</span>&gt;was developed under control of an Architecture Review Board, 
+which now is <span class="tag">a</span> part of 
+&lt;<span class="tag">span</span> class="<span class="str">ref"</span> &lt;<span class="tag">a</span> href="<span class="str">http://www.opengl.org/about/arb/"</span>&gt;The Khronos Group.&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">span</span>&gt;&lt;/<span class="tag">li</span>&gt;
+&lt;/<span class="tag">ul</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+ OpenGL is continuously developed, with new versions. Latest version, may 2009, is 3.1.
+ One major addition to the OpenGL concept is OpenGL Shading Language. 
+ OpenGL is developed as platform independent package and runs on <span class="tag">a</span> lot of platforms.
+&lt;/<span class="tag">p</span>&gt;
+</pre>
+</div><h3>XSLT</h3><p>complete named as xml</p><div>
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tag">xsl:stylesheet</span> <span class="atn">version</span>="<span class="atv">1.0</span>" <span class="atn">xmlns:xsl</span>="<span class="atv">http://www.w3.org/1999/XSL/Transform</span>"&gt;
+    &lt;<span class="tag">xsl:output</span> <span class="atn">method</span>="<span class="atv">text</span>"/&gt;
+  &lt;<span class="tag">xsl:param</span> <span class="atn">name</span>="<span class="atv">theCountry</span>" <span class="atn">select</span>="<span class="atv">'Frankrike'</span>"/&gt;
+  &lt;<span class="tag">xsl:param</span> <span class="atn">name</span>="<span class="atv">theType</span>" <span class="atn">select</span>="<span class="atv">'red'</span>"/&gt;
+  &lt;<span class="tag">xsl:template</span> <span class="atn">match</span>="<span class="atv">/</span>"&gt;
+    "viner":[
+    &lt;<span class="tag">xsl:apply-templates</span> <span class="atn">select</span>="<span class="atv">//wine[country=$theCountry and type=$theType]</span>"&gt;
+      &lt;<span class="tag">xsl:sort</span> <span class="atn">order</span>="<span class="atv">descending</span>" <span class="atn">select</span>="<span class="atv">dice</span>"/&gt;
+    &lt;/<span class="tag">xsl:apply-templates</span>&gt;
+    ]
+  &lt;/<span class="tag">xsl:template</span>&gt;
+  &lt;<span class="tag">xsl:template</span> <span class="atn">match</span>="<span class="atv">//wine</span>"&gt;
+    {"terning":"&lt;<span class="tag">xsl:value-of</span> <span class="atn">select</span>="<span class="atv">dice</span>"/&gt;",
+     "navn":"&lt;<span class="tag">xsl:value-of</span> <span class="atn">select</span>="<span class="atv">name</span>"/&gt;",
+    "beskrivelse":"&lt;<span class="tag">xsl:value-of</span> <span class="atn">select</span>="<span class="atv">description</span>"/&gt;"},
+  &lt;/<span class="tag">xsl:template</span>&gt;
+&lt;/<span class="tag">xsl:stylesheet</span>&gt;</pre>
+</div><p>incomplete</p><div>
+<pre class="lang-xslt readyandpretty skiptranslate">
+&lt;<span class="tag">xsl:for-each</span> select="<span class="str">booklist/book</span>"&gt;
+      &lt;p&gt;
+        &lt;<span class="tag">xsl:value-of</span> select="<span class="str">title</span>"/&gt;
+      &lt;/p&gt;
+&lt;<span class="tag">/xsl:for-each</span>&gt;</pre>
+</div><h2>Included</h2><h3>XML</h3><p>complete, direct</p><pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tag">OlympicGame</span> <span class="atn">place</span>="<span class="atv">Barcelona</span>" <span class="atn">year</span>="<span class="atv">1992</span>"&gt;
+  &lt;<span class="tag">event</span> <span class="atn">track</span>="<span class="atv">100m</span>"&gt;
+    &lt;<span class="tag">athlet</span>&gt;
+      &lt;<span class="tag">name</span>&gt;Dennis Mitchell&lt;/<span class="tag">name</span>&gt;
+      &lt;<span class="tag">nation</span>&gt;USA&lt;/<span class="tag">nation</span>&gt;
+      &lt;<span class="tag">result</span>&gt;10.04&lt;/<span class="tag">result</span>&gt;
+    &lt;/<span class="tag">athlet</span>&gt;
+    &lt;<span class="tag">athlet</span>&gt;
+      &lt;<span class="tag">name</span>&gt;Bruny Surin&lt;/<span class="tag">name</span>&gt;
+      &lt;<span class="tag">nation</span>&gt;CAN&lt;/<span class="tag">nation</span>&gt;
+      &lt;<span class="tag">result</span>&gt;10.09&lt;/<span class="tag">result</span>&gt;
+    &lt;/<span class="tag">athlet</span>&gt;
+  &lt;/<span class="tag">event</span>&gt;
+&lt;/<span class="tag">OlympicGame</span>&gt;</pre><h3>HTML</h3><p>fraction, direct</p><pre class="lang-html readyandpretty skiptranslate">
+&lt;<span class="tag">h1</span>&gt;OpenGL&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+   OpenGL is:
+&lt;/<span class="tag">p</span>&gt;
+&lt;!--<span class="com"> list of things </span>--&gt;
+&lt;<span class="tag">ul</span>&gt;
+&lt;<span class="tag">li</span>&gt;is <span class="tag">a</span> library for programming of 2D and 3D graphics.&lt;/<span class="tag">li</span>&gt;
+&lt;<span class="tag">li</span>&gt;is established as an industry standard and reference standard.&lt;/<span class="tag">li</span>&gt;
+&lt;<span class="tag">li</span>&gt;is developed by Silicon Graphics.&lt;/<span class="tag">li</span>&gt;
+&lt;<span class="tag">li</span>&gt;has <span class="tag">a</span> long history under other names, GL.&lt;/<span class="tag">li</span>&gt;
+&lt;<span class="tag">li</span>&gt;was developed under control of an Architecture Review Board, 
+which now is <span class="tag">a</span> part of 
+&lt;<span class="tag">span</span> class="<span class="str">ref"</span> &lt;<span class="tag">a</span> href="<span class="str">http://www.opengl.org/about/arb/"</span>&gt;The Khronos Group.&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">span</span>&gt;&lt;/<span class="tag">li</span>&gt;
+&lt;/<span class="tag">ul</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+ OpenGL is continuously developed, with new versions. Latest version, may 2009, is 3.1.
+ One major addition to the OpenGL concept is OpenGL Shading Language. 
+ OpenGL is developed as platform independent package and runs on <span class="tag">a</span> lot of platforms.
+&lt;/<span class="tag">p</span>&gt;
+</pre><hr/><h2>Content file for this page</h2><div>
+<div class="wxtexpandable"><div class="header"><span class="on" onclick="javascript:toggleExpand(this)">_</span>content/code3.xml</div><div class="content" style="display:block"><pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "-//W3C//DTD XHTML 1.0 Strict//EN"&gt;
+&lt;<span class="tag">html</span> <span class="atn">xmlns</span>="<span class="atv">http://www.w3.org/1999/xhtml</span>" <span class="atn">lang</span>="<span class="atv">en</span>" <span class="atn">lang</span>="<span class="atv">en</span>"&gt;
+    &lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">title</span>&gt;velkommen&lt;/<span class="tag">title</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+        
+&lt;<span class="tag">div</span> <span class="atn">class</span>="<span class="atv">mainblock</span>"&gt;
+&lt;<span class="tag">h1</span>&gt;Testing languages&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+   Testing import XML/HTML. 
+&lt;/<span class="tag">p</span>&gt;
+ 
+&lt;<span class="tag">h2</span>&gt;Text import&lt;/<span class="tag">h2</span>&gt; 
+&lt;<span class="tag">h3</span>&gt;XML&lt;/<span class="tag">h3</span>&gt;
+ 
+&lt;<span class="tag">p</span>&gt;Complete&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importtxt location="mlstuff/complete.xml" lang="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+ 
+&lt;<span class="tag">h3</span>&gt;HTML&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">p</span>&gt;complete&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importtxt location="mlstuff/completehtml.html" lang="lang-html"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+ 
+&lt;<span class="tag">p</span>&gt;fraction&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importtxt location="mlstuff/htmlfraction.html" lang="lang-html"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">h3</span>&gt;XSLT&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">p</span>&gt;complete named as xml&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importtxt location="mlstuff/trans.xslt" lang="lang-xslt"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">p</span>&gt;incomplete&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importtxt location="mlstuff/frag1.xslt" lang="lang-xslt"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+ 
+&lt;<span class="tag">h2</span>&gt;Included&lt;/<span class="tag">h2</span>&gt;
+ 
+&lt;<span class="tag">h3</span>&gt;XML&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">p</span>&gt;complete, direct&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">pre</span> <span class="atn">class</span>="<span class="atv">prettyprint lang-xml</span>"&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;OlympicGame place="Barcelona" year="1992"&gt;
+    &lt;event track="100m"&gt;
+        &lt;athlet&gt;
+            &lt;name&gt;Dennis Mitchell&lt;/name&gt;
+            &lt;nation&gt;USA&lt;/nation&gt;
+            &lt;result&gt;10.04&lt;/result&gt;
+        &lt;/athlet&gt;
+        &lt;athlet&gt;
+            &lt;name&gt;Bruny Surin&lt;/name&gt;
+            &lt;nation&gt;CAN&lt;/nation&gt;
+            &lt;result&gt;10.09&lt;/result&gt;
+        &lt;/athlet&gt;
+    &lt;/event&gt;
+&lt;/OlympicGame&gt;
+]]&gt;
+&lt;/<span class="tag">pre</span>&gt;
+ 
+&lt;<span class="tag">h3</span>&gt;HTML&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">p</span>&gt;fraction, direct&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">pre</span> <span class="atn">class</span>="<span class="atv">prettyprint lang-html</span>"&gt;&lt;![CDATA[&lt;h1&gt;OpenGL&lt;/h1&gt;
+&lt;p&gt;
+   OpenGL is:
+&lt;/p&gt;
+&lt;!-- list of things --&gt;
+&lt;ul&gt;
+&lt;li&gt;is a library for programming of 2D and 3D graphics.&lt;/li&gt;
+&lt;li&gt;is established as an industry standard and reference standard.&lt;/li&gt;
+&lt;li&gt;is developed by Silicon Graphics.&lt;/li&gt;
+&lt;li&gt;has a long history under other names, GL.&lt;/li&gt;
+&lt;li&gt;was developed under control of an Architecture Review Board, 
+which now is a part of 
+&lt;span class="ref" &lt;a href="http://www.opengl.org/about/arb/"&gt;The Khronos Group.&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+ OpenGL is continuously developed, with new versions. Latest version, may 2009, is 3.1.
+ One major addition to the OpenGL concept is OpenGL Shading Language. 
+ OpenGL is developed as platform independent package and runs on a lot of platforms.
+&lt;/p&gt;
+]]&gt;
+&lt;/<span class="tag">pre</span>&gt;
+ 
+&lt;<span class="tag">hr</span>/&gt;
+ 
+&lt;<span class="tag">h2</span>&gt;Content file for this page&lt;/<span class="tag">h2</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="code3.xml" 
+       lang="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">div</span>&gt; &lt;!--<span class="com"> mainblock </span>--&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;</pre></div></div>
+</div>
+		</div>
+		<div><!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div><div class="wxtreflist1"><div class="wxtreflistinner"/></div> </div>
+	</div>
+</div><!-- content -->
+
+
+</div><!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div><!-- eof footer -->
+
+
+
+</body>
+</html>

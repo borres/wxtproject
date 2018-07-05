@@ -1,0 +1,29 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+&lt;<span class="tagname">h1</span>&gt;WIKIPEDIA import&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt moduletoc tags="h1,h2,h3" cols="1"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+View source: 
+<span class="process">&lt;?_wxt expand sourcelocation="Norway.xml" 
+       location="norwaysrc.txt" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">p</span>&gt;
+    Testing import av WIKIPEDIA fragments
+&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">h1</span>&gt;Norway&lt;/<span class="tagname">h1</span>&gt;
+    <span class="process">&lt;?_wxt importwiki   
+        location="http://en.wikipedia.org/wiki/Norway" 
+        keeprefs="no"
+        usecopy="yes"
+        dpath="//Prehistory[*]"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

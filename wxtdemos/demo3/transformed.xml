@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<div class="content">
+		<IOC>
+			<OlympicGame place="Barcelona" year="1992">
+				<event track="100m">
+					<athlet>
+						<name>Dennis Mitchell</name>
+						<nation>USA</nation>
+						<result>10.04</result>
+					</athlet>
+					<athlet>
+						<name>Bruny Surin</name>
+						<nation>CAN</nation>
+						<result>10.09</result>
+					</athlet>
+					<athlet>
+						<name>Frank Fredericks</name>
+						<nation>NAM</nation>
+						<result>10.02</result>
+					</athlet>
+					<athlet>
+						<name>Leroy Burrell</name>
+						<nation>USA</nation>
+						<result>10.10</result>
+					</athlet>
+					<athlet>
+						<name>Olapade Adeniken</name>
+						<nation>NGR</nation>
+						<result>10.12</result>
+					</athlet>
+					<athlet>
+						<name>Linford Christie</name>
+						<nation>GBR</nation>
+						<result>09.96</result>
+					</athlet>
+					<athlet>
+						<name>Raymond Stewart</name>
+						<nation>JAM</nation>
+						<result>10.22</result>
+					</athlet>
+					<athlet>
+						<name>Davidson Ezima</name>
+						<nation>NGR</nation>
+						<result>10.26</result>
+					</athlet>
+				</event>
+				<event track="200m">
+					<athlet>
+						<name>Michael Bates</name>
+						<nation>USA</nation>
+						<result>20.38</result>
+					</athlet>
+					<athlet>
+						<name>Marcus Adam</name>
+						<nation>GBR</nation>
+						<result>20.80</result>
+					</athlet>
+					<athlet>
+						<name>Robson Caetano da Silva</name>
+						<nation>BRA</nation>
+						<result>20.45</result>
+					</athlet>
+					<athlet>
+						<name>Frank Fredericks</name>
+						<nation>NAM</nation>
+						<result>20.13</result>
+					</athlet>
+					<athlet>
+						<name>Olapade Adeniken</name>
+						<nation>NGR</nation>
+						<result>20.50</result>
+					</athlet>
+					<athlet>
+						<name>Mike Marsh</name>
+						<nation>USA</nation>
+						<result>20.01</result>
+					</athlet>
+					<athlet>
+						<name>John Regis</name>
+						<nation>GBR</nation>
+						<result>20.55</result>
+					</athlet>
+					<athlet>
+						<name>Oluyemi Kayode</name>
+						<nation>NGR</nation>
+						<result>20.67</result>
+					</athlet>
+				</event>
+				<event track="400m">
+					<athlet>
+						<name>Susumu Takano</name>
+						<nation>JPN</nation>
+						<result>45.18</result>
+					</athlet>
+					<athlet>
+						<name>Quincy Watts</name>
+						<nation>USA</nation>
+						<result>43.50</result>
+					</athlet>
+					<athlet>
+						<name>Samson Kitur</name>
+						<nation>KEN</nation>
+						<result>44.24</result>
+					</athlet>
+					<athlet>
+						<name>Ian Morris</name>
+						<nation>TTO</nation>
+						<result>44.25</result>
+					</athlet>
+					<athlet>
+						<name>Ibrahim Ismail</name>
+						<nation>QAT</nation>
+						<result>45.10</result>
+					</athlet>
+					<athlet>
+						<name>Steve Lewis</name>
+						<nation>USA</nation>
+						<result>44.21</result>
+					</athlet>
+					<athlet>
+						<name>Roberto Hernandez Prendes</name>
+						<nation>CUB</nation>
+						<result>44.52</result>
+					</athlet>
+					<athlet>
+						<name>David Grindley</name>
+						<nation>GBR</nation>
+						<result>44.75</result>
+					</athlet>
+				</event>
+			</OlympicGame>
+			<OlympicGame place="Atlanta" year="1996">
+				<event track="100m">
+					<athlet>
+						<name>Donovan Bailey</name>
+						<nation>CAN</nation>
+						<result>09.84</result>
+					</athlet>
+					<athlet>
+						<name>Ato Boldon</name>
+						<nation>TTO</nation>
+						<result>09.90</result>
+					</athlet>
+					<athlet>
+						<name>Frank Fredericks</name>
+						<nation>NAM</nation>
+						<result>09.89</result>
+					</athlet>
+					<athlet>
+						<name>Michael Green</name>
+						<nation>JAM</nation>
+						<result>10.16</result>
+					</athlet>
+					<athlet>
+						<name>Davidson Ezima</name>
+						<nation>NGR</nation>
+						<result>10.14</result>
+					</athlet>
+					<athlet>
+						<name>Michael Marsh</name>
+						<nation>USA</nation>
+						<result>10.00</result>
+					</athlet>
+					<athlet>
+						<name>Dennis Mitchell</name>
+						<nation>USA</nation>
+						<result>09.99</result>
+					</athlet>
+				</event>
+				<event track="200m">
+					<athlet>
+						<name>Michael Johnson</name>
+						<nation>USA</nation>
+						<result>19.32</result>
+					</athlet>
+					<athlet>
+						<name>Michael Marsh</name>
+						<nation>USA</nation>
+						<result>20.48</result>
+					</athlet>
+					<athlet>
+						<name>Frank Fredericks</name>
+						<nation>NAM</nation>
+						<result>19.68</result>
+					</athlet>
+					<athlet>
+						<name>Ato Boldon</name>
+						<nation>TTO</nation>
+						<result>19.80</result>
+					</athlet>
+					<athlet>
+						<name>Obadele Thompson</name>
+						<nation>BRB</nation>
+						<result>20.14</result>
+					</athlet>
+					<athlet>
+						<name>Jeff Williams</name>
+						<nation>USA</nation>
+						<result>20.17</result>
+					</athlet>
+					<athlet>
+						<name>Ivan Garcia</name>
+						<nation>CUB</nation>
+						<result>20.21</result>
+					</athlet>
+					<athlet>
+						<name>Patrick Stevens</name>
+						<nation>BEL</nation>
+						<result>20.27</result>
+					</athlet>
+				</event>
+				<event track="400m">
+					<athlet>
+						<name>Roxbert Martin</name>
+						<nation>JAM</nation>
+						<result>44.83</result>
+					</athlet>
+					<athlet>
+						<name>Roger Black</name>
+						<nation>GBR</nation>
+						<result>44.41</result>
+					</athlet>
+					<athlet>
+						<name>Davis Kamoga</name>
+						<nation>UGA</nation>
+						<result>44.53</result>
+					</athlet>
+					<athlet>
+						<name>Michael Johnson</name>
+						<nation>USA</nation>
+						<result>43.49</result>
+					</athlet>
+					<athlet>
+						<name>Alvin Harrison</name>
+						<nation>USA</nation>
+						<result>44.62</result>
+					</athlet>
+					<athlet>
+						<name>Iwan Thomas</name>
+						<nation>GBR</nation>
+						<result>44.70</result>
+					</athlet>
+					<athlet>
+						<name>Davian Clarke</name>
+						<nation>JAM</nation>
+						<result>44.99</result>
+					</athlet>
+				</event>
+			</OlympicGame>
+			<OlympicGame place="Sidney" year="2000">
+				<event track="100m">
+					<athlet>
+						<name>Maurice Greene</name>
+						<nation>USA</nation>
+						<result>09.87</result>
+					</athlet>
+					<athlet>
+						<name>Obadele Thompson</name>
+						<nation>BRB</nation>
+						<result>10.04</result>
+					</athlet>
+					<athlet>
+						<name>Dwain Chambers</name>
+						<nation>GBR</nation>
+						<result>10.08</result>
+					</athlet>
+					<athlet>
+						<name>Ato Boldon</name>
+						<nation>TTO</nation>
+						<result>09.99</result>
+					</athlet>
+					<athlet>
+						<name>Jonathan Drummond</name>
+						<nation>USA</nation>
+						<result>10.09</result>
+					</athlet>
+					<athlet>
+						<name>Darren Campbell</name>
+						<nation>GB</nation>
+						<result>10.13</result>
+					</athlet>
+					<athlet>
+						<name>Kim Collins</name>
+						<nation>StK</nation>
+						<result>10.17</result>
+					</athlet>
+				</event>
+				<event track="200m">
+					<athlet>
+						<name>Konstantinos Kenteris</name>
+						<nation>GRE</nation>
+						<result>20.09 </result>
+					</athlet>
+					<athlet>
+						<name>Ato Boldon</name>
+						<nation>TTO</nation>
+						<result>20.20</result>
+					</athlet>
+					<athlet>
+						<name>Darren Campbell</name>
+						<nation>GBR</nation>
+						<result>20.14 </result>
+					</athlet>
+					<athlet>
+						<name>Obadele Thompson</name>
+						<nation>BRB</nation>
+						<result>20.20</result>
+					</athlet>
+					<athlet>
+						<name>Christian Malcolm</name>
+						<nation>GBR</nation>
+						<result>20.23</result>
+					</athlet>
+					<athlet>
+						<name>Coby Miller</name>
+						<nation>USA</nation>
+						<result>20.35 </result>
+					</athlet>
+					<athlet>
+						<name>Claudinei Silva</name>
+						<nation>BRA</nation>
+						<result>20.28</result>
+					</athlet>
+					<athlet>
+						<name>John Capel Jr</name>
+						<nation>USA</nation>
+						<result>20.49</result>
+					</athlet>
+				</event>
+				<event track="400m">
+					<athlet>
+						<name>Michael Johnson</name>
+						<nation>USA</nation>
+						<result>43.84</result>
+					</athlet>
+					<athlet>
+						<name>Alvin Harrison</name>
+						<nation>USA</nation>
+						<result>44.40</result>
+					</athlet>
+					<athlet>
+						<name>Gregory Haughton</name>
+						<nation>JAM</nation>
+						<result>44.70</result>
+					</athlet>
+					<athlet>
+						<name>Sanderlei Parrela</name>
+						<nation>BRA</nation>
+						<result>45.01</result>
+					</athlet>
+					<athlet>
+						<name>Robert Mackowiak</name>
+						<nation>POL</nation>
+						<result>45.14</result>
+					</athlet>
+					<athlet>
+						<name>Hendrick Mokganyetsi</name>
+						<nation>SAF</nation>
+						<result>45.26</result>
+					</athlet>
+					<athlet>
+						<name>Antonio Pettigrew</name>
+						<nation>USA</nation>
+						<result>45.42</result>
+					</athlet>
+					<athlet>
+						<name>Danny Mcfarlane</name>
+						<nation>JAM</nation>
+						<result>45.55</result>
+					</athlet>
+				</event>
+			</OlympicGame>
+			<OlympicGame place="Athens" year="2004">
+				<event track="100m">
+					<athlet>
+						<name>Justin Gatlin</name>
+						<nation>USA</nation>
+						<result>09.85</result>
+					</athlet>
+					<athlet>
+						<name>Francis Obikwelu</name>
+						<nation>POR</nation>
+						<result>09.86</result>
+					</athlet>
+					<athlet>
+						<name>Maurice Greene</name>
+						<nation>USA</nation>
+						<result>09.87</result>
+					</athlet>
+					<athlet>
+						<name>Shawn Crawford</name>
+						<nation>USA</nation>
+						<result>09.89</result>
+					</athlet>
+					<athlet>
+						<name>Asafa Powell</name>
+						<nation>JAM</nation>
+						<result>09.94</result>
+					</athlet>
+					<athlet>
+						<name>Kim Collins</name>
+						<nation>KNA</nation>
+						<result>10.00</result>
+					</athlet>
+					<athlet>
+						<name>Obadele Thompson</name>
+						<nation>BRB</nation>
+						<result>10.10</result>
+					</athlet>
+				</event>
+				<event track="200m">
+					<athlet>
+						<name>Shawn Crawford</name>
+						<nation>USA</nation>
+						<result>19.79</result>
+					</athlet>
+					<athlet>
+						<name>Bernard Williams</name>
+						<nation>USA</nation>
+						<result>20.01</result>
+					</athlet>
+					<athlet>
+						<name>Justin Gatlin</name>
+						<nation>USA</nation>
+						<result>20.03</result>
+					</athlet>
+					<athlet>
+						<name>Frank Fredericks</name>
+						<nation>NAM</nation>
+						<result>20.03</result>
+					</athlet>
+					<athlet>
+						<name>Francis Obikwelu</name>
+						<nation>POR</nation>
+						<result>20.14</result>
+					</athlet>
+					<athlet>
+						<name>Stephane Buckland</name>
+						<nation>MUS</nation>
+						<result>20.24</result>
+					</athlet>
+					<athlet>
+						<name>Tobias Unger</name>
+						<nation>GER</nation>
+						<result>20.64</result>
+					</athlet>
+				</event>
+				<event track="400m">
+					<athlet>
+						<name>Jeremy Wariner</name>
+						<nation>USA</nation>
+						<result>44.00</result>
+					</athlet>
+					<athlet>
+						<name>Otis Harris</name>
+						<nation>USA</nation>
+						<result>44.16</result>
+					</athlet>
+					<athlet>
+						<name>Derrick Brew</name>
+						<nation>USA</nation>
+						<result>44.42</result>
+					</athlet>
+					<athlet>
+						<name>Alleyne Francique</name>
+						<nation>GRN</nation>
+						<result>44.66</result>
+					</athlet>
+					<athlet>
+						<name>Brandon Simpson</name>
+						<nation>JAM</nation>
+						<result>44.76</result>
+					</athlet>
+					<athlet>
+						<name>Davian Clarke</name>
+						<nation>JAM</nation>
+						<result>44.83</result>
+					</athlet>
+					<athlet>
+						<name>Leslie Djhone</name>
+						<nation>FRA</nation>
+						<result>44.94</result>
+					</athlet>
+					<athlet>
+						<name>Michael Blackwood</name>
+						<nation>JAM</nation>
+						<result>45.55</result>
+					</athlet>
+				</event>
+			</OlympicGame>
+			<OlympicGame place="Beijing" year="2008">
+				<event track="100m">
+					<athlet>
+						<name>Usain Bolt </name>
+						<nation>JAM</nation>
+						<result>09.69</result>
+					</athlet>
+					<athlet>
+						<name>Richard Thompson</name>
+						<nation>TTO</nation>
+						<result>09.89</result>
+					</athlet>
+					<athlet>
+						<name>Walter Dix</name>
+						<nation>USA</nation>
+						<result>09.91</result>
+					</athlet>
+					<athlet>
+						<name>Churandy Martina</name>
+						<nation>ANT</nation>
+						<result>09.93</result>
+					</athlet>
+					<athlet>
+						<name>Asafa Powell</name>
+						<nation>JAM</nation>
+						<result>09.95</result>
+					</athlet>
+					<athlet>
+						<name>Michael Frater</name>
+						<nation>JAM</nation>
+						<result>09.97</result>
+					</athlet>
+					<athlet>
+						<name>Marc Burns</name>
+						<nation>TTO</nation>
+						<result>10.01</result>
+					</athlet>
+					<athlet>
+						<name>Darvis Patton</name>
+						<nation>USA</nation>
+						<result>10.03</result>
+					</athlet>
+				</event>
+				<event track="200m">
+					<athlet>
+						<name>Usain Bolt</name>
+						<nation>JAM</nation>
+						<result>19.30</result>
+					</athlet>
+					<athlet>
+						<name>Churandy Martina</name>
+						<nation>ANT</nation>
+						<result>19.82</result>
+					</athlet>
+					<athlet>
+						<name>Shawn Crawford</name>
+						<nation>USA</nation>
+						<result>19.96</result>
+					</athlet>
+					<athlet>
+						<name>Walter Dix</name>
+						<nation>USA</nation>
+						<result>19.98</result>
+					</athlet>
+					<athlet>
+						<name>Brian Dzingai</name>
+						<nation>NAM</nation>
+						<result>20.22</result>
+					</athlet>
+					<athlet>
+						<name>Christian Malcolm</name>
+						<nation>GBR</nation>
+						<result>20.40</result>
+					</athlet>
+					<athlet>
+						<name>Kim Collins</name>
+						<nation>KNA</nation>
+						<result>20.59</result>
+					</athlet>
+				</event>
+				<event track="400m">
+					<athlet>
+						<name>LaShawn Merritt</name>
+						<nation>USA</nation>
+						<result>43.75</result>
+					</athlet>
+					<athlet>
+						<name>Jeremy Wariner</name>
+						<nation>USA</nation>
+						<result>44.74</result>
+					</athlet>
+					<athlet>
+						<name>David Neville</name>
+						<nation>USA</nation>
+						<result>44.80</result>
+					</athlet>
+					<athlet>
+						<name>Christopher Brown</name>
+						<nation>BAM</nation>
+						<result>44.84</result>
+					</athlet>
+					<athlet>
+						<name>Leslie Djhone</name>
+						<nation>FRA</nation>
+						<result>45.11</result>
+					</athlet>
+					<athlet>
+						<name>Martyn Rooney</name>
+						<nation>GBR</nation>
+						<result>45.12</result>
+					</athlet>
+					<athlet>
+						<name>Renny Quow</name>
+						<nation>TTO</nation>
+						<result>45.22</result>
+					</athlet>
+					<athlet>
+						<name>Johan Wissmann</name>
+						<nation>SWE</nation>
+						<result>45.39</result>
+					</athlet>
+				</event>
+			</OlympicGame>
+		</IOC>
+	</div>
+</data>

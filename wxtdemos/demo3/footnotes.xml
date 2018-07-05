@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Footnotes</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_footnotes.xml" 
+             sourcelocation="footnotes.xml" code="xmlcode"?>
+</div>
+<hr/>
+    <hr/>
+    <p>Duften minner mest om epler og har et lite streif av gjærbakst. 
+    Syrefrisk og harmonisk smak med god fylde, fin syrefasthet i ettersmaken. 
+    Duft av modne epler og gjær. Syrlig anslag, deretter streif av honning i smaken. 
+    Litt lite nyansert. Aromatisk duft av solbærblader, stikkelsbær, nesle og urter. 
+    Smaksrik og lang, med frisk bitterhet i ettersmaken. Rik duft av mineraler, sitrus og toast. 
+    Velbalansert og fyldig smak med både syretørrhet og fruktsødme. 
+    Kompleks og lang ettersmak med en liten brentkarakter i avslutningen. 
+    Brentpreg i duften med toastkarakter.
+    </p>
+    <p>Brentkarakter og sødme av rosiner<span class="fn">Rosiner er egentlig tørkede druer</span> og aprikos i duften. 
+    Tørkete frukter i smaken, vinen virker litt for oksydert, og har en relativt tørr ettersmak. 
+    Rødfiolett farge, og ferskt bærpreg med brent toastkarakter i duften. 
+    Bløt og fyldig morellsødme pluss fatpreg i smaken. Avrundet ettersmak, prisgunstig hverdagsvin for nå-konsum. 
+    Kompleks duft av solbær, lær og eikefat. Mykt anslag og moden smak med fine smaksnyanser. 
+    God fylde og fin trrhet i ettersmaken. Parker gir 86 poeng og antyder holdbarhet til 2007. 
+    </p>
+    <p>Fersk stil med duft av kirsebær <span class="fn">Bær fra kirsebærtreet. 
+    Spesielt de japanske kirsebærtrærne er kjente for sin blomsterprakt</span>, urter og eikefat. 
+    Saftig bærsmak, middels fylde og frisk ettersmak med lett snerp. 
+    Konsentrert solbæraroma i duften, fint balansert mot et edelt preg av sedertre. 
+    Bløtt smaksanslag, god fylde, fin syretørrhet og lett snerp. 
+    Solbærblader og solbær er tydeligste elementer i duften. 
+    </p>    
+    <?_wxt footnote form="normal"?>
+    </div>
+</data>

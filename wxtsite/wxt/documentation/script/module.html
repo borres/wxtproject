@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Module</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Script">Script</a>
+</div>
+<div class="level3">
+<a href="definitions.html" title="Definitions">Definitions</a>
+</div>
+<div class="level3 wxtselected">Module</div>
+<div class="level4">
+<a href="xmlcontent.html" title="XMLContent">XMLContent</a>
+</div>
+<div class="level4">
+<a href="htmlcontent.html" title="HTMLContent">HTMLContent</a>
+</div>
+<div class="level4">
+<a href="dbcontent.html" title="DBContent">DBContent</a>
+</div>
+<div class="level4">
+<a href="txtcontent.html" title="TXTContent">TXTContent</a>
+</div>
+<div class="level4">
+<a href="xmlcontentlist.html" title="XMLContentList">XMLContentList</a>
+</div>
+<div class="level4">
+<a href="txtcontentlist.html" title="TextContentList">TextContentList</a>
+</div>
+<div class="level4">
+<a href="summary.html" title="Summary">Summary</a>
+</div>
+<div class="level3">
+<a href="dating.html" title="*Dating">*Dating</a>
+</div>
+<div class="level2">
+<a href="../pi/start.html" title="PI">PI</a>
+</div>
+<div class="level2">
+<a href="../general/start.html" title="Concepts">Concepts</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Script: module-element</h1>
+<p>
+  A module is the targets of building. 
+  A module is normally constructed by filling extracts from content-files or fragments into a template.
+  This simple model may be modified in many ways, mainly by means of transformations.
+ </p>
+<p>
+  The script may contain any number of modules,
+  and each module may contain any number of modules.
+  The module-tree is defining the structure of the website.
+ </p>
+<pre class="lang readyandpretty skiptranslate">
+&lt;module name="" 
+          id=""
+          author=""
+          description="" 
+          location="" 
+          template=""
+          transformation=""
+          books=""&gt;
+    ...
+&lt;/module&gt;</pre>
+<table cellpadding="10px">
+  <tr>
+    <td style="vertical-align:top">
+<strong>name</strong>(mandatory)</td>
+    <td>Any string that represents the Module in tables of contents etc.
+    Available as fragment <em>_name</em>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>description</strong>(optional)</td>
+    <td>Any string that describes the module. Default is name. 
+    Available as fragment <em>_description</em>
+    </td>
+  </tr>
+   <tr>
+    <td style="vertical-align:top">
+<strong>id</strong>(optional)</td>
+    <td>Any string that identifies the module. Default id is name.
+    Avaliable as fragment: <em>_id</em>. The id is not mandatory, 
+	but it is strongly recommanded to give a module an id and
+	to use a value that contains only <strong>ascii-letters</strong> and _. The id will be used
+	to produce anchors and links and you may want to run WXT from the commandline with specific module ids.
+	<br/>
+	The id must be <strong>unique</strong> in the context of a script.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>author</strong>(optional)</td>
+    <td>The id of an author fragment as defined in an author-element in the
+	definitions part of the script. If no author is given it defaults
+    to the default author. The default author may be set in the script as
+    &lt;author id="_defaultauthor" name="anyname"/&gt;. 
+    If this is not set it defaults to: "Site author".
+	The author is available as fragment  <em>_author</em> within the module.
+	</td>
+  </tr>
+   <tr>
+    <td style="vertical-align:top">
+<strong>template</strong>(optional)</td>
+    <td>Identification of a template. Either by location 
+    or by id (see: <span class="wxtxlink">
+<a href="template.html" title="Template">Template</a>
+</span>).
+    </td>
+  </tr>
+   <tr>
+    <td style="vertical-align:top">
+<strong>transformation</strong>(optional)</td>
+    <td>A transformation identifier 
+    (see: <span class="wxtxlink">
+<a href="transformation.html" title="Transformation">Transformation</a>
+</span>).
+    This transformation is applied before the module is saved.
+    You may set parameters to the transformation, by enclosing 
+    a comma-separated list of name='value' definitions withinin (). 
+    Example for transformation with id T: 
+    T(name='ole',address='halden')
+    </td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align:top">
+<strong>location</strong>(optional)</td>
+    <td>An absolute URI identifying a filelocation,
+        or an URI relative to the script. The module will be saved to this location.
+        The location value may contain pathfragments.
+   </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>anchor</strong>(deprecated, use pathfragment)</td>
+    <td>An absolute or relative path to a catalog which will serve as anchor, 
+     referencecatalog, for this modules and child modules. All relative addresses
+     are considered relative to this anchor.
+     The anchor may contain pathfragments.
+     If the anchor is relative, it is calculated relative to the 
+     parent modules anchor. If the module is a rootmodule it is 
+     calculated relative to the catalog that contains the script.
+    You can achive the same effect by using pathfragments.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>books</strong>(optional)</td>
+    <td>A commaseparted string of books that this
+        module is considered to be a part of. 
+        Books is a way of grouping modules. Default value is <em>_all</em>.
+        The value <em>_never</em> will prevent the module from appearing
+        in any lists, like modulemap and modulemenu.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>output-format</strong>(optional)</td>
+    <td>Possible values are <em>xml</em>, <em>html</em>, <em>xhtml</em> and <em>text</em>.
+        This will override the default value ,<em>html</em>, and possible
+        value set as option in the script. It will
+        be effective only for this module.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align:top">
+<strong>runbefore</strong>(optional)</td>
+    <td>Runs a named <span class="wxtxlink">
+<a href="command.html" title="Command">Command</a>
+</span> before this module is built.
+    
+    </td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align:top">
+<strong>runafter</strong>(optional)</td>
+    <td>Runs a named <span class="wxtxlink">
+<a href="command.html" title="Command">Command</a>
+</span> after this module is built.
+    </td>
+  </tr>
+</table>
+<p>A module element may contain any number of the following elements:
+</p>
+<ul>
+ <li>Module</li>
+ <li>
+<span class="wxtxlink">
+<a href="xmlcontent.html" title="XMLContent">XMLContent</a>
+</span>
+</li>
+ <li>
+<span class="wxtxlink">
+<a href="xmlcontentlist.html" title="XMLContentList">XMLContentList</a>
+</span>
+</li>
+ <li>
+<span class="wxtxlink">
+<a href="txtcontent.html" title="TXTContent">TXTContent</a>
+</span>
+</li>
+ <li>
+<span class="wxtxlink">
+<a href="txtcontentlist.html" title="TextContentList">TextContentList</a>
+</span>
+</li>
+ </ul>
+<p>and a module may contain one element of type 
+ <span class="wxtxlink">
+<a href="summary.html" title="Summary">Summary</a>
+</span>
+ </p>
+<p>Examples:</p>
+<pre class="lang readyandpretty skiptranslate">
+&lt;module name="MyBook" 
+          location="{mysections}/section3/myfile.hml"
+          template="P"
+          books="mylibrary"
+          id="mybook"
+          description="some temporary stuff" &gt;
+    ...
+&lt;/module&gt;</pre>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

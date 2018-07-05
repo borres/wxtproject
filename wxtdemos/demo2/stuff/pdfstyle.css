@@ -1,0 +1,66 @@
+@page { size: A4;
+        margin: 100pt 40pt 40pt 90pt;
+        @top-left {
+	        content:url(http://www.ia.hiof.no/~borres/common/gfx/printlogo.gif);
+        }
+        @top-right {
+	        content:"Obama demosite";
+	        font-size:24px;
+        }
+        @bottom-right {
+          content: counter(page);
+	        font-style: italic;
+	        font-size:11px;
+          border-top-style:solid;
+          border-top-width:thin;
+        }
+        @bottom-left {
+          content:"B. Stenseth";
+	        font-style: italic;
+	        font-size:11px;
+          border-top-style:solid;
+          border-top-width:thin;
+        }
+}
+@page:first { 
+        @top-left {
+	        content:url(http://www.ia.hiof.no/~borres/common/gfx/printlogo_txt.gif);
+        }
+        @top-right {
+	        content:"";
+	        font-size:24px;
+        }
+        @bottom-right {
+          content:"";
+        }
+}
+
+
+
+table,fieldset,
+.javascriptcode,.pythoncode,.javascriptcode,.javacode,.mlcode
+{page-break-inside: avoid}
+
+fieldset{
+	border-left:1px solid gray;
+	padding:10px;
+	padding-left:20px
+	}
+
+legend {
+  display:block;
+  margin-bottom:10px;
+  font-weight:bold;
+  font-size:110%;
+  text-align:left;
+  }
+
+h1,h3,h4,h5{
+   background-color:#FFFFFF;
+}
+
+h2{
+   background-color:#FFFFFF;
+}
+
+.demo-div{padding-top:20px}

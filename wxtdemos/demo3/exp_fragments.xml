@@ -1,0 +1,25 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Fragments&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_fragments.xml" 
+             sourcelocation="fragments.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">h2</span>&gt;Std properties&lt;/<span class="tagname">h2</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;name: <span class="process">&lt;?_wxt fragment id="_name"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;description: <span class="process">&lt;?_wxt fragment id="_description"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;id: <span class="process">&lt;?_wxt fragment id="id"?&gt;</span>&lt;/<span class="tagname">div</span>&gt; 
+    &lt;<span class="tagname">div</span>&gt;summary: <span class="process">&lt;?_wxt fragment id="_summary"?&gt;</span>&lt;/<span class="tagname">div</span>&gt; 
+        
+    &lt;<span class="tagname">h2</span>&gt;Script-defined fragments&lt;/<span class="tagname">h2</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;as is: <span class="process">&lt;?_wxt fragment id="f1"?&gt;</span>&lt;/<span class="tagname">div</span>&gt; 
+    &lt;<span class="tagname">div</span>&gt;with pathfragment: <span class="process">&lt;?_wxt fragment id="f2"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;  
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt fragment id="fiso"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt fragment id="fisoexplisitt"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;        
+    &lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt fragment id="futf"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;        
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

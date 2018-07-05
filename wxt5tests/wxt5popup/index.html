@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">Welcome</div>
+<div class="level1">
+<a href="code.html" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">Pretty Code</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">Pretty Code</div>Demonstration of popup programcode</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:popup</h1>
+<p>
+   Testing popup for text and html
+</p>
+<h2>Simple text</h2>
+<p>txt - as is </p>
+<div>
+<span class="wxtpopup" onclick="javascript:simplepopup('content/sonette.txt','popup','*')" title="popup">content/sonette.txt</span>
+</div>
+<h2>Strait HTML</h2>
+<p>ready html-page - as is </p>
+<div>
+<span class="wxtpopup" onclick="javascript:simplepopup('content/sonette.html','popup','*')" title="popup">content/sonette.html</span>
+</div>
+<h2>Extracted HTML</h2>
+<p>extracts from html-page - as is </p>
+<div>
+<span class="wxtpopup" onclick="javascript:simplepopup('content/sonette_html.html','popup','*')" title="popup">content/sonette_html.html</span>
+</div>
+<h2>Extracted HTML</h2>
+<p>extracts from html-page - parsed </p>
+<div>
+<span class="wxtpopup" onclick="javascript:simplepopup('content/sonette_html_parsed.html','popup','*')" title="popup">content/sonette_html_parsed.html</span>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<span class="wxtpopup" onclick="javascript:simplepopup('content/welcome_xml.html','popup','*')" title="popup">content/welcome_xml.html</span>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: references-element</h1>
+
+ <p>
+  The purpose of a references element is to collect all (or many) references that you intend to use
+  in your project in a file.
+  It may simplify maintainance considerably, and it opens for a systematic reference policy.
+  You may access the individual reference by PI <?_wxt xlink id="PIreference"?> 
+  and you may produce reference lists by PI <?_wxt xlink id="PIreferencelist"?>.
+  You may even control any URI's in a reference by PI <?_wxt xlink id="PIreftest"?>.
+  </p>
+  <p>
+  The definitions-element may contain any number of references elements.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<references location=""/>]]>
+</pre>
+
+<table cellpadding="10px">
+
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>An URI which is absolute or relative to the script anchor.
+    </td>
+  </tr>
+
+</table>
+<p>The legal elements in a reference are (in any order):</p>
+<ul>
+    <li>title</li>
+    <li>authors</li>
+    <li>year</li>
+    <li>chaptertitle</li>
+    <li>journal</li>
+    <li>editor</li>
+    <li>place</li>
+    <li>publisher</li>
+    <li>pages</li>
+    <li>isbn</li>
+    <li>uri (with an optional attribute: dateread)</li>
+    <li>text</li>
+    <li>categories</li>
+</ul>
+
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<references location="myrefs.xml"/>]]>
+</pre>
+<p>
+A sample reference file:
+</p>
+<div>
+<?_wxt expandable location="samples/myrefs.xml"  lang="lang-xml" title="myrefs.xml"?>
+</div>
+<p>
+ Reference files are validated according to this schema:
+</p>
+<div>
+<?_wxt expandable location="refs.xsd"  lang="lang-xml" title="refs.xsd"?>
+</div>
+
+<p>
+ See <?_wxt xlink id="aboutreferences"?> for a full description.
+</p>
+
+</body>
+</html>

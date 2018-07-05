@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('page11',event);" onmouseover="javascript:popunpop('page11',event);">Welcome</a>
+<div class="wxtsummary" id="page11" style="display: none;">
+<div class="header">Welcome</div>Demonstration of DB-import</div>
+</div>
+<div class="level1 wxtselected">Page1</div>
+<div class="level1">
+<a href="page2.html" onmouseout="javascript:popunpop('page12',event);" onmouseover="javascript:popunpop('page12',event);">Page2</a>
+<div class="wxtsummary" id="page12" style="display: none;">
+<div class="header">Page2</div>Demonstration of DB-production, XML extract</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importdb</h1>
+<h2>Case 1</h2>
+<p>
+ Doing two queries in one PI, saving the result of both in one file,
+<span class="wxtpopup" onclick="javascript:simplepopup('content/dbdump_xml.html','popup','*')" title="popup">dbdump.xml</span>, 
+ and showing results from the first query.
+</p>
+<p>Some bad rose wines from France</p>
+<div>
+<div class="dbresult" xmlns="">
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>dice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rose</td>
+<td>Rosé Chantal 2002</td>
+<td>2</td>
+</tr>
+<tr>
+<td>rose</td>
+<td>Rosé de la Chevalière 2004</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+<h2>Case 2</h2>
+<p>Picking up the dump from case 1 and showing results of the second query
+    using a transformation, <span class="wxtpopup" onclick="javascript:simplepopup('content/dbvin2_xsl.html','popup','*')" title="popup">dbvin2.xsl</span>
+    </p>
+<p>Description of some good white wines from Italy</p>
+<div>
+<div id="root" xmlns="">
+<h1>Wines</h1>
+<p>(Norwegian text)</p>
+<dl>
+<dt>Soave Classico San Michele 2002</dt>
+<dd>Tiltalende, lett søtlig duft med hint av  melon og gule epler. Ren og frisk smak med delikat fruktighet, ettersmaken blir behagelig avrundet takket være et fint avstemt syrenivå.</dd>
+<dt>Il Falchetto Moscato dAsti Tenuta del Fant 2003</dt>
+<dd>Tiltalende sødme av muskatelldruer i duften. Flott smaksintensitet med hint av jordbær, pærer og marsipan, godt skum og frisk ettersmak. Veldig bra til jordbærdesserter.</dd>
+<dt>Soave Classico San Michele 2003</dt>
+<dd>Søtlig duft med hint av melon, gule epler og urter. Ren og frisk smak med delikat fruktighet og rund fylde, ettersmaken har en liten mandelaktig bitterhet. Mye smak til å være en soave.</dd>
+<dt>Saracco Moscato dAsti 2003</dt>
+<dd>Lett musserende, muskatell-søtlig hvitvin som passer fantastisk bra til jordbær. Duft og smak har både muskatellsødme og sitrusfriskhet, ettersmaken er velbalansert og frisk.</dd>
+<dt>Bianco di Custoza 2003</dt>
+<dd>Denne vinen bør drikkes kjøleskapskald for å bevare sin tiltalende friskhet. 2003 er beste årgang vi har smakt av denne vinen med duft av sitrusblomster og med ferskensødme i smaken. Bløt og mild smak, ypperlig terrassevin for dem som ikke liker «sur» hvitvin.</dd>
+<dt>Planeta Chardonnay 2002</dt>
+<dd>Modent duftpreg med innslag av tørkete aprikoser, sukat og toast. Rik og aromatisk smak med både marsipanaktig sødme og veldig bra syre. Lang ettersmak med brent fatkarakter i avslutningen. Spesiell vin, men vi likten!</dd>
+<dt>Ben Ryé Passito di Pantelleria 2003</dt>
+<dd>Basis. Sødmerik duft av aprikos, rosiner og honning med en litt brent undertone. Meget søt smak i fin balanse mot friskheten i ettersmaken. (NB!37,5 cl halvflaske)</dd>
+<dt>Planeta La Segreta Bianco 2003</dt>
+<dd>Søtlig duft med nyanser av sitrus og aprikos. Frisk og god fruktighet i smaken, rund fylde og behagelig ettersmak med en liten bitterhet.</dd>
+<dt>Pietramarina Etna Bianco Superiore 2000</dt>
+<dd>Lime og mineraler i duften. Smaksintens vin med fin balanse mellom fruktsødme og syrlighet. God fylde, lang og rik ettersmak med akkurat passelig bitterhet.</dd>
+<dt>Planeta Chardonnay 2003</dt>
+<dd>Sødmerik duft med innslag av tørkete aprikoser, sukat og toast. Rik og aromatisk smak med både marsipanaktig sødme og veldig bra syre. Lang ettersmak, friskere enn 2002-årgangen.</dd>
+<dt>Camastra Nero dAvola Merlot 2001</dt>
+<dd>Frisk solbærsødme og fatpreg i duft og smak. Slank og kjølig fruktighet, god fruktkonsentrasjon, frisk og velbalansert ettersmak med lett snerp.</dd>
+<dt>Planeta Santa Cecilia 2001</dt>
+<dd>Varmt preget duft med hint av lær og svisker. Morellsødme, middels fylde og bra smaksintensitet takket være god kirsebærsyrlighet i ettersmaken.</dd>
+<dt>Campanaro Fiano di Avellino 2003</dt>
+<dd>Produsentens suverent beste hvitvin, med kompleks duft av aprikos og appelsinskall med fint integrert eikepreg. Moden og fyldig smak med flott fruktkonsentrasjon og fint krydret ettersmak som varer veldig lenge.</dd>
+<dt>Poderi di Carlo Sauvignon 2004</dt>
+<dd>Basis. Aromatisk duft med innslag av solbærblader og nesle. Fyldig smak med god fruktsødme som glir fint over i den syrefriske ettersmaken.</dd>
+</dl>
+</div>
+    </div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/page1.xml</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="page18">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;welcome&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:importdb&lt;/h1&gt;
+ 
+ 
+&lt;h2&gt;Case 1&lt;/h2&gt;
+&lt;p&gt;
+ Doing two queries in one PI, saving the result of both in one file,
+&lt;?_wxt popup sourcelocation="dbdump.xml" 
+       location="dbdump_xml.html" text="dbdump.xml"
+       lang="lang-xml"?&gt;, 
+ and showing results from the first query.
+&lt;/p&gt;
+&lt;p&gt;Some bad rose wines from France&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&amp;password=student"
+    sql="use vin;
+        select type,name,dice from wines where country = 'Frankrike' and type='rose' and dice &lt; '3';
+        select type,name,description,dice from wines where country = 'Italia';"
+    encoding="utf-8"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?&gt;
+    &lt;/div&gt;
+  
+&lt;h2&gt;Case 2&lt;/h2&gt;
+    &lt;p&gt;Picking up the dump from case 1 and showing results of the second query
+    using a transformation, &lt;?_wxt popup sourcelocation="dbvin2.xsl" 
+       location="dbvin2_xsl.html" text="dbvin2.xsl"
+       lang="lang-xml"?&gt;
+    &lt;/p&gt;
+    &lt;p&gt;Description of some good white wines from Italy&lt;/p&gt;
+    &lt;div&gt;
+&lt;?_wxt importxml 
+    location="dbdump.xml"
+    xpath="//div[@id='root']"
+    transformation="vindb2(type='white',dice='6')"?&gt;
+    &lt;/div&gt;
+ 
+    
+&lt;hr/&gt;
+     
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="page1.xml" lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<!-- empty: <?_wxt reflist  scope="local" ?> --> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

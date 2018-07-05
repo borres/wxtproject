@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>table</title>
+</head>
+    <body>
+        
+<div class="mainblock">
+
+<h1>Default table</h1>
+
+<pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&amp;password=student"
+    sql="use vin;
+        select type,name,dice,price from wines where country = 'Spania' and type= 'white';
+        select type,name,description,dice from wines where country = 'Frankrike';"
+    encoding="UTF-8"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?&gt;
+</pre>
+<p>
+ Note the xpath. One div class="dbresult" for each query
+</p>
+<h3>Wines from Spain </h3>
+<div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&password=student"
+    sql="use vin;
+        select type,name,dice,price from wines where country = 'Spania' and type= 'white';
+        select type,name,dice from wines where country = 'Frankrike' and type='sparkling' and dice=6;"
+    encoding="UTF-8"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?>
+</div>
+
+<h3>Wines from France </h3>
+<p> we use the dbaccess above and pick up the stored result</p>
+<div>
+<?_wxt importxml location="dbdump.xml" transformation="_table" xpath="//div[@class='dbresult' and position()='2']"?>
+</div>
+
+<h3>Winedescriptions from France </h3>
+<p> we access non-ascii strings</p>
+<div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&password=student"
+    sql="use vin;
+        select name,description from wines where country = 'Frankrike' and type='sparkling' and dice=6;"
+    encoding="UTF-8"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?>
+</div>
+</div>
+
+</body>
+</html>

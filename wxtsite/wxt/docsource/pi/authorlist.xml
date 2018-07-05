@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: authorlist</h1>
+<p>
+  The purpose is to produce 
+  a complete or partial list of authors and the modules they
+  have produced.
+</p>
+<pre class="piline">
+&lt;?_wxt authorlist?&gt;
+</pre>
+
+
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>idlist</strong> (optional)</td>
+    <td>A commaseparated list of module ids that we want to include.
+      If this is set, the others (select, root and books) are ignored.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>root</strong> (optional)</td>
+    <td>The id of the module that defines the subtree we will consider for.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>books</strong> (optional)</td>
+    <td>A commaseparated list of book ids that we want to include.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>select</strong> (optional)</td>
+    <td>Possible values are _siblings and _children.
+    
+     </td>
+  </tr>
+  
+  
+    <tr>
+    <td  style="vertical-align:top"><strong>scriptpath</strong> (optional)</td>
+    <td>The scriptpath is an xpath that is used on the script to select modules.<br/>
+       Sample: //module[@template='P'] get all modules with template P.    
+     </td>
+  </tr>
+  
+   <tr>
+    <td  style="vertical-align:top"><strong>authors</strong> (optional)</td>
+    <td>A commaseparated list of author id's that we will include.
+	If not set, all authors are included.  
+     </td>
+  </tr>
+  
+   <tr>
+    <td  style="vertical-align:top"><strong>dropdefault</strong> (optional)</td>
+    <td>May be <em>yes</em> or <em>no</em>.
+	 Default is <em>yes</em>, which means that the default author is omitted from the list.  
+     </td>
+  </tr>
+   
+   <tr>
+    <td  style="vertical-align:top"><strong>cols</strong> (optional)</td>
+    <td>The number of columns.
+	 Default is 1.  
+     </td>
+  </tr>
+ 
+   <tr>
+    <td  style="vertical-align:top"><strong>show</strong> (optional)</td>
+    <td>Possible values are <em>full</em> or <em>short</em>.
+	 Default is <em>short</em> which is interpreted as the attribute in the fragment that desribes the author.
+     </td>
+  </tr> 
+  </table>
+<p>
+    The selected set of modules will be assembled according to the following rule:
+</p>
+<ul>
+    <li>if <em>idlist</em> is set, the collection is as defined in the idlist.</li>
+    <li>if <em>idlist</em> is not set, the collection is made up as the intersection
+        of the modules spesified by <em>root</em>, <em>book</em>, <em>scriptpath</em> and <em>select</em>.</li>
+    <li>if neither <em>idlist</em>, <em>root</em>, <em>book</em>, <em>scriptpath</em> or <em>select</em> is set, 
+	all modules are selected, except those with books attribute: <em>_never</em>.</li>
+</ul>
+
+<p class="stylefoot">
+Styleclass(es) describing this PI is: <em>wxtauthorlistn</em>, where n is the number of columns selected,
+see distributed std styles.
+</p>
+
+
+
+
+
+</body>
+</html>

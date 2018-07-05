@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>PI: referencetest</h1>
+<p>
+ The purpose of this PI is to perform an existencetest on all URI's defined in references.
+ See <?_wxt xlink id="References"?>
+ </p>
+<pre class="piline">
+&lt;?_wxt referencetest?&gt;
+</pre> 
+<p>
+ This PI will produce a list of all URI's in references, each line stating:<br/>
+ returncode for an accessattempt, the id of the reference and the URI.
+</p>
+<p>
+ This is a timeconsuming operation and should probably not be part of your day-to-day building.
+</p>
+
+
+
+<p>There are no parameters</p>
+
+
+</body>
+</html>

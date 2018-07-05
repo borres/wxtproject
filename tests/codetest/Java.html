@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Java</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/wxtjs.js" type="text/javascript"> </script>
+	<link href="templates/template.css" rel="STYLESHEET">
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="wxtmodulemenu"><div class="level1"><a href="index.html" title="Velkommen til colorcoding">Velkommen</a></div><div class="level1">Java</div><div class="level1"><a href="Javascript.html" title="Javascript">Javascript</a></div><div class="level1"><a href="Python.html" title="Python">Python</a></div><div class="level1"><a href="XML.html" title="XML">XML</a></div><div class="level1"><a href="XSLT.html" title="XSLT">XSLT</a></div><div class="level1"><a href="CSHARP.html" title="C#">C#</a></div><div class="level1"><a href="ASPX.html" title="ASPX">ASPX</a></div><div class="level1"><a href="C.html" title="C">C</a></div><div class="level1"><a href="HTML.html" title="HTML">HTML</a></div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>Java</h1><p>
+   encoding
+</p><h2>textimport</h2><p>Simple</p><div>
+<pre class="javacode">
+<span class="comment">/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+*/</span>
+<span class="word">public</span> <span class="word">static</span> String cleanStringForUseAsFilePath(String S)
+{
+   S=S.replace("<span class="literal">http://"</span>, "<span class="literal">"</span>);
+   S=S.replace("<span class="literal">file://"</span>, "<span class="literal">"</span>);
+
+   StringBuffer result=<span class="word">new</span> StringBuffer(50);
+   <span class="word">for</span>(<span class="word">int</span> ix=0;ix&lt;S.length();ix++)
+   {
+     <span class="word">char</span> c=S.charAt(ix);
+     <span class="word">if</span>( (!Character.isDigit(c)) &amp;&amp; 
+       (!Character.isLetter(c))&amp;&amp;
+       (c!='<span class="literal">.'</span>))
+         result.append('<span class="literal">_'</span>);
+     <span class="word">else</span>
+       result.append(c);
+   }
+   String s=result.toString();
+   <span class="word">return</span> s;
+}
+</pre>
+</div><p>bad syntax 1, not closed comment</p><div>
+<pre class="javacode">
+<span class="comment">/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+
+public static String cleanStringForUseAsFilePath(String S)
+{
+   S=S.replace("http://", "");
+   S=S.replace("file://", "");
+
+   StringBuffer result=new StringBuffer(50);
+   for(int ix=0;ix&lt;S.length();ix++)
+   {
+     char c=S.charAt(ix);
+     if( (!Character.isDigit(c)) &amp;&amp; 
+       (!Character.isLetter(c))&amp;&amp;
+       (c!='.'))
+         result.append('_');
+     else
+       result.append(c);
+   }
+   String s=result.toString();
+   return s;
+}
+</span></pre>
+</div><h2>Dynamic </h2><p>Simple</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('java/simple1.txt',this)">_</span>java/simple1.java</div><div class="content"> </div></div>
+</div><p>bad syntax 1, not closed comment</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('java/bad1.txt',this)">_</span>java/bad1.java</div><div class="content"> </div></div>
+</div><h2>preexpand</h2><p>Simple</p><pre class="javacode">
+<span class="comment">/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+*/</span>
+<span class="word">public</span> <span class="word">static</span> String cleanStringForUseAsFilePath(String S)
+{
+   S=S.replace("<span class="literal">http://"</span>, "<span class="literal">"</span>);
+   S=S.replace("<span class="literal">file://"</span>, "<span class="literal">"</span>);
+   StringBuffer result=<span class="word">new</span> StringBuffer(50);
+   <span class="word">for</span>(<span class="word">int</span> ix=0;ix &lt; S.length();ix++)
+   {
+     <span class="word">char</span> c=S.charAt(ix);
+     <span class="word">if</span>( (!Character.isDigit(c)) &amp;&amp;
+       (!Character.isLetter(c))&amp;&amp;
+       (c!='<span class="literal">.'</span>))
+         result.append('<span class="literal">_'</span>);
+     <span class="word">else</span>
+       result.append(c);
+   }
+   String s=result.toString();
+   <span class="word">return</span> s;
+}
+</pre><p>bad syntax 1, not closed comment</p><pre class="javacode">
+<span class="comment">/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+public static String cleanStringForUseAsFilePath(String S)
+{
+   S=S.replace("http://", "");
+   S=S.replace("file://", "");
+   StringBuffer result=new StringBuffer(50);
+   for(int ix=0;ix &lt;S.length();ix++)
+   {
+     char c=S.charAt(ix);
+     if( (!Character.isDigit(c)) &amp;&amp;
+       (!Character.isLetter(c))&amp;&amp;
+       (c!='.'))
+         result.append('_');
+     else
+       result.append(c);
+   }
+   String s=result.toString();
+   return s;
+}
+</span></pre><p>CDATA</p><div>must be tight in the sense that the CDATA node must be the only one</div><pre class="javacode">
+<span class="comment">/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+*/</span>
+<span class="word">public</span> <span class="word">static</span> String cleanStringForUseAsFilePath(String S)
+{
+   S=S.replace("<span class="literal">http://"</span>, "<span class="literal">"</span>);
+   S=S.replace("<span class="literal">file://"</span>, "<span class="literal">"</span>);
+   StringBuffer result=<span class="word">new</span> StringBuffer(50);
+   <span class="word">for</span>(<span class="word">int</span> ix=0;ix &lt; S.length();ix++)
+   {
+     <span class="word">char</span> c=S.charAt(ix);
+     <span class="word">if</span>( (!Character.isDigit(c)) &amp;&amp;
+       (!Character.isLetter(c))&amp;&amp;
+       (c!='<span class="literal">.'</span>))
+         result.append('<span class="literal">_'</span>);
+     <span class="word">else</span>
+       result.append(c);
+   }
+   String s=result.toString();
+   <span class="word">return</span> s;
+}
+</pre>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: summary-element</h1>
+<p>
+  The purpose of a summary element is to have a nontrivial
+  description of a module that is available without investigating the module itself.
+  A module-element may contain only one summary-element.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<summary location=""> .. </summary>]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(optional)</td>
+    <td>An uri to a file containing the summary.
+        If <em>location</em> is set, the
+    content in the element is ignored. 
+    The location is corrected for pathfragments.
+    </td>
+  </tr>
+</table>
+<p>The content of a summary element may be a simple text 
+or any legal XML-fragment wrapped as CDATA. All addresses
+in a summary element must either be absolute or relative to
+the module that owns the summary.
+</p>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang-html">&lt;summary&gt;
+&lt;![CDATA[
+    &lt;span style="font-weight:bold"&gt;
+        A wonderfull page with all essentials
+    &lt;/span&gt;
+]]&gt;
+&lt;/summary&gt;
+
+</pre>
+<p>or</p>
+<pre class="prettyprint lang-html"><![CDATA[<summary location="summary12.txt"></summary>]]>
+</pre>
+</body>
+</html>
+

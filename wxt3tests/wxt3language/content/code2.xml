@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing languages</h1>
+<p>
+   Testing import "pretty" code. 
+</p>
+ 
+<h2>Text import</h2> 
+<h3>Java</h3>
+ 
+<p>short and simple</p>
+<div>
+<?_wxt importtxt location="java/simple1.java" lang="lang-j"?>
+</div>
+ 
+
+
+<h3>Python</h3>
+<p>simple</p>
+<div>
+<?_wxt importtxt location="python/domore.py" lang="lang-py"?>
+</div>
+
+<h2>Included</h2>
+
+
+<h3>Java in CDATA-section</h3>
+<pre class="prettyprint lang-j">
+<![CDATA[/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+*/
+public static String cleanStringForUseAsFilePath(String S)
+{
+	 S=S.replace("http://", "");
+	 S=S.replace("file://", "");
+
+	 StringBuffer result=new StringBuffer(50);
+	 for(int ix=0;ix < S.length();ix++)
+	 {
+		 char c=S.charAt(ix);
+		 if( (!Character.isDigit(c)) && 
+			 (!Character.isLetter(c))&&
+			 (c!='.'))
+				 result.append('_');
+		 else
+			 result.append(c);
+	 }
+	 String s=result.toString();
+	 return s;
+}
+]]>
+</pre>
+
+<h3>Python</h3>
+<p>direct</p>
+<pre class="prettyprint lang-py">
+import httplib, urllib
+try:
+    # prepare parameters
+    params = urllib.urlencode({'navn': 'ole', 'adresse': 'mysen'})
+    # prepare header
+    headers = {"Content-type": "application/x-www-form-urlencoded",
+               "Accept": "text/plain"}
+    # connect
+    conn = httplib.HTTPConnection("www.ia.hiof.no")
+    conn.request("POST", "/~borres/cgi-bin/forms/std.py", params, headers)
+    r1 = conn.getresponse()
+    # ok ?
+    if r1.status!=200:
+        print 'access problem'
+        print r1.status, r1.reason
+    else:
+        # get data
+        data = r1.read()
+        print data
+    conn.close()
+except:
+    print 'cannot access data'
+</pre>
+
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="code2.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

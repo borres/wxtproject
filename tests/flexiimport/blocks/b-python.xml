@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+
+<h1>From Python</h1>
+<p>Run a pythonscript and dont parse result</p>
+<div>
+  <h1>Latin</h1>
+  <?_wxt importtxt   
+    location="http://www.it.hiof.no/~borres/cgi-bin/latin/dagenslatin.py"?>
+</div>
+<hr/>
+<p>Run a pythonscript and parse result</p>
+<div>
+  <h1>Latin</h1>
+  <?_wxt importtxt   
+    location="http://www.it.hiof.no/~borres/cgi-bin/latin/dagenslatin.py" parse="yes"?>
+</div>
+<hr/>
+<p>
+It is thus possible to use CGI to produce fragments !
+</p>
+
+
+
+
+</div>
+
+</body>
+</html>

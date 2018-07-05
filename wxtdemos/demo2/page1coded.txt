@@ -1,0 +1,36 @@
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">main</span>"&gt;
+&lt;<span class="tagname">h1</span>&gt;Module 1&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">img</span> <span class="attname">style</span>="<span class="attvalue">float:left</span>" <span class="attname">src</span>="<span class="attvalue">http://www.ia.hiof.no/~borres/self/bs1.png</span>" <span class="attname">alt</span>="<span class="attvalue">bs1</span>"/&gt;
+&lt;<span class="tagname">p</span>&gt;
+Duften minner mest om epler og har et lite streif av gjærbakst. 
+Syrefrisk og harmonisk smak med god fylde, fin syrefasthet i ettersmaken. 
+Duft av modne epler og gjær. Syrlig anslag, deretter streif av honning i smaken. 
+Litt lite nyansert. Aromatisk duft av solbærblader, stikkelsbær, nesle og urter. 
+Smaksrik og lang, med frisk bitterhet i ettersmaken. 
+Rik duft av mineraler, sitrus og toast. 
+Velbalansert og fyldig smak med både syretørrhet og fruktsødme. 
+Kompleks og lang ettersmak med en liten brentkarakter i avslutningen. 
+Brentpreg i duften med toastkarakter. 
+&lt;/<span class="tagname">p</span>&gt;
+
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">pagesource</span>" <span class="attname">style</span>="<span class="attvalue">clear:both</span>"&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+  &lt;<span class="tagname">div</span>&gt;
+  <span class="process">&lt;?_wxt expand location="page1coded.txt" 
+       sourcelocation="page1.xml" 
+       expanded="no" code="xmlcode"?&gt;</span>
+  &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

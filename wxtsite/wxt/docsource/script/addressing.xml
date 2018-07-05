@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: addressing-element</h1>
+<p>
+  The idea of an addressing element is to tell WXT which addresses
+  that should be considered for readdressing when xml-fragments are moved,
+  for instance from a content file to a template.
+  The definitions element may contain any number of addressing elements.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<addressing tag="" attribute=""/>]]>
+</pre>
+
+<p>You should consider following preset:</p>
+<pre class="prettyprint lang"><![CDATA[<addressing tag="a" attribute="href" />
+<addressing tag="img" attribute="src" />
+<addressing tag="script" attribute="src" />
+<addressing tag="link" attribute="href" />
+]]>
+</pre>
+
+<p>
+    The attributes named in these elements will be subject to address calculation when
+    file fragments are moved.
+</p>
+<p>
+ <em>NOTE:</em> The tags and attributes given are case sensitive. 
+</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>tag</strong>(mandatory)</td>
+    <td>Any string that identifies a tag name for an element that contains
+    an attribute which is a location/uri that is a candidate for readdressing
+    when we move xmlfragments.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>attribute</strong>(mandatory)</td>
+    <td>Any string that identifies an attribute in an element with name tag, see above.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>cancel</strong>(optional)</td>
+    <td>Value <em>yes</em> will turn addressing off for this elements with this attribute.
+        <em>no</em> is default. The reason for turning addressing off is mainly 
+        processing speed.
+    </td>
+  </tr></table>
+
+<p>An addressing element may not contain any elements.
+</p>
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<addressing tag="a" attribute="href" cancel="yes"/>]]>
+</pre>
+
+
+</body>
+</html>

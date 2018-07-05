@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: logfile-element</h1>
+<p>
+  The logfile-element must be contained in a definitions element.
+  A definitions element may contain one logfile element.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<logfile location=""/>]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>URI to file which is absolute or relative to the script.
+        <em>location</em> is corrected for pathfragments.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>maxlog</strong>(optional)</td>
+    <td>The max length of the logfile. Default is 100000 chars.
+	A value of 0 will erase the log between each job.
+    </td>
+  </tr>
+
+</table>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<logfile location="log.txt" maxlog="0"/>
+<logfile location="log.txt" maxlog="50000"/>
+<logfile location="log.txt">]]>
+</pre>
+
+
+</body>
+</html>

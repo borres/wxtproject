@@ -1,0 +1,83 @@
+@media screen{
+.likeh1{
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Georgia,'Times New Roman',times,serif;
+}
+.piline{color:red}
+.source{color:green; line-height: normal;}
+.result{color:blue; line-height: normal;}
+.signature{margin-top:20px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+em{color:#6495ED;font-weight:bold}
+
+
+div.content table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 500px;}
+
+div.content th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+div.content td{border-bottom: 1px solid #CCC;	padding: 0.5em 0.5em; 
+  line-height: 170%;
+}
+div.content td:first-child {}
+div.content td+td {	border-left: 1px solid #CCC;}
+
+body{margin:20px}
+
+.css{background-color:#ffffcc;	border-style:dashed;
+	border-width:1px;}
+p.hilitefirst span{font-size:14px;font-weight:bold;color:blue}
+
+
+div.dwnloadtable{
+	border-collapse: collapse; width: 750px;	
+}
+div.dwnloadtable td{width:250px}
+
+    table{font: 14px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 520px; 
+            margin-top:20px}
+
+    th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    td{border-bottom: 1px solid #CCC;padding: 0 0.5em;   line-height: 170%;
+    }
+    /*td:first-child {width: 40px;	}*/
+    td+td {	border-left: 1px solid #CCC;}
+
+
+
+
+}
+
+
+
+
+
+
+@media print{
+    h1{page-break-before:always}
+    table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 520px;}
+
+    th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    td{border-bottom: 1px solid #CCC;padding: 0 0.5em;   line-height: 170%;
+    }
+    td:first-child {width: 40px;	}
+    td+td {	border-left: 1px solid #CCC;}
+
+
+
+
+.likeh1{  font-weight: bold;  font-size: 30px;  font-family: Georgia,'Times New Roman',times,serif;
+}
+ .piline{color:red}
+.source{color:green; line-height: normal;}
+.result{color:blue; line-height: normal;}
+.signature{margin-top:20px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+}

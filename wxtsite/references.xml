@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<reflist version="1.0">   
+	<ref id="googlecodeprettyfy">
+		<title>Google Code Prettyfy</title>
+		<publisher>Google</publisher>
+        <categories>info</categories>
+		<!--<uri dateread="14-10-2010">http://code.google.com/p/google-code-prettify/</uri>-->
+		<uri dateread="14-10-2010">https://github.com/google/code-prettify</uri>
+    </ref>
+	
+	<ref id="googlechart">
+        <publisher>Google</publisher>
+        <title>Google Charts</title> 
+        <categories>tool</categories>
+		<uri dateread="14-12-2010">http://code.google.com/apis/chart/</uri>
+    </ref>	
+	
+	<ref id="googlechartfeatures">
+        <publisher>Google</publisher>
+        <title>Google Chart Features</title> 
+        <categories>tool</categories>
+		<uri dateread="14-12-2010">http://code.google.com/apis/chart/docs/chart_params.html</uri>
+    </ref>
+	<ref id="googlechartformulas">
+        <publisher>Google</publisher>
+        <title>Google Chart Formulas</title> 
+        <categories>tool</categories>
+		<uri dateread="14-12-2010">http://code.google.com/apis/chart/docs/gallery/formulas.html</uri>
+    </ref>
+	<ref id="googlechartformulasfeatures">
+        <publisher>Google</publisher>
+        <title>Google Chart Formulas Gallery</title> 
+        <categories>tool</categories>
+		<uri dateread="14-12-2010">http://code.google.com/apis/chart/docs/gallery/formulas.html</uri>
+    </ref>	
+	
+	
+	<ref id="googlegadgets">
+		<uri dateread="14-06-2010">http://www.google.com/webmasters/gadgets/</uri>
+		<categories>info</categories>
+		<title>Google Gadgets</title>
+        <publisher>Google</publisher>        
+	</ref>
+	<ref id="googlgaddev">
+		<uri dateread="14-06-2010">http://code.google.com/intl/no/apis/gadgets/docs/tools.html#GGE</uri>
+		<categories>info</categories>
+		<title>Gadgets Developers Tools</title>
+        <publisher>Google</publisher>         
+	</ref>	
+	<ref id="googlgadlist">
+		<uri dateread="14-06-2010">http://www.google.com/ig/directory?synd=open</uri>
+		<categories>info</categories>
+		<title>Google gadget list</title>
+        <publisher>Google</publisher>         
+	</ref>
+	
+	<ref id="princexml">
+        <publisher>Prince</publisher>
+        <title>Prince XML</title> 
+        <categories>tool</categories>
+		<uri dateread="14-03-2010">http://www.princexml.com/</uri>
+    </ref>	
+
+  	<ref id="ppcquirksmode">
+        <publisher>Quirksmode.org</publisher>
+        <authors>Peter-Paul Koch</authors>
+        <title>Quirksmode</title> 
+        <categories>info</categories>
+		<uri dateread="14-03-2010">http://www.quirksmode.org/</uri>
+    </ref>
+	
+  	<ref id="jlatexmath">
+        <publisher>forge.scilab.org/</publisher>
+        <title>JLaTeXMath</title> 
+        <categories>info</categories>
+		<uri dateread="01-12-2011">http://forge.scilab.org/index.php/p/jlatexmath/</uri>
+    </ref>	
+	
+
+	<ref id="quirksmodedd">
+        <publisher>Quirksmode.org</publisher>
+        <authors>Peter-Paul Koch</authors>
+        <title>Quirksmode Drag Drop</title> 
+        <categories>info</categories>
+		<uri dateread="14-03-2010">http://www.quirksmode.org/js/dragdrop.html</uri>
+    </ref>
+	
+	<ref id="fop">
+        <publisher>apache.org</publisher>
+        <title>FOP</title> 
+        <categories>def</categories>
+		<uri dateread="14-03-2010">http://xml.apache.org/fop/</uri>
+    </ref>
+
+	<ref id="xpathexplorer">
+        <publisher>sourceforge.net</publisher>
+        <title>XPath Explorer</title> 
+        <categories>def</categories>
+		<uri dateread="14-03-2010">http://sourceforge.net/</uri>
+    </ref>
+	
+	<ref id="mysqlconnector">
+        <publisher>sourceforge.net</publisher>
+        <title>Using MySQL with Java</title> 
+        <categories>def</categories>
+		<uri dateread="14-12-2010">http://sourceforge.net/</uri>
+    </ref>
+	
+	<ref id="jsoup">
+        <publisher>Jonathan Hedley</publisher>
+        <title>Java HTML Parser</title> 
+        <categories>def</categories>
+		<uri dateread="14-05-2013">http://jsoup.org/</uri>
+    </ref>
+	
+	<ref id="jquery">
+        <title>jQuery</title> 
+        <categories>def</categories>
+		<uri dateread="14-03-2010">http://jquery.com/</uri>
+    </ref>
+
+	<ref id="w3SchoolCSS">
+        <title>CSS Selectors</title> 
+        <categories>def</categories>
+		<uri dateread="14-03-2013">http://www.w3schools.com/cssref/css_selectors.asp</uri>
+    </ref>	
+	<ref id="w3orgCSS">
+        <title>CSS Selector Reference</title> 
+        <categories>def</categories>
+		<uri dateread="14-03-2013">http://www.w3.org/TR/CSS2/selector.html</uri>
+    </ref>		
+</reflist>

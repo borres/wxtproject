@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" ?>
+<project default="main">
+    <!-- Making zipped packages of demos -->
+	<!-- democatalog -->
+	<property name="democat" location="c:/web/wxtdemos"/>
+	
+	<target name="main">
+
+		<!-- demo1 -->
+		<zip destfile="${democat}/demo1.zip" basedir="${democat}/demo1" excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo3 -->
+		<zip destfile="${democat}/demo3.zip" basedir="${democat}/demo3" excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo4 -->
+		<zip destfile="${democat}/demo4.zip" basedir="${democat}/demo4"  excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo5 -->
+		<zip destfile="${democat}/demo5.zip" basedir="${democat}/demo5"  excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo6 -->
+		<zip destfile="${democat}/demo6.zip" basedir="${democat}/demo6"  excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo7 -->
+		<zip destfile="${democat}/demo7.zip" basedir="${democat}/demo7"  excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo8 -->
+		<zip destfile="${democat}/demo8.zip" basedir="${democat}/demo8"  excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo9 -->
+		<zip destfile="${democat}/demo9.zip" basedir="${democat}/demo9"  excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo10 -->
+		<zip destfile="${democat}/demo10.zip" basedir="${democat}/demo10"  excludes=".svn/**,_wxttmp/**" update="true"/>
+		<!-- demo11-->
+		<zip destfile="${democat}/demo11.zip" basedir="${democat}/demo11"  excludes=".svn/**,_wxttmp/**" update="true"/>	
+    </target>
+</project>

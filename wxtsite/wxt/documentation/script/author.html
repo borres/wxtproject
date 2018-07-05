@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Author</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Script">Script</a>
+</div>
+<div class="level3">
+<a href="definitions.html" title="Definitions">Definitions</a>
+</div>
+<div class="level4">
+<a href="addressing.html" title="Addressing">Addressing</a>
+</div>
+<div class="level4 wxtselected">Author</div>
+<div class="level4">
+<a href="authors.html" title="Authors">Authors</a>
+</div>
+<div class="level4">
+<a href="command.html" title="Command">Command</a>
+</div>
+<div class="level4">
+<a href="formuladef.html" title="Formulas">Formulas</a>
+</div>
+<div class="level4">
+<a href="fragment.html" title="Fragment">Fragment</a>
+</div>
+<div class="level4">
+<a href="fragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level4">
+<a href="imagelist.html" title="Images">Images</a>
+</div>
+<div class="level4">
+<a href="logfile.html" title="Logfile">Logfile</a>
+</div>
+<div class="level4">
+<a href="odtformuladef.html" title="ODTFormulas">ODTFormulas</a>
+</div>
+<div class="level4">
+<a href="options.html" title="Options">Options</a>
+</div>
+<div class="level4">
+<a href="pathfragment.html" title="PathFragment">PathFragment</a>
+</div>
+<div class="level4">
+<a href="reflist.html" title="References">References</a>
+</div>
+<div class="level4">
+<a href="template.html" title="Template">Template</a>
+</div>
+<div class="level4">
+<a href="transformation.html" title="Transformation">Transformation</a>
+</div>
+<div class="level3">
+<a href="module.html" title="Module">Module</a>
+</div>
+<div class="level3">
+<a href="dating.html" title="*Dating">*Dating</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Script: author-element</h1>
+<p>
+  An author is used to define an author. <em>author</em> is an optional 
+  attribute in a module. The definition-element may contain any number of author-elements.
+ </p>
+<pre class="lang readyandpretty skiptranslate">
+&lt;author id="" name=""&gt;...&lt;/author&gt;</pre>
+<table cellpadding="10px">
+  <tr>
+    <td valign="top">
+<strong>id</strong>(mandatory)</td>
+    <td>Any string that will identify this author.
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+<strong>name</strong>(mandatory)</td>
+    <td>The displayed name of the author.
+    </td>
+  </tr>
+</table>
+<p>
+ All modules are given a default author. You may 
+ set this by the id: <em>_default</em>:
+</p>
+<pre class="lang readyandpretty skiptranslate">
+&lt;author id="_default" name="My self"/&gt;</pre>
+<p>
+ If default author is not set it defaults to: "Site author".
+</p>
+<p>Examples:</p>
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;author id="<span class="str">bs"</span> name="<span class="str">Børre Stenseth"</span>/&gt;
+</pre>
+<p>or</p>
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;author id="<span class="str">bs"</span> name="<span class="str">Børre Stenseth"</span>&gt;
+        &lt;![CDATA[
+    &lt;<span class="tag">div</span> <span class="tag">style</span>="<span class="str">font-weight:bold"</span>&gt;
+        &lt;<span class="tag">a</span> href="<span class="str">http://www.a.b/mypage.html"</span>&gt;homepage&lt;/<span class="tag">a</span>&gt;
+    &lt;/<span class="tag">div</span>&gt;
+     ]]&gt;
+&lt;/author&gt;
+</pre>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<bok  xmlns="http://www.forlaget.no/std/boker.html"
+      xmlns:marked="http://www.forlaget.no/std/marketing.html">
+   <marketing>
+      <marked:tittel>
+      Verdens beste bok
+      </marked:tittel>
+      <marked:innhold>
+      Solgt i uttallige eksemplarer
+      </marked:innhold>
+   </marketing>
+   
+   <tittel>
+   Ole Brum
+   </tittel>
+   <ingress>
+   Om en teddybjørn og vennene hans
+   </ingress>
+   <innhold>
+   En dag Kristoffer Robin...
+   </innhold>
+</bok>

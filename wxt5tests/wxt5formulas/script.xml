@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- fragments demos -->
+	<definitions>
+	  <option name="indent-output" value="yes"/>
+	  <option name="output-format" value="html"/>
+      <template id="P" location="../templates/p_template_html5.xml"/> 
+
+	  <formulas location="content/latformulas.xml"/>
+	  <formulas location="content/googleformulas.xml"/>
+	  <formulas location="content/imageformulas.xml"/>
+	  <formulas location="content/mathmlformulas.xml"/>
+	  <odtformulas location="content/formula.odt"/>
+      <logfile location="../buildlog.txt" />
+	</definitions>
+        
+     <module description="Demonstration of formulas" location="index.html" 
+	        name="Welcome" id="welcome"  template="P" books="all,use">            
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+	<module description="More demonstration of LaTex formulas" location="page1.html" 
+	        name="Latex" id="page1" template="P" books="all,use">
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+	
+	<module description="Demonstration of formulas as images" location="page2.html" 
+	        name="Images" id="page2" template="P" books="all,use">
+        <xmlcontent location="content/page2.xml"/>
+	</module>
+
+	<module description="Demonstration of MathML formulas" location="page3.html" 
+	        name="MathML" id="page3" template="P" books="all,use">
+        <xmlcontent location="content/page3.xml"/>
+	</module>
+	
+	<module description="Formulas from OpenOffice documents" location="page4.html" 
+	        name="ODT" id="page4" template="P" books="all,use">
+        <xmlcontent location="content/page4.xml"/>
+	</module>
+
+
+	<module description="Demonstration of formulas made by Google" location="page6.html" 
+	        name="Google" id="page6" template="P" books="all,use">
+        <xmlcontent location="content/page6.xml"/>
+	</module>
+	
+	<module description="Lists" location="pagelist.html" 
+	        name="List" id="pagelist" template="P" books="all">
+        <xmlcontent location="content/pagelist.xml"/>
+	</module>
+	
+ </wscript>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:image</h1>
+ <p>
+   Images may be defined in separate images files defined in the script or they may
+   be defined when they are used.
+</p>
+<p>
+ In this example there are one file with image definitions, 
+ <?_wxt popup lang="lang-xml" sourcelocation="images/someimages.xml" 
+        location="images/someimages_xml.html" text="someimages.xml"?>. 
+ The rest of the images are defined when used.
+</p>
+<p>
+ Different display modes: 0,1,2,3,4(=default):
+</p>
+<h3>0</h3>
+<div><?_wxt image  id="bs2" removeparent="yes" display="0"?></div>
+<h3>1</h3>
+<div><?_wxt image  id="bs5"  display="1"?></div>
+<h3>2</h3>
+<div><?_wxt image  id="bs3"  display="2"?></div>
+<h3>3</h3>
+<div><?_wxt image  id="bs6"  display="3"?></div>
+<h3>4</h3>
+<div><?_wxt image  id="bs1"  display="4"?></div>
+
+    
+<hr/>
+    
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

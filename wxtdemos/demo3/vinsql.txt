@@ -1,0 +1,2 @@
+use vin;
+select type,name,dice from wines where country = 'Spania';

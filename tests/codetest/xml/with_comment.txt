@@ -1,0 +1,24 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">booklist</span>&gt;
+  &lt;!--<span class="comment"> something about each book </span>--&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;!--<span class="comment"> this is 
+  a multiline comment </span>--&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett på sak og grei som oppslagsbok. Må suppleres med W3C-oppslag.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre>

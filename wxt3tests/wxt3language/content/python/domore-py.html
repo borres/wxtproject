@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="lang-py readyandpretty skiptranslate">
+import httplib, urllib
+try:
+    <span class="com"># prepare parameters</span>
+    params = urllib.urlencode({'<span class="str">navn'</span>: '<span class="str">ole'</span>, '<span class="str">adresse'</span>: '<span class="str">mysen'</span>})
+    <span class="com"># prepare header</span>
+    headers = {"<span class="str">Content-type"</span>: "<span class="str">application/x-www-form-urlencoded"</span>,
+               "<span class="str">Accept"</span>: "<span class="str">text/plain"</span>}
+    <span class="com"># connect</span>
+    conn = httplib.HTTPConnection("<span class="str">www.ia.hiof.no"</span>)
+    conn.request("<span class="str">POST"</span>, "<span class="str">/~borres/cgi-bin/forms/std.py"</span>, params, headers)
+    r1 = conn.getresponse()
+    <span class="com"># ok ?</span>
+    if r1.status!=200:
+        print '<span class="str">access problem'</span>
+        print r1.status, r1.reason
+    else:
+        <span class="com"># get data</span>
+        data = r1.read()
+        print data
+    conn.close()
+except:
+    print '<span class="str">cannot access data'</span></pre></body>
+</html>

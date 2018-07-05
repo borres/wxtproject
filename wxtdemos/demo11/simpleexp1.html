@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>SimpleExpansion</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<meta content="wxt2" name="GENERATOR"/>
+	<link href="../commons/wxtstyle.css" rel="STYLESHEET"/>
+	<link href="gfx/template.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+    <script src="../commons/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+        <div class="level1">
+          <a href="index.xhtml" onclick="javascript:document.getElementById('SimpleExpansion1').style.visibility='hidden'" onmouseout="javascript:document.getElementById('SimpleExpansion1').style.visibility='hidden'" onmouseover="javascript:document.getElementById('SimpleExpansion1').style.visibility='visible'">What</a>
+          <div style="position: absolute; z-index: 10">
+            <div class="wxtsummary" id="SimpleExpansion1" style="visibility:hidden;">
+              <div class="header">What</div>What</div>
+          </div>
+        </div>
+        <div class="level1">
+          <a href="gad1.html" onclick="javascript:document.getElementById('SimpleExpansion2').style.visibility='hidden'" onmouseout="javascript:document.getElementById('SimpleExpansion2').style.visibility='hidden'" onmouseover="javascript:document.getElementById('SimpleExpansion2').style.visibility='visible'">Own Gadgets</a>
+          <div style="position: absolute; z-index: 10">
+            <div class="wxtsummary" id="SimpleExpansion2" style="visibility:hidden;">
+              <div class="header">Own Gadgets</div>Own Gadgets</div>
+          </div>
+        </div>
+        <div class="level1">
+          <a href="gad2.html" onclick="javascript:document.getElementById('SimpleExpansion3').style.visibility='hidden'" onmouseout="javascript:document.getElementById('SimpleExpansion3').style.visibility='hidden'" onmouseover="javascript:document.getElementById('SimpleExpansion3').style.visibility='visible'">Google Gadgets</a>
+          <div style="position: absolute; z-index: 10">
+            <div class="wxtsummary" id="SimpleExpansion3" style="visibility:hidden;">
+              <div class="header">Google Gadgets</div>Google Gadgets</div>
+          </div>
+        </div>
+        <div class="level1">
+          <a href="exp1.html" onclick="javascript:document.getElementById('SimpleExpansion4').style.visibility='hidden'" onmouseout="javascript:document.getElementById('SimpleExpansion4').style.visibility='hidden'" onmouseover="javascript:document.getElementById('SimpleExpansion4').style.visibility='visible'">AjaxExpansion</a>
+          <div style="position: absolute; z-index: 10">
+            <div class="wxtsummary" id="SimpleExpansion4" style="visibility:hidden;">
+              <div class="header">AjaxExpansion</div>AjaxExpansion</div>
+          </div>
+        </div>
+        <div class="level1">SimpleExpansion</div>
+      </div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+
+		<div class="main">
+			<h1>Testing Simple Expansion</h1>
+        <p>Code</p>
+        <div>
+	<div class="wxtexpandsimple">
+            <div class="header">
+              <span class="off" onclick="javascript:toggleExpandSimple(this)">_</span>the code</div>
+            <div class="content" style="display:none">
+              <pre class="javascriptcode">
+<span class="comment">/*
+Minimalistic library for wxt
+- popup as in PI popup:
+     simplepopup(url,wname,wstyle)
+- toggling visibility of
+    - ajaxexpansions as in PI expand:
+      toggleExpandAjax(address,elt)
+    - simple inline expansions as in PI expandsimple:
+      toggleExpandSimple(elt)
+    - gadget expansion as in PI gadget:
+      toggleGadget(elt)
+- dragging gadgets
+
+Relying on prototype.js (http://www.prototypejs.org/)
+Modified material from: http://www.quirksmode.org/js/dragdrop.html
+
+style classes for the actual elements must be set
+
+B.Stenseth 2010.
+*/</span>
+
+<span class="comment">// ------------  popup ------------------</span>
+<span class="comment">//popup</span>
+  <span class="word">function</span> simplepopup(theURL,wname,wstyle)
+  {
+      <span class="word">if</span>(wstyle=='<span class="literal">*'</span>)
+          wstyle='<span class="literal">scrollbars=yes,resizable=yes,width=600,height=600,status=no'</span>;
+      <span class="word">try</span>{
+          newwindow=window.open(theURL, wname, wstyle);
+          <span class="word">if</span> (window.focus) {newwindow.focus()}
+      }
+      <span class="word">catch</span>(E){
+          alert('<span class="literal">You may have blocked popups'</span>);
+      }
+  }
+<span class="comment">//eofpopup</span>
+
+<span class="comment">// -------------- simple expand ---------------</span>
+<span class="comment">//simpleexpand</span>
+<span class="word">function</span> toggleExpandSimple(elt)
+{
+    contentElt=elt.parentNode.parentNode.getElementsByTagName('<span class="literal">div'</span>)[1];
+    <span class="word">if</span>(elt.getAttribute("<span class="literal">class"</span>)=="<span class="literal">off"</span>)
+    {
+        contentElt.style.display="<span class="literal">block"</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">on"</span>);
+    }
+    <span class="word">else</span>
+    {
+        contentElt.style.display="<span class="literal">none"</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">off"</span>);
+    }
+}
+<span class="comment">//eofsimpleexpand</span>
+
+<span class="comment">// -------------- ajax expand ---------------</span>
+<span class="comment">//ajaxexpand</span>
+<span class="word">function</span> toggleExpandAjax(address,elt)
+{
+    contentElt=elt.parentNode.parentNode.getElementsByTagName('<span class="literal">div'</span>)[1];
+    <span class="word">if</span>(elt.getAttribute("<span class="literal">class"</span>)=="<span class="literal">off"</span>)
+    {
+        <span class="word">new</span> Ajax.Request(address,
+                 {method:'<span class="literal">get'</span>,
+                 onSuccess:<span class="word">function</span>(transport){
+                    <span class="word">var</span> T=transport.responseText;
+                    <span class="word">var</span> pos1=T.indexOf('<span class="literal">&lt;pre'</span>);
+                    <span class="word">var</span> pos2=T.lastIndexOf('<span class="literal">&lt;/pre'</span>);
+                    <span class="word">if</span> ((pos1 !=-1) &amp;&amp; (pos2 &gt; pos1))
+                        T=T.substring(pos1,pos2+6);
+                    contentElt.innerHTML=T;
+                 },
+                 onFailure:<span class="word">function</span>(){contentElt.innerHTML="<span class="literal">Could not access content"</span>}
+                 });
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">on"</span>);
+    }
+    <span class="word">else</span>
+    {
+        contentElt.innerHTML="<span class="literal"> "</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">off"</span>);
+    }
+} 
+<span class="comment">//eofajaxexpand</span>
+
+<span class="comment">//------------- toggle gadget ------------------</span>
+<span class="comment">//togglegadget</span>
+<span class="word">function</span> toggleGadget(elt)
+{
+    contentElt=elt.parentNode.parentNode.getElementsByTagName('<span class="literal">div'</span>)[1];
+    <span class="word">if</span>(elt.getAttribute("<span class="literal">class"</span>)=="<span class="literal">off"</span>)
+    {
+        contentElt.style.display="<span class="literal">block"</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">on"</span>);
+    }
+    <span class="word">else</span>
+    {
+        contentElt.style.display="<span class="literal">none"</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">off"</span>);
+    }
+}
+<span class="comment">//eoftogglegadget</span>
+
+<span class="comment">// ------ dragging gadget -----</span>
+<span class="comment">//draggadget</span>
+<span class="comment">// modified from: http://www.quirksmode.org/js/dragdrop.html </span>
+<span class="word">function</span> addEventSimple(obj,evt,fn) {
+    <span class="word">if</span> (obj.addEventListener)
+        obj.addEventListener(evt,fn,<span class="word">false</span>);
+    <span class="word">else</span> <span class="word">if</span> (obj.attachEvent)
+        obj.attachEvent('<span class="literal">on'</span>+evt,fn);
+}
+
+<span class="word">function</span> removeEventSimple(obj,evt,fn) {
+    <span class="word">if</span> (obj.removeEventListener)
+        obj.removeEventListener(evt,fn,<span class="word">false</span>);
+    <span class="word">else</span> <span class="word">if</span> (obj.detachEvent)
+        obj.detachEvent('<span class="literal">on'</span>+evt,fn);
+}
+
+dragDrop = {
+    initialMouseX: undefined,
+    initialMouseY: undefined,
+    startX: undefined,
+    startY: undefined,
+    draggedObject: undefined,
+    initElement: <span class="word">function</span> (element) {
+        <span class="word">if</span> (<span class="word">typeof</span> element == '<span class="literal">string'</span>)
+            element = document.getElementById(element);
+        element.onmousedown = dragDrop.startDragMouse;
+    },
+    startDragMouse: <span class="word">function</span> (e) {
+        dragDrop.startDrag(<span class="word">this</span>);
+        <span class="word">var</span> evt = e || window.event;
+        dragDrop.initialMouseX = evt.clientX;
+        dragDrop.initialMouseY = evt.clientY;
+        addEventSimple(document,'<span class="literal">mousemove'</span>,dragDrop.dragMouse);
+        addEventSimple(document,'<span class="literal">mouseup'</span>,dragDrop.releaseElement);
+        <span class="word">return</span> <span class="word">false</span>;
+    },
+    startDrag: <span class="word">function</span> (obj) {
+        <span class="word">if</span> (dragDrop.draggedObject)
+            dragDrop.releaseElement();
+        dragDrop.startX = obj.offsetLeft;
+        dragDrop.startY = obj.offsetTop;
+        dragDrop.draggedObject = obj;
+        obj.className += '<span class="literal"> dragged'</span>;
+    },
+    dragMouse: <span class="word">function</span> (e) {
+        <span class="word">var</span> evt = e || window.event;
+        <span class="word">var</span> dX = evt.clientX - dragDrop.initialMouseX;
+        <span class="word">var</span> dY = evt.clientY - dragDrop.initialMouseY;
+        dragDrop.setPosition(dX,dY);
+        <span class="word">return</span> <span class="word">false</span>;
+    },
+
+    setPosition: <span class="word">function</span> (dx,dy) {
+        dragDrop.draggedObject.style.left = dragDrop.startX + dx + '<span class="literal">px'</span>;
+        dragDrop.draggedObject.style.top = dragDrop.startY + dy + '<span class="literal">px'</span>;
+    },
+    releaseElement: <span class="word">function</span>() {
+        removeEventSimple(document,'<span class="literal">mousemove'</span>,dragDrop.dragMouse);
+        removeEventSimple(document,'<span class="literal">mouseup'</span>,dragDrop.releaseElement);
+        dragDrop.draggedObject.className = dragDrop.draggedObject.className.replace(/dragged/,'<span class="literal">'</span>);
+        dragDrop.draggedObject = <span class="word">null</span>;
+    }
+}
+<span class="comment">//eofdraggadget</span>
+</pre>
+            </div>
+          </div>
+	</div>
+        <p>Code expanded</p>
+        <div>
+	<div class="wxtexpandsimple">
+            <div class="header">
+              <span class="on" onclick="javascript:toggleExpandSimple(this)">_</span>the code again</div>
+            <div class="content" style="display:block">
+              <pre class="javascriptcode">
+<span class="comment">/*
+Minimalistic library for wxt
+- popup as in PI popup:
+     simplepopup(url,wname,wstyle)
+- toggling visibility of
+    - ajaxexpansions as in PI expand:
+      toggleExpandAjax(address,elt)
+    - simple inline expansions as in PI expandsimple:
+      toggleExpandSimple(elt)
+    - gadget expansion as in PI gadget:
+      toggleGadget(elt)
+- dragging gadgets
+
+Relying on prototype.js (http://www.prototypejs.org/)
+Modified material from: http://www.quirksmode.org/js/dragdrop.html
+
+style classes for the actual elements must be set
+
+B.Stenseth 2010.
+*/</span>
+
+<span class="comment">// ------------  popup ------------------</span>
+<span class="comment">//popup</span>
+  <span class="word">function</span> simplepopup(theURL,wname,wstyle)
+  {
+      <span class="word">if</span>(wstyle=='<span class="literal">*'</span>)
+          wstyle='<span class="literal">scrollbars=yes,resizable=yes,width=600,height=600,status=no'</span>;
+      <span class="word">try</span>{
+          newwindow=window.open(theURL, wname, wstyle);
+          <span class="word">if</span> (window.focus) {newwindow.focus()}
+      }
+      <span class="word">catch</span>(E){
+          alert('<span class="literal">You may have blocked popups'</span>);
+      }
+  }
+<span class="comment">//eofpopup</span>
+
+<span class="comment">// -------------- simple expand ---------------</span>
+<span class="comment">//simpleexpand</span>
+<span class="word">function</span> toggleExpandSimple(elt)
+{
+    contentElt=elt.parentNode.parentNode.getElementsByTagName('<span class="literal">div'</span>)[1];
+    <span class="word">if</span>(elt.getAttribute("<span class="literal">class"</span>)=="<span class="literal">off"</span>)
+    {
+        contentElt.style.display="<span class="literal">block"</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">on"</span>);
+    }
+    <span class="word">else</span>
+    {
+        contentElt.style.display="<span class="literal">none"</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">off"</span>);
+    }
+}
+<span class="comment">//eofsimpleexpand</span>
+
+<span class="comment">// -------------- ajax expand ---------------</span>
+<span class="comment">//ajaxexpand</span>
+<span class="word">function</span> toggleExpandAjax(address,elt)
+{
+    contentElt=elt.parentNode.parentNode.getElementsByTagName('<span class="literal">div'</span>)[1];
+    <span class="word">if</span>(elt.getAttribute("<span class="literal">class"</span>)=="<span class="literal">off"</span>)
+    {
+        <span class="word">new</span> Ajax.Request(address,
+                 {method:'<span class="literal">get'</span>,
+                 onSuccess:<span class="word">function</span>(transport){
+                    <span class="word">var</span> T=transport.responseText;
+                    <span class="word">var</span> pos1=T.indexOf('<span class="literal">&lt;pre'</span>);
+                    <span class="word">var</span> pos2=T.lastIndexOf('<span class="literal">&lt;/pre'</span>);
+                    <span class="word">if</span> ((pos1 !=-1) &amp;&amp; (pos2 &gt; pos1))
+                        T=T.substring(pos1,pos2+6);
+                    contentElt.innerHTML=T;
+                 },
+                 onFailure:<span class="word">function</span>(){contentElt.innerHTML="<span class="literal">Could not access content"</span>}
+                 });
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">on"</span>);
+    }
+    <span class="word">else</span>
+    {
+        contentElt.innerHTML="<span class="literal"> "</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">off"</span>);
+    }
+} 
+<span class="comment">//eofajaxexpand</span>
+
+<span class="comment">//------------- toggle gadget ------------------</span>
+<span class="comment">//togglegadget</span>
+<span class="word">function</span> toggleGadget(elt)
+{
+    contentElt=elt.parentNode.parentNode.getElementsByTagName('<span class="literal">div'</span>)[1];
+    <span class="word">if</span>(elt.getAttribute("<span class="literal">class"</span>)=="<span class="literal">off"</span>)
+    {
+        contentElt.style.display="<span class="literal">block"</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">on"</span>);
+    }
+    <span class="word">else</span>
+    {
+        contentElt.style.display="<span class="literal">none"</span>;
+        elt.setAttribute("<span class="literal">class"</span>,"<span class="literal">off"</span>);
+    }
+}
+<span class="comment">//eoftogglegadget</span>
+
+<span class="comment">// ------ dragging gadget -----</span>
+<span class="comment">//draggadget</span>
+<span class="comment">// modified from: http://www.quirksmode.org/js/dragdrop.html </span>
+<span class="word">function</span> addEventSimple(obj,evt,fn) {
+    <span class="word">if</span> (obj.addEventListener)
+        obj.addEventListener(evt,fn,<span class="word">false</span>);
+    <span class="word">else</span> <span class="word">if</span> (obj.attachEvent)
+        obj.attachEvent('<span class="literal">on'</span>+evt,fn);
+}
+
+<span class="word">function</span> removeEventSimple(obj,evt,fn) {
+    <span class="word">if</span> (obj.removeEventListener)
+        obj.removeEventListener(evt,fn,<span class="word">false</span>);
+    <span class="word">else</span> <span class="word">if</span> (obj.detachEvent)
+        obj.detachEvent('<span class="literal">on'</span>+evt,fn);
+}
+
+dragDrop = {
+    initialMouseX: undefined,
+    initialMouseY: undefined,
+    startX: undefined,
+    startY: undefined,
+    draggedObject: undefined,
+    initElement: <span class="word">function</span> (element) {
+        <span class="word">if</span> (<span class="word">typeof</span> element == '<span class="literal">string'</span>)
+            element = document.getElementById(element);
+        element.onmousedown = dragDrop.startDragMouse;
+    },
+    startDragMouse: <span class="word">function</span> (e) {
+        dragDrop.startDrag(<span class="word">this</span>);
+        <span class="word">var</span> evt = e || window.event;
+        dragDrop.initialMouseX = evt.clientX;
+        dragDrop.initialMouseY = evt.clientY;
+        addEventSimple(document,'<span class="literal">mousemove'</span>,dragDrop.dragMouse);
+        addEventSimple(document,'<span class="literal">mouseup'</span>,dragDrop.releaseElement);
+        <span class="word">return</span> <span class="word">false</span>;
+    },
+    startDrag: <span class="word">function</span> (obj) {
+        <span class="word">if</span> (dragDrop.draggedObject)
+            dragDrop.releaseElement();
+        dragDrop.startX = obj.offsetLeft;
+        dragDrop.startY = obj.offsetTop;
+        dragDrop.draggedObject = obj;
+        obj.className += '<span class="literal"> dragged'</span>;
+    },
+    dragMouse: <span class="word">function</span> (e) {
+        <span class="word">var</span> evt = e || window.event;
+        <span class="word">var</span> dX = evt.clientX - dragDrop.initialMouseX;
+        <span class="word">var</span> dY = evt.clientY - dragDrop.initialMouseY;
+        dragDrop.setPosition(dX,dY);
+        <span class="word">return</span> <span class="word">false</span>;
+    },
+
+    setPosition: <span class="word">function</span> (dx,dy) {
+        dragDrop.draggedObject.style.left = dragDrop.startX + dx + '<span class="literal">px'</span>;
+        dragDrop.draggedObject.style.top = dragDrop.startY + dy + '<span class="literal">px'</span>;
+    },
+    releaseElement: <span class="word">function</span>() {
+        removeEventSimple(document,'<span class="literal">mousemove'</span>,dragDrop.dragMouse);
+        removeEventSimple(document,'<span class="literal">mouseup'</span>,dragDrop.releaseElement);
+        dragDrop.draggedObject.className = dragDrop.draggedObject.className.replace(/dragged/,'<span class="literal">'</span>);
+        dragDrop.draggedObject = <span class="word">null</span>;
+    }
+}
+<span class="comment">//eofdraggadget</span>
+</pre>
+            </div>
+          </div>
+	</div>
+        <p>simple</p>
+        <div>
+	<div class="wxtexpandsimple">
+            <div class="header">
+              <span class="on" onclick="javascript:toggleExpandSimple(this)">_</span>expansion/image.txt</div>
+            <div class="content" style="display:block">
+              <img alt="bs" src="bs.png"/>
+            </div>
+          </div>
+	</div>
+        <div>
+	<div class="wxtexpandsimple">
+            <div class="header">
+              <span class="off" onclick="javascript:toggleExpandSimple(this)">_</span>expansion/image.txt</div>
+            <div class="content" style="display:none">
+              <img alt="bs" src="bs.png"/>
+            </div>
+          </div>
+	</div>
+		</div>
+
+</div>
+    <!-- content -->
+
+
+
+
+
+</body>
+</html>

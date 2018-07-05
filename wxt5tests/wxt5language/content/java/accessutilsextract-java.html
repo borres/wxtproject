@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="lang-j readyandpretty skiptranslate">
+<span class="com">/**
+ * Append to a text file.
+ * 
+ * @param theUri The absolute URI to the file
+ * @param text The text to append
+ * @param maxFileSize When file reach this size in bytes it is reset, -1 keeps it going forever
+ * @return true if save goes ok, false otherwise
+ */</span>
+<span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> appendToTextFile(URI theUri, String text, <span class="kwd">long</span> maxFileSize)
+{
+    <span class="kwd">try</span> {
+        File f = <span class="kwd">new</span> File(theUri);
+        <span class="kwd">try</span> {
+            <span class="kwd">if</span> (!f.exists()) {
+                <span class="kwd">return</span> saveTextFile(f, text, false); <span class="com">// not append</span>
+            }
+            <span class="kwd">if</span> ((maxFileSize &gt;= 0) &amp;&amp; (f.length() &gt; maxFileSize))
+            {
+                <span class="kwd">return</span> saveTextFile(f, text, false); <span class="com">// not append</span>
+            }
+            <span class="kwd">return</span> saveTextFile(f, text, true); <span class="com">// append</span>
+        } <span class="kwd">catch</span> (Exception ioe) {
+            <span class="kwd">throw</span> <span class="kwd">new</span> Exception(ioe.getMessage());
+        }
+    } <span class="kwd">catch</span> (Exception ex) {
+        System.out.println("<span class="str">AccessUtils:appendToTextFile, Not written: "</span> + theUri.toString());
+        <span class="kwd">return</span> false;
+    }
+}
+</pre></body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- popup demos -->
+      <definitions>
+	  <option name="indent-output" value="yes"/>
+
+        <template id="P" location="../templates/p_template.xml"/>
+		<template id="CODE" location="content/code-template.xml"/>
+        <logfile location="../buildlog.txt" />
+       
+     </definitions>
+        
+     <module description="Demonstration of popup" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+	<module description="Demonstration of popup programcode" location="code.html" 
+	        name="Pretty Code" id="prettycode" template="P" books="all">
+        <xmlcontent location="content/code.xml"/>
+	</module>
+
+	
+ </wscript>

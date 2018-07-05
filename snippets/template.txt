@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet name="_NAME_" description="_DESCRIPTION_" preview="code" type="block">
+<insertText location="beforeSelection">
+<![CDATA[_PI_]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

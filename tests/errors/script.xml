@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      
+      <definitions>
+        <template id="P" location="templates/p_template.xml"/>
+		<transformation id="vindb1" location="dbvin1.xsl"/>
+		<transformation id="vindb2" location="dbvin2.xsl"/>
+		<logfile location="log.txt" maxlog="0"/>
+     </definitions>
+        
+    <module description="errortester" location="index.html" 
+	        name="Welcome" template="P" books="all">
+        <xmlcontent location="blocks/b-index.xml"/>
+	</module>
+    
+	<module description="errortester" location="code.html" 
+	        name="Code" template="P" books="all">
+        <xmlcontent location="blocks/b-code.xml"/>
+	</module>
+    
+</wscript>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Formulas</h1>
+<p>
+ If you want to present mathemathical formulas in your material,
+ you can do this in many ways:
+</p>
+
+<ol>
+<li><strong>Images.</strong> You may use a program like Open Office or Microsoft Office.
+ Use the Formula editor and make formula objects on a page.
+ You can then freeze a screenshot of the page, clip out the formula and save it as an image.
+</li>
+<li><strong>Images again</strong>You may use one of the many tools, online or offline, that 
+produce imgages from LaTex.
+</li>
+<li><strong>MathML.</strong> You may write MathML code directly in your material.
+</li>
+<li><strong>Google.</strong> You may write LaTeX code directly in a the src attribute in an img-element
+and let Google prepare an image of the formula, See Google Chart Formulas<?_wxt ref id="googlechartformulas"?>.
+The robustness of this approach depends of course on the stability of the Google tool.
+</li>
+<li><strong>LaTex</strong> You may write let WXT convert LaTex to images.
+</li>
+<li><strong>Open Office</strong> You may make an Open Office document and let 
+ WXT extract the formulas as MatML, see <?_wxt xlink id="ODTFormulas"?>.
+ </li>
+ 
+ <li>You may use an XML document describing formulas either as LaTex (latex), MathMl (mathml), 
+     LaTeX (google) or image (image).
+ See <?_wxt xlink id="Formulas"?>.
+ </li>
+ 
+  <li>You may define one formula either as matml, latex, google or imagel.
+   See <?_wxt xlink id="PIformula"?>.
+ </li>
+
+ </ol>
+<p>
+ The advantages of involving WXT (5,6,7,8) is that you may find and edit your formulas in one (or a limited)
+ places and you may produce lists of used formulas, <?_wxt xlink id="PIformulaList"?>
+</p>
+
+
+
+
+
+
+ <h3>Browsers</h3>
+ <p>
+ <strong>Note</strong> that browsers haved different capabilities when we get to MathML.
+ You should check this out before deciding how to present math to a wider audience.
+ </p>
+ <p>
+ WXT is at the moment aimed as HTML5, which means that generated MatML may not work on all browser.
+</p>
+ <!--
+ <pre class="prettyprint lang"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" 
+                  "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+]]>
+ </pre>
+ <p>
+ and should have an extension: <em>.xhml</em>
+ </p>
+ -->
+ 
+ 
+ 
+ <h3>Formula file</h3>
+ <p>Sample</p>
+ <div>
+ <?_wxt importtxt location="../script/formula-sample.xml" lang="lang-xml"?>
+ </div>
+ <p>Schema for formula files</p>
+ <div>
+ <?_wxt importtxt location="formula.xsd" lang="lang-xml"?>
+ </div>
+
+</body>
+</html>

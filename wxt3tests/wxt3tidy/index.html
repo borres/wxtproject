@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>test</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">  </script>
+    <style>
+        article, aside, details, figcaption, figure, footer, header,
+        hgroup, menu, nav, section { display: block; }
+    </style>
+    <![endif]-->
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/cgi-bin/iframes/template.js" type="text/javascript"> </script>	
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/redirect/ia_to_it.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">Welcome</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">Page1</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">Page1</div>More demonstration of Wiki import</div>
+</div>
+<div class="level1">
+<a href="page2.html" onmouseout="javascript:popunpop('welcome2',event);" onmouseover="javascript:popunpop('welcome2',event);">Page2</a>
+<div class="wxtsummary" id="welcome2" style="display: none;">
+<div class="header">Page2</div>More demonstration of Wiki import as XML</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<div class="mainblock">
+<h1>Testing PI:importwiki</h1>
+<p>
+   Testing import of material from Wiki, 
+   This is in an experimental stage and some work remains to be done.
+   The concept of dpath for selecting from a flat documentstructure is not waterproof, but it works on simple constructs.
+</p>
+<p>
+ This page selects material from a Wikipedia-page: 
+ <a class="external" href="http://en.wikipedia.org/wiki/Tiger">http://en.wikipedia.org/wiki/Tiger</a>
+</p>
+  
+<!-- extract a header with following text -->
+<h2>A section without references</h2>
+<div>
+<div class="wxtimportwiki">
+<h4>
+White tigers
+</h4>
+<div class="rellink relarticle mainarticle">Main article: White tiger
+</div>
+<div class="thumb tleft">
+<div class="thumbinner">
+
+<img alt="" class="thumbimage" height="147" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_White_tiger_bangalore.jpg" width="220"/>
+
+<div class="thumbcaption">
+
+A Bengal white tiger in Bannerghatta National Park in Bangalore
+</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner">
+
+<img alt="" class="thumbimage" height="146" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Singapore_Zoo_Tigers.jpg" width="220"/>
+
+<div class="thumbcaption">
+
+A pair of white tigers at the Singapore Zoo.</div>
+</div>
+</div>
+<p>There is a well-known mutation that produces the white tiger, technically known as <i>chinchilla albinistic</i>, an animal which is rare in the wild, but widely bred in zoos due to its popularity. Breeding of white tigers will often lead to inbreeding (as the trait is recessive). Many initiatives have taken place in white and orange tiger mating in an attempt to remedy the issue, often mixing subspecies in the process. Such inbreeding has led to white tigers having a greater likelihood of being born with physical defects, such as cleft palates and scoliosis (curvature of the spine).
+ Furthermore, white tigers are prone to having crossed eyes (a condition known as strabismus). Even apparently healthy white tigers generally do not live as long as their orange counterparts. Recordings of white tigers were first made in the early 19th century. They can only occur when both parents carry the rare gene found in white tigers; this gene has been calculated to occur in only one in every 10,000 births. The white tiger is not a separate sub-species, but only a colour variation; since the only white tigers that have been observed in the wild have been Bengal tigers (and all white tigers in captivity are at least part Bengal), it is commonly thought that the recessive gene that causes the white colouring is probably carried only by Bengal tigers, although the reasons for this are not known.
+ Nor are they in any way more endangered than tigers are generally, this being a common misconception. Another misconception is that white tigers are albinos, despite the fact that pigment is evident in the white tiger's stripes. They are distinct not only because of their white hue; they also have blue eyes.</p>
+</div>
+</div>
+
+<!-- extract a header with following text -->
+<h2>A section with references, only heading and images</h2>
+<div>
+<div class="wxtimportwiki">
+<h4>
+Golden tabby tigers
+</h4>
+<img alt="" class="thumbimage" height="228" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Golden_tiger_1___Buffalo_Zoo.jpg" width="220"/>
+</div>
+</div>
+
+<!-- extract a section with xpath -->
+<h2>A section accessed with xpath</h2>
+<div>
+<div class="wxtimportwiki">
+<table class="infobox biota">
+<tr>
+<th colspan="2">Tiger</th>
+</tr>
+<tr>
+<td colspan="2">
+
+<img alt="" height="168" src="wikiback/en_wikipedia_org_wiki_Tiger/250px_Tiger_in_Ranthambhore.jpg" width="250"/>
+
+</td>
+</tr>
+<tr>
+<td colspan="2">A Bengal Tiger (<i>P. tigris tigris</i>) in India's Ranthambhore National Park.</td>
+</tr>
+<tr>
+<th colspan="2">
+Conservation status
+</th>
+</tr>
+<tr>
+<td colspan="2">
+<div>
+<img alt="" height="59" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Status_iucn3_1_EN_svg.png" width="220"/>
+<br/>
+Endangered
+<small> (IUCN 3.1)
+</small>
+</div>
+</td>
+</tr>
+<tr>
+<th colspan="2">
+Scientific classification
+</th>
+</tr>
+<tr>
+<td>Kingdom:</td>
+<td>
+<span class="kingdom">
+Animalia
+</span>
+</td>
+</tr>
+<tr>
+<td>Phylum:</td>
+<td>
+<span class="phylum">
+Chordata
+</span>
+</td>
+</tr>
+<tr>
+<td>Class:</td>
+<td>
+<span class="class">
+Mammalia
+</span>
+</td>
+</tr>
+<tr>
+<td>Order:</td>
+<td>
+<span class="order">
+Carnivora
+</span>
+</td>
+</tr>
+<tr>
+<td>Family:</td>
+<td>
+<span class="family">
+Felidae
+</span>
+</td>
+</tr>
+<tr>
+<td>Genus:</td>
+<td>
+<span class="genus">
+<i>
+Panthera
+</i>
+</span>
+</td>
+</tr>
+<tr>
+<td>Species:</td>
+<td>
+<span class="species">
+<i>
+<b>P. tigris</b>
+</i>
+</span>
+</td>
+</tr>
+<tr>
+<th colspan="2">
+Binomial name
+</th>
+</tr>
+<tr>
+<td colspan="2">
+<b>
+<span class="binomial">
+<i>Panthera tigris</i>
+</span>
+</b>
+<br/>
+<small>(Linnaeus, 1758)</small>
+</td>
+</tr>
+<tr>
+<th colspan="2">
+Subspecies
+</th>
+</tr>
+<tr>
+<td colspan="2">
+<p>
+<i>
+P. t. tigris
+</i>
+<br/>
+<i>
+P. t. corbetti
+</i>
+<br/>
+<i>
+P. t. jacksoni
+</i>
+<br/>
+<i>
+P. t. sumatrae
+</i>
+<br/>
+<i>
+P. t. altaica
+</i>
+<br/>
+<i>
+P. t. amoyensis
+</i>
+<br/>
+†<i>
+P. t. virgata
+</i>
+<br/>
+†<i>
+P. t. balica
+</i>
+<br/>
+†<i>
+P. t. sondaica
+</i>
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+<img alt="" height="191" src="wikiback/en_wikipedia_org_wiki_Tiger/250px_Tiger_map.jpg" width="250"/>
+
+</td>
+</tr>
+<tr>
+<td colspan="2">Historical distribution of tigers (pale yellow) and 2006 (green).
+</td>
+</tr>
+<tr>
+<th colspan="2">
+Synonyms
+</th>
+</tr>
+<tr>
+<td colspan="2">
+<center>
+<i>
+<b>Felis tigris</b>
+</i> <small>
+Linnaeus, 1758</small>
+
+<br/>
+<p>
+<i>
+<b>Tigris striatus</b>
+</i> <small>
+Severtzov, 1858</small>
+<br/>
+</p>
+<i>
+<b>Tigris regalis</b>
+</i> <small>
+Gray, 1867</small>
+</center>
+</td>
+</tr>
+</table>
+</div>
+</div>
+ 
+<hr/>
+  
+<h2>Content file for this page</h2>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/welcome.xml</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="welcome4">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;welcome&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:importwiki&lt;/h1&gt;
+&lt;p&gt;
+   Testing import of material from Wiki, 
+   This is in an experimental stage and some work remains to be done.
+   The concept of dpath for selecting from a flat documentstructure is not waterproof, but it works on simple constructs.
+&lt;/p&gt;
+&lt;p&gt;
+ This page selects material from a Wikipedia-page: 
+ &lt;a href="http://en.wikipedia.org/wiki/Tiger" class="external"&gt;http://en.wikipedia.org/wiki/Tiger&lt;/a&gt;
+&lt;/p&gt;
+  
+&lt;!-- extract a header with following text --&gt;
+&lt;h2&gt;A section without references&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       dpath="/Physical characteristics, taxonomy and evolution/Colour variations/White tigers"
+       usecopy="yes"?&gt;
+&lt;/div&gt;
+&lt;!-- extract a header with following text --&gt;
+&lt;h2&gt;A section with references, only heading and images&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       dpath="/Physical characteristics, taxonomy and evolution/Colour variations/Golden tabby tigers[h4,img]"
+       keeprefs="yes" usecopy="yes"?&gt;
+&lt;/div&gt;
+&lt;!-- extract a section with xpath --&gt;
+&lt;h2&gt;A section accessed with xpath&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       xpath="//table[contains(@class,'infobox')]"
+       keeprefs="no" usecopy="yes"?&gt;
+&lt;/div&gt;
+ 
+&lt;hr/&gt;
+  
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="welcome.xml" 
+       lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

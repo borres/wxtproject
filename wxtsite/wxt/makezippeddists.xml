@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" ?>
+<project default="main">
+    <!-- Making zipped packages of demos -->
+	<!-- democatalog -->
+	<property name="wxtcat" location="c:/wxtproject"/>
+	<property name="target" location="c:/web/wxtsite/wxt"/>
+	
+	<target name="main">
+
+		<!-- wxt6 -->
+		<zip destfile="${target}/wxt6.zip" 
+		     basedir="${wxtcat}" 
+			 includes="wxt6/dist/**" 
+			 update="true"/>
+
+        <!-- wxt6 version -->
+        <copy file="${wxtcat}/wxt6/src/wxtresources/version.txt" tofile="${target}/wxtversion.txt"/>
+		
+		<!-- wxtFace -->
+		<zip destfile="${target}/wxtFace.zip" 
+		     basedir="${wxtcat}" 
+			 includes="wxtFace/dist/**" 
+			 update="true"/>
+
+        <!-- wxt4run version -->
+        <copy file="${wxtcat}/wxtFace/src/versioning/version.txt" tofile="${target}/wxtfaceversion.txt"/>
+ 
+ 
+	</target>
+</project>

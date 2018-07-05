@@ -1,0 +1,8 @@
+
+<div style="font-family:geneva;font-size:11px;border:solid;border-width:thin;width:235px;padding:4px;background-color:#F7F7F7">
+    <img  src="http://www.ia.hiof.no/~borres/self/bs7.png" style="float:left;margin-right:4px" alt="bs"/>
+    Børre Stenseth<br/>Avd. for informasjonsteknologi<br/> Høgskolen i Østfold
+    <br/>job: (47) 69 21 53 68 <br/> mob: (47) 92 46 28 78
+    <br/>borre.stenseth@hiof.no
+ </div>
+

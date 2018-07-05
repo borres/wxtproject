@@ -1,0 +1,30 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "-//W3C//DTD XHTML 1.0 Strict//EN"&gt;
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+    &lt;<span class="tagname">meta</span> <span class="attname">http-equiv</span>="<span class="attvalue">Content-Type</span>" <span class="attname">content</span>="<span class="attvalue">text/html; charset=utf-8</span>"&gt; &lt;/<span class="tagname">meta</span>&gt;
+    &lt;<span class="tagname">title</span>&gt;content&lt;/<span class="tagname">title</span>&gt;
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+&lt;<span class="tagname">h1</span>&gt;Systematic WXT test&lt;/<span class="tagname">h1</span>&gt;
+
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_index.xml" title="index.xml" title="index.xml"
+             sourcelocation="index.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+
+    
+    &lt;<span class="tagname">p</span>&gt;The content of these pages is partly English and partly Norwegian.
+       Most of it does not make much sense as readable text. The purpose
+       is to demonstrate the common Processing Instructions in WXT
+     &lt;/<span class="tagname">p</span>&gt;
+    
+    &lt;<span class="tagname">p</span>&gt;We should allow Norwegian letters: æøå&lt;/<span class="tagname">p</span>&gt;
+
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing mysql select</h1>
+ 
+ 
+<h2>Case 1</h2>
+<p>
+ Performing a mysql -select as a command, and then using a transformation to html.
+</p>
+<p>
+ The commandline, executed as a command from WXT:
+</p>
+<pre>
+<?_wxt popup location="../makeit.bat"?>
+</pre>
+<p>  The transformation:
+</p>
+<div>
+ <?_wxt expandable location="../maketable.xsl" lang="lang-xslt"?>
+</div>
+<p>Some good wines from Spain</p>
+<div class="dbresult">
+<?_wxt importxml xpath="table" location="../batselect.xml" transformation="maketable"?>
+</div> 
+    
+<hr/>
+     
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page2.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

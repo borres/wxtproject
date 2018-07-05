@@ -1,0 +1,8 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">images</span>&gt;
+&lt;<span class="tagname">image</span> <span class="attname">id</span>="<span class="attvalue">bs1-local</span>"&gt;
+    &lt;<span class="tagname">location</span>&gt;bs-1.png&lt;/<span class="tagname">location</span>&gt;
+    &lt;<span class="tagname">link</span>&gt;http://www.ia.hiof.no/~borres/self/bs6.png&lt;/<span class="tagname">link</span>&gt;
+    &lt;<span class="tagname">subtext</span>&gt;self&lt;/<span class="tagname">subtext</span>&gt;
+&lt;/<span class="tagname">image</span>&gt;
+&lt;/<span class="tagname">images</span>&gt;</pre>

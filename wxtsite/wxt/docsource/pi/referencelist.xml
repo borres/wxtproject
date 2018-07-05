@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>PI: reflist</h1>
+<p>
+ This PI will introduce a list of references. The list may have different forms, see below
+</p>
+
+<pre class="piline">
+&lt;?_wxt reflist scope=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>scope</strong> (optional)</td>
+    <td>Allowed values are <em>local</em>(default) and <em>global</em>.
+	If <em>local</em> the list will include references on a module.
+	If <em>global</em> the list will include references encountered so far.
+	 </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>compact</strong> (optional)</td>
+    <td>Allowed values are <em>no</em>(default) and <em>yes</em>.
+	If <em>yes</em> the list will be sorted and  displayed in a simple list,
+	without refrence to the module who uses the reference.
+
+	 </td>
+  </tr>
+  
+    <tr>
+    <td  style="vertical-align:top"><strong>cols</strong> (optional)</td>
+    <td>The number of columns we want.
+    Default value is 1.
+     </td>
+  </tr>
+  
+</table>
+
+<p class="stylefoot">
+Styleclass describing this PI is: <em>wxtreflist1n</em>, where n is the number of columns specified.
+See distributed std styles.
+</p>
+
+
+
+<h2>Examples:</h2>
+
+<pre  class="prettyprint lang-html">
+ &lt;?_wxt reflist scope="global"?&gt;  
+</pre>
+
+
+
+</body>
+</html>

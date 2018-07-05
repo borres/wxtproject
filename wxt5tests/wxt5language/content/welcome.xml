@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing languages</h1>
+<p>
+Depending on  
+   <a href="http://code.google.com/p/prettyprint/" class="external">
+   Googles prettyprint</a>.
+   See 
+   <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html" 
+      class="external">
+   Googles Readme</a>. 
+</p>
+    
+<!-- simple text, as is -->
+<h2>Popup</h2>
+ <p>
+   Testing popup for "pretty" code. 
+</p>
+<p>
+Depending on  
+   <a href="http://code.google.com/p/prettyprint/" class="external">Googles prettyprint</a>.
+   See <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html" class="external">
+   Googles Readme</a>. 
+</p>
+<p>
+The necessary javascript is imported to this page, see source.
+</p>
+
+<h3>Java</h3>
+
+<p>short and simple using pages template</p>
+<div>
+<?_wxt popup location="java/simple1-java.html" 
+      sourcelocation="java/simple1.java" lang="lang-j"?>
+</div>
+
+<p>short and simple using pages template left justifying</p>
+<div>
+<?_wxt popup location="java/simple1justified-java.html" 
+      sourcelocation="java/simple1spaced.java" lang="lang-j"?>
+</div>
+
+
+<p>longer file using own special template</p>
+<div>
+<?_wxt popup template="CODE" location="java/accessutils-java.html" 
+       sourcelocation="java/accessutils.java" lang="lang-j"?>
+</div>
+
+<p>extract from longer file using pages template</p>
+<div>
+<?_wxt popup location="java/accessutilsextract-java.html" 
+       leftpar="// appendtotextfile" rightpar="// eofappendtotextfile"
+       sourcelocation="java/accessutils.java" lang="lang-j"?>
+</div>
+
+<h3>Python</h3>
+<p>simple and pages template</p>
+<div>
+<?_wxt popup location="python/domore-py.html" 
+       sourcelocation="python/domore.py" lang="lang-py"?>
+</div>
+
+<h3>SQL</h3>
+<p>simple and pages template</p>
+<div>
+<?_wxt popup location="sql/do-txt.html" text="some expressions"
+       sourcelocation="sql/do.txt" lang="lang-sql"?>
+</div>
+
+<h3>XML</h3>
+<p>simple and pages template</p>
+<div>
+<?_wxt popup location="sql/Xscript_xml.html" text="The script"
+       sourcelocation="../script.xml" lang="lang-xml"?>
+</div>
+
+<p>large (too large for Google prettify ?)</p>
+
+<div>
+<?_wxt popup location="viner_xml.html" text="Viner"
+       sourcelocation="viner.xml" lang="lang-xml"?>
+</div>
+
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt popup location="welcome_xml.html" sourcelocation="welcome.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

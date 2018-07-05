@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">    
+      
+	<definitions>
+		<option name="indent-output" value="yes"/>
+		<option name="output-format" value="xhtml"/>
+		<option name="use-copy" value="no"/>
+		<template id="P" location="p_template.xml"/>
+		
+
+	
+	</definitions>
+
+	<module books="all" description="test odt" location="index.xhtml" 
+	         name="Page1" template="P">
+			<xmlcontent location="odt1.xml"/>
+	</module>
+	<module books="all" description="test odt again" location="page2.xhtml" 
+	         name="Page2" template="P">
+			<xmlcontent location="odt2.xml"/>
+	</module>	
+
+</wscript>

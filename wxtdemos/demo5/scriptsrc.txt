@@ -1,0 +1,17 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;<span class="tagname">wscript</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>"&gt;    
+      
+  &lt;<span class="tagname">definitions</span>&gt;
+    &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">indent-output</span>" <span class="attname">value</span>="<span class="attvalue">yes</span>"/&gt;
+    &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">output-format</span>" <span class="attname">value</span>="<span class="attvalue">xhtml</span>"/&gt;
+    &lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">p_template.xml</span>"/&gt;
+    &lt;<span class="tagname">formulas</span> <span class="attname">location</span>="<span class="attvalue">formula.odt</span>"/&gt;
+    &lt;<span class="tagname">formulas</span> <span class="attname">location</span>="<span class="attvalue">formula2.odt</span>"/&gt;
+    &lt;<span class="tagname">formulas</span>
+              <span class="attname">location</span>="<span class="attvalue">http://www.ia.hiof.no/~borres/wxt_test_stuff/formula3.odt</span>"/&gt;
+  &lt;/<span class="tagname">definitions</span>&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">test formulas</span>" <span class="attname">location</span>="<span class="attvalue">index.xhtml</span>"
+          <span class="attname">name</span>="<span class="attvalue">FORMULA</span>" <span class="attname">template</span>="<span class="attvalue">P</span>"&gt;
+      &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">formula.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+&lt;/<span class="tagname">wscript</span>&gt;</pre>

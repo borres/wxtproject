@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">    
+      
+	<definitions>
+		<option name="indent-output" value="yes"/>
+		<option name="output-format" value="xhtml"/>
+		<fragments location="commons/myfragments.xml"/>
+		<images location="commons/myimages.xml"/>
+	</definitions>
+
+	<module books="all" description="test a page" location="index.html" 
+	         name="Page 1" id="Page1" template="page1/page1.xml"/>
+
+	<module books="all" description="test a page" location="page2/p2.html" 
+	         name="Page 2" id="Page2" template="page2/page2.xml"/>
+
+	<module books="all" description="test a page" location="page3/p3.html" 
+	         name="Page 3" id="Page3" template="page3/page3.xml"/>
+
+	</wscript>

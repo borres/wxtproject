@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formulas>
+ 
+	<formula id="f1" type="latex">
+	<value><![CDATA[\sqrt[3]{x^3 + y^3 \over 2}]]></value>
+	</formula>
+ 
+	<formula id="f21" type="image">
+	<subtext>Vector length</subtext>
+	<value>vektor1.gif</value>
+	</formula>
+ 
+	<formula id="f31" type="mathml">
+	<subtext>Simple sum</subtext>
+	<value><![CDATA[<math xmlns="http://www.w3.org/1998/Math/MathML">
+			  <semantics>
+				<mrow>
+				  <mrow>
+					<mo stretchy="false">∑</mo>
+					<mi>f</mi>
+				  </mrow>
+				  <mrow>
+					<mo stretchy="false">(</mo>
+					<mi>x</mi>
+					<mo stretchy="false">)</mo>
+				  </mrow>
+				</mrow>
+			  </semantics>
+			</math>]]>
+	</value>
+	</formula>
+ 
+</formulas>

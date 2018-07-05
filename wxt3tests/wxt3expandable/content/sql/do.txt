@@ -1,0 +1,12 @@
+SELECT h_lag_id,b_lag_id,h_maal,b_maal,kamp_dato 
+                 FROM kamp WHERE liga_id='eng1';
+
+SELECT h_lag_id,b_lag_id,h_maal,b_maal,kamp_dato 
+                FROM kamp WHERE liga_id='eng1' AND b_lag_id='manu';
+
+SELECT h_lag_id,b_lag_id,h_maal,b_maal,kamp_dato  
+                 FROM kamp WHERE liga_id='eng1' AND h_lag_id='manu';
+				 
+SELECT h_lag_id,b_lag_id,h_maal,b_maal,kamp_dato  
+                 FROM kamp WHERE liga_id='eng' AND h_lag_id='manu' 
+                 AND b_lag_id='*';"""

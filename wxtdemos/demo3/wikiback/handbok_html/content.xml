@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="no" xml:lang="no">
+<head>
+<meta content="HTML Tidy for Java (vers. 2009-12-01), see jtidy.sourceforge.net" name="generator"/>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta content="HÃ¥ndbok" name="keywords"/>
+<link href="https://wiki.hiof.no/favicon.ico" rel="shortcut icon"/>
+<link href="https://wiki.hiof.no/XP/opensearch_desc.php" rel="search" title="XP (âªNorsk (bokmÃ¥l)â¬)" type="application/opensearchdescription+xml"/>
+<title>HÃ¥ndbok - XP</title>
+<style media="screen,projection" type="text/css">
+/*<![CDATA[*/ @import "/XP/skins/monobook/main.css?63"; /*]]>*/
+</style>
+<link href="handbok_files/commonPrint.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="handbok_files/handheld.css" media="handheld" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 5.5000]><style type="text/css">@import "/XP/skins/monobook/IE50Fixes.css?63";</style><![endif]-->
+<!--[if IE 5.5000]><style type="text/css">@import "/XP/skins/monobook/IE55Fixes.css?63";</style><![endif]-->
+<!--[if IE 6]><style type="text/css">@import "/XP/skins/monobook/IE60Fixes.css?63";</style><![endif]-->
+<!--[if IE 7]><style type="text/css">@import "/XP/skins/monobook/IE70Fixes.css?63";</style><![endif]-->
+<!--[if lt IE 7]><script type="text/javascript" src="/XP/skins/common/IEFixes.js?63"></script>
+                <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+<script type="text/javascript">
+/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/XP/skins";
+var wgArticlePath = "/XP/index.php/$1";
+var wgScriptPath = "/XP";
+var wgServer = "https://wiki.hiof.no";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "H??ndbok";
+var wgTitle = "H??ndbok";
+var wgAction = "view";
+var wgArticleId = "36";
+var wgIsArticle = true;
+var wgUserName = "Borres";
+var wgUserGroups = ["*", "user", "autoconfirmed"];
+var wgUserLanguage = "no";
+var wgContentLanguage = "no";
+var wgBreakFrames = false;
+var wgCurRevisionId = "620";
+/*]]>*/
+</script>
+<script src="handbok_files/wikibits.js" type="text/javascript">
+//<![CDATA[
+<!-- wikibits js -->
+//]]>
+</script>
+<script src="handbok_files/index.php" type="text/javascript">
+//<![CDATA[
+<!-- site js -->
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+@import "/XP/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/XP/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/XP/index.php?title=-&action=raw&gen=css&maxage=18000&smaxage=0";
+/*]]>*/
+</style>
+<!-- Head Scripts -->
+</head>
+<body class="mediawiki ns-0 ltr page-HÃ¥ndbok">
+<div id="globalWrapper">
+<div id="column-content">
+<div id="content">
+          <a id="top" name="top"/> 
+<h1 class="firstHeading">HÃ¥ndbok</h1>
+<div id="bodyContent">
+<h3 id="siteSub">Fra XP</h3>
+<div id="contentSub"/>
+<!-- start content -->
+<p>En samling av alle dokumenter som er produsert under prosjektet
+og som kan brukes som stÃ¸tte med hensyn pÃ¥
+metode og verktÃ¸y nÃ¥r metoden anvendes i
+undervisning. VÃ¦r oppmerksom pÃ¥ at de enkelte
+deler er utformet for Ã¥ kunne anvendes som selvstendige
+dokumenter.</p>
+<table class="toc" id="toc" summary="Innhold">
+<tbody>
+<tr>
+<td>
+<div id="toctitle">
+<h2>Innhold</h2>
+<span class="toctoggle">[<a class="internal" href="javascript:toggleToc()" id="togglelink">skjul</a>]</span>
+                    </div>
+<ul>
+<li class="toclevel-1">
+                        <a href="#Innhold">
+                          <span class="tocnumber">1</span> <span class="toctext">Innhold</span>
+                        </a>
+                      </li>
+<li class="toclevel-1">
+                        <a href="#Verkt.C3.B8y">
+                          <span class="tocnumber">2</span> <span class="toctext">VerktÃ¸y</span>
+                        </a>
+                      </li>
+<li class="toclevel-1">
+                        <a href="#Verkt.C3.B8yene_Trac_.5B1.5D_og_Subversion_.5B2.5D">
+                          <span class="tocnumber">3</span> <span class="toctext">VerktÃ¸yene Trac [1] og Subversion
+[2]</span>
+                        </a> 
+<ul>
+<li class="toclevel-2">
+                            <a href="#Trac">
+                              <span class="tocnumber">3.1</span> <span class="toctext">Trac</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Subversion">
+                              <span class="tocnumber">3.2</span> <span class="toctext">Subversion</span>
+                            </a>
+                          </li>
+</ul>
+</li>
+<li class="toclevel-1">
+                        <a href="#Relasjonen_Trac_og_Subversion">
+                          <span class="tocnumber">4</span> <span class="toctext">Relasjonen Trac og
+Subversion</span>
+                        </a>
+                      </li>
+<li class="toclevel-1">
+                        <a href="#Introduksjon_til_begreper_og_arbeidsm.C3.A5te_ved_Trac">
+                          <span class="tocnumber">5</span> <span class="toctext">Introduksjon til
+begreper og arbeidsmÃ¥te ved Trac</span>
+                        </a> 
+<ul>
+<li class="toclevel-2">
+                            <a href="#Prosjekter">
+                              <span class="tocnumber">5.1</span> <span class="toctext">Prosjekter</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Tickets">
+                              <span class="tocnumber">5.2</span> <span class="toctext">Tickets</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Components">
+                              <span class="tocnumber">5.3</span> <span class="toctext">Components</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Milestones">
+                              <span class="tocnumber">5.4</span> <span class="toctext">Milestones</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Reports">
+                              <span class="tocnumber">5.5</span> <span class="toctext">Reports</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Wiki">
+                              <span class="tocnumber">5.6</span> <span class="toctext">Wiki</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Timeline">
+                              <span class="tocnumber">5.7</span> <span class="toctext">Timeline</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Rettigheter">
+                              <span class="tocnumber">5.8</span> <span class="toctext">Rettigheter</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#En_kort_bruksanvisning">
+                              <span class="tocnumber">5.9</span> <span class="toctext">En kort
+bruksanvisning</span>
+                            </a>
+                          </li>
+</ul>
+</li>
+<li class="toclevel-1">
+                        <a href="#Introduksjon_til_begreper_og_arbeidsm.C3.A5te_ved_Subversion">
+                          <span class="tocnumber">6</span> <span class="toctext">Introduksjon til
+begreper og arbeidsmÃ¥te ved Subversion</span>
+                        </a> 
+<ul>
+<li class="toclevel-2">
+                            <a href="#Repository">
+                              <span class="tocnumber">6.1</span> <span class="toctext">Repository</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Working_copy">
+                              <span class="tocnumber">6.2</span> <span class="toctext">Working
+copy</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Check-out">
+                              <span class="tocnumber">6.3</span> <span class="toctext">Check-out</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Update">
+                              <span class="tocnumber">6.4</span> <span class="toctext">Update</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Commit">
+                              <span class="tocnumber">6.5</span> <span class="toctext">Commit</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Conflict_resolution">
+                              <span class="tocnumber">6.6</span> <span class="toctext">Conflict
+resolution</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Revert">
+                              <span class="tocnumber">6.7</span> <span class="toctext">Revert</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Diff">
+                              <span class="tocnumber">6.8</span> <span class="toctext">Diff</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#Bruk_av_IM_mens_man_jobber">
+                              <span class="tocnumber">6.9</span> <span class="toctext">Bruk av IM mens
+man jobber</span>
+                            </a>
+                          </li>
+<li class="toclevel-2">
+                            <a href="#En_kort_bruksanvisning_2">
+                              <span class="tocnumber">6.10</span> <span class="toctext">En kort
+bruksanvisning</span>
+                            </a>
+                          </li>
+</ul>
+</li>
+<li class="toclevel-1">
+                        <a href="#Refereanser">
+                          <span class="tocnumber">7</span> <span class="toctext">Refereanser</span>
+                        </a>
+                      </li>
+<li class="toclevel-1">
+                        <a href="#xp">
+                          <span class="tocnumber">8</span> <span class="toctext">xp</span>
+                        </a>
+                      </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+ if (window.showTocToggle) { var tocShowText = "vis"; var tocHideText = "skjul"; showTocToggle(); } 
+//]]>
+</script>
+ <a id="Innhold" name="Innhold"/>
+<h2>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=1" title="Rediger seksjon: Innhold">rediger</a>]</span> <span class="mw-headline">Innhold</span>
+            </h2>
+<p>VerktÃ¸y</p>
+<p>VerktÃ¸yene Trac [1] og Subversion [2]</p>
+<ul>
+<li>Trac</li>
+<li>Subversion</li>
+</ul>
+<p>Relasjonen Trac og Subversion</p>
+<p>Introduksjon til begreper og arbeidsmÃ¥te ved Trac</p>
+<p>Introduksjon til begreper og arbeidsmÃ¥te ved
+Subversion</p>
+<p>Referanser</p>
+<p>
+              <br/>
+</p>
+<a id="Verkt.C3.B8y" name="Verkt.C3.B8y"/>
+<h2>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=2" title="Rediger seksjon: VerktÃ¸y">rediger</a>]</span>
+<span class="mw-headline">VerktÃ¸y</span>
+            </h2>
+<ul>
+<li>Trac</li>
+<li>SVN</li>
+<li>Wiki</li>
+<li>Blog</li>
+</ul>
+<a id="Verkt.C3.B8yene_Trac_.5B1.5D_og_Subversion_.5B2.5D" name="Verkt.C3.B8yene_Trac_.5B1.5D_og_Subversion_.5B2.5D"/>
+<h2>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=3" title="Rediger seksjon: VerktÃ¸yene Trac [1] og Subversion [2]">rediger</a>]</span>
+<span class="mw-headline">VerktÃ¸yene Trac [1] og
+Subversion [2]</span>
+            </h2>
+<p>Begge verktÃ¸yene representerer en type
+verktÃ¸y som er basert pÃ¥ bruk gjennom web
+verktÃ¸y. De har blitt mer vanlig i bruk i den senere
+tid, ogsÃ¥ i det private nÃ¦ringsliv. De er av
+type Ã¥pen kildekode (open source) som er fritt
+tilgjengelig gjennom Internett. Ut i fra vÃ¥r erfaring er
+systemene greie Ã¥ drifte og krever smÃ¥
+resurser for Ã¥ driftes i en organisasjon. Selv om disse
+to systemene er utviklet i miljÃ¸er som driver med
+utvikling av programvare for datamaskiner har systemene en
+generalisert form som gjÃ¸r de anvendelig i de aller
+fleste prosjektutviklinger som bruker skriftlig materiale. Vi
+beskriver systemene nÃ¦rmere, fÃ¸rst med en
+tekst som prÃ¸ver Ã¥ anskueliggjÃ¸re
+hva de kan brukes til og da sÃ¦rlig vekt pÃ¥
+undervisnings og forskningssammenheng (kap XXXXXX og kap XXX).
+SÃ¥ kommer en beskrivelse av relasjonen mellom Trac og
+Subversion (kap XXXX). Til slutt kommer bruksanvisning som skal
+kunne brukes som et oppslagsverk for Ã¥ ta systemene i
+bruk (Kap XXXX).</p>
+<a id="Trac" name="Trac"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=4" title="Rediger seksjon: Trac">rediger</a>]</span> <span class="mw-headline">Trac</span>
+            </h3>
+<p>Trac er et verktÃ¸y som kan brukes i
+prosjektgjennomfÃ¸ring og andre former for samarbeid
+mellom mennesker. VerktÃ¸yet gir mulighet for
+Ã¥ kunne planlegge arbeidet, dokumentere underveis samt i
+ettertid kunne spore arbeid som er utfÃ¸rt. Systemet har
+en minimalistisk tilnÃ¦rmingsform, slik at det er et
+enkelt prosjektstyringsverktÃ¸y. I dette ligger det
+ogsÃ¥ at systemet er utviklet for i minst mulig grad
+Ã¥ pÃ¥tvinge den eksisterende
+utviklingsprosessen styrende elementer. Dette kan vÃ¦re
+en fordel for anvendelse i ulike didaktiske opplegg.</p>
+<p>Vi hevder at systemet er egnet for utviklingsoppgaver som
+prosjekter i nÃ¦ringslivet og prosjekter i
+undervisningssammenheng, Dette med bakgrunn i den minimalistiske
+form. Det vil si at de er enkle Ã¥ inntalere og at
+terskelen for Ã¥ kunne anvende verktÃ¸yet er
+lav. VÃ¥re resultat viser at selv for
+fÃ¸rstesemester studenter holder det med en enkel
+innfÃ¸ring i verktÃ¸yene, samt litt veiledning
+fra studentassistenter.</p>
+<p>VerktÃ¸yet bruker wiki formatering [3] i sin
+behandling av tekst som er knyttet til organisering og
+gjennomfÃ¸ring av prosjekt, sÃ¥ som for
+eksempel: meldinger, kommentarer, beskrivelser og linker. Dette
+bidrar til en standardisert form slik at det er mindre risiko for
+at noen legger inn tekst som de andre i prosjektet kan ha problemer
+med Ã¥ se. Det er Ã¥ bemerke at det selvsagt er
+slik at vi i prosjektet kan produsere alle slags fileformater, som
+for eksempel: txt, doc, emx og jpg.</p>
+<p>Her vises en klipp av web siden som brukes nÃ¥r vi
+jobber med Trac:</p>
+<p>
+              <a class="image" href="https://wiki.hiof.no/XP/index.php/Bilde:Tracbilde.jpg" title="Bilde: Tracbilde.jpg">
+                <img alt="Bilde: Tracbilde.jpg" height="331" longdesc="/XP/index.php/Bilde:Tracbilde.jpg" src="wikiback/handbok_html/Tracbilde.jpg" width="445"/>
+              </a>
+            </p>
+<p>Figur 3; Typisk eksempel pÃ¥ en oppstartside i et
+undervisningsprosjekt.</p>
+<p>Ã&#152;verst i figuren er det en samling med funksjoner som
+finnes i Trac. Denne delen vises hele tiden, mens resten av siden
+brukes til Ã¥ vise de data som er knytte til den valgte
+funksjonen.</p>
+<p>NÃ¥r vi jobber med prosjektlignende oppgaver kan vi
+nÃ¥r som helst enkelt se alle hendelser som er gjort
+tidligere i prosjektet og veien videre. Vi kan legge inn elementer
+som milepÃ¦ler (milestone), arbeidsoppgaver (ticket) og
+fritt lage komponenter (som typisk er: forskjellige typer
+dokumentasjon og programkode). Vi kan ogsÃ¥ lage
+relasjoner mellom de forskjellige elementene slik at det er enkelt
+Ã¥ spore tilbake i prosjektet.</p>
+<p>Vi har prÃ¸vd Trac pÃ¥ flere
+nivÃ¥er i studiet. Det er sÃ¦rlig enkelheten i
+funksjonaliteten som gjÃ¸r den egnet for bruk i
+forbindelse med forskjellige didaktiske opplegg. Det at bruk av
+verktÃ¸y kan bidra til at studentene fÃ¥r mer
+ut av de aktuelle temaer for et kurs, enn at denne type
+verktÃ¸y, bidrar negativt pÃ¥ grunn av sin
+kompleksitet eller arbeidsmengde, var en positiv erfaring for
+oss.</p>
+<a id="Subversion" name="Subversion"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=5" title="Rediger seksjon: Subversion">rediger</a>]</span> <span class="mw-headline">Subversion</span>
+            </h3>
+<p>Versjonskontroll er en type verktÃ¸y som kan brukes i
+prosjektgjennomfÃ¸ring og andre former hvor en utvikler
+dokumenter. Vi tror de fleste av oss har opplevd: Ã&#133; ha
+mange filer i flere varianter, slettet feil fil, fjernet en tekst
+og sÃ¥ oppdaget at, den skulle vi hatt for Ã¥
+putte inn her og hva har Tora skrevet om dette emnet (jeg er
+usikker pÃ¥ hva jeg kan skrive om det)?</p>
+<p>De aller fleste studenter har jobbet med dokumenter som flere
+bidrar til. Som regel skriver de forskjellige deler og
+sÃ¥ lappes det sammen pÃ¥ slutten. Noen er
+ogsÃ¥ vant med Ã¥ sende biten de har skrevet
+til andre og fÃ¥ tilbakemelding pÃ¥ teksten.
+Disse arbeidsformene medfÃ¸rer ofte til at dokumentene
+ikke har den konsistens i form og sprÃ¥k som kan
+forventes pÃ¥ hÃ¸gskole/universiteter. Ofte
+fortsetter studentene med denne arbeidsformen de er vant med fra
+videregÃ¥ende skole under
+hÃ¸gskole/universitetstudier. Dette er i og forseg
+naturlig siden de i liten grad har fÃ¥tt erfare en del av
+de verktÃ¸y som kan brukes for Ã¥ utvikle
+dokumenter i en moderne bedrift. Tankegangen er at
+verktÃ¸yene for versjonskontroll ideelt skal kunne
+gjÃ¸re det mulig for at flere skal kunne jobbe simultant
+pÃ¥ samme dokument og at en enkelt ved hvilket som helst
+tidspunkt kan se hva dokumentet inneholder samt spole tilbake til
+gamle versjoner.</p>
+<p>Vi skal her prÃ¸ve Ã¥ skrive en forenklet
+versjon av strategien systemet virker etter. Denne beskrivelsen er
+tenkt som en innfÃ¸ring i versjonskontroll systemer, uten
+Ã¥ ta for seg alle mekanismer og med et lavt
+ambisjonsnivÃ¥ med hensyn til presisjon. Teksten
+beskriver to senarioer pÃ¥ arbeidsgangen. Det
+fÃ¸rste er basert pÃ¥ at Per utvikler et
+dokument uten Ã¥ samarbeide med noen. Det andre
+illustrerer to personer pÃ¥ samme dokument.</p>
+<p>Senario en (se Figur 1): NÃ¥r jeg (Per) skal jobbe med
+et dokument sÃ¥ henter jeg fra hoveddokumentet (HovedDok:
+versjon 7) en arbeidskopi (Per: versjon 0) til min lokale maskin.
+SÃ¥ jobber jeg pÃ¥ denne lokale kopien.
+NÃ¥r jeg appliserer denne lokale kopien (Per: versjon 0)
+til det som ovenfor er omtalt som hoveddokumentet flettes mine
+endringer inn i hoveddokumentet pÃ¥ riktig plass. Denne
+nye versjonen fÃ¥r et nytt versjonsnummernummer
+(HovedDok: versjon 8). Slik fortsetter det.</p>
+<p>
+              <br/>
+<a class="image" href="https://wiki.hiof.no/XP/index.php/Bilde:SVNen_person.jpg" title="Bilde: SVNen_person.jpg">
+                <img alt="Bilde: SVNen_person.jpg" height="199" longdesc="/XP/index.php/Bilde:SVNen_person.jpg" src="wikiback/handbok_html/SVNen_person.jpg" width="397"/>
+              </a>
+            </p>
+<p>Figur 1, Arbeidsgang med en person</p>
+<p>
+              <br/>
+Senario to (se Figur 2): Revisjonskontrollsystemet gjÃ¸r
+at flere kan jobbe pÃ¥ samme dokument
+tilnÃ¦rmet simultant. Dette skjer ved at det er et
+hoveddokument som fungerer som et fellesdokument. La oss si at en
+annen person (Lone) har hentet en arbeidskopi (Lone: versjon 0) av
+hoveddokumentet (HovedDok: versjon 7) mens jeg jobbet med min
+lokale versjon. Denne versjonen (Lone: versjon 0) vil da
+vÃ¦re forskjellig fra det som er hoveddokumentet
+(HovedDok: versjon 8) etter at jeg har applisert min
+arbeidskopi.</p>
+<p>Dersom Lone nÃ¥ appliserer sin kopi til
+hoveddokumentet vil hun skrive over de endringer jeg har gjort
+(merket med X pÃ¥ figuren). Derfor mÃ¥ hun
+sjekke om det er noen konflikter mellom hoveddokumentet og hennes
+arbeidskopi. Dette gjÃ¸r hun ved Ã¥ sammenligne
+(sjekk 1) siste versjon av hoveddokumentet (HovedDok: versjon 8)
+mot sin arbeidskopi og sjekke om det er noen konflikter. Dersom det
+er noen mÃ¥ hun fikse disse. Dette gjÃ¸r at hun
+nÃ¥ har (Lone: versjon 1) som arbeidskopi. SÃ¥
+sjekker hun konflikter en gang til (Sjekk 2). Dersom ok, kan hun
+applisere sin arbeidskopi til hoveddokumentet som nÃ¥
+fÃ¥r en ny versjonsnummerering (HovedDok: versjon 9).</p>
+<p>
+              <br/>
+ <a class="image" href="https://wiki.hiof.no/XP/index.php/Bilde:SVNto_personer.jpg" title="Bilde: SVNto_personer.jpg">
+                <img alt="Bilde: SVNto_personer.jpg" height="284" longdesc="/XP/index.php/Bilde:SVNto_personer.jpg" src="wikiback/handbok_html/SVNto_personer.jpg" width="529"/>
+              </a>
+            </p>
+<p>Figur 2, Arbeidsgang ved 2 brukere</p>
+<p>
+              <br/>
+Systemet er lett Ã¥ bruke nÃ¥r en kommer i
+gang, og etter et par runder gÃ¥r det greit med
+basisfunksjonene. De litt mer avanserte funksjonene kommer
+nÃ¥r en fÃ¥r mer erfaring.</p>
+<p>
+              <br/>
+</p>
+<a id="Relasjonen_Trac_og_Subversion" name="Relasjonen_Trac_og_Subversion"/>
+<h2>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=6" title="Rediger seksjon: Relasjonen Trac og Subversion">rediger</a>]</span>
+<span class="mw-headline">Relasjonen Trac og Subversion</span>
+            </h2>
+<p>En av funksjonalitetene i Trac er enkel tilgang til alle
+versjonene av filene i et prosjekt. Dette innbÃ¦rer at
+prosjektstyring og versjonering av filer er integrert i en pakke
+som er godt egnet for jobbmessig samarbeid mellom flere personer.
+Vi kan for eksempel i prosjektstyringsverktÃ¸yet se alle
+endringer som er gjort pÃ¥ alle versjoner av filer og
+kommentarer gjort i tilknytting til en arbeidsoppgave (ticket) i
+styringsverktÃ¸yet kan linkes mot den enkelte
+filversjon.</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<a id="Introduksjon_til_begreper_og_arbeidsm.C3.A5te_ved_Trac" name="Introduksjon_til_begreper_og_arbeidsm.C3.A5te_ved_Trac"/>
+<h2>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=7" title="Rediger seksjon: Introduksjon til begreper og arbeidsmÃ¥te ved Trac">rediger</a>]</span>
+<span class="mw-headline">Introduksjon til begreper og
+arbeidsmÃ¥te ved Trac</span>
+            </h2>
+<p>En takk til Harald Holone ved HÃ¸gskolen i
+Ã&#152;stfold for tillatelse til Ã¥ klippe og lime
+fra hans wiki nÃ¥r denne dokumentasjonen ble laget.
+(Holone, 2007) Trac er et Ã¥pent, web-basert system for
+Ã¥ jobbe med prosjekter, og inkluderer
+oppgavehÃ¥ndtering, wiki, rapportering og enkel
+prosjektstyring.</p>
+<ul>
+<li>
+                <a class="external free" href="http://trac.edgewall.org/" rel="nofollow" title="http://trac.edgewall.org/">http://trac.edgewall.org/</a>
+              </li>
+</ul>
+<a id="Prosjekter" name="Prosjekter"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=8" title="Rediger seksjon: Prosjekter">rediger</a>]</span> <span class="mw-headline">Prosjekter</span>
+            </h3>
+<p>En Trac-installasjon er ett prosjekt (pr. idag). Et prosjekt
+brytes ned i komponenter og milepeler. Enkeltoppgaver,
+feilrapporter osv. opprettes som Tickets. En Ticket inneholder en
+beskrivelse av en delarbeidsoppgave i prosjektet som skal
+utfÃ¸res, og er (evt.) knyttet opp mot
+milepÃ¦l, komponent, person osv.</p>
+<a id="Tickets" name="Tickets"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=9" title="Rediger seksjon: Tickets">rediger</a>]</span> <span class="mw-headline">Tickets</span>
+            </h3>
+<p>Hver ticket har en unik ID og en historikk med kommentarer som
+kan knyttes til den enkelte arbeidsoppgaven. Kommentarene som
+skrives kan benytte wiki-syntaks (se "wiki"). Stort sett gjelder
+wiki- syntaks de fleste stedene vi kan skrive tekst i Trac. En
+ticket kan opprettes som Ã¥pen, det vil si ikke
+vÃ¦re knyttet mot en person, og sÃ¥ kan den
+siden knyttes til en person. Status til en eller et utvalg tickets
+finnes i ulike rapporter. En ticket aksepteres av en bruker, som
+tar ansvaret for Ã¥ lÃ¸se oppgaven.
+NÃ¥r oppgaven er lÃ¸st (problem fikset eller
+dokumentasjon skrevet), lukkes/avsluttes ticketen. Til hver ticket
+kan det knyttes ulike egenskaper. Det anbefales Ã¥
+prÃ¸ve ut de ulike alternativ.</p>
+<a id="Components" name="Components"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=10" title="Rediger seksjon: Components">rediger</a>]</span> <span class="mw-headline">Components</span>
+            </h3>
+<p>Et prosjekt kan brytes ned i komponenter, f.eks.</p>
+<ul>
+<li>Dokumentasjon (bilag, foto, musikk, deler av rapport)</li>
+<li>Programkode (DatabaseAPI, mobilprogram, webgrensesnitt)</li>
+<li>Dokumenter til prosjektprosessen</li>
+</ul>
+<p>Tickets kan knyttes mot komponenter. Dette bidrar til mer
+oversikt over prosjektets ulike deler. Det bidrar ogsÃ¥
+til muligheten for et mer detaljert nivÃ¥ pÃ¥
+rapporter.</p>
+<a id="Milestones" name="Milestones"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=11" title="Rediger seksjon: Milestones">rediger</a>]</span> <span class="mw-headline">Milestones</span>
+            </h3>
+<p>Et prosjekt kan brytes opp i milepÃ¦ler, og tickets
+kan knyttes til disse. Trac kan vise fremdriftsrapporter som viser
+antall Ã¥pne og lukkede tickets knyttet til hver
+milepÃ¦l. Disse rapportene kan videre knyttes mot
+komponenter.</p>
+<a id="Reports" name="Reports"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=12" title="Rediger seksjon: Reports">rediger</a>]</span> <span class="mw-headline">Reports</span>
+            </h3>
+<p>Rapportene brukes ofte til Ã¥ vise tickets, og
+standardrapporten "alle Ã¥pne tickets" er grei for
+Ã¥ fÃ¥ en oversikt over hvilke oppgaver som
+gjenstÃ¥r i et prosjekt. Rapportene kan skreddersys, og
+f.eks. vise oppgaver knyttet til en person, alle avsluttede
+oppgaver, oppgaver fordelt pÃ¥ komponent eller milepel
+osv.</p>
+<a id="Wiki" name="Wiki"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=13" title="Rediger seksjon: Wiki">rediger</a>]</span> <span class="mw-headline">Wiki</span>
+            </h3>
+<p>Trac inneholder en egen wiki, som fungerer godt for levende
+dokumentasjon i et prosjekt. Av fordelene kan nevnes krysslinking
+til tickets og rapporter. Wiki-syntaksen er enkel (og hjelp er
+tilgengelig). Oppretting av nye sider skjer ved Ã¥ lage
+en link til en side som ikke eksisterer, og sÃ¥
+fÃ¸lge linken.</p>
+<a id="Timeline" name="Timeline"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=14" title="Rediger seksjon: Timeline">rediger</a>]</span> <span class="mw-headline">Timeline</span>
+            </h3>
+<p>Trac har en hendig tidslinje som viser aktivitet i prosjektet i
+omvendt kronologisk rekkefÃ¸lge. BÃ¥de
+endringer i wiki og stÃ¸rre hendelser i Ticket-systemet
+(opprettelse og lukking) dukker opp her. Dessuten viser tidslinjen
+aktiviteter i versjonshÃ¥ndteringssystemet Subversion,
+dersom det er i bruk sammen med Trac.</p>
+<a id="Rettigheter" name="Rettigheter"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=15" title="Rediger seksjon: Rettigheter">rediger</a>]</span> <span class="mw-headline">Rettigheter</span>
+            </h3>
+<p>Brukere og roller er en del av sikkerhetssystemet i Trac, og
+gjÃ¸r at man kan styre hvem som fÃ¥r tilgang
+til hva. Det viktigste er kanskje at noen kan ha administrativ
+rolle for Trac-systemet i prosjektet, og at man kan skille
+pÃ¥ hvem som fÃ¥r opprette og lukke tickets,
+samt hvem som fÃ¥r skrive i wiki-en.</p>
+<a id="En_kort_bruksanvisning" name="En_kort_bruksanvisning"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=16" title="Rediger seksjon: En kort bruksanvisning">rediger</a>]</span>
+<span class="mw-headline">En kort bruksanvisning</span>
+            </h3>
+<ol>
+<li>Driftspersonal: Trac systemet legges inn pÃ¥ server.
+Det opprettes prosjekt og brukere.</li>
+<li>Brukere: GÃ¥ til web adressen du fÃ¥r
+oppgitt av driftspersonalet, og logg pÃ¥.</li>
+</ol>
+<p>
+              <br/>
+terje</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<p>
+              <br/>
+</p>
+<a id="Introduksjon_til_begreper_og_arbeidsm.C3.A5te_ved_Subversion" name="Introduksjon_til_begreper_og_arbeidsm.C3.A5te_ved_Subversion"/>
+<h2>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=17" title="Rediger seksjon: Introduksjon til begreper og arbeidsmÃ¥te ved Subversion">rediger</a>]</span>
+<span class="mw-headline">Introduksjon til begreper og
+arbeidsmÃ¥te ved Subversion</span>
+            </h2>
+<p>En takk til Harald Holone ved HÃ¸gskolen i
+Ã&#152;stfold for tillatelse til Ã¥ klippe og lime
+fra hans wiki nÃ¥r denne dokumentasjonen ble laget.
+(Holone, 2007) Subversion er et Ã¥pent
+versjonskontrollsystem og ligner pÃ¥ mange
+mÃ¥ter CVS (men er mye bedre :-))</p>
+<ul>
+<li>
+                <a class="external free" href="http://subversion.tigris.org/" rel="nofollow" title="http://subversion.tigris.org/">http://subversion.tigris.org/</a>
+              </li>
+<li>
+                <a class="external free" href="http://tortoisesvn.tigris.org/" rel="nofollow" title="http://tortoisesvn.tigris.org">http://tortoisesvn.tigris.org</a> for Windows er det
+TortoiseSVN som er mest brukt, og det brukes som en integrert del
+av Explorer</li>
+<li>
+                <a class="external free" href="http://subcommander.tigris.org/" rel="nofollow" title="http://subcommander.tigris.org">http://subcommander.tigris.org</a> for Mac blant
+annet</li>
+</ul>
+<a id="Repository" name="Repository"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=18" title="Rediger seksjon: Repository">rediger</a>]</span> <span class="mw-headline">Repository</span>
+            </h3>
+<p>Sentralt pÃ¥ serveren finnes et repository. Et
+repository er en trestruktur der alle filene versjoneres.
+Strukturen er fri, men det kan vÃ¦re en fordel at et
+repository representerer ett prosjekt.</p>
+<a id="Working_copy" name="Working_copy"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=19" title="Rediger seksjon: Working copy">rediger</a>]</span> <span class="mw-headline">Working copy</span>
+            </h3>
+<p>En working copy er en lokal utgave av serverens repository
+(eller deler av dette). Man jobber direkte med filene som ligger i
+den lokale kopien.</p>
+<a id="Check-out" name="Check-out"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=20" title="Rediger seksjon: Check-out">rediger</a>]</span> <span class="mw-headline">Check-out</span>
+            </h3>
+<p>NÃ¥r man skal begynne Ã¥ jobbe mot et
+repository mÃ¥ man fÃ¸rst sjekke ut filene fra
+serveren. Utsjekking betyr Ã¥ kopiere filene (eller noen
+av dem) ned til egen klient. Det foretas (i utgangspunktet) ingen
+lÃ¥sing av disse filene, slik at andre kan
+ogsÃ¥ sjekke ut de samme filene. Utsjekking er kun
+nÃ¸dvendig for Ã¥ skape den lokale kopien.
+Oppdatering av lokalt arbeidsomrÃ¥de fra repository skjer
+med en Update.</p>
+<a id="Update" name="Update"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=21" title="Rediger seksjon: Update">rediger</a>]</span> <span class="mw-headline">Update</span>
+            </h3>
+<p>Man bÃ¸r oppdatere ofte. En oppdatering vil ta
+endringene som eksisterer mellom din lokale kopi og siste versjon
+pÃ¥ serveren, og vil applisere disse endringene
+pÃ¥ din lokale kopi. Det finnes her en mulighet for
+konflikter (dersom du har gjort endringer pÃ¥ din lokale
+kopi som er i konflikt med endringer gjort i repository).
+KonflikthÃ¥ndtering ser vi pÃ¥ om litt. Det er
+god praksis Ã¥ oppdatere den lokale kopien fÃ¸r
+man starter en arbeidsÃ¸kt. Man skal ogsÃ¥
+alltid oppdatere (og fikse evt. konflikter) fÃ¸r man
+sender sine lokale endringer til server.</p>
+<a id="Commit" name="Commit"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=22" title="Rediger seksjon: Commit">rediger</a>]</span> <span class="mw-headline">Commit</span>
+            </h3>
+<p>NÃ¥r man har gjort endringer/tillegg i den lokale
+kopien og Ã¸nsker Ã¥ applisere disse endringene
+pÃ¥ repository utfÃ¸rer man en Commit.
+Endringene sendes til server, som oppdaterer sitt repository og
+lager et nytt revisjonsnummer. Revisjonsnummeret er et
+lÃ¸penummer som Ã¸kes med Ã©n for
+hver innsjekking. Endringer som har relasjon (f.eks. endring i
+flere kildefiler for Ã¥ fikse en bug) bÃ¸r
+sjekkes inn samtidig, altsÃ¥ i samme revisjon. SVN
+gjÃ¸r det enkelt Ã¥ sjekke inn fra et
+vilkÃ¥rlig punkt i katalogtreet. Det er ansvaret til den
+som sjekker inn Ã¥ sÃ¸rge for at evt.
+konflikter er hÃ¥ndtert. SVN vil hjelpe til, og ikke
+tillate innsjekking dersom det fortsatt eksisterer
+ulÃ¸ste konflikter. Det er ogsÃ¥ god praksis (i
+praksis et krav!) Ã¥ sÃ¸rge for at det man
+sjekker inn kan kompileres eller pÃ¥ annen
+mÃ¥te henger pÃ¥ greip. Det vil ogsÃ¥
+si at evt. enhetstester bÃ¸r kjÃ¸res for
+Ã¥ luke ut (nye) feil fÃ¸r man deler dem med
+andre. En valgfri melding kan knyttes til en innsjekking. Det
+oppfordres pÃ¥ det sterkeste til Ã¥ bruke denne
+aktivt og fornuftig, siden det gjÃ¸r det veldig mye
+enklere for andre Ã¥ fÃ¸lge med pÃ¥
+endringene som gjÃ¸res, og det blir enklere Ã¥
+siden lete etter f.eks. en revisjon der man fikset (eller
+introduserte) et bestemt problem.</p>
+<a id="Conflict_resolution" name="Conflict_resolution"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=23" title="Rediger seksjon: Conflict resolution">rediger</a>]</span>
+<span class="mw-headline">Conflict resolution</span>
+            </h3>
+<p>Dersom andre har gjort endringer som er sjekket inn mens man har
+holdt pÃ¥ Ã¥ jobbe, og disse endringene er i
+konflikt med lokale endringer, vil SVN flagge dette nÃ¥r
+man gjÃ¸r en oppdatering (Update,som man alltid skal
+gjÃ¸re fÃ¸r en Commit). Den lokale filen blir
+da dÃ¸pt om til .mine, versjonen fra repository blir
+hetende &lt;noe&gt;.r&lt;revisjonsnummer&gt;, og filen &lt;noe&gt;
+inneholder begge versjoner av konfliktomrÃ¥det, markert
+med &lt;&lt;&lt;&lt;&lt;, &gt;&gt;&gt;&gt; og ======. For
+Ã¥ lÃ¸se konflikten redigerer man hovedfilen
+slik at den gir mening, evt. overskriver de lokale endringene med
+de sentrale endringene eller omvendt. NÃ¥r konflikten er
+lÃ¸st lokalt gjÃ¸r man en "Resolved ", og
+sÃ¥ vil man fÃ¥ lov til Ã¥
+gjÃ¸re en Commit. Men fÃ¸rst gjÃ¸r du
+selvfÃ¸lgelig en ny Update ...</p>
+<a id="Revert" name="Revert"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=24" title="Rediger seksjon: Revert">rediger</a>]</span> <span class="mw-headline">Revert</span>
+            </h3>
+<p>For Ã¥ rulle tilbake (en fil eller flere) til en
+tidligere versjon gjÃ¸r man en Revert. Dette kan
+vÃ¦re nyttig nÃ¥r man vil hente tilbake kode
+som er slettet, eller nÃ¥r man har gjort andre endringer
+man angrer pÃ¥. Merk at nÃ¥r man sjekker inn
+etter Ã¥ ha gjort en Revert blir det nye
+revisjonsnummeret max+1, som vanlig.</p>
+<a id="Diff" name="Diff"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=25" title="Rediger seksjon: Diff">rediger</a>]</span> <span class="mw-headline">Diff</span>
+            </h3>
+<p>Noen ganger kan det vÃ¦re nyttig Ã¥ se hva
+som er forskjellen pÃ¥ forskjellige revisjoner av en fil.
+Dette kan vÃ¦re mellom lokal kopi og siste revisjon i
+repository, eller mellom vilkÃ¥rlige revisjoner i
+repository. Til dette benytter man en svn diff. Det finnes
+SVN-klienter for mange plattformer, og ogsÃ¥ integrert
+med utviklingsmiljÃ¸er (IDE-er), men grafiske versjoner
+finnes ogsÃ¥ til KDE og Gnome.</p>
+<a id="Bruk_av_IM_mens_man_jobber" name="Bruk_av_IM_mens_man_jobber"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=26" title="Rediger seksjon: Bruk av IM mens man jobber">rediger</a>]</span>
+<span class="mw-headline">Bruk av IM mens man jobber</span>
+            </h3>
+<p>SÃ¥ lenge man jobber mot SVN kan alle endringer
+omgjÃ¸res, og konflikter hÃ¥ndteres. Allikevel
+er det enklere dersom man unngÃ¥r konflikter i
+utgangspunktet. Det finnes ogsÃ¥ mulighet for
+Ã¥ huke pÃ¥ en IM-agent pÃ¥ SVN, slik
+at hendelser i repository blir sendt ut som IM-meldinger.</p>
+<p>
+              <br/>
+</p>
+<a id="En_kort_bruksanvisning_2" name="En_kort_bruksanvisning_2"/>
+<h3>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=27" title="Rediger seksjon: En kort bruksanvisning">rediger</a>]</span>
+<span class="mw-headline">En kort bruksanvisning</span>
+            </h3>
+<p>Windows:</p>
+<p>Bruk et format pÃ¥ filene som dere jobber med som
+fungerer. Dvs word (doc) er ikke det store, finn et annet format
+som er litt mer plattform uavhengig, for eksempel rtf. Her
+fÃ¸lger litt informasjon om hva som skal
+gjÃ¸res nÃ¥r en tar i bruk
+verktÃ¸yet:</p>
+<ol>
+<li>Last ned pÃ¥ klienten (din maskin) den versjonen av
+programmet du skal bruke.</li>
+<li>Opprett en katalog pÃ¥ din egen maskin, denne brukes
+som ditt eget jobbomrÃ¥de (working-copy) for filene som
+brukes i prosjektet. For eksempel i mappen: My
+documents/workspace/samfunn (her brukes samfunn som navn
+pÃ¥ en mappe for prosjektet i kurset samfunnsinformatikk,
+slik at dere i senere kurs kan opprette en ny mappe for hvert
+prosjekt dere jobber i.)</li>
+<li>SVN - Checkout filene som finnes i repository (felles
+lagerplass). 
+<ol>
+<li>Dette gjÃ¸res med Ã¥ fÃ¥ opp
+vinduet (Open) som brukes for Ã¥ Ã¥pne filer.
+NÃ¥r du har funnet riktig katalog (working copy) trykker
+du pÃ¥ hÃ¸yre mustast.</li>
+<li>Velg SVN Checkout</li>
+<li>Tast inn url til Repository, finnes f. eks pÃ¥ linken
+<a class="external free" href="https://www.it-stud.hiof.no/svn/samf_inf1" rel="nofollow" title="https://www.it-stud.hiof.no/svn/samf_inf1">https://www.it-stud.hiof.no/svn/samf_inf1</a> Her er
+samf_inf1 navnet pÃ¥ Gruppe 1, de andre gruppene endrer
+bare pÃ¥ gruppenummer for Ã¥ komme til sitt
+omrÃ¥de.</li>
+</ol>
+</li>
+<li>NÃ¥ skal du kunne jobbe med filene og bruke de
+kommandoene som ble omtalt foran i dette notatet 
+<ol>
+<li>SVNâ&#128;&#153;s Update - blir benyttet for Ã¥
+hente siste versjon fra Repository (felles lagerplass).</li>
+<li>SVNâ&#128;&#153;s Commit - brukes etter at det er blitt
+gjort forandringer pÃ¥ fil, dette blir lagret i
+repository og neste gang du eller andre bruker Update vil alltid
+den siste versjonen pÃ¥ repository dukke opp.</li>
+<li>Logfile â&#128;&#147; her finnes alle tidligere lagrede
+versjoner av filen(ene)</li>
+</ol>
+</li>
+</ol>
+<p>Mac:</p>
+<p>Denne har en bra beskrivelse av hvordan du kan fÃ¥ det
+til: <a class="external free" href="http://blog.hiof.no/blog/joakims/joakim-blogger/mac/2007/10/02/subversion_osx" rel="nofollow" title="http://blog.hiof.no/blog/joakims/joakim-blogger/mac/2007/10/02/subversion_osx">http://blog.hiof.no/blog/joakims/joakim-blogger/mac/2007/10/02/subversion_osx</a>
+            </p>
+<p>
+              <br/>
+terje</p>
+<p>
+              <br/>
+</p>
+<a id="Refereanser" name="Refereanser"/>
+<h2>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=28" title="Rediger seksjon: Refereanser">rediger</a>]</span> <span class="mw-headline">Refereanser</span>
+            </h2>
+<p>[1] <a class="external free" href="http://trac.edgewall.org/" rel="nofollow" title="http://trac.edgewall.org/">http://trac.edgewall.org/</a>
+            </p>
+<p>[2] <a class="external free" href="http://subversion.tigris.org/" rel="nofollow" title="http://subversion.tigris.org/">http://subversion.tigris.org/</a>
+            </p>
+<p>[3] <a class="external free" href="http://trac.edgewall.org/wiki/WikiFormatting" rel="nofollow" title="http://trac.edgewall.org/wiki/WikiFormatting">http://trac.edgewall.org/wiki/WikiFormatting</a>
+            </p>
+<p>[4] Holone, Harald; 2007 Personlig wiki</p>
+<p>
+              <br/>
+</p>
+<a id="xp" name="xp"/>
+<h2>
+              <span class="editsection">[<a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit&amp;section=29" title="Rediger seksjon: xp">rediger</a>]</span> <span class="mw-headline">xp</span>
+            </h2>
+<!-- Saved in parser cache with key wiki_XP:pcache:idhash:36-0!!!!no!0 and timestamp 20081209101051 -->
+<div class="printfooter">Hentet fra Â«<a href="https://wiki.hiof.no/XP/index.php/H%C3%A5ndbok">https://wiki.hiof.no/XP/index.php/H%C3%A5ndbok</a>Â»</div>
+<!-- end content -->
+</div>
+</div>
+</div>
+<div id="column-one">
+<div class="portlet" id="p-cactions">
+<h5>Visninger</h5>
+<div class="pBody">
+<ul>
+<li class="selected" id="ca-nstab-main">
+                <a accesskey="c" href="https://wiki.hiof.no/XP/index.php/H%C3%A5ndbok" title="Vis innholdssiden [alt-c]">Artikkel</a>
+              </li>
+<li class="new" id="ca-talk">
+                <a accesskey="t" href="https://wiki.hiof.no/XP/index.php?title=Diskusjon:H%C3%A5ndbok&amp;action=edit" title="Diskusjon om innholdssiden [alt-t]">Diskusjon</a>
+              </li>
+<li id="ca-edit">
+                <a accesskey="e" href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=edit" title="Du kan redigere denne siden. Vennligst bruk ForhÃ¥ndsvis-knappen fÃ¸r du lagrer. [alt-e]">Rediger</a>
+              </li>
+<li id="ca-history">
+                <a accesskey="h" href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=history" title="Tidligere revisjoner av denne siden. [alt-h]">Historikk</a>
+              </li>
+<li id="ca-move">
+                <a accesskey="m" href="https://wiki.hiof.no/XP/index.php/Spesial:Movepage/H%C3%A5ndbok" title="Flytt denne siden [alt-m]">Flytt</a>
+              </li>
+<li id="ca-watch">
+                <a accesskey="w" href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;action=watch" title="Legg til denne siden til din overvÃ¥kningsliste. [alt-w]">OvervÃ¥k</a>
+              </li>
+</ul>
+</div>
+</div>
+<div class="portlet" id="p-personal">
+<h5>Personlige verktÃ¸y</h5>
+<div class="pBody">
+<ul>
+<li id="pt-userpage">
+                <a accesskey="." class="new" href="https://wiki.hiof.no/XP/index.php/Bruker:Borres" title="Min brukerside [alt-.]">Borres</a>
+              </li>
+<li id="pt-mytalk">
+                <a accesskey="n" class="new" href="https://wiki.hiof.no/XP/index.php/Brukerdiskusjon:Borres" title="Min diskusjonsside [alt-n]">Min
+diskusjonsside</a>
+              </li>
+<li id="pt-preferences">
+                <a href="https://wiki.hiof.no/XP/index.php/Spesial:Preferences" title="Mine innstillinger">My preferences</a>
+              </li>
+<li id="pt-watchlist">
+                <a accesskey="l" href="https://wiki.hiof.no/XP/index.php/Spesial:Watchlist" title="Liste over sider du overvÃ¥ker for endringer. [alt-l]">OvervÃ¥kningsliste</a>
+              </li>
+<li id="pt-mycontris">
+                <a accesskey="y" href="https://wiki.hiof.no/XP/index.php/Spesial:Contributions/Borres" title="Liste over mine bidrag [alt-y]">Mine
+bidrag</a>
+              </li>
+<li id="pt-logout">
+                <a href="https://wiki.hiof.no/XP/index.php?title=Spesial:Userlogout&amp;returnto=H%C3%A5ndbok" title="Logg ut">Logg ut</a>
+              </li>
+</ul>
+</div>
+</div>
+<div class="portlet" id="p-logo">
+          <a accesskey="z" href="https://wiki.hiof.no/XP/index.php/Hovedside" style="background-image: url(/XP/skins/common/images/hiof.png);" title="GÃ¥ til hovedsiden [alt-z]"/>
+        </div>
+<script type="text/javascript">
+//<![CDATA[
+ if (window.isMSIE55) fixalpha(); 
+//]]>
+</script>
+ 
+<div class="portlet" id="p-navigation">
+<h5>Navigasjon</h5>
+<div class="pBody">
+<ul>
+<li id="n-mainpage">
+                <a accesskey="z" href="https://wiki.hiof.no/XP/index.php/Hovedside" title="GÃ¥ til hovedsiden [alt-z]">Hovedside</a>
+              </li>
+<li id="n-portal">
+                <a href="https://wiki.hiof.no/XP/index.php/XP:Prosjektportal" title="Om prosjektet; hva du kan gjÃ¸re og hvor du kan finne ting">Prosjektportal</a>
+              </li>
+<li id="n-currentevents">
+                <a href="https://wiki.hiof.no/XP/index.php/XP:Aktuelt" title="Finn bakgrunnsinformasjon om aktuelle hendelser">Aktuelt</a>
+              </li>
+<li id="n-recentchanges">
+                <a accesskey="r" href="https://wiki.hiof.no/XP/index.php/Spesial:Recentchanges" title="Liste over siste endringer pÃ¥ wikien. [alt-r]">Siste endringer</a>
+              </li>
+<li id="n-randompage">
+                <a accesskey="x" href="https://wiki.hiof.no/XP/index.php/Spesial:Random" title="GÃ¥ inn pÃ¥ en tilfeldig side [alt-x]">Tilfeldig side</a>
+              </li>
+<li id="n-help">
+                <a href="https://wiki.hiof.no/XP/index.php/Hjelp:Hjelp" title="Stedet for Ã¥ fÃ¥ hjelp.">Hjelp</a>
+              </li>
+<li id="n-sitesupport">
+                <a href="https://wiki.hiof.no/XP/index.php/XP:Donasjoner" title="StÃ¸tt oss">Donasjoner</a>
+              </li>
+</ul>
+</div>
+</div>
+<div class="portlet" id="p-search">
+<h5>
+            <label for="searchInput">SÃ¸k</label>
+          </h5>
+<div class="pBody" id="searchBody">
+<form action="/XP/index.php/Spesial:Search" id="searchform">
+<div>
+                <input accesskey="f" id="searchInput" name="search" title="SÃ¸k i denne wikien [alt-f]" type="text" value=""/>
+                <input class="searchButton" id="searchGoButton" name="go" type="submit" value="GÃ¥"/> 
+<input class="searchButton" id="mw-searchButton" name="fulltext" type="submit" value="SÃ¸k"/>
+              </div>
+</form>
+</div>
+</div>
+<div class="portlet" id="p-tb">
+<h5>VerktÃ¸y</h5>
+<div class="pBody">
+<ul>
+<li id="t-whatlinkshere">
+                <a accesskey="j" href="https://wiki.hiof.no/XP/index.php/Spesial:Whatlinkshere/H%C3%A5ndbok" title="Liste over alle sider som lenker hit [alt-j]">Lenker hit</a>
+              </li>
+<li id="t-recentchangeslinked">
+                <a accesskey="k" href="https://wiki.hiof.no/XP/index.php/Spesial:Recentchangeslinked/H%C3%A5ndbok" title="Siste endringer i sider som blir lenket fra denne siden [alt-k]">Relaterte endringer</a>
+              </li>
+<li id="t-upload">
+                <a accesskey="u" href="https://wiki.hiof.no/XP/index.php/Spesial:Upload" title="Last opp bilder eller mediafiler [alt-u]">Last
+opp fil</a>
+              </li>
+<li id="t-specialpages">
+                <a accesskey="q" href="https://wiki.hiof.no/XP/index.php/Spesial:Specialpages" title="Liste over alle spesialsider [alt-q]">Spesialsider</a>
+              </li>
+<li id="t-print">
+                <a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;printable=yes">Utskriftsvennlig
+versjon</a>
+              </li>
+<li id="t-permalink">
+                <a href="https://wiki.hiof.no/XP/index.php?title=H%C3%A5ndbok&amp;oldid=620">Permanent
+lenke</a>
+              </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- end of the left (by default at least) column -->
+<div id="footer">
+<div id="f-poweredbyico">
+          <a href="http://www.mediawiki.org/">
+            <img alt="Powered by MediaWiki" src="wikiback/handbok_html/poweredby_mediawiki_88x31.png"/>
+          </a>
+        </div>
+<ul id="f-list">
+<li id="lastmod">Denne siden ble sist endret 11:37, 22. okt
+2008.</li>
+<li id="viewcount">Denne siden er vist 18 ganger.</li>
+<li id="privacy">
+            <a href="https://wiki.hiof.no/XP/index.php/XP:Personvern" title="XP:Personvern">Personvern</a>
+          </li>
+<li id="about">
+            <a href="https://wiki.hiof.no/XP/index.php/XP:Om" title="XP:Om">Om XP</a>
+          </li>
+<li id="disclaimer">
+            <a href="https://wiki.hiof.no/XP/index.php/XP:Opphavsrett" title="XP:Opphavsrett">Opphavsrett</a>
+          </li>
+</ul>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+if (window.runOnloadHook) runOnloadHook();
+//]]>
+</script>
+</div>
+<!-- Served by recess in 0.172 secs. -->
+</body>
+</html>

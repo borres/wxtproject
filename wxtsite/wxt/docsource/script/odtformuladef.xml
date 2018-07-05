@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: odtformulas-element</h1>
+<p>
+  The odtformulas-element must be contained in a definitions-element
+ </p>
+ <p> 
+ This element loads formulas in MathML form from an OpenOffice document
+ with formula-objects on it. The formulas are identified by a
+ text paragraph immediately above the formula. This text, and thus the id,
+ must start with <em>_f</em>.
+ For instance <em>_fMyintegral</em>. These formulas are available by the PI <?_wxt xlink id="PIformula"?>,
+ containing the appropriate ids.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<odtformulas location=""/>]]>
+</pre>
+<p>
+ Note that these formulas will be presented as
+ MathML. 
+ See <?_wxt xlink id="aboutformulas"?> for a full description.
+</p>
+
+<table cellpadding="10px">
+
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>The location of the document containg the formulas, absolute or relative to the script (anchor).
+    </td>
+  </tr>
+
+</table>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<odtformulas location="myformulas.odt"/>]]>
+</pre>
+
+
+</body>
+</html>

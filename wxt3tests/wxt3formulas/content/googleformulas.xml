@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formulas>
+	<!-- Have a look at:
+	https://docs.google.com
+	http://code.google.com/apis/chart/docs/gallery/formulas.html
+	(http://en.wikipedia.org/wiki/Help:Displaying_a_formula)
+	-->
+	<formula id="gf1" type="google">
+	<value><![CDATA[\sqrt[3]{x^3 + y^3 \over 2}]]></value>
+	</formula>
+ 
+	<formula id="gf2" type="google">
+	<value><![CDATA[\frac{\displaystyle \sum_{k=1}^N k^2}{a}]]></value>
+	</formula>
+ 
+	<formula id="gf3" type="google">
+	<value><![CDATA[\left| \begin{array}{cc} x_{11} & x_{12} \\ x_{21} & x_{22}\\x_{31} & x_{32}  \end{array} \right|]]></value>
+	</formula>
+ 
+	<formula id="gf4" type="google">
+	<value><![CDATA[B(t)=\sum_{i=0}^{n}{B_{i}^{n} t^{i} \(1-t)^{n-i}  P_{i} } ]]></value>
+	</formula> 
+	
+	<formula id="fg5a" type="google">
+	<subtext>Surface normals</subtext>
+	<value><![CDATA[N_{x}(\phi,\beta)=\frac{1}{r_{x}}cos^{2-n1}(\phi)cos^{2-n2}(\beta)]]></value>
+	</formula>
+	
+	<formula id="fg5b" type="google">
+	<subtext>Surface normals</subtext>
+	<value><![CDATA[N_{y}(\phi,\beta)=\frac{1}{r_{y}}cos^{2-n1}(\phi)sin^{2-n2}(\beta)]]></value>
+	</formula>
+	
+	<formula id="fg5c" type="google">
+	<subtext>Surface normals</subtext>
+	<value><![CDATA[N_{x}(\phi,\beta)=\frac{1}{r_{x}}sin^{2-n1}(\phi)]]></value>
+	</formula>
+	
+	<formula id="gf21" type="google">
+	<subtext>Vector length</subtext>
+	<value><![CDATA[B(t)=\sum_{i=0}^{n}{B_{i}^{n} t^{i} \(1-t)^{n-i} P_{i} }]]></value>
+	</formula>
+
+</formulas>

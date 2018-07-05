@@ -1,0 +1,1 @@
+<math ><semantics><mrow><mrow><mo stretchy="false">∑</mo><mi>f</mi></mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="StarMath 5.0">sum f(x)</annotation></semantics></math>

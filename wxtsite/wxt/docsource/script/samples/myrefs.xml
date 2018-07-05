@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<reflist version="1.0">   
+         
+	<ref id="As we may think">
+		<uri  dateread="14-03-20009">http://www.theatlantic.com/doc/194507/bush</uri>
+		<year>1945</year>
+		<title>As we may think</title>
+		<publisher>the Atlantic</publisher>
+		<authors>Bush,Vannevar</authors>
+		<categories>tec</categories>
+	</ref>
+	
+	<ref id="Mindstorms">
+		<authors>Papert,Seymour</authors>
+		<publisher>Harvester Press</publisher>
+		<title>Mindstorms, Children Computers and Powerful Ideas</title> 
+		<year>1980</year>
+		<isbn>0-85527-163-9</isbn>
+		<categories>ped</categories>
+    </ref>
+	
+	<ref id="web2">
+		<title>Web 2.0</title>
+		<year>2005</year>
+		<uri dateread="14-03-20009">http://en.wikipedia.org/wiki/Web_2.0</uri>
+	</ref>    
+
+</reflist>

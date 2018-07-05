@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<div class="content">    
+<h1>DTS</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_dts.xml" 
+             sourcelocation="dts.xml" code="xmlcode"?>
+</div>
+<hr/>
+<h2>Dates</h2>
+	<div><?_wxt date?></div>
+	<div><?_wxt date form="short"?></div>
+	<div><?_wxt date form="medium"?></div>
+	<div><?_wxt date form="long"?></div>
+	<div><?_wxt date form="full"?></div>
+
+	<div><?_wxt date form="full" country="fr"?></div>
+	<div><?_wxt date form="full" country="en"?></div>
+	<div><?_wxt date form="full" country="no"?></div>
+	<div><?_wxt date form="full" country="fi"?></div>
+	<div><?_wxt date form="full" actualdate="2008:12:24" country="no"?></div>
+	
+<hr/><h2>Time</h2><hr/>
+	<div><?_wxt time?></div>
+	<div><?_wxt time form="short"?></div>
+	<div><?_wxt time form="medium"?></div>
+	<div><?_wxt time form="long"?></div>
+	<div><?_wxt time form="full"?></div>      
+	<div><?_wxt time form="full" country="fr"?></div>
+	<div><?_wxt time form="full" country="en"?></div>
+	<div><?_wxt time form="full" country="no"?></div>
+	<div><?_wxt time form="full" country="fi"?></div>
+
+	<?_wxt time form="full" country="fi"?>-<?_wxt date form="full" country="fi"?>
+	
+<hr/><h2>Stamp</h2>
+	<div><?_wxt stamp?></div>    
+	<div>Produced by <?_wxt stamp?></div>    
+
+</div>
+</data>

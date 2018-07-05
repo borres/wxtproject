@@ -1,0 +1,1 @@
+c:\fixed\prince\Engine\bin\prince -s c:\webnew\wxtsite\commons\pdfstyle.css  c:\webnew\wxtsite\wxt\documentation\allpages.html

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="no" xml:lang="no">
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+				<meta content="XP i programmeringsundervisningen,Artikkel NU,Gjennomføringsplan,Håndbok,Innføring i programmering,Internrapport,Intervjuguide,NU2008,Programmering for web,Samlerapport,Trac" name="keywords"/>
+		<link href="/favicon.ico" rel="shortcut icon"/>
+		<link href="/XP/opensearch_desc.php" rel="search" title="XP (‪Norsk (bokmål)‬)" type="application/opensearchdescription+xml"/>
+		<title>XP i programmeringsundervisningen - XP</title>
+		<style media="screen,projection" type="text/css">/*<![CDATA[*/ @import "/XP/skins/monobook/main.css?63"; /*]]>*/</style>
+		<link href="/XP/skins/common/commonPrint.css?63" media="print" rel="stylesheet" type="text/css"/>
+		<link href="/XP/skins/monobook/handheld.css?63" media="handheld" rel="stylesheet" type="text/css"/>
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/XP/skins/monobook/IE50Fixes.css?63";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/XP/skins/monobook/IE55Fixes.css?63";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/XP/skins/monobook/IE60Fixes.css?63";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/XP/skins/monobook/IE70Fixes.css?63";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/XP/skins/common/IEFixes.js?63"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type="text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/XP/skins";
+var wgArticlePath = "/XP/index.php/$1";
+var wgScriptPath = "/XP";
+var wgServer = "https://wiki.hiof.no";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "XP_i_programmeringsundervisningen";
+var wgTitle = "XP i programmeringsundervisningen";
+var wgAction = "view";
+var wgArticleId = "2";
+var wgIsArticle = true;
+var wgUserName = "Borres";
+var wgUserGroups = ["*", "user", "autoconfirmed"];
+var wgUserLanguage = "no";
+var wgContentLanguage = "no";
+var wgBreakFrames = false;
+var wgCurRevisionId = "614";
+/*]]>*/</script>
+                
+		<script src="/XP/skins/common/wikibits.js?63" type="text/javascript">
+      <!-- wikibits js -->
+    </script>
+		<script src="/XP/index.php?title=-&amp;action=raw&amp;smaxage=0&amp;gen=js" type="text/javascript">
+      <!-- site js -->
+    </script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/XP/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/XP/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/XP/index.php?title=-&action=raw&gen=css&maxage=18000&smaxage=0";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+	</head>
+<body class="mediawiki ns-0 ltr page-XP_i_programmeringsundervisningen">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a id="top" name="top"/>
+				<h1 class="firstHeading">XP i programmeringsundervisningen</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">Fra XP</h3>
+			<div id="contentSub">(Omdirigert fra <a href="/XP/index.php?title=Hovedside&amp;redirect=no" title="Hovedside">Hovedside</a>)</div>
+												<!-- start content -->
+			<p>Tanken er å bruke XP som metode i noen programmeringskurs. Hensikten med dette er tosidig:
+</p>
+<ol>
+              <li>Bedre undervisningen ved å få bedre kontinuitet og jevnere arbeid med prosjekter i kurset.
+</li>
+              <li>Formidle en generell arbeidsmetode
+</li>
+            </ol>
+<p>På denne måten blir XP både en undervisningsstrategi og et læringsmål i seg selv.
+</p>
+<table class="toc" id="toc" summary="Innhold">
+              <tr>
+                <td>
+                  <div id="toctitle">
+                    <h2>Innhold</h2>
+                  </div>
+<ul>
+<li class="toclevel-1">
+                      <a href="#Noen_problemstillinger">
+                        <span class="tocnumber">1</span> <span class="toctext">Noen problemstillinger</span>
+                      </a>
+<ul>
+<li class="toclevel-2">
+                          <a href="#Planlegging">
+                            <span class="tocnumber">1.1</span> <span class="toctext">Planlegging</span>
+                          </a>
+                        </li>
+<li class="toclevel-2">
+                          <a href="#Testing">
+                            <span class="tocnumber">1.2</span> <span class="toctext">Testing</span>
+                          </a>
+                        </li>
+<li class="toclevel-2">
+                          <a href="#Versjonskontroll">
+                            <span class="tocnumber">1.3</span> <span class="toctext">Versjonskontroll</span>
+                          </a>
+                        </li>
+<li class="toclevel-2">
+                          <a href="#Periodisk_m.C3.B8te">
+                            <span class="tocnumber">1.4</span> <span class="toctext">Periodisk møte</span>
+                          </a>
+                        </li>
+<li class="toclevel-2">
+                          <a href="#Struktur_og_verkt.C3.B8y">
+                            <span class="tocnumber">1.5</span> <span class="toctext">Struktur og verktøy</span>
+                          </a>
+                        </li>
+<li class="toclevel-2">
+                          <a href="#Evaluering">
+                            <span class="tocnumber">1.6</span> <span class="toctext">Evaluering</span>
+                          </a>
+                        </li>
+</ul>
+</li>
+<li class="toclevel-1">
+                      <a href="#Noen_ressurser">
+                        <span class="tocnumber">2</span> <span class="toctext">Noen ressurser</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#Aktuelle_kurs">
+                        <span class="tocnumber">3</span> <span class="toctext">Aktuelle kurs</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#M.C3.B8tereferater">
+                        <span class="tocnumber">4</span> <span class="toctext">Møtereferater</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#FoU-s.C3.B8knad">
+                        <span class="tocnumber">5</span> <span class="toctext">FoU-søknad</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#Artikkel_NU">
+                        <span class="tocnumber">6</span> <span class="toctext">Artikkel NU</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#Intervjunalyser">
+                        <span class="tocnumber">7</span> <span class="toctext">Intervjunalyser</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#Intervjuer">
+                        <span class="tocnumber">8</span> <span class="toctext">Intervjuer</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#Internrapport">
+                        <span class="tocnumber">9</span> <span class="toctext">Internrapport</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#H.C3.A5ndbok">
+                        <span class="tocnumber">10</span> <span class="toctext">Håndbok</span>
+                      </a>
+                    </li>
+<li class="toclevel-1">
+                      <a href="#NU-s.C3.B8knad_2008">
+                        <span class="tocnumber">11</span> <span class="toctext">NU-søknad 2008</span>
+                      </a>
+                    </li>
+</ul>
+</td>
+              </tr>
+            </table>
+            <script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "vis"; var tocHideText = "skjul"; showTocToggle(); } </script>
+<a name="Noen_problemstillinger"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=1" title="Rediger seksjon: Noen problemstillinger">rediger</a>]</span> <span class="mw-headline"> Noen problemstillinger </span>
+            </h2>
+<p>En komplett gjennomgang av de elementene som hører med i XP som metode faller utenfor rammene av denne teksten. Det forutsettes at leseren er kjent med XP slik metoden er beskrevet, se <a href="#Noen_ressurser" title="">#Noen ressurser</a> nedenfor.
+Det er imidlertid noen momenter som krever spesiall oppmerksomhet i undervisningen.
+</p>
+<a name="Planlegging"/>
+            <h3>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=2" title="Rediger seksjon: Planlegging">rediger</a>]</span> <span class="mw-headline">Planlegging</span>
+            </h3>
+<p>Planlegging betyr to ting:
+</p>
+<ol>
+              <li>Den planleggingen som styres av brukerens ønsker. Typisk beskrives dette i 2 ukers sykler. Brukeren skriver "user stories" som sjekkes ved neste avtalte planleggingsmøte (om 14dager)
+</li>
+              <li>Planleggingen som styres av programmeringsgruppa på grunnlag av brukerkravene. Det vil si at "user stories" må brytes ned i programmeringsoppgaver.
+</li>
+            </ol>
+<p>Det er viktig å få fram dette skillet. Det er muligens klokt at brukeren har ansvaret for å skrive sine egne brukerhistorier og at brukeren selv tester dem. Dette for å unngå sammenblanding av de to planleggingsnivåene.
+</p>
+<a name="Testing"/>
+            <h3>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=3" title="Rediger seksjon: Testing">rediger</a>]</span> <span class="mw-headline">Testing</span>
+            </h3>
+<p>Testing er en refleksjon av planleggingen, i to nivåer. For det første må brukerhistoriene sjekkes, av brukeren. Det andre nivået er mer utfordrende. Det er en realisering av XP's krav om "test først, skriv koden etterpå". jeg vil tro at dette er et moment som vil kreve en del oppmerksomhet i kurset. det er ikke enkelt å finne balansen mellom det nyttige og det banale i forberedelsen av en test. Vi trenger dessuten en smidig teknisk måte å gjøre dette på. JUnit og PyUnit er aktuelle kandidater.
+</p>
+<a name="Versjonskontroll"/>
+            <h3>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=4" title="Rediger seksjon: Versjonskontroll">rediger</a>]</span> <span class="mw-headline">Versjonskontroll</span>
+            </h3>
+<p>Det er (nesten) nødvendig å ha et system for versjonskontroll. Hele ideen er at koden skal endres inkrementelt og det er avgjørende at vi finner en arbeidsform som understøtter dette. Man kan tenke seg en løsning med systematisk backup i daterte kataloger, men dersom det er mulig å finne en smidig løsning på versjonskontroll som både kan fange opp dokumentasjon og kode bør det brukes. Å lære seg å bruke versjonskontroll er et prioritert læringsmål i seg selv.
+</p>
+<a name="Periodisk_m.C3.B8te"/>
+            <h3>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=5" title="Rediger seksjon: Periodisk møte">rediger</a>]</span> <span class="mw-headline">Periodisk møte</span>
+            </h3>
+<p>Et typisk møte hver annen uke mellom en bruker/kunde/oppdragsgiver og programmeringsgruppa kan se slik ut.
+</p>
+<ol>
+              <li>Brukerhistoriene fra forrige møte hentes fram og brukeren tester dem. Det noteres hva som virker og hva som ikke virker. Uløste historier overføres til neste periode.
+</li>
+              <li>Det lages et sett med nye brukerhistorier. Disse skrives ned.
+</li>
+              <li>Programmeringsgruppa vurderer disse og anslår hvor mange arbeidstimer de kommer til å bruke i neste periode. Dette skrives ned med det samme eller i løpet av en dag eller to.
+</li>
+            </ol>
+<p>Alt som noteres skal lagres på en slik måte at det kan gjenfinnes. Både bruker og programmeringsgruppe må kunne notere. Hvem som har ansvaret for hva må klargjøres.
+</p>
+<a name="Struktur_og_verkt.C3.B8y"/>
+            <h3>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=6" title="Rediger seksjon: Struktur og verktøy">rediger</a>]</span> <span class="mw-headline">Struktur og verktøy</span>
+            </h3>
+<p>Vi trenger et verktøy som understøtter følgende:
+</p>
+<ol>
+              <li>En sekvens av møtereferater, som beskrevet over.
+</li>
+              <li>Dagboksnotater
+<ol>
+                  <li>Detaljplaner
+</li>
+                  <li>Tidsforbruk splittet på oppgaver og personer
+</li>
+                </ol>
+</li>
+              <li>Tilgang til kildekode, historisk
+</li>
+              <li>Dokumentasjon, historisk
+</li>
+            </ol>
+<p>Dette verktøyet er, i hvert fall nå, <a href="/XP/index.php/Trac" title="Trac">Trac</a>,
+kombinert med Subversion.
+</p>
+<a name="Evaluering"/>
+            <h3>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=7" title="Rediger seksjon: Evaluering">rediger</a>]</span> <span class="mw-headline">Evaluering</span>
+            </h3>
+<p>Det er et åpent spørsmål hva i denne prosessen som skal være obligatoriske arbeidskrav og hva som skal evalueres, i tillegg til sluttløsningen på prosjektet.
+</p>
+            <p>Det som imidlertid er klart er at dette må klargjøres for studentene på forhånd.
+</p>
+<a name="Noen_ressurser"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=8" title="Rediger seksjon: Noen ressurser">rediger</a>]</span> <span class="mw-headline">Noen ressurser</span>
+            </h2>
+<ol>
+              <li>Extreme Software Engineering, A Hands-On Approach, Steinberg &amp; Palmer, Prentice Hall 2004, <a class="internal" href="/XP/index.php?title=Spesial:Booksources&amp;isbn=0130473812">ISBN 0-13-047381-2</a>
+</li>
+              <li>A practical Guide to eXtreme programming, Astels, Miller &amp; Novak, Prentice Hall 2002, <a class="internal" href="/XP/index.php?title=Spesial:Booksources&amp;isbn=0130674826">ISBN 0-13-067482-6</a>
+</li>
+              <li>Extreme Programming with Ant, Niemeyer &amp; Poteet, Sams Publishing 2003, <a class="internal" href="/XP/index.php?title=Spesial:Booksources&amp;isbn=0672325624">ISBN 0-672-32562-4</a>
+</li>
+              <li>An Introduction to Extreme Programming, <a class="external autonumber" href="http://www.advisor.com/doc/13571" rel="nofollow" title="http://www.advisor.com/doc/13571">[1]</a>
+</li>
+              <li>the WikiWiki entry point for Extreme Programming, <a class="external autonumber" href="http://c2.com/cgi/wiki?ExtremeProgrammingRoadmap" rel="nofollow" title="http://c2.com/cgi/wiki?ExtremeProgrammingRoadmap">[2]</a>
+</li>
+            </ol>
+<a name="Aktuelle_kurs"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=9" title="Rediger seksjon: Aktuelle kurs">rediger</a>]</span> <span class="mw-headline">Aktuelle kurs</span>
+            </h2>
+<p>
+              <b>Programmering for web</b>
+</p>
+            <p>Kurs for 3.klasse. Programmeringen innebærer: Python, javascript, XSLT. Det skal lages webapplikasjoner.
+</p>
+            <p>
+              <a href="/XP/index.php/Programmering_for_web" title="Programmering for web">Programmering for web</a>
+</p>
+            <p>
+              <b>Innføring i programmering</b>
+</p>
+            <p>Dette er begynnerkurset i programmering for 1.klasse. 
+Javaprogrammering
+</p>
+            <p>
+              <a href="/XP/index.php/Innf%C3%B8ring_i_programmering" title="Innføring i programmering">Innføring i programmering</a>
+</p>
+            <p>
+              <br/>
+</p>
+<a name="M.C3.B8tereferater"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=10" title="Rediger seksjon: Møtereferater">rediger</a>]</span> <span class="mw-headline">Møtereferater</span>
+            </h2>
+<p>der Terje, Mari Ann, Håkon, Børre samles for å utveksle erfaringer.
+</p>
+<ul>
+              <li> <b> 26.september </b>
+</li>
+            </ul>
+<p>Håkon, Terje, Børre.
+</p>
+            <p>
+              <br/>
+Trolig lurt med hyppige møter i starten (ukentlige)
+</p>
+            <p>Gulrot i stedet for pisk når det gjelder bruk av teknikker og verktøy. (form på tickets, paiprogramming, testing, versjonering)
+</p>
+            <p>Rollen som "teknisk kyndig kontraktør" er trolig ganske god.
+</p>
+            <p>Førstkommende fredag blir det en gjennomgang i forelesningen av testing, sammen med en motivasjon for metodikken.
+</p>
+            <p>Det er ikke trivielt å synkronisere prosjekter og faglig progresjon styrt ved forelesninger. XP fordrer i en viss forstand at det faglige repetoiret er på plass tidlig.
+</p>
+            <p>- børre -
+</p>
+<ul>
+              <li> <b> 8. oktober </b>
+</li>
+            </ul>
+<p>Tilstede: Børre, Håkon, Terje, Mari-Ann
+</p>
+            <p>Grupper er fordelt og tracer opprettet. SVN frivillig, og vil demonstreres av gruppelærerne hvis noen av gruppene viser interesse for det. Studentene tar kontakt med sin oppdragsgiver og avtaler møte. Møte hver uke i oppstarten, kan deretter se det litt an. 
+</p>
+            <p>I forhold til rekkefølgen for gjennomgang av emner i kurset, passer det å starte med å la studentene lage en rapportmal (html), og deretter få på plass en klasse med metoder for å lese en mal, putte inn verdier for variablene i malen og lagre resultatet. 
+</p>
+            <p>Noen har lite kjennskap til HTML. Lars Magnusson gir en introduksjon i øvingstimene denne uka. 
+</p>
+            <p>Mari-Ann
+</p>
+<ul>
+              <li> <b> 15. oktober </b>
+</li>
+            </ul>
+<p>Tilstede: Børre, Håkon, Terje, Mari-Ann
+</p>
+            <p>Fint å se de andre veilederne sine notater før egen veildening.
+Ulik nivå på grupper og medlemmer.
+</p>
+            <p>Børre kort referat fra midtsem. eval. Alle rimelig fornøyde. Ulik bruk av verktøyenes funksjonalitet. Prosjektene må bli ferdig. Oppdragsgiver sitt ansvar å ha en fungerende versjon. En gruppe som mener at oppdragsgiver drar prosjektet i gal retning. 
+</p>
+            <p>Ta en oppsumerende samtale med gruppa om roller, fremdrift og nivå.
+Hvordan håndteres refactoring i gruppene.
+</p>
+            <p>Metoden kan også brukes til å ta tak i arbeidsmetoder, f.eks. at de følger gruppeundervisning og forelesninger.
+</p>
+            <p>Håkon Tolsby
+</p>
+<ul>
+              <li> <b> 29.oktober </b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Børre
+</p>
+            <p>Artikkel. Beholder strukturen som den ligger. Skriver fritt.
+Børre ber Ted å lage 4 nye brukere slik at vi er identifiserbare. Sender mail når dette er i orden.
+</p>
+            <p>Intervjuer. Vi tar sikte på å intervjue 2 grupper hver, en gruppe fra hvert kurs. Håkon lage et forslag til setting og 
+rammer for spørsmål. Mari Ann og Børre varsler dette som del av kursevalueringen i de respektive kursene.
+</p>
+            <p>- børre -
+</p>
+<ul>
+              <li> <b> 12.november </b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Børre, Terje
+</p>
+            <p>Temaet for møtet var undersøkelsen av den pedagogiske modellen. Undersøkelsen skal gjennomføres i uke 47 og 48. Håkon la frem en plan for gjennomføringen. Det er viktig at alle legger inn aspekter som de ønsker å få studentene til å fortelle om i gjennomføringsplanen. Det ble avtalt et nytt møte fredag 16. november for gjennomføre en testing av intervjusituasjonen
+</p>
+            <p>
+              <a href="/XP/index.php/Gjennomf%C3%B8ringsplan" title="Gjennomføringsplan">Gjennomføringsplan</a>
+</p>
+            <p>_håkon
+</p>
+<ul>
+              <li> <b> 19.november</b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Børre
+</p>
+            <p>Enighet om artikkel. Fordeling av resterende arbeid.
+</p>
+            <p>bs
+</p>
+<ul>
+              <li> <b> 3.desember</b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Børre
+</p>
+            <p>Enighet om artikkel. Fordeling av resterende arbeid.
+</p>
+            <p>bs
+</p>
+<ul>
+              <li> <b> 18.desember</b>
+</li>
+            </ul>
+<p>Introspektiv intervju
+</p>
+            <p>Bruk tid på å forberede dere før intervjuet.
+</p>
+            <p>Børre og Mari-Ann intervjuer Terje og Håkon
+Terje og Håkon intervjuer Børre og Mari-Ann
+</p>
+            <p>
+              <a href="/XP/index.php/Intervjuguide" title="Intervjuguide">Intervjuguide</a>
+</p>
+<ul>
+              <li> <b>18.desember</b>
+</li>
+            </ul>
+<p>Intervjuer gjennomført, 0900 - 1200
+</p>
+            <p>Vi har fått penger 200.000 til prosjektet.
+</p>
+            <p>Planer videre:
+</p>
+<ol>
+              <li> Skrive ut intervjuene. Håkon undersøker om vi kan få hjelp
+</li>
+              <li> Lage stoff for interne nyheter, Terje 
+</li>
+              <li> Rekruttere til eksernt kurs. Børre sjekker
+</li>
+              <li> Vi lager en fyldig intern rapport med alt vi har av erfaringer, tanker og intervjustoff, alle
+</li>
+              <li> Vi planlegger en faglig rapport eller to, Håkon ser etter et godt publiseringssted
+</li>
+              <li> Vi lager en håndbok for veiledere, alle
+</li>
+              <li> Vi må oppdatere NU-rapporten i januar hvis den blir godtatt, alle
+</li>
+              <li> Vi må drive litt internt misjonsarbeid, spesielt hvis det blir aktuelt med ny studieplan. Personalmøte eller egen forestilling.
+</li>
+            </ol>
+<p>børre s
+</p>
+<ul>
+              <li> <b>23.januar</b>
+</li>
+            </ul>
+<p>
+              <br/>
+Tilstede: Mari Ann, Håkon, Terje, Børre
+</p>
+            <p>Oppsummering og arbeidsfordeling.
+</p>
+            <p>Vi har mottatt:
+</p>
+<ol>
+              <li> Tildelingsbrev for prosjektet
+</li>
+              <li> Tilbakemelding på artikkelforslag.
+</li>
+            </ol>
+<p>Prosjektet handteres slik:
+</p>
+<ol>
+              <li> Tore Petter Engen fyller ut nødvendige formalia og returnerer avkrevd skjema.
+</li>
+              <li> Børre S lager utkast til brev for å få igang kurs med eksterne deltagere.
+</li>
+              <li> Vi må forberede presentasjon til seminar i Tromsø. Materialet for dette har vi trolig klart, men vi vil få nærmere kravspesifikasjon i mars.
+</li>
+            </ol>
+<p>Artikkelen handteres slik, alt skal være ferdig 10.mars:
+</p>
+<ol>
+              <li> Håkon T tar ansvar for å skrive sammenhengen mellom mapper og XP-metodikk.
+</li>
+              <li> Terje S tar ansvar for å beskrive verktøyene (Trac, SVN) bedre.
+</li>
+              <li> Mari-Ann A tar ansvar for å restrukturere og forsterke de foreløpige analysene.
+</li>
+            </ol>
+<p>børre s
+</p>
+<ul>
+              <li> <b>5.mars</b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Terje, Børre
+</p>
+            <p>Status artikkel.
+</p>
+            <p>Litt diskusjon om struktur:
+</p>
+<ol>
+              <li> trenger illustrasjon av verktøy (milepæl, ticket)
+</li>
+              <li> liste av hovedpunkter i oppsummeringen: rytme og tempo, forpliktelser, oppdragsgiverrollen, arbeidsdeling og koordinering, transparens, refleksjon.
+</li>
+              <li> klargjøre hva som kan gjøres og hva som er gjort med tanke på formell og uformell evaluering av prosess.
+</li>
+            </ol>
+<p>Innholdet må i hovedsak være klart mandag 10.mars. Vi ber om utsettelse til 14.mars for innlevering.
+</p>
+            <p>Transkriberingene tikker inn.
+</p>
+            <p>Vi må passe på å søke om FoU tid til fortsettelse av prosjektet.
+</p>
+            <p>børre s
+</p>
+            <p>
+              <br/>
+</p>
+<ul>
+              <li> <b>10.mars</b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Terje, Børre
+</p>
+            <p>Status artikkel.
+</p>
+            <p>Litt diskusjon om struktur.
+</p>
+            <p>Vi må passe på å søke om FoU tid til fortsettelse av prosjektet(bs).
+</p>
+            <p>Vi må lage vevside for prosjektet og fylle ut skjema i forbindelse med Tromsø-møtet.
+</p>
+            <p>børre s
+</p>
+            <p>
+              <br/>
+</p>
+<ul>
+              <li> <b>7.april</b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Terje, Børre
+</p>
+            <p>Følgende skal skje:
+</p>
+<ol>
+              <li> Ekstern kurs (Børre må ta seg sammen)
+</li>
+              <li> Samlerapport. Mari-Ann er redaktør. Sier hva vi skal gjøre:
+<ol>
+                  <li> Vi skriver to intervjuanalyser hver. Forsøksvis ferdig i april 
+</li>
+                </ol>
+</li>
+              <li> Metodebok. Terje skriver på delen om praktisk bruk av verktøy
+</li>
+              <li> Webside for prosjektet. Børre fyller inn noe mer.
+</li>
+              <li> Håkon kontakter Pettersen/Lauvås om samarbeid
+</li>
+              <li> Håkon anviser utbetaling av penger fr intervjutranskripssjon
+</li>
+              <li> Intervju av to hovedprosjektgrupper.
+<ol>
+                  <li>Terje og Håkon intervjuer Børres gruppe
+</li>
+                  <li>Terje og Børre intervjuer Håkons gruppe
+</li>
+                </ol>
+</li>
+            </ol>
+<p>børre s
+</p>
+            <p>
+              <br/>
+</p>
+<ul>
+              <li> <b>20.mai</b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Terje, Børre
+</p>
+            <p>Fordeling av arbeid i forbindelse med presentasjon av prosjektet
+på personalmøtet.
+</p>
+            <p>børre s
+</p>
+            <p>
+              <br/>
+</p>
+<ul>
+              <li> <b>18.juni</b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Terje, Børre
+</p>
+            <p>Fordeling av arbeid i forbindelse med skriving av samlerapport.
+MA lager en ny wiki-side med disposison og arbeidsdeling.
+</p>
+            <p>Håndbok lages etter, og på grunnlag av, samlerapporten.
+</p>
+            <p>Minst 1 vitenskaplig rapport initieres underveis.
+</p>
+            <p>Disponering av prosjektmidler tas opp etter sommeren.
+</p>
+            <p>børre s
+</p>
+            <p>
+              <br/>
+</p>
+<ul>
+              <li> <b>25.september</b>
+</li>
+            </ul>
+<p>Tilstede: Mari Ann, Håkon, Terje, Børre
+</p>
+            <p>Planlegging av søknad. Intern frist for første runde 11.oktober.
+</p>
+            <p>Håkon og Børre skriver utkast på grunnlag av møtet.
+</p>
+            <p>børre s
+</p>
+<a name="FoU-s.C3.B8knad"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=11" title="Rediger seksjon: FoU-søknad">rediger</a>]</span> <span class="mw-headline">FoU-søknad</span>
+            </h2>
+<p>Det er søkt om og innvilget FoU-tid internt for å utvikle dette temaet.
+<a href="/XP/index.php/XP_FoU" title="XP FoU">XP FoU</a>
+</p>
+            <p>Det er videre søkt Norgesuniversitetet om midler for å ta denne virksomheten videre til fleksibel utdanning rettet mot eksterne brukere:
+<a class="external text" href="http://norgesuniversitetet.no/utlysninger/utlysning-2008/application_pdf_view?serial=1188916980.84" rel="nofollow" title="http://norgesuniversitetet.no/utlysninger/utlysning-2008/application_pdf_view?serial=1188916980.84">Søknad</a>
+</p>
+<a name="Artikkel_NU"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=12" title="Rediger seksjon: Artikkel NU">rediger</a>]</span> <span class="mw-headline">Artikkel NU</span>
+            </h2>
+<p>For noen uker siden var Håkon T og Børre S på et seminar arrangert av Norgesuniversitetet. Tema var bruk av mapper i undervinsingen. Vi hadde et foredrag der vi snakket litt om prosjektbasert undervisning og studentenes publisering.
+</p>
+            <p>Videre fortalte vi litt om det vi holder på med, prosjektstyring (Trac) dokumentasjon (bl.a. SVN). Norgesuniversitetet har planer om å lage en samling av noen temaer og har spurt om vi vil bidra. Vi har sagt ja, og synes det kan være en god ide at vi kunne lage noe vi alle fire (Terje, Mari Ann, Håkon, Børre)  står som forfattere av. Merk dessuten at vi har søkt Norgesuniversitetet om midler til virksomheten vår.<a class="external text" href="http://norgesuniversitetet.no/utlysninger/utlysning-2008/application_pdf_view?serial=1188916980.84" rel="nofollow" title="http://norgesuniversitetet.no/utlysninger/utlysning-2008/application_pdf_view?serial=1188916980.84">Søknad</a>
+</p>
+            <p>Altså: <a href="/XP/index.php/Artikkel_NU" title="Artikkel NU">Artikkel NU</a>
+</p>
+            <p>
+              <br/>
+</p>
+<a name="Intervjunalyser"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=13" title="Rediger seksjon: Intervjunalyser">rediger</a>]</span> <span class="mw-headline">Intervjunalyser</span>
+            </h2>
+<p>Side med analysene av alle intervjuene. 
+<a href="/XP/index.php/Samlerapport" title="Samlerapport">Samlerapport</a> 
+</p>
+<a name="Intervjuer"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=14" title="Rediger seksjon: Intervjuer">rediger</a>]</span> <span class="mw-headline">Intervjuer</span>
+            </h2>
+<p>Høsten 2007 gjennomførte vi intervjuer med utvalgte studentgrupper og med hverandre. 
+<a href="/XP/index.php/Transkriberte_intervjuer" title="Transkriberte intervjuer">Transkriberte intervjuer</a>
+</p>
+<a name="Internrapport"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=15" title="Rediger seksjon: Internrapport">rediger</a>]</span> <span class="mw-headline">Internrapport</span>
+            </h2>
+<p>
+              <a href="/XP/index.php/Internrapport" title="Internrapport">Internrapport</a>
+</p>
+<a name="H.C3.A5ndbok"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=16" title="Rediger seksjon: Håndbok">rediger</a>]</span> <span class="mw-headline">Håndbok</span>
+            </h2>
+<p>En samling av alle dokumenter vi har laget som kan brukes som støtte i ved anvendelse av metode og verktøy.
+<a href="/XP/index.php/H%C3%A5ndbok" title="Håndbok">Håndbok</a>
+</p>
+<a name="NU-s.C3.B8knad_2008"/>
+            <h2>
+              <span class="editsection">[<a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit&amp;section=17" title="Rediger seksjon: NU-søknad 2008">rediger</a>]</span> <span class="mw-headline">NU-søknad 2008</span>
+            </h2>
+<p>
+              <a href="/XP/index.php/NU2008" title="NU2008">NU2008</a>
+</p>
+<!-- Saved in parser cache with key wiki_XP:pcache:idhash:2-0!!!!no!0 and timestamp 20081209060200 -->
+<div class="printfooter">
+Hentet fra «<a href="https://wiki.hiof.no/XP/index.php/XP_i_programmeringsundervisningen">https://wiki.hiof.no/XP/index.php/XP_i_programmeringsundervisningen</a>»</div>
+						<!-- end content -->
+			<div class="visualClear"/>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div class="portlet" id="p-cactions">
+		<h5>Visninger</h5>
+		<div class="pBody">
+			<ul>
+					 <li class="selected" id="ca-nstab-main">
+                <a accesskey="c" href="/XP/index.php/XP_i_programmeringsundervisningen" title="Vis innholdssiden [c]">Artikkel</a>
+              </li>
+					 <li id="ca-talk">
+                <a accesskey="t" href="/XP/index.php/Diskusjon:XP_i_programmeringsundervisningen" title="Diskusjon om innholdssiden [t]">Diskusjon</a>
+              </li>
+					 <li id="ca-edit">
+                <a accesskey="e" href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=edit" title="Du kan redigere denne siden. Vennligst bruk Forhåndsvis-knappen før du lagrer. [e]">Rediger</a>
+              </li>
+					 <li id="ca-history">
+                <a accesskey="h" href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=history" title="Tidligere revisjoner av denne siden. [h]">Historikk</a>
+              </li>
+					 <li id="ca-move">
+                <a accesskey="m" href="/XP/index.php/Spesial:Movepage/XP_i_programmeringsundervisningen" title="Flytt denne siden [m]">Flytt</a>
+              </li>
+					 <li id="ca-unwatch">
+                <a accesskey="w" href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;action=unwatch" title="Fjern denne siden fra din overvåkningsliste. [w]">Avslutt overvåkning</a>
+              </li>
+				</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personlige verktøy</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-userpage">
+                <a accesskey="." class="new" href="/XP/index.php/Bruker:Borres" title="Min brukerside [.]">Borres</a>
+              </li>
+				<li id="pt-mytalk">
+                <a accesskey="n" class="new" href="/XP/index.php/Brukerdiskusjon:Borres" title="Min diskusjonsside [n]">Min diskusjonsside</a>
+              </li>
+				<li id="pt-preferences">
+                <a href="/XP/index.php/Spesial:Preferences" title="Mine innstillinger">My preferences</a>
+              </li>
+				<li id="pt-watchlist">
+                <a accesskey="l" href="/XP/index.php/Spesial:Watchlist" title="Liste over sider du overvåker for endringer. [l]">Overvåkningsliste</a>
+              </li>
+				<li id="pt-mycontris">
+                <a accesskey="y" href="/XP/index.php/Spesial:Contributions/Borres" title="Liste over mine bidrag [y]">Mine bidrag</a>
+              </li>
+				<li id="pt-logout">
+                <a href="/XP/index.php?title=Spesial:Userlogout&amp;returnto=XP_i_programmeringsundervisningen" title="Logg ut">Logg ut</a>
+              </li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a accesskey="z" href="/XP/index.php/Hovedside" style="background-image: url(/XP/skins/common/images/hiof.png);" title="Gå til hovedsiden [z]"/>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+		<div class="portlet" id="p-navigation">
+		<h5>Navigasjon</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage">
+                <a accesskey="z" href="/XP/index.php/Hovedside" title="Gå til hovedsiden [z]">Hovedside</a>
+              </li>
+				<li id="n-portal">
+                <a href="/XP/index.php/XP:Prosjektportal" title="Om prosjektet; hva du kan gjøre og hvor du kan finne ting">Prosjektportal</a>
+              </li>
+				<li id="n-currentevents">
+                <a href="/XP/index.php/XP:Aktuelt" title="Finn bakgrunnsinformasjon om aktuelle hendelser">Aktuelt</a>
+              </li>
+				<li id="n-recentchanges">
+                <a accesskey="r" href="/XP/index.php/Spesial:Recentchanges" title="Liste over siste endringer på wikien. [r]">Siste endringer</a>
+              </li>
+				<li id="n-randompage">
+                <a accesskey="x" href="/XP/index.php/Spesial:Random" title="Gå inn på en tilfeldig side [x]">Tilfeldig side</a>
+              </li>
+				<li id="n-help">
+                <a href="/XP/index.php/Hjelp:Hjelp" title="Stedet for å få hjelp.">Hjelp</a>
+              </li>
+				<li id="n-sitesupport">
+                <a href="/XP/index.php/XP:Donasjoner" title="Støtt oss">Donasjoner</a>
+              </li>
+			</ul>
+		</div>
+	</div>
+		<div class="portlet" id="p-search">
+		<h5>
+            <label for="searchInput">Søk</label>
+          </h5>
+		<div class="pBody" id="searchBody">
+			<form action="/XP/index.php/Spesial:Search" id="searchform">
+              <div>
+				<input accesskey="f" id="searchInput" name="search" title="Søk i denne wikien [f]" type="text" value=""/>
+				<input class="searchButton" id="searchGoButton" name="go" type="submit" value="Gå"/>
+				<input class="searchButton" id="mw-searchButton" name="fulltext" type="submit" value="Søk"/>
+			</div>
+            </form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Verktøy</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere">
+                <a accesskey="j" href="/XP/index.php/Spesial:Whatlinkshere/XP_i_programmeringsundervisningen" title="Liste over alle sider som lenker hit [j]">Lenker hit</a>
+              </li>
+				<li id="t-recentchangeslinked">
+                <a accesskey="k" href="/XP/index.php/Spesial:Recentchangeslinked/XP_i_programmeringsundervisningen" title="Siste endringer i sider som blir lenket fra denne siden [k]">Relaterte endringer</a>
+              </li>
+<li id="t-upload">
+                <a accesskey="u" href="/XP/index.php/Spesial:Upload" title="Last opp bilder eller mediafiler [u]">Last opp fil</a>
+              </li>
+<li id="t-specialpages">
+                <a accesskey="q" href="/XP/index.php/Spesial:Specialpages" title="Liste over alle spesialsider [q]">Spesialsider</a>
+              </li>
+				<li id="t-print">
+                <a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;printable=yes">Utskriftsvennlig versjon</a>
+              </li>				<li id="t-permalink">
+                <a href="/XP/index.php?title=XP_i_programmeringsundervisningen&amp;oldid=614">Permanent lenke</a>
+              </li>			</ul>
+		</div>
+	</div>
+		</div>
+      <!-- end of the left (by default at least) column -->
+			<div class="visualClear"/>
+			<div id="footer">
+				<div id="f-poweredbyico">
+          <a href="http://www.mediawiki.org/">
+            <img alt="Powered by MediaWiki" src="/XP/skins/common/images/poweredby_mediawiki_88x31.png"/>
+          </a>
+        </div>
+			<ul id="f-list">
+				<li id="lastmod"> Denne siden ble sist endret 11:00, 22. okt 2008.</li>
+				<li id="viewcount">Denne siden er vist 765 ganger.</li>
+				<li id="privacy">
+            <a href="/XP/index.php/XP:Personvern" title="XP:Personvern">Personvern</a>
+          </li>
+				<li id="about">
+            <a href="/XP/index.php/XP:Om" title="XP:Om">Om XP</a>
+          </li>
+				<li id="disclaimer">
+            <a href="/XP/index.php/XP:Opphavsrett" title="XP:Opphavsrett">Opphavsrett</a>
+          </li>
+			</ul>
+		</div>
+		
+	
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by recess in 0.175 secs. --></body>
+</html>

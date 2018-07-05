@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Python</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/wxtjs.js" type="text/javascript"> </script>
+	<link href="templates/template.css" rel="STYLESHEET">
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="wxtmodulemenu"><div class="level1"><a href="index.html" title="Velkommen til colorcoding">Velkommen</a></div><div class="level1"><a href="Java.html" title="Java">Java</a></div><div class="level1"><a href="Javascript.html" title="Javascript">Javascript</a></div><div class="level1">Python</div><div class="level1"><a href="XML.html" title="XML">XML</a></div><div class="level1"><a href="XSLT.html" title="XSLT">XSLT</a></div><div class="level1"><a href="CSHARP.html" title="C#">C#</a></div><div class="level1"><a href="ASPX.html" title="ASPX">ASPX</a></div><div class="level1"><a href="C.html" title="C">C</a></div><div class="level1"><a href="HTML.html" title="HTML">HTML</a></div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>Python</h1><p>
+   encoding
+</p><h2>textimport</h2><p>Simple</p><div>
+<pre class="pythoncode">
+<span class="word">import</span> httplib, urllib
+"""<span class="literal">
+Reading some data with a http request
+</span>"""
+<span class="word">try</span>:
+    <span class="comment"># prepare parameters</span>
+    params = urllib.urlencode({'<span class="literal">navn'</span>: '<span class="literal">ole'</span>, '<span class="literal">adresse'</span>: '<span class="literal">mysen'</span>})
+    <span class="comment"># prepare header</span>
+    headers = {"<span class="literal">Content-type"</span>: "<span class="literal">application/x-www-form-urlencoded"</span>,
+               "<span class="literal">Accept"</span>: "<span class="literal">text/plain"</span>}
+    <span class="comment"># connect</span>
+    conn = httplib.HTTPConnection("<span class="literal">www.ia.hiof.no"</span>)
+    conn.request("<span class="literal">POST"</span>, "<span class="literal">/~borres/cgi-bin/forms/std.py"</span>, params, headers)
+    r1 = conn.getresponse()
+    <span class="comment"># ok ?</span>
+    <span class="word">if</span> r1.status!=200:
+        <span class="word">print</span> '<span class="literal">access problem'</span>
+        <span class="word">print</span> r1.status, r1.reason
+    <span class="word">else</span>:
+        <span class="comment"># get data</span>
+        data = r1.read()
+        <span class="word">print</span> data
+    conn.close()
+<span class="word">except</span>:
+    <span class="word">print</span> '<span class="literal">cannot access data'</span>
+</pre>
+</div><p>Simple with '''</p><div>
+<pre class="pythoncode">
+<span class="word">import</span> httplib, urllib
+'<span class="literal">'</span>'<span class="literal">
+Reading some data with a http request
+'</span>'<span class="literal">'</span>
+<span class="word">try</span>:
+    <span class="comment"># prepare parameters</span>
+    params = urllib.urlencode({'<span class="literal">navn'</span>: '<span class="literal">ole'</span>, '<span class="literal">adresse'</span>: '<span class="literal">mysen'</span>})
+    <span class="comment"># prepare header</span>
+    headers = {"<span class="literal">Content-type"</span>: "<span class="literal">application/x-www-form-urlencoded"</span>,
+               "<span class="literal">Accept"</span>: "<span class="literal">text/plain"</span>}
+    <span class="comment"># connect</span>
+    conn = httplib.HTTPConnection("<span class="literal">www.ia.hiof.no"</span>)
+    conn.request("<span class="literal">POST"</span>, "<span class="literal">/~borres/cgi-bin/forms/std.py"</span>, params, headers)
+    r1 = conn.getresponse()
+    <span class="comment"># ok ?</span>
+    <span class="word">if</span> r1.status!=200:
+        <span class="word">print</span> '<span class="literal">access problem'</span>
+        <span class="word">print</span> r1.status, r1.reason
+    <span class="word">else</span>:
+        <span class="comment"># get data</span>
+        data = r1.read()
+        <span class="word">print</span> data
+    conn.close()
+<span class="word">except</span>:
+    <span class="word">print</span> '<span class="literal">cannot access data'</span>
+</pre>
+</div><p>bad syntax 1, not closed literal</p><div>
+<pre class="pythoncode">
+
+page="""<span class="literal">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+   %s
+   </span>"""
+<span class="word">try</span>:
+    dom=xml.dom.minidom.parseString(page%data)
+<span class="word">except</span>:
+    res=sys.exc_info()
+    <span class="word">print</span> res[1]
+    sys.exit(0)
+    
+<span class="comment"># and we can use the dom or/and the tekst, depending on our purpose</span>
+paragraphs=dom.getElementsByTagName('<span class="literal">p'</span>)
+<span class="word">print</span> '<span class="literal">Teksten er '</span>+str(len(data))+'<span class="literal"> tegn lang
+print '</span>Det er '<span class="literal">+str(len(paragraphs))+ '</span> paragrafer i teksten'<span class="literal">
+</span></pre>
+</div><h2>Dynamic </h2><p>Simple</p><div>
+<div class="wxtexpandsimple"><div class="header"><span class="off" onclick="javascript:toggleExpandSimple(this)">_</span>python/read.py</div><div class="content" style="display:none"><pre class="pythoncode">
+<span class="word">import</span> httplib, urllib
+"""<span class="literal">
+Reading some data with a http request
+</span>"""
+<span class="word">try</span>:
+    <span class="comment"># prepare parameters</span>
+    params = urllib.urlencode({'<span class="literal">navn'</span>: '<span class="literal">ole'</span>, '<span class="literal">adresse'</span>: '<span class="literal">mysen'</span>})
+    <span class="comment"># prepare header</span>
+    headers = {"<span class="literal">Content-type"</span>: "<span class="literal">application/x-www-form-urlencoded"</span>,
+               "<span class="literal">Accept"</span>: "<span class="literal">text/plain"</span>}
+    <span class="comment"># connect</span>
+    conn = httplib.HTTPConnection("<span class="literal">www.ia.hiof.no"</span>)
+    conn.request("<span class="literal">POST"</span>, "<span class="literal">/~borres/cgi-bin/forms/std.py"</span>, params, headers)
+    r1 = conn.getresponse()
+    <span class="comment"># ok ?</span>
+    <span class="word">if</span> r1.status!=200:
+        <span class="word">print</span> '<span class="literal">access problem'</span>
+        <span class="word">print</span> r1.status, r1.reason
+    <span class="word">else</span>:
+        <span class="comment"># get data</span>
+        data = r1.read()
+        <span class="word">print</span> data
+    conn.close()
+<span class="word">except</span>:
+    <span class="word">print</span> '<span class="literal">cannot access data'</span>
+</pre></div></div>
+</div><p>AJAX</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('python/read.txt',this)">_</span>python/read.py</div><div class="content"> </div></div>
+</div><p>CDATA</p><div>must be tight in the sense that the CDATA node must be the only one</div><pre class="pythoncode"><span class="word">import</span> httplib, urllib
+<span class="word">try</span>:
+    <span class="comment"># prepare parameters</span>
+    params = urllib.urlencode({'<span class="literal">navn'</span>: '<span class="literal">ole'</span>, '<span class="literal">adresse'</span>: '<span class="literal">mysen'</span>})
+    <span class="comment"># prepare header</span>
+    headers = {"<span class="literal">Content-type"</span>: "<span class="literal">application/x-www-form-urlencoded"</span>,
+               "<span class="literal">Accept"</span>: "<span class="literal">text/plain"</span>}
+    <span class="comment"># connect</span>
+    conn = httplib.HTTPConnection("<span class="literal">www.ia.hiof.no"</span>)
+    conn.request("<span class="literal">POST"</span>, "<span class="literal">/~borres/cgi-bin/forms/std.py"</span>, params, headers)
+    r1 = conn.getresponse()
+    <span class="comment"># ok ?</span>
+    <span class="word">if</span> r1.status!=200:
+        <span class="word">print</span> '<span class="literal">access problem'</span>
+        <span class="word">print</span> r1.status, r1.reason
+    <span class="word">else</span>:
+        <span class="comment"># get data</span>
+        data = r1.read()
+        <span class="word">print</span> data
+    conn.close()
+<span class="word">except</span>:
+    <span class="word">print</span> '<span class="literal">cannot access data'</span>
+</pre>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

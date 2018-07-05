@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Python</title>
+</head>
+    <body>
+        
+        <div class="mainblock">
+		<h1>Python</h1>
+ <p>
+   encoding
+</p>
+<h2>textimport</h2>
+<p>Simple</p>
+<div>
+<?_wxt importtxt location="read.py" code="pythoncode"?>
+</div>
+
+<p>Simple with '''</p>
+<div>
+<?_wxt importtxt location="read2.py" code="pythoncode"?>
+</div>
+
+<p>bad syntax 1, not closed literal</p>
+<div>
+<?_wxt importtxt location="domore.py" leftpar="#from" rightpar="#to" code="pythoncode"?>
+</div>
+
+<!-- ********************************************** -->
+<h2>Dynamic </h2>
+<p>Simple</p>
+<div>
+<?_wxt expandsimple location="read.py" code="pythoncode"?>
+</div>
+
+<p>AJAX</p>
+<div>
+<?_wxt expand sourcelocation="read.py" location="read.txt" code="pythoncode"?>
+</div>
+
+
+<!-- ********************************************** -->
+<p>CDATA</p>
+<div>must be tight in the sense that the CDATA node must be the only one</div>
+<pre class="pythoncode"><![CDATA[import httplib, urllib
+try:
+    # prepare parameters
+    params = urllib.urlencode({'navn': 'ole', 'adresse': 'mysen'})
+    # prepare header
+    headers = {"Content-type": "application/x-www-form-urlencoded",
+               "Accept": "text/plain"}
+    # connect
+    conn = httplib.HTTPConnection("www.ia.hiof.no")
+    conn.request("POST", "/~borres/cgi-bin/forms/std.py", params, headers)
+    r1 = conn.getresponse()
+    # ok ?
+    if r1.status!=200:
+        print 'access problem'
+        print r1.status, r1.reason
+    else:
+        # get data
+        data = r1.read()
+        print data
+    conn.close()
+except:
+    print 'cannot access data'
+]]></pre>
+
+
+
+
+
+</div>
+
+    </body>
+</html>

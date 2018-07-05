@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- script for building demo1 -->
+<wscript version="1.0">    
+<definitions>
+	<option name="indent-output" value="no"/>
+	<option name="expand-all" value="no"/>
+	<option name="default-encoding" value="UTF-8"/>
+	<option name="output-format" value="xhtml"/>
+	<pathfragment id="stuff" value="stuff"/>
+	<template id="P" location="stuff/p_template.xml"/>
+	<template id="COLLECT" location="{stuff}/book_template.xml"/>		
+</definitions>
+	<module books="all" location="index.html" name="Welcome" template="P">
+		<xmlcontent location="welcome.xml"/>
+	</module>
+	<module books="all"  location="page1.html" name="Page1" template="P">
+		<xmlcontent location="page1.xml"/>
+	</module>
+	<module books="all"  location="page2.html" name="Page2" template="P">
+		<xmlcontent location="page2.xml"/>
+	</module>
+	<module books="all"  location="page3.html" name="Page3" template="P">
+		<xmlcontent location="page3.xml"/>
+	</module>
+	<module books="all"  location="demand.html" name="Select Book" template="P">
+		<xmlcontent location="demand.xml"/>
+	</module>
+	
+	<!-- this module makes a minimal collect when normal build
+	and a requested collect when run as a "book-on-demand" service -->
+	<module books="_never"  template="{stuff}/book_template.xml" name="My Book" 
+	        location="{stuff}/collectedbook.html">
+	</module>
+</wscript>

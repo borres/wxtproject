@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">      
+	<definitions>
+		<pathfragment id="princepath" value="c:/fixed/prince/Engine/bin"/>
+		<option name="indent-output" value="yes"/>
+		<option name="output-format" value="xhtml"/>
+		<fragments location="fragments.xml"/>
+		<formulas location="Bezier.odt"/>
+		<images location="images.xml"/>
+		<command id="makepdf" line="{princepath}\prince  -i xml -s {_scriptcatalog}\pdfstyle.css  {_scriptcatalog}\collected.xhtml" wait="no"/>
+	</definitions>
+	<module location="index.xhtml" name="Introduction" template="welcomesrc.xml"/>
+	<module location="Bezier.xhtml" name="Bezier" template="bezier.xml">		
+		<modulelist catalog="each_of_them" template="p_template.xml" targetsuffix="xhtml" books="pages"/>
+	</module>
+	<!-- NOTE that the runafter parameter has no meaning if you dont have Prince installed 
+	     If you dont, you may remove the parameter and inspect file: collected.xhtml -->
+	<module books="_never" location="collected.xhtml" name="All" 
+			runafter="makepdf" output-format="xhtml" 
+			template="collector.xml"/>
+</wscript>

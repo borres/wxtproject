@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Velkommen</title>
+	<meta content="XSLT,Python,Javascript,XML,CSS" name="KEYWORDS"/>
+	<script type="text/javascript">
+	//<[CDATA[
+	function do(t){
+	if (t < 5)
+	alter(t);
+	}
+	//]]>
+	</script>
+</head>
+
+<body>
+
+ <div id="edit">
+ <p contenteditable>
+ 'Hallo i vår'
+</p>
+ </div>
+  <?_wxt import location="something.txt"?>
+</body>
+</html>

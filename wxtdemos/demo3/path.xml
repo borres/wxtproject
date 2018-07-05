@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Path</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_path.xml" 
+             sourcelocation="path.xml" code="xmlcode"?>
+</div>
+<hr/> 
+    <?_wxt path ?>    
+    <hr/>
+    [ <?_wxt path divider="] ["?> ]
+    </div>
+</data>

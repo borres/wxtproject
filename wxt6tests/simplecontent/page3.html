@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Testing</title>
+	<link href="templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.min.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('page31',event);" onmouseover="javascript:popunpop('page31',event);">Welcome</a>
+<div class="wxtsummary" id="page31" style="display: none;">
+<div class="header">Welcome</div>Demonstration of simple XML-import</div>
+</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('page32',event);" onmouseover="javascript:popunpop('page32',event);">Page1</a>
+<div class="wxtsummary" id="page32" style="display: none;">
+<div class="header">Page1</div>More demonstration of XML-import</div>
+</div>
+<div class="level1">
+<a href="page2.html" onmouseout="javascript:popunpop('page33',event);" onmouseover="javascript:popunpop('page33',event);">Page2</a>
+<div class="wxtsummary" id="page33" style="display: none;">
+<div class="header">Page2</div>Incomplete content to be tidyed</div>
+</div>
+<div class="level1 wxtselected">Page3</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importxml</h1>
+<p> Testing import of material from simple xml. Template is xml and contents is xml. 
+   <!-- extract a header with following text --> </p>
+<h2>A simple import of xml</h2>
+<div> 
+   <div class="source4">
+<p>Bygger på en template som ikke har xml-header, men er en ren html5 side</p>
+<p>templaten parses, uten tidy, men hvordan kommuniseres encoding ?</p>
+<p>Sidematerialet som importerer denne teksten er ikke well formet og må renses</p>
+</div> 
+  </div>
+<hr/>
+<h3>Content file for this page</h3>
+<div> 
+   <div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/page3.xml</div>
+<div class="content" style="display:none">
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;root&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:importxml&lt;/h1&gt;
+&lt;p&gt;
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+  
+&lt;!-- extract a header with following text --&gt;
+&lt;h2&gt;A simple import of xml&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importxml location="simplexml.xml" 
+       xpath="//div[@class='source4']"?&gt;
+&lt;/div&gt;
+&lt;hr/&gt;
+  
+&lt;h3&gt;Content file for this page&lt;/h3&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="page3.xml" 
+       lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/root&gt;</pre>
+</div>
+</div> 
+  </div>
+		</div>
+
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>ASPX</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/wxtjs.js" type="text/javascript"> </script>
+	<link href="templates/template.css" rel="STYLESHEET">
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="wxtmodulemenu"><div class="level1"><a href="index.html" title="Velkommen til colorcoding">Velkommen</a></div><div class="level1"><a href="Java.html" title="Java">Java</a></div><div class="level1"><a href="Javascript.html" title="Javascript">Javascript</a></div><div class="level1"><a href="Python.html" title="Python">Python</a></div><div class="level1"><a href="XML.html" title="XML">XML</a></div><div class="level1"><a href="XSLT.html" title="XSLT">XSLT</a></div><div class="level1"><a href="CSHARP.html" title="C#">C#</a></div><div class="level1">ASPX</div><div class="level1"><a href="C.html" title="C">C</a></div><div class="level1"><a href="HTML.html" title="HTML">HTML</a></div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>ASPX</h1><p>
+   encoding
+</p><h2>textimport</h2><p>Simple</p><div>
+<pre class="aspxcode">
+&lt;%@ Page Language="<span class="literal">C#</span>" AutoEventWireup="<span class="literal">true</span>"  
+         CodeFile="<span class="literal">Default.aspx.cs</span>" Inherits="<span class="literal">_Default</span>" %&gt;
+
+&lt;!DOCTYPE html PUBLIC "<span class="literal">-//W3C//DTD XHTML 1.0 Transitional//EN</span>" 
+          "<span class="literal">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</span>"&gt;
+
+&lt;html xmlns="<span class="literal">http://www.w3.org/1999/xhtml</span>"&gt;
+&lt;head runat="<span class="literal">server</span>"&gt;
+    &lt;title&gt;Histogram&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Lag histogram&lt;/h1&gt;
+    &lt;form id="<span class="literal">form1</span>" runat="<span class="literal">server</span>"&gt;
+    &lt;table&gt;
+    &lt;tr&gt;
+    &lt;td&gt;&lt;div&gt;
+    &lt;<span class="word">asp:TextBox</span> ID="<span class="literal">TextBox1</span>" runat="<span class="literal">server</span>" Rows="<span class="literal">12</span>" 
+                 TextMode="<span class="literal">MultiLine</span>" 
+                 Font-Size="<span class="literal">Large</span>" Width="<span class="literal">128px</span>"&gt;&lt;<span class="word">/asp:TextBox</span>&gt;    
+    &lt;/div&gt;
+    &lt;div&gt;        
+        &lt;<span class="word">asp:Button</span> ID="<span class="literal">Button1</span>" runat="<span class="literal">server</span>" Text="<span class="literal">Lag histogram</span>" 
+            onclick="<span class="literal">Button1_Click</span>" /&gt;
+    &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+        &lt;<span class="word">asp:Image</span> ID="<span class="literal">Image1</span>" runat="<span class="literal">server</span>" 
+                   ImageUrl="<span class="literal">~/bilde.gif</span>"  
+                   AlternateText="<span class="literal">Histogram</span>"
+                   Width="<span class="literal">286px</span>" Height="<span class="literal">271px</span>"/&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div&gt;
+        &lt;<span class="word">asp:Label</span> ID="<span class="literal">LabelMsg</span>" runat="<span class="literal">server</span>" Text="<span class="literal">:</span>"&gt;
+        &lt;<span class="word">/asp:Label</span>&gt;
+    &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div><h2>Dynamic </h2><p>Simple</p><div>
+<div class="wxtexpandsimple"><div class="header"><span class="off" onclick="javascript:toggleExpandSimple(this)">_</span>aspx/Default.aspx</div><div class="content" style="display:none"><pre class="aspxcode">
+&lt;%@ Page Language="<span class="literal">C#</span>" AutoEventWireup="<span class="literal">true</span>"  
+         CodeFile="<span class="literal">Default.aspx.cs</span>" Inherits="<span class="literal">_Default</span>" %&gt;
+
+&lt;!DOCTYPE html PUBLIC "<span class="literal">-//W3C//DTD XHTML 1.0 Transitional//EN</span>" 
+          "<span class="literal">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</span>"&gt;
+
+&lt;html xmlns="<span class="literal">http://www.w3.org/1999/xhtml</span>"&gt;
+&lt;head runat="<span class="literal">server</span>"&gt;
+    &lt;title&gt;Histogram&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Lag histogram&lt;/h1&gt;
+    &lt;form id="<span class="literal">form1</span>" runat="<span class="literal">server</span>"&gt;
+    &lt;table&gt;
+    &lt;tr&gt;
+    &lt;td&gt;&lt;div&gt;
+    &lt;<span class="word">asp:TextBox</span> ID="<span class="literal">TextBox1</span>" runat="<span class="literal">server</span>" Rows="<span class="literal">12</span>" 
+                 TextMode="<span class="literal">MultiLine</span>" 
+                 Font-Size="<span class="literal">Large</span>" Width="<span class="literal">128px</span>"&gt;&lt;<span class="word">/asp:TextBox</span>&gt;    
+    &lt;/div&gt;
+    &lt;div&gt;        
+        &lt;<span class="word">asp:Button</span> ID="<span class="literal">Button1</span>" runat="<span class="literal">server</span>" Text="<span class="literal">Lag histogram</span>" 
+            onclick="<span class="literal">Button1_Click</span>" /&gt;
+    &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+        &lt;<span class="word">asp:Image</span> ID="<span class="literal">Image1</span>" runat="<span class="literal">server</span>" 
+                   ImageUrl="<span class="literal">~/bilde.gif</span>"  
+                   AlternateText="<span class="literal">Histogram</span>"
+                   Width="<span class="literal">286px</span>" Height="<span class="literal">271px</span>"/&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div&gt;
+        &lt;<span class="word">asp:Label</span> ID="<span class="literal">LabelMsg</span>" runat="<span class="literal">server</span>" Text="<span class="literal">:</span>"&gt;
+        &lt;<span class="word">/asp:Label</span>&gt;
+    &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div>
+</div><p>AJAX</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('aspx/read.txt',this)">_</span>aspx/Default.aspx</div><div class="content"> </div></div>
+</div><p>CDATA</p><div>must be tight in the sense that the CDATA node must be the only one</div><pre class="aspxcode">&lt;%@ Page Language="<span class="literal">C#</span>" AutoEventWireup="<span class="literal">true</span>"  
+         CodeFile="<span class="literal">Default.aspx.cs</span>" Inherits="<span class="literal">_Default</span>" %&gt;
+&lt;!DOCTYPE html PUBLIC "<span class="literal">-//W3C//DTD XHTML 1.0 Transitional//EN</span>" 
+          "<span class="literal">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</span>"&gt;
+&lt;html xmlns="<span class="literal">http://www.w3.org/1999/xhtml</span>"&gt;
+&lt;head runat="<span class="literal">server</span>"&gt;
+    &lt;title&gt;Histogram&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Lag histogram&lt;/h1&gt;
+    &lt;form id="<span class="literal">form1</span>" runat="<span class="literal">server</span>"&gt;
+    &lt;table&gt;
+    &lt;tr&gt;
+    &lt;td&gt;&lt;div&gt;
+    &lt;<span class="word">asp:TextBox</span> ID="<span class="literal">TextBox1</span>" runat="<span class="literal">server</span>" Rows="<span class="literal">12</span>" 
+                 TextMode="<span class="literal">MultiLine</span>" 
+                 Font-Size="<span class="literal">Large</span>" Width="<span class="literal">128px</span>"&gt;&lt;<span class="word">/asp:TextBox</span>&gt;    
+    &lt;/div&gt;
+    &lt;div&gt;        
+        &lt;<span class="word">asp:Button</span> ID="<span class="literal">Button1</span>" runat="<span class="literal">server</span>" Text="<span class="literal">Lag histogram</span>" 
+            onclick="<span class="literal">Button1_Click</span>" /&gt;
+    &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+        &lt;<span class="word">asp:Image</span> ID="<span class="literal">Image1</span>" runat="<span class="literal">server</span>" 
+                   ImageUrl="<span class="literal">~/bilde.gif</span>"  
+                   AlternateText="<span class="literal">Histogram</span>"
+                   Width="<span class="literal">286px</span>" Height="<span class="literal">271px</span>"/&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div&gt;
+        &lt;<span class="word">asp:Label</span> ID="<span class="literal">LabelMsg</span>" runat="<span class="literal">server</span>" Text="<span class="literal">:</span>"&gt;
+        &lt;<span class="word">/asp:Label</span>&gt;
+    &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

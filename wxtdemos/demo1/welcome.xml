@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<div id="main">
+	<div class="likeh1">Places in Norway</div>
+
+	<img style="float:right" src="map.gif" alt="."/>
+
+	<p>
+		This little website is built to serve as a demonstration
+		of some WXT mechanismes. The theme is simply "places in Norway".
+		The selection of places is more or less random.
+	</p>
+	<p>
+	 The styling is rather simple. The intention has been to make it distinct, not 
+	 pretty.
+	</p>
+	<p>
+	B. Stenseth <br/><?_wxt date form="full" country="en"?>
+	</p>
+
+	<p>
+	The template used for all pages:
+	</p>
+	<div>
+	<?_wxt expand title="p_template.xml" location="templatecoded.txt" sourcelocation="p_template.xml" expanded="no" code="xmlcode"?>
+	</div>
+	<p style="clear:both">
+	   The script for this site: 
+	</p>
+	<div>
+	<?_wxt expand title="script.xml"  location="scriptcoded.txt" sourcelocation="script.xml" expanded="no" code="xmlcode"?>
+	</div>
+</div> <!-- main -->
+</root>

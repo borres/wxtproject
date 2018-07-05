@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" 
+                  "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> </meta>
+	<title><?_wxt fragment id="_name"?></title>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon" > </link>
+	<meta name="GENERATOR" content="wxt2"> </meta>
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="std.js" type="text/javascript"> </script>
+	<link rel="STYLESHEET" href="template.css"> </link>
+	<link rel="STYLESHEET" href="wxtstyle.css"> </link>
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top" >
+		<!-- menu -->
+		<div><?_wxt modulemenu books="all"?></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<?_wxt importodf id="1"  dpath="/Formula"?>
+
+		</div>
+		
+		<div id="main2">
+			<div><?_wxt importodf id="1"  dpath="/Table"?></div>
+			<hr/>
+			<div><?_wxt formula id="_fbezier"?></div>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

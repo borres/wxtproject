@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importdb</h1>
+ <p>
+   WXT has some capabilities to import material from a database.
+   The data used is a simple table with winedescriptions.
+   </p>
+   <pre class="prettyprint lang-sql">
+create table wines(
+    vin_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    catalog CHAR(10),
+    type CHAR(10),
+    country VARCHAR(20),
+    dice TINYINT,
+    volume INT,
+    price CHAR(10),
+    description TEXT
+);
+ </pre>
+ <script  type="text/javascript">preparePage();</script>
+<p>   Please note that the database used is not generally avilable.   
+</p>
+ 
+<h2>Some good red wines from Spain </h2>
+<p>XML-result from a query is simply dumped</p>
+<pre class="prettyprint lang-xml">
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&password=student"
+    sql="use vin;
+        select type,name,dice from wines where country = 'Spania' and type='red' and dice='6';"
+    encoding="ISO-8859-1"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdumpspain.xml"?>
+</pre>
+ 
+<h2>Some good red wines from Italy </h2>
+<p>XML-result is transformed by standard table transformation</p>
+<div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&password=student"
+    sql="use vin;
+        select type,name,dice from wines where country = 'Italia' and type='red' and dice='6';"
+    encoding="ISO-8859-1"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdumpspain.xml"?>
+</div>  
+    
+    
+    
+<hr/>
+    
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

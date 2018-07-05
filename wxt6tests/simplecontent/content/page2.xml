@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+ 
+<p>Using  material that is not well formed.
+</p>
+<div>
+<?_wxt importxml location="simplenotwellxml.xml" 
+       xpath="//div[@class='source1']"?>
+</div>
+
+<div>
+<?_wxt importxml location="simplenotwellxml.xml" 
+       xpath="//div[@class='source2']"?>
+</div>
+<hr/>
+
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="page2.xml" 
+       lang="lang-xml"?>
+</div>
+ 
+</div> <!-- mainblock -->
+
+</body>
+</html>

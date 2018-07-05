@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?_wxt importxml location="http://www.ia.hiof.no/~borres/pedtek/" xpath="//head"?>
+<body>
+
+
+<?_wxt importxml location="http://www.ia.hiof.no/~borres/pedtek/" 
+   xpath="//body/*"?>
+
+   <!-- unselect  by multiple [], tables fuck this up
+   <?_wxt importxml location="http://www.ia.hiof.no/~borres/pedtek/" 
+   xpath="//body//*[@id!='menu'][@id!='pdflink']"?>
+   -->
+ 
+ <!-- keeping the site menu -->
+<div id="menu" style="text-align:right"  >
+<?_wxt modulemenu books="all" cols="0"?>
+</div>
+
+</body>
+</html>

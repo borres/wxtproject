@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+</head>
+<body>
+<div id="main">
+<h1>Module 1</h1>
+<img style="float:left" src="http://www.ia.hiof.no/~borres/self/bs1.png" alt="bs1"/>
+<p>
+Duften minner mest om epler og har et lite streif av gjærbakst. 
+Syrefrisk og harmonisk smak med god fylde, fin syrefasthet i ettersmaken. 
+Duft av modne epler og gjær. Syrlig anslag, deretter streif av honning i smaken. 
+Litt lite nyansert. Aromatisk duft av solbærblader, stikkelsbær, nesle og urter. 
+Smaksrik og lang, med frisk bitterhet i ettersmaken. 
+Rik duft av mineraler, sitrus og toast. 
+Velbalansert og fyldig smak med både syretørrhet og fruktsødme. 
+Kompleks og lang ettersmak med en liten brentkarakter i avslutningen. 
+Brentpreg i duften med toastkarakter. 
+</p>
+
+</div><!-- main -->
+<div id="pagesource" style="clear:both">
+		<hr/>
+<div>Source:</div>
+	<div>
+	<?_wxt expand location="page1coded.txt" 
+			 sourcelocation="page1.xml" 
+			 expanded="no" code="xmlcode"?>
+	</div>
+</div>
+</body>
+</html>

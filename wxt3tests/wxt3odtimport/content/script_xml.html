@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<OBJECT CLASSID="clsid:32F66A20-7614-11D4-BD11-00104BD3F987" ID="mathplayer"> <!--not empty--></OBJECT>
+	<?IMPORT NAMESPACE="m" IMPLEMENTATION="#mathplayer" ?>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+
+	<link href="../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="skiptranslate prettyprint lang-xml" id="page14">&lt;?xml version="1.0" encoding="utf-8" standalone="no"?&gt;
+&lt;wscript version="1.0"&gt;    
+      &lt;!-- odtimport test --&gt;
+      &lt;definitions&gt;
+      &lt;option name="indent-output" value="yes"/&gt;
+      &lt;option name="output-format" value="xhtml"/&gt;
+        &lt;template id="P" location="../templates/p_template.xml"/&gt;
+        &lt;template id="M" location="../templates/m_template.xml"/&gt;
+        &lt;logfile location="../buildlog.txt" /&gt;         
+     &lt;/definitions&gt;
+        
+     &lt;module description="Demonstration of Open Office import" location="index.html" 
+            name="Welcome" id="welcome" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/welcome.xml"/&gt;
+    &lt;/module&gt;
+    &lt;module description="More demonstration of Open Office import" location="page1.xhtml" 
+            name="Page1" id="page1" template="M" books="all"&gt;
+        &lt;xmlcontent location="content/page1.xml"/&gt;
+    &lt;/module&gt;
+    
+ &lt;/wscript&gt;
+</pre></body>
+</html>

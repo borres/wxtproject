@@ -1,0 +1,72 @@
+<pre class="javascriptcode">
+<span class="comment">/*
+Minialistic library for wxt
+Relying on prototype.js (http://www.prototypejs.org/)
+- popup:
+     simplepopup(url,wname,wstyle)
+- change visibility when using summary in xlink
+    changestyle(eltId,style)
+- expand/unexpand, Relying on prototype.js:
+     expand(address,targetNode)
+     unexpand(address,targetNode)
+B.Stenseth 2009.
+*/</span>
+
+<span class="comment">// ------------  popup ------------------</span>
+<span class="comment">//popup</span>
+  <span class="word">function</span> simplepopup(theURL,wname,wstyle)
+  {
+    <span class="word">if</span>(wstyle=='<span class="literal">*'</span>)
+      wstyle='<span class="literal">scrollbars=yes,resizable=yes,width=600,height=600,status=no'</span>;
+    <span class="word">try</span>{
+      newwindow=window.open(theURL, wname, wstyle);
+      <span class="word">if</span> (window.focus) {newwindow.focus()}
+    }
+    <span class="word">catch</span>(E){
+      alert('<span class="literal">You may have blocked popups'</span>);
+    }
+  }
+<span class="comment">//eofpopup</span>
+
+<span class="comment">//-----------  change style ----------</span>
+<span class="comment">//change style</span>
+    <span class="word">function</span> changestyle(eltId, style) 
+    {
+      <span class="word">var</span> elt=document.getElementById(eltId);
+      <span class="word">if</span>(elt)
+        elt.style.visibility = style;
+                        
+    }
+<span class="comment">//eofchange style</span>
+
+<span class="comment">//------------- expansion ------------------</span>
+<span class="comment">// dependent of style-class: onoff for visible effect</span>
+<span class="comment">// and prototype.js v1.6 from http://www.prototypejs.org/</span>
+<span class="comment">//expand</span>
+<span class="word">function</span> expand(address,targetNode){
+  <span class="word">new</span> Ajax.Request(address,
+                   {method:'<span class="literal">get'</span>,
+           onSuccess:<span class="word">function</span>(transport){
+            <span class="word">var</span> T=transport.responseText;
+            <span class="word">var</span> pos1=T.indexOf('<span class="literal">&lt;pre'</span>);
+            <span class="word">var</span> pos2=T.lastIndexOf('<span class="literal">&lt;/pre'</span>);
+            <span class="word">if</span> ((pos1 !=-1) &amp;&amp; (pos2 &gt; pos1))
+              T=T.substring(pos1,pos2+6);
+            T='<span class="literal">&lt;span class="expand" '</span>+
+              '<span class="literal">onclick="unexpand(\''</span>+address+
+              '<span class="literal">\',this.parentNode)"&gt;&lt;span class="off"&gt;-&lt;/span&gt;&lt;/span&gt;'</span>
+              +T;
+            targetNode.innerHTML=T;
+           },
+           onFailure:<span class="word">function</span>(){targetNode.innerHTML="<span class="literal">Could not access content"</span>}
+           });
+}
+<span class="comment">//eofexpand</span>
+<span class="comment">//unexpand</span>
+<span class="word">function</span> unexpand(address,targetNode){
+    T='<span class="literal">&lt;span class="expand" '</span>+
+    '<span class="literal">onclick="expand(\''</span>+address+'<span class="literal">\',this.parentNode);"&gt;&lt;span class="on"&gt;+&lt;/span&gt;&lt;/span&gt;'</span>;
+    targetNode.innerHTML=T;
+}
+<span class="comment">//eofunexpand</span>
+</pre>

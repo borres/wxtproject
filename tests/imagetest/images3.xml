@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head>
+</head>
+<body>
+<div class="content">    
+<h1>Images</h1>
+
+
+<h2>summing up</h2>
+
+<div>
+<?_wxt imagelist thumbsize="100" idlist="page1"?>
+</div>
+<hr/>
+<div>
+<?_wxt imagelist thumbsize="100" idlist="page2" ?>
+</div>
+<hr/>
+<div>
+<?_wxt imagelist thumbsize="100" idlist="page21" ?>
+</div>
+<hr/>
+<div>
+<?_wxt imagelist thumbsize="50px" ?>
+</div>
+</div>
+</body>
+</html>

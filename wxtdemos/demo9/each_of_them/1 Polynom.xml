@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head> 
+</head>
+<body>
+<div class="content">    
+
+<div class="main">
+<h1><?_wxt fragment id="_name"?></h1>
+
+<div class="ingress">
+<p>We will find an expression for a polynom og degree 3.
+</p>
+</div>
+
+<div>
+ <?_wxt importodf location="../Bezier.odt" dpath="/A polynom of degree 3[*,-h2]"?>
+</div>
+
+</div>
+
+<div class="applet">
+<p>You can experiment with the curce below. Drag the control points</p>
+      <!--[if !IE]>-->
+      <object classid="java:bezier.class" height="300" type="application/x-java-applet" width="300">
+
+              <param name="codebase" value="http://www.ia.hiof.no/~borres/j3d/gbapplets/Fbezier/" />
+      <!--<![endif]-->
+        <object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" height="300" width="300"> 
+          <param name="codebase" value="http://www.ia.hiof.no/~borres/j3d/gbapplets/Fbezier/" />
+          <param name="code" value="bezier.class" />
+        </object> 
+      <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+</div>
+
+
+</div>
+</body>
+</html>

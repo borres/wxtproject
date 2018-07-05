@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wscript version="1.0">    
+<definitions>
+	<template id="P" location="p_template.xml"/>        
+	<command id="com1" line="${_scriptcatalog}/compdf.bat"/>        
+</definitions>
+	
+<module name="Velkommen" template="P" location="index.html">
+	<summary>
+		<![CDATA[
+		<p>Welcome</p>
+		<img src="http://www.ia.hiof.no/~borres/self/self.gif"/>
+		]]>
+	</summary>
+	<xmlcontent location="velkommen.xml"/>
+
+	<module name="side1" books="all" template="P" location="side1.html">
+		<xmlcontent location="side1.xml"/>
+	</module>
+		
+	<module name="side2" books="all" template="P" location="side2.html">
+		<xmlcontent location="side2.xml"/>
+	</module>
+</module>
+	
+<module name="vinbok" template="P" location="vinbok.html" runafter="com1">
+	<xmlcontent location="vinbok.xml"/>
+</module>
+</wscript>

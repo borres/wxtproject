@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Import Text</h1>
+
+	<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_expand.xml" 
+             sourcelocation="expand.xml" code="xmlcode"?>
+</div>
+<hr/>
+    <p style="cursor:pointer" onclick="alert(document.getElementById('show').innerHTML)">
+    klikk to view part of dom, before and after expansion</p>
+    <hr/>
+    
+    <div>
+        Strait text: <span><?_wxt expandsimple location="utftext.txt"?></span>
+    </div>
+   <hr/>
+   <div>
+       Parsable<div><?_wxt expandsimple location="parsable.txt" parse="yes"?></div>
+   </div>
+   <hr/>
+   <div id="show">
+       
+       <div>
+       Pythoncode:
+       <div>
+       <?_wxt expand sourcelocation="pycase.py" 
+                location="ajxpycase.txt" code="pythoncode" 
+                leftpar="#start" rightpar="#stop"?>
+       </div>
+       </div>
+   <hr/>
+        <div>
+       XSLTcode: 
+       <div>
+        <?_wxt expand sourcelocation="xsltcase.xslt" 
+                location="ajxxsltcase.txt" code="xsltcode"?>
+        </div>
+        </div>
+   <hr/>
+        <div>
+       Javascript: 
+       <div>
+        <?_wxt expand sourcelocation="std.js" 
+                location="std_js.txt" code="javascriptcode"?>
+        </div>
+        </div>
+  <hr/>
+       <h2>Transformations</h2>
+       <div>
+       Wines: 
+       <div>
+<?_wxt expand 
+       sourcelocation="http://www.ia.hiof.no/~borres/commondata/vin/viner.xml"
+       transformation="vin1"
+       leftpar="<!--start-->" rightpar="<!--stop-->"
+       location="ajxvin.txt" 
+       encoding="ISO-8859-1"
+       parse="yes"?>
+        </div>
+        </div>
+
+  <hr/>
+       <div>
+       Wines (parameters): 
+       <div>
+<?_wxt expand 
+       sourcelocation="http://www.ia.hiof.no/~borres/commondata/vin/viner.xml"
+       transformation="vin1(type='white',country='Frankrike',dice='3')"
+       leftpar="<!--start-->" rightpar="<!--stop-->"
+       location="ajxvinp.txt" 
+       encoding="ISO-8859-1"
+       parse="yes"?>
+        </div>
+        </div> 
+	<hr/>
+	<h2>Initially expanded</h2>
+	<div>
+	XSLTcode:        
+	<div>
+        <?_wxt expand sourcelocation="xsltcase.xslt" expanded="yes"
+                location="ajxxsltcase.txt" code="xsltcode"?>
+        </div>
+        </div>
+	<div>
+	Transformed wines (parameters):        
+	<div>
+<?_wxt expand 
+       sourcelocation="http://www.ia.hiof.no/~borres/commondata/vin/viner.xml"
+       transformation="vin1(type='white',country='Frankrike',dice='3')"
+       leftpar="<!--start-->" rightpar="<!--stop-->"
+       location="ajxvinp.txt" 
+       encoding="ISO-8859-1"
+	   expanded="yes"
+       parse="yes"?>	</div>
+	</div>
+	
+   </div><!-- show -->
+    </div>
+</data>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Velkommen</title>
+</head>
+    <body>
+        
+<div class="mainblock">
+
+<h1>When code goes wrong</h1>
+<p>
+	Testing of errormessages
+</p>
+<p>Non existent:</p>
+<div>
+<?_wxt importtxt location="mypython.py" code="pythoncode"?>
+</div>
+<p>Bad syntax</p>
+<div>
+<?_wxt importtxt location="dig2text.py" code="pythoncode" encoding="iso-8859-1"?>
+</div>
+<p>Bad syntax</p>
+<div>
+<?_wxt importtxt location="myjava.java" code="javacode"?>
+</div>
+</div><!-- main block -->
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+
+<h1>Vinliste</h1>
+<p>red wines from Portugal</p>
+<hr size="1"/>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Niepoort Redoma 1997</div>
+<div>
+<span>
+     kr 239.60 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Edel duft av bjørnebær, lakris, lær og sedertre. Fyldig vin med stor smakskonsentrasjon, lang ettersmak med fint  snerpende tørrhet. Solid nok til å matche kraftige viltretter.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Portada Caladoc &amp; Tinta Roriz 2002</div>
+<div>
+<span>
+     kr 79.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Tiltalende aroma av mynte, kamfer og søte bær. Mykt smaksanslag, fyldig og sødmerik smak med nyanser av plommesyltetøy og gelésjokolade. Vinen har også friskhet, så totalinntrykket blir ikke for søtt. Lettdrikkelig vin med behagelig avrundet ettersmak.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Vidigal Reserva 2000</div>
+<div>
+<span>
+     kr 79.00 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Søtlig duft med innslag av kirsebær, mynte og vanilje. Saftig og bløt bærsmak, middels fylde og fin tørrhet i ettersmaken med litt smøraktig fatpreg helt til slutt. Veldig bra til prisen.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Portada Caladoc &amp; Tinta Roriz 2002</div>
+<div>
+<span>
+     kr 79.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Tiltalende aroma av mynte, kamfer og søte bær. Mykt smaksanslag, fyldig og sødmerik smak med nyanser av plommesyltetøy og gelésjokolade. Vinen har også friskhet, så totalinntrykket blir ikke for søtt. Lettdrikkelig vin med behagelig avrundet ettersmak.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>J.P. Garrafeira 1999</div>
+<div>
+<span>
+     kr 89.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Julekrydder, tobakk og et søtlig, varmt eikepreg i duften. Moden smak med en behagelig tørrhet, rustikk portugiser i den gode gamle stilen.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Periquita 2000</div>
+<div>
+<span>
+     kr 89.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Friskt og litt søtlig parfymert bærpreg i duften. Saftig og slank smak, silkeaktig bløthet og behagelig tørrhet i ettersmaken. Veldig kommersielt og veldig godt! Kartongversjonen koster 339 kroner for tre liter, kr 84,75 pr 75 cl.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Grand Arte Alicante Bouschet 2002</div>
+<div>
+<span>
+     kr 99.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Mørk og tett vin med søtlig duft av moreller og mandler. Myk og søtlig smak, stor smakskonsentrasjon med bjørnebær og søt lakris. Rik fruktsødme i ettersmaken, med syrlig fasthet i avslutningen.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Santos Lima Cabernet Saivignon Touriga Franca 2001</div>
+<div>
+<span>
+     kr 99.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Solbær, eukalyptus, pepper og blodferskt kjøtt i duften. Fyldig fruktsødme i smaken med plomme- og morellaktig fruktighet, velkomponert totalinntrykk med spiselige tanniner i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Vidigal Reserva 2000</div>
+<div>
+<span>
+     kr 78.10 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Litt brent og søtlig duft med innslag av kirsebær mynte og vanilje. Saftig og bløt bærsmak med bra smakskonsentrasjon middels fylde og fin tørrhet i ettersmaken med litt smøraktig fatpreg helt til slutt. Veldig bra til prisen.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Periquita 2000</div>
+<div>
+<span>
+     kr 92.00 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Friskt og litt søtlig parfymert bærpreg i duften. Saftig og slank smak, silkeaktig bløthet og behagelig tørrhet i ettersmaken. Veldig kommersielt og veldig godt! Kartongversjonen koster 339 kroner for tre liter, kr 84,75 pr 75 cl.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Palha-Canas 2002</div>
+<div>
+<span>
+     kr 99.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Amarone-aktig duft med rosinsødme og intenst solbærpreg. Bløt og fyldig smak med mektig solbærsødme, passelig syretørrhet og lett snerpende bitterhet i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Ramada 2003</div>
+<div>
+<span>
+     kr 69.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Dette er den beste årgangen av Ramada vi har smakt. Sødmerikt bærpreg med et snev av honning i duften, bløt og saftig smak med lett syrlighet i ettersmaken. Drikkevennlig vin til en meget gunstig pris.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Eximius 2003</div>
+<div>
+<span>
+     kr 69.70 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Eximius i forbedret utgave er blitt et mye bedre kjøp! Morell/plomme-sødme i duft og smak. Ren og bløt stil med middels fylde og lett kirsebærsyrlig ettersmak.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>J.P. Garrafeira 2000</div>
+<div>
+<span>
+     kr 89.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Utviklet duft av lær, tørkete frukter, tobakk og kaffe. Rustikk portugiser med moden smak av rosiner, fiken, sjokolade og nøtter, og et passelig tørt trepreg i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Grand Arte Alicante Bouschet 2003</div>
+<div>
+<span>
+     kr 105.50 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Duften minner om nyknuste bjørnebær og har innslag av vanilje, toast og pinjer. Litt portvinsaktig fruktkonsentrasjon, fersk og småbarsk vin som godt kan drikkes nå, men også lagres i minst fem år. Fikk høyest score av 12 blindsmakte portugisere.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Esporão Reserva 2002</div>
+<div>
+<span>
+     kr 159.80 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Duft av tørkete frukter, tobakk og eikefat med en krydret undertone. Mørk og fyldig sviskesødme i smaken, ganske tanninsnerpende ettersmak.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Passadouro 2000</div>
+<div>
+<span>
+     kr 165.00 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Basis. Rustikt duftpreg med innslag av tørket frukt og eikefat. Edel fataroma og god bærsødme i smaken, behagelig tørrhet og harmonisk totalinntrykk.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Vinha Conchas 2003</div>
+<div>
+<span>
+     kr 104.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Tiltalende bærsødme og et snev av pinjer i duften. Myk smak med saftig fruktighet og fint integrert eikesødme, behagelig ettersmak med passelig syretørrhet.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>GrandArte Alicante Bouschet 2003</div>
+<div>
+<span>
+     kr 99.00 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Duften minner om nyknuste bjørnebær og har innslag av vanilje, toast og pinjer. Den tette og fyldige smaken har den spesielle Neiva-sødmen, ettersmaken er ganske fast og syretørr med moderat snerp.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/red6.gif" alt="dice"/>
+</div>
+<div>Luis Pato Vinhas Velhas 2001</div>
+<div>
+<span>
+     kr 191.20 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Fatpreg med læraroma, pepper og blåbær i duften. Rund og fyldig smak av sursøte bær, ganske syretørr og snerpende ettersmak. Denne vinen har hatt en positiv utvikling siden september 2004.</div>
+</div>

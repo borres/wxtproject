@@ -1,0 +1,102 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Import Text&lt;/<span class="tagname">h1</span>&gt;
+
+    &lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_expand.xml" 
+             sourcelocation="expand.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">p</span> <span class="attname">style</span>="<span class="attvalue">cursor:pointer</span>" <span class="attname">onclick</span>="<span class="attvalue">alert(document.getElementById('show').innerHTML)</span>"&gt;
+    klikk to view part of dom, before and after expansion&lt;/<span class="tagname">p</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    
+    &lt;<span class="tagname">div</span>&gt;
+        Strait text: &lt;<span class="tagname">span</span>&gt;<span class="process">&lt;?_wxt expandsimple location="utftext.txt"?&gt;</span>&lt;/<span class="tagname">span</span>&gt;
+    &lt;/<span class="tagname">div</span>&gt;
+   &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">div</span>&gt;
+       Parsable&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expandsimple location="parsable.txt" parse="yes"?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+   &lt;/<span class="tagname">div</span>&gt;
+   &lt;<span class="tagname">hr</span>/&gt;
+   &lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">show</span>"&gt;
+       
+       &lt;<span class="tagname">div</span>&gt;
+       Pythoncode:
+       &lt;<span class="tagname">div</span>&gt;
+       <span class="process">&lt;?_wxt expand sourcelocation="pycase.py" 
+                location="ajxpycase.txt" code="pythoncode" 
+                leftpar="#start" rightpar="#stop"?&gt;</span>
+       &lt;/<span class="tagname">div</span>&gt;
+       &lt;/<span class="tagname">div</span>&gt;
+   &lt;<span class="tagname">hr</span>/&gt;
+        &lt;<span class="tagname">div</span>&gt;
+       XSLTcode: 
+       &lt;<span class="tagname">div</span>&gt;
+        <span class="process">&lt;?_wxt expand sourcelocation="xsltcase.xslt" 
+                location="ajxxsltcase.txt" code="xsltcode"?&gt;</span>
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;/<span class="tagname">div</span>&gt;
+   &lt;<span class="tagname">hr</span>/&gt;
+        &lt;<span class="tagname">div</span>&gt;
+       Javascript: 
+       &lt;<span class="tagname">div</span>&gt;
+        <span class="process">&lt;?_wxt expand sourcelocation="std.js" 
+                location="std_js.txt" code="javascriptcode"?&gt;</span>
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;/<span class="tagname">div</span>&gt;
+  &lt;<span class="tagname">hr</span>/&gt;
+       &lt;<span class="tagname">h2</span>&gt;Transformations&lt;/<span class="tagname">h2</span>&gt;
+       &lt;<span class="tagname">div</span>&gt;
+       Wines: 
+       &lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand 
+       sourcelocation="http://www.ia.hiof.no/~borres/commondata/vin/viner.xml"
+       transformation="vin1"
+       leftpar="<!--start-->" rightpar="<!--stop-->"
+       location="ajxvin.txt" 
+       encoding="ISO-8859-1"
+       parse="yes"?&gt;</span>
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;/<span class="tagname">div</span>&gt;
+
+  &lt;<span class="tagname">hr</span>/&gt;
+       &lt;<span class="tagname">div</span>&gt;
+       Wines (parameters): 
+       &lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand 
+       sourcelocation="http://www.ia.hiof.no/~borres/commondata/vin/viner.xml"
+       transformation="vin1(type='white',country='Frankrike',dice='3')"
+       leftpar="<!--start-->" rightpar="<!--stop-->"
+       location="ajxvinp.txt" 
+       encoding="ISO-8859-1"
+       parse="yes"?&gt;</span>
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;/<span class="tagname">div</span>&gt; 
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">h2</span>&gt;Initially expanded&lt;/<span class="tagname">h2</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    XSLTcode:        
+    &lt;<span class="tagname">div</span>&gt;
+        <span class="process">&lt;?_wxt expand sourcelocation="xsltcase.xslt" expanded="yes"
+                location="ajxxsltcase.txt" code="xsltcode"?&gt;</span>
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    Transformed wines (parameters):        
+    &lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt expand 
+       sourcelocation="http://www.ia.hiof.no/~borres/commondata/vin/viner.xml"
+       transformation="vin1(type='white',country='Frankrike',dice='3')"
+       leftpar="<!--start-->" rightpar="<!--stop-->"
+       location="ajxvinp.txt" 
+       encoding="ISO-8859-1"
+       expanded="yes"
+       parse="yes"?&gt;</span>    &lt;/<span class="tagname">div</span>&gt;
+    &lt;/<span class="tagname">div</span>&gt;
+    
+   &lt;/<span class="tagname">div</span>&gt;&lt;!--<span class="comment"> show </span>--&gt;
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

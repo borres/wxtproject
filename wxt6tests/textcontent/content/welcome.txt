@@ -1,0 +1,8 @@
+dett er ren text
+med litt his og pist
+start
+Dette skal plukkes ut
+og ikke noe annet. 
+Det plukkes rett in  i template fra importtxt i scriptbeskrivelsen av modulen
+stop
+dette skal ikke være med

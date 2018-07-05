@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head> 
+</head>
+<body>
+<div class="content">    
+<h1>More ODT</h1>
+<p>testing import from Open Office document</p>
+<hr />
+<div>
+View source: 
+<?_wxt expand sourcelocation="odt2.xml" 
+       location="odt2src.txt" code="xmlcode"?>
+</div>
+<hr />
+<h1>Some more or less random material</h1>
+<p style="font-weight:bold">
+First some Norwegian wine descriptions
+</p>
+<div>
+<?_wxt importodf usecopy="yes" location="doc2.odt" 
+       dpath="/Winetext////samples[*-h6]"?>
+</div>
+
+<p style="font-weight:bold">
+Then some math
+</p>
+<div>
+<?_wxt importodf usecopy="yes" location="doc3.odt" 
+      dpath="/Line[math,p,img]"?>
+</div>
+
+<p style="font-weight:bold">
+Finally some portraits of the author
+</p>
+<div>
+<?_wxt importodf location="doc2.odt" 
+      dpath="/Portraits////samples"?>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+// snippet separator:#
+// each snippet:name;description;value
+scripttag;Produces a script tag;<wscript version="1.0">
+<!-- one definitions element and any number of modules here -->
+</wscript>

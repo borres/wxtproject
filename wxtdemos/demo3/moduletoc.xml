@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>ModuleTOC</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_moduletoc.xml" 
+             sourcelocation="moduletoc.xml" code="xmlcode"?>
+</div>
+<hr/> 
+    <?_wxt moduletoc?>
+    <hr/>
+    <?_wxt moduletoc tags=",h2" cols="0"?>
+    <hr/>
+    <?_wxt moduletoc tags=",h2,h3" cols="2"?>
+    <hr/>    
+
+   <h2>Sub1</h2>
+   <p>Text1</p>
+   <h2>Sub2</h2>
+   <p>Text2</p>
+        <h3>Sub23</h3>
+        <p>text23</p>
+   <h2>Sub3</h2>
+        <p>Text3</p>
+    </div>
+</data>

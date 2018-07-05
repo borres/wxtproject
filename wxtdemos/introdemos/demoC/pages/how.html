@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>How</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<meta content="WXT" name="GENERATOR"/>
+	<meta name="KEYWORDS" xmlcontent="WXT,XML,WebSite"/>
+	<link href="../gfx/template.css" rel="STYLESHEET"/>
+	<link href="../gfx/wxtstyle.css" rel="STYLESHEET"/>
+</head>
+
+<body>
+<div id="all">
+
+<!-- header -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no/wxt/wxtsite/"> 
+	<img alt="logo" src="../gfx/wxtlogo.gif" style="border:none"/> 
+	</a> 
+</div> 
+<div id="banner">
+  <p id="dep">Dep. for Information Technology, Østfold University College</p>
+  <p id="sitename"> WXT Demo B</p>
+</div>
+<!-- header -->
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="modulemenu"><div class="level1"><a href="../index.html" title="Introduction to the site">Travelling</a></div><div class="level2">How</div><div class="level1"><a href="paris.html" title="Paris">Paris</a></div><div class="level1"><a href="lisboa.html" title="Lisboa">Lisboa</a></div><div class="level1"><a href="hurdal.html" title="Hurdal">Hurdal</a></div></div>
+</div><!-- left menu -->
+
+<!-- content -->
+<div class="content">
+	<div class="collectable">
+		<div class="main">
+			<p>
+ Not how to travel, but how this site is built.
+</p><p>
+ The script:
+</p><div>
+<div class="expand-on" id="How5on" onclick="javascript:document.getElementById('How5on').style.display='none';document.getElementById('How5off').style.display='block';" style="display:block">+</div><div id="How5off" style="display:none"><div class="expand-off" onclick="javascript:document.getElementById('How5off').style.display='none';document.getElementById('How5on').style.display='block';">-</div><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">wscript</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>"&gt;
+&lt;!--<span class="comment">Script for website demoB - bs dec. 2009</span>--&gt;  
+&lt;<span class="tagname">definitions</span>&gt;
+    &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">output-format</span>" <span class="attname">value</span>="<span class="attvalue">xhtml</span>"/&gt;
+    
+    &lt;<span class="tagname">fragments</span> <span class="attname">location</span>="<span class="attvalue">gfx/myfragments.xml</span>"/&gt;
+    
+    &lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">gfx/p_template.xml</span>"/&gt;
+    &lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">Q</span>" <span class="attname">location</span>="<span class="attvalue">gfx/q_template.xml</span>"/&gt;
+&lt;/<span class="tagname">definitions</span>&gt;
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">Travelling</span>" <span class="attname">template</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">index.html</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">Introduction to the site</span>"&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">content/b-index.xml</span>"/&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">How</span>" <span class="attname">template</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">pages\how.html</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">How this site is built</span>"&gt;
+    &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">content\b-how.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;  
+&lt;/<span class="tagname">module</span>&gt;
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">Paris</span>" <span class="attname">template</span>="<span class="attvalue">Q</span>" <span class="attname">location</span>="<span class="attvalue">pages\paris.html</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">Paris</span>"&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">content\b-paris.xml</span>"/&gt;
+&lt;/<span class="tagname">module</span>&gt;
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">Lisboa</span>" <span class="attname">template</span>="<span class="attvalue">Q</span>" <span class="attname">location</span>="<span class="attvalue">pages\lisboa.html</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">Lisboa</span>"&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">content\b-lisboa.xml</span>"/&gt;
+&lt;/<span class="tagname">module</span>&gt;
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">Hurdal</span>" <span class="attname">template</span>="<span class="attvalue">Q</span>" <span class="attname">location</span>="<span class="attvalue">pages\hurdal.html</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">Hurdal</span>"&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">content\b-hurdal.xml</span>"/&gt;
+&lt;/<span class="tagname">module</span>&gt;
+&lt;/<span class="tagname">wscript</span>&gt;</pre></div>
+</div><p>
+ Template for this page and the welcome page:
+</p><div>
+<div class="expand-on" id="How6on" onclick="javascript:document.getElementById('How6on').style.display='none';document.getElementById('How6off').style.display='block';" style="display:block">+</div><div id="How6off" style="display:none"><div class="expand-off" onclick="javascript:document.getElementById('How6off').style.display='none';document.getElementById('How6on').style.display='block';">-</div><pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "-//W3C//DTD XHTML 1.0 Strict//EN"&gt;
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+  &lt;<span class="tagname">title</span>&gt;<span class="process">&lt;?_wxt fragment id="_name"?&gt;</span>&lt;/<span class="tagname">title</span>&gt;
+  &lt;<span class="tagname">meta</span> <span class="attname">http-equiv</span>="<span class="attvalue">Content-Type</span>" <span class="attname">content</span>="<span class="attvalue">text/html; charset=utf-8</span>"/&gt;
+  &lt;<span class="tagname">meta</span> <span class="attname">name</span>="<span class="attvalue">GENERATOR</span>" <span class="attname">content</span>="<span class="attvalue">WXT</span>"/&gt;
+  &lt;<span class="tagname">meta</span> <span class="attname">name</span>="<span class="attvalue">KEYWORDS</span>" <span class="attname">xmlcontent</span>="<span class="attvalue">WXT,XML,WebSite</span>"/&gt;
+  &lt;<span class="tagname">link</span> <span class="attname">rel</span>="<span class="attvalue">STYLESHEET</span>" <span class="attname">href</span>="<span class="attvalue">template.css</span>"/&gt;
+  &lt;<span class="tagname">link</span> <span class="attname">rel</span>="<span class="attvalue">STYLESHEET</span>" <span class="attname">href</span>="<span class="attvalue">wxtstyle.css</span>"/&gt;
+&lt;/<span class="tagname">head</span>&gt;
+
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">all</span>"&gt;
+
+&lt;!--<span class="comment"> header </span>--&gt;
+<span class="process">&lt;?_wxt fragment id="header"?&gt;</span>
+&lt;!--<span class="comment"> header </span>--&gt;
+
+&lt;!--<span class="comment"> left menu </span>--&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">menu</span>" <span class="attname">id</span>="<span class="attvalue">menu</span>"&gt;
+  <span class="process">&lt;?_wxt modulemenu books="all"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;&lt;!--<span class="comment"> left menu </span>--&gt;
+
+&lt;!--<span class="comment"> content </span>--&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;
+  &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">collectable</span>"&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">main</span>"&gt;
+      <span class="process">&lt;?_wxt importxml xpath="//div[@class='mainblock']/*"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+  &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;&lt;!--<span class="comment"> content </span>--&gt;
+
+
+&lt;!--<span class="comment"> footer </span>--&gt;
+<span class="process">&lt;?_wxt fragment id="footer"?&gt;</span>
+&lt;!--<span class="comment"> footer </span>--&gt;
+
+&lt;/<span class="tagname">div</span>&gt;&lt;!--<span class="comment"> all </span>--&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre></div>
+</div><p>
+ Template for the pages for each destination:
+</p><div>
+<div class="expand-on" id="How7on" onclick="javascript:document.getElementById('How7on').style.display='none';document.getElementById('How7off').style.display='block';" style="display:block">+</div><div id="How7off" style="display:none"><div class="expand-off" onclick="javascript:document.getElementById('How7off').style.display='none';document.getElementById('How7on').style.display='block';">-</div><pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "-//W3C//DTD XHTML 1.0 Strict//EN"&gt;
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+  &lt;<span class="tagname">title</span>&gt;<span class="process">&lt;?_wxt fragment id="_name"?&gt;</span>&lt;/<span class="tagname">title</span>&gt;
+  &lt;<span class="tagname">meta</span> <span class="attname">http-equiv</span>="<span class="attvalue">Content-Type</span>" <span class="attname">content</span>="<span class="attvalue">text/html; charset=utf-8</span>"/&gt;
+  &lt;<span class="tagname">meta</span> <span class="attname">name</span>="<span class="attvalue">GENERATOR</span>" <span class="attname">content</span>="<span class="attvalue">WXT</span>"/&gt;
+  &lt;<span class="tagname">meta</span> <span class="attname">name</span>="<span class="attvalue">KEYWORDS</span>" <span class="attname">xmlcontent</span>="<span class="attvalue">WXT,XML,WebSite</span>"/&gt;
+  &lt;<span class="tagname">link</span> <span class="attname">rel</span>="<span class="attvalue">STYLESHEET</span>" <span class="attname">href</span>="<span class="attvalue">template.css</span>"/&gt;
+  &lt;<span class="tagname">link</span> <span class="attname">rel</span>="<span class="attvalue">STYLESHEET</span>" <span class="attname">href</span>="<span class="attvalue">wxtstyle.css</span>"/&gt;
+&lt;/<span class="tagname">head</span>&gt;
+
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">all</span>"&gt;
+&lt;!--<span class="comment"> header </span>--&gt;
+<span class="process">&lt;?_wxt fragment id="header"?&gt;</span>
+&lt;!--<span class="comment"> header </span>--&gt;
+
+&lt;!--<span class="comment"> left menu </span>--&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">menu</span>" <span class="attname">id</span>="<span class="attvalue">menu</span>"&gt;
+  <span class="process">&lt;?_wxt modulemenu books="all"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;&lt;!--<span class="comment"> left menu </span>--&gt;
+
+
+&lt;!--<span class="comment"> content </span>--&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;
+  &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">collectable</span>"&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">fact</span>"&gt;
+    
+      <span class="process">&lt;?_wxt importxml xpath="//div[@class='fact']/*"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    
+    &lt;<span class="tagname">h1</span>&gt;<span class="process">&lt;?_wxt importxml xpath="//h1[position()='1']"?&gt;</span>&lt;/<span class="tagname">h1</span>&gt;
+
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">main</span>"&gt;
+      <span class="process">&lt;?_wxt importxml xpath="//div[@class='mainblock']/*"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    
+  &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;&lt;!--<span class="comment"> content </span>--&gt;
+
+
+&lt;!--<span class="comment"> footer </span>--&gt;
+<span class="process">&lt;?_wxt fragment id="footer"?&gt;</span>
+&lt;!--<span class="comment"> footer </span>--&gt;
+
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre></div>
+</div><p>
+ and the fragments:
+</p><div>
+<div class="expand-on" id="How8on" onclick="javascript:document.getElementById('How8on').style.display='none';document.getElementById('How8off').style.display='block';" style="display:block">+</div><div id="How8off" style="display:none"><div class="expand-off" onclick="javascript:document.getElementById('How8off').style.display='none';document.getElementById('How8on').style.display='block';">-</div><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;<span class="tagname">fragments</span>&gt;
+
+&lt;<span class="tagname">fragment</span> <span class="attname">id</span>="<span class="attvalue">header</span>"&gt;
+  &lt;![CDATA[
+  &lt;div id="logo"&gt; 
+  &lt;a href="http://www.it.hiof.no/wxt/wxtsite/"&gt; 
+  &lt;img alt="logo" src="wxtlogo.gif" style="border:none" /&gt; 
+  &lt;/a&gt; 
+&lt;/div&gt; 
+&lt;div id="banner"&gt;
+  &lt;p id="dep"&gt;Dep. for Information Technology, Østfold University College&lt;/p&gt;
+  &lt;p id="sitename"&gt; WXT Demo B&lt;/p&gt;
+&lt;/div&gt;
+  ]]&gt;
+&lt;/<span class="tagname">fragment</span>&gt;
+&lt;<span class="tagname">fragment</span> <span class="attname">id</span>="<span class="attvalue">footer</span>"&gt;
+&lt;![CDATA[&lt;div class="footer"&gt;
+  &lt;a href="http://validator.w3.org/check?uri=referer"&gt;
+  &lt;img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border:0px"/&gt;
+  &lt;/a&gt; 
+&lt;/div&gt;]]&gt;
+    &lt;/<span class="tagname">fragment</span>&gt;
+&lt;/<span class="tagname">fragments</span>&gt;</pre></div>
+</div><p>
+ The sitespesific styles:
+</p><div>
+<div class="expand-on" id="How9on" onclick="javascript:document.getElementById('How9on').style.display='none';document.getElementById('How9off').style.display='block';" style="display:block">+</div><div id="How9off" style="display:none"><div class="expand-off" onclick="javascript:document.getElementById('How9off').style.display='none';document.getElementById('How9on').style.display='block';">-</div><pre class="mlcode">
+@media screen{ 
+body {
+    color: black;
+    font-family:Georgia,'Times New Roman',times,serif;
+    font-size: 11px;
+    text-align:left;
+    margin:0px;
+    margin-right:5px;
+    padding:0px;
+}
+div#logo{position:absolute;left:0px;top:10px}
+div#banner{height:80px;border-bottom:solid;border-width:thin;background-color:#EEE8CD;padding-top:1px}
+div#banner #dep{font-size:14px;line-height:120%;font-weight:bold;text-align:right;}
+div#banner #sitename{margin-left:130px;font-size:20px;line-height:120%;font-weight:bold;text-align:left;}
+div#menu{position:absolute;left:0px;top:82px;width:128px;}
+div.fact{float:right;background-color:white; border:solid;border-width:thin;
+       }
+.fact legend{font-size:14px;color:gray;}
+div#all{background-image: url(bckgnd.gif); background-repeat:repeat-y;}
+div.content{
+        border-top:solid; border-top-width:thin; border-top-color:white;
+        border-bottom:solid; border-bottom-width:thin; border-bottom-color:white;    
+        margin-left:135px;  padding-right:0px;
+        background-color:white;        
+        }
+div.collectable{
+        margin-left:-4px;
+        padding-left:5px;
+        border-left-color:black; border-left-width:thin;        
+        }
+.footer{
+        margin-top:0px;
+        border-top:solid;
+        border-width:thin;
+        background-color:white;
+        padding-left:5px;
+        padding-top:7px;
+        clear:both;
+        text-align:right
+        }
+}
+@media print{
+    #menu{display:none}    
+    #footer{display:none}
+    #banner{display:none}
+    h1{page-break-before:always}
+}
+</pre></div>
+</div>
+		</div>
+	</div>
+</div><!-- content -->
+
+
+<!-- footer -->
+<div class="footer">
+	<a href="http://validator.w3.org/check?uri=referer">
+	<img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border:0px"/>
+	</a> 
+</div>
+<!-- footer -->
+
+</div><!-- all -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">html</span>&gt;
+&lt;<span class="tagname">head</span>&gt; 
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+&lt;<span class="tagname">h1</span>&gt;More ODT&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">p</span>&gt;testing import from Open Office document&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;
+View source: 
+<span class="process">&lt;?_wxt expand sourcelocation="odt2.xml" 
+       location="odt2src.txt" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">h1</span>&gt;Some more or less random material&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">p</span> <span class="attname">style</span>="<span class="attvalue">font-weight:bold</span>"&gt;
+First some Norwegian wine descriptions
+&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt importodf usecopy="yes" location="doc2.odt" 
+       dpath="/Winetext////samples[*-h6]"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">p</span> <span class="attname">style</span>="<span class="attvalue">font-weight:bold</span>"&gt;
+Then some math
+&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt importodf usecopy="yes" location="doc3.odt" 
+      dpath="/Line[math,p,img]"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">p</span> <span class="attname">style</span>="<span class="attvalue">font-weight:bold</span>"&gt;
+Finally some portraits of the author
+&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span>&gt;
+<span class="process">&lt;?_wxt importodf location="doc2.odt" 
+      dpath="/Portraits////samples"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

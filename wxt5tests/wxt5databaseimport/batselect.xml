@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<resultset statement="select dice,name from wines where country='Spania' and dice=6
+" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Muga Reserva 1999</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Marqués de Murrieta Ygay Capellanía Gran Reserva 1997</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Castillo Ygay Gran Reserva Especial 1994</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Castillo Ygay Gran Reserva Especial 1978</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Viña Izadi Crianza 2000</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Montesierra Merlot Cabernet 2001</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Gran Feudo Reserva 1998</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Viña Alberdi Reserva 1999</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Hermanos Lurton 2003</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Marqués de Cáceres Gran Reserva 1994</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Montesierra Merlot Cabernet 2001</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Viña Alberdi Reserva 1999</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Condado de Haza Crianza 2001</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Gran Feudo Reserva 1998</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Muga Reserva 2000</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Faustino I Gran Reserva 1995</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Marqués de Monistrol Reserva Brut</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Marqués de Monistrol Reserva Brut</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Marques de Riscal  Rueda Superior 2003</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Las Campanas Crianza 2000</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Señorio de los Llanos Reserva 2000</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Las Campanas Reserva 1997</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Raimat Abadia 2001</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Las Campanas Reserva 1997</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Marqués de Murrieta Ygay Capellanía Gran Reserva 1998</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Rejadorada Crianza 2001</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Muga Reserva 2001</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Viña Ardanza Reserva 1998</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Marqués de Monistrol Reserva Brut</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Pujanza 2001</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Divus Monastrell 2001</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Peique Selección de Viñedos Viejos 2002</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Pie Franco 2000</field>
+  </row>
+
+  <row>
+	<field name="dice">6</field>
+	<field name="name">Casa de la Ermita Monastrell Crianza 2001</field>
+  </row>
+</resultset>

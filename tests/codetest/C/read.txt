@@ -1,0 +1,203 @@
+<pre class="ccode">
+<span class="comment">/********************************************************************\
+*  cdots.c: Source code for cdots                                    *
+*                                                                    *
+*  Comments: simple Win32-based Application                          *
+*             distribute a set of red spots whenever painted          *
+*                                                                    *
+*  Functions:                                                        *
+*     WinMain      - Application entry point                         *
+*     MainWndProc  - main window procedure                           *
+*     AboutDlgProc - dialog procedure for About dialog               *
+*                                                                    *
+*                                                                    *
+\********************************************************************/</span>
+
+<span class="comment">/*********************  Header Files  *********************/</span>
+
+#include &lt;windows.h&gt;
+#include "<span class="literal">cdots.h"</span>
+
+<span class="comment">/*********************  Prototypes  ***********************/</span>
+
+LRESULT WINAPI MainWndProc( HWND, UINT, WPARAM, LPARAM );
+LRESULT WINAPI AboutDlgProc( HWND, UINT, WPARAM, LPARAM );
+
+<span class="comment">/*******************  Global Variables ********************/</span>
+
+HANDLE ghInstance;
+
+<span class="comment">/********************************************************************\
+*  Function: int PASCAL WinMain(HINSTANCE, HINSTANCE, LPSTR, int)    *
+*                                                                    *
+*   Purpose: Initializes Application                                 *
+*                                                                    *
+*  Comments: Register window class, create and display the main      *
+*            window, and enter message loop.                         *
+*                                                                    *
+*                                                                    *
+\********************************************************************/</span>
+
+<span class="word">int</span> PASCAL WinMain( HINSTANCE hInstance,
+    HINSTANCE hPrevInstance,
+    LPSTR lpszCmdLine,
+    <span class="word">int</span> nCmdShow )
+{
+   WNDCLASS wc;
+   MSG msg;
+   HWND hWnd;
+
+   <span class="word">if</span>( !hPrevInstance )
+   {
+      wc.lpszClassName = "<span class="literal">GenericAppClass"</span>;
+      wc.lpfnWndProc = MainWndProc;
+      wc.style = CS_OWNDC | CS_VREDRAW | CS_HREDRAW;
+      wc.hInstance = hInstance;
+      wc.hIcon = LoadIcon( NULL, IDI_APPLICATION );
+      wc.hCursor = LoadCursor( NULL, IDC_ARROW );
+      wc.hbrBackground = (HBRUSH)( COLOR_WINDOW+1 );
+      wc.lpszMenuName = "<span class="literal">GenericAppMenu"</span>;
+      wc.cbClsExtra = 0;
+      wc.cbWndExtra = 0;
+
+      RegisterClass( &amp;wc );
+   }
+
+   ghInstance = hInstance;
+
+   hWnd = CreateWindow( "<span class="literal">GenericAppClass"</span>,
+      "<span class="literal">Generic Application"</span>,
+      WS_OVERLAPPEDWINDOW|WS_HSCROLL|WS_VSCROLL,
+      0,
+      0,
+      CW_USEDEFAULT,
+      CW_USEDEFAULT,
+      NULL,
+      NULL,
+      hInstance,
+      NULL
+   );
+
+   ShowWindow( hWnd, nCmdShow );
+
+   <span class="word">while</span>( GetMessage( &amp;msg, NULL, 0, 0 ) ) {
+      TranslateMessage( &amp;msg );
+      DispatchMessage( &amp;msg );
+   }
+
+   <span class="word">return</span> msg.wParam;
+}
+
+<span class="comment">/********************************************************************\
+* Function: LRESULT CALLBACK MainWndProc(HWND, UINT, WPARAM, LPARAM) *
+*                                                                    *
+*  Purpose: Processes Application Messages                           *
+*                                                                    *
+* Comments: The following messages are processed                     *
+*                                                                    *
+*           WM_PAINT                                                 *
+*           WM_COMMAND                                               *
+*           WM_DESTROY                                               *
+*                                                                    *
+*                                                                    *
+\********************************************************************/</span>
+
+LRESULT CALLBACK MainWndProc( HWND hWnd, UINT msg, WPARAM wParam,
+   LPARAM lParam )
+{
+    PAINTSTRUCT ps;
+    HDC hDC;
+    <span class="word">int</span> ix;
+    RECT R;
+    HBRUSH newBrush;
+    HBRUSH oldBrush;
+
+
+   <span class="word">switch</span>( msg ) {
+
+<span class="comment">/**************************************************************\
+*     WM_PAINT:                                                *
+\**************************************************************/</span>
+
+      <span class="word">case</span> WM_PAINT:
+            hDC = BeginPaint( hWnd, &amp;ps );
+
+            GetClientRect(hWnd,(LPRECT)&amp;R);
+            newBrush=CreateSolidBrush(RGB(255,0,0));
+            oldBrush=SelectObject(hDC,newBrush);
+
+            <span class="comment">// make 20 dots</span>
+            <span class="word">for</span>(ix=0;ix&lt;20;ix++)
+            {
+                <span class="comment">// where ?</span>
+                <span class="word">int</span> x=10+rand()%(R.right-R.left-20);
+                <span class="word">int</span> y=10+rand()%(R.bottom-R.top-20);
+                Ellipse(hDC,x-10,y-10,x+10,y+10);
+            }
+
+            SelectObject(hDC,oldBrush);
+            EndPaint( hWnd, &amp;ps );
+         <span class="word">break</span>;
+
+<span class="comment">/**************************************************************\
+*     WM_COMMAND:                                              *
+\**************************************************************/</span>
+
+      <span class="word">case</span> WM_COMMAND:
+         <span class="word">switch</span>( wParam ) {
+            <span class="word">case</span> IDM_ABOUT:
+               DialogBox( ghInstance, "<span class="literal">AboutDlg"</span>, hWnd, (DLGPROC)
+                          AboutDlgProc );
+            <span class="word">break</span>;
+            <span class="word">case</span> IDM_EXIT:
+                PostQuitMessage( 0 );
+            <span class="word">break</span>;
+         }
+      <span class="word">break</span>;
+
+<span class="comment">/**************************************************************\
+*     WM_DESTROY: PostQuitMessage() is called                  *
+\**************************************************************/</span>
+
+      <span class="word">case</span> WM_DESTROY:
+         PostQuitMessage( 0 );
+         <span class="word">break</span>;
+
+<span class="comment">/**************************************************************\
+*     Let the default window proc handle all other messages    *
+\**************************************************************/</span>
+
+      <span class="word">default</span>:
+         <span class="word">return</span>( DefWindowProc( hWnd, msg, wParam, lParam ));
+   }
+
+   <span class="word">return</span> 0;
+}
+
+<span class="comment">/********************************************************************\
+* Function: LRESULT CALLBACK AboutDlgProc(HWND, UINT, WPARAM, LPARAM)*
+*                                                                    *
+*  Purpose: Processes "About" Dialog Box Messages                    *
+*                                                                    *
+* Comments: The About dialog box is displayed when the user clicks   *
+*           About from the Help menu.                                *
+*                                                                    *
+\********************************************************************/</span>
+
+LRESULT CALLBACK AboutDlgProc( HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam )
+{
+   <span class="word">switch</span>( uMsg ) {
+      <span class="word">case</span> WM_INITDIALOG:
+         <span class="word">return</span> TRUE;
+      <span class="word">case</span> WM_COMMAND:
+         <span class="word">switch</span>( wParam ) {
+            <span class="word">case</span> IDOK:
+               EndDialog( hDlg, TRUE );
+               <span class="word">return</span> TRUE;
+         }
+      <span class="word">break</span>;
+   }
+
+   <span class="word">return</span> FALSE;
+}
+</pre>

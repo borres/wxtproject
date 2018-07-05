@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>simple</title>
+</head>
+    <body>
+        
+<div class="mainblock">
+
+<h1>Simple</h1>
+<p>
+	Testing database access.
+</p>
+<p>Dette er et fragment:</p>
+<hr/>
+<div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=student&password=student"
+    sql="use fragments;
+        select content from material where fragid = 1;"
+    encoding="UTF-8"
+	parse="yes"
+    targetlocation="dbdump4.xml"?>
+</div>
+<hr/>
+<p>Dette er flere fragmenter</p>
+<hr/>
+<div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=student&password=student"
+    sql="use fragments;
+        select content from material where fragid < 4;"
+    encoding="UTF-8"
+	parse="yes"
+    targetlocation="dbdump4.xml"?>
+</div>
+<hr/>
+<p>Dette er bare overskrifter fra flere fragmenter</p>
+<hr/>
+<div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=student&password=student"
+    sql="use fragments;
+        select content from material where fragid < 4;"
+    encoding="UTF-8"
+	parse="yes"
+	xpath="//h1"
+    targetlocation="dbdump4.xml"?>
+</div>
+<hr/>
+</div>
+
+</body>
+</html>

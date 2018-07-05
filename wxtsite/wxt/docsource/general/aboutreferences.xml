@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>References</h1>
+<p>
+  You can manage references in WXT in may ways. 
+  You can of course introduce a webreference anywhere as simple html (a-tag).
+  In addition to that WXT has some mechanismes for reference handling.
+</p>
+<ol>
+<li><strong>Crossrefs</strong> References within a site (as defined in a script), from module to module is best
+ handled with an xlink, see <?_wxt xlink id="Xlink"?>. The PI takes a modules id as parameter
+ and will work as long you have unique id for modules in the script. You may thus rename the module and/or 
+ move it on your disk without breaking the link.
+</li>
+<li><strong>Demolink</strong> a demolink, see <?_wxt xlink id="Demolink"?>, is a general 
+ PI that has been introduced  to produce a XHTML-fragment that links to any webpage, with any style. 
+ Since the PI lets you control the styleclass, you may work with many categories of links, each with
+ its own styling. 
+</li>
+<li><strong>General references</strong> This is the most ambitious referencehandling in WXT.
+ It attempts to organize references of many types and display them in three basic forms: SIMPLE, IEEE and HARVARD.
+ This referencehandling involves three steps: 
+ <ul>
+	 <li>One or more files with a description of all references you intend to use, <?_wxt xlink id="References"?>.
+	 </li>
+	 <li>a PI to display one reference in the running text,  <?_wxt xlink id="PIreference"?>.
+	 </li>
+	 <li>a PI to display reference lists, <?_wxt xlink id="PIreferencelist"?>.	 
+	 </li>
+ </ul>
+</li>
+</ol>
+
+<p>
+ The schema for controlling reference files:
+</p>
+
+<div>
+<?_wxt importtxt location="refs.xsd" lang="lang-xml"?>
+</div>
+
+<h2>A sample file</h2>
+<div>
+<?_wxt importtxt location="../script/samples/myrefs.xml" lang="lang-xml"?>
+</div>
+</body>
+</html>

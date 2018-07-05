@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- toc test -->
+      <definitions>
+	  <option name="indent-output" value="yes"/>
+        <template id="P" location="../templates/p_template.xml"/> 
+        <template id="AUTO" location="../templates/auto_template.xml"/> 
+        <template id="COLLECT" location="../templates/collect_template.xml"/> 
+        <logfile location="../buildlog.txt" />        
+     </definitions>
+        
+     <module description="Demonstration of TOCs ets" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+    
+     <module description="Demonstration of a sitemap" location="map.html" 
+	        name="Sitemap" id="sitemap" template="P" books="all">
+        <xmlcontent location="content/map.xml"/>
+	</module>
+    
+	<module name="Page1" description="Page1 description" location="page1.html"  template="AUTO" books="all"/>
+
+
+	<module name="Page2" description="Page2 description" location="page2.html"   template="AUTO" books="all,part2">
+        <module name="Page21" description="Page21 description" location="page21.html"   template="AUTO" books="all,part2"/>
+        <module name="Page22" description="Page22 description" location="page22.html"   template="AUTO" books="all,part2">
+            <module name="Page221" description="Page221 description" location="page221.html"   template="AUTO" books="all,part2"/>
+         </module>
+       <module name="Page23" description="Page23 description" location="page23.html"   template="AUTO" books="all,part2"/>
+	</module>
+
+	<module name="Page3" description="Page3 description" location="page3.html"   template="AUTO" books="all,part3">
+        <module name="Page31" description="Page31 description" location="page31.html"   template="AUTO" books="all,part3"/>
+        <module name="Page32" description="Page32 description" location="page32.html"   template="AUTO" books="all,part3">
+            <module name="Page321" description="Page321 description" location="page321.html"   template="AUTO" books="all,part3"/>
+         </module>
+       <module name="Page33" description="Page33 description" location="page33.html"   template="AUTO" books="all,part3"/>
+	</module>
+	
+    <module name="Collect" description="Collect description" location="collect.html"   template="COLLECT" books="collect"/>
+ </wscript>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<div class="content">    
+<h1>WIKIPEDIA import</h1>
+<hr/>
+<div>
+	<?_wxt moduletoc tags="h1,h2,h3" cols="1"?>
+</div>
+<hr/>
+<div>
+View source: <?_wxt expand sourcelocation="Tiger.xml" 
+            location="tigersrc.txt" code="xmlcode"?>
+</div>
+<hr/>
+<p>
+	Testing import av WIKIPEDIA fragments
+</p>
+<hr/>
+<div>
+	<h1>Tiger</h1>
+	<?_wxt importwiki keeprefs="no"  
+		location="http://en.wikipedia.org/wiki/Tiger" 
+		usecopy="yes"
+		dpath="/Physical characteristics, taxonomy and evolution/Subspecies[*,-h3]"?>
+</div>
+<hr/>
+
+</div>
+</data>

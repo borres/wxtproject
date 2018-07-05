@@ -1,0 +1,1 @@
+<math ><semantics><mfrac><mn>12</mn><mrow><mi>a</mi><mo stretchy="false">+</mo><mn>4</mn></mrow></mfrac><annotation encoding="StarMath 5.0">{12} over {a+4} </annotation></semantics></math>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<div class="content">    
+    <h1>Import Text</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_importtext.xml" 
+             sourcelocation="importtext.xml" code="xmlcode"?>
+</div>
+<hr/>
+    
+    <div>Strait text: <?_wxt importtxt location="utftext.txt"?></div>
+   <hr/>
+   <div><?_wxt importtxt location="parsable.txt" parse="yes"?></div>
+   <hr/>
+   <div>BOMed: <?_wxt importtxt location="utfbomtext.txt"?></div>
+   <hr/>
+   <p>Pythonode (selected):</p>
+<div>       
+<?_wxt importtxt location="pycase.py" code="pythoncode" leftpar="#start" rightpar="#stop"?>
+</div>
+    <hr/>
+	<p>Pythonode (pre-placed): </p>
+   <div>
+
+<pre class="pythoncode">
+# convert on output
+def setPrint():
+    """ Convert Unicode -> UTF-8"""
+    (e,d,sr,sw) = codecs.lookup('utf-8')
+    unicode_to_utf8 = sw(sys.stdout)
+    sys.stdout = unicode_to_utf8
+</pre>
+   </div>
+    
+    <hr/>
+   <div>
+       XSLTcode: 
+<?_wxt importtxt location="xsltcase.xslt" code="xsltcode"?>
+   </div>    
+    <hr/>
+   <div>
+       C# kode:
+<?_wxt importtxt location="csharpcase.cs" code="csharpcode"?>
+   </div>
+    <hr/>
+   <div>
+       Javascript kode (selected):
+       <?_wxt importtxt location="jscase.js" code="javascriptcode" leftpar="//popup" rightpar="//eofpopup"?>
+   </div>
+     </div>
+</data>

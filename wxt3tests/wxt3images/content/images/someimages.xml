@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+	<image id="durer1">
+        <location>durer1.jpg</location>
+        <subtext>Albrecht Dürer, from "Underweysung der Messung</subtext>
+    </image>
+    <image id="durer2">
+        <location>durer2.jpg</location>
+        <subtext>Albrecht Dürer, from "Underweysung der Messung</subtext>
+    </image>
+	
+	<image id="bs1">
+		<location>bs1.png</location>
+		<subtext>The author in good working mode</subtext>
+	</image>
+	
+	<image id="bs2">
+		<location>bs2.png</location>
+		<subtext>The author when thinking</subtext>
+	</image>
+	
+	<image id="bs3">
+		<location>bs3.png</location>
+		<subtext>The author when compile error</subtext>
+	</image>
+	
+	<image id="bs5">
+		<location>bs5.png</location>
+		<subtext>The author is surprised</subtext>
+	</image>
+	
+	<image id="bs6">
+		<location>bs6.png</location>
+		<subtext>The author close to giving up</subtext>
+	</image>
+	
+	<image id="bs8">
+		<location>bs8.png</location>
+		<subtext>The author tired and relaxed</subtext>
+	</image>
+</images>

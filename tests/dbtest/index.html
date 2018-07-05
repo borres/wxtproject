@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Welcome</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/std.js" type="text/javascript"> </script>
+	<link href="templates/template.css" rel="STYLESHEET">
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="modulemenu"><div class="level1">Welcome</div><div class="level1"><a href="update.html" title="Update">Update</a></div><div class="level1"><a href="simple.html" title="Fragment">Fragment</a></div><div class="level1"><a href="transformation.html" title="Transformation">Transform</a></div><div class="level1"><a href="table.html" title="table">Table</a></div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>Welcome</h1><p>
+	Testing database access.
+</p><p>
+ databases in WXT may be used in three ways:
+</p><ul>
+	<li>
+	 We can access xml-fragments from a database and move these fragments to a module.
+	<pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=student&amp;password=student"
+    sql="use fragments;
+        select content from material where fragid = 1;"
+    encoding="ISO-8859-1"
+    parse="yes"
+    targetlocation="dbdump4.xml"?&gt;	
+	</pre>
+	</li>
+	
+
+	
+	
+	<li>
+	 We can access any content from a database. This content is arranged in a XML-structure
+	 which may be saved for inspection, translated with xslt and the result moved to a module. 
+	<pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&amp;password=student"
+    sql="use vin;
+         select type,description,dice,name from wines where country = 'Frankrike';"
+    encoding="ISO-8859-1"
+    transformation="vindb1(type='red',dice='1')"
+    xpath="//div[@id='root']/*"
+    targetlocation="dbdump1.xml"?&gt;
+	 </pre>
+
+	</li>
+	
+	
+	
+	
+	
+	
+	<li>
+	 Same as above but the translation is a defult translation to a table,
+	 with one row for each record fetched. 
+	</li>
+	<pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&amp;password=student"
+    sql="use vin;
+        select type,name,dice from wines where country = 'Spania';
+        select type,description,dice from wines where country = 'Frankrike';"
+    encoding="ISO-8859-1"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?&gt;	
+	</pre>
+</ul>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

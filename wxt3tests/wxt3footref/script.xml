@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- popup demos -->
+      <definitions>
+        <option name="indent-output" value="yes"/>
+        <template id="P" location="../templates/p_template.xml"/>
+        <references location="content/myrefs.xml"/>
+        <logfile location="../buildlog.txt" />
+     </definitions>
+        
+     <module description="Demonstration of footers and references" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+	<module description="More demonstration of footers and references" location="page1.html" 
+	        name="Page1" id="page1" template="P" books="all">
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+    <module description="References" location="ref.html" 
+	        name="References" id="references" template="P" books="all">
+        <xmlcontent location="content/ref.xml"/>
+	</module>
+    <module description="Index" location="ix.html" 
+	        name="Index" id="index" template="P" books="all">
+        <xmlcontent location="content/ix.xml"/>
+	</module>
+	
+ </wscript>

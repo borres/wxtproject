@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Popup</h1>
+
+	<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_popups.xml" 
+             sourcelocation="popups.xml" code="xmlcode"?>
+</div>
+<hr/>
+   <div>
+       with txt: <?_wxt popup location="fragfile.html" title="pop" text="popme"?>
+   </div>
+        
+    <div>
+       without txt: <?_wxt popup location="fragfile.html" title="pop"?>
+   </div> 
+      <hr/>
+  <div>
+   Popme: <?_wxt popup location="popped.html"
+      leftpar="//popup" rightpar="//eofpopup" 
+      sourcelocation="jscase.js"
+      code="javascriptcode"
+      text="Javascript function"?>
+   </div>
+   
+   <hr/>
+   <p>Some indexwords</p>
+   <p>
+       It is not many similarities between 
+       <?_wxt ixword word="Napoleon" category="person" comment="the one from France"?>
+        and my neighbour 
+       <?_wxt ixword word="Hansen" category="person" comment="neighbour with dog"?>.
+   </p>
+    </div>
+</data>

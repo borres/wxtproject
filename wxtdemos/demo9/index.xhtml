@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<OBJECT CLASSID="clsid:32F66A20-7614-11D4-BD11-00104BD3F987" ID="mathplayer"> 
+	<!--comment required to prevent this becoming an empty tag--></OBJECT>
+	<?IMPORT NAMESPACE="m" IMPLEMENTATION="#mathplayer" ?>
+
+	<title>Introduction</title>
+	<link href="../commons/wxtstyle.css" rel="STYLESHEET"/>
+	<link href="specialstyles.css" rel="STYLESHEET"/>
+	<script src="../commons/prototype.js" type="text/javascript"> </script>
+	<script src="../commons/wxtjs.js" type="text/javascript"> </script>
+</head>
+<body>
+	<div>
+	<div>
+	<img alt="sigma" src="images/sigma.png"/>  WXT demo: A document with many sources
+	</div>
+	<hr/>
+	<p/>
+	</div>
+	<table class="mainpage">
+	<tr>
+
+	<td valign="top" width="120px">
+		<div class="wxtmodulemenu">
+            <div class="level1">Introduction</div>
+            <div class="level1">
+              <a href="Bezier.xhtml" title="Bezier">Bezier</a>
+            </div>
+          </div>
+	</td>
+
+	<td valign="top">
+		<h1>Introduction</h1>
+		<p>
+		Describing the Bezier function.
+		</p>
+		<hr/>
+		<!--[if IE]>
+		<p>Make sure you have installed mathPlayer.
+		Test (and install) at: <a href="http://www.dessci.com/en/products/mathplayer/check.htm">www.dessci.com/en/products/mathplayer/check.htm</a></p>
+		<hr/>
+		<![endif]-->
+
+		<p>
+		This is a demonstration of a some document manipulation.
+		The basic source is the file Bezier.odt. 
+		The link is here:<a href="Bezier.odt">Bezier.odt</a>. If you have Open Office installed, there
+		is a chance your browser will reckognize it and suggest that it is opened in Open Office Document Writer.
+		</p>
+		<p>
+		I do the following experiments with this file, Bezier.odt.
+		</p>
+		<ol>
+		<li>I export the file from Open Office as xhtml, see <a href="direct/BezierAuto.xhtml">BezierAuto.xhtml</a>
+		</li>
+		<li>I save the file from Open Office as pdf, see <a href="direct/BezierAuto.pdf">BezierAuto.pdf</a>
+		</li>
+		<li>I use WXT to extract pieces from the file, add some stuff, and build a web site,
+		see link Bezier in left menu. I also let WXT collect from the website, 
+		<a href="collected.xhtml">collected.xhtml</a>
+		and I let WXT apply <a href="http://www.princexml.com/">Prince</a> to  build PDF<a href="collected.pdf">collected.pdf</a>.
+				<hr/>
+		<div>
+		The script for this site is like this:
+		</div>
+		<div>
+		<div class="wxtexpand">
+                  <div class="header">
+                    <span class="off" onclick="javascript:toggleExpandAjax('scriptsrc.txt',this)">_</span>script.xml</div>
+                  <div class="content"> </div>
+                </div>
+		</div>
+		<hr/>
+		</li>
+		</ol>
+
+		<p>I also add a few applets to the web modules, and I have written some stuff in HTML in an accessible editor,
+		like Notepad++ or Adobe Dreamweaver.
+		The applets are directly accessible from the net.
+		</p>
+		<p>
+		The quoted C-code in module <span class="wxtxlink">
+              <a href="each_of_them/5%20OpenGL.xhtml" title="5 OpenGL">5 OpenGL</a>
+            </span> would in a normal situation be fetched from the actual programproject. 
+		Here it is simply pasted into the page, 
+		</p>
+		<p>
+		Please note that this is neither a demonstration of pedagogy nor mathematics, it is just a demonstration of
+		some of the features in WXT.
+		</p>
+		<p>
+		Do also note there are some restrictions on WXT's ability to handle OO-format. Essentially it is restricted to
+		headers, paragraphs, tables, images, formulas and lists. WXT does not replicate styling.
+		</p>
+
+	</td>
+   
+	</tr>
+	</table>
+	<div>
+      <div style="margin-top:10px">
+	<span>
+          <a href="collected.pdf"> PDF-version</a>
+        </span>
+	<span style="margin-left:70px">BS with <span class="wxtstamp">
+            <a class="external" href="http://www.it.hiof.no/wxt/wxtsite/">WXT</a>
+          </span> on: <span class="wxtdate">Oct 3, 2010</span>
+        </span>
+	</div>
+    </div>
+</body>
+</html>

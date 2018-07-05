@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>TXTContent</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Script">Script</a>
+</div>
+<div class="level3">
+<a href="definitions.html" title="Definitions">Definitions</a>
+</div>
+<div class="level3">
+<a href="module.html" title="Module">Module</a>
+</div>
+<div class="level4">
+<a href="xmlcontent.html" title="XMLContent">XMLContent</a>
+</div>
+<div class="level4">
+<a href="htmlcontent.html" title="HTMLContent">HTMLContent</a>
+</div>
+<div class="level4">
+<a href="dbcontent.html" title="DBContent">DBContent</a>
+</div>
+<div class="level4 wxtselected">TXTContent</div>
+<div class="level4">
+<a href="xmlcontentlist.html" title="XMLContentList">XMLContentList</a>
+</div>
+<div class="level4">
+<a href="txtcontentlist.html" title="TextContentList">TextContentList</a>
+</div>
+<div class="level4">
+<a href="summary.html" title="Summary">Summary</a>
+</div>
+<div class="level3">
+<a href="dating.html" title="*Dating">*Dating</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Script: txtcontent-element</h1>
+<p>
+    A txtcontent element tells where the module shall search for text content.
+    The template of the module must have a processing instructions (PI) of type
+    importtxt, see: <span class="wxtxlink">
+<a href="../pi/importtxt.html" title="ImportTXT">ImportTXT</a>
+</span> 
+    to realize the actual extraction of content.
+</p>
+<p>
+  A Module may contain any number of TXTContent elements.
+ </p>
+<pre class="lang readyandpretty skiptranslate">
+&lt;txtcontent location="" transformation="" /&gt;</pre>
+<table cellpadding="10px">
+  <tr>
+    <td style="vertical-align:top">
+<strong>location</strong>(mandatory)</td>
+    <td>Any string that represents a file, either as an absolute URI or 
+    as an URI relative to the active anchor.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>backuplocation</strong>(optional)</td>
+    <td>Any string that represents a file, either as an absolute URI or 
+        as an URI relative to the active anchor. 
+        Is used if <em>location</em> for some reason
+        is not availabe. It is not a backup in the sense that the primary file is stored here. 
+        It is up to you to supply a meaningfull backup file.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>transformation</strong>(optional)</td>
+    <td>A transformation identifier 
+    (see: <span class="wxtxlink">
+<a href="transformation.html" title="Transformation">Transformation</a>
+</span>).
+    The transformation may have a parameter list: T(name='ole',address='Halden').
+    This transformation is supposed to produce text from xml
+    and are applied before we extract text from the content.
+	This transformation is overruled by a possible transformation in the actual import PI.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>id</strong>(optional)</td>
+    <td>An id that identifies this  textcontent in 
+    importtext in a template.
+    </td>
+  </tr>  
+  
+  </table>
+<p>A txtcontent element may not  contain any elements
+</p>
+<p>Examples:</p>
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;txtcontent location="<span class="str">${_scriptpath}/section3/myfile.txt"</span>/&gt;
+</pre>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

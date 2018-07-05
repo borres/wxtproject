@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+	<definitions>
+	  <option name="indent-output" value="yes"/>
+	  <option name="output-format" value="html"/>	  
+      <template id="P" location="../templates/p_template_html5.xml"/>  
+      <logfile location="../buildlog.txt" />
+	  <references location="refs.xml"/>
+	</definitions>
+        
+     <module description="Demonstration of HTML5" location="index.html" 
+	        name="Welcome" id="welcome"  template="P" books="all,use">            
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+     <module description="Canvas" location="page1.html" 
+	        name="Page1" id="page1"  template="P" books="all,use">            
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+    <module description="Editable" location="page2.html" 
+	        name="Page2" id="page2"  template="P" books="all,use">            
+        <xmlcontent location="content/page2.xml"/>
+	</module>
+</wscript>

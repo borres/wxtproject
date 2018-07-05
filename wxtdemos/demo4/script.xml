@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">    
+      
+	<definitions>
+		<option name="indent-output" value="yes"/>
+		<option name="expand-all" value="no"/>
+		<option name="use-copy" value="yes"/>
+		<template id="P" location="p_template.xml"/>
+	</definitions>
+
+	<module books="all" description="test wikipedia import" location="importtiger.html" name="Tiger" template="P">
+			<xmlcontent location="Tiger.xml"/>
+	</module>                
+	<module books="all" description="test wikipedia import" location="importCougar.html" name="Cougar" template="P">
+			<xmlcontent location="Cougar.xml"/>
+	</module>
+	<module books="all" description="test wikipedia import" location="importPitcairn.html" name="Pitcairn" template="P">
+			<xmlcontent location="Pitcairn.xml"/>
+	</module>
+	<module books="all" description="test wikipedia import" location="importNorway.html" name="Norway" template="P">
+			<xmlcontent location="Norway.xml"/>
+	</module>
+</wscript>

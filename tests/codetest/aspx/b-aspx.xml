@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>XSLT</title>
+</head>
+    <body>
+        
+        <div class="mainblock">
+		<h1>ASPX</h1>
+ <p>
+   encoding
+</p>
+<h2>textimport</h2>
+<p>Simple</p>
+<div>
+<?_wxt importtxt location="Default.aspx" code="aspxcode"?>
+</div>
+<!--
+<p>extract</p>
+<div>
+<?_wxt importtxt location="Default.aspx" leftpar="#region invalreg" rightpar="#endregion invalreg" code="aspxcode"?>
+</div>
+-->
+
+<!-- ********************************************** -->
+<h2>Dynamic </h2>
+<p>Simple</p>
+<div>
+<?_wxt expandsimple location="Default.aspx" code="aspxcode"?>
+</div>
+
+<p>AJAX</p>
+<div>
+<?_wxt expand sourcelocation="Default.aspx" location="read.txt" code="aspxcode"?>
+</div>
+
+
+<!-- ********************************************** -->
+<p>CDATA</p>
+<div>must be tight in the sense that the CDATA node must be the only one</div>
+<pre class="aspxcode"><![CDATA[<%@ Page Language="C#" AutoEventWireup="true"  
+         CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Histogram</title>
+</head>
+<body>
+<h1>Lag histogram</h1>
+    <form id="form1" runat="server">
+    <table>
+    <tr>
+    <td><div>
+    <asp:TextBox ID="TextBox1" runat="server" Rows="12" 
+                 TextMode="MultiLine" 
+                 Font-Size="Large" Width="128px"></asp:TextBox>    
+    </div>
+    <div>        
+        <asp:Button ID="Button1" runat="server" Text="Lag histogram" 
+            onclick="Button1_Click" />
+    </div>
+    </td>
+    <td>
+        <asp:Image ID="Image1" runat="server" 
+                   ImageUrl="~/bilde.gif"  
+                   AlternateText="Histogram"
+                   Width="286px" Height="271px"/>
+    </td>
+    </tr>
+    </table>
+    <div>
+        <asp:Label ID="LabelMsg" runat="server" Text=":">
+        </asp:Label>
+    </div>
+    </form>
+</body>
+</html>
+
+]]></pre>
+
+
+
+
+
+</div>
+
+    </body>
+</html>

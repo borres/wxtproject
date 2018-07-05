@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>XSLT</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/wxtjs.js" type="text/javascript"> </script>
+	<link href="templates/template.css" rel="STYLESHEET">
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="wxtmodulemenu"><div class="level1"><a href="index.html" title="Velkommen til colorcoding">Velkommen</a></div><div class="level1"><a href="Java.html" title="Java">Java</a></div><div class="level1"><a href="Javascript.html" title="Javascript">Javascript</a></div><div class="level1"><a href="Python.html" title="Python">Python</a></div><div class="level1"><a href="XML.html" title="XML">XML</a></div><div class="level1">XSLT</div><div class="level1"><a href="CSHARP.html" title="C#">C#</a></div><div class="level1"><a href="ASPX.html" title="ASPX">ASPX</a></div><div class="level1"><a href="C.html" title="C">C</a></div><div class="level1"><a href="HTML.html" title="HTML">HTML</a></div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>XSLT</h1><p>
+   encoding
+</p><h2>textimport</h2><p>Simple as xsltcode</p><div>
+<pre class="xsltcode">
+&lt;?xml version="<span class="literal">1.0</span>" encoding="<span class="literal">UTF-8</span>"?&gt;
+&lt;<span class="word">xsl:stylesheet</span> version="<span class="literal">1.0</span>" 
+                xmlns:xsl="<span class="literal">http://www.w3.org/1999/XSL/Transform</span>" &gt;
+
+&lt;<span class="word">xsl:output</span> method="<span class="literal">xml</span>" 
+            encoding="<span class="literal">UTF-8</span>" 
+            indent="<span class="literal">yes</span>" 
+            standalone="<span class="literal">yes</span>" 
+            doctype-public="<span class="literal">-//W3C//DTD XHTML 1.0 Strict//EN</span>" /&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">/</span>"&gt;
+    &lt;div class="<span class="literal">dbtables</span>"&gt;
+        &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">/root/query</span>"/&gt;
+    &lt;/div&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">//query</span>"&gt;
+&lt;div class="<span class="literal">dbresult</span>"&gt;
+    &lt;table&gt;
+    &lt;<span class="word">xsl:call-template</span> name="<span class="literal">tableheader</span>"&gt;
+        &lt;<span class="word">xsl:with-param</span> name="<span class="literal">nodelist</span>" select="<span class="literal">record[position()=1]/child::*</span>"/&gt;
+    &lt;<span class="word">/xsl:call-template</span>&gt;
+    &lt;tbody&gt;
+        &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">record</span>"/&gt;
+    &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> name="<span class="literal">tableheader</span>"&gt;
+    &lt;<span class="word">xsl:param</span> name="<span class="literal">nodelist</span>"/&gt;  
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;<span class="word">xsl:for-each</span> select="<span class="literal">$nodelist</span>"&gt;
+            &lt;th&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">local-name()</span>"/&gt;&lt;/th&gt;
+        &lt;<span class="word">/xsl:for-each</span>&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">//record</span>"&gt;
+    &lt;tr&gt;
+        &lt;<span class="word">xsl:for-each</span> select="<span class="literal">child::*</span>"&gt;
+            &lt;td&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">.</span>"/&gt;&lt;/td&gt;
+        &lt;<span class="word">/xsl:for-each</span>&gt;
+    &lt;/tr&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">/xsl:stylesheet</span>&gt;
+</pre>
+</div><p>Simple as xmlcode</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">xsl:stylesheet</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>" <span class="attname">xmlns:xsl</span>="<span class="attvalue">http://www.w3.org/1999/XSL/Transform</span>"&gt;
+&lt;<span class="tagname">xsl:output</span> <span class="attname">method</span>="<span class="attvalue">xml</span>" <span class="attname">encoding</span>="<span class="attvalue">UTF-8</span>" <span class="attname">indent</span>="<span class="attvalue">yes</span>" <span class="attname">standalone</span>="<span class="attvalue">yes</span>"
+          <span class="attname">doctype-public</span>="<span class="attvalue">-//W3C//DTD XHTML 1.0 Strict//EN</span>"/&gt;
+&lt;<span class="tagname">xsl:template</span> <span class="attname">match</span>="<span class="attvalue">/</span>"&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">dbtables</span>"&gt;
+        &lt;<span class="tagname">xsl:apply-templates</span> <span class="attname">select</span>="<span class="attvalue">/root/query</span>"/&gt;
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">xsl:template</span>&gt;
+&lt;<span class="tagname">xsl:template</span> <span class="attname">match</span>="<span class="attvalue">//query</span>"&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">dbresult</span>"&gt;
+    &lt;<span class="tagname">table</span>&gt;
+    &lt;<span class="tagname">xsl:call-template</span> <span class="attname">name</span>="<span class="attvalue">tableheader</span>"&gt;
+        &lt;<span class="tagname">xsl:with-param</span> <span class="attname">name</span>="<span class="attvalue">nodelist</span>" <span class="attname">select</span>="<span class="attvalue">record[position()=1]/child::*</span>"/&gt;
+    &lt;/<span class="tagname">xsl:call-template</span>&gt;
+    &lt;<span class="tagname">tbody</span>&gt;
+        &lt;<span class="tagname">xsl:apply-templates</span> <span class="attname">select</span>="<span class="attvalue">record</span>"/&gt;
+    &lt;/<span class="tagname">tbody</span>&gt;
+    &lt;/<span class="tagname">table</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">xsl:template</span>&gt;
+&lt;<span class="tagname">xsl:template</span> <span class="attname">name</span>="<span class="attvalue">tableheader</span>"&gt;
+    &lt;<span class="tagname">xsl:param</span> <span class="attname">name</span>="<span class="attvalue">nodelist</span>"/&gt;  
+    &lt;<span class="tagname">thead</span>&gt;
+    &lt;<span class="tagname">tr</span>&gt;
+        &lt;<span class="tagname">xsl:for-each</span> <span class="attname">select</span>="<span class="attvalue">$nodelist</span>"&gt;
+            &lt;<span class="tagname">th</span>&gt;
+&lt;<span class="tagname">xsl:value-of</span> <span class="attname">select</span>="<span class="attvalue">local-name()</span>"/&gt;
+&lt;/<span class="tagname">th</span>&gt;
+        &lt;/<span class="tagname">xsl:for-each</span>&gt;
+    &lt;/<span class="tagname">tr</span>&gt;
+    &lt;/<span class="tagname">thead</span>&gt;
+&lt;/<span class="tagname">xsl:template</span>&gt;
+&lt;<span class="tagname">xsl:template</span> <span class="attname">match</span>="<span class="attvalue">//record</span>"&gt;
+    &lt;<span class="tagname">tr</span>&gt;
+        &lt;<span class="tagname">xsl:for-each</span> <span class="attname">select</span>="<span class="attvalue">child::*</span>"&gt;
+            &lt;<span class="tagname">td</span>&gt;
+&lt;<span class="tagname">xsl:value-of</span> <span class="attname">select</span>="<span class="attvalue">.</span>"/&gt;
+&lt;/<span class="tagname">td</span>&gt;
+        &lt;/<span class="tagname">xsl:for-each</span>&gt;
+    &lt;/<span class="tagname">tr</span>&gt;
+&lt;/<span class="tagname">xsl:template</span>&gt;
+&lt;/<span class="tagname">xsl:stylesheet</span>&gt;</pre>
+</div><p>extract</p><div>
+<pre class="xsltcode">
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">text:bookmark</span>"&gt;
+  &lt;a&gt;
+  &lt;<span class="word">xsl:attribute</span> name="<span class="literal">class</span>"&gt;odt-name&lt;<span class="word">/xsl:attribute</span>&gt;
+    &lt;<span class="word">xsl:attribute</span> name="<span class="literal">name</span>"&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">@text:name</span>"/&gt;&lt;<span class="word">/xsl:attribute</span>&gt;
+  &lt;<span class="word">xsl:attribute</span> name="<span class="literal">id</span>"&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">@text:name</span>"/&gt;&lt;<span class="word">/xsl:attribute</span>&gt;
+  &lt;/a&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+</pre>
+</div><h2>Dynamic </h2><p>Simple</p><div>
+<div class="wxtexpandsimple"><div class="header"><span class="off" onclick="javascript:toggleExpandSimple(this)">_</span>xslt/totable.xsl</div><div class="content" style="display:none"><pre class="xsltcode">
+&lt;?xml version="<span class="literal">1.0</span>" encoding="<span class="literal">UTF-8</span>"?&gt;
+&lt;<span class="word">xsl:stylesheet</span> version="<span class="literal">1.0</span>" 
+                xmlns:xsl="<span class="literal">http://www.w3.org/1999/XSL/Transform</span>" &gt;
+
+&lt;<span class="word">xsl:output</span> method="<span class="literal">xml</span>" 
+            encoding="<span class="literal">UTF-8</span>" 
+            indent="<span class="literal">yes</span>" 
+            standalone="<span class="literal">yes</span>" 
+            doctype-public="<span class="literal">-//W3C//DTD XHTML 1.0 Strict//EN</span>" /&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">/</span>"&gt;
+    &lt;div class="<span class="literal">dbtables</span>"&gt;
+        &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">/root/query</span>"/&gt;
+    &lt;/div&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">//query</span>"&gt;
+&lt;div class="<span class="literal">dbresult</span>"&gt;
+    &lt;table&gt;
+    &lt;<span class="word">xsl:call-template</span> name="<span class="literal">tableheader</span>"&gt;
+        &lt;<span class="word">xsl:with-param</span> name="<span class="literal">nodelist</span>" select="<span class="literal">record[position()=1]/child::*</span>"/&gt;
+    &lt;<span class="word">/xsl:call-template</span>&gt;
+    &lt;tbody&gt;
+        &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">record</span>"/&gt;
+    &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> name="<span class="literal">tableheader</span>"&gt;
+    &lt;<span class="word">xsl:param</span> name="<span class="literal">nodelist</span>"/&gt;  
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;<span class="word">xsl:for-each</span> select="<span class="literal">$nodelist</span>"&gt;
+            &lt;th&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">local-name()</span>"/&gt;&lt;/th&gt;
+        &lt;<span class="word">/xsl:for-each</span>&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">//record</span>"&gt;
+    &lt;tr&gt;
+        &lt;<span class="word">xsl:for-each</span> select="<span class="literal">child::*</span>"&gt;
+            &lt;td&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">.</span>"/&gt;&lt;/td&gt;
+        &lt;<span class="word">/xsl:for-each</span>&gt;
+    &lt;/tr&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">/xsl:stylesheet</span>&gt;
+</pre></div></div>
+</div><p>AJAX</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('xslt/read.txt',this)">_</span>xslt/totable.xsl</div><div class="content"> </div></div>
+</div><p>CDATA</p><div>must be tight in the sense that the CDATA node must be the only one</div><pre class="xsltcode">&lt;?xml version="<span class="literal">1.0</span>" encoding="<span class="literal">UTF-8</span>"?&gt;
+&lt;<span class="word">xsl:stylesheet</span> version="<span class="literal">1.0</span>" 
+                xmlns:xsl="<span class="literal">http://www.w3.org/1999/XSL/Transform</span>" &gt;
+&lt;<span class="word">xsl:output</span> method="<span class="literal">xml</span>" 
+            encoding="<span class="literal">UTF-8</span>" 
+            indent="<span class="literal">yes</span>" 
+            standalone="<span class="literal">yes</span>" 
+            doctype-public="<span class="literal">-//W3C//DTD XHTML 1.0 Strict//EN</span>" /&gt;
+&lt;<span class="word">xsl:template</span> match="<span class="literal">/</span>"&gt;
+    &lt;div class="<span class="literal">dbtables</span>"&gt;
+        &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">/root/query</span>"/&gt;
+    &lt;/div&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+&lt;<span class="word">xsl:template</span> match="<span class="literal">//query</span>"&gt;
+&lt;div class="<span class="literal">dbresult</span>"&gt;
+    &lt;table&gt;
+    &lt;<span class="word">xsl:call-template</span> name="<span class="literal">tableheader</span>"&gt;
+        &lt;<span class="word">xsl:with-param</span> name="<span class="literal">nodelist</span>" select="<span class="literal">record[position()=1]/child::*</span>"/&gt;
+    &lt;<span class="word">/xsl:call-template</span>&gt;
+    &lt;tbody&gt;
+        &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">record</span>"/&gt;
+    &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+&lt;<span class="word">xsl:template</span> name="<span class="literal">tableheader</span>"&gt;
+    &lt;<span class="word">xsl:param</span> name="<span class="literal">nodelist</span>"/&gt;  
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;<span class="word">xsl:for-each</span> select="<span class="literal">$nodelist</span>"&gt;
+            &lt;th&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">local-name()</span>"/&gt;&lt;/th&gt;
+        &lt;<span class="word">/xsl:for-each</span>&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+&lt;<span class="word">xsl:template</span> match="<span class="literal">//record</span>"&gt;
+    &lt;tr&gt;
+        &lt;<span class="word">xsl:for-each</span> select="<span class="literal">child::*</span>"&gt;
+            &lt;td&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">.</span>"/&gt;&lt;/td&gt;
+        &lt;<span class="word">/xsl:for-each</span>&gt;
+    &lt;/tr&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+&lt;<span class="word">/xsl:stylesheet</span>&gt;
+</pre>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

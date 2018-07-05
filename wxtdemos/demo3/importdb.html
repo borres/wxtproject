@@ -1,0 +1,2405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	
+    <title>Database</title>
+	
+    <link href="../commons/wxtstyle.css" rel="STYLESHEET">
+	
+    <script src="../commons/prototype.js" type="text/javascript"> </script>
+	<script src="../commons/wxtjs.js" type="text/javascript"> </script>
+	
+    <style>
+	.prev img,.home img,.next img{border:none}
+	</style>
+
+  </head>
+
+
+  <body>   
+	
+    <table>
+	
+      <tr>
+	
+        <td style="width:160px" valign="top">
+		
+          <div class="wxtmodulemenu">
+            <div class="level1">
+              <a href="index.html" onclick="javascript:document.getElementById('Database1').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database1').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database1').style.visibility='visible'">Welcome</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database1" style="visibility:hidden;">
+                  <div class="header">Welcome</div>testing wxt PIs</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importwiki.html" onclick="javascript:document.getElementById('Database2').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database2').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database2').style.visibility='visible'">WIKI</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database2" style="visibility:hidden;">
+                  <div class="header">WIKI</div>test wiki import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importwikipedia.html" onclick="javascript:document.getElementById('Database3').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database3').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database3').style.visibility='visible'">WIKIPEDIA</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database3" style="visibility:hidden;">
+                  <div class="header">WIKIPEDIA</div>test wikipedia import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="transformed.html" onclick="javascript:document.getElementById('Database4').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database4').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database4').style.visibility='visible'">Transformed Out</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database4" style="visibility:hidden;">
+                  <div class="header">Transformed Out</div>test transformed output</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="transformedin.html" onclick="javascript:document.getElementById('Database5').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database5').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database5').style.visibility='visible'">Transformed In</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database5" style="visibility:hidden;">
+                  <div class="header">Transformed In</div>test transformed input</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="dts.html" onclick="javascript:document.getElementById('Database6').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database6').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database6').style.visibility='visible'">DTS</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database6" style="visibility:hidden;">
+                  <div class="header">DTS</div>Date  Time Stamp</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="fragments.html" onclick="javascript:document.getElementById('Database7').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database7').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database7').style.visibility='visible'">Fragments</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database7" style="visibility:hidden;">
+                  <div class="header">Fragments</div>
+                  <img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif" style="float:right">
+             <div style="font-weight:bold">bs was here</div>
+                </div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="popfragments.html" onclick="javascript:document.getElementById('Database8').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database8').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database8').style.visibility='visible'">PopFragments</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database8" style="visibility:hidden;">
+                  <div class="header">PopFragments</div>testing popfragments</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="fragmentxlink.html" onclick="javascript:document.getElementById('Database9').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database9').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database9').style.visibility='visible'">Fragmentlinks</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database9" style="visibility:hidden;">
+                  <div class="header">Fragmentlinks</div>testing popfragments</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="footnotes.html" onclick="javascript:document.getElementById('Database10').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database10').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database10').style.visibility='visible'">Foots</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database10" style="visibility:hidden;">
+                  <div class="header">Foots</div>
+                  <img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif">
+                        <span style="font-weight:bold">bs was here leaving footprints</span>
+                </div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="collectsummaries.html" onclick="javascript:document.getElementById('Database11').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database11').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database11').style.visibility='visible'">Summaries</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database11" style="visibility:hidden;">
+                  <div class="header">Summaries</div>testing collection of summaries</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="demolinks.html" onclick="javascript:document.getElementById('Database12').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database12').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database12').style.visibility='visible'">Demolinks</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database12" style="visibility:hidden;">
+                  <div class="header">Demolinks</div>testing demolinks</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="collecting.html" onclick="javascript:document.getElementById('Database13').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database13').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database13').style.visibility='visible'">Collecting</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database13" style="visibility:hidden;">
+                  <div class="header">Collecting</div>testing collections</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="moduletoc.html" onclick="javascript:document.getElementById('Database14').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database14').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database14').style.visibility='visible'">ModuleTOC</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database14" style="visibility:hidden;">
+                  <div class="header">ModuleTOC</div>testing local TOC</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="modulemap.html" onclick="javascript:document.getElementById('Database15').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database15').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database15').style.visibility='visible'">ModuleMap</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database15" style="visibility:hidden;">
+                  <div class="header">ModuleMap</div>testing Module map</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="path.html" onclick="javascript:document.getElementById('Database16').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database16').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database16').style.visibility='visible'">Path</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database16" style="visibility:hidden;">
+                  <div class="header">Path</div>testing path</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="ix.html" onclick="javascript:document.getElementById('Database17').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database17').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database17').style.visibility='visible'">Index</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database17" style="visibility:hidden;">
+                  <div class="header">Index</div>testing ixword and ixtable</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="xlink.html" onclick="javascript:document.getElementById('Database18').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database18').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database18').style.visibility='visible'">xlink</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database18" style="visibility:hidden;">
+                  <div class="header">xlink</div>testing xlink and xlinklist</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="encoding.html" onclick="javascript:document.getElementById('Database19').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database19').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database19').style.visibility='visible'">Encoding</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database19" style="visibility:hidden;">
+                  <div class="header">Encoding</div>testing encoding</div>
+              </div>
+            </div>
+            <div class="level2">Database</div>
+            <div class="level2">
+              <a href="importxml.html" onclick="javascript:document.getElementById('Database20').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database20').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database20').style.visibility='visible'">ImportXML</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database20" style="visibility:hidden;">
+                  <div class="header">ImportXML</div>testing xml import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importtext.html" onclick="javascript:document.getElementById('Database21').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database21').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database21').style.visibility='visible'">ImportTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database21" style="visibility:hidden;">
+                  <div class="header">ImportTXT</div>testing text import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importscripttext.html" onclick="javascript:document.getElementById('Database22').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database22').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database22').style.visibility='visible'">ImportScriptTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database22" style="visibility:hidden;">
+                  <div class="header">ImportScriptTXT</div>testing text import from script</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importscriptdb.html" onclick="javascript:document.getElementById('Database23').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database23').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database23').style.visibility='visible'">ImportScriptDB</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database23" style="visibility:hidden;">
+                  <div class="header">ImportScriptDB</div>testing text import from script</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importmultitext.html" onclick="javascript:document.getElementById('Database24').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database24').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database24').style.visibility='visible'">ImportMultiTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database24" style="visibility:hidden;">
+                  <div class="header">ImportMultiTXT</div>testing text import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="popups.html" onclick="javascript:document.getElementById('Database25').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database25').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database25').style.visibility='visible'">Pops</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database25" style="visibility:hidden;">
+                  <div class="header">Pops</div>testing popups</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="expand.html" onclick="javascript:document.getElementById('Database26').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database26').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database26').style.visibility='visible'">Expand</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database26" style="visibility:hidden;">
+                  <div class="header">Expand</div>testing ajax expand</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="backup.html" onclick="javascript:document.getElementById('Database27').style.visibility='hidden'" onmouseout="javascript:document.getElementById('Database27').style.visibility='hidden'" onmouseover="javascript:document.getElementById('Database27').style.visibility='visible'">Backup</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="Database27" style="visibility:hidden;">
+                  <div class="header">Backup</div>testing backup</div>
+              </div>
+            </div>
+          </div>
+		
+          <div style="margin-left:20px; margin-top:20px">
+		
+            <span class="prev"><span class="wxtxlink"><a href="encoding.html" title="testing encoding"><img alt="prev" src="prev.gif"></a></span></span>
+		<span class="home"><span class="wxtxlink"><a href="index.html" title="testing wxt PIs"><img alt="home" src="home.gif"></a></span></span>
+		<span class="next"><span class="wxtxlink"><a href="importxml.html" title="testing xml import"><img alt="next" src="next.gif"></a></span></span>
+		
+          </div>
+	
+        </td>
+
+	<td valign="top">
+	
+          <div class="content">       
+    
+            <h1>Import from database</h1>
+
+            <hr>
+
+            <div>Source:</div>
+
+            <div>
+              <div class="wxtexpand">
+                <div class="header">
+                  <span class="off" onclick="javascript:toggleExpandAjax('exp_importdb.xml',this)">_</span>importdb.xml</div>
+                <div class="content"> 
+                </div>
+              </div>
+
+            </div>
+
+            <hr>
+    
+            <div>
+
+              <div>Navn p&aring; viner fra Spania </div>
+
+              <div class="dbresult" xmlns="">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>type</th><th>name</th><th>dice</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>red</td><td>Casa de la Ermita Monastrell 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo de Aguar&oacute;n Garnacha 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Preferido Tempranillo 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pirineos Merlot-Cabernet 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Ballestar Reserva 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Alex Merlot 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Campillo Gran Reserva 1994</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cuv&eacute;e Christer Berens Jumilla 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Muga Reserva 1999</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torre Oria Gran Reserva 1996</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Faustino V Reserva 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Sabika Tempranillo Cabernet Sauvignon 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;as de Miedes 2002</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Marqu&eacute;s de Murrieta Ygay Capellan&iacute;a Gran Reserva 1997</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Pazo de Barrantes Albari&ntilde;o 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo Ygay Gran Reserva Especial 1994</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo Ygay Gran Reserva Especial 1978</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Murrieta Ygay Reserva 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Murrieta Ygay Mazuelo 2000, magnum 150 cl</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo Ygay Gran Reserva 1991, jeroboam 300 cl</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo Ygay Gran Reserva Especial 1970</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&egrave;s de Murrieta Gran Reserva 1996</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Vi&ntilde;as del Vero Gew&uuml;rztraminer Colecci&oacute;n 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Vegaliente Albari&ntilde;o 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Santiago Ruiz 2002</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Izadi Crianza 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Finca Giusana Reserva 1996</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Birkedal Hartmann Tinto de Navarra</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Freixenet Cordon Negro, Brut</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Codorn&iacute;u Clasico Brut</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Freixenet Cordon Negro Seco</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Codorn&iacute;u Clasico Seco</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Freixenet XXI (21) Seco</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Raimat Chardonnay Brut</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Segura Viudas Brut Vintage 1999</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Trepat 1998</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Freixenet XXI (21)Brut</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Freixenet Reserva Real Brut</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Segura Viudas Reserva Heredad Brut</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Protocolo</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Gran Feudo Crianza 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Bracamonte Tempranillo Reserva 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Vi&ntilde;a Esmeralda 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montesierra Merlot Cabernet 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Gran Feudo Reserva 1998</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Drag&oacute;n Tempranillo 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Monistrol Cabernet-Tempranillo Crianza 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Monasterio de Santa Ana Monastrell 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vega Esteban Crianza 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Berberana Alarde Reserva 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Amigo</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Bach Vino de Mesa</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Chiv&eacute; Tempranillo Crianza 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Santana Tempranillo 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Extrisima Bach 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Gri&ntilde;on Tempranillo 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Piedemonte Tempranillo 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Berberana dAvalos Tempranillo 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Raimat Abadia 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Durius Tempranillo 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Albali Reserva 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Coronas 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Monistrol Reserva Privada 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Alberdi Reserva 1999</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Amigo Comercial</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Inurrieta 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Hermanos Lurton 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Vi&ntilde;a Esmeralda 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de C&aacute;ceres Gran Reserva 1994</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Faustino I Gran Reserva 1995</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Santana Tempranillo 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>La Riojana</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Lisandro Tempranillo-Cabernet 2000</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Vitoria Crianza 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Marqu&eacute;s de C&aacute;ceres  2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montecillo Crianza 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Faustino V Reserva 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montesierra Merlot Cabernet 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Alberdi Reserva 1999</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Casa de la Ermita 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Faustino V Reserva 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Murrieta Ygay Reserva 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Chiv&eacute; Tempranillo Crianza 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Coto de Imaz Reserva 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Casa Maria Blanco 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Amigo Blanco</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Enate Cabernet Sauvignon Rosado 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Codorn&iacute;u Clasico Seco</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Condado de Haza Crianza 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de la Concordia 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Solaz 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Izadi Crianza 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tinto Pesquera Crianza 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Solaz 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Raimat Abadia 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torres Coronas Wine in Glass 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Condado de Haza Reserva 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Se&ntilde;orita Blanca</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>San Valentin 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Gran Feudo Reserva 1998</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Muga Reserva 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Faustino I Gran Reserva 1995</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Monistrol Cabernet-Tempranillo Crianza 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Palacio de la Vega Cabernet Sauvignon Tempranillo Crianza 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Agramont Reserva 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Faustino V Reserva 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de C&aacute;ceres Crianza 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Izadi Crianza 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Murrieta Ygay Reserva 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Condado de Haza Crianza 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Palacio de la Vega Cabernet Sauvignon Tempranillo 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mas la Plana Cabernet Sauvignon 1998</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valcorso Monastrell 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Berberana Drag&oacute;n Tempranillo 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montesierra Merlot Cabernet 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Marqu&eacute;s de Monistrol Reserva Brut</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cepa Gavil&aacute;n 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Dominio de la Peseta Roble 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>El Coto Crianza 1998/2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Campo Viejo Reserva 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Riscal Reserva 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Vitoria Gran Reserva 1995</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Campo Viejo Crianza 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Lagunilla Reserva 1999</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Don Jacobo Gran Reserva 1994</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Paternina Gran Reserva 1994</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Marqu&eacute;s de Monistrol Reserva Brut</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Gran Vi&ntilde;a Sol Chardonnay 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Copos Real Reserva 1998</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Estola Reserva 2000</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torre Oria Gran Reserva 1996</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torrelongares Garnacha 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Siglo "1881" 2002</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Marques de Riscal  Rueda Superior 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Gran Coronas Reserva 2000</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Las Campanas Crianza 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Se&ntilde;orio de los Llanos Reserva 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Las Campanas Reserva 1997</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo de Almansa Colecci&oacute;n 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo de Almansa Reserva 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Se&ntilde;orio de los Llanos Gran Reserva 1998</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Se&ntilde;or&iacute;o de los Llanos Crianza 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Albali Reserva 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Albali Crianza 2000</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Soler-Jov&eacute; Brut Reserva</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pittacum Menc&iacute;a 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Museum Real Reserva 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Raimat Abadia 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Chiv&eacute; Tempranillo Crianza</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Casa de la Ermita Organic 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Amigo</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Geni Tempranillo</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Marqu&eacute;s de C&aacute;ceres  Blanco 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castell de Falset 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Imus 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigua 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Loxarel Reserva 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Ops de Loxarel 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Rondel Extreme Brut</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Palacio de la Vega Tempranillo Reserva 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Alto Cuevas Tempranillo 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de C&aacute;ceres Reserva 1996</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torre Alb&eacute;niz Reserva 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castell Mont Boi Gran Reserva 2000</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Scala Dei Negre 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rinc&oacute;n de los Escribanos Tempranillo</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Juan de Juanes 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Marqu&eacute;s de Monistrol Ros&eacute; 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Agramont Cabernet Sauvignon  Ros&eacute; 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Solferino 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Casa Maria Sauvignon Blanc 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Vall Major 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Trampal Pardina 2004</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Galiciano Godello Dia 2003</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Las Campanas Reserva 1997</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Muga Reserva 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Campo Viejo Gran Reserva 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Banda Azul Crianza 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tarsus 1999</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Ysios Reserva 2000</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>El Copero 2003/2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Masia Perelada 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Marqu&eacute;s de Murrieta Ygay Capellan&iacute;a Gran Reserva 1998</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Vi&ntilde;a Izadi Blanco 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Muga Reserva 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Murrieta Ygay Reserva 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>C&oacute;dax Albari&ntilde;o 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rejadorada Crianza 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vega Sauco el Beybi 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Lorca Monastrell 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Ceperos 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Taurus Roble 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Don Jacobo Crianza 2001</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Cientocinco (105) 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torres Celeste 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rioja Vega Reserva 1999</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Vi&ntilde;a Esmeralda 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Caracol Serrano Tinto Joven 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Enrique Mendoza Pinot Noir Crianza 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Muga Reserva 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vi&ntilde;a Ardanza Reserva 1998</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Monte Negro Tinto Joven 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rejadorada Crianza 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de C&aacute;ceres Gran Reserva 1995</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Finca Villacreces Reserva 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montecillo  Gran Reserva Especial 1981</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valcorso Monastrell 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tinto Pesquera Crianza 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Merry Christmas Tempranillo</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Lagunilla Gran Reserva 1998</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torre Oria</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Marqu&eacute;s de Monistrol Reserva Brut</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Freixenet Reserva Real Brut</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Freixenet Brut Nature 2002</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Codorn&iacute;u Brut Cuv&eacute;e Raventos</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Azumbre Verdejo 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Carqueixal Albari&ntilde;o 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Marqu&egrave;s de Sangor Xarel-Lo Parellada 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Itsas Mendi Hondarrabi Zuri 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Casal Novo Godello 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pujanza 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Divus Monastrell 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Peique Selecci&oacute;n de Vi&ntilde;edos Viejos 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pie Franco 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo de Maluenda Vi&ntilde;as Viejas 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Azabache Mazuelo Crianza 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Coto de Hayas 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castillo de Jumilla Monastrell 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cuv&eacute;e Christer Berens Monastrell 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Azabache Garnacha 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tamaral Roble 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Clos Corriol 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Lagunilla Gran Reserva 1999</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Baltasar Graci&aacute;n Garnacha 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mu&ntilde;arrate 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Chiv&eacute; Tempranillo Reserva 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Abanico Cabernet Sauvignon Syrah Merlot 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Carmelo Rodero Tinto Joven 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Callejo 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Perlat Syrah 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Amad&iacute;s 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Gos Monastrell 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cruz de Piedra Garnacha 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Solar Viejo Crianza 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Henrik Ibsen Tempranillo Merlot 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Oferente Monastrell 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Carmelo Rodero Tinto Roble 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rotllan Torra Reserva 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Aventino Tempranillo 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Summa Varietalis 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Em&eacute;ritus 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Carmelo Rodero Crianza 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valdepusa Cabernet Sauvignon 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valdepusa Syrah 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>El Prado Tempranillo Cabernet</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tabanico</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valdepusa Petit Verdot 2002</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de dos Aguas</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Casa de la Ermita Monastrell Crianza 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Casa de la Ermita Organic 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Arienzo Reserva 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>El Miracle Tempranillo Shiraz 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Medulio Mencia 2004</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Raimat Abadia 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Amigo</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Marqu&eacute;s de Chiv&eacute; Tempranillo Crianza</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Palacio de la Vega Cabernet Sauvignon Tempranillo 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Berberana Drag&oacute;n Tempranillo 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Casa de la Ermita Organic 2004</td><td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+    
+            </div>
+
+    
+            <hr>
+
+	
+            <div>Navn p&aring; viner fra Italia </div>
+
+            <div>
+
+              <div class="dbresult">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>type</th><th>name</th><th>dice</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>white</td><td>Epoca Santagostino Grillo-Chardonnay 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rutilus Sangiovese 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Selciaia Rosso di Montepulciano 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valdib&agrave; Dolcetto di Dogliani 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villa Matilde Falerno del Massico 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montestefano Barbaresco Riserva 1997</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montestefano Barbaresco Riserva 1997</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Abbona Barolo Pressenda 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Feudi Bordonaro Nero dAvola Sangiovese 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Fabiano Bardolino 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Formul&aelig; Chianti 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Borgo Reale Salice Salentino 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Giordano Primitivo di Manduria 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mottura Primitivo di Manduria 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Muntriv&eacute; Barbera dAsti 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tesauro Recioto della Valpolicella 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Cuv&eacute;e Christer Berens T DA Bianco da Tavola</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof  Nicolaysen Sangiovese</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cuv&eacute;e Christer Berens M  DA</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof Nicolaysen Montepulciano 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Broens Beste</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof Nicolaysen Montepulciano 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Le Crosare Ripasso 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Zenato Valpolicella Classico Superiore Ripassa 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbaresco 1997</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Terlo Ravera Barolo 1998</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valpolicella Classico 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso dAbruzzo</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cir&ograve; Rosso Classico 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba San Michele 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Pedale 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vajra Barbera dAlba 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Casavecchia 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cigliuti Serraboella Barbera dAlba 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Passo Rosso del Veneto 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pelissero Long Now 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Acinatico Amarone della Valpolicella Classico 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba Piani 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Acinatico Valpolicella Classico Superiore Ripasso 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Masciarelli Montepulciano dAbruzzo 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Ferrari Brut</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Gancia Asti</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Casafrassi Chianti Classico 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Nicolon Barbera dAlba 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Sabazio Rosso di Montepulciano 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Refosco dal Peduncolo Rosso 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso di Montalcino 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Soave Classico San Michele 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Cuv&eacute;e Christer Berens Trebbiano dAbruzzo 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Boheme</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof Nicolaysen Sangiovese 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pasqua Primitivo Salento 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villa Tonino Nero dAvola 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mezzomondo Negroamaro 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Fortino</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Terriero Sangiovese 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Santagostino Nero dAvola Syrah 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cuv&eacute;e Christer Berens San Marzano Primitivo 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cuv&eacute;e Christer Berens Montepulciano dAbruzzo 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Chiaramonte Nero dAvola 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Feudo Monaci Primitivo de Puglia 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Col-di-Sasso Sangiovese &amp; Cabernet Sauvignon 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mezzomondo Negroamaro</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Boheme</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso dAbruzzo</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Oeno Sangiovese di Toscana 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof Nicolaysen Valpolicella Classico Ripasso 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cappella Rosso di Puglia IGT</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Viola Nero dAvola Cabernet Sauvignon</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof Nicolaysen Sangiovese</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montalto Nero dAvola-Sangiovese</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Forchir Sauvignon Blanc Soresere 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigneti di Torbe Ripasso Valpolicella Classico Superiore 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mannara Primitivo-Merlot 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Il Satiro Rosso 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Forchir Cabernet Franc Braidate 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba San Michele 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Martini Asti</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Falchetto Brachetto dAcqui 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Fontanafredda Asti</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Il Falchetto Moscato dAsti Tenuta del Fant 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Moscato dAsti 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Vajra Moscato dAsti 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Il Falchetto Langhe Arneis 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tacchino Barbera del Monferrato 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Masciarelli Montepulciano dAbruzzo 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Ser Gioveto 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Libera Barbera dAsti 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Il Mimo 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Masi Campofiorin Ripasso 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Soave Classico San Michele 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Saracco Moscato dAsti 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Zenato Valpolicella Classico Superiore 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Rosaura 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Masi Levar&igrave;e Soave Classico Superiore 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villa Antinori Chianti Classico Riserva 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villa Borghetti Valpolicella Classico 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Masi Bonacosta Valpolicella Classico 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cir&ograve; Classico 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barco Reale di Carmignano 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Zenato Valpolicella Classico Superiore Ripassa 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbaresco 1999</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Fenocchio Barolo Bussia Riserva 1997</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Fenocchio Barbera dAlba Superiore 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mara Valpolicella Classico Superiore 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Selvapiana Chianti Rufina 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cuv&eacute;e Christer Berens M dA 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Monte Alto Soave Classico Superiore 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torrevento La Rocca 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Santi Medici Salento Rosato 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Santo Stefano Moscato dAsti 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Asti Dolce Millesimato 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Saracco Moscato dAsti 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Bianco di Custoza 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Col Solera Barbera 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vajra Langhe Rosso 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso dAbruzzo</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Ottieri Beneventano Rosso 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cavalchina Bardolino 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Zaccagnini Montepulciano dAbruzzo 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Angelo Barbera</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Trionfo 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Col-di-Sasso Sangiovese &amp; Cabernet Sauvignon 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof Nicolaysen Valpolicella Classico Ripasso 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Santi Medici Salento Rosso 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Due Palme Squinzano Rosso 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Boheme</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mezzomondo Negroamaro</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigneti di Torbe Ripasso Valpolicella Classico Superiore 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Equilibrio 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Albana di Romagna 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Broens Beste Cataratto</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Veneroso Tenuta di Ghizzano 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Da Luca Primitivo Merlot 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Terreno Chianti Classico 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba Superiore 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Da Luca Primitivo Merlot 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Lagrein 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Planeta Chardonnay 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Sanct Valentin Sauvignon Blanc 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Zaccagnini Montepulciano dAbruzzo 2002 magnum</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Trionfo 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vajra Langhe Rosso 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cigliuti Briccoserra 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba San Michele 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Dolcetto dAlba Colomb&eacute; 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vajra Dolcetto dAlba 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Selvapiana Chianti Rufina 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Ripassa Valpolicella Superiore 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba Piani 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Fenocchio Nebbiolo Langhe 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Langhe San Guglielmo 1998</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cir&ograve; Classico 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Pedale 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbaresco 1999</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torriglione Barbera dAlba 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valpantena Corvina 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Piastraia Bolgheri 2000</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbaresco Paj&eacute; Riserva 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pelissero Barbaresco Vanotu 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Einaudi Barolo Nei Cannubi 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Due Aquile</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Vecchia Groppone Barbera dAlba Superiore 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Fontanafredda Nebbiolo 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Almondo Roero 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Ratti Barolo Marcenasco 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Pedale Riserva 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbaresco 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Formul&aelig; 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Campo Ceni Formulae 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Selvapiana Chianti Rufina 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Masi Campofiorin Ripasso 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigneti di Torbe Ripasso Valpolicella Classico Superiore 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso di Montalcino 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Masi Grandarella 1999</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Acinatico Amarone della Valpolicella Classico 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Zenato Valpolicella Classico Superiore 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Zaccagnini Montepulciano dAbruzzo 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Ripassa Valpolicella Superiore 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Dom&igrave;ni Veneti Valpolicella Classico Superiore 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Brolo di Campofiorin 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Amarone della Valpolicella Classico 1999</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Solvold Langhe Chardonnay 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torrevento La Rocca 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montepulciano dAbruzzo 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Solvold Barbera dAlba Superiore 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Castello di Farnetella Chianti Colli Senesi 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso di Montalcino 2002</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Banfi Brunello di Montalcino 1999</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villa Antinori Chianti Classico Riserva 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbi Brunello di Montalcino 1998</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Col-di-Sasso Sangiovese &amp; Cabernet Sauvignon 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barco Reale di Carmignano 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Selvapiana Chianti Rufina 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villa Cafaggio Chianti Classico 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Rotari Arte Italiana Brut</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Canaletto Pinot Grigio Cuv&eacute;e Brut</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Ben Ry&eacute; Passito di Pantelleria 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Pantelleria Passito Liquoroso 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Villagrande Malvasia delle Lipari Passito 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Verdicchio dei Castelli di Jesi Classico 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Botter Monreale 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Inycon Fiano 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso Virz&iacute; 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Passomaggio 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pojo di Lupo Nero dAvola 2002</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cappella Nero dAvola 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rup&igrave;colo Castel del Monte DOC 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Copertino DOC 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Candido Salice Salentino DOC 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vitiano 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>I Feudi di Sicilia Nero dAvola 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Benuara Nero dAvola Syrah 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Orph&eacute;us Etna Rosso 1998</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Santa Tresa Cerasuolo di Vittoria 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Nerojbleo Nero dAvola 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Pradai Nero dAvola 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>De Valier Nero dAvola 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cusumano Nero dAvola 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villagrande Etna Rosso 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Piani Noce Dolcetto dAlba DOC 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba DOC 2002</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Planeta La Segreta Bianco 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Pietramarina Etna Bianco Superiore 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Planeta Chardonnay 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Regaleali 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Leone dAlmerita 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Malvasia delle Lipari Passito 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Tasca dAlmerita Chardonnay 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Camastra Nero dAvola Merlot 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Planeta Santa Cecilia 2001</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Planeta Cerasuolo di Vittoria 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Benanti Lamor&egrave;mio 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Tasca dAlmerita Cabernet Sauvignon 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Planeta La Segreta Rosso 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Benanti Rovitello 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Rosso del Conte 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Regaleali Nero dAvola 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Langhe San Guglielmo 1998</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Farina Montepulciano dAbruzzo 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Riul Refosco dal Peduncolo Rosso 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tan&egrave; 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cantalupo Ghemme 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Scaligeri Valpolicella 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torrevento La Rocca 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Col Solera Barbera 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mezzomondo Negroamaro</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Da Luca Primitivo Merlot 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cuv&eacute;e Christer Berens M dA 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valpantena Corvina 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso dAbruzzo</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Boheme</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof Nicolaysen Montepulciano</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Collection Frithjof Nicolaysen Sangiovese</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Oeno Sangiovese di Toscana 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cappella Rosso di Puglia IGT</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Col-di-Sasso Sangiovese &amp; Cabernet Sauvignon 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Farina Montepulciano dAbruzzo</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Canaletto Montepulciano dAbruzzo</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vajra Langhe Rosso 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigneti di Torbe Ripasso Valpolicella Classico Superiore 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbaresco 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Campanaro Fiano di Avellino 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Falanghina Sannio 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Greco di Tufo 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Privilegio Irpinia Bianco 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Beneventano Bianco 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Fiano di Avellino 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rubrato Irpinia Aglianico 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Taurasi 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Piano di Montevergine Taurasi Riserva 1999</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Serpico Irpinia Aglianico 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Serpico Irpinia Aglianico 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Rosaura 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Arione Asti</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>La Pieve Pinot Chardonnay Brut</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Le Bottaie Fa&egrave; Extra Dry 2003</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Poderi di Carlo Sauvignon 2004</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Paladin Manzoni Bianco 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Val dei Molini Garganega 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Tono Manzoni 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Colterenzio Pinot Bianco 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Novalis Manzoni 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Turian Ribolla Gialla 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Il Dardo Lugana 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Castello di Porc&igrave;a Tocai Friulano 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Monte del Fr&aacute; Bianco di Custoza 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Kaltern Pinot Bianco 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>C&agrave; Lustra Pinot Bianco 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Brixner Eisacktaler Sylvaner 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Brixner Eisakcktaler Kerner 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Tralivio Verdicchio dei Castelli di Jesi Classico Superiore 2001</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Lemuse Bianco di Custoza 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Quattro Vicariati 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cuv&eacute;e Christer Berens Salento 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Farnese Montepulciano dAbruzzo 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Torrevento Castel del Monte 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Tormaresca Negroamaro Cabernet 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Soloperto Primitivo di Manduria 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Isole e Olena Chianti Classico 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>R&egrave;mole 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Donna Marzia Negramaro 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Santi Medici Salento Rosato 2004</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Langhe Rosso 2004</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba Superiore 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>San Michele Barbera dAlba 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Cua Longa Barbera dAsti 2000</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Dolcetto dAlba 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Muntriv&eacute; Barbera dAsti 2001</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba Piana 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba Piani 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Dolcetto dAlba Rossana 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso Scarpa 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Langhe Nebbiolo 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbaresco Nubiola 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Il Mimo 2004</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Villa Gemma Montepulciano d Abruzzo Cerasuolo 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Feudi di San Marzano Rosato Salento 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Rosaura 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>rose</td><td>Boffa Gran Buchet 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Dom&igrave;ni Veneti Valpolicella Classico Superiore 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cavalchina Bardolino 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valpolicella Classico 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Allegrini Valpolicella Classico 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Moro 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Viviani Valpolicella Classico 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Di Majo Norante Terra Degli Osci Sangiovese 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Sigillo Primo Primitivo Salento 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Saraceno Leverano 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Negro Roero 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Corte Giara Ripasso Valpolicella Superiore 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Tre Vigne Grillo 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Monte Antico 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Chianti Gonfalone 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Poppiano Chianti Riserva 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>&laquo;Il&raquo; Decugnano dei Barbi 1999</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cotogni Sangiovese 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Le Mandorlae 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Placido Chianti 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>LArd&igrave; Dolcetto dAcqui 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Paolo Toscano Chianti Classico 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villa Patrizia 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso Piceno 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso Piceno Superiore Montetinello 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Col dOrcia Rosso di Montalcino 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Col dOrcia Brunello di Montalcino 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Montalto Cataratto-Chardonnay 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Da Luca Alto Barbera dAsti 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Da Luca Syrah Sangiovese 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Fontecuoia Rosso 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba Serraboella 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Barbera dAlba Bricco delle Viole 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Brancaia Tre 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Souli Braida  Dolcetto dAlba 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Ferrari Brut</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Rotari Arte Italiana Brut</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Casabianca Prosecco di Valdobbiadene Brut</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Fontanafredda Asti 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Franciacorta Gran Cuv&eacute;e Pas Oper&egrave; 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Cadel Bosco Franciacorta Brut Dosage Z&egrave;ro 1999</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Arione Asti</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Cinzano Asti</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Argeo Prosecco Spumante</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Martini Asti</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Fontanafredda Asti</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>CaBertaldo Prosecco Brut</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Ruggeri Prosecco Frizzante</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Santo Stefano Prosecco Dry 2003</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Giustino B. Prosecco Extra Dry 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Bellavista Franciacorta Cuv&eacute;e Brut</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Gancia Asti</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Cinzano Prosecco</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Quartese Ruggeri Prosecco</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Prosecco Frizzante Ombra 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Cartizze Prosecco Superiore Dry 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>sparkling</td><td>Cadel Bosco Franciacorta Brut</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Pagus Soave 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Lago di Corbara 2002</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Vigna Flaminio Brindisi 2001</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mezzacorona Merlot 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso dei Grilli Merlot &amp; Cabernet 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mottura Civitella 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Fr&agrave; Diavolo 2004</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Morellino di Scansano 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Cumera Organic Inzolia 2004</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso Piceno Piediprato 2003</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso Piceno 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso Piceno Superiore Montetinello 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Proemio Castel del Monte 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Villagrande Etna Rosso 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cumera Organic Sangiovese 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cumera Organic Montepulciano dAbruzzo 2003</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Cumera Organic Nero dAvola 2004</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Nes Passito di Pantelleria 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Arzimo Passito 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Coos Ramandolo 2003</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Carcera Soave Classico 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>white</td><td>Taburno Falanghina 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Quintarelli Valpolicella Classico Superiore 1998</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rubioso Passito 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Monprivato Barolo 2000</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Bonotto Raboso Passito 2002</td><td>3</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>35 Parallelo Negroamaro 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Ferliga Montepulciano dAbruzzo 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Poggio al Tufo Rompicollo 2004</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Campo Santa Lena Valpolicella Classico 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Carnevale Barbera del Monferrato de la Rocchetta 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Chianti Classico Riserva 2000</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Haas Moscato Rosa 2003</td><td>2</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Poggio Gagliardo Montescudaio 2003</td><td>1</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Mezzomondo Negroamaro</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Da Luca Primitivo Merlot 2004</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Oeno Sangiovese di Toscana 2004</td><td>6</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Negroamaro 2003</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>M dA Cuv&eacute;e Christer Berens 2004</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Montepulciano dAbruzzo Collection Frithjof Nicolaysen</td><td>5</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Rosso dAbruzzo</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Valpantena Corvina 2004</td><td>4</td>
+                    </tr>
+                    <tr>
+                      <td>red</td><td>Boheme</td><td>3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+    
+            </div>
+	
+
+            <hr>
+
+	
+	
+            <div>Beskrivelse av musserende viner fra Frankrike med terningkast 1</div>
+    
+            <div>
+
+              <div id="root">
+                <h1>Viner</h1>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+	
+        </td>
+   
+	
+      </tr>
+	
+    </table>
+
+  </body>
+
+</html>

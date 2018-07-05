@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- any XML-file will do -->
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:import and modules content</h1>
+<p>
+   Import of material from many sources. Using a combination of 
+   module content and PIs
+   </p>
+   <p>
+   A rather meaningless description of France and Spain
+   and wines from these coutries.
+   It is obvious that this could be solved in a number of ways, most of them are
+   much faster than the one presented.
+</p>
+
+ 
+<hr/>
+  
+
+<div>
+<?_wxt expandable title="script" location="../script.xml" 
+       lang="lang-xml"?>
+</div>
+<div>
+
+<?_wxt expandable title="template for France and Spain" location="../../templates/q_template.xml" 
+       lang="lang-xml"?>
+
+</div>
+</div> <!-- mainblock -->
+
+</root>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>source index</title>
+</head>
+
+<body>
+<div class="mainblock">
+<h1>Welcome</h1>
+<p>
+ We will do a few modifications to the set up in demo A.
+ Firstly we will prepare for more templates. We do this by 
+ defining header and footer as fragments and put them on
+ a file, gfx/myfragments.xml. This will simplify the template(s),
+ and make it easy to work on the details both in the fragments and
+ the template(s).
+</p>
+<p>
+ A simple template:
+</p>
+<div>
+<?_wxt expandsimple location="${_scriptcatalog}/gfx/p_template.xml" code="xmlcode"?>
+</div>
+<p>
+ and the fragments:
+</p>
+<div>
+<?_wxt expandsimple location="../gfx/myfragments.xml" code="xmlcode"?>
+</div>
+</div>
+</body>
+</html>

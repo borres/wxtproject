@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+</p>
+
+  
+<!-- extract a header with following text -->
+<h2>A simple import of html</h2>
+
+
+ <p>
+<?_wxt importhtml location="C:\\web\\dw\\index.html" 
+       cssselector="article"?>
+</p>
+<hr/>
+
+  
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="page3.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</root>

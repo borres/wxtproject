@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: fragments-element</h1>
+<p>
+   A fragments-element is a reference to a file with fragments <?_wxt xlink id="Fragment"?> .
+  The definition-element may contain any number of fragments-elements.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<fragments location=""/>]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>Location of the file with fragments. 
+    The location is corrected for pathfragments.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>encoding</strong>(optional)</td>
+    <td>If not set, the encoding of the using module is assumed.
+    </td>
+  </tr>
+</table>
+
+
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<fragments location="myfragments.xml"/>]]>
+</pre>
+<p>and the fragment file, myfragments.xml may look like this:</p>
+<div>
+<?_wxt importtxt location="samples/myfragments.xml" lang="lang-xml" ?>
+</div>
+
+<p>The content of a fragment element may be a simple text 
+or any legal XML-fragment wrapped as CDATA.
+</p>
+
+</body>
+</html>
+

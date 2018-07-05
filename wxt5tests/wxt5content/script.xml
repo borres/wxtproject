@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- wikiimport test -->
+      <definitions>
+	  <option name="indent-output" value="yes"/>
+      <option name="output-format" value="xhtml"/>
+      <template id="P" location="../templates/p_template.xml"/>   
+      <template id="Q" location="../templates/q_template.xml"/> 
+      <logfile location="../buildlog.txt" />    
+     </definitions>
+         
+     <module description="Demonstration of content types" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+ 
+	<module description="More demonstration of content types" location="page1.html" 
+	        name="France" id="france" template="Q" books="all">
+        <xmlcontent location="content/page1.xml"/>
+        <txtcontent location="content/winesF.txt"/>
+        <wikicontent location="http://en.wikipedia.org/wiki/Flag_of_France"/>
+	</module>
+ 
+    <module description="More demonstration of content types" location="page2.html" 
+	        name="Spain" id="spain" template="Q" books="all">
+        <xmlcontent location="content/page2.xml"/>
+        <txtcontent location="content/winesS.txt"/>
+        <wikicontent location="http://en.wikipedia.org/wiki/Flag_of_Spain"/>
+	</module>
+ 	
+ </wscript>

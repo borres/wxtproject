@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<div> <div class="importwiki">
+    <h3> Trac</h3>
+<p>Trac er et verkty som kan brukes i
+prosjektgjennomfring og andre former for samarbeid mellom
+mennesker. Verktyet gir mulighet for  kunne
+planlegge arbeidet, dokumentere underveis samt i ettertid kunne
+spore arbeid som er utfrt. Systemet har en minimalistisk
+tilnrmingsform, slik at det er et enkelt
+prosjektstyringsverkty. I dette ligger det ogs at
+systemet er utviklet for i minst mulig grad  ptvinge
+den eksisterende utviklingsprosessen styrende elementer. Dette kan
+vre en fordel for anvendelse i ulike didaktiske opplegg.</p>
+<p>Vi hevder at systemet er egnet for utviklingsoppgaver som
+prosjekter i nringslivet og prosjekter i
+undervisningssammenheng, Dette med bakgrunn i den minimalistiske
+form. Det vil si at de er enkle  inntalere og at terskelen
+for  kunne anvende verktyet er lav. Vre
+resultat viser at selv for frstesemester studenter holder
+det med en enkel innfring i verktyene, samt litt
+veiledning fra studentassistenter.</p>
+<p>Verktyet bruker wiki formatering [3] i sin behandling av
+tekst som er knyttet til organisering og gjennomfring av
+prosjekt, s som for eksempel: meldinger, kommentarer,
+beskrivelser og linker. Dette bidrar til en standardisert form slik
+at det er mindre risiko for at noen legger inn tekst som de andre i
+prosjektet kan ha problemer med  se. Det er  bemerke
+at det selvsagt er slik at vi i prosjektet kan produsere alle slags
+fileformater, som for eksempel: txt, doc, emx og jpg.</p>
+<p>Her vises en klipp av web siden som brukes nr vi jobber
+med Trac:</p>
+<p>
+      <a class="external" href="https://wiki.hiof.no/XP/index.php/Bilde:Tracbilde.jpg" title="Bilde: Tracbilde.jpg">
+        <img alt="Bilde: Tracbilde.jpg" height="331" longdesc="/XP/index.php/Bilde:Tracbilde.jpg" src="handbok_files/Tracbilde.jpg" width="445"/>
+      </a>
+    </p>
+<p>Figur 3; Typisk eksempel p en oppstartside i et
+undervisningsprosjekt.</p>
+<p>verst i figuren er det en samling med funksjoner som
+finnes i Trac. Denne delen vises hele tiden, mens resten av siden
+brukes til  vise de data som er knytte til den valgte
+funksjonen.</p>
+<p>Nr vi jobber med prosjektlignende oppgaver kan vi
+nr som helst enkelt se alle hendelser som er gjort tidligere
+i prosjektet og veien videre. Vi kan legge inn elementer som
+milepler (milestone), arbeidsoppgaver (ticket) og fritt lage
+komponenter (som typisk er: forskjellige typer dokumentasjon og
+programkode). Vi kan ogs lage relasjoner mellom de
+forskjellige elementene slik at det er enkelt  spore tilbake
+i prosjektet.</p>
+<p>Vi har prvd Trac p flere niver i studiet.
+Det er srlig enkelheten i funksjonaliteten som gjr
+den egnet for bruk i forbindelse med forskjellige didaktiske
+opplegg. Det at bruk av verkty kan bidra til at studentene
+fr mer ut av de aktuelle temaer for et kurs, enn at denne
+type verkty, bidrar negativt p grunn av sin
+kompleksitet eller arbeidsmengde, var en positiv erfaring for
+oss.</p>
+
+</div>
+</div>

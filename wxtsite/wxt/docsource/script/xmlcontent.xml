@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: xmlcontent-element</h1>
+<p>
+    A xmlcontent element tells where the module shall search for XML content.
+    The template must have a processing instructions (PI) of type
+    importxml, see: <?_wxt xlink id="ImportXML"?> 
+    to realize the actual extraction of content.
+</p>
+<p>
+  A Module may contain any number of XMLContent elements.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<xmlcontent location=""/>]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>Any string that represents a file, either as an absolute URI or 
+    as an URI relative to the active anchor.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>backuplocation</strong>(optional)</td>
+    <td>Any string that represents a file, either as an absolute URI or 
+        as an URI relative to the active anchor. 
+        Is used if <em>location</em> for some reason
+        is not availabe. It is not a backup in the sense that the primary file is stored here. 
+        It is up to you to supply a meaningfull backup file.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>transformation</strong>(optional)</td>
+    <td>A transformation identifier 
+    (see: <?_wxt xlink id="Transformation"?>).
+    The transformation may have parameter list: T(name='ole',address='Halden').
+    This transformation is overruled by a possible transformation in the actual import PI.
+    </td>
+  </tr>
+    <tr>
+    <td  style="vertical-align:top"><strong>id</strong>(optional)</td>
+    <td>An id that identifies this  xmlcontent in 
+    importxml in a template.
+    </td>
+  </tr>  
+</table>
+
+
+<p>A xmlcontent element may not  contain any elements
+</p>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang-html"><![CDATA[<xmlcontent location="${_scriptpath}/section3/myfile.xml"/>]]>
+
+</pre>
+
+
+</body>
+</html>

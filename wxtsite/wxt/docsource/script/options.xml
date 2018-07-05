@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: option-element</h1>
+<p>
+  The definition-element may contain options.
+  These option influence the prefomance of WXT in different ways.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<option name="" value="">]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>name</strong>(mandatory)</td>
+    <td>Any string that identifies this option.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>value</strong>(mandatory)</td>
+    <td>A value matching the name.
+    </td>
+  </tr>
+
+</table>
+<p>Reckognized option names are:
+</p>
+<table cellpadding="10px">
+
+  <tr>
+    <td  style="vertical-align:top"><strong>expand-all</strong></td>
+    <td>Possible values: <em>yes</em> or <em>no</em>. no is default.
+    If yes, all expansions (PI:expandable) will be done, regardless of the 
+    <em>expanded</em> parameter in the PIs, see <?_wxt xlink id="Expandable"?>.
+    </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>preformat-language</strong></td>
+    <td>Possible values: <em>yes</em> or <em>no</em>. no is default.
+	By default Google's prettyprint is used for colorencoding of languages.
+    If yes, WXT's internal colorcoding is used. This is less flexible but prepares material that is
+	encoded independant of a webbrowser. Suited for PDF conversion.
+	See <?_wxt xlink id="codefragments"?>.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>indent-output</strong></td>
+    <td>Possible values: <em>yes</em> or <em>no</em>. 
+    no is default.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>default-encoding</strong></td>
+    <td>Default is <em>utf-8</em>. This encoding is used
+    when there are no other way to decide encoding.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>output-format</strong></td>
+    <td>Possible values are <em>xml</em>, <em>text</em>,
+        <em>html</em> and <em>xhtml</em>. 
+        <br/><em>html</em> will produce modules in html5, that is without XML-header and doctype html. 
+		<br/><em>xhtml</em> will produce the same as <em>xml</em>, but without xml-header. The doctype will be copied from the source.
+		This is typically xhtml-strict.
+		<br/>Default is <em>html</em>.
+		<br/>The detailed effect of the output option depends of course on the templates content.
+		
+    </td>
+  </tr>
+    <tr>
+    <td  style="vertical-align:top"><strong>reference-form</strong></td>
+    <td>Possible values are <em>simple</em>, <em>ieee</em>, <em>harvard</em>.
+	Default and the only option implemented at the moment is <em>simple</em>.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>reference-indexing</strong></td>
+    <td>Possible values are <em>local</em> and <em>global</em>.
+	<em>local</em> will produce reference indices for each module.
+	<em>global</em> will index references as encountered during the 
+	whole building. Default is <em>local</em>.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>use-copy</strong></td>
+    <td>Possible values are <em>yes</em> and <em>no</em>.
+	 Default is <em>yes</em>.<br/>
+	<em>no</em> will access the material at the original source, produce a 
+	local copy and then fetch the result from this copy. 	
+	<em>yes</em> will import html material from the local copy directly.<br/>
+	This option will overrun the parameter <em>usecopy</em> in PI:
+    <?_wxt xlink id="ImportHTML"?>.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>drop-books</strong></td>
+    <td>You can use this to avoid building modules which are
+	timeconsuming or should be left alone for other reasons.
+	The value is a comma separated list of strings.
+	The modules with matching books - attributes will be skipped when building.
+	Space is not allowed in the string(list).
+    </td>
+  </tr>  
+  <tr>
+    <td  style="vertical-align:top"><strong>tidy-input</strong></td>
+    <td>If the parsing of XML input fails, WXT will attempt to tidy the source.
+	You may turn this option off with value <em>no</em>.
+	<br/>
+	Default value is <em>yes</em>.
+	<br/>
+	Tidying is not without problems, and the tidyjob of WXT is neither waterproof nor complete.
+	Tidying is done with jsoup<?_wxt ref id="jsoup"?>. You may experience that the tidy job does not produce exactly what you expect.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>verbose</strong></td>
+    <td>May be <em>yes</em> or <em>no</em>. <em>no</em> is default.
+	<br/>when <em>yes</em> WXT will produce more detailed output of errors and warnings
+	in the build process.
+    </td>
+  </tr> 
+  </table>
+<p>Examples:</p>
+<pre class="prettyprint lang-html"><![CDATA[<option name="expand-all" value="yes"/>
+<option name="default-encoding" value="ISO-8859-1"/>
+<option name="indent-output" value="yes"/>
+<option name="drop-books" value="topdf"/>]]>
+</pre>
+
+</body>
+</html>
+

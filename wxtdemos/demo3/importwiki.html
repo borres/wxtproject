@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	
+    <title>WIKI</title>
+	
+    <link href="../commons/wxtstyle.css" rel="STYLESHEET">
+	
+    <script src="../commons/prototype.js" type="text/javascript"> </script>
+	<script src="../commons/wxtjs.js" type="text/javascript"> </script>
+	
+    <style>
+	.prev img,.home img,.next img{border:none}
+	</style>
+
+  </head>
+
+
+  <body>   
+	
+    <table>
+	
+      <tr>
+	
+        <td style="width:160px" valign="top">
+		
+          <div class="wxtmodulemenu">
+            <div class="level1">
+              <a href="index.html" onclick="javascript:document.getElementById('WIKI1').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI1').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI1').style.visibility='visible'">Welcome</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI1" style="visibility:hidden;">
+                  <div class="header">Welcome</div>testing wxt PIs</div>
+              </div>
+            </div>
+            <div class="level2">WIKI</div>
+            <div class="level2">
+              <a href="importwikipedia.html" onclick="javascript:document.getElementById('WIKI2').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI2').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI2').style.visibility='visible'">WIKIPEDIA</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI2" style="visibility:hidden;">
+                  <div class="header">WIKIPEDIA</div>test wikipedia import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="transformed.html" onclick="javascript:document.getElementById('WIKI3').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI3').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI3').style.visibility='visible'">Transformed Out</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI3" style="visibility:hidden;">
+                  <div class="header">Transformed Out</div>test transformed output</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="transformedin.html" onclick="javascript:document.getElementById('WIKI4').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI4').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI4').style.visibility='visible'">Transformed In</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI4" style="visibility:hidden;">
+                  <div class="header">Transformed In</div>test transformed input</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="dts.html" onclick="javascript:document.getElementById('WIKI5').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI5').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI5').style.visibility='visible'">DTS</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI5" style="visibility:hidden;">
+                  <div class="header">DTS</div>Date  Time Stamp</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="fragments.html" onclick="javascript:document.getElementById('WIKI6').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI6').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI6').style.visibility='visible'">Fragments</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI6" style="visibility:hidden;">
+                  <div class="header">Fragments</div>
+                  <img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif" style="float:right">
+             <div style="font-weight:bold">bs was here</div>
+                </div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="popfragments.html" onclick="javascript:document.getElementById('WIKI7').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI7').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI7').style.visibility='visible'">PopFragments</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI7" style="visibility:hidden;">
+                  <div class="header">PopFragments</div>testing popfragments</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="fragmentxlink.html" onclick="javascript:document.getElementById('WIKI8').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI8').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI8').style.visibility='visible'">Fragmentlinks</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI8" style="visibility:hidden;">
+                  <div class="header">Fragmentlinks</div>testing popfragments</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="footnotes.html" onclick="javascript:document.getElementById('WIKI9').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI9').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI9').style.visibility='visible'">Foots</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI9" style="visibility:hidden;">
+                  <div class="header">Foots</div>
+                  <img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif">
+                        <span style="font-weight:bold">bs was here leaving footprints</span>
+                </div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="collectsummaries.html" onclick="javascript:document.getElementById('WIKI10').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI10').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI10').style.visibility='visible'">Summaries</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI10" style="visibility:hidden;">
+                  <div class="header">Summaries</div>testing collection of summaries</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="demolinks.html" onclick="javascript:document.getElementById('WIKI11').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI11').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI11').style.visibility='visible'">Demolinks</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI11" style="visibility:hidden;">
+                  <div class="header">Demolinks</div>testing demolinks</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="collecting.html" onclick="javascript:document.getElementById('WIKI12').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI12').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI12').style.visibility='visible'">Collecting</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI12" style="visibility:hidden;">
+                  <div class="header">Collecting</div>testing collections</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="moduletoc.html" onclick="javascript:document.getElementById('WIKI13').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI13').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI13').style.visibility='visible'">ModuleTOC</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI13" style="visibility:hidden;">
+                  <div class="header">ModuleTOC</div>testing local TOC</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="modulemap.html" onclick="javascript:document.getElementById('WIKI14').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI14').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI14').style.visibility='visible'">ModuleMap</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI14" style="visibility:hidden;">
+                  <div class="header">ModuleMap</div>testing Module map</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="path.html" onclick="javascript:document.getElementById('WIKI15').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI15').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI15').style.visibility='visible'">Path</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI15" style="visibility:hidden;">
+                  <div class="header">Path</div>testing path</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="ix.html" onclick="javascript:document.getElementById('WIKI16').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI16').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI16').style.visibility='visible'">Index</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI16" style="visibility:hidden;">
+                  <div class="header">Index</div>testing ixword and ixtable</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="xlink.html" onclick="javascript:document.getElementById('WIKI17').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI17').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI17').style.visibility='visible'">xlink</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI17" style="visibility:hidden;">
+                  <div class="header">xlink</div>testing xlink and xlinklist</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="encoding.html" onclick="javascript:document.getElementById('WIKI18').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI18').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI18').style.visibility='visible'">Encoding</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI18" style="visibility:hidden;">
+                  <div class="header">Encoding</div>testing encoding</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importdb.html" onclick="javascript:document.getElementById('WIKI19').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI19').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI19').style.visibility='visible'">Database</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI19" style="visibility:hidden;">
+                  <div class="header">Database</div>testing database access</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importxml.html" onclick="javascript:document.getElementById('WIKI20').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI20').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI20').style.visibility='visible'">ImportXML</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI20" style="visibility:hidden;">
+                  <div class="header">ImportXML</div>testing xml import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importtext.html" onclick="javascript:document.getElementById('WIKI21').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI21').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI21').style.visibility='visible'">ImportTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI21" style="visibility:hidden;">
+                  <div class="header">ImportTXT</div>testing text import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importscripttext.html" onclick="javascript:document.getElementById('WIKI22').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI22').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI22').style.visibility='visible'">ImportScriptTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI22" style="visibility:hidden;">
+                  <div class="header">ImportScriptTXT</div>testing text import from script</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importscriptdb.html" onclick="javascript:document.getElementById('WIKI23').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI23').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI23').style.visibility='visible'">ImportScriptDB</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI23" style="visibility:hidden;">
+                  <div class="header">ImportScriptDB</div>testing text import from script</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importmultitext.html" onclick="javascript:document.getElementById('WIKI24').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI24').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI24').style.visibility='visible'">ImportMultiTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI24" style="visibility:hidden;">
+                  <div class="header">ImportMultiTXT</div>testing text import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="popups.html" onclick="javascript:document.getElementById('WIKI25').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI25').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI25').style.visibility='visible'">Pops</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI25" style="visibility:hidden;">
+                  <div class="header">Pops</div>testing popups</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="expand.html" onclick="javascript:document.getElementById('WIKI26').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI26').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI26').style.visibility='visible'">Expand</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI26" style="visibility:hidden;">
+                  <div class="header">Expand</div>testing ajax expand</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="backup.html" onclick="javascript:document.getElementById('WIKI27').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKI27').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKI27').style.visibility='visible'">Backup</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKI27" style="visibility:hidden;">
+                  <div class="header">Backup</div>testing backup</div>
+              </div>
+            </div>
+          </div>
+		
+          <div style="margin-left:20px; margin-top:20px">
+		
+            <span class="prev"><span class="wxtxlink"><a href="index.html" title="testing wxt PIs"><img alt="prev" src="prev.gif"></a></span></span>
+		<span class="home"><span class="wxtxlink"><a href="index.html" title="testing wxt PIs"><img alt="home" src="home.gif"></a></span></span>
+		<span class="next"><span class="wxtxlink"><a href="importwikipedia.html" title="test wikipedia import"><img alt="next" src="next.gif"></a></span></span>
+		
+          </div>
+	
+        </td>
+
+<td valign="top">
+
+          <div class="content">    
+
+            <h1>WIKI import</h1>
+
+
+            <hr>
+
+            <div>Source:</div>
+
+            <div>
+              <div class="wxtexpand">
+                <div class="header">
+                  <span class="off" onclick="javascript:toggleExpandAjax('exp_importwiki.xml',this)">_</span>importwiki.xml</div>
+                <div class="content"> 
+                </div>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+	
+              <div class="wxtmoduletoc">
+                <div>
+                  <span class="level3"><a href="#WIKI31">Trac</a></span>
+                </div>
+                <div>
+                  <span class="level2"><a href="#WIKI32">Aktuelle kurs</a></span>
+                </div>
+                <div>
+                  <span class="level2"><a href="#WIKI33">M&oslash;tereferater</a></span>
+                </div>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <p>
+Testing import av WIKI fragments
+</p>
+
+            <div>
+
+              <div class="wxtimportwiki">
+                <h3>
+                  <a name="WIKI31">
+               Trac
+            </a>
+                </h3>
+
+                <p>Trac er et verkt&Atilde;&cedil;y som kan brukes i
+prosjektgjennomf&Atilde;&cedil;ring og andre former for samarbeid
+mellom mennesker. Verkt&Atilde;&cedil;yet gir mulighet for
+&Atilde;&yen; kunne planlegge arbeidet, dokumentere underveis samt i
+ettertid kunne spore arbeid som er utf&Atilde;&cedil;rt. Systemet har
+en minimalistisk tiln&Atilde;&brvbar;rmingsform, slik at det er et
+enkelt prosjektstyringsverkt&Atilde;&cedil;y. I dette ligger det
+ogs&Atilde;&yen; at systemet er utviklet for i minst mulig grad
+&Atilde;&yen; p&Atilde;&yen;tvinge den eksisterende
+utviklingsprosessen styrende elementer. Dette kan v&Atilde;&brvbar;re
+en fordel for anvendelse i ulike didaktiske opplegg.</p>
+
+                <p>Vi hevder at systemet er egnet for utviklingsoppgaver som
+prosjekter i n&Atilde;&brvbar;ringslivet og prosjekter i
+undervisningssammenheng, Dette med bakgrunn i den minimalistiske
+form. Det vil si at de er enkle &Atilde;&yen; inntalere og at
+terskelen for &Atilde;&yen; kunne anvende verkt&Atilde;&cedil;yet er
+lav. V&Atilde;&yen;re resultat viser at selv for
+f&Atilde;&cedil;rstesemester studenter holder det med en enkel
+innf&Atilde;&cedil;ring i verkt&Atilde;&cedil;yene, samt litt veiledning
+fra studentassistenter.</p>
+
+                <p>Verkt&Atilde;&cedil;yet bruker wiki formatering [3] i sin
+behandling av tekst som er knyttet til organisering og
+gjennomf&Atilde;&cedil;ring av prosjekt, s&Atilde;&yen; som for
+eksempel: meldinger, kommentarer, beskrivelser og linker. Dette
+bidrar til en standardisert form slik at det er mindre risiko for
+at noen legger inn tekst som de andre i prosjektet kan ha problemer
+med &Atilde;&yen; se. Det er &Atilde;&yen; bemerke at det selvsagt er
+slik at vi i prosjektet kan produsere alle slags fileformater, som
+for eksempel: txt, doc, emx og jpg.</p>
+
+                <p>Her vises en klipp av web siden som brukes n&Atilde;&yen;r vi
+jobber med Trac:</p>
+
+                <p>
+              
+                
+                  <img alt="Bilde: Tracbilde.jpg" height="331" longdesc="/XP/index.php/Bilde:Tracbilde.jpg" src="wikiback/handbok_html/Tracbilde.jpg" width="445">
+              
+            </p>
+
+                <p>Figur 3; Typisk eksempel p&Atilde;&yen; en oppstartside i et
+undervisningsprosjekt.</p>
+
+                <p>&Atilde;&#152;verst i figuren er det en samling med funksjoner som
+finnes i Trac. Denne delen vises hele tiden, mens resten av siden
+brukes til &Atilde;&yen; vise de data som er knytte til den valgte
+funksjonen.</p>
+
+                <p>N&Atilde;&yen;r vi jobber med prosjektlignende oppgaver kan vi
+n&Atilde;&yen;r som helst enkelt se alle hendelser som er gjort
+tidligere i prosjektet og veien videre. Vi kan legge inn elementer
+som milep&Atilde;&brvbar;ler (milestone), arbeidsoppgaver (ticket) og
+fritt lage komponenter (som typisk er: forskjellige typer
+dokumentasjon og programkode). Vi kan ogs&Atilde;&yen; lage
+relasjoner mellom de forskjellige elementene slik at det er enkelt
+&Atilde;&yen; spore tilbake i prosjektet.</p>
+
+                <p>Vi har pr&Atilde;&cedil;vd Trac p&Atilde;&yen; flere
+niv&Atilde;&yen;er i studiet. Det er s&Atilde;&brvbar;rlig enkelheten i
+funksjonaliteten som gj&Atilde;&cedil;r den egnet for bruk i
+forbindelse med forskjellige didaktiske opplegg. Det at bruk av
+verkt&Atilde;&cedil;y kan bidra til at studentene f&Atilde;&yen;r mer
+ut av de aktuelle temaer for et kurs, enn at denne type
+verkt&Atilde;&cedil;y, bidrar negativt p&Atilde;&yen; grunn av sin
+kompleksitet eller arbeidsmengde, var en positiv erfaring for
+oss.</p>
+
+
+              </div> 
+
+            </div>
+
+            <hr>
+
+            <div>
+	
+              <div class="wxtimportwiki">
+                <h2>
+                  <a name="WIKI32">
+               Aktuelle kurs
+            </a>
+                </h2>
+
+                <p>
+              
+                  <b>Programmering for web</b>
+
+                </p>
+            
+                <p>Kurs for 3.klasse. Programmeringen inneb&aelig;rer: Python, javascript, XSLT. Det skal lages webapplikasjoner.
+</p>
+            
+                <p>
+              Programmering for web
+</p>
+            
+                <p>
+              
+                  <b>Innf&oslash;ring i programmering</b>
+
+                </p>
+            
+                <p>Dette er begynnerkurset i programmering for 1.klasse. 
+Javaprogrammering
+</p>
+            
+                <p>
+              Innf&oslash;ring i programmering
+</p>
+            
+                <p>
+              
+                  <br>
+
+                </p>
+
+            
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+	
+              <div class="wxtimportwiki">
+                <h2>
+                  <a name="WIKI33">
+               M&oslash;tereferater
+            </a>
+                </h2>
+
+                <p>der Terje, Mari Ann, H&aring;kon, B&oslash;rre samles for &aring; utveksle erfaringer.
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b> 26.september </b>
+
+                  </li>
+            
+                </ul>
+
+                <p>H&aring;kon, Terje, B&oslash;rre.
+</p>
+            
+                <p>
+              
+                  <br>
+Trolig lurt med hyppige m&oslash;ter i starten (ukentlige)
+</p>
+            
+                <p>Gulrot i stedet for pisk n&aring;r det gjelder bruk av teknikker og verkt&oslash;y. (form p&aring; tickets, paiprogramming, testing, versjonering)
+</p>
+            
+                <p>Rollen som "teknisk kyndig kontrakt&oslash;r" er trolig ganske god.
+</p>
+            
+                <p>F&oslash;rstkommende fredag blir det en gjennomgang i forelesningen av testing, sammen med en motivasjon for metodikken.
+</p>
+            
+                <p>Det er ikke trivielt &aring; synkronisere prosjekter og faglig progresjon styrt ved forelesninger. XP fordrer i en viss forstand at det faglige repetoiret er p&aring; plass tidlig.
+</p>
+            
+                <p>- b&oslash;rre -
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b> 8. oktober </b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: B&oslash;rre, H&aring;kon, Terje, Mari-Ann
+</p>
+            
+                <p>Grupper er fordelt og tracer opprettet. SVN frivillig, og vil demonstreres av gruppel&aelig;rerne hvis noen av gruppene viser interesse for det. Studentene tar kontakt med sin oppdragsgiver og avtaler m&oslash;te. M&oslash;te hver uke i oppstarten, kan deretter se det litt an. 
+</p>
+            
+                <p>I forhold til rekkef&oslash;lgen for gjennomgang av emner i kurset, passer det &aring; starte med &aring; la studentene lage en rapportmal (html), og deretter f&aring; p&aring; plass en klasse med metoder for &aring; lese en mal, putte inn verdier for variablene i malen og lagre resultatet. 
+</p>
+            
+                <p>Noen har lite kjennskap til HTML. Lars Magnusson gir en introduksjon i &oslash;vingstimene denne uka. 
+</p>
+            
+                <p>Mari-Ann
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b> 15. oktober </b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: B&oslash;rre, H&aring;kon, Terje, Mari-Ann
+</p>
+            
+                <p>Fint &aring; se de andre veilederne sine notater f&oslash;r egen veildening.
+Ulik niv&aring; p&aring; grupper og medlemmer.
+</p>
+            
+                <p>B&oslash;rre kort referat fra midtsem. eval. Alle rimelig forn&oslash;yde. Ulik bruk av verkt&oslash;yenes funksjonalitet. Prosjektene m&aring; bli ferdig. Oppdragsgiver sitt ansvar &aring; ha en fungerende versjon. En gruppe som mener at oppdragsgiver drar prosjektet i gal retning. 
+</p>
+            
+                <p>Ta en oppsumerende samtale med gruppa om roller, fremdrift og niv&aring;.
+Hvordan h&aring;ndteres refactoring i gruppene.
+</p>
+            
+                <p>Metoden kan ogs&aring; brukes til &aring; ta tak i arbeidsmetoder, f.eks. at de f&oslash;lger gruppeundervisning og forelesninger.
+</p>
+            
+                <p>H&aring;kon Tolsby
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b> 29.oktober </b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, B&oslash;rre
+</p>
+            
+                <p>Artikkel. Beholder strukturen som den ligger. Skriver fritt.
+B&oslash;rre ber Ted &aring; lage 4 nye brukere slik at vi er identifiserbare. Sender mail n&aring;r dette er i orden.
+</p>
+            
+                <p>Intervjuer. Vi tar sikte p&aring; &aring; intervjue 2 grupper hver, en gruppe fra hvert kurs. H&aring;kon lage et forslag til setting og 
+rammer for sp&oslash;rsm&aring;l. Mari Ann og B&oslash;rre varsler dette som del av kursevalueringen i de respektive kursene.
+</p>
+            
+                <p>- b&oslash;rre -
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b> 12.november </b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, B&oslash;rre, Terje
+</p>
+            
+                <p>Temaet for m&oslash;tet var unders&oslash;kelsen av den pedagogiske modellen. Unders&oslash;kelsen skal gjennomf&oslash;res i uke 47 og 48. H&aring;kon la frem en plan for gjennomf&oslash;ringen. Det er viktig at alle legger inn aspekter som de &oslash;nsker &aring; f&aring; studentene til &aring; fortelle om i gjennomf&oslash;ringsplanen. Det ble avtalt et nytt m&oslash;te fredag 16. november for gjennomf&oslash;re en testing av intervjusituasjonen
+</p>
+            
+                <p>
+              Gjennomf&oslash;ringsplan
+</p>
+            
+                <p>_h&aring;kon
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b> 19.november</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, B&oslash;rre
+</p>
+            
+                <p>Enighet om artikkel. Fordeling av resterende arbeid.
+</p>
+            
+                <p>bs
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b> 3.desember</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, B&oslash;rre
+</p>
+            
+                <p>Enighet om artikkel. Fordeling av resterende arbeid.
+</p>
+            
+                <p>bs
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b> 18.desember</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Introspektiv intervju
+</p>
+            
+                <p>Bruk tid p&aring; &aring; forberede dere f&oslash;r intervjuet.
+</p>
+            
+                <p>B&oslash;rre og Mari-Ann intervjuer Terje og H&aring;kon
+Terje og H&aring;kon intervjuer B&oslash;rre og Mari-Ann
+</p>
+            
+                <p>
+              Intervjuguide
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b>18.desember</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Intervjuer gjennomf&oslash;rt, 0900 - 1200
+</p>
+            
+                <p>Vi har f&aring;tt penger 200.000 til prosjektet.
+</p>
+            
+                <p>Planer videre:
+</p>
+
+                <ol>
+              
+                  <li> Skrive ut intervjuene. H&aring;kon unders&oslash;ker om vi kan f&aring; hjelp
+</li>
+              
+                  <li> Lage stoff for interne nyheter, Terje 
+</li>
+              
+                  <li> Rekruttere til eksernt kurs. B&oslash;rre sjekker
+</li>
+              
+                  <li> Vi lager en fyldig intern rapport med alt vi har av erfaringer, tanker og intervjustoff, alle
+</li>
+              
+                  <li> Vi planlegger en faglig rapport eller to, H&aring;kon ser etter et godt publiseringssted
+</li>
+              
+                  <li> Vi lager en h&aring;ndbok for veiledere, alle
+</li>
+              
+                  <li> Vi m&aring; oppdatere NU-rapporten i januar hvis den blir godtatt, alle
+</li>
+              
+                  <li> Vi m&aring; drive litt internt misjonsarbeid, spesielt hvis det blir aktuelt med ny studieplan. Personalm&oslash;te eller egen forestilling.
+</li>
+            
+                </ol>
+
+                <p>b&oslash;rre s
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b>23.januar</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>
+              
+                  <br>
+Tilstede: Mari Ann, H&aring;kon, Terje, B&oslash;rre
+</p>
+            
+                <p>Oppsummering og arbeidsfordeling.
+</p>
+            
+                <p>Vi har mottatt:
+</p>
+
+                <ol>
+              
+                  <li> Tildelingsbrev for prosjektet
+</li>
+              
+                  <li> Tilbakemelding p&aring; artikkelforslag.
+</li>
+            
+                </ol>
+
+                <p>Prosjektet handteres slik:
+</p>
+
+                <ol>
+              
+                  <li> Tore Petter Engen fyller ut n&oslash;dvendige formalia og returnerer avkrevd skjema.
+</li>
+              
+                  <li> B&oslash;rre S lager utkast til brev for &aring; f&aring; igang kurs med eksterne deltagere.
+</li>
+              
+                  <li> Vi m&aring; forberede presentasjon til seminar i Troms&oslash;. Materialet for dette har vi trolig klart, men vi vil f&aring; n&aelig;rmere kravspesifikasjon i mars.
+</li>
+            
+                </ol>
+
+                <p>Artikkelen handteres slik, alt skal v&aelig;re ferdig 10.mars:
+</p>
+
+                <ol>
+              
+                  <li> H&aring;kon T tar ansvar for &aring; skrive sammenhengen mellom mapper og XP-metodikk.
+</li>
+              
+                  <li> Terje S tar ansvar for &aring; beskrive verkt&oslash;yene (Trac, SVN) bedre.
+</li>
+              
+                  <li> Mari-Ann A tar ansvar for &aring; restrukturere og forsterke de forel&oslash;pige analysene.
+</li>
+            
+                </ol>
+
+                <p>b&oslash;rre s
+</p>
+
+                <ul>
+              
+                  <li> 
+                    <b>5.mars</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, Terje, B&oslash;rre
+</p>
+            
+                <p>Status artikkel.
+</p>
+            
+                <p>Litt diskusjon om struktur:
+</p>
+
+                <ol>
+              
+                  <li> trenger illustrasjon av verkt&oslash;y (milep&aelig;l, ticket)
+</li>
+              
+                  <li> liste av hovedpunkter i oppsummeringen: rytme og tempo, forpliktelser, oppdragsgiverrollen, arbeidsdeling og koordinering, transparens, refleksjon.
+</li>
+              
+                  <li> klargj&oslash;re hva som kan gj&oslash;res og hva som er gjort med tanke p&aring; formell og uformell evaluering av prosess.
+</li>
+            
+                </ol>
+
+                <p>Innholdet m&aring; i hovedsak v&aelig;re klart mandag 10.mars. Vi ber om utsettelse til 14.mars for innlevering.
+</p>
+            
+                <p>Transkriberingene tikker inn.
+</p>
+            
+                <p>Vi m&aring; passe p&aring; &aring; s&oslash;ke om FoU tid til fortsettelse av prosjektet.
+</p>
+            
+                <p>b&oslash;rre s
+</p>
+            
+                <p>
+              
+                  <br>
+
+                </p>
+
+                <ul>
+              
+                  <li> 
+                    <b>10.mars</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, Terje, B&oslash;rre
+</p>
+            
+                <p>Status artikkel.
+</p>
+            
+                <p>Litt diskusjon om struktur.
+</p>
+            
+                <p>Vi m&aring; passe p&aring; &aring; s&oslash;ke om FoU tid til fortsettelse av prosjektet(bs).
+</p>
+            
+                <p>Vi m&aring; lage vevside for prosjektet og fylle ut skjema i forbindelse med Troms&oslash;-m&oslash;tet.
+</p>
+            
+                <p>b&oslash;rre s
+</p>
+            
+                <p>
+              
+                  <br>
+
+                </p>
+
+                <ul>
+              
+                  <li> 
+                    <b>7.april</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, Terje, B&oslash;rre
+</p>
+            
+                <p>F&oslash;lgende skal skje:
+</p>
+
+                <ol>
+              
+                  <li> Ekstern kurs (B&oslash;rre m&aring; ta seg sammen)
+</li>
+              
+                  <li> Samlerapport. Mari-Ann er redakt&oslash;r. Sier hva vi skal gj&oslash;re:
+<ol>
+                  
+                      <li> Vi skriver to intervjuanalyser hver. Fors&oslash;ksvis ferdig i april 
+</li>
+                
+                    </ol>
+
+                  </li>
+              
+                  <li> Metodebok. Terje skriver p&aring; delen om praktisk bruk av verkt&oslash;y
+</li>
+              
+                  <li> Webside for prosjektet. B&oslash;rre fyller inn noe mer.
+</li>
+              
+                  <li> H&aring;kon kontakter Pettersen/Lauv&aring;s om samarbeid
+</li>
+              
+                  <li> H&aring;kon anviser utbetaling av penger fr intervjutranskripssjon
+</li>
+              
+                  <li> Intervju av to hovedprosjektgrupper.
+<ol>
+                  
+                      <li>Terje og H&aring;kon intervjuer B&oslash;rres gruppe
+</li>
+                  
+                      <li>Terje og B&oslash;rre intervjuer H&aring;kons gruppe
+</li>
+                
+                    </ol>
+
+                  </li>
+            
+                </ol>
+
+                <p>b&oslash;rre s
+</p>
+            
+                <p>
+              
+                  <br>
+
+                </p>
+
+                <ul>
+              
+                  <li> 
+                    <b>20.mai</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, Terje, B&oslash;rre
+</p>
+            
+                <p>Fordeling av arbeid i forbindelse med presentasjon av prosjektet
+p&aring; personalm&oslash;tet.
+</p>
+            
+                <p>b&oslash;rre s
+</p>
+            
+                <p>
+              
+                  <br>
+
+                </p>
+
+                <ul>
+              
+                  <li> 
+                    <b>18.juni</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, Terje, B&oslash;rre
+</p>
+            
+                <p>Fordeling av arbeid i forbindelse med skriving av samlerapport.
+MA lager en ny wiki-side med disposison og arbeidsdeling.
+</p>
+            
+                <p>H&aring;ndbok lages etter, og p&aring; grunnlag av, samlerapporten.
+</p>
+            
+                <p>Minst 1 vitenskaplig rapport initieres underveis.
+</p>
+            
+                <p>Disponering av prosjektmidler tas opp etter sommeren.
+</p>
+            
+                <p>b&oslash;rre s
+</p>
+            
+                <p>
+              
+                  <br>
+
+                </p>
+
+                <ul>
+              
+                  <li> 
+                    <b>25.september</b>
+
+                  </li>
+            
+                </ul>
+
+                <p>Tilstede: Mari Ann, H&aring;kon, Terje, B&oslash;rre
+</p>
+            
+                <p>Planlegging av s&oslash;knad. Intern frist for f&oslash;rste runde 11.oktober.
+</p>
+            
+                <p>H&aring;kon og B&oslash;rre skriver utkast p&aring; grunnlag av m&oslash;tet.
+</p>
+            
+                <p>b&oslash;rre s
+</p>
+
+            
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+	
+              <div class="wxtimportwiki"></div>
+
+            </div>
+
+
+          </div>
+
+        </td>
+   
+	
+      </tr>
+	
+    </table>
+
+  </body>
+
+</html>

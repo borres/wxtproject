@@ -1,0 +1,28 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">root</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">main</span>"&gt;
+    &lt;<span class="tagname">h1</span>&gt;Halden&lt;/<span class="tagname">h1</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt fragment id="_summary"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">img</span> <span class="attname">style</span>="<span class="attvalue">float:left</span>" <span class="attname">src</span>="<span class="attvalue">halden.png</span>" <span class="attname">alt</span>="<span class="attvalue"> </span>"/&gt;
+    &lt;<span class="tagname">p</span>&gt;
+        Halden, earlier Fredrikshald, is the only city 
+        in Norway that is
+        mentioned in the Norwegian national ,4. verse.
+        <span class="process">&lt;?_wxt popfragment id="fragH1" text="antheme"?&gt;</span>
+    &lt;/<span class="tagname">p</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt importwiki dpath="/Nature" location="http://en.wikipedia.org/wiki/Halden"?&gt;</span>(from wikipedia)
+    &lt;/<span class="tagname">div</span>&gt;
+
+&lt;/<span class="tagname">div</span>&gt;&lt;!--<span class="comment"> main </span>--&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">pagesource</span>" <span class="attname">style</span>="<span class="attvalue">clear:both</span>"&gt;
+    Inspect source:
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt expand location="hcoded.txt"  title="halden.xml" 
+             sourcelocation="halden.xml" 
+             expanded="no" code="xmlcode"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">root</span>&gt;</pre>

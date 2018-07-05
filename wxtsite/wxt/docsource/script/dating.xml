@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Dating elements in the script</h1>
+<p>
+  All elements in the script may have a limited lifespan.
+  You can specify the first and last date for the element to be active.
+  This is controlled by two attributes that are not documented
+  for each element.
+</p>
+
+<p>Optional attributes for all elements in the script.</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>firstdate</strong></td>
+    <td>The first day this element will be used in a build process.</td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>lastdate</strong></td>
+    <td>The last day this element will be used in a build process</td>
+  </tr>
+</table>
+
+<p>The form of the attributes are: yyyy:mm:dd.
+  You may use one, both or none. If neither  is
+  present, the element is valid at all times.
+</p>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang-html"><![CDATA[<module name="Solutions" firstdate="2005:04:01"/>
+ 
+<module name="greetings" firstdate="2005:12:24" lastdate="2006:01:01"/>]]>
+</pre>
+
+
+</body>
+</html>

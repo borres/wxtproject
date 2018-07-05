@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" 
+[
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+	<OBJECT ID="mathplayer" CLASSID="clsid:32F66A20-7614-11D4-BD11-00104BD3F987"> 
+	<!--comment required to prevent this becoming an empty tag--></OBJECT>
+	<?IMPORT NAMESPACE="m" IMPLEMENTATION="#mathplayer" ?>
+
+	<title><?_wxt fragment id="_name"?></title>
+	<?_wxt fragment id="styles_and_scripts"?>
+</head>
+<body>
+	<div>
+	<?_wxt fragment id="banner"?>
+	</div>
+	<table class="mainpage">
+	<tr>
+
+	<td valign="top" width="120px">
+		<?_wxt modulemenu summary="no"?>
+	</td>
+
+	<td valign="top">
+		<h1>Introduction</h1>
+		<p>
+		Describing the Bezier function.
+		</p>
+		<hr/>
+		<!--[if IE]>
+		<p>Make sure you have installed mathPlayer.
+		Test (and install) at: <a href="http://www.dessci.com/en/products/mathplayer/check.htm">www.dessci.com/en/products/mathplayer/check.htm</a></p>
+		<hr/>
+		<![endif]-->
+
+		<p>
+		This is a demonstration of a some document manipulation.
+		The basic source is the file Bezier.odt. 
+		The link is here:<a href="Bezier.odt">Bezier.odt</a>. If you have Open Office installed, there
+		is a chance your browser will reckognize it and suggest that it is opened in Open Office Document Writer.
+		</p>
+		<p>
+		I do the following experiments with this file, Bezier.odt.
+		</p>
+		<ol>
+		<li>I export the file from Open Office as xhtml, see <a href="direct/BezierAuto.xhtml">BezierAuto.xhtml</a>
+		</li>
+		<li>I save the file from Open Office as pdf, see <a href="direct/BezierAuto.pdf">BezierAuto.pdf</a>
+		</li>
+		<li>I use WXT to extract pieces from the file, add some stuff, and build a web site,
+		see link Bezier in left menu. I also let WXT collect from the website, 
+		<a href="collected.xhtml">collected.xhtml</a>
+		and I let WXT apply <a href="http://www.princexml.com/">Prince</a> to  build PDF<a href="collected.pdf">collected.pdf</a>.
+				<hr/>
+		<div>
+		The script for this site is like this:
+		</div>
+		<div>
+		<?_wxt expand sourcelocation="script.xml" location="scriptsrc.txt" code="xmlcode"?>
+		</div>
+		<hr/>
+		</li>
+		</ol>
+
+		<p>I also add a few applets to the web modules, and I have written some stuff in HTML in an accessible editor,
+		like Notepad++ or Adobe Dreamweaver.
+		The applets are directly accessible from the net.
+		</p>
+		<p>
+		The quoted C-code in module <?_wxt xlink id="5 OpenGL"?> would in a normal situation be fetched from the actual programproject. 
+		Here it is simply pasted into the page, 
+		</p>
+		<p>
+		Please note that this is neither a demonstration of pedagogy nor mathematics, it is just a demonstration of
+		some of the features in WXT.
+		</p>
+		<p>
+		Do also note there are some restrictions on WXT's ability to handle OO-format. Essentially it is restricted to
+		headers, paragraphs, tables, images, formulas and lists. WXT does not replicate styling.
+		</p>
+
+	</td>
+   
+	</tr>
+	</table>
+	<div><?_wxt fragment id="footer"?></div>
+</body>
+</html>

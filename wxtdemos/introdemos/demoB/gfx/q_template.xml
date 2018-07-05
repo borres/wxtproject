@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title><?_wxt fragment id="_name"?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="GENERATOR" content="WXT"></meta>
+	<meta name="KEYWORDS" xmlcontent="WXT,XML,WebSite"/>
+	<link rel="STYLESHEET" href="template.css"/>
+	<link rel="STYLESHEET" href="wxtstyle.css"/>
+</head>
+
+<body>
+
+<!-- header -->
+<?_wxt fragment id="header"?>
+<!-- header -->
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<?_wxt modulemenu books="all"?>
+</div><!-- left menu -->
+
+<!-- content -->
+<div class="content">
+	<div class="collectable">
+		<h1><?_wxt importxml xpath="//h1[position()='1']"?></h1>
+		<fieldset class="ingress">
+		<legend>Ingress</legend>
+			<?_wxt importxml xpath="//div[@class='ingress']/*"?>
+		</fieldset>		
+
+		<div class="main">
+			<?_wxt importxml xpath="//div[@class='mainblock']/*"?>
+		</div>
+		</div>
+</div><!-- content -->
+
+
+<!-- footer -->
+<?_wxt fragment id="footer"?>
+<!-- footer -->
+
+
+</body>
+</html>

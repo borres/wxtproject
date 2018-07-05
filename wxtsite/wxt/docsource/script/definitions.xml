@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: definitions-element</h1>
+<p>
+    The wscript-element must contain one and only one <em>definitions</em> element.
+  The definitions element defines concepts which is used during a build process,
+  like <em>references</em>, <em>options</em>, <em>templates</em>, <em>transformations</em>, <em>commands</em>,
+  <em>pathfragments</em>, <em>fragments</em>.
+ </p>
+<pre class="mlcode">&lt;definitions anchor="" pubanchor=""&gt;
+  ...
+&lt;/definitions&gt;
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>anchor</strong> (optional)</td>
+    <td>A string that is a  path to a catalog. 
+	This value is available as a predefined pathfragment <em>_scriptanchor</em>.
+    Default value is the catalog that contains the script.
+    The latter is also available as predefined pathfragment: <em>_scriptcatalog</em>.
+	
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>pubanchor</strong> (optional)</td>
+    <td>A string that is an url to the catalog where this site is (going to be) published.
+    If defined, this is available as pathfragment: <em>_pubanchor</em>
+    </td>
+  </tr></table>
+<p>
+    The definitions element may contain any number of the following
+    elements, in any order:
+</p>
+<ul>
+    <li><?_wxt xlink id="Options"?></li>
+    <li><?_wxt xlink id="PathFragment"?></li>
+    <li><?_wxt xlink id="Fragment"?></li>
+	<li><?_wxt xlink id="Fragments"?></li>
+    <li><?_wxt xlink id="Author"?></li>
+	<li><?_wxt xlink id="Authors"?></li>	
+	<li><?_wxt xlink id="Images"?></li>
+	<li><?_wxt xlink id="Formulas"?></li>
+	<li><?_wxt xlink id="ODTFormulas"?></li>
+    <li><?_wxt xlink id="Template"?></li>
+    <li><?_wxt xlink id="Transformation"?></li>
+    <li><?_wxt xlink id="Command"?></li>
+    <li><?_wxt xlink id="References"?></li>
+    <li><?_wxt xlink id="Addressing"?></li>
+</ul>
+<p>and one element of type: <?_wxt xlink id="Logfile"?></p>
+
+
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang-html">
+<![CDATA[<definitions>
+   <pathfragment id="commons" value="../commons"/>
+   <template name="T" location="${commons}/p-template.xml"/>
+</definitions>
+]]>
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">xs:schema</span> <span class="attname">xmlns:xs</span>="<span class="attvalue">http://www.w3.org/2001/XMLSchema</span>"&gt;
+    &lt;<span class="tagname">xs:element</span> <span class="attname">name</span>="<span class="attvalue">image</span>"&gt;
+        &lt;<span class="tagname">xs:complexType</span>&gt;
+            &lt;<span class="tagname">xs:choice</span> <span class="attname">maxOccurs</span>="<span class="attvalue">unbounded</span>"&gt;
+                &lt;<span class="tagname">xs:element</span> <span class="attname">name</span>="<span class="attvalue">location</span>"/&gt;
+                &lt;<span class="tagname">xs:element</span> <span class="attname">name</span>="<span class="attvalue">link</span>" <span class="attname">minOccurs</span>="<span class="attvalue">0</span>" <span class="attname">maxOccurs</span>="<span class="attvalue">1</span>"/&gt;
+                &lt;<span class="tagname">xs:element</span> <span class="attname">name</span>="<span class="attvalue">width</span>" <span class="attname">minOccurs</span>="<span class="attvalue">0</span>" <span class="attname">maxOccurs</span>="<span class="attvalue">1</span>"/&gt;
+                &lt;<span class="tagname">xs:element</span> <span class="attname">name</span>="<span class="attvalue">height</span>" <span class="attname">minOccurs</span>="<span class="attvalue">0</span>" <span class="attname">maxOccurs</span>="<span class="attvalue">1</span>"/&gt;
+                &lt;<span class="tagname">xs:element</span> <span class="attname">name</span>="<span class="attvalue">subtext</span>" <span class="attname">minOccurs</span>="<span class="attvalue">0</span>" <span class="attname">maxOccurs</span>="<span class="attvalue">1</span>"/&gt;
+                &lt;<span class="tagname">xs:element</span> <span class="attname">name</span>="<span class="attvalue">alt</span>" <span class="attname">minOccurs</span>="<span class="attvalue">0</span>" <span class="attname">maxOccurs</span>="<span class="attvalue">1</span>"/&gt;
+            &lt;/<span class="tagname">choice</span>&gt;
+            &lt;<span class="tagname">xs:attribute</span> <span class="attname">name</span>="<span class="attvalue">id</span>" <span class="attname">type</span>="<span class="attvalue">xs:string</span>"/&gt;
+        &lt;/<span class="tagname">complexType</span>&gt;
+    &lt;/<span class="tagname">element</span>&gt;
+  &lt;<span class="tagname">xs:element</span> <span class="attname">name</span>="<span class="attvalue">images</span>"&gt;
+    &lt;<span class="tagname">xs:complexType</span>&gt;
+      &lt;<span class="tagname">xs:choice</span> <span class="attname">maxOccurs</span>="<span class="attvalue">unbounded</span>"&gt;
+        &lt;<span class="tagname">xs:element</span> <span class="attname">ref</span>="<span class="attvalue">image</span>" <span class="attname">minOccurs</span>="<span class="attvalue">1</span>" <span class="attname">maxOccurs</span>="<span class="attvalue">unbounded</span>"/&gt;
+      &lt;/<span class="tagname">choice</span>&gt;
+      &lt;<span class="tagname">xs:attribute</span> <span class="attname">name</span>="<span class="attvalue">catalog</span>" <span class="attname">type</span>="<span class="attvalue">xs:string</span>" <span class="attname">use</span>="<span class="attvalue">optional</span>"/&gt;
+    &lt;/<span class="tagname">complexType</span>&gt;
+  &lt;/<span class="tagname">element</span>&gt;
+&lt;/<span class="tagname">schema</span>&gt;</pre>

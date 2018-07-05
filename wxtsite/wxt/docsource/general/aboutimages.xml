@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Images</h1>
+<p>
+ When you use illustrations in your material, you will normally do it the straight forward way
+ by introducing <em>img</em>-tags. But WXT offers an option that makes it simple to
+ administrate many images in a simple way.
+</p>
+<p>
+ You may prepare one or more files that describes images, see <?_wxt xlink id="Images"?>,
+ and use these images simply by using a image PI, see <?_wxt xlink id="PIimage"?>.
+The image PI also lets you define images for reuse and imagelists "on the fly". 
+</p>
+<p>
+ All defined images, either by an images-file or by an image PI, may be selected for imagelists, <?_wxt xlink id="PIimagelist"?>. 
+ An imagelist  is a list of thumbe that may be expanded by mousenter.
+</p>
+<p>
+An image file is validated according to the following scheme:
+</p>
+<div>
+<?_wxt importtxt location="images.xsd" lang="lang-xml"?>
+</div>
+<p>
+ The addresses , <em>location</em> - attribute of the images are supposed to be correct relative to the file.
+ This may be changed by the <em>catalog</em> attribute in the root element images.
+</p>
+<p>
+ A sample image file:
+</p>
+<div>
+<?_wxt importtxt location="../script/samples/myimages.xml" lang="lang-xml"?>
+</div>
+
+
+</body>
+</html>

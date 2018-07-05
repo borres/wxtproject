@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" 
+[
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+	<title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="../commons/wxtstyle.css"/>
+	<link rel="STYLESHEET" href="mathstyles.css"/>
+	<script type="text/javascript" src="../commons/prototype.js"> </script>
+	<script type="text/javascript" src="../commons/wxtjs.js"> </script>
+</head>
+
+<body>   
+	<table>
+	<tr>
+	<td valign="top" style="width:160px">
+		<?_wxt modulemenu summary="no"?>
+		<div style="margin-left:20px; margin-top:20px">
+		</div>
+	</td>
+
+	<td valign="top">
+	<?_wxt importxml xpath="//div[@class='content']"?>
+	</td>
+   
+	</tr>
+	</table>
+</body>
+</html>

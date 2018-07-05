@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Code</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="../script/start.html" title="Script">Script</a>
+</div>
+<div class="level2">
+<a href="../pi/start.html" title="PI">PI</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Concepts">Concepts</a>
+</div>
+<div class="level3">
+<a href="styles.html" title="Styles">Styles</a>
+</div>
+<div class="level3 wxtselected">Code</div>
+<div class="level3">
+<a href="aboutreferences.html" title="References">References</a>
+</div>
+<div class="level3">
+<a href="aboutformulas.html" title="Formulas">Formulas</a>
+</div>
+<div class="level3">
+<a href="aboutimages.html" title="Images">Images</a>
+</div>
+<div class="level3">
+<a href="aboutfragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level3">
+<a href="javascript.html" title="Javascript">Javascript</a>
+</div>
+<div class="level3">
+<a href="xpath.html" title="XPath">XPath</a>
+</div>
+<div class="level3">
+<a href="cssselector.html" title="CSSselect">CSSselect</a>
+</div>
+<div class="level3">
+<a href="publication.html" title="Publication">Publication</a>
+</div>
+<div class="level3">
+<a href="references.html" title="References">References</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Code Fragments</h1>
+<p>
+ WXT offers to colorcode or "prettprint" some languages, mainly programcode.
+ This is achived with two diffrenet mechanismes:
+ </p>
+<ul>
+ <li>Google's prettyprint<span class="wxtref" title="Google Code Prettyfy | https://github.com/google/code-prettify">
+<a href="https://github.com/google/code-prettify"> [18] </a>
+</span>. This is the preferred tool since it is flexible and fast. Depends on Javascript</li>
+ <li>WXT's own codeparser. This is necessary if the material is not shown in a web-browser as HTML.</li>
+ </ul>
+<p>
+  Which tool to use depends on the option <em>preformat-language</em>. If <em>preformat-language</em> is set to <em>yes</em> WXT's parser is used, otherwise Google's prettyprint is used.
+  <em>no</em> is default. The reason for using WXT's preformatting is normally to prepare for
+  PDF-conversion.
+ </p>
+<h2>Google prettyprint</h2>
+<p>
+  This tool is described in Google Code Prettify <span class="wxtref" title="Google Code Prettyfy | https://github.com/google/code-prettify">
+<a href="https://github.com/google/code-prettify"> [18] </a>
+</span>.
+  To make this work you must download and include the necessary javascriptcode in your templates. See source of this page
+  to get the idea.
+ </p>
+<p>
+  You must also define and, if you like, redefine the  styles to get the result you want.
+  The original styles from google, as of june 2010, is set up like this:
+ </p>
+<div>
+ <pre class="lang-css readyandpretty skiptranslate">
+<span class="com">/* Pretty printing styles. Used with prettify.js. */</span>
+.str { <span class="kwd">color</span>: #080; }
+.kwd { <span class="kwd">color</span>: #008; }
+.com { <span class="kwd">color</span>: #800; }
+.typ { <span class="kwd">color</span>: #606; }
+.lit { <span class="kwd">color</span>: #066; }
+.pun { <span class="kwd">color</span>: #660; }
+.pln { <span class="kwd">color</span>: #000; }
+.tag { <span class="kwd">color</span>: #008; }
+.atn { <span class="kwd">color</span>: #606; }
+.atv { <span class="kwd">color</span>: #080; }
+.dec { <span class="kwd">color</span>: #606; }
+<span class="atn">pre</span>.prettyprint { <span class="kwd">padding</span>: 2px; <span class="kwd">border</span>: 1px solid #888 }
+<span class="com">/* Specify class=linenums on a pre to get line numbering */</span>
+<span class="atn">ol</span>.linenums { <span class="kwd">margin-top</span>: 0; <span class="kwd">margin-bottom</span>: 0 } <span class="com">/* IE indents via margin-left */</span>
+<span class="atn">li</span>.L0,
+<span class="atn">li</span>.L1,
+<span class="atn">li</span>.L2,
+<span class="atn">li</span>.L3,
+<span class="atn">li</span>.L5,
+<span class="atn">li</span>.L6,
+<span class="atn">li</span>.L7,
+<span class="atn">li</span>.L8 { <span class="kwd">list-style-type</span>: none }
+<span class="com">/* Alternate shading for lines */</span>
+<span class="atn">li</span>.L1,
+<span class="atn">li</span>.L3,
+<span class="atn">li</span>.L5,
+<span class="atn">li</span>.L7,
+<span class="atn">li</span>.L9 { <span class="kwd">background</span>: #eee }
+@media print {
+  .str { <span class="kwd">color</span>: #060; }
+  .kwd { <span class="kwd">color</span>: #006; <span class="kwd">font-weight</span>: bold; }
+  .com { <span class="kwd">color</span>: #600; <span class="kwd">font-style</span>: italic; }
+  .typ { <span class="kwd">color</span>: #404; <span class="kwd">font-weight</span>: bold; }
+  .lit { <span class="kwd">color</span>: #044; }
+  .pun { <span class="kwd">color</span>: #440; }
+  .pln { <span class="kwd">color</span>: #000; }
+  .tag { <span class="kwd">color</span>: #006; <span class="kwd">font-weight</span>: bold; }
+  .atn { <span class="kwd">color</span>: #404; }
+  .atv { <span class="kwd">color</span>: #060; }
+}
+</pre>
+ </div>
+<p>
+  You will seeom the discussion of styles, <span class="wxtxlink">
+<a href="styles.html" title="Styles">Styles</a>
+</span>, that the standard stylesheet distrubuted with WXT
+  have modified this.
+ </p>
+<p>
+ You may achieve colorcoding in two ways:
+</p>
+<h3>Directly</h3>
+<p>You may simply put the following code on your page:</p>
+<pre class="lang readyandpretty skiptranslate">
+
+&lt;pre class="prettyprint lang-js"&gt;
+&lt;![CDATA[
+function simplepopup(theURL,wname,wstyle)
+{
+    // just a sample function
+  try{
+      newwindow=window.open(theURL, wname, wstyle);
+      if (window.focus) {newwindow.focus()}
+    }
+    catch(E){
+      alert('You may have blocked popups');
+    }
+  }]]&gt;
+&lt;/pre&gt;
+</pre>
+<div>to achieve this:</div>
+<pre class="lang-js readyandpretty skiptranslate">
+
+<span class="kwd">function</span> simplepopup(theURL,wname,wstyle)
+{
+    <span class="com">// just a sample function</span>
+  <span class="kwd">try</span>{
+      newwindow=window.open(theURL, wname, wstyle);
+      <span class="kwd">if</span> (window.focus) {newwindow.focus()}
+    }
+    <span class="kwd">catch</span>(E){
+      alert('<span class="str">You may have blocked popups'</span>);
+    }
+  }
+</pre>
+<h3>With a PI</h3>
+<div>
+You may import files ,or fragments from files, and get them colorcoded with the following PIs:
+<em>importtxt</em>, <em>expandable</em>, <em>popup</em>.
+</div>
+<div>You may put this on your page:</div>
+<pre class="lang readyandpretty skiptranslate">
+
+&lt;div&gt;
+&lt;?_wxt importtxt location="wxtjs.js" 
+       leftpar="//popup" rightpar="//eofpopup" lang="lang-js"?&gt;
+&lt;/div&gt;
+</pre>
+<div>to achive this:</div>
+<div>
+<pre class="prettyprint lang-js" id="codefragments17"/>
+</div>
+<h2>WXTs codeparser</h2>
+<p>
+  WXT has its own codeparser that prepares all material on the webpages before they reach the browser. That is it is not
+  dependant of javascript. WXT's parser is more limited that the general Google-concept.
+  It supports the following langages:
+ </p>
+<ul>
+	<li>lang-j (java)</li>
+	<li>lang-js (javascript)</li>
+	<li>lang-c (c)</li>
+	<li>lang-cpp (c++)</li>
+	<li>lang-csh (c#)</li>
+	<li>lang-css (Cascading Style Sheets)</li>
+	<li>lang-xml (XML)</li>
+	<li>lang-sql (SQL)</li>
+	<li>lang-aspx (ASPX)</li>
+	<li>lang-cs3 (actionscript)</li>
+	<li>lang-mal (matlab)</li>
+	<li>lang-py (python)</li>
+	<li>lang (generic without colorencoding. All encoding defaults to this on failure on others)</li>
+	</ul>
+<p>
+  WXT's parser reads your material in the same way as Google's tool, and the examples above work the same way.
+ </p>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

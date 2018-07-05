@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>page1</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:ref and footnotes</h1>
+ <h2>What?</h2>
+<p>
+    Running short of meaningfull text, I turn to some <?_wxt ixword word="latin" comment="quotes"?> quotes
+    copied from <?_wxt ref id="latinquotes"?>. It may not be correct to use footnotes for translation,
+    it may be "Ad absurdum"<span class="fn">To the point of absurdity</span>, but it looks fine.
+    Like for instance "Extra ecclesiam nulla salus"
+    <span class="fn">Outside the Church [there is] No Salvation. (A phrase of much disputed significance in Roman Catholic theology)</span>
+    could be used in many situations outside the church.
+</p>
+<p>
+ Or if ypu are a teacher you could of course tell your students "Aut disce aut discede"<span class="fn">Either learn or leave</span>,
+ as you have always wanted.
+</p>
+<div style="display:none">
+<?_wxt ixword word="footnote" comment="translating latin quotes"?>
+</div>
+ 
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt popup location="page1_xml.html" sourcelocation="page1.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

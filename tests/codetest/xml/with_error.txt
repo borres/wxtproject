@@ -1,0 +1,24 @@
+<pre class="xmlcode">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;booklist&gt;
+  &lt;!-- something about each book --&gt;
+  &lt;book isbn=&quot;0-596-00292-0&quot; pages=&quot;600&quot;&gt;
+    &lt;title&gt;XML in a nutshell&lt;/title&gt;
+    &lt;course&gt;Programmering for web&lt;/course&gt;
+    &lt;category&gt;XML&lt;/category&gt;
+    &lt;author&gt;Elliot Rusty Harold and W. Scott Means&lt;/author&gt;
+    &lt;publisher&gt;OReilly&lt;/publisher&gt;
+    &lt;year&gt;2002&lt;/year&gt;
+    &lt;comment&gt;Ganske mer omfattende. God bok &lt;/comment&gt;
+  &lt;/book&gt;
+  &lt;!-- this is 
+  a multiline comment --&gt;
+  &lt;book isbn=&quot;0-201-76990-5&quot; pages=&quot;200&quot;&gt;
+    &lt;title&gt;The web wizards guide to XML&lt;/totle&gt;
+    &lt;course&gt;Programmering for web&lt;/course&gt;
+    &lt;category&gt;XML&lt;/category&gt;
+    &lt;author&gt;Cheryl M. Hughes&lt;/author&gt;
+    &lt;publisher&gt;Addison Wesley&lt;/publisher&gt;
+    &lt;year&gt;2003&lt;/year&gt;
+    &lt;comment&gt;Enkel og rett på sak og grei som oppslagsbok. Må suppleres med W3C-oppslag.&lt;/comment&gt;
+  &lt;/book&gt;
+&lt;/booklist&gt;</pre>

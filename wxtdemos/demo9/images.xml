@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<images catalog="images">
+<image id="bez1">
+	<location>bez1.gif</location>
+</image>
+<image id="BezierV">
+	<location>BezierV.gif</location>
+</image></images>

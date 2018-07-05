@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="source1">
+<p>Hallo dette er importert tekst pakket i en p-tag
+på en side som ikke er wellformet. Rammen mangler en div-tag.</p>
+
+<div class="source2">
+<p>Hallo dette er importert tekst pakket i en p-tag
+på en side som ikke er wellformet. Mangler slutt på p-tag
+</div>
+</root>

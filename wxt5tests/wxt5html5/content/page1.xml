@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<script src="skript3.js"> </script>
+<script src="skript5.js"> </script>
+
+<h1>Canvas</h1>
+ <p>
+   The HTML5 tags may not work properly in all browsers
+</p>
+
+<h2>Sinus</h2>
+<div style="width:400px;height:200px;background-color:yellow">
+<canvas id="c3" width="400" height="200">
+</canvas>
+</div>
+<div><button onclick="drawSinus('c3')">Sinus</button></div>
+
+<p>Javascriptet:</p>
+<div>
+<?_wxt expandable  location="skript3.js" lang="lang-js"?>
+</div>
+
+
+<h2>Animasjon</h2>
+<canvas id="c5" width="800" height="200">
+</canvas>
+<div><button onclick="drawHead('c5')">start</button></div>
+<p>Javascriptet:</p>
+<div>
+<?_wxt expandable location="skript5.js" lang="lang-js"?>
+</div>
+    
+<hr/>
+    
+
+<h2>Content for this page</h2>
+<div>
+<?_wxt expandable location="page1.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

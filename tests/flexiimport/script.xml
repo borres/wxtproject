@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      
+      <definitions>
+	    <option name="output-format" value="xhtml"/>
+        <template id="P" location="templates/p_template.xml"/>
+		<template id="B" location="templates/b_template.xml"/>
+		<template id="ODT" location="templates/odt_template.xml"/>
+		<formulas location="blocks/formula3.odt"/>
+		<transformation id="vindb1" location="dbvin1.xsl"/>
+		<transformation id="vindb2" location="dbvin2.xsl"/>
+     </definitions>
+	 
+    <module description="Welcome to importtest" location="index.html" 
+	        name="Welcome" template="P" books="all">
+        <xmlcontent location="blocks/b-index.xml"/>
+	</module>	 
+        
+    <module description="Import from ODT" location="odt1.xhtml" 
+	        name="ODT1" template="ODT" books="all">
+        <odfcontent id="1" location="blocks/doc1.odt"/>
+		<odfcontent location="blocks/formula3.odt"/>
+	</module>
+    <module description="From a WXT-module" location="wxt1.html" 
+	        name="From WXT" template="P" books="all">
+        <xmlcontent location="blocks/b-wxtmod1.xml"/>
+	</module>    
+    <module description="From WikiPedia" location="wiki1.html" 
+	        name="From Wiki" template="P" books="all">
+        <xmlcontent location="blocks/b-wikiped1.xml"/>
+	</module>     
+     <module description="From CGI" location="python1.html" 
+	        name="CGI" template="P" books="all">
+        <xmlcontent location="blocks/b-python.xml"/>
+	</module>
+	<!-- stealing a whole page -->
+     <module description="Getting a whole page" location="page.html" 
+	        name="Page" template="blocks/b-page.xml" books="all">
+        <xmlcontent location="blocks/b-page.xml"/>
+	</module>	
+     <module description="many xmlsource" location="manyxml.html" 
+	        name="ManyXML" template="P" books="all">
+     <xmlcontent location="blocks/b-multi.xml"/>
+	 <xmlcontent location="blocks/b-multi2.xml" id="2"/>
+	</module>	
+	<!-- from a blog -->
+     <module description="Getting blogentry" location="blogpage.html" 
+	        name="Blog" template="B" books="all">
+           <!-- <xmlcontent location="blocks/b-blogpage.xml" /> -->
+		   <xmlcontent location="http://newth.net/eirik/2009/12/13/leseplateguide/"/>
+	</module>	
+	</wscript>

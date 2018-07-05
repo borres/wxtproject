@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- any wellformed XML will do -->
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:expandable</h1>
+ <p>
+   Testing expandable for text and html
+</p>
+    
+<!-- simple text, as is -->
+<h2>Simple text</h2>
+<p>txt - as is </p>
+<div>
+<?_wxt expandable location="sonette.txt"?>
+</div>
+    
+
+<!-- extracted html, as is -->
+<h2>Extracted HTML</h2>
+<p>extracts from html-page - as is</p>
+<div>
+<?_wxt expandable location="sonette.html" 
+       leftpar="<!--start-->" rightpar="<!--stop-->"?>
+</div>
+    
+<!-- extracted html, parsed -->
+<h2>Extracted HTML</h2>
+<p>extracts from html-page - expanded </p>
+<div>
+<?_wxt expandable location="sonette.html" 
+       leftpar="<!--start-->" rightpar="<!--stop-->" expanded="yes"?>
+</div>
+    
+<!-- importing a fragment -->
+<h2>HTML as a fragment</h2>
+<p>importing a HTML fragment defined in the script</p>
+<div>
+<?_wxt expandable fragmentid="warning" ?>
+</div>
+    
+<!-- importing a google gadget as a fragment -->
+<h2>HTML as a fragment</h2>
+<p>importing a google gadget as a HTML fragment defined in the script</p>
+<div>
+<?_wxt expandable fragmentid="today" expanded="yes"?>
+</div>
+    
+<hr/>
+    
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+</root>

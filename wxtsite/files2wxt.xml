@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<project default="main">
+	   
+	<property name="dest" location="${siteroot}"/>
+
+    <property name="source" location="c:/wxtproject/wxt6/src/wxtresources/"/>
+    <property name="source2" location="c:/wxtproject/wxt6/usefull/"/>
+	
+<target name="main">
+    <copy file="${source}/fragments.xsd" tofile="${dest}/wxt/docsource/general/fragments.xsd"/>
+    <copy file="${source}/images.xsd" tofile="${dest}/wxt/docsource/general/images.xsd"/>
+    <copy file="${source}/wxtscript.xsd" tofile="${dest}/wxt/docsource/general/wxt6script.xsd"/>
+    <copy file="${source}/refs.xsd" tofile="${dest}/wxt/docsource/script/refs.xsd"/>
+	<copy file="${source}/formula.xsd" tofile="${dest}/wxt/docsource/general/formula.xsd"/>
+    
+    <copy file="${source2}/wxtstyle.css" tofile="${dest}/wxt/docsource/general/wxtstyle.css"/>
+    <copy file="${source2}/wxtjs.js" tofile="${dest}/wxt/docsource/general/wxtjs.js"/>
+ 
+  </target>
+</project>

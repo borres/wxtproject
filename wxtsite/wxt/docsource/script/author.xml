@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: author-element</h1>
+<p>
+  An author is used to define an author. <em>author</em> is an optional 
+  attribute in a module. The definition-element may contain any number of author-elements.
+ </p>
+<pre class="mlcode">
+  &lt;author id="" name=""&gt;...&lt;/author&gt;
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td valign="top"><strong>id</strong>(mandatory)</td>
+    <td>Any string that will identify this author.
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>name</strong>(mandatory)</td>
+    <td>The displayed name of the author.
+    </td>
+  </tr>
+</table>
+<p>
+ All modules are given a default author. You may 
+ set this by the id: <em>_default</em>:
+</p>
+<pre class="mlcode">
+  &lt;author id="_default" name="My self"/&gt;
+</pre>
+<p>
+ If default author is not set it defaults to: "Site author".
+</p>
+
+
+<p>Examples:</p>
+
+<pre class="prettyprint lang-html">
+  &lt;author id="bs" name="Børre Stenseth"/&gt;
+</pre>
+<p>or</p>
+<pre class="prettyprint lang-html">
+  &lt;author id="bs" name="Børre Stenseth"&gt;
+        &lt;![CDATA[
+    &lt;div style="font-weight:bold"&gt;
+        &lt;a href="http://www.a.b/mypage.html"&gt;homepage&lt;/a&gt;
+    &lt;/div&gt;
+     ]]&gt;
+&lt;/author&gt;
+</pre>
+
+
+
+</body>
+</html>
+

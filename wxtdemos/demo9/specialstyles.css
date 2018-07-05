@@ -1,0 +1,13 @@
+﻿table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 520px;}
+
+    th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    td{border-bottom: 1px solid #CCC;padding: 0 0.5em;   line-height: 170%;
+    }
+    td:first-child {}
+    td+td {	border-left: 1px solid #CCC;}
+
+
+
+
+math,mtr,mrow,mi,mn,mo{text-align:left}

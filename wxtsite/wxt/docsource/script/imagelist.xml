@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: images-element</h1>
+<p>
+ The purpose of this element is to administrate images.
+ Keep them in one or a few catalogs, and access them easily by id, with an image PI, see 
+ <?_wxt xlink id="PIimage"?>
+</p>
+<p>
+  The images-elements must be contained in the definitions-element.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<images location=""/>]]>
+</pre>
+
+
+<table cellpadding="10px">
+
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>An URI which is absolute or relative to the script anchor.
+	This is the location of a file with image descriptions, as below.
+    </td>
+  </tr>
+
+</table>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<images location="myimages.xml"/>]]>
+</pre>
+<p>
+A sample images file:
+</p>
+<div>
+<?_wxt expandable location="samples/myimages.xml"  lang="lang-xml" title="myimages.xml"?>
+</div>
+<p>
+The catalog-attribute is optional. If not included the catalog containg the file
+is used as anchor. Note also that image locations may be absolute.
+</p>
+<p>
+You may specify a link-attribute. The link is any URI, for instance the location of another image that appears on mouseclick.
+</p>
+<p>
+You may also specify width, height, and alt elements in an image.
+</p>
+<p>
+ See <?_wxt xlink id="aboutimages"?> for a full description.
+</p>
+<p>
+ Images files are validated according to this schema:
+</p>
+<div>
+<?_wxt expandable location="images.xsd"  lang="lang-xml" title="images.xsd"?>
+</div>
+</body>
+</html>

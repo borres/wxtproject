@@ -1,0 +1,98 @@
+@media screen{ 
+body {
+	/*background: url(layout_grid.gif) top left no-repeat;*/
+	color: black;
+	background-color:white;
+	font-family:Georgia,'Times New Roman',times,serif;
+	font-size: 11px;
+	line-height: 120%;
+	text-align:left;
+	margin:0px;
+	margin-right:5px;
+	padding:0px;
+}
+p,div,td,th{	
+    color: black;
+	font-family:Georgia,'Times New Roman',times,serif;
+	font-size: 11px;
+	line-height: 150%;
+	text-align:left;
+	margin:0px;
+	margin-right:5px;
+	padding-bottom:10px;
+  }
+th{font-weight:bold}
+
+h2{padding-top:10px;padding-bottom:10px;background-color:#EEE8CD}
+
+img{padding:5px}
+
+ul{list-style-position:outside}
+
+.svnaddress{color:green;font-style:italic}
+
+
+
+div#logo{position:absolute;left:0px;top:10px}
+div#banner{height:55px;border-bottom:solid;border-width:thin;background-color:#EEE8CD}
+div#banner .topright{font-size:14px;line-height:120%;font-weight:bold;text-align:right;}
+div#banner .sitename{margin-left:120px;font-size:20px;line-height:120%;font-weight:bold;text-align:left;}
+
+fieldset{background-color:#FAFAFA}
+
+.intro{margin:10px}
+.intro{margin-top:10px}
+.intro legend{font-weight:bold}
+.intro fieldset{padding:10px}
+.ingress{margin-top:10px}
+
+td#menu{		 
+		border-width:thin;
+		width:120px; 
+		background-color:#EEE8CD
+		}
+.content{
+		border-left:solid; 
+		border-width:thin; 
+		padding:5px
+		}
+
+
+
+.references{margin-top:10px}
+.references legend{font-weight:bold}
+.references fieldset{padding:10px}
+
+.maintainance{margin-top:10px}
+.maintainance legend{font-weight:bold}
+.maintainance fieldset{padding:10px}
+
+.rating{margin-top:10px}
+.rating legend{font-weight:bold}
+.rating fieldset{padding:10px}
+
+.leftfooter{width:100px}
+
+.footer{border-top:solid;border-width:thin;padding-top:10px;background-color:white;padding-left:5px}
+.footer table{width:100%}
+td#_navigate{width:100px}
+td#_card{width:100px}
+td#_wxt{text-align:center;width:20%}
+td#_validate{text-align:right;width:20%}
+
+.hiddenwords,.hiddenrefs{display:none}
+
+}
+
+@media print{
+	#menu{display:none}
+	#footer{display:none}
+	#banner{display:none}
+	.rating,.maintainance,.footer,.hiddenwords,.localtoc{display:none}
+}
+@media projection{
+	#menu{display:none}
+	#footer{display:none}
+	#banner{display:none}
+	.rating,.maintainance,.footer,.hiddenwords{display:none}
+}

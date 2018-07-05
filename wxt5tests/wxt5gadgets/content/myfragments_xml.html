@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="skiptranslate prettyprint lang-xml" id="welcome2">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fragments&gt;
+    &lt;!-- simple HTML --&gt;
+    &lt;fragment id="warning"&gt;
+    &lt;![CDATA[
+    &lt;div style="border-style:solid;padding:10px;color:red"&gt;
+    WARNING: There is always an other bug
+    &lt;/div&gt;
+    ]]&gt;
+    &lt;/fragment&gt;
+    &lt;!-- youtube fragment --&gt;
+    &lt;fragment id="tombola"&gt;
+    &lt;![CDATA[
+    &lt;object width="480" height="385"&gt;&lt;param name="movie" value="http://www.youtube.com/v/ZlSm-wMf2yk&amp;hl=en_US&amp;fs=1&amp;rel=0"&gt;&lt;/param&gt;&lt;param name="allowFullScreen" value="true"&gt;&lt;/param&gt;&lt;param name="allowscriptaccess" value="always"&gt;&lt;/param&gt;&lt;embed src="http://www.youtube.com/v/ZlSm-wMf2yk&amp;hl=en_US&amp;fs=1&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"&gt;&lt;/embed&gt;&lt;/object&gt;
+    ]]&gt;
+    &lt;/fragment&gt;
+    
+    &lt;!-- today google gadget fragment --&gt;
+    &lt;fragment id="today"&gt;
+    &lt;![CDATA[
+    &lt;script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/datetime_v2/datetime_v2.xml&amp;amp;up_color=blue&amp;amp;up_dateFormat=wdm&amp;amp;up_firstDay=1&amp;amp;up_clocks=%5B%5B-73.986951%2C40.756054%2C%22New%20York%22%2C0%5D%5D&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=148&amp;amp;&amp;amp;lang=no&amp;amp;country=ALL&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js"&gt; &lt;/script&gt;
+    ]]&gt;
+    &lt;/fragment&gt;    
+    
+    
+    &lt;!-- yourip google gadget fragment --&gt;
+    &lt;fragment id="yourip"&gt;
+    &lt;![CDATA[
+    &lt;script src="http://www.gmodules.com/ig/ifr?url=http://www.padfiles.net/GoogleGadgets/YourIP.xml&amp;amp;synd=open&amp;amp;w=320&amp;amp;h=100&amp;amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;amp;output=js"&gt; &lt;/script&gt;
+    ]]&gt;
+    &lt;/fragment&gt;    
+    &lt;!-- mapsearch google gadget fragment --&gt;
+    &lt;fragment id="mapsearch"&gt;
+    &lt;![CDATA[
+    &lt;script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/uds/modules/elements/localsearch/localsearch.xml&amp;amp;up_location=&amp;amp;up_largeMapMode=1&amp;amp;up_kml=0&amp;amp;up_traffic=&amp;amp;up_locationCacheString=&amp;amp;up_locationCacheLat=59.15&amp;amp;up_locationCacheLng=11.383333&amp;amp;up_mapType=m&amp;amp;up_idleZoom=11&amp;amp;up_transitionQuery=&amp;amp;up_rawquery=&amp;amp;up_selectedtext=&amp;amp;synd=open&amp;amp;w=446&amp;amp;h=383&amp;amp;lang=no&amp;amp;country=ALL&amp;amp;border=%23ffffff%7C0px%2C1px+solid+%23ffdd00%7C0px%2C2px+solid+%23ffdd33%7C0px%2C2px+solid+%23ffee99&amp;amp;output=js"&gt; &lt;/script&gt;
+    ]]&gt;
+    &lt;/fragment&gt;        
+    
+    &lt;!-- applet fragment --&gt;
+    &lt;fragment id="runner"&gt;
+    &lt;![CDATA[&lt;!--[if !IE]&gt;--&gt;
+        &lt;object classid="java:a3dwalker.class" height="200" type="application/x-java-applet" width="130"&gt;
+            &lt;param name="codebase" value="content/stuff/Fa3dwalker/"/&gt;
+            &lt;!--&lt;![endif]--&gt;
+                &lt;object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" height="200" width="130"&gt; 
+                 &lt;param name="codebase" value="content/stuff/Fa3dwalker/"/&gt;
+                 &lt;param name="code" value="a3dwalker.class"/&gt;
+                &lt;/object&gt; 
+            &lt;!--[if !IE]&gt;--&gt;
+                  &lt;/object&gt;
+            &lt;!--&lt;![endif]--&gt;
+    ]]&gt;
+    &lt;/fragment&gt;
+    
+&lt;/fragments&gt;</pre></body>
+</html>

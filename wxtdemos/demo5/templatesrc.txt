@@ -1,0 +1,18 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+            "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"&gt;
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+  &lt;<span class="tagname">meta</span> <span class="attname">http-equiv</span>="<span class="attvalue">Content-Type</span>" <span class="attname">content</span>="<span class="attvalue">text/html; charset=utf-8</span>"/&gt;
+  &lt;<span class="tagname">title</span>&gt;<span class="process">&lt;?_wxt fragment id="_name"?&gt;</span>&lt;/<span class="tagname">title</span>&gt;
+  &lt;<span class="tagname">link</span> <span class="attname">rel</span>="<span class="attvalue">STYLESHEET</span>" <span class="attname">href</span>="<span class="attvalue">../commons/wxtstyle.css</span>"/&gt;
+  &lt;<span class="tagname">link</span> <span class="attname">rel</span>="<span class="attvalue">STYLESHEET</span>" <span class="attname">href</span>="<span class="attvalue">mathstyles.css</span>"/&gt;
+  &lt;<span class="tagname">script</span> <span class="attname">type</span>="<span class="attvalue">text/javascript</span>" <span class="attname">src</span>="<span class="attvalue">../commons/prototype.js</span>"&gt; &lt;/<span class="tagname">script</span>&gt;
+  &lt;<span class="tagname">script</span> <span class="attname">type</span>="<span class="attvalue">text/javascript</span>" <span class="attname">src</span>="<span class="attvalue">../commons/wxtjs.js</span>"&gt; &lt;/<span class="tagname">script</span>&gt;
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;   
+  &lt;<span class="tagname">div</span> <span class="attname">style</span>="<span class="attvalue">margin-left:30px</span>"&gt;
+  <span class="process">&lt;?_wxt importxml xpath="//div[@class='content']"?&gt;</span>
+  &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

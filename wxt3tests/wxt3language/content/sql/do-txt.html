@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="lang-sql readyandpretty skiptranslate">
+<span class="com">#sentence 1</span>
+<span class="kwd">SELECT</span> h_lag_id,b_lag_id,h_maal,b_maal,kamp_dato 
+                 <span class="kwd">FROM</span> kamp <span class="kwd">WHERE</span> liga_id='<span class="str">eng1'</span>;
+<span class="com">/*
+Some other sentences
+coming
+*/</span>
+<span class="kwd">SELECT</span> h_lag_id,b_lag_id,h_maal,b_maal,kamp_dato 
+                <span class="kwd">FROM</span> kamp <span class="kwd">WHERE</span> liga_id='<span class="str">eng1'</span> <span class="kwd">AND</span> b_lag_id='<span class="str">manu'</span>;
+<span class="kwd">SELECT</span> h_lag_id,b_lag_id,h_maal,b_maal,kamp_dato  
+                 <span class="kwd">FROM</span> kamp <span class="kwd">WHERE</span> liga_id='<span class="str">eng1'</span> <span class="kwd">AND</span> h_lag_id='<span class="str">manu'</span>;
+<span class="com">--  a final sentence                 </span>
+<span class="kwd">SELECT</span> h_lag_id,b_lag_id,h_maal,b_maal,kamp_dato  
+                 <span class="kwd">FROM</span> kamp <span class="kwd">WHERE</span> liga_id='<span class="str">eng'</span> <span class="kwd">AND</span> h_lag_id='<span class="str">manu'</span> 
+                 <span class="kwd">AND</span> b_lag_id='<span class="str">*'</span>;"<span class="str">"</span>"<span class="str">
+</span></pre></body>
+</html>

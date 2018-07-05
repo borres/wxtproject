@@ -1,0 +1,64 @@
+@page { size: A4;
+        margin: 100pt 40pt 40pt 90pt;
+        @top-left {
+         
+        }
+		
+        @top-right {
+            content: string(doctitle);
+            font-size:18px;
+        }
+        @bottom-right {
+          content: counter(page);
+            font-style: italic;
+            font-size:11px;
+          border-top-style:solid;
+          border-top-width:thin;
+        }
+        @bottom-left {
+          content:"Hovedprosjekt";
+            font-style: italic;
+            font-size:11px;
+          border-top-style:solid;
+          border-top-width:thin;
+        }
+}
+
+
+@page:first {
+        @top-left {
+            /* Legge til bilde */
+        }
+        @top-right {
+            content:"";
+            font-size:24px;
+        }
+}
+
+#heading{margin-top:40px;margin-bottom:50px;font-weight:bold;font-size:36px}
+
+h1 { font-size:30px; page-break-before:always; margin-bottom:0px; string-set:doctitle content(); }
+h2 {font-size:20px; page-break-before:always; margin-bottom:0px;}
+h3{font-size:16px; }
+h4{font-size:12px; }
+
+/*tAntall sider*/
+#maintoc a::after { content: leader(".") target-counter(attr(href), page); }
+
+
+
+
+
+.thumbinner{font-size:8px; color:green; float:left;}
+
+
+.center{page-break-before:always;}
+
+/* linking NB: sequence is important */
+a:link     {color:black;text-decoration:none}
+a:visited {color:black;text-decoration:none}
+a:hover   {color:black;text-decoration:none}
+a:active  {color:black;text-decoration:none}
+
+
+

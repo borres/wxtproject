@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>page1</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importwiki</h1>
+ 
+<p>Selecting material from 
+<a href="http://www.infoplease.com/ipa/A0107588.html" class="extrnal">
+http://www.infoplease.com/ipa/A0107588.html</a>.<br/>
+ 4 imports, 3 with with dpath and 1 with xpath. 
+ (overkill but hopefully of some use)
+</p>
+<!-- -->
+<h1>Greece</h1>
+<div>
+is a <?_wxt importwiki location="http://www.infoplease.com/ipa/A0107588.html" 
+       dpath="Government[p]"
+	   usecopy="yes"?>
+</div>
+<div>
+<?_wxt importwiki location="http://www.infoplease.com/ipa/A0107588.html" 
+       xpath="//img[@alt='Map of Greece']"
+	   usecopy="yes"?>
+</div>
+<div>
+<?_wxt importwiki location="http://www.infoplease.com/ipa/A0107588.html" 
+       dpath="History[h1]"
+	   usecopy="yes"?>
+</div>
+ 
+<div>
+<?_wxt importwiki location="http://www.infoplease.com/ipa/A0107588.html" 
+       xpath="//h1[.='History']/following-sibling::p[position() < '3']"
+	   usecopy="yes"?>
+</div>
+ 
+<div>
+<?_wxt importwiki location="http://www.infoplease.com/ipa/A0107588.html" 
+       dpath="Geography[h1,p]"
+	   usecopy="yes"?>
+</div>
+ 
+<hr/>
+ 
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page1.xml" 
+       lang="lang-xml"?>
+</div>
+ 
+</div> <!-- mainblock -->
+
+</body>
+</html>

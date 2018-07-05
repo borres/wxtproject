@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- import test 
+	  working with xml, html, html5, text
+	  -->
+      <definitions>
+	  <!--<option name="indent-output" value="yes"/>-->
+      <option name="output-format" value="html"/>
+	  <option name="tidy-input" value="yes"/>
+	  <option name="verbose" value="yes"/>
+	  <option name="preformat-language" value="yes"/>
+	  
+      <template id="P" location="templates/p_xmltemplate.xml"/>
+	  <template id="P5" location="templates/p_html5template.xml"/>
+	  <template id="P51" location="templates/p_html51template.xml"/>
+
+      <logfile location="buildlog.txt" />      
+     </definitions>
+        
+     <module description="Demonstration of text-import" location="index.html" 
+	        name="Welcome" id="welcome" template="P5" books="all">
+        <txtcontent location="content/welcome.txt"/>
+	</module>
+
+	<module description="More demonstration of text-import" location="page1.html" 
+	        name="Page1" id="page1" template="P51" books="all">
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+
+	<module description="Want to evaluate imported text" location="page2.html" 
+	        name="Page2" id="page2" template="P" books="all">
+        <xmlcontent location="content/page2.xml"/>
+	</module>
+	<!--    
+	 <module description="Incomplete content to be tidyed" location="page3.html" 
+	        name="Page3" id="page3" template="P5" books="all">
+        <xmlcontent location="content/page3.xml"/>
+	</module>
+	-->
+ </wscript>

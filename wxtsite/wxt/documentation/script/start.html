@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Script</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2 wxtselected">Script</div>
+<div class="level3">
+<a href="definitions.html" title="Definitions">Definitions</a>
+</div>
+<div class="level3">
+<a href="module.html" title="Module">Module</a>
+</div>
+<div class="level3">
+<a href="dating.html" title="*Dating">*Dating</a>
+</div>
+<div class="level2">
+<a href="../pi/start.html" title="PI">PI</a>
+</div>
+<div class="level2">
+<a href="../general/start.html" title="Concepts">Concepts</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>The Script</h1>
+<p>
+  The script is a XML-file.
+  All jobs that WXT can perform, small or big, must be described by a script.
+  The root element must be <em>wscript</em> and the only version is <em>1.0</em>.
+</p>
+<p>
+  The script consists of one <em>definitions</em> element,
+  and any number of <em>module</em> elements. A module is 
+  the basic unit built by WXT. A module is typically a webpage.
+</p>
+<p>
+  An outline of a WXT version 1.0 script:
+</p>
+<div>
+    <div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>demoscript.xml</div>
+<div class="content" style="display:none">
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tag">wscript</span> <span class="atn">version</span>="<span class="atv">1.0</span>"&gt;    
+&lt;<span class="tag">definitions</span>&gt;
+    &lt;<span class="tag">template</span> <span class="atn">id</span>="<span class="atv">P</span>" <span class="atn">location</span>="<span class="atv">p_template.xml</span>"/&gt;        
+    &lt;<span class="tag">command</span> <span class="atn">id</span>="<span class="atv">com1</span>" <span class="atn">line</span>="<span class="atv">${_scriptcatalog}/compdf.bat</span>"/&gt;        
+&lt;/<span class="tag">definitions</span>&gt;
+    
+&lt;<span class="tag">module</span> <span class="atn">name</span>="<span class="atv">Velkommen</span>" <span class="atn">template</span>="<span class="atv">P</span>" <span class="atn">location</span>="<span class="atv">index.html</span>"&gt;
+    &lt;<span class="tag">summary</span>&gt;
+        &lt;![CDATA[
+        &lt;p&gt;Welcome&lt;/p&gt;
+        &lt;img src="http://www.ia.hiof.no/~borres/self/self.gif"/&gt;
+        ]]&gt;
+    &lt;/<span class="tag">summary</span>&gt;
+    &lt;<span class="tag">xmlcontent</span> <span class="atn">location</span>="<span class="atv">velkommen.xml</span>"/&gt;
+    &lt;<span class="tag">module</span> <span class="atn">name</span>="<span class="atv">side1</span>" <span class="atn">books</span>="<span class="atv">all</span>" <span class="atn">template</span>="<span class="atv">P</span>" <span class="atn">location</span>="<span class="atv">side1.html</span>"&gt;
+        &lt;<span class="tag">xmlcontent</span> <span class="atn">location</span>="<span class="atv">side1.xml</span>"/&gt;
+    &lt;/<span class="tag">module</span>&gt;
+        
+    &lt;<span class="tag">module</span> <span class="atn">name</span>="<span class="atv">side2</span>" <span class="atn">books</span>="<span class="atv">all</span>" <span class="atn">template</span>="<span class="atv">P</span>" <span class="atn">location</span>="<span class="atv">side2.html</span>"&gt;
+        &lt;<span class="tag">xmlcontent</span> <span class="atn">location</span>="<span class="atv">side2.xml</span>"/&gt;
+    &lt;/<span class="tag">module</span>&gt;
+&lt;/<span class="tag">module</span>&gt;
+    
+&lt;<span class="tag">module</span> <span class="atn">name</span>="<span class="atv">vinbok</span>" <span class="atn">template</span>="<span class="atv">P</span>" <span class="atn">location</span>="<span class="atv">vinbok.html</span>" <span class="atn">runafter</span>="<span class="atv">com1</span>"&gt;
+    &lt;<span class="tag">xmlcontent</span> <span class="atn">location</span>="<span class="atv">vinbok.xml</span>"/&gt;
+&lt;/<span class="tag">module</span>&gt;
+&lt;/<span class="tag">wscript</span>&gt;</pre>
+</div>
+</div>
+</div>
+<p>
+   WXT scripts is validated according to the schema:
+</p>
+<div>
+    <div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>wxt6script.xsd</div>
+<div class="content" style="display:none">
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tag">xs:schema</span> <span class="atn">xmlns:xs</span>="<span class="atv">http://www.w3.org/2001/XMLSchema</span>"&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">transformation</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">fragment</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:simpleContent</span>&gt;
+                &lt;<span class="tag">xs:extension</span> <span class="atn">base</span>="<span class="atv">xs:string</span>"&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">encoding</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                                        &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">short</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                    &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+                &lt;/<span class="tag">xs:extension</span>&gt;
+            &lt;/<span class="tag">xs:simpleContent</span>&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">fragments</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:simpleContent</span>&gt;
+                &lt;<span class="tag">xs:extension</span> <span class="atn">base</span>="<span class="atv">xs:string</span>"&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">encoding</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                    &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+                &lt;/<span class="tag">xs:extension</span>&gt;
+            &lt;/<span class="tag">xs:simpleContent</span>&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;    
+        &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">author</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:simpleContent</span>&gt;
+                &lt;<span class="tag">xs:extension</span> <span class="atn">base</span>="<span class="atv">xs:string</span>"&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">encoding</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                                        &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">short</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                    &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+                &lt;/<span class="tag">xs:extension</span>&gt;
+            &lt;/<span class="tag">xs:simpleContent</span>&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;    
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">authors</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:simpleContent</span>&gt;
+                &lt;<span class="tag">xs:extension</span> <span class="atn">base</span>="<span class="atv">xs:string</span>"&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">encoding</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                    &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+                &lt;/<span class="tag">xs:extension</span>&gt;
+            &lt;/<span class="tag">xs:simpleContent</span>&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">summary</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:simpleContent</span>&gt;
+                &lt;<span class="tag">xs:extension</span> <span class="atn">base</span>="<span class="atv">xs:string</span>"&gt;
+                    &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                &lt;/<span class="tag">xs:extension</span>&gt;
+            &lt;/<span class="tag">xs:simpleContent</span>&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">template</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">xmlcontent</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">backuplocation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">transformation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">txtcontent</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">backuplocation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">transformation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">wikicontent</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">backuplocation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">transformation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">htmlcontent</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">backuplocation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">transformation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                        &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">dbcontent</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">connection</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">wscript</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:sequence</span>&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">definitions</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">module</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+            &lt;/<span class="tag">xs:sequence</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">version</span>" <span class="atn">use</span>="<span class="atv">required</span>"&gt;
+                &lt;<span class="tag">xs:simpleType</span>&gt;
+                    &lt;<span class="tag">xs:restriction</span> <span class="atn">base</span>="<span class="atv">xs:decimal</span>"&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">1.0</span>"/&gt;
+                    &lt;/<span class="tag">xs:restriction</span>&gt;
+                &lt;/<span class="tag">xs:simpleType</span>&gt;
+            &lt;/<span class="tag">xs:attribute</span>&gt;
+            &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">pathfragment</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">value</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">alternative</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">module</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:choice</span> <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">xmlcontent</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">xmlcontentlist</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">txtcontent</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">txtcontentlist</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">dbcontent</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">wikicontent</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">htmlcontent</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">module</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">modulelist</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">summary</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>"/&gt;
+            &lt;/<span class="tag">xs:choice</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">name</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                        &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">author</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">description</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">anchor</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">template</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">transformation</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">books</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">runbefore</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">runafter</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">output-format</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">xmlcontentlist</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">catalog</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">sourcesuffix</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">txtcontentlist</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">catalog</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">sourcesuffix</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">modulelist</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">catalog</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">template</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">sourcesuffix</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">targetsuffix</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">books</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+            &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">ref</span>="<span class="atv">dategroup</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">definitions</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:choice</span> <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">pathfragment</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">template</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">transformation</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">fragment</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">fragments</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">author</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">authors</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;                                
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">command</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">addressing</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">references</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">formulas</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">odtformulas</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">images</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">option</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">unbounded</span>"/&gt;
+                                &lt;<span class="tag">xs:element</span> <span class="atn">ref</span>="<span class="atv">logfile</span>" <span class="atn">minOccurs</span>="<span class="atv">0</span>" <span class="atn">maxOccurs</span>="<span class="atv">1</span>"/&gt;
+            &lt;/<span class="tag">xs:choice</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">anchor</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+                        &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">pubanchor</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">option</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">name</span>" <span class="atn">use</span>="<span class="atv">required</span>"&gt;
+            &lt;<span class="tag">xs:simpleType</span>&gt;
+            &lt;<span class="tag">xs:restriction</span> <span class="atn">base</span>="<span class="atv">xs:string</span>"&gt;
+            &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">color-code</span>"/&gt;
+            &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">expand-all</span>"/&gt;
+            &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">indent-output</span>"/&gt;
+            &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">default-encoding</span>"/&gt;
+            &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">output-format</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">reference-form</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">reference-indexing</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">use-copy</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">drop-books</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">preformat-language</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">tidy-input</span>"/&gt;
+                        &lt;<span class="tag">xs:enumeration</span> <span class="atn">value</span>="<span class="atv">verbose</span>"/&gt;
+            &lt;/<span class="tag">xs:restriction</span>&gt;
+            &lt;/<span class="tag">xs:simpleType</span>&gt;
+            &lt;/<span class="tag">xs:attribute</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">value</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">references</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">formulas</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">odtformulas</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+        &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">images</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">logfile</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">location</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">maxlog</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">command</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">id</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">line</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">wait</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:element</span> <span class="atn">name</span>="<span class="atv">addressing</span>"&gt;
+        &lt;<span class="tag">xs:complexType</span>&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">tag</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+            &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">attribute</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">required</span>"/&gt;
+                        &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">cancel</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+        &lt;/<span class="tag">xs:complexType</span>&gt;
+    &lt;/<span class="tag">xs:element</span>&gt;
+    &lt;<span class="tag">xs:attributeGroup</span> <span class="atn">name</span>="<span class="atv">dategroup</span>"&gt;
+        &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">firstdate</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+        &lt;<span class="tag">xs:attribute</span> <span class="atn">name</span>="<span class="atv">lastdate</span>" <span class="atn">type</span>="<span class="atv">xs:string</span>" <span class="atn">use</span>="<span class="atv">optional</span>"/&gt;
+    &lt;/<span class="tag">xs:attributeGroup</span>&gt;
+&lt;/<span class="tag">xs:schema</span>&gt;</pre>
+</div>
+</div>
+</div>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

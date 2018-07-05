@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>page1</title>
+</head>
+<body>
+
+<div id="title">Page1</div>
+
+       
+<div class="mainblock">
+<h1>Different sources</h1>
+ 
+<h2>Tiger predefined</h2>
+ 
+<div >
+<?_wxt image id="sib" location="images/siberian_tiger.jpg" 
+       height="300px" 
+	   subtext="Siberian tiger" 
+	   display="2"?>
+
+<?_wxt image id="sum" location="images/cubs.jpg" 
+       height="200px" 
+	   subtext="Four Sumatran tiger cubs make their first appearance at Paignton Zoo in Devon" 
+	   ?>
+</div>
+  
+<h2>Tiger from wikipedia</h2>
+<div>
+<?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       dpath="//Subspecies[img]"
+       keeprefs="yes" usecopy="yes"?>
+</div>
+ 
+<hr/>
+<p style="float:right">
+<?_wxt image id="bs1" display="1"?>
+</p>
+ 
+<div>
+<?_wxt expandable location="page1.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

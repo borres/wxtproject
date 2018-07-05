@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>HTML5</h1>
+ <p>
+   The HTML5 tags may not work properly in all browsers
+</p>
+<p>
+ There are some issues with HTML5 in WXT.</p>
+<p> WXT is built to rely mainly on wellformed XML-input. 
+  HTML5 does not have to be wellformed, but it can be.
+</p>
+<p>
+ WXT use tidy <?_wxt ref id="tidy"?> as a helper if it runs across malformed (X)HTML. 
+ Tidy does not work properly
+ with the new HTML5-tags.
+</p>
+<p>
+ HTML5 has some attribute that does not require values, example:
+</p>
+<pre class="prettyprint lang-xml">
+ <![CDATA[ <p contenteditable> write here </p> ]]>
+</pre>
+<p>
+ Any value assigned to contenteditable will turn it on, but it will not be validated as HTML5
+</p>
+    
+<hr/>
+    
+<h2>Script for this site</h2>
+<div>
+<?_wxt expandable location="../script.xml" lang="lang-xml"?>
+</div>
+<h2>Template for this page</h2>
+<div>
+<?_wxt expandable location="../../templates/p_template_html5.xml" lang="lang-xml"?>
+</div>
+<h2>Content for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Travelling</title>
+</head>
+
+<body>
+<div class="mainblock">
+<h1>Welcome</h1>
+<p>
+ to this site describing some nice places to travel.
+ </p>
+ <p>
+ Dont expect something like Lonely Planet. The idea is just to 
+ present a nontrivial site built by WXT.
+</p>
+
+</div>
+</body>
+</html>

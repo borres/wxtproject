@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">Welcome</div>
+<div class="level1">
+<a href="page1.xhtml" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">Page1</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">Page1</div>More demonstration of Open Office import</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importodf</h1>
+<p>
+   Testing import of material from Open Office textdocuments, 
+   <a class="external" href="http://www.openoffice.org/">OpenOffice.org</a>.
+   This is in an experimental stage and some work remains to be done.
+   The rawmaterial for this site is a Open Office file: <a href="content/doc1.odt">doc1.odt</a>
+</p>
+<h2>A section</h2>
+<div>
+<div class="wxtimportodf">
+<h3>Purpose</h3>
+<p>The idea is to give authors not familiar to XML and HTML a way of producing material for a website, or importing material from reports written in Open Office, or even material written in Microsoft Office, and converted to Open Office.</p>
+</div>
+</div>
+<h2>An other section</h2>
+<div>
+<div class="wxtimportodf">
+<h3>Limitations</h3>
+<p>This mechanism is not complete and free from faults. We can only deal with text, tables, images, lists and to some extent formulas. </p>
+<p>Formulas are at the present represented by MathML, which not all browsers are too happy with. </p>
+<p>The concept of «dpath» for selecting material from a flat documentstructure is not waterproof, but it works on simple constructs. </p>
+<p>WXT also assume that headings are style as Heading1, Heading2 etc</p>
+</div>
+</div>
+<h2>Images</h2>
+<p>Selecting only images</p>
+<div>
+<div class="wxtimportodf">
+<img alt="graphics1" class="image" src="odt_docs/Pictures/100002000000003C0000003B1C244F01.png" title="graphics1"/>
+<img alt="graphics2" class="image" src="odt_docs/Pictures/100002000000003F0000003D766622AA.png" title="graphics2"/>
+</div>
+</div>
+<h2>A section with list and image</h2>
+<p>Selecting list and image</p>
+<div>
+<div class="wxtimportodf">
+<ul class="odt-list">
+<li>
+<p>Barcelona – Real Madrid</p>
+</li>
+<li>
+<p>Camp Nou</p>
+</li>
+<li>
+<p>29.11.2010</p>
+</li>
+<li>
+<p>5 -0 </p>
+</li>
+</ul>
+<img alt="graphics3" class="image" src="odt_docs/Pictures/10000000000000BC000000B9BF8BAE2D.png" title="graphics3"/>
+</div>
+</div>
+<h2>A section with table and image and text</h2>
+<p>Selecting a section, no style for table</p>
+<div>
+<div class="wxtimportodf">
+<h3>Portraits</h3>
+<p>It also contain some portraits of the author</p>
+<p>samples</p>
+<table class="odt-table" id="Tabell2">
+<tr>
+<td>
+<img alt="bilder1" class="image" src="odt_docs/Pictures/100002000000003E0000003D26E65C0D.png" title="bilder1"/>
+</td>
+<td>
+<img alt="bilder2" class="image" src="odt_docs/Pictures/100002000000003D0000003D39F70A63.png" title="bilder2"/>
+</td>
+</tr>
+<tr>
+<td>
+<img alt="bilder3" class="image" src="odt_docs/Pictures/100002000000003F0000003D75CAF753.png" title="bilder3"/>
+</td>
+<td>
+<img alt="bilder4" class="image" src="odt_docs/Pictures/100002000000003F0000003D94D6DD00.png" title="bilder4"/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/welcome.xml</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="welcome3">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;welcome&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:importodf&lt;/h1&gt;
+&lt;p&gt;
+   Testing import of material from Open Office textdocuments, 
+   &lt;a href="http://www.openoffice.org/" class="external"&gt;OpenOffice.org&lt;/a&gt;.
+   This is in an experimental stage and some work remains to be done.
+   The rawmaterial for this site is a Open Office file: &lt;a href="doc1.odt"&gt;doc1.odt&lt;/a&gt;
+&lt;/p&gt;
+  
+&lt;!-- extract a header with following text --&gt;
+&lt;h2&gt;A section&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importodf location="doc1.odt" dpath="/*/Purpose"?&gt;
+&lt;/div&gt;
+  
+&lt;h2&gt;An other section&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importodf location="doc1.odt" dpath="/*/Limitations"?&gt;
+&lt;/div&gt;
+  
+&lt;h2&gt;Images&lt;/h2&gt;
+&lt;p&gt;Selecting only images&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt importodf location="doc1.odt" dpath="/*/Illustrations[img]"?&gt;
+&lt;/div&gt;
+  
+&lt;h2&gt;A section with list and image&lt;/h2&gt;
+&lt;p&gt;Selecting list and image&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt importodf location="doc1.odt" dpath="/*/El Classico[ul,img]"?&gt;
+&lt;/div&gt;
+ 
+&lt;h2&gt;A section with table and image and text&lt;/h2&gt;
+&lt;p&gt;Selecting a section, no style for table&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt importodf location="doc1.odt" dpath="/*/Portraits"?&gt;
+&lt;/div&gt;
+ 
+&lt;hr/&gt;
+  
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="welcome.xml" 
+       lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

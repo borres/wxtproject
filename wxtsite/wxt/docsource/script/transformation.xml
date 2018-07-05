@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: transformation-element</h1>
+<p>
+    A  transformation is any legal XSLT 1.0 transformation.
+   The purpose of a transformation element is to define id and location for a transformation.
+  Transformations are used in <?_wxt xlink id="Module"?>.
+  A definitions element may contain any number of transformation elements.
+
+ </p>
+<pre class="prettyprint lang"><![CDATA[<transformation id="" location=""/>]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong>(mandatory)</td>
+    <td>A string that will identify the transformation.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>An URI which is absolute or relative to the script.
+    <em>location</em> is corrected for pathfragments.
+    </td>
+  </tr>
+
+</table>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<transformation id="T1" location="mytrans.xsl"/>]]>
+</pre>
+
+
+</body>
+</html>

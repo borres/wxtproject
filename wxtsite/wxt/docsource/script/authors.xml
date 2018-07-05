@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: authors-element</h1>
+<p>
+  A authors-element is a reference to a file with authors.
+  The definition-element may contain any number of authors-elements.
+ </p>
+<pre class="mlcode">
+  &lt;authors location=""/&gt;
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td valign="top"><strong>location</strong>(mandatory)</td>
+    <td>Location of the file with authors. 
+    The location is corrected for pathfragments.
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>encoding</strong>(optional)</td>
+    <td>If not set, the encoding of the using module is assumed.
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang-html">
+  &lt;authors location="allauthors.xml"/&gt;
+</pre>
+<p>and the file, allauthors.xml may look like this:</p>
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;authors&gt;
+&lt;author id="ml" name="Mats Lund"&gt;Student 2005&lt;/author&gt;
+&lt;author id="jb" name="Jon Brown"&gt;
+&lt;![CDATA[
+    &lt;img src="http://www.a.b/self.gif" alt="self"/&gt;
+     ]]&gt;
+&lt;/author&gt;
+&lt;/authors&gt;
+</pre>
+
+<p>The content of a fragment element may be a simple text 
+or any legal XML-fragment wrapped as CDATA.
+</p>
+
+</body>
+</html>
+

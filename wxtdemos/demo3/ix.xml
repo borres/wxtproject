@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Indexes</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_ix.xml" 
+             sourcelocation="ix.xml" code="xmlcode"?>
+</div>
+<hr/>
+    <h2>ixwords</h2>
+    <div>
+        It is suprisingly many similarities between <?_wxt ixword word="Napoleon" category="person" comment="bad luck at Waterloo"?>
+        and my neighbour <?_wxt ixword word="Jensen" category="person" comment="neighbour"?>.
+    </div>
+    <hr/>
+    <h2>ixtable</h2>
+    <?_wxt ixtable category="person"?>
+    <hr/>
+   </div>
+</data>

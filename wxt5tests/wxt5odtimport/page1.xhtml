@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<OBJECT CLASSID="clsid:32F66A20-7614-11D4-BD11-00104BD3F987" ID="mathplayer"> <!--not empty--></OBJECT>
+	<?IMPORT NAMESPACE="m" IMPLEMENTATION="#mathplayer" ?>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>Math</title>
+
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('page11',event);" onmouseover="javascript:popunpop('page11',event);">Welcome</a>
+<div class="wxtsummary" id="page11" style="display: none;">
+<div class="header">Welcome</div>Demonstration of Open Office import</div>
+</div>
+<div class="level1">Page1</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importodf</h1>
+<p>
+   Testing import of math from Open Office textdocuments.
+   Math is now imported as MathML.
+</p>
+<p>
+ This is a rather shaky business for several reasons.
+</p>
+<ul>
+ <li>Not all browsers are able to display MathML. Internet Explorer needs a plugin.<br/>
+ <a class="external" href="http://www.dessci.com/en/products/mathplayer/download.htm">MathPlayer</a>.
+ Google Chrome does not like MathMl at all (?)</li>
+ <li>We must prepare the page (template) with a doctype that reckognize MathML</li>
+ <li>We must produce the page as XHTML.<br/> We achive this by an option in the WXT-script:
+ &lt;option name="output-format" value="xhtml"/&gt;,<br/> 
+ and by giving the resulting file extension XHTML</li>
+</ul>
+<div>
+ <span class="wxtpopup" onclick="javascript:simplepopup('content/m_template_xml.html','popup','*')" title="popup">Template for this page</span>
+ <span class="wxtpopup" onclick="javascript:simplepopup('content/script_xml.html','popup','*')" title="popup">Script for this site</span>
+</div>
+<p>
+ It is on the agenda for the WXT-project to render formulas as images, as an alternative.
+</p>
+<p>import1</p>
+<div>
+<div class="wxtimportodf">
+<h2>Bezier</h2>
+<span class="wxtformula">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>B</mi>
+<mrow>
+<mrow>
+<mo stretchy="false">(</mo>
+<mi>t</mi>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo stretchy="false">=</mo>
+<mrow>
+<munderover>
+<mo stretchy="false">∑</mo>
+<mrow>
+<mi>i</mi>
+<mo stretchy="false">=</mo>
+<mn>0</mn>
+</mrow>
+<mi>n</mi>
+</munderover>
+<msubsup>
+<mi>B</mi>
+<mi>i</mi>
+<mi>n</mi>
+</msubsup>
+</mrow>
+</mrow>
+<mrow>
+<msup>
+<mi>t</mi>
+<mi>i</mi>
+</msup>
+<msup>
+<mrow>
+<mo stretchy="false">(</mo>
+<mrow>
+<mn>1</mn>
+<mo stretchy="false">−</mo>
+<mi>t</mi>
+</mrow>
+<mo stretchy="false">)</mo>
+</mrow>
+<mrow>
+<mo stretchy="false">(</mo>
+<mrow>
+<mi>n</mi>
+<mo stretchy="false">−</mo>
+<mi>i</mi>
+</mrow>
+<mo stretchy="false">)</mo>
+</mrow>
+</msup>
+<msub>
+<mi>P</mi>
+<mi>i</mi>
+</msub>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</span>
+</div>
+</div>
+<p>import2</p>
+<div>
+<div class="wxtimportodf">
+<h2>Line</h2>
+<p>Let us look a straight line in a plane as a simple first example. </p>
+<img alt="graphics4" class="image" src="odt_docs/Pictures/1000020000000108000000B0CB4B0E2B.gif" title="graphics4"/>
+<p>The triangles P1,A,P and P1,B,P2 are similar and we can set up the following: </p>
+<span class="wxtformula">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>y</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>y</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mrow>
+<mi>x</mi>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>x</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+</mfrac>
+<mo stretchy="false">=</mo>
+<mfrac>
+<mrow>
+<msub>
+<mi>y</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>y</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mrow>
+<msub>
+<mi>x</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>x</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+</mfrac>
+</mrow>
+</semantics>
+</math>
+</span>
+<p>and find for example y expressed by coordinates for the two known points and x. </p>
+<span class="wxtformula">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mi>y</mi>
+<mo stretchy="false">=</mo>
+<mrow>
+<mrow>
+<mfrac>
+<mrow>
+<msub>
+<mi>y</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>y</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mrow>
+<msub>
+<mi>x</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>x</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+</mfrac>
+<mo stretchy="false">∗</mo>
+<mrow>
+<mo stretchy="false">(</mo>
+<mrow>
+<mi>x</mi>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>x</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mo stretchy="false">)</mo>
+</mrow>
+</mrow>
+<mo stretchy="false">+</mo>
+<msub>
+<mi>y</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</span>
+<p>As an alternative we could set up a parametric equation for the line. Parametric means that the expression contains a parameter, t, that changes when we run along the line. For a line in the plane we get two parametric expressions, one for x and one for y. Since we have a line, both are linear. </p>
+<span class="wxtformula">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mtable>
+<mtr>
+<mrow>
+<mi>P</mi>
+<mo stretchy="false">=</mo>
+<mrow>
+<msub>
+<mi>P</mi>
+<mn>1</mn>
+</msub>
+<mo stretchy="false">+</mo>
+<mrow>
+<mi>t</mi>
+<mo stretchy="false">⋅</mo>
+<mrow>
+<mo stretchy="false">(</mo>
+<mrow>
+<msub>
+<mi>P</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>P</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mo stretchy="false">)</mo>
+</mrow>
+</mrow>
+</mrow>
+</mrow>
+</mtr>
+<mtr/>
+<mtr>
+<mrow>
+<mi>x</mi>
+<mrow>
+<mrow>
+<mo stretchy="false">(</mo>
+<mi>t</mi>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo stretchy="false">=</mo>
+<mrow>
+<msub>
+<mi>x</mi>
+<mn>1</mn>
+</msub>
+<mo stretchy="false">+</mo>
+<mrow>
+<mrow>
+<mo stretchy="false">(</mo>
+<mrow>
+<msub>
+<mi>x</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>x</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo stretchy="false">⋅</mo>
+<mi>t</mi>
+</mrow>
+</mrow>
+</mrow>
+</mrow>
+</mtr>
+<mtr>
+<mrow>
+<mi>y</mi>
+<mrow>
+<mrow>
+<mo stretchy="false">(</mo>
+<mi>t</mi>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo stretchy="false">=</mo>
+<mrow>
+<msub>
+<mi>y</mi>
+<mn>1</mn>
+</msub>
+<mo stretchy="false">+</mo>
+<mrow>
+<mrow>
+<mo stretchy="false">(</mo>
+<mrow>
+<msub>
+<mi>y</mi>
+<mn>2</mn>
+</msub>
+<mo stretchy="false">−</mo>
+<msub>
+<mi>y</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo stretchy="false">⋅</mo>
+<mi>t</mi>
+</mrow>
+</mrow>
+</mrow>
+</mrow>
+</mtr>
+</mtable>
+</semantics>
+</math>
+</span>
+</div>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/page1.xml</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="page17">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;page1&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:importodf&lt;/h1&gt;
+ &lt;p&gt;
+   Testing import of math from Open Office textdocuments.
+   Math is now imported as MathML.
+&lt;/p&gt;
+&lt;p&gt;
+ This is a rather shaky business for several reasons.
+&lt;/p&gt; 
+&lt;ul&gt;
+ &lt;li&gt;Not all browsers are able to display MathML. Internet Explorer needs a plugin.&lt;br/&gt;
+ &lt;a href="http://www.dessci.com/en/products/mathplayer/download.htm" class="external"&gt;MathPlayer&lt;/a&gt;.
+ Google Chrome does not like MathMl at all (?)&lt;/li&gt;
+ &lt;li&gt;We must prepare the page (template) with a doctype that reckognize MathML&lt;/li&gt;
+ &lt;li&gt;We must produce the page as XHTML.&lt;br/&gt; We achive this by an option in the WXT-script:
+ &amp;lt;option name="output-format" value="xhtml"/&amp;gt;,&lt;br/&gt; 
+ and by giving the resulting file extension XHTML&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;div&gt;
+ &lt;?_wxt popup sourcelocation="../../templates/m_template.xml" location="m_template_xml.html" 
+        lang="lang-xml" text="Template for this page"?&gt;
+ &lt;?_wxt popup sourcelocation="../script.xml" location="script_xml.html" 
+        lang="lang-xml" text="Script for this site"?&gt;
+&lt;/div&gt;
+&lt;p&gt;
+ It is on the agenda for the WXT-project to render formulas as images, as an alternative.
+&lt;/p&gt; 
+ 
+&lt;p&gt;import1&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt importodf location="doc1.odt" dpath="/Bezier"?&gt;
+&lt;/div&gt;
+ 
+&lt;p&gt;import2&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt importodf location="doc1.odt" dpath="/Line"?&gt;
+&lt;/div&gt;
+ 
+&lt;hr/&gt;
+ 
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="page1.xml" 
+       lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

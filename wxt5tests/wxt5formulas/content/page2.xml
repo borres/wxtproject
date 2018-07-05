@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+
+<div id="title">Page1</div>
+        
+<div class="mainblock">
+<h1>Testing PI:formulas</h1>
+<p>ready images</p>
+
+<h2>From formula file</h2>
+<div>
+<?_wxt formula id="f21"?>
+</div>
+
+<h2>From location</h2>
+<div>
+<?_wxt formula type="image" id="f22" style="height:100px" location="vektor1.gif"?>
+</div>
+<div>
+<?_wxt formula id="f25" type="image" location="ellipsoid2.gif"?>
+</div>
+
+
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page2.xml" 
+       lang="lang-xml"?>
+</div>
+
+<h2>Formulas</h2>
+<div>
+<?_wxt expandable location="imageformulas.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+
+</html>

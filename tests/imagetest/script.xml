@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">    
+      
+	<definitions>
+		<option name="indent-output" value="yes"/>
+		<option name="output-format" value="xhtml"/>
+		<template id="P" location="p_template.xml"/>
+		
+		<pathfragment id="absolutes" value="http://www.ia.hiof.no/~borres/wxt2absolutes/imagetest/"/>
+		<pathfragment id="someimages" value="http://www.ia.hiof.no/~borres/wxt2absolutes/imagetest/"/>
+
+		
+		<images location="myimages/imagedescription.xml"/>
+		<images location="myimages/imagedescription2.xml"/>
+		<images location="{absolutes}imagedescription3.xml"/>
+		<images location="{absolutes}imagedescription4.xml"/>
+		
+		<images location="moreimages/manyimages.xml"/>
+	
+	</definitions>
+
+	<module books="all" description="test images" location="index.html" 
+	         name="page1" template="P">
+			<xmlcontent location="images1.xml"/>
+	</module>
+	<module books="all" description="test images" location="images2.html" 
+	         name="page2" template="P">
+			<xmlcontent location="images2.xml"/>
+	</module>	
+	<module books="all" description="test images" location="images21.html" 
+	         name="page21" template="P">
+			<xmlcontent location="images21.xml"/>
+	</module>	
+	<module books="all" description="test images" location="images3.html" 
+	         name="page3" template="P">
+			<xmlcontent location="images3.xml"/>
+	</module>
+</wscript>

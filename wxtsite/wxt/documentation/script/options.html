@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Options</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Script">Script</a>
+</div>
+<div class="level3">
+<a href="definitions.html" title="Definitions">Definitions</a>
+</div>
+<div class="level4">
+<a href="addressing.html" title="Addressing">Addressing</a>
+</div>
+<div class="level4">
+<a href="author.html" title="Author">Author</a>
+</div>
+<div class="level4">
+<a href="authors.html" title="Authors">Authors</a>
+</div>
+<div class="level4">
+<a href="command.html" title="Command">Command</a>
+</div>
+<div class="level4">
+<a href="formuladef.html" title="Formulas">Formulas</a>
+</div>
+<div class="level4">
+<a href="fragment.html" title="Fragment">Fragment</a>
+</div>
+<div class="level4">
+<a href="fragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level4">
+<a href="imagelist.html" title="Images">Images</a>
+</div>
+<div class="level4">
+<a href="logfile.html" title="Logfile">Logfile</a>
+</div>
+<div class="level4">
+<a href="odtformuladef.html" title="ODTFormulas">ODTFormulas</a>
+</div>
+<div class="level4 wxtselected">Options</div>
+<div class="level4">
+<a href="pathfragment.html" title="PathFragment">PathFragment</a>
+</div>
+<div class="level4">
+<a href="reflist.html" title="References">References</a>
+</div>
+<div class="level4">
+<a href="template.html" title="Template">Template</a>
+</div>
+<div class="level4">
+<a href="transformation.html" title="Transformation">Transformation</a>
+</div>
+<div class="level3">
+<a href="module.html" title="Module">Module</a>
+</div>
+<div class="level3">
+<a href="dating.html" title="*Dating">*Dating</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Script: option-element</h1>
+<p>
+  The definition-element may contain options.
+  These option influence the prefomance of WXT in different ways.
+ </p>
+<pre class="lang readyandpretty skiptranslate">
+&lt;option name="" value=""&gt;</pre>
+<table cellpadding="10px">
+  <tr>
+    <td style="vertical-align:top">
+<strong>name</strong>(mandatory)</td>
+    <td>Any string that identifies this option.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>value</strong>(mandatory)</td>
+    <td>A value matching the name.
+    </td>
+  </tr>
+
+</table>
+<p>Reckognized option names are:
+</p>
+<table cellpadding="10px">
+
+  <tr>
+    <td style="vertical-align:top">
+<strong>expand-all</strong>
+</td>
+    <td>Possible values: <em>yes</em> or <em>no</em>. no is default.
+    If yes, all expansions (PI:expandable) will be done, regardless of the 
+    <em>expanded</em> parameter in the PIs, see <span class="wxtxlink">
+<a href="../pi/expandable.html" title="Expandable">Expandable</a>
+</span>.
+    </td>
+  </tr>
+   <tr>
+    <td style="vertical-align:top">
+<strong>preformat-language</strong>
+</td>
+    <td>Possible values: <em>yes</em> or <em>no</em>. no is default.
+	By default Google's prettyprint is used for colorencoding of languages.
+    If yes, WXT's internal colorcoding is used. This is less flexible but prepares material that is
+	encoded independant of a webbrowser. Suited for PDF conversion.
+	See <span class="wxtxlink">
+<a href="../general/codefragments.html" title="Code">Code</a>
+</span>.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>indent-output</strong>
+</td>
+    <td>Possible values: <em>yes</em> or <em>no</em>. 
+    no is default.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>default-encoding</strong>
+</td>
+    <td>Default is <em>utf-8</em>. This encoding is used
+    when there are no other way to decide encoding.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>output-format</strong>
+</td>
+    <td>Possible values are <em>xml</em>, <em>text</em>,
+        <em>html</em> and <em>xhtml</em>. 
+        <br/>
+<em>html</em> will produce modules in html5, that is without XML-header and doctype html. 
+		<br/>
+<em>xhtml</em> will produce the same as <em>xml</em>, but without xml-header. The doctype will be copied from the source.
+		This is typically xhtml-strict.
+		<br/>Default is <em>html</em>.
+		<br/>The detailed effect of the output option depends of course on the templates content.
+		
+    </td>
+  </tr>
+    <tr>
+    <td style="vertical-align:top">
+<strong>reference-form</strong>
+</td>
+    <td>Possible values are <em>simple</em>, <em>ieee</em>, <em>harvard</em>.
+	Default and the only option implemented at the moment is <em>simple</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>reference-indexing</strong>
+</td>
+    <td>Possible values are <em>local</em> and <em>global</em>.
+	<em>local</em> will produce reference indices for each module.
+	<em>global</em> will index references as encountered during the 
+	whole building. Default is <em>local</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>use-copy</strong>
+</td>
+    <td>Possible values are <em>yes</em> and <em>no</em>.
+	 Default is <em>yes</em>.<br/>
+	<em>no</em> will access the material at the original source, produce a 
+	local copy and then fetch the result from this copy. 	
+	<em>yes</em> will import html material from the local copy directly.<br/>
+	This option will overrun the parameter <em>usecopy</em> in PI:
+    <span class="wxtxlink">
+<a href="../pi/importhtml.html" title="ImportHTML">ImportHTML</a>
+</span>.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>drop-books</strong>
+</td>
+    <td>You can use this to avoid building modules which are
+	timeconsuming or should be left alone for other reasons.
+	The value is a comma separated list of strings.
+	The modules with matching books - attributes will be skipped when building.
+	Space is not allowed in the string(list).
+    </td>
+  </tr>  
+  <tr>
+    <td style="vertical-align:top">
+<strong>tidy-input</strong>
+</td>
+    <td>If the parsing of XML input fails, WXT will attempt to tidy the source.
+	You may turn this option off with value <em>no</em>.
+	<br/>
+	Default value is <em>yes</em>.
+	<br/>
+	Tidying is not without problems, and the tidyjob of WXT is neither waterproof nor complete.
+	Tidying is done with jsoup<span class="wxtref" title="Java HTML Parser | http://jsoup.org/">
+<a href="http://jsoup.org/"> [12] </a>
+</span>. You may experience that the tidy job does not produce exactly what you expect.
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">
+<strong>verbose</strong>
+</td>
+    <td>May be <em>yes</em> or <em>no</em>. <em>no</em> is default.
+	<br/>when <em>yes</em> WXT will produce more detailed output of errors and warnings
+	in the build process.
+    </td>
+  </tr> 
+  </table>
+<p>Examples:</p>
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;<span class="tag">option</span> name="<span class="str">expand-all"</span> value="<span class="str">yes"</span>/&gt;
+&lt;<span class="tag">option</span> name="<span class="str">default-encoding"</span> value="<span class="str">ISO-8859-1"</span>/&gt;
+&lt;<span class="tag">option</span> name="<span class="str">indent-output"</span> value="<span class="str">yes"</span>/&gt;
+&lt;<span class="tag">option</span> name="<span class="str">drop-books"</span> value="<span class="str">topdf"</span>/&gt;
+</pre>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

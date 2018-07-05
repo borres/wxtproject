@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wscript version="1.0">    
+      <!-- popfragments demos -->
+      <definitions>
+        <option name="indent-output" value="yes"/>
+        <template id="P" location="../templates/p_template.xml"/>
+		<fragment id="self">
+		<![CDATA[<img src="content/bs.png" alt="self"/>]]>
+		</fragment>
+
+        <fragments location="content/mypopfragments.xml"/>
+        <logfile location="../buildlog.txt" />
+     </definitions>
+        
+     <module description="Demonstration of popfragments" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+	<module description="Demonstration of date, time and stamp" location="page1.html" 
+	        name="Page1" id="page1" template="P" books="all">
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+
+	
+ </wscript>

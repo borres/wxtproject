@@ -1,0 +1,77 @@
+<pre class="mlcode">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;root&gt;
+&lt;div class=&quot;content&quot;&gt;    
+&lt;h1&gt;Formulas&lt;/h1&gt;
+
+&lt;p&gt;
+  Testing import of formulas from Open Office documents
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div&gt;
+View source: 
+&lt;?_wxt expand sourcelocation=&quot;formula.xml&quot; 
+            location=&quot;formulasrc.txt&quot; code=&quot;mlcode&quot;?&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;
+View script:
+&lt;?_wxt expand sourcelocation=&quot;script.xml&quot; 
+       location=&quot;scriptsrc.txt&quot; code=&quot;xmlcode&quot;?&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div&gt;
+View template:
+&lt;?_wxt expand sourcelocation=&quot;p_template.xml&quot; 
+       location=&quot;templatesrc.txt&quot; code=&quot;xmlcode&quot;?&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+  &lt;!-- [if IE]&gt;
+  &lt;div&gt;
+  &lt;p&gt;Make sure you have installed mathPlayer.&lt;br/&gt;
+  Test (and install) at: 
+  &lt;a href=&quot;http://www.dessci.com/en/products/mathplayer/check.htm&quot;&gt;
+    www.dessci.com/en/products/mathplayer/check.htm
+  &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;hr/&gt;
+  &lt;/div&gt;
+  &lt;![endif] --&gt;
+&lt;h3&gt;Formula 1&lt;/h3&gt;
+&lt;div&gt;  
+&lt;?_wxt formula  id=&quot;_formel1&quot;?&gt;
+&lt;/div&gt;
+
+
+&lt;h3&gt;Formula 2&lt;/h3&gt;
+&lt;div&gt;  
+&lt;?_wxt formula  id=&quot;_formel2&quot;?&gt;
+&lt;/div&gt;
+
+
+&lt;h3&gt;Formula 3&lt;/h3&gt;
+&lt;p&gt;Imported from external source&lt;/p&gt;
+&lt;div&gt;  
+&lt;?_wxt formula  id=&quot;_fbezier&quot;?&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Formula 4&lt;/h3&gt;
+&lt;div&gt;  
+&lt;?_wxt formula  id=&quot;_formel4&quot;?&gt;
+&lt;/div&gt;
+
+
+&lt;h3&gt;Formula 5&lt;/h3&gt;
+&lt;div&gt;  
+&lt;?_wxt formula  id=&quot;_formel5&quot;?&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Formula 6&lt;/h3&gt;
+&lt;p&gt; imported directly from single formula file&lt;/p&gt;
+&lt;div&gt;  
+&lt;?_wxt formula  location=&quot;single formula.odf&quot;?&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/root&gt;</pre>

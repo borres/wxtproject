@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing languages</h1>
+<p>
+   Testing import XML/HTML. 
+</p>
+ 
+<h2>Text import</h2> 
+<h3>XML</h3>
+ 
+<p>Complete</p>
+<div>
+<?_wxt importtxt location="mlstuff/complete.xml" lang="lang-xml"?>
+</div>
+ 
+
+
+<h3>HTML</h3>
+<p>complete</p>
+<div>
+<?_wxt importtxt location="mlstuff/completehtml.html" lang="lang-html"?>
+</div>
+ 
+<p>fraction</p>
+<div>
+<?_wxt importtxt location="mlstuff/htmlfraction.html" lang="lang-html"?>
+</div>
+
+<h3>XSLT</h3>
+<p>complete named as xml</p>
+<div>
+<?_wxt importtxt location="mlstuff/trans.xslt" lang="lang-xslt"?>
+</div>
+
+<p>incomplete</p>
+<div>
+<?_wxt importtxt location="mlstuff/frag1.xslt" lang="lang-xslt"?>
+</div>
+
+ 
+<h2>Included</h2>
+ 
+<h3>XML</h3>
+<p>complete, direct</p>
+<pre class="prettyprint lang-xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<OlympicGame place="Barcelona" year="1992">
+	<event track="100m">
+		<athlet>
+			<name>Dennis Mitchell</name>
+			<nation>USA</nation>
+			<result>10.04</result>
+		</athlet>
+		<athlet>
+			<name>Bruny Surin</name>
+			<nation>CAN</nation>
+			<result>10.09</result>
+		</athlet>
+	</event>
+</OlympicGame>
+]]>
+</pre>
+ 
+<h3>HTML</h3>
+<p>fraction, direct</p>
+<pre class="prettyprint lang-html"><![CDATA[<h1>OpenGL</h1>
+<p>
+   OpenGL is:
+</p>
+<!-- list of things -->
+<ul>
+<li>is a library for programming of 2D and 3D graphics.</li>
+<li>is established as an industry standard and reference standard.</li>
+<li>is developed by Silicon Graphics.</li>
+<li>has a long history under other names, GL.</li>
+<li>was developed under control of an Architecture Review Board, 
+which now is a part of 
+<span class="ref" <a href="http://www.opengl.org/about/arb/">The Khronos Group.</a></span></li>
+</ul>
+<p>
+ OpenGL is continuously developed, with new versions. Latest version, may 2009, is 3.1.
+ One major addition to the OpenGL concept is OpenGL Shading Language. 
+ OpenGL is developed as platform independent package and runs on a lot of platforms.
+</p>
+]]>
+</pre>
+ 
+<hr/>
+ 
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="code3.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

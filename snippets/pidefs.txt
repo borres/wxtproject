@@ -1,0 +1,96 @@
+// snippet separator:#
+// each snippet:name;description;value
+
+importxml;Produces an XML-fragment;<div>
+<?_wxt importxml xpath="" location="" transformation="optional"
+       tidy="optional" encoding="optional" id="optional"?>
+</div>
+#
+importtxt;Produces an XML-fragment based on a text-source;<div>
+<?_wxt importtxt location="" transformation="optional" id="optional" 
+       leftpar="optional" rightpar="optional" select="optional" leftpar="optional"
+       replace="optional" encoding="optional" code="optional" parse="optional" ?>
+</div>
+#
+importwiki;Produces an XML-fragment from extracts from a wiki-page;<div>
+<?_wxt importwiki location="" target="optional" xpath="optional"
+       keeprefs="optional" encoding="optional" ?>
+</div>
+#
+importdb;Produces an XML-fragment from a database-request;<div>
+<?_wxt importdb connection="" 
+       sql="optional" sqlfile="optional"
+       targetlocation="optional" encoding="optional" xpath="optional"
+       driver="optional" transformation="optional" ?>
+</div>
+#
+collect;Produces an XML-fragment that collects material from other modules;<div>
+<?_wxt collect  xpath=""
+       idlist="optional" root="optional" books="optional"
+       select="optional" scriptpath="optional"?>
+</div>
+#
+collectsummary;Produces an XML-fragment that collects summaries from other modules;<div>
+ <?_wxt collectsummary idlist="optional" root="optional" books="optional"
+        select="optional" scriptpath="optional"
+        xlink="optional(yes|no)" ?>
+</div>
+#
+date;Produces today or another date in selected form and locale;<?_wxt date form="" country="optional" actualdate="optional" ?>
+#
+time;Produces current time (time of building) in selected forms and locale;<?_wxt time form="optional" country="optional" ?>
+#
+stamp;Produces a mark identifying Wxt as producer.;<?_wxt stamp ?>
+#
+demolink;Produces a XHTML-fragment that links to any web-page;<?_wxt demolink uri="" text="optional" style="optional" title="optional" ?>
+#
+expand;Allow Ajax expansion of parts of a module;<div>
+<?_wxt expand location="" sourcelocation="" expanded="optional" 
+       transformation="optional" leftpar="optional" rightpar="optional"
+       select="optional" replace="optional" encoding="optional" code="optional" ?>
+</div>
+#
+footnote;Produces a footnote; <?_wxt footnote form="normal|show|remove" ?>
+#
+fragment;Import a fragment defined in the script;<?_wxt fragment id="" ?>
+#
+popfragment;Import a fragment defined in the script and make it expandable on mouseover; <?_wxt popfragment id="" ?>
+#
+ixword;Mark a word as a candidate for an IndexList;<?_wxt ixword word="" category="optional" comment="optional" markword="optional"?>
+#
+ixlist;Produces an indextable of indexed words;<div>
+<?_wxt ixlist category="optional" cols="optional" root="optional" divider="optional" ?>
+</div>
+#
+modulemap;Produces a complete or partial modulemap (sitemap);div>
+<?_wxt modulemap idlist="optional" root="optional" books="optional" select="optional" scriptpath="optional"
+       cols="optional" divider="optional" fragment="optional" summary="optional"?>
+</div>
+#
+modulemenu;Produces a menu that shows the modules anchestors, siblings and childrens; 
+<div><?_wxt modulemenu root="optional" summary="optional" cols="optional" divider="optional" ?>
+</div>
+#
+moduletoc;Produces a table of contents; <div>
+<?_wxt moduletoc cols="optional" tags="optional" divider="optional" ?>
+</div>
+#
+moduletocfinal;Produces a table of contens after all modules have been built;<div>
+<?_wxt moduletocfinal cols="optional" tags="optional" divider="optional" ?>
+</div>
+#
+path;Produces a list of links to all modules between this module and top of module tree;<?_wxt path divider="optional" ?>
+#
+popup;Allow popup windows from a module;<div>
+<?_wxt popup location="" title="optional" text="optional" sourcelocation="optional" 
+       transformation="optional" leftpar="optional" rightpar="optional" select="optional"
+       replace="optional" encoding="optional" 
+       code="optional(xmlcode|mlcode|javacode|javascriptcode|ccode|cppcode|csharpcode|pythoncode|xsltcode|aspxcode|cs3code)"
+       parse="optional(yes|no)" ?>
+</div>
+#
+xlink;Produces a XHTML-fragment that links to another module in the same script; <?_wxt xlink id="" fragment="optional" summary="optional" ?>
+#
+ref;Produces a reference;<?_wxt ref id="" category="optional"?>
+#
+reflist;Produces a referencelist;<?_wxt reflist scope="local|global"?>

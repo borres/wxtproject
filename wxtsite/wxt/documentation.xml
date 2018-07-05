@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <link rel="stylesheet" type="text/css" href="def.css" title="Style"/>
+</head>
+<body>
+
+	<p>
+	Documentation of script, processing instructions (PI) and descriptions of 
+    some topics. 
+	</p>
+	<p>
+	as <a href="documentation/allpages.pdf" title="Documentation in PDF"> PDF </a> if ypu like.
+	</p>
+	
+
+
+</body>
+</html>

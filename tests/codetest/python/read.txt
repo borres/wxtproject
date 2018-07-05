@@ -1,0 +1,27 @@
+<pre class="pythoncode">
+<span class="word">import</span> httplib, urllib
+"""<span class="literal">
+Reading some data with a http request
+</span>"""
+<span class="word">try</span>:
+    <span class="comment"># prepare parameters</span>
+    params = urllib.urlencode({'<span class="literal">navn'</span>: '<span class="literal">ole'</span>, '<span class="literal">adresse'</span>: '<span class="literal">mysen'</span>})
+    <span class="comment"># prepare header</span>
+    headers = {"<span class="literal">Content-type"</span>: "<span class="literal">application/x-www-form-urlencoded"</span>,
+               "<span class="literal">Accept"</span>: "<span class="literal">text/plain"</span>}
+    <span class="comment"># connect</span>
+    conn = httplib.HTTPConnection("<span class="literal">www.ia.hiof.no"</span>)
+    conn.request("<span class="literal">POST"</span>, "<span class="literal">/~borres/cgi-bin/forms/std.py"</span>, params, headers)
+    r1 = conn.getresponse()
+    <span class="comment"># ok ?</span>
+    <span class="word">if</span> r1.status!=200:
+        <span class="word">print</span> '<span class="literal">access problem'</span>
+        <span class="word">print</span> r1.status, r1.reason
+    <span class="word">else</span>:
+        <span class="comment"># get data</span>
+        data = r1.read()
+        <span class="word">print</span> data
+    conn.close()
+<span class="word">except</span>:
+    <span class="word">print</span> '<span class="literal">cannot access data'</span>
+</pre>

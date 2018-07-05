@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">      
+	<definitions>
+		<option name="indent-output" value="yes"/>
+		<option name="output-format" value="xhtml"/>
+        <template id="P" location="gfx/p_template.xml"/>
+        <fragment id="laser">
+        <![CDATA[
+<object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/HKRPfa66_po&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/HKRPfa66_po&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+        ]]>
+        </fragment>
+        
+        <fragment id="tombola">
+        <![CDATA[
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/ZlSm-wMf2yk&hl=en_US&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ZlSm-wMf2yk&hl=en_US&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>        
+        ]]>
+        </fragment>        
+        
+    </definitions>
+	
+    <module location="index.xhtml" name="What" template="P" books="all">
+        <xmlcontent location="index.xml"/>
+    </module>
+    
+    <module location="gad1.html" name="Own Gadgets" template="P" books="all">
+        <xmlcontent location="gadgets/b-gad1.xml"/>
+    </module>
+    
+    <module location="gad2.html" name="Google Gadgets" template="P" books="all">
+        <xmlcontent location="gadgets/b-gad2.xml"/>
+    </module> 
+
+    <module location="exp1.html" name="AjaxExpansion" template="P" books="all">
+        <xmlcontent location="expansion/b-expand1.xml"/>
+    </module>
+
+     <module location="simpleexp1.html" name="SimpleExpansion" template="P" books="all">
+        <xmlcontent location="expansion/b-simpleexpand1.xml"/>
+    </module>   
+</wscript>

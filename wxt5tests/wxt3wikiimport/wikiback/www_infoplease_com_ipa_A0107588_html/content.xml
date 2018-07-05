@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="HTML Tidy for Java (vers. 2009-12-01), see jtidy.sourceforge.net" name="generator"/>
+<link href="http://i.infopls.com/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="http://i.infopls.com/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="http://i.infopls.com/css/ipbase.css" rel="stylesheet" type="text/css"/>
+<link href="http://i.infopls.com/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+//<![CDATA[
+tyntVariables = {"ap":"Read more: "};
+//]]>
+</script>
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+<script src="/js/jquery.cookie.min.js" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+<script src="http://i.infopls.com/js/ip.js" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+if(document.location.protocol=='http:'){
+ var Tynt=Tynt||[];Tynt.push('bkoFXQO-ar35BIadbi-bnq');Tynt.i={"st":true};
+ (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+}
+//]]>
+</script>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/javascript" http-equiv="Content-Script-Type"/>
+<meta content="text/css" http-equiv="Content-Style-Type"/>
+<meta content="COUNTRY-SEC" name="chunk"/>
+<meta content="Athens, Greece" name="idx"/>
+<meta content="Constantinople" name="idx"/>
+<meta content="Greece" name="idx"/>
+<meta content="Greece, ancient" name="idx"/>
+<meta content="Macedonia, Greece" name="idx"/>
+<meta content="Olympic Games" name="idx"/>
+<meta content="Pindus Mountains" name="idx"/>
+<meta content="2004 games" name="isub"/>
+<meta content="Geography" name="title"/>
+<meta content="Government" name="title"/>
+<meta content="Greece" name="title"/>
+<meta content="History" name="title"/>
+<meta content="geography of Greece" name="waif"/>
+<meta content="history of Greece" name="waif"/>
+<meta content="Greece" name="wd"/>
+<meta content="Athens Greece Constantinople ancient Macedonia Olympic Games Pindus Mountains 2004 Geography Government History of" name="keywords"/>
+<meta content="Information on Greece &#8212; map of Greece, geography, history, politics, government, economy, population statistics, culture, religion, languages, largest cities, and the national flag" name="description"/>
+<title>Greece: Maps, History, Geography, Government, Culture,
+Facts, Guide &amp; Travel/Holidays/Cities &#8212; Infoplease.com</title>
+<meta content="Greece" name="DC.title"/>
+<meta content="Information on Greece &#8212; geography, history, politics, government, economy, population statistics, culture, religion, languages, largest cities, as well as a map and the national flag." name="description"/>
+<meta content="A0107588" name="uniqid"/>
+<meta content="A0107263" name="parent"/>
+<meta content="world" name="subchannel"/>
+<meta content="world" name="Channel"/>
+<script src="http://partner.googleadservices.com/gampad/google_service.js" type="text/javascript">
+//<![CDATA[
+<!-- -->
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+GS_googleAddAdSenseService('ca-pub-1894504138907931');
+GS_googleEnableAllServices();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+GA_googleAddAttr('site', 'www');
+GA_googleAddAttr('pagetype', 'Article');
+GA_googleAddAttr('testing', 'no');
+GA_googleAddSlot('ca-pub-1894504138907931', 'IP_world_728x90');
+GA_googleAddSlot('ca-pub-1894504138907931', 'IP_world_300x250');
+GA_googleAddSlot('ca-pub-1894504138907931', 'IP_world_160x600');
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+GA_googleFetchAds();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+    window._GA_googleFillSlot = window.GA_googleFillSlot;
+    window.GA_googleFillSlot = function(name)
+    {
+        var result = window._GA_googleFillSlot(name);
+        
+        // The actual fix
+        var timout = 25;
+        var id = 'google_ads_div_' + name + '_ad_container';
+        function fix_dimensions()
+        {
+            var div_container = document.getElementById(id);
+            if (div_container)
+            {
+                div_container.style.width = "auto"; 
+                div_container.style.height = "auto";
+            }
+            else if (timout < 1000)
+            {
+                timout = timout * 2;
+                window.setTimeout(fix_dimensions, timout);
+            }
+        }
+        window.setTimeout(fix_dimensions, timout);
+        
+        return result;
+    }
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+        // make sure ads display correctly
+        $('#lb div #widgetbox_widget_parent_0').parent().parent().addClass('oversize').parent().addClass('oversizead');
+        $('#lb #widgetbox_widget_parent_0').parent().addClass('oversize').parent().addClass('oversizead');
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-350786-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//]]>
+</script>
+<!-- Begin comScore Tag -->
+<script src="http://b.scorecardresearch.com/beacon.js" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+  COMSCORE.beacon({
+    c1:2,
+    c2:6035556,
+    c3:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+#Wn.oversizead {padding-top: 258px}
+#lb.oversize {height:254px;}
+#lb {text-align: center}
+/*]]>*/
+</style>
+</head>
+<body>
+<noscript>
+<img alt="" src="wikiback/www_infoplease_com_ipa_A0107588_html/p_c1_2_c2_6035556_c3__c4__c5__c6__c15__cj_1"/>
+</noscript>
+<!-- End comScore Tag -->
+<div id="Wn">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top">
+<table cellpadding="0" cellspacing="0" id="ipHead">
+<tr>
+<td id="ipH-Logo">
+<a href="http://www.infoplease.com/" title="Return to the homepage of Infoplease.com">
+<img alt="Infoplease - All the knowledge you need." height="45" src="wikiback/www_infoplease_com_ipa_A0107588_html/05ip_Logo.png" width="204"/>
+</a>
+</td>
+<td id="ipH-FormDA">
+<div style="text-align:right">
+<a href="http://www.infoplease.com/sitemap.html">Site Map</a> | <a href="/helpfaqs.html">FAQ</a>
+</div>
+<form action="/search" id="search" name="search">
+<fieldset>
+<input id="q" name="q" onclick="if(this.value=='Enter search term'){this.value='';}" type="text"/>
+<label>in</label> <select id="drop" name="in">
+<option value="all">All Infoplease</option>
+<option value="drp,almanacs">Almanacs</option>
+<option value="drp,general">&#8226; General</option>
+<option value="drp,entertainment">&#8226; Entertainment</option>
+<option value="drp,sports">&#8226; Sports</option>
+<option value="drp,biography">Biographies</option>
+<option value="drp,dictionary">Dictionary</option>
+<option value="drp,encyclopedia">Encyclopedia</option>
+<option value="drp,spellcheck">Spelling Checker</option>
+</select> <input alt="Search" id="submit" src="http://i.infopls.com/images/05ip_BTNsearch.gif" title="Submit Query" type="image"/> <input name="fr" type="hidden" value="iptn"/> <script type="text/javascript">
+//<![CDATA[
+document.getElementById('q').value="Enter search term";
+//]]>
+</script>
+</fieldset>
+</form>
+<dl>
+<dt>Daily Almanac for</dt>
+<dd>
+<a href="/daily" title="Daily facts, fun, news, and more.">Jun
+9, 2012</a>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td colspan="2" id="ipH-Tabs">
+<!--Tabs-->
+<ul>
+<li class="hide">
+<a href="#Pg" title="Skip our navigation links and go directly to the content">Skip
+Navigation</a>
+</li>
+<li class="nav">
+<a href="/" title="Home: Infoplease.com">Home</a>
+</li>
+<li class="nav">
+<a href="/us/travel/summer.html" title="Guide to Summer">Summer Guide</a>
+</li>
+<li class="nav">
+<a href="/atlas/" title="Featuring maps and detailed profiles of countries and states.">Atlas</a>
+</li>
+<li class="nav">
+<a href="/encyclopedia/" title="Current and comprehensive. Covering all the major branches of knowledge.">Encyclopedia</a>
+</li>
+<li class="nav">
+<a href="http://dictionary.infoplease.com/" title="Unabridged dictionary including pronunciation guides.">Dictionary</a>
+</li>
+<li class="nav">
+<a href="http://thesaurus.infoplease.com/" title="Search for synonyms.">Thesaurus</a>
+</li>
+<li class="nav">
+<a href="/spot/" title="A complete list and searchable collection of recently featured articles from Infoplease.">Features</a>
+</li>
+<li class="nav">
+<a href="http://www.infoplease.com/quizzes/" title="Test your knowledge of useful facts and trivia, on a variety of subjects.">Quizzes</a>
+</li>
+<li class="nav">
+<a href="/spot/timelinearchive.html" title="Timelines and chronologies covering World and U.S. history, Countries, Social and Political Issues, Entertainment, Sports, Science, Medicine, Technology, and Health.">Timelines</a>
+</li>
+<li class="nav">
+<a href="/countries.html" title="Country profiles including geography, maps, history, current ruler, area, population, capital, largest city, and more.">Countries</a>
+</li>
+<!--<li class="nav"><a href="/us/slideshow/" title="Slideshows featurings travel, animals, history &amp; government, prize winners, holidays, and science.">Slideshows</a></li>-->
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="2" id="ipH-SubNav"/>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" id="ipContentTable" width="100%">
+<tr>
+<td id="ipNav">
+<ul id="ipN-Channels">
+<li>
+<a class="selected" href="/world.html" title="Countries, World Statistics, Disasters, Current Events, Flags, Geography, Buildings/Structures, International Relations, Travel, Transportation">World &amp; News</a>
+</li>
+<li>
+<a class="nav" href="/us.html" title="U.S. Statistics, Cities &amp; States, Military Affairs, Postal Information, Societies &amp; Associations">United States</a>
+</li>
+<li>
+<a class="nav" href="/history.html" title="World History, U.S. History, U.S. Documents, U.S. Historic Monuments, Timelines, U.S. Presidents, U.S. Elections, U.S. Government, Supreme Court">History &amp; Gov't</a>
+</li>
+<li>
+<a class="nav" href="/people.html" title="Newsmakers, Recent Deaths, TIME Person of the Year, Browse and Search Biographies">Biography</a>
+</li>
+<li>
+<a class="nav" href="/sports.html" title="Olympics, Basketball, College Basketball, Pro Football, College Football, Other Sports, Baseball, Hockey, Golf, Tennis, Ballparks &amp; Arenas, Sports Biographies">Sports</a>
+</li>
+<li>
+<a class="nav" href="/ent.html" title="Arts &amp; Entertainment: Awards, Writing, Language, Mythology, Art, Books, Newspapers, Magazines, Movies, Videos, Music, TV, Radio, Performing Arts, Crossword Puzzle Guide">Arts &amp; Ent.</a>
+</li>
+<li>
+<a class="nav" href="/bus.html" title="Business, Personal Finance, Taxes, Economy, Consumer Resources, Career Resources">Business</a>
+</li>
+<li>
+<a class="nav" href="/calendar-holidays.html" title="Calendars, Major Holidays, Clocks, Seasons">Calendar &amp; Holidays</a>
+</li>
+<li>
+<a class="nav" href="/sci.html" title="Health, Weather, Astronomy, Space, Aviation, Science, Inventions, Weights &amp; Measures, Math, Money, Computers, Internet, Environment, Nature">Health &amp; Science</a>
+</li>
+<li>
+<a class="nav" href="/homework/" title="Geography, History, Language Arts, Mathematics, Science, Social Studies, Writing, Research, Speaking, Listening, Studying">Homework Center</a>
+</li>
+</ul>
+<ul id="ipN-FM">
+<li>
+<a href="http://www.factmonster.com/">Fact Monster <span>Kid's
+reference,<br/>
+games, quizzes</span>
+</a>
+</li>
+</ul>
+<div id="ipN-Xtras">
+<ul>
+<li>Editor's Favorites
+<ul>
+<li>
+<img alt="ap-favicon" border="0" height="16" src="wikiback/www_infoplease_com_ipa_A0107588_html/ap_favicon.jpg" width="16"/>
+<a href="http://answerplease.infoplease.com" target="_blank">Answerplease: A new Q &amp; A site</a>
+</li>
+<li>
+<a href="/us/travel/summer.html">Summer Guide</a>
+</li>
+<li>
+<a href="/gay-pride-month/">Gay Pride Month</a>
+</li>
+<li>
+<a href="/spot/everest.html">Everest Almanac</a>
+</li>
+<li>
+<a href="/spot/flagday2.html">Flag Day</a>
+</li>
+<li>
+<a href="/pages/unitconversion.html">Conversion
+Calculator</a>
+</li>
+<li>
+<a href="/us/government/presidential-election-campaign-2012.html">Campaign
+2012</a>
+</li>
+<li>
+<a href="/countries.html">Country Profiles</a>
+</li>
+<li>
+<a href="/ipa/A0762524.html">Most Populous Cities of the
+World</a>
+</li>
+<li>
+<a href="/spot/holidays.html">Holidays in America</a>
+</li>
+<li>
+<a href="/states.html">50 States</a>
+</li>
+<li>
+<a href="/spot/colors1.html">Color Psychology</a>
+</li>
+<li>
+<a href="/ipa/A0763098.html">Top 50 U.S. Cities</a>
+</li>
+<li>
+<a href="http://www.facebook.com/pages/Infopleasecom/103369689702253" target="_blank">Infoplease's Facebook page</a>
+</li>
+<li>
+<a href="http://twitter.com/Info_Please" target="_blank">Follow
+Infoplease on Twitter</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!--/ipN-Xtras-->
+<form action="/search">
+<fieldset>
+<legend>Search: <span>Infoplease</span>
+</legend> <input class="text-allBTM" name="q"/> <input name="fr" type="hidden" value="ipln"/> <input alt="go! to submit query" name="go" src="http://i.infopls.com/images/02ip_goBLUE.gif" type="image"/> <a href="/help.html">Info
+search tips</a>
+</fieldset>
+</form>
+<form action="/biography.php3">
+<fieldset>
+<legend>Search: <span>Biographies</span>
+</legend> <input class="text-bioBTM" id="waif" name="waif"/> <input name="fr" type="hidden" value="ipln"/> <input alt="go! to submit query" name="go" src="http://i.infopls.com/images/02ip_goBLUE.gif" type="image"/> <a href="/biosearch.html">Bio search tips</a>
+</fieldset>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+$('a').click(function(){if(this.href.indexOf(location.hostname)==-1){pageTracker._trackPageview('/outgoing/'+this.href.replace(/^https?:\/\//i,''));};});
+//]]>
+</script>
+ <img alt="" id="push-width" src="wikiback/www_infoplease_com_ipa_A0107588_html/clearpix.gif"/>
+</td>
+<td align="left" id="Pg" valign="top">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style" style="float:right;width:160px;height:21px;margin:6px;padding:5px 0 0 0;border:1px solid #EFEFEF;background-color:#EFEFEF;">
+<script type="text/javascript">
+//<![CDATA[
+var addthis_config = {
+data_track_linkback: true
+}
+//]]>
+</script>
+ <a class="addthis_button_print"/> <a class="addthis_button_email"/> <a class="addthis_button_twitter"/> <a class="addthis_button_facebook"/> <span class="addthis_separator">|</span> <a class="addthis_button_compact" href="http://addthis.com/bookmark.php?v=250&amp;username=bethrowen">Share</a>
+</div>
+<script src="http://s7.addthis.com/js/250/addthis_widget.js#username=bethrowen" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+ 
+<div style="clear:both;"/>
+<!-- AddThis Button END -->
+<!-- google_ad_section_start -->
+<div class="context noindex">
+<?php if(!filter("/world.html")): ?>
+<a href="/world.html">World</a>
+<?php endif; ?> &gt;
+<?php if(!filter("/countries.html")): ?><a href="/countries.html">Countries</a>
+<?php endif; ?> &gt; <a href="?pageno=1">Greece</a>
+</div>
+<br clear="all"/>
+ <img alt="" height="1" src="wikiback/www_infoplease_com_ipa_A0107588_html/clearpix.gif" width="600"/>
+<h1 class="level1" id="">Greece</h1>
+<table align="center" border="0" width="80%">
+<tr>
+<td align="left"/>
+<td align="right">
+<a href="?pageno=2">Next <img alt="" border="0" height="8" src="wikiback/www_infoplease_com_ipa_A0107588_html/fe07_ss_arrw_right.gif" width="4"/>
+</a>
+</td>
+</tr>
+</table>
+<!-- Begin Facts -->
+<table align="left" border="0" class="geosum" valign="top" width="250">
+<tr align="center">
+<th>Facts &amp; Figures</th>
+</tr>
+<tr>
+<td>
+<!-- Maptable begin -->
+<table border="0" class="graphseg centered">
+<tr pageno="1">
+<td id="A0748741" pageno="1">
+<div class="center" pageno="1">
+<a href="/atlas/country/greece.html" pageno="1">
+<img alt="Map of Greece" height="119" pageno="1" src="wikiback/www_infoplease_com_ipa_A0107588_html/mgreece_t.gif" width="120"/>
+</a> 
+<div class="caption noindex" pageno="1">
+<a href="/atlas/country/greece.html" pageno="1">Map of
+Greece</a>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<!-- Maptable end --></td>
+</tr>
+<tr>
+<td>
+<p class="president" pageno="1">
+<b pageno="1">President:</b>
+Karolos Papoulias (2005)</p>
+<p class="prime-mininster" pageno="1">
+<b pageno="1">Prime
+Minister:</b> Panagiotis Pikrammenos (interim; 2012)</p>
+<p class="area" pageno="1">
+<b pageno="1">Land area:</b> 50,502 sq
+mi (130,800 sq km); <b pageno="1">total area:</b> 50,942 sq mi
+(131,940 sq km)</p>
+<p class="population" pageno="1">
+<b pageno="1">Population (July
+2011 est.):</b> 10,760,136 (growth rate: .083%); birth rate:
+9.21/1000; infant mortality rate: 5/1000; life expectancy:
+79.92</p>
+<p class="capital" pageno="1">
+<a href="/cgi-bin/id/A0855603" pageno="1">
+<b pageno="1">Capital (2009 est.):</b>
+</a> Athens, 3.252
+million</p>
+<p class="largest-cities" pageno="1">
+<b pageno="1">Other large
+cities:</b> Thessalon&#237;ki, 834,000</p>
+<p class="money-unit" pageno="1">
+<b pageno="1">Monetary unit:</b>
+Euro (formerly drachma)</p>
+<p align="center">
+<b>
+<a href="?pageno=7">More Facts &amp;
+Figures</a>
+</b>
+</p>
+</td>
+</tr>
+</table>
+<!-- End Facts -->
+<table valign="top">
+<tr>
+<td align="center" valign="top">
+<table border="0" class="graphseg centered" valign="top" width="250">
+<tr pageno="1">
+<td id="A0202866" pageno="1">
+<img alt="Flag of Greece" height="154" id="A0202960" pageno="1" src="wikiback/www_infoplease_com_ipa_A0107588_html/greece.gif" width="250"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<table align="right" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+<span class="level3">Index</span>
+</td>
+</tr>
+<tr>
+<td>
+<ol>
+<li>Greece Main Page</li>
+<li>
+<a href="?pageno=2">Greece Mired in Long Civil War</a>
+</li>
+<li>
+<a href="?pageno=3">End of Monarchy Brings Civilian
+Government</a>
+</li>
+<li>
+<a href="?pageno=4">Government Focuses on Hosting Successful
+Olympics</a>
+</li>
+<li>
+<a href="?pageno=5">EU, IMF Bail Out Greece During Debt
+Crisis</a>
+</li>
+<li>
+<a href="?pageno=6">Voters Voice Displeasure with Bailout Terms
+at the Polls</a>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h1 class="level3">Geography</h1>
+<p>Located in southern Europe, Greece forms an irregular-shaped
+peninsula in the Mediterranean with two additional large peninsulas
+projecting from it: the Chalcidice and the Peloponnese. The Greek
+islands are generally subdivided into two groups, according to
+location: the Ionian islands (including Corfu, Cephalonia, and
+Leucas) west of the mainland and the Aegean islands (including
+Euboea, Samos, Chios, Lesbos, and Crete) to the east and south.
+North-central Greece, Epirus, and western Macedonia are all
+mountainous. The main chain of the Pindus Mountains extends from
+northwest Greece to the Peloponnese. Mount Olympus, rising to 9,570
+ft (2,909 m), is the highest point in the country.</p>
+<h1 class="level3">Government</h1>
+<p>Parliamentary republic.</p>
+<h1 class="level3">History</h1>
+<p>Indo-European peoples, including the Mycenaeans, began entering
+Greece about 2000 <span class="small" pageno="1">B.C.</span> and
+set up sophisticated civilizations. About 1200 <span class="small" pageno="1">B.C.</span> , the Dorians, another Indo-European people,
+invaded Greece, and a dark age followed, known mostly through the
+Homeric epics. At the end of this time, classical Greece began to
+emerge (c. 750 <span class="small" pageno="1">B.C.</span> ) as a
+loose composite of city-states with a heavy involvement in maritime
+trade and a devotion to art, literature, politics, and philosophy.
+Greece reached the peak of its glory in the 5th century <span class="small" pageno="1">B.C.</span> , but the Peloponnesian War
+(431&#8211;404 <span class="small" pageno="1">B.C.</span> ) weakened the
+nation, and it was conquered by Philip II and his son Alexander the
+Great of Macedonia, who considered themselves Greek. By the middle
+of the 2nd century <span class="small" pageno="1">B.C.</span> ,
+Greece had declined to the status of a Roman province. It remained
+within the eastern Roman Empire until Constantinople fell to the
+Crusaders in 1204. In 1453, the Turks took Constantinople and by
+1460, Greece was a province in the Ottoman Empire. The Greek war of
+independence began in 1821, and by 1827 Greece won independence
+with sovereignty guaranteed by Britain, France, and Russia.</p>
+<p>The protecting powers chose Prince Otto of Bavaria as the first
+king of modern Greece in 1832 to reign over an area only slightly
+larger than the Peloponnese peninsula. Chiefly under the next king,
+George I, chosen by the protecting powers in 1863, Greece acquired
+much of its present territory. During his 57-year reign, a period
+in which he encouraged parliamentary democracy, Thessaly, Epirus,
+Macedonia, Crete, and most of the Aegean islands were added from
+the disintegrating Turkish empire. Unfavorable economic conditions
+forced about one-sixth of the entire Greek population to emigrate
+(mostly to the U.S.) in the late 19th and early 20th centuries. An
+unsuccessful war against Turkey after World War I brought down the
+monarchy, which was replaced by a republic in 1923.</p>
+<table align="center">
+<tr>
+<td align="center" colspan="2">
+<a href="?pageno=2">
+<b>Next: Greece
+Mired in Long Civil War</b>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">1 <a href="?pageno=2">2</a> <a href="?pageno=3">3</a> <a href="?pageno=4">4</a> <a href="?pageno=5">5</a> <a href="?pageno=6">6</a>
+</td>
+</tr>
+</table>
+<hr align="center" width="33%"/>
+<table cellpadding="0" cellspacing="5" class="PageLinearNav noindex" valign="top">
+<tr pageno="6">
+<td class="PLN-prev" pageno="6">
+<a href="A0107584.html" pageno="6">Ghana</a>
+</td>
+<td class="PLN-intro" pageno="6">
+<a href="/countries.html" pageno="6">Countries</a>
+</td>
+<td class="PLN-next" pageno="6">
+<a href="A0107592.html" pageno="6">Grenada</a>
+</td>
+</tr>
+</table>
+<img alt="" height="0" src="wikiback/www_infoplease_com_ipa_A0107588_html/clearpix.gif" width="450"/>
+<br clear="all"/>
+<div id="HBpromo">
+<fieldset>
+<legend>Premium Partner Content</legend> 
+<div id="HBhead">
+<img alt="HighBeam Research" src="wikiback/www_infoplease_com_ipa_A0107588_html/04HB_logo.gif"/> 
+<p style="font-weight:700">Related content from HighBeam Research
+on: <span>Greece</span>
+</p>
+</div>
+<!--/ HBhead-->
+<div id="HBbody">
+<p>
+<a href="http://www.highbeam.com/doc/1P3-715088611.html?refid=ip_hf" rel="nofollow" target="_blank" title=" Greece and the New Balkans: Challenges and Opportunities...of the new challenges and prospects for Greece in the Balkans following the disintegration...Historical Overview by Constantinos Svalopoulos; Greece and the Balkans in the Post-Cold War Era...">Greece and the New Balkans:
+Challenges and Opportunities</a> <cite>(Journal of Political and
+Military Sociology)</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1G1-111015011.html?refid=ip_hf" rel="nofollow" target="_blank" title="...AND TAPESTRY. The cultural landscape of Greece includes strains of music, smells of...of impressions of this exploration of Greece . The realm of fantasy, imagination...distinctive atmosphere and character of Greece ? How have the Greeks related to the natural...">Greece.(cultural landscape of
+Greece)</a> <cite>(Focus on Geography)</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1P3-2032662871.html?refid=ip_hf" rel="nofollow" target="_blank" title="...last few days as investor confidence in Greece 's creditworthiness has slumped. The...to a growing view among investors that Greece is on the verge of a debt restructuring...Greek bond market has occurred despite Greece 's decision at the end of last week to...">Greece on the brink of default -
+what are the consequences?</a> <cite>(Eurozone Weekly)</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1G1-169924710.html?refid=ip_hf" rel="nofollow" target="_blank" title="...soluble coffee is the relatively small country of Greece with less than 11 million people. Greece does not manufacture an awful lot of soluble...coffee re-exported (according to ICO), Greece suddenly became a big consumer of soluble coffee...">Greece in an instant: Greece is
+often regarded as the cradle of Western civilization and is also
+acclaimed for its importation of soluble coffee. With very little
+coffee re-exported (according to ICO), Greece suddenly became a big
+consumer of soluble coffee especially when calculated on a per
+capita basis.(Greece)</a> <cite>(Tea &amp; Coffee Trade
+Journal)</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1P3-1501504761.html?refid=ip_hf" rel="nofollow" target="_blank" title="...significant inward investment are helping Greece battle the headwinds of a tough global...growing economies in southeast Europe, Greece provides investors and businesses with...bureaucratic, pension and tax reform. &quot; Greece is a country that has a lot of growth...">Greece Presents Many Opportunities
+And Challenges</a> <cite>(Global Finance)</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1G1-219162431.html?refid=ip_hf" rel="nofollow" target="_blank" title="The euro zone's rescue plan for Greece is flawed ON FEBRUARY 15th Greeks celebrated...in the next few months, during which Greece has to raise at least [euro]20 billion...finances are likely to be tested again. Greece 's plans to restructure its economy lack...">Leant on; Greece and the euro.</a>
+<cite>(The Economist (US))</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1G1-222026457.html?refid=ip_hf" rel="nofollow" target="_blank" title=" Greece is likely to need far more financial aid...determined and co-ordinated action&quot; to protect Greece against a sovereign-debt default and to...The need for clarity is now more urgent. Greece has to refinance some [euro]20 billion...">Safety not; Greece's bail-out
+maths.</a> <cite>(The Economist (US))</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1G1-133460617.html?refid=ip_hf" rel="nofollow" target="_blank" title="CALOTYCHOS, VANGELIS. Modern Greece : a cultural poetics. xii, 334 pp., maps, illus...paper) Virtually by definition, anthropologists of Greece conduct their fieldwork in 'modern Greece '. This is curious, since their colleagues working...">Modern Greece: a cultural
+poetics.(General)(Book Review)</a> <cite>(Journal of the Royal
+Anthropological Institute)</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1G1-53567229.html?refid=ip_hf" rel="nofollow" target="_blank" title="...global financial crisis has not dented Greece 's confidence that it will join the European...policies and speed up reforms to ensure that Greece can meet its deadline for entering Euroland...over the painful changes needed to bring Greece in line with its EU partners. He has...">Greece's goal: entering
+Euroland.</a> <cite>(Europe)</cite>
+</p>
+<p>
+<a href="http://www.highbeam.com/doc/1G1-223676204.html?refid=ip_hf" rel="nofollow" target="_blank" title="Worries about Greece 's ability to roll over its maturing...percentage points, the highest since Greece joined the euro in 2001. The D-word...lips of analysts. The cost of insuring Greece 's bonds surpassed that of Iceland...">The wax melts; Greece's deepening
+debt crisis.</a> <cite>(The Economist (US))</cite>
+</p>
+</div>
+<!--/ HBbody-->
+<div id="HBfoot">
+<form action="http://www.highbeam.com/library/search.asp?refid=ip_hf&amp;publication=not%20%22columbia%20encyclopedia%22%20and%20not%20%22world%20almanac%22%20and%20not%20%22the%20world%20almanac%22" target="_blank">
+<label>Search HighBeam Research for:</label>
+<input id="refid" name="refid" type="hidden" value="ip_hf"/>
+<input id="field1" name="q" type="text" value="Greece"/> <input id="field2" src="http://i.infopls.com/images/btn-research.png" type="image"/>
+</form>
+</div>
+<!--/ HBfoot-->
+<p class="source" id="HBsource">Additional search results provided
+by HighBeam Research, LLC. &#169; Copyright 2005. All rights
+reserved.</p>
+</fieldset>
+</div>
+<!--/ HBpromo--><!-- google_ad_section_end -->
+<script type="text/javascript">
+//<![CDATA[
+$('#Pg a').click(function(){if(this.href.indexOf(location.hostname)==-1){pageTracker._trackPageview('/outgoing/'+this.href.replace(/^https?:\/\//i,''));};});
+//]]>
+</script>
+</td>
+<td id="mktplace">
+<div id="mr">
+<script type="text/javascript">
+//<![CDATA[
+GA_googleFillSlot("IP_world_300x250");
+//]]>
+</script>
+</div>
+<!-- -->
+<div id="ssky">
+<script type="text/javascript">
+//<![CDATA[
+GA_googleFillSlot("IP_world_160x600");
+//]]>
+</script>
+</div>
+<!-- -->
+<!-- Answerplease promo -->
+<a href="http://answerplease.infoplease.com/">
+<img alt="A free, reliable Q&amp;A site for homework help. Answerplease.com" border="0" height="201" src="wikiback/www_infoplease_com_ipa_A0107588_html/ip_ad_vertical.jpg" style="margin-top:10px;" width="127"/>
+</a> 
+<!-- # Answerplease promo -->
+ 
+<ul class="list">
+<li>
+<img alt="Infoplease Tools" height="22" src="wikiback/www_infoplease_com_ipa_A0107588_html/infotoolslogo.gif" width="105"/> 
+<ul>
+<li>
+<a href="/math/calculator.html" title="Engineering/Scientific Calculator">Calculator</a>
+</li>
+<li>
+<a href="/spellcheck" title="Use this page for spelling help, or type ' spell &#8220;your-best-guess&#8221; ' into site search">Spelling
+Checker</a>
+</li>
+<li>
+<a href="/atlas/latitude-longitude.html" title="Find longitude and latitude of places around the world.">Place
+Finder</a>
+</li>
+<li>
+<a href="/atlas/calculate-distance.html" title="How far is it? Find distances between cities/towns, land features, and more.">Distance
+Calculator</a>
+</li>
+<li>
+<a href="/periodictable.php" title="Interactive periodic table of the elements: atomic weight, melting/boiling points, more">Periodic
+Table</a>
+</li>
+<li>
+<a href="/pages/unitconversion.html" title="Conversion calculator: area, volume, length, time, and more; plus significant figures">Conversion
+Tool</a>
+</li>
+<li>
+<a href="/calendar.php" title="View any month, any year, in the Gregorian calendar">Perpetual
+Calendar</a>
+</li>
+<li>
+<a href="/yearbyyear.html" title="Significant events by year from 1900 to the present">Year by
+Year</a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- TutorVista -->
+<div class="tutIP-infoarea">
+<div style="padding:5px;">
+<h1>24 X 7</h1>
+<h2>Private Tutor</h2>
+<div style="padding-top:5px;">
+<a href="http://vista.tutorvista.com/cm/campaign.php?cpid=40001">
+<img alt="Click Here for Details" border="0" height="33" src="wikiback/www_infoplease_com_ipa_A0107588_html/tutIP_try_button_sm.gif" width="115"/>
+</a>
+</div>
+<div style="padding-top:5px;padding-bottom:5px;">
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="5">
+<img alt="" border="0" height="5" src="wikiback/www_infoplease_com_ipa_A0107588_html/tutIP_bullet_orange.gif" style="padding-top:5px;" width="5"/>
+</td>
+<td>24 x 7 Tutor Availability</td>
+</tr>
+<tr>
+<td valign="top">
+<img alt="" border="0" height="5" src="wikiback/www_infoplease_com_ipa_A0107588_html/tutIP_bullet_orange.gif" style="padding-top:5px;" width="5"/>
+</td>
+<td>Unlimited Online Tutoring</td>
+</tr>
+<tr>
+<td valign="top">
+<img alt="" border="0" height="5" src="wikiback/www_infoplease_com_ipa_A0107588_html/tutIP_bullet_orange.gif" style="padding-top:5px;" width="5"/>
+</td>
+<td>1-on-1 Tutoring</td>
+</tr>
+</table>
+</div>
+<div class="tutfoot">Explore <a href="http://www.tutorvista.com/math-word-problems" target="_blank">Math Word
+Problems</a> , <a href="http://www.tutorvista.com/content/math/algebra/question-answers1.php" target="_blank">Algebra
+Questions</a>
+</div>
+</div>
+</div>
+<!-- End TVista -->
+<div id="adMktPlace"/>
+<script type="text/javascript">
+//<![CDATA[
+$('#mktplace a').click(function(){if(this.href.indexOf(location.hostname)==-1){pageTracker._trackPageview('/outgoing/'+this.href.replace(/^https?:\/\//i,''));};});
+//]]>
+</script>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div id="ipFoot" style="text-align: center">
+<div id="FOOTER">
+<span class="rssxml">
+<a href="/rss/">RSS</a>
+</span> | <b>
+<a href="/aboutip.html">About
+Infoplease</a>
+</b>, <b>Part of Family Education Network</b> | <a href="/contact.html?origin=%2Fipa%2FA0107588.html">Contact</a> | <a href="/linkagreement.html">Link to Us</a> | <a href="/infoplease-advertising.html">Advertise with Infoplease</a> |
+<a href="http://fen.com/resources/agreeDisclaim.html">Terms of
+Use</a> | <a href="http://fen.com/resources/privacyStatement.html">Privacy</a>
+<br/>
+Part of Family Education Network | <a href="http://www.factmonster.com/">Homework Help</a> | <a href="http://www.infoplease.com/">Reference Site</a> | <a href="http://www.funbrain.com/">K-8 Kids</a> | <a href="http://www.poptropica.com/">Poptropica</a> | <a href="http://www.familyeducation.com/">Parenting Advice</a> | <a href="http://www.teachervision.com/">Teacher Resources</a> | <a href="http://www.mygradebook.com">Online Gradebook</a>
+<br/>
+&#169; 2000&#8211;2012 Pearson Education, publishing as Infoplease</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$('#ipFoot a').click(function(){if(this.href.indexOf(location.hostname)==-1){pageTracker._trackPageview('/outgoing/'+this.href.replace(/^https?:\/\//i,''));};});
+//]]>
+</script>
+ <!-- Start Quantcast tag -->
+<script src="http://edge.quantserve.com/quant.js" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+_qacct="p-c2iQpv7gXxF_A";quantserve();
+//]]>
+</script>
+ <noscript>
+<a href="http://www.quantcast.com/p-c2iQpv7gXxF_A" target="_blank">
+<img alt="Quantcast" border="0" height="1" src="wikiback/www_infoplease_com_ipa_A0107588_html/p_c2iQpv7gXxF_A.gif" style="display: none" width="1"/>
+</a>
+</noscript> <!-- End Quantcast tag -->
+ <script src="http://i.infopls.com/js/ip-close.js" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+var HotWords = new hotWords();
+//]]>
+</script>
+ 
+<div id="lb">
+<script type="text/javascript">
+//<![CDATA[
+GA_googleFillSlot("IP_world_728x90");
+//]]>
+</script>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+<!--
+var casaleD=new Date();var casaleR=(casaleD.getTime()%8673806982)+Math.random();
+var casaleU=escape(window.location.href);
+var casaleHost=' type="text/javascript" src="http://as.casalemedia.com/s?s=';
+document.write('<scr'+'ipt'+casaleHost+'65686&amp;u=');
+document.write(casaleU+'&amp;f=1&amp;id='+casaleR+'"><\/scr'+'ipt>');
+//-->
+//]]>
+</script>
+</div>
+</body>
+</html>

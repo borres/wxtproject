@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: formulalist</h1>
+<p>
+  The purpose of a formulalist is to present a list of all formulas used in 
+  a selection of modules with a reference to the modules.
+  The formulas must be registered in a <?_wxt xlink id="Formulas"?> element  or  <?_wxt xlink id="ODTFormulas"?> element in the script
+  or "on the fly" in <?_wxt xlink id="PIformula"?>. Formulas of all three forms (TeX,Image,MathML) is listed.
+</p>
+<pre class="piline">
+&lt;?_wxt formulalist id=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>idlist</strong> (optional)</td>
+    <td>A commaseparated list of module ids that we want to include.
+      If this is set, the others (select, root and books) are ignored.
+     </td>
+  </tr>
+    <tr>
+    <td  style="vertical-align:top"><strong>scriptpath</strong> (optional)</td>
+    <td>The scriptpath is an xpath that is used on the script to select modules.<br/>
+       Sample: //module[@template='P'] get all modules with template P.    
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>root</strong> (optional)</td>
+    <td>The id of the module that defines the subtree we will make a map for.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>books</strong> (optional)</td>
+    <td>A commaseparated list of book ids that we want to include.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>select</strong> (optional)</td>
+    <td>Possible values are _siblings and _children.
+    
+     </td>
+  </tr>
+    <tr>
+    <td  style="vertical-align:top"><strong>cols</strong> (optional)</td>
+    <td>The number of columns we want (&gt;=1).
+    Default value is 1.
+     </td>
+  </tr>
+  </table>
+  
+    <p class="stylefoot">
+Styleclass(es) describing this PI is: <em>wxtformulalist</em>.
+ See distributed std styles.
+</p>
+
+
+<p>
+    The selected set of modules will be assembled according to the following rule:
+</p>
+<ul>
+    <li>if <em>idlist</em> is set, the collection is as defined in the idlist.</li>
+    <li>if <em>idlist</em> is not set, the collection is made up as the intersection
+        of the modules spesified by <em>root</em>, <em>book</em>, <em>scriptpath</em> and <em>select</em>.</li>
+    <li>if neither <em>idlist</em>, <em>root</em>, <em>book</em>, <em>scriptpath</em> or <em>select</em> is set, 
+	all modules are selected, except those with books attribute: <em>_never</em>.</li>
+</ul>
+
+
+
+<h2>Example:</h2>
+
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt formulalist books="math"?&gt;
+&lt;/div&gt;
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<images>
+<image id="bs1-local">
+	<location>${someimages}bs7.png</location>
+	<subtext>self</subtext>
+</image>
+</images>

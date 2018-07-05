@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">Welcome</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">Page1</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">Page1</div>Demonstration of default module fragments</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:fragment</h1>
+<p>
+   A fragment is any piece of HTML or text that can be defined and
+   used anywhere. A fragment must be defined in the script
+   or in a separate fragments file.
+   A fragment may be imported in the template directly or as part of 
+   content. A fragment  may contain PIs.
+</p>
+<p>
+Written by: <span class="skiptranslate">Børre Stenseth, Østfold University College</span>
+</p>
+<h2>Simple text</h2>
+<p>txt - as is in a div-tag</p>
+<div>
+Shall I compare thee to a summer's day?
+Thou art more lovely and more temperate:
+Rough winds do shake the darling buds of May,
+And summer's lease hath all too short a date:
+Sometime too hot the eye of heaven shines,
+And often is his gold complexion dimm'd;
+And every fair from fair sometime declines,
+By chance, or nature's changing course untrimm'd;
+But thy eternal summer shall not fade,
+Nor lose possession of that fair thou ow'st,
+Nor shall death brag thou wander'st in his shade,
+When in eternal lines to time thou grow'st;
+So long as men can breathe, or eyes can see,
+So long lives this, and this gives life to thee.
+</div>
+<h2>Simple text</h2>
+<p>txt - as is in a pre-tag</p>
+<pre>
+Shall I compare thee to a summer's day?
+Thou art more lovely and more temperate:
+Rough winds do shake the darling buds of May,
+And summer's lease hath all too short a date:
+Sometime too hot the eye of heaven shines,
+And often is his gold complexion dimm'd;
+And every fair from fair sometime declines,
+By chance, or nature's changing course untrimm'd;
+But thy eternal summer shall not fade,
+Nor lose possession of that fair thou ow'st,
+Nor shall death brag thou wander'st in his shade,
+When in eternal lines to time thou grow'st;
+So long as men can breathe, or eyes can see,
+So long lives this, and this gives life to thee.
+</pre>
+<h2>Formatted HTML</h2>
+<div>
+<div style="border-style:solid;padding:10px;color:red">
+        WARNING: There is always an other bug
+        </div>
+</div>
+<h2>Formatted HTML</h2>
+<p>HTML with a scripttag launching a google gadget</p>
+<div>
+<script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/datetime_v2/datetime_v2.xml&amp;up_color=blue&amp;up_dateFormat=wdm&amp;up_firstDay=1&amp;up_clocks=%5B%5B-73.986951%2C40.756054%2C%22New%20York%22%2C0%5D%5D&amp;synd=open&amp;w=320&amp;h=148&amp;&amp;lang=no&amp;country=ALL&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"> </script>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/welcome.xml</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="welcome3">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;welcome&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:fragment&lt;/h1&gt;
+ &lt;p&gt;
+   A fragment is any piece of HTML or text that can be defined and
+   used anywhere. A fragment must be defined in the script
+   or in a separate fragments file.
+   A fragment may be imported in the template directly or as part of 
+   content. A fragment  may contain PIs.
+&lt;/p&gt;
+&lt;p&gt;
+Written by: &lt;?_wxt fragment id="_defaultauthor"?&gt;
+&lt;/p&gt;
+     
+&lt;!-- simple text, as is --&gt;
+&lt;h2&gt;Simple text&lt;/h2&gt;
+&lt;p&gt;txt - as is in a div-tag&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt fragment id="sonette"?&gt;
+&lt;/div&gt;
+ 
+&lt;!-- simple text, as is --&gt;
+&lt;h2&gt;Simple text&lt;/h2&gt;
+&lt;p&gt;txt - as is in a pre-tag&lt;/p&gt;
+&lt;pre&gt;
+&lt;?_wxt fragment id="sonette"?&gt;
+&lt;/pre&gt;    
+ 
+&lt;!-- HTML --&gt;
+&lt;h2&gt;Formatted HTML&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt fragment id="warning"?&gt;
+&lt;/div&gt;
+ 
+&lt;!-- HTML with scripttag --&gt;
+&lt;h2&gt;Formatted HTML&lt;/h2&gt;
+&lt;p&gt;HTML with a scripttag launching a google gadget&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt fragment id="today"?&gt;
+&lt;/div&gt;
+
+    
+&lt;hr/&gt;
+    
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="welcome.xml" lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

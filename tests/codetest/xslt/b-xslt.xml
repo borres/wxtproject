@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>XSLT</title>
+</head>
+    <body>
+        
+        <div class="mainblock">
+		<h1>XSLT</h1>
+ <p>
+   encoding
+</p>
+<h2>textimport</h2>
+<p>Simple as xsltcode</p>
+<div>
+<?_wxt importtxt location="totable.xsl" code="xsltcode"?>
+</div>
+
+
+<p>Simple as xmlcode</p>
+<div>
+<?_wxt importtxt location="totable.xsl" code="xmlcode"?>
+</div>
+
+
+
+
+<p>extract</p>
+<div>
+<?_wxt importtxt location="odt2wiki.xsl" leftpar="<!-- bookmarks -->" rightpar="<!-- end bookmarks -->" code="xsltcode"?>
+</div>
+
+<!-- ********************************************** -->
+<h2>Dynamic </h2>
+<p>Simple</p>
+<div>
+<?_wxt expandsimple location="totable.xsl" code="xsltcode"?>
+</div>
+
+<p>AJAX</p>
+<div>
+<?_wxt expand sourcelocation="totable.xsl" location="read.txt" code="xsltcode"?>
+</div>
+
+
+<!-- ********************************************** -->
+<p>CDATA</p>
+<div>must be tight in the sense that the CDATA node must be the only one</div>
+<pre class="xsltcode"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" 
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+
+<xsl:output method="xml" 
+            encoding="UTF-8" 
+            indent="yes" 
+            standalone="yes" 
+            doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" />
+
+<xsl:template match="/">
+    <div class="dbtables">
+        <xsl:apply-templates select="/root/query"/>
+    </div>
+</xsl:template>
+
+<xsl:template match="//query">
+<div class="dbresult">
+    <table>
+    <xsl:call-template name="tableheader">
+        <xsl:with-param name="nodelist" select="record[position()=1]/child::*"/>
+    </xsl:call-template>
+    <tbody>
+        <xsl:apply-templates select="record"/>
+    </tbody>
+    </table>
+</div>
+</xsl:template>
+
+<xsl:template name="tableheader">
+    <xsl:param name="nodelist"/>	
+    <thead>
+    <tr>
+        <xsl:for-each select="$nodelist">
+            <th><xsl:value-of select="local-name()"/></th>
+        </xsl:for-each>
+    </tr>
+    </thead>
+</xsl:template>
+
+<xsl:template match="//record">
+    <tr>
+        <xsl:for-each select="child::*">
+            <td><xsl:value-of select="."/></td>
+        </xsl:for-each>
+    </tr>
+</xsl:template>
+
+</xsl:stylesheet>
+]]></pre>
+
+
+
+
+
+</div>
+
+    </body>
+</html>

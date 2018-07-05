@@ -1,0 +1,24 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;<span class="tagname">wscript</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>"&gt;    
+      
+    &lt;<span class="tagname">definitions</span>&gt;
+        &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">indent-output</span>" <span class="attname">value</span>="<span class="attvalue">yes</span>"/&gt;
+        &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">output-format</span>" <span class="attname">value</span>="<span class="attvalue">xhtml</span>"/&gt;
+        &lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">p_template.xml</span>"/&gt;
+        
+        &lt;<span class="tagname">pathfragment</span> <span class="attname">id</span>="<span class="attvalue">absolutes</span>" <span class="attname">value</span>="<span class="attvalue">http://www.ia.hiof.no/~borres/wxt2absolutes/imagetest/</span>"/&gt;
+        
+        &lt;<span class="tagname">images</span> <span class="attname">location</span>="<span class="attvalue">myimages/imagedescription.xml</span>"/&gt;
+        &lt;<span class="tagname">images</span> <span class="attname">location</span>="<span class="attvalue">myimages/imagedescription2.xml</span>"/&gt;
+        &lt;<span class="tagname">images</span> <span class="attname">location</span>="<span class="attvalue">{absolutes}imagedescription3.xml</span>"/&gt;
+        &lt;<span class="tagname">images</span> <span class="attname">location</span>="<span class="attvalue">{absolutes}imagedescription4.xml</span>"/&gt;
+    
+    &lt;/<span class="tagname">definitions</span>&gt;
+
+    &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">description</span>="<span class="attvalue">test images</span>" <span class="attname">location</span>="<span class="attvalue">index.html</span>"
+          <span class="attname">name</span>="<span class="attvalue">IMAGE1</span>" <span class="attname">template</span>="<span class="attvalue">P</span>"&gt;
+            &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">images1.xml</span>"/&gt;
+    &lt;/<span class="tagname">module</span>&gt;
+    
+
+&lt;/<span class="tagname">wscript</span>&gt;</pre>

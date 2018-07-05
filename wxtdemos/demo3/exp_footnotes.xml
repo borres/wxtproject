@@ -1,0 +1,37 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Footnotes&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_footnotes.xml" 
+             sourcelocation="footnotes.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">p</span>&gt;Duften minner mest om epler og har et lite streif av gjærbakst. 
+    Syrefrisk og harmonisk smak med god fylde, fin syrefasthet i ettersmaken. 
+    Duft av modne epler og gjær. Syrlig anslag, deretter streif av honning i smaken. 
+    Litt lite nyansert. Aromatisk duft av solbærblader, stikkelsbær, nesle og urter. 
+    Smaksrik og lang, med frisk bitterhet i ettersmaken. Rik duft av mineraler, sitrus og toast. 
+    Velbalansert og fyldig smak med både syretørrhet og fruktsødme. 
+    Kompleks og lang ettersmak med en liten brentkarakter i avslutningen. 
+    Brentpreg i duften med toastkarakter.
+    &lt;/<span class="tagname">p</span>&gt;
+    &lt;<span class="tagname">p</span>&gt;Brentkarakter og sødme av rosiner&lt;<span class="tagname">span</span> <span class="attname">class</span>="<span class="attvalue">fn</span>"&gt;Rosiner er egentlig tørkede druer&lt;/<span class="tagname">span</span>&gt; og aprikos i duften. 
+    Tørkete frukter i smaken, vinen virker litt for oksydert, og har en relativt tørr ettersmak. 
+    Rødfiolett farge, og ferskt bærpreg med brent toastkarakter i duften. 
+    Bløt og fyldig morellsødme pluss fatpreg i smaken. Avrundet ettersmak, prisgunstig hverdagsvin for nå-konsum. 
+    Kompleks duft av solbær, lær og eikefat. Mykt anslag og moden smak med fine smaksnyanser. 
+    God fylde og fin trrhet i ettersmaken. Parker gir 86 poeng og antyder holdbarhet til 2007. 
+    &lt;/<span class="tagname">p</span>&gt;
+    &lt;<span class="tagname">p</span>&gt;Fersk stil med duft av kirsebær &lt;<span class="tagname">span</span> <span class="attname">class</span>="<span class="attvalue">fn</span>"&gt;Bær fra kirsebærtreet. 
+    Spesielt de japanske kirsebærtrærne er kjente for sin blomsterprakt&lt;/<span class="tagname">span</span>&gt;, urter og eikefat. 
+    Saftig bærsmak, middels fylde og frisk ettersmak med lett snerp. 
+    Konsentrert solbæraroma i duften, fint balansert mot et edelt preg av sedertre. 
+    Bløtt smaksanslag, god fylde, fin syretørrhet og lett snerp. 
+    Solbærblader og solbær er tydeligste elementer i duften. 
+    &lt;/<span class="tagname">p</span>&gt;    
+    <span class="process">&lt;?_wxt footnote form="normal"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

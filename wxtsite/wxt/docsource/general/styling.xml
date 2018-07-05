@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Styling</h1>
+<p>
+  WXT produces some elements which are marked with <strong>class</strong>-attribute.
+  You can, and should, control the appearance of these elements by defining the
+  appropriate styles in a stylesheet.
+</p>
+<p>
+    A basic stylesheet involving most actual styles are quoted below.
+	This is distributed with WXT, see catalog usefull in the dist catalog.
+</p>
+<p>	
+    This may not be the styling of your dreams, but it indicates the 
+    possibilities. Remember that you can always surround any fragment with a div or span 
+    that controls the styling.
+</p>
+<p>
+    <strong>Inspect</strong> the stylesheet to see which style elements you should define
+    for each produced fragment, as resulting from PI commands.
+</p>
+<div>
+<?_wxt importtxt location="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" lang="lang-css"?>
+</div>
+
+
+
+</body>
+</html>

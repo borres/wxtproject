@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>PageTip</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon"/>
+	<meta content="wxt2" name="GENERATOR"/>
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="stylesheet" type="text/css"/>
+	<link href="../../templates/template.css" rel="STYLESHEET"/>
+	<!--<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>-->
+
+    <script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/wxt/cgi-bin/signature/showHiofCard.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/wxt/cgi-bin/signature/showLatinQuote.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/rating/rating.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/thebugfly/fly.js" type="text/javascript"> </script>
+
+	<script src="http://www.it.hiof.no/~borres/allround/redirect/ia_to_it.js" type="text/javascript"> </script>	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+    <script type="text/javascript">
+	//<![CDATA[
+	function changestyle(eltId, style) 
+    {
+      var elt=document.getElementById(eltId);
+      if(elt)
+        elt.style.visibility = style;	                        
+    }
+	//]]>
+	</script>
+
+    <style type="text/css">
+    /*sample*/
+    .summary {
+            color: #000000;
+            font-size: 11px;
+            padding: 5px;
+            border: 1px solid #324C48;
+            background-color: yellow;
+            visibility: hidden;
+            position: absolute;
+            left: 50px;
+            z-index: 2000;
+            top: 0px;
+            width: 300px;
+        }
+        /*eofsample*/
+     </style>
+</head>
+<body> 
+<div id="all">
+
+<!-- content -->
+<div class="content">
+
+    <div class="collectable">
+        <h1> Pagetip </h1>
+		
+        <div class="main">
+          <p>
+ Noen eksempler:
+</p>
+            <div>
+<a href="http://www.hiof.no" onmouseout="changestyle('hiof','hidden');" onmouseover="changestyle('hiof', 'visible');">HiØ</a>
+
+</div>
+            <div style="position: absolute; z-index: 10;">
+	<div class="summary" id="hiof" style="visibility: hidden;">
+		<b>Høgskolen i Østfold</b>
+                <br/>
+		Ligger i to byer: Halden og Fredrikstad.
+	</div>
+</div>
+            <div>
+<a href="http://www.hiof.no" onmouseout="changestyle('hiof2','hidden');" onmouseover="changestyle('hiof2', 'visible');">HiØ</a>
+
+</div>
+            <div style="position: absolute; z-index: 10;">
+	<div class="summary" id="hiof2" style="visibility: hidden;">
+		<b>Høgskolen i Østfold</b>
+                <br/>
+		<img alt=" " src="hiofthumb.png"/>
+	</div>
+</div>
+
+
+</div>
+            <p>
+	Det trenger selvsagt ikke være linker vi illustrerer på denne måten. Dra cursor over linja under:
+
+</p>
+
+
+
+
+<p>
+<span onmouseout="changestyle('ronaldhino','hidden');" onmouseover="changestyle('ronaldhino', 'visible');" style="cursor:pointer">Ronaldinho</span>
+og 
+<span onmouseout="changestyle('kaka','hidden');" onmouseover="changestyle('kaka', 'visible');" style="cursor:pointer">Kaka</span>
+er to brasilianske fotballspillere som har vært i  
+<span onmouseout="changestyle('milan','hidden');" onmouseover="changestyle('milan', 'visible');" style="cursor:pointer">AC Milan</span>
+</p>
+
+
+
+
+<div style="position: absolute; z-index: 10;">
+	<div class="summary" id="ronaldhino" style="visibility: hidden;">
+		<b>Ronaldo de Assis Moreira </b>
+			<br/>
+		<img alt=" " src="content/ronaldinho.jpg" style="float:left; margin:10px"/>
+		<div>
+			er født 21. mars 1980 i Porto Alegre, Brasil. Han er bedre kjent som «Ronaldinho» (lille Ronaldo) og blir regnet som en av verdens beste fotballspillere. Navnet Ronaldinho fikk han da han begynte å spille for Brasils landslag, fordi Ronaldo allerede var der. En av fintene Ronaldinho er kjent for kalles elástico, som takket være Rivelino ble populær på 70-tallet [1]. Først drar han ballen den ene veien før han drar den den andre veien, hele tiden mens ballen er klistret til foten hans.
+		</div>
+	</div>
+</div>
+
+<div style="position: absolute; z-index: 10;">
+	<div class="summary" id="kaka" style="visibility: hidden;">
+		<b>Ricardo Izecson dos Santos Leite</b>
+			<br/>
+		<img alt=" " src="content/kaka.jpg" style="float:left; margin:10px"/>
+		<div>
+			er født 22. april 1982 i Brasília. Han er en brasiliansk fotballspiller. Han spiller for den italienske storklubben AC Milan og på Brasils landslag. Han blir regnet for å være blant verdens beste midtbanespillere, og ble i 2007 kåret til årets spiller av FIFA
+		</div>
+	</div>
+</div>
+
+<div style="position: absolute; z-index: 10;">
+	<div class="summary" id="milan" style="visibility: hidden;">
+		<b>Associazione Calcio Milan</b>
+			<br/>
+		<img alt=" " src="content/milan.jpg" style="float:left; margin:10px"/>
+		<div>
+			Associazione Calcio Milan er en italiensk fotballklubb fra Milano som spiller i Serie A. Milan er en av verdens mest suksessfulle klubber. De har vunnet mesterligaen hele syv ganger – sist i 2007 –, og har 17 Serie A-titler så langt i klubbens historie. Bare Real Madrid har flere mesterligatroféer, mens Juventus er den eneste klubben i Italia som har vunnet flere scudetti (italienske ligamesterskap). Laget spiller sine hjemmekamper på San Siro, en stadion de deler med byrivalene Inter.
+		</div>
+	</div>
+</div>
+
+
+
+
+</div>
+		<div>
+            <!--empty: footnote-->
+
+          </div>
+        <!-- references -->
+        <div class="references">
+          <fieldset>
+          <legend>Referanser</legend>
+          <div>
+                <!--empty: reflist-->
+              </div>
+
+          <div>
+                <p>
+		Den aktuelle koden er sitert i teksten.
+	</p>
+              </div>
+          </fieldset>
+        </div>
+          <!-- eof references -->
+      </div>
+
+        <!-- collectable -->
+      
+
+</div>
+      <!-- eof content -->
+
+
+
+
+
+</div>
+    <!-- all -->
+<div>
+
+</body>
+</html>

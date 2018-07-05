@@ -1,0 +1,34 @@
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="utf-8" standalone="no"?&gt;
+&lt;!-- script for building demo1 --&gt;
+
+&lt;<span class="tagname">wscript</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>"&gt;    
+&lt;<span class="tagname">definitions</span>&gt;
+  &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">indent-output</span>" <span class="attname">value</span>="<span class="attvalue">no</span>"/&gt;
+  &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">expand-all</span>" <span class="attname">value</span>="<span class="attvalue">no</span>"/&gt;
+  &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">default-encoding</span>" <span class="attname">value</span>="<span class="attvalue">UTF-8</span>"/&gt;
+  &lt;<span class="tagname">option</span> <span class="attname">name</span>="<span class="attvalue">output-format</span>" <span class="attname">value</span>="<span class="attvalue">xhtml</span>"/&gt;
+  &lt;<span class="tagname">pathfragment</span> <span class="attname">id</span>="<span class="attvalue">stuff</span>" <span class="attname">value</span>="<span class="attvalue">stuff</span>"/&gt;
+  &lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">stuff/p_template.xml</span>"/&gt;
+  &lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">COLLECT</span>" <span class="attname">location</span>="<span class="attvalue">{stuff}/book_template.xml</span>"/&gt;    
+&lt;/<span class="tagname">definitions</span>&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">location</span>="<span class="attvalue">index.html</span>" <span class="attname">name</span>="<span class="attvalue">Welcome</span>" <span class="attname">template</span>="<span class="attvalue">P</span>"&gt;
+    &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">welcome.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">location</span>="<span class="attvalue">page1.html</span>" <span class="attname">name</span>="<span class="attvalue">Page1</span>" <span class="attname">template</span>="<span class="attvalue">P</span>"&gt;
+    &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">page1.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">location</span>="<span class="attvalue">page2.html</span>" <span class="attname">name</span>="<span class="attvalue">Page2</span>" <span class="attname">template</span>="<span class="attvalue">P</span>"&gt;
+    &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">page2.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">location</span>="<span class="attvalue">page3.html</span>" <span class="attname">name</span>="<span class="attvalue">Page3</span>" <span class="attname">template</span>="<span class="attvalue">P</span>"&gt;
+    &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">page3.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">location</span>="<span class="attvalue">demand.html</span>" <span class="attname">name</span>="<span class="attvalue">Select Book</span>" <span class="attname">template</span>="<span class="attvalue">P</span>"&gt;
+    &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">demand.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+  
+  
+  &lt;<span class="tagname">module</span> <span class="attname">books</span>="<span class="attvalue">_never</span>" <span class="attname">template</span>="<span class="attvalue">{stuff}/book_template.xml</span>" <span class="attname">name</span>="<span class="attvalue">My Book</span>" <span class="attname">location</span>="<span class="attvalue">{stuff}/collectedbook.html</span>"&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+&lt;/<span class="tagname">wscript</span>&gt;</pre>

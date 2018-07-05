@@ -1,0 +1,51 @@
+<pre class="xsltcode">
+&lt;?xml version="<span class="literal">1.0</span>" encoding="<span class="literal">UTF-8</span>"?&gt;
+&lt;<span class="word">xsl:stylesheet</span> version="<span class="literal">1.0</span>" 
+                xmlns:xsl="<span class="literal">http://www.w3.org/1999/XSL/Transform</span>" &gt;
+
+&lt;<span class="word">xsl:output</span> method="<span class="literal">xml</span>" 
+            encoding="<span class="literal">UTF-8</span>" 
+            indent="<span class="literal">yes</span>" 
+            standalone="<span class="literal">yes</span>" 
+            doctype-public="<span class="literal">-//W3C//DTD XHTML 1.0 Strict//EN</span>" /&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">/</span>"&gt;
+    &lt;div class="<span class="literal">dbtables</span>"&gt;
+        &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">/root/query</span>"/&gt;
+    &lt;/div&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">//query</span>"&gt;
+&lt;div class="<span class="literal">dbresult</span>"&gt;
+    &lt;table&gt;
+    &lt;<span class="word">xsl:call-template</span> name="<span class="literal">tableheader</span>"&gt;
+        &lt;<span class="word">xsl:with-param</span> name="<span class="literal">nodelist</span>" select="<span class="literal">record[position()=1]/child::*</span>"/&gt;
+    &lt;<span class="word">/xsl:call-template</span>&gt;
+    &lt;tbody&gt;
+        &lt;<span class="word">xsl:apply-templates</span> select="<span class="literal">record</span>"/&gt;
+    &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> name="<span class="literal">tableheader</span>"&gt;
+    &lt;<span class="word">xsl:param</span> name="<span class="literal">nodelist</span>"/&gt;  
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;<span class="word">xsl:for-each</span> select="<span class="literal">$nodelist</span>"&gt;
+            &lt;th&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">local-name()</span>"/&gt;&lt;/th&gt;
+        &lt;<span class="word">/xsl:for-each</span>&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">xsl:template</span> match="<span class="literal">//record</span>"&gt;
+    &lt;tr&gt;
+        &lt;<span class="word">xsl:for-each</span> select="<span class="literal">child::*</span>"&gt;
+            &lt;td&gt;&lt;<span class="word">xsl:value-of</span> select="<span class="literal">.</span>"/&gt;&lt;/td&gt;
+        &lt;<span class="word">/xsl:for-each</span>&gt;
+    &lt;/tr&gt;
+&lt;<span class="word">/xsl:template</span>&gt;
+
+&lt;<span class="word">/xsl:stylesheet</span>&gt;
+</pre>

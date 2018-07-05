@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: importhtml</h1>
+<p>
+  The purpose of an importhtml PI is to produce a wellformed HTML-fragment 
+  and replace the PI with this fragment.
+  WXT may attempt to do a simple tiding with jsoup <?_wxt ref id="jsoup"?> if parsing of the HTML-material fails.
+  Note however that even if the tidy job is successfull the result may no be exactly as you expect.
+</p>
+<p>
+ There are basically to forms of html-import, depending on the parameter <em>remote</em>, see below.
+</p>
+<p>
+You should use importhtml in stead of importxml if you want to apply a cssselector,
+all though it is possible to use a xpath even in importhml if you do not set the remote-parameter.
+The css selection is also withjsoup<?_wxt ref id="jsoup"?>.
+</p>
+<pre class="piline">
+&lt;?_wxt importhtml cssselector="" location=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong> mandatory, but optional in templates</td>
+    <td>The URI of the file we want to import from. WXT will if necessary 
+	    attempt to tidy the source.
+		<br/>
+        In templates the location parameter is usually skipped.
+        In this case all content files owned by the module in the script are 
+        searched for appropriate content unless you reduce 
+		the search with parameter <em>id</em>, see below.
+     </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>encoding</strong> (optional)</td>
+    <td>You can spesify expected encoding if you expect the import
+	to be without XML-header stating the encoding.
+	Default encoding is UTF-8 if not set otherwise in script (option: default-encoding).
+    </td>
+  </tr>   
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (optional)</td>
+    <td>An id that match the id of the actual xmlimport 
+    in script. Has only meaning when
+    this element has no location. One reason to use an id is 
+    processing time if you have many contentfiles to a module.
+	Another reason may be that you have similar structures in different contentfiles and you
+	want to be selective.
+    </td>
+  </tr>  
+  
+    <tr>
+    <td  style="vertical-align:top"><strong>keeplinks</strong> (optional)</td>
+    <td>May be <em>yes</em> or <em>no</em>. If <em>yes</em>,
+          wxt will attempt to recalculate all links in the imported html. 
+		  If <em>no</em> all links are removed.
+		  Default is <em>yes</em>
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>keepstyles</strong> (optional)</td>
+    <td>May be <em>yes</em> or <em>no</em>. If <em>no</em>,
+          wxt will simply remove all class- and style-attributes from HTML-tags.
+		  Default is <em>yes</em>.
+    </td>
+  </tr> 
+  <tr>
+    <td  style="vertical-align:top"><strong>xpath</strong> (optional)</td>
+    <td>Any xpath expression that identifies a nodeset that
+        will be treated like a XML-fragment.
+		</td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>cssselector</strong> (optional)</td>
+    <td>A cssselector that identifies a nodeset that
+        will be treated like a HTML-fragment. If neither <em>xpath</em> nor <em>cssselector</em> is set
+		the selection defaults to cssselector="body p".
+		</td>
+  </tr>
+  
+  <tr>
+  <td colspan="2">If both are set ,xpath is used, unless we spesify remote (see below).
+  </td>
+  </tr>
+  
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>remote</strong> (optional)</td>
+    <td>Should be used if we try to import from a webpage over wich we have no control
+	( for instance a wikipedia-page). 
+	<br/>
+	If we use <em>remote</em> <span style="color:red">xpath is ignored</span>.
+    </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>usecopy</strong> (optional)</td>
+    <td>May be <em>yes</em> or <em>no</em>, and is only effective for <em>remote</em>
+	sources. Default is <em>yes</em>.
+	<br/>
+	<em>no</em> will access the material at the original source, 
+	produce a local copy and then fetch the result from this copy.
+	This parameter will be overrun by global option <em>use-copy</em>.
+    </td>
+  </tr>
+
+</table>
+<p>
+</p>
+
+<h2>Examples:</h2>
+<pre  class="prettyprint lang-html">
+&lt;?_wxt importhtml xpath="//h1"?&gt;
+
+&lt;?_wxt importhtml location="http://no.wikipedia.org/wiki/Halden" 
+             cssselector="body > p" remote="yes" keeplinks="no"?&gt;
+
+&lt;?_wxt importhtml 
+        location="http://www.ia.hiof.no/~borres/ml/index.shtml" 
+        xpath="//div[@class='main']/*"?&gt;
+
+&lt;?_wxt importhtml location="../quotes/q.xml" 
+        xpath="//p[@class='quot']/*"?&gt;
+
+		
+&lt;?_wxt importhtml location="C:\\web\\dw\\index.html" 
+       cssselector="article"?&gt;
+
+</pre>
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+
+<div id="title">Page1</div>
+        
+<div class="mainblock">
+<h1>Testing PI:formulas</h1>
+
+<h2>From odt-file</h2>
+<p>MathML-formulas for HTML5. No namespace and no special doctype
+</p>
+
+<div>
+<?_wxt formula id="_fSimple sum"?>
+</div>
+<div>
+<?_wxt formula id="_fSimple fraction"?>
+</div>
+<div>
+<?_wxt formula id="_fSquare root"?>
+</div>
+
+<h2>Reading a complete odt-document</h2>
+<div>
+<?_wxt importodf location="mathdoc.odt" dpath="Math/Line"?>
+</div>
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page4.xml" lang="lang-xml"?>
+</div>
+
+</div> <!-- mainblock -->
+
+</html>

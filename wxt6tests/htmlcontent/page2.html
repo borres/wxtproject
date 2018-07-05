@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Testing</title>
+	<link href="templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.min.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('page21',event);" onmouseover="javascript:popunpop('page21',event);">Welcome</a>
+<div class="wxtsummary" id="page21" style="display: none;">
+<div class="header">Welcome</div>Demonstration of simple XML-import</div>
+</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('page22',event);" onmouseover="javascript:popunpop('page22',event);">Page1</a>
+<div class="wxtsummary" id="page22" style="display: none;">
+<div class="header">Page1</div>More demonstration of HTML-import</div>
+</div>
+<div class="level1 wxtselected">Page2</div>
+<div class="level1">
+<a href="page3.html" onmouseout="javascript:popunpop('page23',event);" onmouseover="javascript:popunpop('page23',event);">Page3</a>
+<div class="wxtsummary" id="page23" style="display: none;">
+<div class="header">Page3</div>Incomplete content to be tidyed</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+
+	<div class="collectable">
+		<div class="main">
+			<!--<?_wxt importhtml xpath="//div[@id='post-body-8874312794065846013']/*"?>-->
+			<div class="post-body entry-content" id="post-body-8874312794065846013" itemprop="description articleBody">
+  Jeg har nettopp opprettet en blog, og får se hva jeg kan bruke den til.  Jeg har noen ideer, men vet enda ikke om jeg har energi til å leve opp til dem.
+ <br/> 
+ <br/> Følg med, følg med... 
+ <div style="clear: both;"/> 
+</div>
+		</div>
+
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

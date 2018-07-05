@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">      
+	<definitions>
+		<option name="indent-output" value="yes"/>
+		<option name="output-format" value="xhtml"/>
+	</definitions>
+	<module location="index.xhtml" name="Links" template="links.xml"/>
+</wscript>

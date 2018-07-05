@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- odtimport test -->
+      <definitions>
+	  <option name="indent-output" value="yes"/>
+	  <option name="output-format" value="xhtml"/>
+        <template id="P" location="../templates/p_template.xml"/>
+		<template id="M" location="../templates/m_template.xml"/>
+        <logfile location="../buildlog.txt" /> 		
+     </definitions>
+        
+     <module description="Demonstration of Open Office import" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+	<module description="More demonstration of Open Office import" location="page1.xhtml" 
+	        name="Page1" id="page1" template="M" books="all">
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+
+	
+ </wscript>

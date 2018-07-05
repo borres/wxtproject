@@ -1,0 +1,7 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">images</span>&gt;
+&lt;<span class="tagname">image</span> <span class="attname">id</span>="<span class="attvalue">bs5-remote-remote</span>"&gt;
+    &lt;<span class="tagname">location</span>&gt;bs5.png&lt;/<span class="tagname">location</span>&gt;
+    &lt;<span class="tagname">subtext</span>&gt;bs5.png&lt;/<span class="tagname">subtext</span>&gt;
+&lt;/<span class="tagname">image</span>&gt;
+&lt;/<span class="tagname">images</span>&gt;</pre>

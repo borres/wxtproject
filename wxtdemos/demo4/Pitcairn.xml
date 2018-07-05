@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+<div class="content">    
+<h1>WIKIPEDIA import</h1>
+<hr/>
+<div>
+	<?_wxt moduletoc tags="h1,h2,h3" cols="1"?>
+</div>
+<hr/>
+<div>
+View source: 
+  <?_wxt expand sourcelocation="Pitcairn.xml" 
+         location="pitcairnsrc.txt" code="xmlcode"?>
+</div>
+<hr/>
+<p>
+	Testing import av WIKIPEDIA fragments
+</p>
+<hr/>
+<div>
+	<h1>Pitcairn Islands</h1>
+	<?_wxt importwiki  keeprefs="yes"  
+		location="http://en.wikipedia.org/wiki/Pitcairn_Islands" 
+		keeprefs="yes"
+		usecopy="yes"
+		xpath="//table[@class='infobox geography vcard']"?>
+</div>
+</div>
+</data>

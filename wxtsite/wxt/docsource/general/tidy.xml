@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Tidy</h1>
+<p>
+ WXT will in some situations perform an attempt to tidy input. This job is performed with
+ Tidy<?_wxt ref id="tidy"?>.
+</p>
+<p>
+ Tidy is not prepared for HTML5, and the use of Tidy on HTML5 source is
+ problematic. WXT is prepared to handle rather trivial situations when you import
+ source material form webpages. You should not rely on the tidyprocess if you have control on the XML-input.
+</p>
+<p>
+ Tidy is controlled by a set of attributes. When WXT attempts to do a tidy-job,
+ it works with the following attributes (line-break for readability).
+</p>
+<pre class="prettyprint">
+new-blocklevel-tags:article,aside,canvas,audio,figure,footer,header,
+                    hgroup,nav,section,summary,video,datalist,details,progress,ruby
+new-empty-tags:command,embed,eventsource,keygen,meter,source,wbr
+new-inline-tags:figcaption,mark,output,rp,rt,time
+input-xml:no
+output-xml: yes
+markup: yes
+add-xml-decl: yes
+assume-xml-procins:yes
+indent:yes
+escape-cdata:no
+clean:no
+fix-backslash:yes
+</pre>
+<p>
+ You may change tis with a attribute-file, see option tidy-input.
+</p>
+  
+  
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+@page{
+	size: A4;
+}
+
+@page{ 
+       /* top, right, bottom and left */
+       margin: 2.0cm 1.25cm 2.0cm 1.5875cm;
+        @top-left {
+	        content:" ";
+        }
+        @top-right {
+	        content: string(doctitle);
+	        font-size:18px;
+        }
+        @bottom-right {
+          vertical-align:top;
+          content: counter(page);
+	      font-style: italic;
+	      font-size:11px;
+          border-top-style:solid;
+          border-top-width:thin;
+        }
+        @bottom-left {
+          vertical-align:top;
+          content:"WxtDoc";
+	      font-style: italic;
+	      font-size:11px;
+          border-top-style:solid;
+          border-top-width:thin;
+        }
+
+}
+
+@page:first {
+        margin:  2.0cm 1.5875cm 2.0cm 1.25cm;
+        @top-left {
+	        content:"";
+        }
+        @top-right {
+	        content:" ";
+	        font-size:24px;
+        }
+        @bottom-center{
+	        content:" ";
+        }
+        @bottom-right {
+          content:" ";
+	       border-top-style:none;
+
+        }
+        @bottom-left {
+          content:" ";
+          border-top-style:none;
+        }
+}
+
+body{	font-size:12px;}
+.hideinpdf{display:none}
+
+h1{ string-set: doctitle content() }
+h1{ page-break-before: always; }
+.somh1{font-size:34px;font-weight:bold;}
+#innhold,#forord{page-break-before:always}
+a{text-decoration:none}
+
+.wxtmoduletocfinal{margin-left:40px;margin-right:40px}
+.wxtmoduletocfinal div{margin-top:5px;font-size:14px}
+.wxtmoduletocfinalinner a::after { content: leader(".") target-counter(attr(href), page); } 
+ 
+
+
+    table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 520px; 
+            margin-top:20px}
+
+    th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    td{border-bottom: 1px solid #CCC;padding: 0 0.5em;   line-height: 170%;
+    }
+    td:first-child {width: 40px;	}
+    td+td {	border-left: 1px solid #CCC;}
+
+span.wxtexpand{display:none}
+
+pre.readyandpretty, pre.prettyprint { padding: 2px; border: 1px solid #888; 
+                background:url(paperbg13.gif);
+                font-family:monospace;font-size:10px;line-height:13px }
+    .str { color: #060; }
+    .kwd { color: #006; font-weight: bold; }
+    .com { color: #600; font-style: italic; }
+    .typ { color: #404; font-weight: bold; }
+    .lit { color: #044; }
+    .pun { color: #440; }
+    .pln { color: #000; }
+    .tag { color: #006; font-weight: bold; }
+    .atn { color: #404; }
+    .atv { color: #060; }
+    /* Specify class=linenums on a pre to get line numbering */
+    ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+    li.L0,
+    li.L1,
+    li.L2,
+    li.L3,
+    li.L5,
+    li.L6,
+    li.L7,
+    li.L8,/*BS removed{ list-style-type: none }*/
+      /* Alternate shading for lines */
+    li.L1,
+    li.L3,
+    li.L5,
+    li.L7,
+    li.L9 {}/*BS removed{ background: #eee }*/
+
+

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+	<title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="stdstyle.css"/>
+	<script type="text/javascript" src="std.js"> </script> 
+	<link rel="STYLESHEET" href="demostyle.css"/>
+</head>
+<body>
+
+<p>
+The assembly that adopted a constitution based on American and French models, 
+and elected the Danish crown prince Christian Fredrik as king was assembled in Eidsvoll in 1814.
+May 17 is the Norwegian national day.
+</p>
+<div>
+	<img src="assembly1814.jpg" alt="bilde"/>
+	<br/>
+	<pre style="font-size:10px">
+The 1814 constitutional assembly, 
+painted by Oscar Wergeland.
+	</pre>
+</div>
+</body>
+</html>

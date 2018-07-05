@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Publication</h1>
+<p>
+ WXT requires that you build modules against a filesystem. 
+ You can of course fetch content material with a general absolute URI pointing to any document on the net.
+ WXT does not at the moment have any tools for automatic or semiautomatic publication of material
+ built on your local disc. You can however achieve this in a number of ways:
+</p>
+<ul>
+<li> You may build on your local disc and copy all files or catalog(s) to your server.
+	<ul>
+	<li> by FTP.
+	</li>
+	<li> by a simple file copy if you have mapped the servers filesystem on your local machine. 
+	</li>	
+	<li> by an ant-script performing one of the two. The invoking of this ant-script may be done as a command in a WXT-script.
+	</li>	
+	</ul>
+</li>
+ <li>
+ If you have mapped the servers filestructure you may build directly on the server.
+ </li>
+  <li>
+ If you use a versioning system, you may build locally, commit and update on the server.
+ (or visa versa for that matter)
+ </li>
+</ul>
+
+
+
+
+
+</body>
+</html>

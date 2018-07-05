@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>page1</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importodf</h1>
+ <p>
+   Testing import of math from Open Office textdocuments.
+   Math is now imported as MathML.
+</p>
+<p>
+ This is a rather shaky business for several reasons.
+</p> 
+<ul>
+ <li>Not all browsers are able to display MathML. Internet Explorer needs a plugin.<br/>
+ <a href="http://www.dessci.com/en/products/mathplayer/download.htm" class="external">MathPlayer</a>.
+ Google Chrome does not like MathMl at all (?)</li>
+ <li>We must prepare the page (template) with a doctype that reckognize MathML</li>
+ <li>We must produce the page as XHTML.<br/> We achive this by an option in the WXT-script:
+ &lt;option name="output-format" value="xhtml"/&gt;,<br/> 
+ and by giving the resulting file extension XHTML</li>
+</ul>
+ <div>
+ <?_wxt popup sourcelocation="../../templates/m_template.xml" location="m_template_xml.html" 
+        lang="lang-xml" text="Template for this page"?>
+ <?_wxt popup sourcelocation="../script.xml" location="script_xml.html" 
+        lang="lang-xml" text="Script for this site"?>
+</div>
+<p>
+ It is on the agenda for the WXT-project to render formulas as images, as an alternative.
+</p> 
+ 
+<p>import1</p>
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/Bezier"?>
+</div>
+ 
+<p>import2</p>
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/Line"?>
+</div>
+ 
+<hr/>
+ 
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page1.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

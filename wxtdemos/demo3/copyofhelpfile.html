@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style">
+</head>
+
+
+<body>
+<h1>PI: importxml</h1>
+<p>
+  The purpose of an import PI is to produce an XML-fragment 
+  and replace the PI with this fragment.
+</p>
+<pre class="piline">
+&lt;?_obama importxml xpath="" location="" transformation=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td valign="top"><strong>xpath</strong> (mandatory)</td>
+    <td>Any xpath expression that identifies a nodeset that
+        will be treated like a XML-fragment.</td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>location</strong> mandatory, but optional in templates</td>
+    <td>The URI of the file we want to import from.
+        In templates the uri parameter is usually skipped.
+        In this case all content files owned by the module in the script are 
+        searched for appropriate content.
+     </td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>transformation</strong> (optional)</td>
+    <td>A transformation identifier 
+    or a location for a transformationfile.
+    This transformation may have parameters:
+    T(name='ole' address='halden')
+    </td>
+  </tr>
+    <tr>
+    <td valign="top"><strong>tidy</strong> (optional)</td>
+    <td>When the input has no XML-prolog, or when we expect
+    tags that are not wellformed, we can ask obama to attempt to
+    tidy the text. possible values are <em>yes</em> and
+    <em>no</em>. Default is <em>no</em>.
+    </td>
+  </tr>
+   <tr>
+    <td valign="top"><strong>encoding</strong> (optional)</td>
+    <td>You can spesify expected encoding if the tidy option is used,
+    otherwise it has no effect.
+    Default encoding is default (UTF-8 if not set in script).
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top"><strong>id</strong> (optional)</td>
+    <td>An id that match the id of the actual xmlimort 
+    in script. has only meaning when
+    this element has no location.
+    </td>
+  </tr>
+</table>
+
+<h2>Examples:</h2>
+<pre class="source">
+&lt;?_obama importxml xpath="//h1"?&gt;
+
+&lt;?_obama importxml xpath="//div[@class='main']/*"?&gt;
+
+&lt;?_obama importxml 
+        location="http://www.ia.hiof.no/~borres/ml/index.shtml" 
+        xpath="//div[@class='main']/*"?&gt;
+
+&lt;?_obama importxml uri="../quotes/q.xml" 
+        xpath="//p[@class='quot']/*"?&gt;
+
+&lt;?_obama importxml xpath="//div[@id='main']" 
+        location="b.xml" 
+        transformation="myT(para='hello',parb='goodbye')"?&gt;
+</pre>
+
+
+
+</body>
+</html>

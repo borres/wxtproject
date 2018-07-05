@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifest:manifest PUBLIC "-//OpenOffice.org//DTD Manifest 1.0//EN" "Manifest.dtd">
+<manifest:manifest xmlns:manifest="http://openoffice.org/2001/manifest">
+ <manifest:file-entry manifest:media-type="application/vnd.sun.xml.writer" manifest:full-path="/"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/100000000000011C0000004AA64D38BB.gif"/>
+ <manifest:file-entry manifest:media-type="" manifest:full-path="Pictures/200000BE00000FE5000010933E2DDEAE.svm"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000000000000BE000000BE53041347.gif"/>
+ <manifest:file-entry manifest:media-type="" manifest:full-path="Pictures/200000BE00000FE500001093867E5A61.svm"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BE145B66A3.gif"/>
+ <manifest:file-entry manifest:media-type="" manifest:full-path="Pictures/200000B100000FE500000EF9FF04DDF4.svm"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/100002000000000A0000000ADDA84F49.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BD000000BD0362D7E7.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000001200000019292DCF9E2.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BEE615D9E6.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BED3754382.gif"/>
+ <manifest:file-entry manifest:media-type="" manifest:full-path="Pictures/200000BE00000FE50000109300B2B020.svm"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BE99314183.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BEB3958805.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BD000000BDC014E7D1.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BE348BB081.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BEBA64E66D.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BEC7C6AB3C.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BE4F61FAAA.gif"/>
+ <manifest:file-entry manifest:media-type="image/gif" manifest:full-path="Pictures/10000200000000BE000000BE25E7F573.gif"/>
+ <manifest:file-entry manifest:media-type="" manifest:full-path="Pictures/"/>
+ <manifest:file-entry manifest:media-type="appication/binary" manifest:full-path="layout-cache"/>
+ <manifest:file-entry manifest:media-type="text/xml" manifest:full-path="content.xml"/>
+ <manifest:file-entry manifest:media-type="" manifest:full-path="Obj00E3CA45/content.xml"/>
+ <manifest:file-entry manifest:media-type="" manifest:full-path="Obj00E3CA45/styles.xml"/>
+ <manifest:file-entry manifest:media-type="" manifest:full-path="Obj00E3CA45/settings.xml"/>
+ <manifest:file-entry manifest:media-type="application/vnd.sun.xml.draw" manifest:full-path="Obj00E3CA45/"/>
+ <manifest:file-entry manifest:media-type="text/xml" manifest:full-path="styles.xml"/>
+ <manifest:file-entry manifest:media-type="text/xml" manifest:full-path="meta.xml"/>
+ <manifest:file-entry manifest:media-type="text/xml" manifest:full-path="settings.xml"/>
+</manifest:manifest>

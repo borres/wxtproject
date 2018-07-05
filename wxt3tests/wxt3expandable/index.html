@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">Welcome</div>
+<div class="level1">
+<a href="code.html" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">Pretty Code</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">Pretty Code</div>Demonstration of expandable programcode</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:expandable</h1>
+<p>
+   Testing expandable for text and html
+</p>
+<h2>Simple text</h2>
+<p>txt - as is </p>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="on" onclick="javascript:toggleExpand(this)">_</span>content/sonette.txt</div>
+<div class="content" style="display:block">Shall I compare thee to a summer's day?
+      Thou art more lovely and more temperate:
+      Rough winds do shake the darling buds of May,
+      And summer's lease hath all too short a date:
+      Sometime too hot the eye of heaven shines,
+      And often is his gold complexion dimm'd;
+      And every fair from fair sometime declines,
+      By chance, or nature's changing course untrimm'd;
+      But thy eternal summer shall not fade,
+      Nor lose possession of that fair thou ow'st,
+      Nor shall death brag thou wander'st in his shade,
+      When in eternal lines to time thou grow'st;
+      So long as men can breathe, or eyes can see,
+      So long lives this, and this gives life to thee.</div>
+</div>
+</div>
+<h2>Extracted HTML</h2>
+<p>extracts from html-page - as is</p>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="on" onclick="javascript:toggleExpand(this)">_</span>content/sonette.html</div>
+<div class="content" style="display:block">
+<div class="sonette">
+Shall I compare thee to a summer's day?<br/>
+Thou art more lovely and more temperate:<br/>
+Rough winds do shake the darling buds of May,<br/>
+And summer's lease hath all too short a date:<br/>
+Sometime too hot the eye of heaven shines,<br/>
+And often is his gold complexion dimm'd;<br/>
+And every fair from fair sometime declines,<br/>
+By chance, or nature's changing course untrimm'd;<br/>
+But thy eternal summer shall not fade,<br/>
+Nor lose possession of that fair thou ow'st,<br/>
+Nor shall death brag thou wander'st in his shade,<br/>
+When in eternal lines to time thou grow'st;<br/>
+So long as men can breathe, or eyes can see,<br/>
+So long lives this, and this gives life to thee.
+</div>
+</div>
+</div>
+</div>
+<h2>Extracted HTML</h2>
+<p>extracts from html-page - expanded </p>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="on" onclick="javascript:toggleExpand(this)">_</span>content/sonette.html</div>
+<div class="content" style="display:block">
+<div class="sonette">
+Shall I compare thee to a summer's day?<br/>
+Thou art more lovely and more temperate:<br/>
+Rough winds do shake the darling buds of May,<br/>
+And summer's lease hath all too short a date:<br/>
+Sometime too hot the eye of heaven shines,<br/>
+And often is his gold complexion dimm'd;<br/>
+And every fair from fair sometime declines,<br/>
+By chance, or nature's changing course untrimm'd;<br/>
+But thy eternal summer shall not fade,<br/>
+Nor lose possession of that fair thou ow'st,<br/>
+Nor shall death brag thou wander'st in his shade,<br/>
+When in eternal lines to time thou grow'st;<br/>
+So long as men can breathe, or eyes can see,<br/>
+So long lives this, and this gives life to thee.
+</div>
+</div>
+</div>
+</div>
+<h2>HTML as a fragment</h2>
+<p>importing a HTML fragment defined in the script</p>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="on" onclick="javascript:toggleExpand(this)">_</span>warning</div>
+<div class="content" style="display:block">
+<div style="border-style:solid;padding:10px;color:red">
+        WARNING: There is always an other bug
+        </div>
+</div>
+</div>
+</div>
+<h2>HTML as a fragment</h2>
+<p>importing a google gadget as a HTML fragment defined in the script</p>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="on" onclick="javascript:toggleExpand(this)">_</span>today</div>
+<div class="content" style="display:block">
+<script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/datetime_v2/datetime_v2.xml&amp;up_color=blue&amp;up_dateFormat=wdm&amp;up_firstDay=1&amp;up_clocks=%5B%5B-73.986951%2C40.756054%2C%22New%20York%22%2C0%5D%5D&amp;synd=open&amp;w=320&amp;h=148&amp;&amp;lang=no&amp;country=ALL&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"> </script>
+</div>
+</div>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="on" onclick="javascript:toggleExpand(this)">_</span>content/welcome.xml</div>
+<div class="content" style="display:block">
+<pre class="prettyprint lang-xml skiptranslate" id="welcome8">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- any wellformed XML will do --&gt;
+&lt;root&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:expandable&lt;/h1&gt;
+ &lt;p&gt;
+   Testing expandable for text and html
+&lt;/p&gt;
+    
+&lt;!-- simple text, as is --&gt;
+&lt;h2&gt;Simple text&lt;/h2&gt;
+&lt;p&gt;txt - as is &lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="sonette.txt"?&gt;
+&lt;/div&gt;
+    
+&lt;!-- extracted html, as is --&gt;
+&lt;h2&gt;Extracted HTML&lt;/h2&gt;
+&lt;p&gt;extracts from html-page - as is&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="sonette.html" 
+       leftpar="&lt;!--start--&gt;" rightpar="&lt;!--stop--&gt;"?&gt;
+&lt;/div&gt;
+    
+&lt;!-- extracted html, parsed --&gt;
+&lt;h2&gt;Extracted HTML&lt;/h2&gt;
+&lt;p&gt;extracts from html-page - expanded &lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="sonette.html" 
+       leftpar="&lt;!--start--&gt;" rightpar="&lt;!--stop--&gt;" expanded="yes"?&gt;
+&lt;/div&gt;
+    
+&lt;!-- importing a fragment --&gt;
+&lt;h2&gt;HTML as a fragment&lt;/h2&gt;
+&lt;p&gt;importing a HTML fragment defined in the script&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable fragmentid="warning" ?&gt;
+&lt;/div&gt;
+    
+&lt;!-- importing a google gadget as a fragment --&gt;
+&lt;h2&gt;HTML as a fragment&lt;/h2&gt;
+&lt;p&gt;importing a google gadget as a HTML fragment defined in the script&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable fragmentid="today" expanded="yes"?&gt;
+&lt;/div&gt;
+    
+&lt;hr/&gt;
+    
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="welcome.xml" lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/root&gt;
+</pre>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

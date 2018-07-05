@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+		<title>testing links</title> 
+		<link href="linkstyles.css" rel="STYLESHEET"/>
+		
+	</head>
+	<body>
+	<h2>Testing Link Styles</h2>
+	<hr/>
+	<p>
+	Using style <em>demo</em> to point at: <a class="demo" href="http://www.ia.hiof.no/~borres/dummy.xhtml" title="external link">
+        <span class="screen">dummy</span>
+        <span class="print">http://www.ia.hiof.no/~borres/dummy.xhtml</span>
+      </a>
+	</p>
+	<hr/>
+	<p>
+	Using style <em>external</em> to point at: <a class="external" href="http://www.ia.hiof.no/~borres/dummy.xhtml" title="external link">
+        <span class="screen">dummy</span>
+        <span class="print">http://www.ia.hiof.no/~borres/dummy.xhtml</span>
+      </a>  which also turns out to be a rather silly web page.
+	</p>
+	<hr/>
+	<p>	The styles used:</p>
+	<div style="background-color:LemonChiffon;border-style:solid;border-width:thin">
+	<pre class="mlcode">
+/* 
+samples of styles for linking
+(padding is:top,right,bottom,left)
+*/
+@media screen{  
+    .demo{text-decoration: none;}
+    .demo .print{display:none}
+    a.demo:link{background: url(images/demo.gif) no-repeat 0% 3px;padding: 0 0 0 45px;}
+    a.demo:visited{color: purple;
+                  background: url(images/demo.gif) no-repeat 0% -100px;padding: 0  0 0 45px;}
+    a.demo:hover{color: red;
+                 background: url(images/demo.gif) no-repeat 0% -200px;padding: 0 0 0 45px;}
+     
+    a.external{text-decoration: none;}
+    a.external .print{display:none}
+    a.external:link{background: url(images/exicon.gif) no-repeat 100% 0;padding: 0 22px 0 0;}
+    a.external:visited{color: purple;
+                background: url(images/exicon.gif) no-repeat 100% -100px;padding: 0 22px 0 0;}
+    a.external:hover{color: red;
+              background: url(images/exicon.gif) no-repeat 100% -200px;padding: 0 22px 0 0;}
+}
+@media print
+{  
+    .demo{text-decoration: none;}
+    .demo .screen{text-decoration:none;font-weight:bold;color:black}
+    .demo .print{color:silver;text-decoration: none;}    
+    .external .screen{display:none}
+}</pre>
+	</div>
+	</body>
+</html>

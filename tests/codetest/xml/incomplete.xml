@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alpin>
+   <skirenn type="WC" tid="2001" sted="Wengen" kjønn="menn" gren="utfor">
+   <deltager>
+      <navn>Kjuus</navn>
+      <Nasjon>Norge</Nasjon>
+      <tid1>130.012</tid1>
+      <td2>na</td2>
+   </deltager>
+   ...
+   </skirenn>
+   ...
+</alpin>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>simple</title>
+</head>
+    <body>
+        
+<div class="mainblock">
+
+<h1>Update</h1>
+<p>
+	Reestablish a database with data from an sql-file'
+</p>
+<hr/>
+<pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=borres&amp;password=pw"
+    sqlfile="establish.txt"?&gt;
+</pre>
+<hr/>
+
+
+<div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=borres&password=oliver"
+    sqlfile="establish.txt"?>
+</div>
+
+<pre>
+<?_wxt importtxt location="establish.txt"?>
+</pre>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">Welcome</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">Page1</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">Page1</div>More demonstration of Wiki import</div>
+</div>
+<div class="level1">
+<a href="page2.html" onmouseout="javascript:popunpop('welcome2',event);" onmouseover="javascript:popunpop('welcome2',event);">Page2</a>
+<div class="wxtsummary" id="welcome2" style="display: none;">
+<div class="header">Page2</div>More demonstration of Wiki import as XML</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importwiki</h1>
+<p>
+   Testing import of material from Wiki, 
+   This is in an experimental stage and some work remains to be done.
+   The concept of dpath for selecting from a flat documentstructure is not waterproof, but it works on simple constructs.
+</p>
+<p>
+ This page selects material from a Wikipedia-page: 
+ <a class="external" href="http://en.wikipedia.org/wiki/Tiger">http://en.wikipedia.org/wiki/Tiger</a>
+</p>
+<h2>A section without references</h2>
+<div>
+<div class="wxtimportwiki">
+<h2> Taxonomy and etymology
+</h2>
+<p>In 1758, Linnaeus first described the species in his work <i>
+Systema Naturae
+</i> under the scientific name <i>Felis tigris</i>. In 1929, the British taxonomist Reginald Innes Pocock subordinated the species under the genus <i>
+Panthera
+</i> using the scientific name <i>Panthera tigris</i>.
+</p>
+<p>The word <i>Panthera</i> is probably of Oriental origin and retraceable to the Ancient Greek word <i>panther</i>, the Latin word <i>panthera</i>, the Old French word <i>pantere</i>, most likely meaning "the yellowish animal", or from <i>pandarah</i> meaning <i>whitish-yellow</i>. The derivation from Greek <i>pan-</i> ("all") and <i>ther</i> ("beast") may be folk etymology that led to many curious fables.
+</p>
+<p>The word "tiger" is retraceable to the Latin word <i>tigris</i> meaning <i>a spotted tigerhound of Actaeon</i>. The Greek word <i>tigris</i> is possibly derived from a Persian source.
+</p>
+<div class="thumb tright">
+<div class="thumbinner">
+
+<img alt="" class="thumbimage" height="172" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Tiger_distribution3.PNG" width="220"/>
+
+<div class="thumbcaption">
+
+Range of the tiger in 1900 and 1990</div>
+</div>
+</div>
+</div>
+</div>
+<h2>A section with references, only listelements and images</h2>
+<div>
+<div class="wxtimportwiki">
+<img alt="" class="thumbimage" height="237" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_A_tiger_in_Pilibhit_Tiger_Reserve.jpg" width="220"/>
+<li>The <b>
+<a class="external" href="http://en.wikipedia.org/wiki/Bengal_tiger" title="Bengal tiger">Bengal tiger</a>
+</b> (<i>Panthera tigris tigris</i>) lives in <a class="external" href="http://en.wikipedia.org/wiki/India" title="India">India</a>, <a class="external" href="http://en.wikipedia.org/wiki/Nepal" title="Nepal">Nepal</a>, <a class="external" href="http://en.wikipedia.org/wiki/Bhutan" title="Bhutan">Bhutan</a> and <a class="external" href="http://en.wikipedia.org/wiki/Bangladesh" title="Bangladesh">Bangladesh</a>, and is the most common subspecies with populations estimated at less than 2,500 adult individuals. In 2011 the total population of adult tigers is estimated at 1,520–1,909 in India, 440 in Bangladesh, 155 in Nepal and 75 in Bhutan. It lives in alluvial grasslands, subtropical and tropical rainforests, scrub forests, wet and dry deciduous forests, and <a class="external" href="http://en.wikipedia.org/wiki/Mangroves" title="Mangroves">mangroves</a>. Male Bengal tigers had a total length, including the tail, of 270 to 310 cm (110 to 120 in), while females range from 240 to 265 cm (94 to 104 in). The weight of males range from 175 to 260 kg (390 to 570 lb), while that of the females range from 100 to 181 kg (220 to 400 lb).
+ In northern India and Nepal, tigers tend to be of larger size. Males often average 235 kilograms (520 lb), while females average 141 kilograms (310 lb). In 1972, <a class="external" href="http://en.wikipedia.org/wiki/Project_Tiger" title="Project Tiger">Project Tiger</a> was founded in India aiming at ensuring a viable population of tigers in the country and preserving areas of biological importance as a natural heritage for the people. But the illicit demand for bones and body parts from wild tigers for use in <a class="external" href="http://en.wikipedia.org/wiki/Traditional_Chinese_medicine#Animal_products" title="Traditional Chinese medicine">Traditional Chinese medicine</a> is the reason for the unrelenting <a class="external" href="http://en.wikipedia.org/wiki/Poaching" title="Poaching">poaching</a> pressure on tigers on the Indian subcontinent. Between 1994 and 2009, the <a class="external" href="http://en.wikipedia.org/wiki/Wildlife_Protection_Society_of_India" title="Wildlife Protection Society of India">Wildlife Protection Society of India</a> has documented 893 cases of tigers killed in India, which is just a fraction of the actual poaching and <a class="external" href="http://en.wikipedia.org/wiki/Wildlife_trade#Illegal_wildlife_trade" title="Wildlife trade">illegal trade</a> in tiger parts during those years. An area of special conservation interest lies in the <i>
+<a class="external" href="http://en.wikipedia.org/wiki/Terai" title="Terai">Terai</a> Arc Landscape</i> in the <a class="external" href="http://en.wikipedia.org/wiki/Himalaya" title="Himalaya">Himalayan</a> foothills of northern India and southern Nepal, where 11 <a class="external" href="http://en.wikipedia.org/wiki/Protected_area" title="Protected area">protected areas</a> comprising dry forest foothills and tall grass savannas harbor tigers in a 49,000 square kilometres (19,000 sq mi) landscape. The goals are to manage tigers as a single <a class="external" href="http://en.wikipedia.org/wiki/Metapopulation" title="Metapopulation">metapopulation</a>, the dispersal of which between core refuges can help maintain genetic, demographic, and ecological integrity, and to ensure that species and <a class="external" href="http://en.wikipedia.org/wiki/Habitat_conservation" title="Habitat conservation">habitat conservation</a> becomes mainstreamed into the rural development agenda. In Nepal, a community-based tourism model has been developed with a strong emphasis on sharing benefits with local people and on the regeneration of degraded forests. The approach has been successful in reducing poaching, restoring habitats, and creating a local constituency for conservation.
+</li>
+<img alt="" class="thumbimage" height="150" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Tiger_032.jpg" width="220"/>
+<li>The <b>
+<a class="external" href="http://en.wikipedia.org/wiki/Indochinese_Tiger" title="Indochinese Tiger">Indochinese Tiger</a>
+</b> (<i>Panthera tigris corbetti</i>), also called <i>
+<a class="external" href="http://en.wikipedia.org/wiki/Jim_Corbett_(hunter)" title="Jim Corbett (hunter)">Corbett's</a>
+</i> tiger, is found in <a class="external" href="http://en.wikipedia.org/wiki/Cambodia" title="Cambodia">Cambodia</a>, <a class="external" href="http://en.wikipedia.org/wiki/China" title="China">China</a>, <a class="external" href="http://en.wikipedia.org/wiki/Laos" title="Laos">Laos</a>, <a class="external" href="http://en.wikipedia.org/wiki/Burma" title="Burma">Burma</a>, <a class="external" href="http://en.wikipedia.org/wiki/Thailand" title="Thailand">Thailand</a>, and <a class="external" href="http://en.wikipedia.org/wiki/Vietnam" title="Vietnam">Vietnam</a>. These tigers are smaller and darker than Bengal tigers: Males weigh from 150–190 kg (330–420 lb) while females are smaller at 110–140 kg (240–310 lb). Their preferred habitat is forests in mountainous or hilly regions. According to government estimates of national tiger populations, the subspecies numbers around a total of 350 individuals. All existing populations are at extreme risk from <a class="external" href="http://en.wikipedia.org/wiki/Poaching" title="Poaching">poaching</a>, prey depletion as a result of poaching of primary prey species such as deer and wild pigs, <a class="external" href="http://en.wikipedia.org/wiki/Habitat_fragmentation" title="Habitat fragmentation">habitat fragmentation</a> and <a class="external" href="http://en.wikipedia.org/wiki/Inbreeding" title="Inbreeding">inbreeding</a>. In Vietnam, almost three-quarters of the tigers killed provide stock for Chinese pharmacies.</li>
+<img alt="" class="thumbimage" height="177" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Tiger_in_the_water.jpg" width="220"/>
+<li>The <b>
+<a class="external" href="http://en.wikipedia.org/wiki/Malayan_Tiger" title="Malayan Tiger">Malayan Tiger</a>
+</b> (<i>Panthera tigris jacksoni</i>), exclusively found in the southern part of the <a class="external" href="http://en.wikipedia.org/wiki/Malay_Peninsula" title="Malay Peninsula">Malay Peninsula</a>, was not considered a subspecies in its own right until 2004. The new classification came about after a study by Luo et al. from the Laboratory of Genomic Diversity Study, part of the <a class="external" href="http://en.wikipedia.org/wiki/National_Cancer_Institute" title="National Cancer Institute">National Cancer Institute</a> of the United States. According to official government figures, the population in the wild may number around 500 individuals, but is under considerable poaching pressure. The Malayan tiger is the smallest of the mainland tiger subspecies, and the second smallest living subspecies, with males averaging about 120 kg (260 lb) and females about 100 kg (220 lb) in weight. The Malayan tiger is a national icon in Malaysia, appearing on its <a class="external" href="http://en.wikipedia.org/wiki/Emblem_of_Malaysia" title="Emblem of Malaysia">coat of arms</a> and in logos of Malaysian institutions, such as <a class="external" href="http://en.wikipedia.org/wiki/Maybank" title="Maybank">Maybank</a>.</li>
+<img alt="" class="thumbimage" height="165" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Panthera_tigris_sumatran_subspecies.jpg" width="220"/>
+<img alt="" class="thumbimage" height="165" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Tiger_in_the_snow_at_the_Detroit_Zoo_March_2008_pic_2.jpg" width="220"/>
+<li>The <b>
+<a class="external" href="http://en.wikipedia.org/wiki/Sumatran_Tiger" title="Sumatran Tiger">Sumatran Tiger</a>
+</b> (<i>Panthera tigris sumatrae</i>) is found only on the Indonesian island of <a class="external" href="http://en.wikipedia.org/wiki/Sumatra" title="Sumatra">Sumatra</a>, and is <a class="external" href="http://en.wikipedia.org/wiki/Critically_endangered_species" title="Critically endangered species">critically endangered</a>. It is the smallest of all living tiger subspecies, with adult males weighing between 100–140 kg (220–310 lb) and females 75–110 kg (170–240 lb). Their small size is an adaptation to the thick, dense forests of the island of Sumatra where they reside, as well as the smaller-sized prey. The wild population is estimated at between 400 and 500, seen chiefly in the island's <a class="external" href="http://en.wikipedia.org/wiki/List_of_national_parks_of_Indonesia" title="List of national parks of Indonesia">national parks</a>. Recent genetic testing has revealed the presence of unique genetic markers, indicating that it may develop into a separate species, if it does not go extinct. This has led to suggestions that Sumatran tigers should have greater priority for conservation than any other subspecies. While <a class="external" href="http://en.wikipedia.org/wiki/Habitat_destruction" title="Habitat destruction">habitat destruction</a> is the main threat to existing tiger population (logging continues even in the supposedly protected national parks), 66 tigers were recorded as being shot and killed between 1998 and 2000, or nearly 20% of the total population.</li>
+<li>The <b>
+<a class="external" href="http://en.wikipedia.org/wiki/Siberian_tiger" title="Siberian tiger">Siberian tiger</a>
+</b> (<i>Panthera tigris altaica</i>), also known as the <i>Amur tiger</i>, inhabits the <a class="external" href="http://en.wikipedia.org/wiki/Amur_River" title="Amur River">Amur</a>-<a class="external" href="http://en.wikipedia.org/wiki/Ussuri_River" title="Ussuri River">Ussuri</a> region of <a class="external" href="http://en.wikipedia.org/wiki/Primorsky_Krai" title="Primorsky Krai">Primorsky Krai</a> and <a class="external" href="http://en.wikipedia.org/wiki/Khabarovsk_Krai" title="Khabarovsk Krai">Khabarovsk Krai</a> in far eastern <a class="external" href="http://en.wikipedia.org/wiki/Siberia" title="Siberia">Siberia</a>. It ranks among the biggest felids that have ever existed with a head and body length of 160–180 cm (63–71 in) for females and 190–230 cm (75–91 in) for males, plus a tail of about 60–110 cm (24–43 in) and an average weight of around 227 kg (500 lb) for males. Siberian tigers have thick coats and a paler golden hue and fewer stripes. The heaviest wild Siberian tiger weighed 384 kg (850 lb) but according to <a class="external" href="http://en.wikipedia.org/wiki/Vratislav_Maz%C3%A1k" title="Vratislav Mazák">Mazák</a> this record is not reliable. In 2005, there were 331–393 adult-subadult Siberian tigers in the region, with a breeding adult population of about 250 individuals. The population has been stable for more than a decade, but partial surveys conducted after 2005 indicate that the Russian tiger population is declining. At the turn of the century, the <a class="external" href="http://en.wikipedia.org/wiki/Phylogenetic" title="Phylogenetic">phylogenetic</a> relationships of tiger subspecies was re-assessed, and a remarkable similarity between the Siberian and <a class="external" href="http://en.wikipedia.org/wiki/Caspian_tiger" title="Caspian tiger">Caspian tiger</a> observed indicating that the Siberian tiger population is the genetically closest living relative of the extinct Caspian tiger, and strongly implying a very recent common ancestry for the two groups.
+</li>
+<img alt="" class="thumbimage" height="171" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_2012_Suedchinesischer_Tiger.JPG" width="220"/>
+<li>The <b>
+<a class="external" href="http://en.wikipedia.org/wiki/South_China_tiger" title="South China tiger">South China tiger</a>
+</b> (<i>Panthera tigris amoyensis</i>), also known as the <i>Amoy</i> or <i>Xiamen</i> tiger, is the most critically <a class="external" href="http://en.wikipedia.org/wiki/Endangered_subspecies_of_tiger" title="Endangered subspecies of tiger">endangered subspecies of tiger</a> and is listed as one of the 10 most endangered animals in the world. One of the smaller tiger subspecies, the length of the South China tiger ranges from 2.2–2.6 m (87–100 in) for both males and females. Males weigh between 127 and 177 kg (280 and 390 lb) while females weigh between 100 and 118 kg (220 and 260 lb). From 1983 to 2007, no South China tigers were sighted. In 2007 a farmer spotted a tiger and handed in photographs to the authorities as proof.
+ The photographs in question, however, were later exposed as fake, copied from a Chinese calendar and digitally altered, and the "sighting" turned into a massive scandal.
+
+
+<br/>
+In 1977, the Chinese government passed a law banning the killing of wild tigers, but this may have been too late to save the subspecies, since it is possibly already extinct in the wild. There are currently 59 known <a class="external" href="http://en.wikipedia.org/wiki/Captivity_(animal)" title="Captivity (animal)">captive</a> South China tigers, all within China, but these are known to be descended from only six animals. Thus, the <a class="external" href="http://en.wikipedia.org/wiki/Genetic_diversity" title="Genetic diversity">genetic diversity</a> required to maintain the subspecies may no longer exist. Currently, there are breeding efforts to reintroduce these tigers to the wild.
+</li>
+</div>
+</div>
+<h2>A section accessed with xpath</h2>
+<div>
+<div class="wxtimportwiki">
+<table class="infobox biota">
+<tr>
+<th colspan="2">Tiger<br/>
+<small>Temporal range: Early Pleistocene – Recent</small>
+</th>
+</tr>
+<tr>
+<td colspan="2">
+
+<img alt="" height="148" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Tiger_in_Ranthambhore.jpg" width="220"/>
+
+</td>
+</tr>
+<tr>
+<td colspan="2">A Bengal tiger (<i>P. tigris tigris</i>) in India's Ranthambhore National Park.</td>
+</tr>
+<tr>
+<th colspan="2">
+Conservation status
+</th>
+</tr>
+<tr>
+<td colspan="2">
+<div>
+<img alt="" height="59" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Status_iucn3_1_EN_svg.png" width="220"/>
+<br/>
+Endangered
+<small> (IUCN 3.1)
+</small>
+</div>
+</td>
+</tr>
+<tr>
+<th colspan="2">
+Scientific classification
+</th>
+</tr>
+<tr>
+<td>Kingdom:</td>
+<td>
+<span class="kingdom">
+Animalia
+</span>
+</td>
+</tr>
+<tr>
+<td>Phylum:</td>
+<td>
+<span class="phylum">
+Chordata
+</span>
+</td>
+</tr>
+<tr>
+<td>Class:</td>
+<td>
+<span class="class">
+Mammalia
+</span>
+</td>
+</tr>
+<tr>
+<td>Order:</td>
+<td>
+<span class="order">
+Carnivora
+</span>
+</td>
+</tr>
+<tr>
+<td>Family:</td>
+<td>
+<span class="family">
+Felidae
+</span>
+</td>
+</tr>
+<tr>
+<td>Genus:</td>
+<td>
+<span class="genus">
+<i>
+Panthera
+</i>
+</span>
+</td>
+</tr>
+<tr>
+<td>Species:</td>
+<td>
+<span class="species">
+<i>
+<b>P. tigris</b>
+</i>
+</span>
+</td>
+</tr>
+<tr>
+<th colspan="2">
+Binomial name
+</th>
+</tr>
+<tr>
+<td colspan="2">
+<b>
+<span class="binomial">
+<i>Panthera tigris</i>
+</span>
+</b>
+<br/>
+<small>(Linnaeus, 1758)</small>
+</td>
+</tr>
+<tr>
+<th colspan="2">
+Subspecies
+</th>
+</tr>
+<tr>
+<td colspan="2">
+<p>
+<i>
+P. t. tigris
+</i>
+<br/>
+<i>
+P. t. corbetti
+</i>
+<br/>
+<i>
+P. t. jacksoni
+</i>
+<br/>
+<i>
+P. t. sumatrae
+</i>
+<br/>
+<i>
+P. t. altaica
+</i>
+<br/>
+<i>
+P. t. amoyensis
+</i>
+<br/>
+†<i>
+P. t. virgata
+</i>
+<br/>
+†<i>
+P. t. balica
+</i>
+<br/>
+†<i>
+P. t. sondaica
+</i>
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+<img alt="" height="168" src="wikiback/en_wikipedia_org_wiki_Tiger/220px_Tiger_map.jpg" width="220"/>
+
+</td>
+</tr>
+<tr>
+<td colspan="2">Tiger's historic range in ca. 1850 (pale yellow) and range in 2006 (in green).
+</td>
+</tr>
+<tr>
+<th colspan="2">
+Synonyms
+</th>
+</tr>
+<tr>
+<td colspan="2">
+<center>
+<i>
+<b>Felis tigris</b>
+</i> <small>
+Linnaeus, 1758</small>
+
+<br/>
+<p>
+<i>
+<b>Tigris striatus</b>
+</i> <small>
+Severtzov, 1858</small>
+<br/>
+</p>
+<i>
+<b>Tigris regalis</b>
+</i> <small>
+Gray, 1867</small>
+</center>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/welcome.xml</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="welcome4">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;welcome&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:importwiki&lt;/h1&gt;
+&lt;p&gt;
+   Testing import of material from Wiki, 
+   This is in an experimental stage and some work remains to be done.
+   The concept of dpath for selecting from a flat documentstructure is not waterproof, but it works on simple constructs.
+&lt;/p&gt;
+&lt;p&gt;
+ This page selects material from a Wikipedia-page: 
+ &lt;a href="http://en.wikipedia.org/wiki/Tiger" class="external"&gt;http://en.wikipedia.org/wiki/Tiger&lt;/a&gt;
+&lt;/p&gt;
+  
+&lt;!-- extract a header with following text --&gt;
+&lt;h2&gt;A section without references&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       dpath="/Taxonomy and etymology"
+       usecopy="no"?&gt;
+&lt;/div&gt;
+&lt;!-- extract a header with following text --&gt;
+&lt;h2&gt;A section with references, only listelements and images&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       dpath="//Subspecies[li,img]"
+       keeprefs="yes" usecopy="no"?&gt;
+&lt;/div&gt;
+&lt;!-- extract a section with xpath --&gt;
+&lt;h2&gt;A section accessed with xpath&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       xpath="//table[contains(@class,'infobox')]"
+       keeprefs="no" usecopy="yes"?&gt;
+&lt;/div&gt;
+ 
+&lt;hr/&gt;
+  
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="welcome.xml" 
+       lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

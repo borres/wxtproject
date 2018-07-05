@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<images>
+<image id="bs1-new">
+	<location>bs1.gif</location>
+	<subtext>Denne kommentaren står her bare for å se om den brekker riktig</subtext>
+</image>
+<image id="bs2-new">
+	<location>bs2.gif</location>
+	<subtext>self2</subtext>
+</image>
+<image id="oliver">
+	<location>105_0530.JPG</location>
+	<height>250px</height>
+	<subtext>oliver for en gangs skyld som keeper. Med utstyret i orden.</subtext>
+</image>
+<image id="marching">
+	<location>marching.jpg</location>
+	<width>250</width>
+	<!-- <subtext>Marching cubes</subtext> -->
+</image>
+<image id="screen1">
+	<location>screen.jpg</location>
+	<subtext>Structure</subtext>
+</image>
+<image id="d1">
+	<location>d1.jpg</location>
+	<subtext>Andreas Thorkildsen vant EM-finalen i spyd lørdag og forsvarte gullet fra 2006. Vinnerkastet var på 88,37 meter.</subtext>
+</image>
+<image id="d2">
+	<location>d2.jpg</location>
+	<subtext>Structure</subtext>
+</image>
+<image id="self">
+	<location>self.gif</location>
+	<subtext>Structure</subtext>
+</image>
+<image id="screen">
+	<location>screen.jpg</location>
+	<subtext>Structure</subtext>
+</image>
+</images>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>PI: ref</h1>
+<p>
+ This PI will introduce a reference in the running text. The reference may have different forms, see below.
+</p>
+
+<pre class="piline">
+&lt;?_wxt ref id=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (mandatory)</td>
+    <td>The id of the reference as it is defined in a referencefile defined in the script
+	<?_wxt xlink id="References"?>
+     </td>
+  </tr>
+
+
+  
+</table>
+
+
+<p class="stylefoot">
+Styleclass describing this PI is: <em>wxtref</em>.
+See distributed std styles.
+</p>
+
+<h2>Examples:</h2>
+<p>This:</p>
+<pre  class="prettyprint lang-html">
+Paperts Logo &lt;?_wxt ref id="Mindstorms"?&gt;  
+</pre>
+<p>may produce this:</p>
+<pre class="result">
+Paperts Logo &lt;span class="wxtref"[10]&lt;/span&gt;    
+</pre>
+<p>
+Assuming that Mindstorms are defined as an id in a reference file.
+</p>
+
+<p>This:</p>
+<pre  class="prettyprint lang-html">
+Vannevaer Bush &lt;?_wxt ref id="As we may think"?&gt;  
+</pre>
+<p>may produce this (simple style):</p>
+<pre class="result">
+Vannevaer Bush &lt;span class="ref" 
+  title="As we may think | http://www.theatlantic.com/doc/194507/bush"&gt;
+  &lt;a href="http://www.theatlantic.com/doc/194507/bush"&gt;[7]&lt;/a&gt;
+  &lt;/span&gt;   
+</pre>
+<p>or this (harvard style):</p>
+<pre class="result">
+Vannevaer Bush &lt;span class="ref"&gt;(Bush, 1945)&lt;/span&gt;
+</pre>
+<p>or this (iee style):</p>
+<pre class="result">
+Vannevaer Bush &lt;span class="ref"&gt;[7]&lt;/span&gt;
+</pre>
+<p>
+<em>NOTE</em> that the IEEE and HARVARD is at the moment not imlemented and is defaulting to SIMPLE.
+</p>
+<p>
+ For styles, see <?_wxt xlink id="Options"?>
+</p>
+
+</body>
+</html>

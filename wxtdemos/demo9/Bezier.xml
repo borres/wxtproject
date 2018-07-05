@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" 
+[
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+	<OBJECT ID="mathplayer" CLASSID="clsid:32F66A20-7614-11D4-BD11-00104BD3F987"> 
+	<!--comment required to prevent this becoming an empty tag--></OBJECT>
+	<?IMPORT NAMESPACE="m" IMPLEMENTATION="#mathplayer" ?>
+
+	<title><?_wxt fragment id="_name"?></title>
+	<?_wxt fragment id="styles_and_scripts"?>
+</head>
+<body>
+	<div>
+	<?_wxt fragment id="banner"?>
+	</div>
+	<table class="mainpage">
+		<tr>
+		<td valign="top">
+			<?_wxt modulemenu summary="no"?>
+		</td>
+		<td valign="top">
+		<h1><?_wxt fragment id="_name"?></h1>
+		<p>
+		This site will investigate some properties of the Bezier function.
+		</p>
+		<div><?_wxt collect books="pages" xpath="//div[@class='ingress']/*"?></div>
+		</td>  
+		</tr>
+	</table>
+<div><?_wxt fragment id="footer"?></div>
+</body>
+</html>

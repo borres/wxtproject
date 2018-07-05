@@ -1,0 +1,25 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "-//W3C//DTD XHTML 1.0 Strict//EN"&gt;
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+    &lt;<span class="tagname">meta</span> <span class="attname">http-equiv</span>="<span class="attvalue">Content-Type</span>" <span class="attname">content</span>="<span class="attvalue">text/html; charset=ISO-8859-1</span>"/&gt;
+    &lt;<span class="tagname">title</span>&gt;index2&lt;/<span class="tagname">title</span>&gt;
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+&lt;<span class="tagname">p</span>&gt;even when they come from iso-8859 - environment:&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">p</span>&gt;æøå&lt;/<span class="tagname">p</span>&gt;
+
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt date?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt stamp?&gt;</span>&lt;/<span class="tagname">div</span>&gt;
+
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_index2.xml" encoding="ISO-8859-1" title="index2.xhtml"
+             sourcelocation="index2.xhtml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="location"/>
+                <xs:element name="width" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="height" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="subtext" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="alt" minOccurs="0" maxOccurs="1"/>
+            </xs:choice>
+            <xs:attribute name="id" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+	<xs:element name="images">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="image" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attribute name="catalog" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: gadget</h1>
+<p>
+  The purpose of a gadget PI is to allow gadgets of different kind,
+  for instance Google-gadgets or home made material.
+</p>
+<pre class="piline">
+&lt;?_wxt gadget location="" expanded="" width="" height=""?&gt;
+</pre>
+
+<p>
+ A gadget in this context is basically either a iframe-element or a documentfragment with a
+ header that allows opening and closing. 
+</p>
+<p>
+ See <?_wxt xlink id="Javascript"?> for a description of nessesary Javascript.
+</p>
+
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong> (optional)</td>
+    <td>The URI that will act as src for the iframe that displays the content of the gadget.
+     </td>
+  </tr>
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>fragmentid</strong> (optional)</td>
+    <td>The id of a defined fragment that constitutes the content of the gadget.
+     </td>
+  </tr>
+  
+  <tr colspan="2">
+  <td>Either <em>location</em> or <em>fragmentid</em> must be set.
+  If both are set location is used.
+  </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>expanded</strong> (optional)</td>
+    <td>If you want the gadget to be initially expanded,
+        expanded is set to <em>yes</em>. <em>no</em> is default.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>width</strong> (mandatory)</td>
+    <td>The width of the expaned window.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>height</strong> (mandatory)</td>
+    <td>The heigth of the expaned window.
+     </td>
+  </tr>  
+  <tr>
+    <td  style="vertical-align:top"><strong>title</strong> (optional)</td>
+    <td>Deprecated, use text
+     </td>
+  </tr> 
+  <tr>
+    <td  style="vertical-align:top"><strong>text</strong> (optional)</td>
+    <td>The text appearing in the header.
+     </td>
+  </tr>   <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (optional)</td>
+    <td>ID attribute given to the content-part (and as name if iframe).
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>movable</strong> (optional)</td>
+    <td>Default is <em>no</em>. When <em>yes</em> the user will be able to 
+    drag the gadget.
+     </td>
+  </tr>  
+  <tr>
+    <td  style="vertical-align:top"><strong>position</strong> (optional)</td>
+    <td>The CSS position value you want to apply. If not set and movable is set,
+    position is set to <em>absolute</em>. Alternative is <em>fixed</em>.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>left</strong> (optional)</td>
+    <td>The CSS positionioning value you want to apply.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>top</strong> (optional)</td>
+    <td>The CSS positionioning value you want to apply.
+     </td>
+  </tr>  
+ </table>
+ 
+     <p class="stylefoot">
+Styleclass(es) describing this PI is: <em>wxtgadget</em>.
+ See distributed std styles.
+</p>
+
+<h2>Examples:</h2>
+
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt gadget 
+   location="http://www.it.hiof.no/~borres/gadgets/geometri2/b-eks11.html"
+   width="400px" height="300px" ?&gt;
+&lt;/div&gt;
+</pre>
+
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">main</span>"&gt;
+&lt;<span class="tagname">h1</span>&gt;Module 3&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">img</span> <span class="attname">style</span>="<span class="attvalue">float:left</span>" <span class="attname">src</span>="<span class="attvalue">http://www.ia.hiof.no/~borres/self/bs3.png</span>" <span class="attname">alt</span>="<span class="attvalue">bs3</span>"/&gt;
+&lt;<span class="tagname">p</span>&gt;
+Konsentrert solbæraroma i duften, fint balansert mot et edelt preg av sedertre. 
+Bløtt smaksanslag, god fylde, fin syretørrhet og lett snerp. 
+Solbærblader og solbær er tydeligste elementer i duften. 
+Ganske syrlig og tørr smak, med litt rustikt preg på ettersmaken. 
+Ferskt bærpreg og en brent undertone i duften. 
+Bløt og saftig smak med middels fylde og lett snerp i den syretørre ettersmaken. 
+Ferskt bringebærpreg i duften. Frisk og saftig smak med lett syretørrhet i ettersmaken. 
+Søtlig solbærduft med hint av soltørkete tomater. 
+Varm og bløt solbærsmak med litt anissødme. Lite syre og kort ettersmak. 
+Søtlig duft av røde bær, vanilje og blomster. 
+Mykt smaksanslag og bløt fruktighet først i smaksbildet, med en viss syretørrhet i ettersmaken. 
+&lt;/<span class="tagname">p</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">pagesource</span>" <span class="attname">style</span>="<span class="attvalue">clear:both</span>"&gt;
+  &lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+  &lt;<span class="tagname">div</span>&gt;
+  <span class="process">&lt;?_wxt expand location="page3coded.txt" 
+       sourcelocation="page3.xml" 
+       expanded="no" code="xmlcode"?&gt;</span>
+  &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

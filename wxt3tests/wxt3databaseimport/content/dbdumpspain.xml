@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<query id="1">
+<sql>select type,name,dice from wines where country = &apos;Italia&apos; and type=&apos;red&apos; and dice=&apos;6&apos;</sql>
+
+	<record>
+		<type>red</type>
+		<name>Le Crosare Ripasso 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Zenato Valpolicella Classico Superiore Ripassa 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbaresco 1997</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Terlo Ravera Barolo 1998</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>CirÃ² Rosso Classico 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbera dAlba San Michele 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vigna Pedale 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vajra Barbera dAlba 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Casavecchia 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Cigliuti Serraboella Barbera dAlba 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Passo Rosso del Veneto 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Pelissero Long Now 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Acinatico Amarone della Valpolicella Classico 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Mezzomondo Negroamaro</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vigneti di Torbe Ripasso Valpolicella Classico Superiore 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Villa Antinori Chianti Classico Riserva 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>CirÃ² Classico 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barco Reale di Carmignano 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Zenato Valpolicella Classico Superiore Ripassa 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbaresco 1999</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Fenocchio Barolo Bussia Riserva 1997</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Col Solera Barbera 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vajra Langhe Rosso 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Veneroso Tenuta di Ghizzano 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vajra Langhe Rosso 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbera dAlba 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Cigliuti Briccoserra 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vigna Pedale 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbaresco 1999</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Torriglione Barbera dAlba 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vigna Pedale Riserva 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbaresco 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Masi Campofiorin Ripasso 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vigneti di Torbe Ripasso Valpolicella Classico Superiore 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbera dAlba 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Rosso di Montalcino 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Masi Grandarella 1999</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Acinatico Amarone della Valpolicella Classico 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Castello di Farnetella Chianti Colli Senesi 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Rosso di Montalcino 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Banfi Brunello di Montalcino 1999</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Langhe San Guglielmo 1998</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Torrevento La Rocca 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Col Solera Barbera 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Mezzomondo Negroamaro</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Da Luca Primitivo Merlot 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Rubrato Irpinia Aglianico 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Taurasi 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Piano di Montevergine Taurasi Riserva 1999</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Quattro Vicariati 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Langhe Rosso 2004</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbera dAlba Superiore 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>San Michele Barbera dAlba 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Vigna Cua Longa Barbera dAsti 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Monte Antico 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbera dAlba 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbera dAlba Serraboella 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbera dAlba 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Barbera dAlba Bricco delle Viole 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Rosso Piceno Piediprato 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Quintarelli Valpolicella Classico Superiore 1998</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Mezzomondo Negroamaro</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Da Luca Primitivo Merlot 2004</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>red</type>
+		<name>Oeno Sangiovese di Toscana 2004</name>
+		<dice>6</dice>
+	</record>
+</query>
+</root>

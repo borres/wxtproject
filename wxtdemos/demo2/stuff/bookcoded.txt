@@ -1,0 +1,9 @@
+<pre class="xmlcode">&lt;?xml <span class="attname">version</span>="<span class="attvalue">1.0</span>" <span class="attname">encoding</span>="<span class="attvalue">UTF-8</span>"?&gt;
+
+&lt;<span class="tagname">data</span>&gt;
+
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">modulecollect</span>"&gt;
+<span class="process">&lt;?_obama collect idlist="Page3" xpath="//div[@id='main']/child::node()"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+
+&lt;/<span class="tagname">data</span>&gt;</pre>

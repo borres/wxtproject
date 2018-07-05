@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="lang-j readyandpretty skiptranslate">
+<span class="com">/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+*/</span>
+<span class="kwd">public</span> <span class="kwd">static</span> String cleanStringForUseAsFilePath(String S)
+{
+     S=S.replace("<span class="str">http://"</span>, "<span class="str">"</span>);
+     S=S.replace("<span class="str">file://"</span>, "<span class="str">"</span>);
+     StringBuffer result=<span class="kwd">new</span> StringBuffer(50);
+     <span class="kwd">for</span>(<span class="kwd">int</span> ix=0;ix&lt;S.length();ix++)
+     {
+         <span class="kwd">char</span> c=S.charAt(ix);
+         <span class="kwd">if</span>( (!Character.isDigit(c)) &amp;&amp; 
+             (!Character.isLetter(c))&amp;&amp;
+             (c!='<span class="str">.'</span>))
+                 result.append('<span class="str">_'</span>);
+         <span class="kwd">else</span>
+             result.append(c);
+     }
+     String s=result.toString();
+     <span class="kwd">return</span> s;
+}
+</pre></body>
+</html>

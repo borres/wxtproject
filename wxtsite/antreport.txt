@@ -1,0 +1,5 @@
+
+main:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

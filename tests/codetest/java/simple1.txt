@@ -1,0 +1,28 @@
+<pre class="javacode">
+<span class="comment">/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+*/</span>
+<span class="word">public</span> <span class="word">static</span> String cleanStringForUseAsFilePath(String S)
+{
+   S=S.replace("<span class="literal">http://"</span>, "<span class="literal">"</span>);
+   S=S.replace("<span class="literal">file://"</span>, "<span class="literal">"</span>);
+
+   StringBuffer result=<span class="word">new</span> StringBuffer(50);
+   <span class="word">for</span>(<span class="word">int</span> ix=0;ix&lt;S.length();ix++)
+   {
+     <span class="word">char</span> c=S.charAt(ix);
+     <span class="word">if</span>( (!Character.isDigit(c)) &amp;&amp; 
+       (!Character.isLetter(c))&amp;&amp;
+       (c!='<span class="literal">.'</span>))
+         result.append('<span class="literal">_'</span>);
+     <span class="word">else</span>
+       result.append(c);
+   }
+   String s=result.toString();
+   <span class="word">return</span> s;
+}
+</pre>

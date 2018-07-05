@@ -1,0 +1,9 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">images</span> <span class="attname">catalog</span>="<span class="attvalue">http://www.ia.hiof.no/~borres/self</span>"&gt;
+&lt;<span class="tagname">image</span> <span class="attname">id</span>="<span class="attvalue">bs6-remote-other-remote</span>"&gt;
+    &lt;<span class="tagname">location</span>&gt;bs6.png&lt;/<span class="tagname">location</span>&gt;
+&lt;/<span class="tagname">image</span>&gt;
+&lt;<span class="tagname">image</span> <span class="attname">id</span>="<span class="attvalue">bs1-remote-other-remote</span>"&gt;
+    &lt;<span class="tagname">location</span>&gt;http://www.ia.hiof.no/~borres/self/bs1.png&lt;/<span class="tagname">location</span>&gt;
+&lt;/<span class="tagname">image</span>&gt;
+&lt;/<span class="tagname">images</span>&gt;</pre>

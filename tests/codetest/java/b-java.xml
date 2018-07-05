@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Java</title>
+</head>
+    <body>
+        
+        <div class="mainblock">
+		<h1>Java</h1>
+ <p>
+   encoding
+</p>
+<h2>textimport</h2>
+<p>Simple</p>
+<div>
+<?_wxt importtxt location="simple1.java" code="javacode"?>
+</div>
+<p>bad syntax 1, not closed comment</p>
+<div>
+<?_wxt importtxt location="bad1.java" code="javacode"?>
+</div>
+
+
+
+<!-- ********************************************** -->
+<h2>Dynamic </h2>
+<p>Simple</p>
+<div>
+<?_wxt expand sourcelocation="simple1.java" location="simple1.txt" code="javacode"?>
+</div>
+<p>bad syntax 1, not closed comment</p>
+<div>
+<?_wxt expand sourcelocation="bad1.java" location="bad1.txt" code="javacode"?>
+</div>
+<!-- ************************************************ -->
+
+<h2>preexpand</h2>
+<p>Simple</p>
+<pre class="javacode">
+/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+*/
+public static String cleanStringForUseAsFilePath(String S)
+{
+	 S=S.replace("http://", "");
+	 S=S.replace("file://", "");
+
+	 StringBuffer result=new StringBuffer(50);
+	 for(int ix=0;ix &lt; S.length();ix++)
+	 {
+		 char c=S.charAt(ix);
+		 if( (!Character.isDigit(c)) &amp;&amp;
+			 (!Character.isLetter(c))&amp;&amp;
+			 (c!='.'))
+				 result.append('_');
+		 else
+			 result.append(c);
+	 }
+	 String s=result.toString();
+	 return s;
+}
+</pre>
+<p>bad syntax 1, not closed comment</p>
+<pre class="javacode">
+/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+
+public static String cleanStringForUseAsFilePath(String S)
+{
+	 S=S.replace("http://", "");
+	 S=S.replace("file://", "");
+
+	 StringBuffer result=new StringBuffer(50);
+	 for(int ix=0;ix &lt;S.length();ix++)
+	 {
+		 char c=S.charAt(ix);
+		 if( (!Character.isDigit(c)) &amp;&amp;
+			 (!Character.isLetter(c))&amp;&amp;
+			 (c!='.'))
+				 result.append('_');
+		 else
+			 result.append(c);
+	 }
+	 String s=result.toString();
+	 return s;
+}
+
+</pre>
+
+
+<p>CDATA</p>
+<div>must be tight in the sense that the CDATA node must be the only one</div>
+<pre class="javacode"><![CDATA[
+/**
+* Cleans a string from everything but letters and digits.
+* Others are replaced by _
+* Removes Schema, in case it is an uri
+* @param S The string to clean, may be a simple string or an URI
+* @return The cleaned String
+*/
+public static String cleanStringForUseAsFilePath(String S)
+{
+	 S=S.replace("http://", "");
+	 S=S.replace("file://", "");
+
+	 StringBuffer result=new StringBuffer(50);
+	 for(int ix=0;ix < S.length();ix++)
+	 {
+		 char c=S.charAt(ix);
+		 if( (!Character.isDigit(c)) &&
+			 (!Character.isLetter(c))&&
+			 (c!='.'))
+				 result.append('_');
+		 else
+			 result.append(c);
+	 }
+	 String s=result.toString();
+	 return s;
+}
+]]></pre>
+
+</div>
+
+    </body>
+</html>

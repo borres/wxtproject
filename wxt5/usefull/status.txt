@@ -1,0 +1,12 @@
+2012.12.02
+    wxt5 is etablished as a copy of wxt4
+    Tidy is removed and jSoup is installed
+    wxt5tests is established and versioned
+
+----------------------------------------------
+planning:
+    - remove databaseimport and use database by command
+    - introduce importthtml to handle html(5) directly
+      should also cover wiki if we open up for cleaning of refs etc
+      with possible use of CSSselector in jsoup doc
+    - remove odt import completely (also formulas)

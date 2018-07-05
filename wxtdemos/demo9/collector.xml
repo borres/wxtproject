@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" 
+[
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+	<title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="stdstyle.css"/>
+	<link rel="STYLESHEET" href="specialstyles.css"/>
+	<script type="text/javascript" src="prototype.js"></script>
+	<script type="text/javascript" src="std.js"> </script>
+</head>
+
+<body> 
+ 
+	<div class="somh1" style="margin-top:100px">
+	The Bezier Function
+	</div>
+	<div>
+	<?_wxt moduletocfinal tags="h1" cols="1"?>
+	</div>
+	<div>
+	<?_wxt collect books="pages" xpath="//div[@class='main']"?>
+	</div>
+	
+	<div class="footer"><?_wxt fragment id="footer"?></div>
+</body>
+</html>

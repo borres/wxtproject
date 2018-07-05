@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<div class="content">    
+<h1>Formulas</h1>
+
+<p>
+	Testing import of formulas from Open Office documents
+</p>
+<hr />
+<div>
+View source: 
+<?_wxt expand sourcelocation="formula.xml" 
+            location="formulasrc.txt" code="mlcode"?>
+</div>
+<hr />
+<div>
+View script:
+<?_wxt expand sourcelocation="script.xml" 
+       location="scriptsrc.txt" code="xmlcode"?>
+</div>
+<hr />
+<div>
+View template:
+<?_wxt expand sourcelocation="p_template.xml" 
+       location="templatesrc.txt" code="xmlcode"?>
+</div>
+<hr />
+	<!-- [if IE]>
+	<div>
+	<p>Make sure you have installed mathPlayer.<br/>
+	Test (and install) at: 
+	<a href="http://www.dessci.com/en/products/mathplayer/check.htm">
+	  www.dessci.com/en/products/mathplayer/check.htm
+	</a>
+	</p>
+	<hr/>
+	</div>
+	<![endif] -->
+<h3>Formula 1</h3>
+<div>	
+<?_wxt formula  id="_formel1"?>
+</div>
+
+
+<h3>Formula 2</h3>
+<div>	
+<?_wxt formula  id="_formel2"?>
+</div>
+
+
+<h3>Formula 3</h3>
+<p>Imported from external source</p>
+<div>	
+<?_wxt formula  id="_fbezier"?>
+</div>
+
+<h3>Formula 4</h3>
+<div>	
+<?_wxt formula  id="_formel4"?>
+</div>
+
+
+<h3>Formula 5</h3>
+<div>	
+<?_wxt formula  id="_formel5"?>
+</div>
+
+<h3>Formula 6</h3>
+<p> imported directly from single formula file</p>
+<div>	
+<?_wxt formula  location="single formula.odf"?>
+</div>
+
+
+</div>
+</root>

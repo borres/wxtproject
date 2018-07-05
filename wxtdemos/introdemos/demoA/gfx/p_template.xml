@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title><?_wxt fragment id="_name"?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="GENERATOR" content="WXT"></meta>
+	<link rel="STYLESHEET" href="template.css"/>
+	<link rel="STYLESHEET" href="wxtstyle.css"/>
+</head>
+
+<body>
+
+<!-- logo-->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no/wxt/wxtsite/"> 
+	<img alt="logo" src="wxtlogo.gif" style="border:none" /> 
+	</a> 
+</div> <!-- logo -->
+
+
+<!-- banner -->
+<div id="banner">
+  <p id="dep"><?_wxt fragment id="dep"?></p>
+  <p id="sitename"> <?_wxt fragment id="sitename"?></p>
+</div><!-- banner -->
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<?_wxt modulemenu books="all"?>
+</div><!-- left menu -->
+
+
+
+<!-- content -->
+<div class="content">
+	<div class="collectable">
+		<div class="main">
+			<?_wxt importxml xpath="//div[@class='mainblock']/*"?>
+		</div>
+	</div>
+</div><!-- content -->
+
+
+<!-- footer -->
+<div class="footer">
+	<a href="http://validator.w3.org/check?uri=referer">
+	<img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border:0px"/>
+	</a> 
+</div><!-- footer -->
+
+
+</body>
+</html>

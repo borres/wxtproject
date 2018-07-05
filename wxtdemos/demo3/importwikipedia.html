@@ -1,0 +1,865 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	
+    <title>WIKIPEDIA</title>
+	
+    <link href="../commons/wxtstyle.css" rel="STYLESHEET">
+	
+    <script src="../commons/prototype.js" type="text/javascript"> </script>
+	<script src="../commons/wxtjs.js" type="text/javascript"> </script>
+	
+    <style>
+	.prev img,.home img,.next img{border:none}
+	</style>
+
+  </head>
+
+
+  <body>   
+	
+    <table>
+	
+      <tr>
+	
+        <td style="width:160px" valign="top">
+		
+          <div class="wxtmodulemenu">
+            <div class="level1">
+              <a href="index.html" onclick="javascript:document.getElementById('WIKIPEDIA1').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA1').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA1').style.visibility='visible'">Welcome</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA1" style="visibility:hidden;">
+                  <div class="header">Welcome</div>testing wxt PIs</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importwiki.html" onclick="javascript:document.getElementById('WIKIPEDIA2').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA2').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA2').style.visibility='visible'">WIKI</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA2" style="visibility:hidden;">
+                  <div class="header">WIKI</div>test wiki import</div>
+              </div>
+            </div>
+            <div class="level2">WIKIPEDIA</div>
+            <div class="level2">
+              <a href="transformed.html" onclick="javascript:document.getElementById('WIKIPEDIA3').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA3').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA3').style.visibility='visible'">Transformed Out</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA3" style="visibility:hidden;">
+                  <div class="header">Transformed Out</div>test transformed output</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="transformedin.html" onclick="javascript:document.getElementById('WIKIPEDIA4').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA4').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA4').style.visibility='visible'">Transformed In</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA4" style="visibility:hidden;">
+                  <div class="header">Transformed In</div>test transformed input</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="dts.html" onclick="javascript:document.getElementById('WIKIPEDIA5').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA5').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA5').style.visibility='visible'">DTS</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA5" style="visibility:hidden;">
+                  <div class="header">DTS</div>Date  Time Stamp</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="fragments.html" onclick="javascript:document.getElementById('WIKIPEDIA6').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA6').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA6').style.visibility='visible'">Fragments</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA6" style="visibility:hidden;">
+                  <div class="header">Fragments</div>
+                  <img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif" style="float:right">
+             <div style="font-weight:bold">bs was here</div>
+                </div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="popfragments.html" onclick="javascript:document.getElementById('WIKIPEDIA7').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA7').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA7').style.visibility='visible'">PopFragments</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA7" style="visibility:hidden;">
+                  <div class="header">PopFragments</div>testing popfragments</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="fragmentxlink.html" onclick="javascript:document.getElementById('WIKIPEDIA8').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA8').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA8').style.visibility='visible'">Fragmentlinks</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA8" style="visibility:hidden;">
+                  <div class="header">Fragmentlinks</div>testing popfragments</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="footnotes.html" onclick="javascript:document.getElementById('WIKIPEDIA9').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA9').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA9').style.visibility='visible'">Foots</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA9" style="visibility:hidden;">
+                  <div class="header">Foots</div>
+                  <img alt="self1" src="http://www.ia.hiof.no/~borres/self/bs1.gif">
+                        <span style="font-weight:bold">bs was here leaving footprints</span>
+                </div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="collectsummaries.html" onclick="javascript:document.getElementById('WIKIPEDIA10').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA10').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA10').style.visibility='visible'">Summaries</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA10" style="visibility:hidden;">
+                  <div class="header">Summaries</div>testing collection of summaries</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="demolinks.html" onclick="javascript:document.getElementById('WIKIPEDIA11').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA11').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA11').style.visibility='visible'">Demolinks</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA11" style="visibility:hidden;">
+                  <div class="header">Demolinks</div>testing demolinks</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="collecting.html" onclick="javascript:document.getElementById('WIKIPEDIA12').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA12').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA12').style.visibility='visible'">Collecting</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA12" style="visibility:hidden;">
+                  <div class="header">Collecting</div>testing collections</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="moduletoc.html" onclick="javascript:document.getElementById('WIKIPEDIA13').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA13').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA13').style.visibility='visible'">ModuleTOC</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA13" style="visibility:hidden;">
+                  <div class="header">ModuleTOC</div>testing local TOC</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="modulemap.html" onclick="javascript:document.getElementById('WIKIPEDIA14').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA14').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA14').style.visibility='visible'">ModuleMap</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA14" style="visibility:hidden;">
+                  <div class="header">ModuleMap</div>testing Module map</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="path.html" onclick="javascript:document.getElementById('WIKIPEDIA15').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA15').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA15').style.visibility='visible'">Path</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA15" style="visibility:hidden;">
+                  <div class="header">Path</div>testing path</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="ix.html" onclick="javascript:document.getElementById('WIKIPEDIA16').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA16').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA16').style.visibility='visible'">Index</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA16" style="visibility:hidden;">
+                  <div class="header">Index</div>testing ixword and ixtable</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="xlink.html" onclick="javascript:document.getElementById('WIKIPEDIA17').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA17').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA17').style.visibility='visible'">xlink</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA17" style="visibility:hidden;">
+                  <div class="header">xlink</div>testing xlink and xlinklist</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="encoding.html" onclick="javascript:document.getElementById('WIKIPEDIA18').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA18').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA18').style.visibility='visible'">Encoding</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA18" style="visibility:hidden;">
+                  <div class="header">Encoding</div>testing encoding</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importdb.html" onclick="javascript:document.getElementById('WIKIPEDIA19').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA19').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA19').style.visibility='visible'">Database</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA19" style="visibility:hidden;">
+                  <div class="header">Database</div>testing database access</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importxml.html" onclick="javascript:document.getElementById('WIKIPEDIA20').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA20').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA20').style.visibility='visible'">ImportXML</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA20" style="visibility:hidden;">
+                  <div class="header">ImportXML</div>testing xml import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importtext.html" onclick="javascript:document.getElementById('WIKIPEDIA21').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA21').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA21').style.visibility='visible'">ImportTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA21" style="visibility:hidden;">
+                  <div class="header">ImportTXT</div>testing text import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importscripttext.html" onclick="javascript:document.getElementById('WIKIPEDIA22').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA22').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA22').style.visibility='visible'">ImportScriptTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA22" style="visibility:hidden;">
+                  <div class="header">ImportScriptTXT</div>testing text import from script</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importscriptdb.html" onclick="javascript:document.getElementById('WIKIPEDIA23').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA23').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA23').style.visibility='visible'">ImportScriptDB</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA23" style="visibility:hidden;">
+                  <div class="header">ImportScriptDB</div>testing text import from script</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="importmultitext.html" onclick="javascript:document.getElementById('WIKIPEDIA24').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA24').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA24').style.visibility='visible'">ImportMultiTXT</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA24" style="visibility:hidden;">
+                  <div class="header">ImportMultiTXT</div>testing text import</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="popups.html" onclick="javascript:document.getElementById('WIKIPEDIA25').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA25').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA25').style.visibility='visible'">Pops</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA25" style="visibility:hidden;">
+                  <div class="header">Pops</div>testing popups</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="expand.html" onclick="javascript:document.getElementById('WIKIPEDIA26').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA26').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA26').style.visibility='visible'">Expand</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA26" style="visibility:hidden;">
+                  <div class="header">Expand</div>testing ajax expand</div>
+              </div>
+            </div>
+            <div class="level2">
+              <a href="backup.html" onclick="javascript:document.getElementById('WIKIPEDIA27').style.visibility='hidden'" onmouseout="javascript:document.getElementById('WIKIPEDIA27').style.visibility='hidden'" onmouseover="javascript:document.getElementById('WIKIPEDIA27').style.visibility='visible'">Backup</a>
+              <div style="position: absolute; z-index: 10">
+                <div class="wxtsummary" id="WIKIPEDIA27" style="visibility:hidden;">
+                  <div class="header">Backup</div>testing backup</div>
+              </div>
+            </div>
+          </div>
+		
+          <div style="margin-left:20px; margin-top:20px">
+		
+            <span class="prev"><span class="wxtxlink"><a href="importwiki.html" title="test wiki import"><img alt="prev" src="prev.gif"></a></span></span>
+		<span class="home"><span class="wxtxlink"><a href="index.html" title="testing wxt PIs"><img alt="home" src="home.gif"></a></span></span>
+		<span class="next"><span class="wxtxlink"><a href="transformed.html" title="test transformed output"><img alt="next" src="next.gif"></a></span></span>
+		
+          </div>
+	
+        </td>
+
+<td valign="top">
+
+          <div class="content">    
+
+            <h1>
+              <a name="WIKIPEDIA31">WIKIPEDIA import</a>
+            </h1>
+
+
+            <hr>
+
+            <div>Source:</div>
+
+            <div>
+              <div class="wxtexpand">
+                <div class="header">
+                  <span class="off" onclick="javascript:toggleExpandAjax('exp_importwikipedia.xml',this)">_</span>importwikipedia.xml</div>
+                <div class="content"> 
+                </div>
+              </div>
+
+            </div>
+
+            <hr>
+
+
+            <div>
+	
+              <div class="wxtmoduletoc">
+                <div>
+                  <span class="level1"><a href="#WIKIPEDIA31">WIKIPEDIA import</a></span>
+                </div>
+                <div>
+                  <span class="level1"><a href="#WIKIPEDIA32">Tigere</a></span>
+                </div>
+                <div>
+                  <span class="level3"><a href="#WIKIPEDIA33">Underarter</a></span>
+                </div>
+                <div>
+                  <span class="level1"><a href="#WIKIPEDIA34">Pumaer</a></span>
+                </div>
+                <div>
+                  <span class="level3"><a href="#WIKIPEDIA35">Hunting and diet</a></span>
+                </div>
+                <div>
+                  <span class="level1"><a href="#WIKIPEDIA36">Pitcairn Islands</a></span>
+                </div>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <p>
+	Testing import av WIKIPEDIA fragments
+</p>
+
+            <hr>
+
+            <div>
+	
+              <h1>
+                <a name="WIKIPEDIA32">Tigere</a>
+              </h1>
+	
+              <div class="wxtimportwiki">
+                <h3>
+                  <a name="WIKIPEDIA33">
+           Underarter
+        </a>
+                </h3>
+
+                <p>IUCN anerkjenner seks n&aring;levende underarter. Flere av disse er truet av utryddelse. Mange av dem lever dessuten i s&aring; fjerne og uframkommelige str&oslash;k at man vitenskapelig sett ikke kan konkludere med at nye studier ikke vil kunne avdekke ny og uventet informasjon. Tre tidligere anerkjente underarter regnes alt som utd&oslash;dd.</p>
+
+                <h4>
+           Sibirtiger
+        </h4>
+
+                <div class="thumb tright">
+
+                  <div class="thumbinner">
+            
+                    <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_altaica_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_altaica_map.png" width="150">
+            </a>
+
+                    <div class="thumbcaption">
+
+                      <div class="magnify">
+                
+                        <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_altaica_map.png" title="Forst&oslash;rr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15">
+                </a>
+              
+                      </div>
+Sibirtigerens utbredelse</div>
+
+                  </div>
+
+                </div>
+
+                <p>
+          
+                  <a class="external" href="http://no.wikipedia.org/wiki/Sibirtiger" title="Sibirtiger">Sibirtiger</a> (<i>P. t. altaica</i>) er en kritisk truet (CR) underart. Den kalles ogs&aring; <a class="external" href="http://no.wikipedia.org/wiki/Amurtiger" title="Amurtiger">amurtiger</a> og er den fysisk st&oslash;rste av alle underartene. Bestanden i Russland har siden 1996 hatt en positiv utvikling, og er p&aring; om lag 500 dyr, totalbestanden er estimert til &aring; v&aelig;re om lag 600 <a class="external" href="http://news.independent.co.uk/world/asia/article2447636.ece" rel="nofollow">[1]</a>. I tillegg finnes n&aelig;rmere 600&nbsp; sibirtigre i fangenskap.</p>
+
+                <p>Sibirtigeren finnes f&oslash;rst og fremst i <a class="external" href="http://no.wikipedia.org/wiki/Sikhote-Alin" title="Sikhote-Alin">Sikhote-Alinfjellene</a> i <a class="external" href="http://no.wikipedia.org/wiki/Russland" title="Russland">&Oslash;st-Russland</a>, men noen f&aring; holder ogs&aring; til i <a class="external" href="http://no.wikipedia.org/wiki/Changbaifjellene" title="Changbaifjellene">Changbaifjellene</a> i <a class="external" href="http://no.wikipedia.org/wiki/Folkerepublikken_Kina" title="Folkerepublikken Kina">Nord&oslash;st-Kina</a> og helt nord i <a class="external" href="http://no.wikipedia.org/wiki/Nord-Korea" title="Nord-Korea">Nord-Korea</a>.</p>
+
+                <h4>
+           S&oslash;rkinatiger
+        </h4>
+
+                <div class="thumb tright">
+
+                  <div class="thumbinner">
+            
+                    <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_amoyensis_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_amoyensis_map.png" width="150">
+            </a>
+
+                    <div class="thumbcaption">
+
+                      <div class="magnify">
+                
+                        <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_amoyensis_map.png" title="Forst&oslash;rr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15">
+                </a>
+              
+                      </div>
+S&oslash;rkinatigerens utbredelse</div>
+
+                  </div>
+
+                </div>
+
+                <p>
+          
+                  <a class="external" href="http://no.wikipedia.org/wiki/S%C3%B8rkinatiger" title="S&oslash;rkinatiger">S&oslash;rkinatiger</a> (<i>P. t. amoyensis</i>) er en kritisk truet (CR) underart og kalles ogs&aring; <a class="external" href="http://no.wikipedia.org/wiki/Amoytiger" title="Amoytiger">amoytiger</a>, <a class="external" href="http://no.wikipedia.org/wiki/Xiamentiger" title="Xiamentiger">xiamentiger</a> og <a class="external" href="http://no.wikipedia.org/wiki/Kinatiger" title="Kinatiger">kinatiger</a>. Det finnes i dag 47 (<a class="external" href="http://no.wikipedia.org/wiki/2004" title="2004">2004</a>) s&oslash;rkinatigre som overlever i 18 dyrhager, alle etterkommere av 6 viltfangede tigre.</p>
+
+                <p>S&oslash;rkinatiger er dessverre s&aring; godt som utryddet i vill tilstand. Forskere antar at det er f&aelig;rre enn 20 viltlevende individer igjen, og den har ikke v&aelig;rt observert av offisielle representanter siden tidlig p&aring; <a class="external" href="http://no.wikipedia.org/wiki/1980-tallet" title="1980-tallet">1980-tallet</a>. Fra <a class="external" href="http://no.wikipedia.org/wiki/Fujian" title="Fujian">Fujian-provinsen</a> er det spredd rykter om en s&aring;kalt <i>maltesertiger</i>, som skal v&aelig;re bl&aring; i fargen og ha lysere gr&aring; striper langs sidene. Den har imidlertid ikke latt seg verifisere s&aring; langt. Om den eksisterer er den trolig i fargevarietet.</p>
+
+                <h4>
+           Indokinatiger
+        </h4>
+
+                <div class="thumb tright">
+
+                  <div class="thumbinner">
+            
+                    <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_corbetti_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_corbetti_map.png" width="150">
+            </a>
+
+                    <div class="thumbcaption">
+
+                      <div class="magnify">
+                
+                        <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_corbetti_map.png" title="Forst&oslash;rr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15">
+                </a>
+              
+                      </div>
+Indokinatigerens utbredelse</div>
+
+                  </div>
+
+                </div>
+
+                <p>
+          
+                  <a class="external" href="http://no.wikipedia.org/wiki/Indokinatiger" title="Indokinatiger">Indokinatiger</a> (<i>P. t. corbetti</i>) kalles ogs&aring; <a class="external" href="http://no.wikipedia.org/wiki/Corbettstiger" title="Corbettstiger">corbettstiger</a>, og er en truet underart som f&oslash;rst ble oppdaget og beskrevet i <a class="external" href="http://no.wikipedia.org/wiki/1968" title="1968">1968</a>.</p>
+
+                <p>Indokinatigeren lever i et stort omr&aring;de, som bl.a. inkluderer land som <a class="external" href="http://no.wikipedia.org/wiki/Kambodsja" title="Kambodsja">Kambodsja</a>, <a class="external" href="http://no.wikipedia.org/wiki/Folkerepublikken_Kina" title="Folkerepublikken Kina">Folkerepublikken Kina</a> (s&oslash;rlige deler), <a class="external" href="http://no.wikipedia.org/wiki/Laos" title="Laos">Laos</a>, <a class="external" href="http://no.wikipedia.org/wiki/Myanmar" title="Myanmar">Myanmar</a> (&oslash;stlige deler), <a class="external" href="http://no.wikipedia.org/wiki/Thailand" title="Thailand">Thailand</a> og <a class="external" href="http://no.wikipedia.org/wiki/Vietnam" title="Vietnam">Vietnam</a>. Det er estimert at det finnes ca 1200&ndash;1800&nbsp;individer igjen, men antallet minsker som f&oslash;lge av liten eller ingen beskyttelse i flere av landene. S&aring;vidt kjent finnes det pr. <a class="external" href="http://no.wikipedia.org/wiki/2005" title="2005">2005</a> ca 60 indokinatigre i fangenskap, fordelt p&aring; land i Asia og <a class="external" href="http://no.wikipedia.org/wiki/USA" title="USA">USA</a>.</p>
+
+                <p>Fram til <a class="external" href="http://no.wikipedia.org/wiki/Desember" title="Desember">desember</a> 2004 ble den ogs&aring; kalt <a class="external" href="http://no.wikipedia.org/wiki/Malaysiatiger" title="Malaysiatiger">malaysiatiger</a>, men da oppdaget man at tigerne som levde i de mer s&oslash;rlige str&oslash;kene var s&aring; unike at de m&aring;tte klassifiseres som en egen underart.</p>
+
+                <h4>
+           Malaysiatiger
+        </h4>
+
+                <div class="thumb tright">
+
+                  <div class="thumbinner">
+            
+                    <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_jacksoni.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_jacksoni.png" width="150">
+            </a>
+
+                    <div class="thumbcaption">
+
+                      <div class="magnify">
+                
+                        <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_jacksoni.png" title="Forst&oslash;rr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15">
+                </a>
+              
+                      </div>
+Malaysiatigerens utbredelse</div>
+
+                  </div>
+
+                </div>
+
+                <p>
+          
+                  <a class="external" href="http://no.wikipedia.org/wiki/Malaysiatiger" title="Malaysiatiger">Malaysiatiger</a> (<i>P. t. jacksoni</i>) er trolig en kritisk truet underart som holder til p&aring; <a class="external" href="http://no.wikipedia.org/wiki/Malayahalv%C3%B8ya" title="Malayahalv&oslash;ya">Malayahalv&oslash;ya</a> i <a class="external" href="http://no.wikipedia.org/wiki/Malaysia" title="Malaysia">Malaysia</a>. Den ble oppdaget av et team av forskere ledet av Stephen J. O'Brien. De tok for seg 134&nbsp;tigre fra Russland, India, Kina og andre land i omr&aring;det og utf&oslash;rte en omfattende DNA-analyse av disse dyrenes genmateriale. Det ble da oppdaget at de sydlige tigrene p&aring; Malayahalv&oslash;ya var noks&aring; forskjellige fra indokinatigeren, og ble omklassifisert som en egen underart.</p>
+
+                <p>Malaysiatigeren er alts&aring; s&aring; lik indokinatigeren at de hittil har v&aelig;rt betraktet som en og samme underart, men det er distinkte forskjeller mellom dem. Den skal ha en liten utbredelse syd for <a class="external" href="http://no.wikipedia.org/wiki/Phuket" title="Phuket">Phuket</a> i Thailand, men hovedbestanden finnes syd for <a class="external" href="http://no.wikipedia.org/wiki/Songkhla" title="Songkhla">Songkhla</a> i Thailand og sydover inn i de sentrale fjellstr&oslash;kene p&aring; Malayahalv&oslash;ya.</p>
+
+                <h4>
+           Sumatratiger
+        </h4>
+
+                <div class="thumb tright">
+
+                  <div class="thumbinner">
+            
+                    <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_sumatrae_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_sumatrae_map.png" width="150">
+            </a>
+
+                    <div class="thumbcaption">
+
+                      <div class="magnify">
+                
+                        <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_sumatrae_map.png" title="Forst&oslash;rr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15">
+                </a>
+              
+                      </div>
+Sumatratigerens utbredelse</div>
+
+                  </div>
+
+                </div>
+
+                <p>
+          
+                  <a class="external" href="http://no.wikipedia.org/wiki/Sumatratiger" title="Sumatratiger">Sumatratiger</a> (<i>P. t. sumatrae</i>) er en kritisk truet (CR) underart som kun finnes p&aring; &oslash;ya <a class="external" href="http://no.wikipedia.org/wiki/Sumatra" title="Sumatra">Sumatra</a> i <a class="external" href="http://no.wikipedia.org/wiki/Indonesia" title="Indonesia">Indonesia</a>, der den i all vesentlighet overlever i fem nasjonalreservater. Man tror den har v&aelig;rt isolert p&aring; &oslash;ya i ca 10&nbsp;000&ndash;12&nbsp;000&nbsp;&aring;r.</p>
+
+                <p>Moderne forskning med <a class="external" href="http://no.wikipedia.org/wiki/DNA" title="DNA">DNA</a> har nylig avdekket at denne tigeren kanskje m&aring; reklassifiseres som en egen art (alts&aring; i stedet for en underart), selv om det er for tidlig &aring; dra en slik konklusjon.</p>
+
+                <p>Man antar at ca 400&ndash;500&nbsp;individer overlever i vill tilstand. I tillegg kommer ca 235 tigre som overlever i fangenskap, alle etterkommere av 37 viltfangende tigre. 61 tigre (32&nbsp;hanner og 29&nbsp;hunner) har blitt omplassert til &oslash;ya <a class="external" href="http://no.wikipedia.org/wiki/Java_(%C3%B8y)" title="Java (&oslash;y)">Java</a>.</p>
+
+                <h4>
+           Bengaltiger
+        </h4>
+
+                <div class="thumb tright">
+
+                  <div class="thumbinner">
+            
+                    <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_tigris_map.png">
+              <img alt="" class="thumbimage" height="69" src="wikiback/no_wikipedia_org_wiki_Tiger/150px_P_tigris_tigris_map.png" width="150">
+            </a>
+
+                    <div class="thumbcaption">
+
+                      <div class="magnify">
+                
+                        <a class="external" href="http://no.wikipedia.org/wiki/Fil:P_tigris_tigris_map.png" title="Forst&oslash;rr">
+                  <img alt="" height="11" src="wikiback/no_wikipedia_org_wiki_Tiger/magnify_clip.png" width="15">
+                </a>
+              
+                      </div>
+Bengaltigerens utbredelse</div>
+
+                  </div>
+
+                </div>
+
+                <p>
+          
+                  <a class="external" href="http://no.wikipedia.org/wiki/Bengaltiger" title="Bengaltiger">Bengaltiger</a> (<i>P. t. tigris</i>) kalles ogs&aring; <a class="external" href="http://no.wikipedia.org/wiki/Kongetiger" title="Kongetiger">kongetiger</a> og er den mest tallrike av dagens underarter. Den finnes i prim&aelig;rt i <a class="external" href="http://no.wikipedia.org/wiki/India" title="India">India</a>, selv om sm&aring; populasjoner ogs&aring; eksisterer i <a class="external" href="http://no.wikipedia.org/wiki/Bangladesh" title="Bangladesh">Bangladesh</a>, <a class="external" href="http://no.wikipedia.org/wiki/Bhutan" title="Bhutan">Bhutan</a>, <a class="external" href="http://no.wikipedia.org/wiki/Nepal" title="Nepal">Nepal</a> og deler av Kina.</p>
+
+                <p>Man har til n&aring; antatt at det fantes omkring 3&nbsp;000&ndash;4&nbsp;750 bengaltigre igjen i verden, selv om tallene har v&aelig;rt usikre, hvorav cirka 3&nbsp;642 i India (2002), men bruk av ny teknikk har gitt nye og sv&aelig;rt nedsl&aring;ende estimater. En indisk rapport fra uke 8 i <a class="external" href="http://no.wikipedia.org/wiki/2008" title="2008">2008</a> estimerer antallet tigre i Indida til kun 1&nbsp;411 dyr<sup class="reference" id="cite_ref-1">
+            
+          </sup>. I tillegg kommer ca 200&nbsp;bengaltigre som lever i fangenskap rundt om i verden. Bengaltigeren er mindre enn sibirtigeren, og gjerne m&oslash;rkere og klarere i fargene. Det finnes ogs&aring; noen hvite eksemplarer.</p>
+
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+	
+              <h1>
+                <a name="WIKIPEDIA34">Pumaer</a>
+              </h1>
+	
+              <div class="wxtimportwiki">
+                <h3>
+                  <a name="WIKIPEDIA35">
+           Hunting and diet
+        </a>
+                </h3>
+
+                <p>A successful generalist predator, the cougar will eat any animal it can catch, from insects to large ungulates (over 500&nbsp;kg). Like all cats, it is an obligate carnivore, feeding only on meat. The Mean weight of vertebrate prey (MWVP) was positively correlated (r=0.875) with puma body weight and inversely correlated (r=-0.836) with food niche breadth in all America. In general, MWVP was lower in areas closer to the Equator. Its most important prey species are various deer species, particularly in North America; mule deer, white-tailed deer, elk, and even large moose are taken by the cat. Other species such as Bighorn Sheep, wild horses of Arizona, domestic horses, and domestic livestock such as cattle and sheep are also primary food bases in many areas. A survey of North America research found 68% of prey items were ungulates, especially deer. Only the Florida Panther showed variation, often preferring feral hogs and armadillos.
+        </p>
+
+                <div class="thumb tright">
+
+                  <div class="thumbinner">
+            
+              
+                    <img alt="" class="thumbimage" height="138" src="wikiback/en_wikipedia_org_wiki_Cougar/220px_Mountain_Lion441.jpg" width="220">
+            
+<div class="thumbcaption">
+
+                      <div class="magnify">
+                
+                  
+                        <img alt="" height="11" src="wikiback/en_wikipedia_org_wiki_Cougar/magnify_clip.png" width="15">
+                
+              </div>
+Shown eating. Cougars are ambush predators, feeding mostly on deer and other mammals.</div>
+
+                  </div>
+
+                </div>
+
+                <p>Investigation in Yellowstone National Park showed that elk, followed by mule deer, were the cougar's primary targets; the prey base is shared with the park's gray wolves, with whom the cougar competes for resources. Another study on winter kills (November&ndash;April) in Alberta showed that ungulates accounted for greater than 99% of the cougar diet. Learned, individual prey recognition was observed, as some cougars rarely killed bighorn sheep, while others relied heavily on the species.
+        </p>
+
+                <p>In the Central and South American cougar range, the ratio of deer in the diet declines. Small to mid-size mammals are preferred, including large rodents such as the capybara. Ungulates accounted for only 35% of prey items in one survey, approximately half that of North America. Competition with the larger jaguar has been suggested for the decline in the size of prey items. Other listed prey species of the cougar include mice, porcupine, and hares. Birds and small reptiles are sometimes preyed upon in the south, but this is rarely recorded in North America. Not all of their prey is listed here due to their large range.</p>
+
+                <p>Though capable of sprinting, the cougar is typically an ambush predator. It stalks through brush and trees, across ledges, or other covered spots, before delivering a powerful leap onto the back of its prey and a suffocating neck bite. The cougar is capable of breaking the neck of some of its smaller prey with a strong bite and momentum bearing the animal to the ground.
+        </p>
+
+                <p>Kills are generally estimated at around one large ungulate every two weeks. The period shrinks for females raising young, and may be as short as one kill every three days when cubs are nearly mature at around 15 months. The cat drags a kill to a preferred spot, covers it with brush, and returns to feed over a period of days. It is generally reported that the cougar is a non-scavenger and will rarely consume prey it has not killed; but deer carcasses left exposed for study were scavenged by cougars in California, suggesting more opportunistic behavior.
+        </p>
+
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+	
+              <h1>
+                <a name="WIKIPEDIA36">Pitcairn Islands</a>
+              </h1>
+	
+              <div class="wxtimportwiki">
+                <table class="infobox geography vcard">
+
+                  <tr class="adr">
+
+                    <th align="center" class="mergedtoprow" colspan="3">
+              <span class="fn org country-name">Pitcairn, Henderson,<br>
+Ducie and Oeno Islands</span>
+
+                      <div>Pitkern Ailen</div>
+
+                    </th>
+
+                  </tr>
+
+                  <tr class="mergedtoprow">
+
+                    <td align="center" class="maptable" colspan="3">
+
+                      <table align="center">
+
+                        <tr>
+
+                          <td align="center">
+                    <a class="external" href="http://en.wikipedia.org/wiki/File:Flag_of_the_Pitcairn_Islands.svg" title="Flag of Pitcairn Islands">
+                      <img alt="" class="thumbborder" height="63" src="wikiback/en_wikipedia_org_wiki_Pitcairn_Islands/125px_Flag_of_the_Pitcairn_Islands.svg.png" width="125">
+                    </a>
+                  </td>
+<td align="center">
+                    <a class="external" href="http://en.wikipedia.org/wiki/File:Coat_of_Arms_of_the_Pitcairn_Islands.svg" title="Coat of arms of Pitcairn Islands">
+                      <img alt="" height="99" src="wikiback/en_wikipedia_org_wiki_Pitcairn_Islands/85px_Coat_of_Arms_of_the_Pitcairn_Islands.svg.png" width="85">
+                    </a>
+                  </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <td align="center">
+                    <small>
+                      <a class="external" href="http://en.wikipedia.org/wiki/Flag_of_Pitcairn_Islands" title="Flag of Pitcairn Islands">Flag</a>
+                    </small>
+                  </td>
+<td align="center">
+                    <small>
+                      <a class="external" href="http://en.wikipedia.org/wiki/Coat_of_arms_of_Pitcairn_Islands" title="Coat of arms of Pitcairn Islands">Coat of arms</a>
+                    </small>
+                  </td>
+
+                        </tr>
+
+                      </table>
+
+                    </td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td class="anthem" colspan="3">
+              <b>
+                <a class="external" href="http://en.wikipedia.org/wiki/National_anthem" title="National anthem">Anthem</a>:&nbsp;</b>"<a class="external" href="http://en.wikipedia.org/wiki/Pitcairn_Anthem" title="Pitcairn Anthem">Come ye Blessed</a>"<br>
+"<a class="external" href="http://en.wikipedia.org/wiki/God_Save_the_Queen" title="God Save the Queen">God Save the Queen</a>"<br>
+            
+                    </td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td colspan="3">
+
+                      <div class="center">
+
+                        <div class="floatnone">
+                  
+                          <a class="external" href="http://en.wikipedia.org/wiki/File:LocationPitcairnIslands.jpg" title="Location of Pitcairn Islands">
+                    <img alt="" height="249" src="wikiback/en_wikipedia_org_wiki_Pitcairn_Islands/250px_LocationPitcairnIslands.jpg" width="250">
+                  </a>
+                
+                        </div>
+
+                      </div>
+
+                      <div></div>
+
+                    </td>
+
+                  </tr>
+
+                  <tr class="mergedtoprow">
+
+                    <td colspan="2">
+              <b>
+                <a class="external" href="http://en.wikipedia.org/wiki/Capital_(political)" title="Capital (political)">Capital</a>
+              </b>
+              
+                      <br>
+(and largest city)</td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/Adamstown,_Pitcairn_Islands" title="Adamstown, Pitcairn Islands">Adamstown</a>
+            </td>
+
+                  </tr>
+
+                  <tr>
+
+                    <th colspan="2">
+              <a class="external" href="http://en.wikipedia.org/wiki/Official_language" title="Official language">Official language(s)</a>
+            </th>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/English_language" title="English language">English</a> (local dialect is <a class="external" href="http://en.wikipedia.org/wiki/Pitkern" title="Pitkern">Pitkern</a>)</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td colspan="2">
+              <b>
+                <a class="external" href="http://en.wikipedia.org/wiki/Ethnic_group" title="Ethnic group">Ethnic groups</a>
+              </b>&nbsp;</td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/British_people" title="British people">British</a>, <a class="external" href="http://en.wikipedia.org/wiki/Polynesians" title="Polynesians">Polynesian</a>, or (<a class="external" href="http://en.wikipedia.org/wiki/Multiracial" title="Multiracial">mixed</a>)</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <th colspan="2">
+              <a class="external" href="http://en.wikipedia.org/wiki/Government" title="Government">Government</a>
+            </th>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/British_Overseas_Territory" title="British Overseas Territory">British Overseas Territory</a>
+            </td>
+
+                  </tr>
+
+                  <tr class="mergedrow">
+
+                    <td>&nbsp;-&nbsp;</td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/Queen_of_the_United_Kingdom" title="Queen of the United Kingdom">Sovereign</a>
+            </td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/Elizabeth_II" title="Elizabeth II">Elizabeth II</a>
+            </td>
+
+                  </tr>
+
+                  <tr class="mergedrow">
+
+                    <td>&nbsp;-&nbsp;</td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/List_of_High_Commissioners_from_the_United_Kingdom_to_New_Zealand" title="List of High Commissioners from the United Kingdom to New Zealand">High Comissioner</a>
+            </td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/Victoria_Treadell" title="Victoria Treadell">Victoria Treadell</a>
+            </td>
+
+                  </tr>
+
+                  <tr class="mergedbottomrow">
+
+                    <td>&nbsp;-&nbsp;</td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/List_of_rulers_of_the_Pitcairn_Islands" title="List of rulers of the Pitcairn Islands">Mayor</a>
+            </td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/Mike_Warren_(Pitcairn_Islands)" title="Mike Warren (Pitcairn Islands)">Mike Warren</a>
+            </td>
+
+                  </tr>
+
+                  <tr class="mergedtoprow">
+
+                    <th colspan="3">
+              <a class="external" href="http://en.wikipedia.org/wiki/List_of_countries_and_outlying_territories_by_total_area" title="List of countries and outlying territories by total area">Area</a>
+            </th>
+
+                  </tr>
+
+                  <tr class="mergedrow">
+
+                    <td>&nbsp;-&nbsp;</td>
+<td>Total</td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/Square_metre" title="Square metre">47&nbsp;km<sup>2</sup>
+              </a>&nbsp;<br>
+18.1&nbsp;<a class="external" href="http://en.wikipedia.org/wiki/Square_mile" title="Square mile">sq&nbsp;mi</a>&nbsp;</td>
+
+                  </tr>
+
+                  <tr class="mergedtoprow">
+
+                    <th colspan="3">
+              <a class="external" href="http://en.wikipedia.org/wiki/Population" title="Population">Population</a>
+            </th>
+
+                  </tr>
+
+                  <tr class="mergedrow">
+
+                    <td>&nbsp;-&nbsp;</td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/2008" title="2008">2008</a>&nbsp;estimate</td>
+<td>50&nbsp;(<a class="external" href="http://en.wikipedia.org/wiki/List_of_countries_by_population" title="List of countries by population">223rd (last)</a>)</td>
+
+                  </tr>
+
+                  <tr class="mergedbottomrow">
+
+                    <td>&nbsp;-&nbsp;</td>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/Population_density" title="Population density">Density</a>
+            </td>
+<td>1/km<sup>2</sup>&nbsp;(<a class="external" href="http://en.wikipedia.org/wiki/List_of_countries_by_population_density" title="List of countries by population density">197th</a>)<br>
+2.7/sq&nbsp;mi</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <th colspan="2">
+              <a class="external" href="http://en.wikipedia.org/wiki/Currency" title="Currency">Currency</a>
+            </th>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/New_Zealand_dollar" title="New Zealand dollar">New Zealand dollar</a> (<code>
+                <a class="external" href="http://en.wikipedia.org/wiki/ISO_4217" title="ISO 4217">NZD</a>
+              </code>)</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <th colspan="2">
+              <a class="external" href="http://en.wikipedia.org/wiki/Time_zone" title="Time zone">Time zone</a>
+            </th>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/UTC%E2%88%9208" title="UTC&minus;08">UTC&minus;08</a>
+            </td>
+
+                  </tr>
+
+                  <tr>
+
+                    <th colspan="2">
+              <a class="external" href="http://en.wikipedia.org/wiki/Country_code_top-level_domain" title="Country code top-level domain">Internet TLD</a>
+            </th>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/.pn" title=".pn">.pn</a>
+            </td>
+
+                  </tr>
+
+                  <tr>
+
+                    <th colspan="2">
+              <a class="external" href="http://en.wikipedia.org/wiki/List_of_country_calling_codes" title="List of country calling codes">Calling code</a>
+            </th>
+<td>
+              <a class="external" href="http://en.wikipedia.org/wiki/Telephone_numbers_in_New_Zealand" title="Telephone numbers in New Zealand">870</a>
+            </td>
+
+                  </tr>
+
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+
+        </td>
+   
+	
+      </tr>
+	
+    </table>
+
+  </body>
+
+</html>

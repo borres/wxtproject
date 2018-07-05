@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formulas>
+	<formula id="f1" type="latex">
+	<value><![CDATA[\sqrt[3]{x^3 + y^3 \over 2}]]></value>
+	</formula>
+ 
+	<formula id="f2" type="latex">
+	<value><![CDATA[\frac{\displaystyle \sum_{k=1}^N k^2}{a}]]></value>
+	</formula>
+ 
+	<formula id="f3" type="latex">
+	<value><![CDATA[\left| \begin{array}{cc} x_{11} & x_{12} \\ x_{21} & x_{22}\\x_{31} & x_{32}  \end{array} \right|]]></value>
+	</formula>
+ 
+	<formula id="f4" type="latex">
+	<value><![CDATA[B(t)=\sum_{i=0}^{n}B_{i}^{n}t^{i}(1-t)^{n-i}P_{_{i}}]]></value>
+	</formula> 
+	
+	<formula id="f5a" type="latex">
+	<subtext>Surface normals</subtext>
+	<value><![CDATA[N_{x} (\phi ,\beta )=\frac{1}{r_{x}} cos^{2-n1} (\phi)cos^{2-n2}(\beta)]]></value>
+	</formula>
+	
+	<formula id="f5b" type="latex">
+	<subtext>Surface normals</subtext>
+	<value><![CDATA[N_{y} (\phi ,\beta )=\frac{1}{r_{y}} cos^{2-n1} (\phi)sin^{2-n2}(\beta)]]></value>
+	</formula>
+	
+	<formula id="f5c" type="latex">
+	<subtext>Surface normals</subtext>
+	<value><![CDATA[N_{x} (\phi ,\beta )=\frac{1}{r_{x}} sin^{2-n1} (\phi)]]></value>
+	</formula>
+
+</formulas>

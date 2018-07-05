@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<div class="content">    
+<h1>Import Transformed XML</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_transformedin.xml" 
+             sourcelocation="transformedin.xml" code="xmlcode"?>
+</div>
+<hr/>
+<div>
+<?_wxt   importxml transformation="T2(place='Beijing',distance='200m')" 
+		location="all_results.xml" xpath="//body/*"?>
+</div>
+<hr/>
+<div>
+	<?_wxt   importxml transformation="T2(place='Barcelona',distance='400m')" 
+			location="all_results.xml" xpath="//body/*"?>
+</div>
+</div>
+</data>

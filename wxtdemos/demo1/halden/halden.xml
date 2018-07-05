@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<div id="main">
+	<h1>Halden</h1>
+	<div>
+	<?_wxt fragment id="_summary"?>
+	</div>
+	<img style="float:left" src="halden.png" alt=" "/>
+	<p>
+		Halden, earlier Fredrikshald, is the only city 
+		in Norway that is
+		mentioned in the Norwegian national ,4. verse.
+		<?_wxt popfragment id="fragH1" text="antheme"?>
+	</p>
+	<div>
+	<?_wxt importwiki dpath="/Nature" location="http://en.wikipedia.org/wiki/Halden"?>(from wikipedia)
+	</div>
+
+
+</div><!-- main -->
+<div id="pagesource" style="clear:both">
+	Inspect source:
+	<div>
+	<?_wxt expand location="hcoded.txt"  title="halden.xml" 
+			 sourcelocation="halden.xml" 
+			 expanded="no" code="xmlcode"?>
+	</div>
+</div>
+</root>

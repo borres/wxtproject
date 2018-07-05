@@ -1,0 +1,30 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Fragments in xlinks&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_fragmentxlink.xml" 
+             sourcelocation="fragmentxlink.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">h2</span>&gt;Simple links&lt;/<span class="tagname">h2</span>&gt;
+        &lt;<span class="tagname">div</span>&gt;
+        neste: <span class="process">&lt;?_wxt xlink id="_next" fragment="_summary"?&gt;</span>
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;<span class="tagname">div</span>&gt;
+        forrige: <span class="process">&lt;?_wxt xlink id="_prev" fragment="_summary"?&gt;</span>
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;<span class="tagname">div</span>&gt;
+        home: <span class="process">&lt;?_wxt xlink id="_home" fragment="_summary"?&gt;</span>
+        &lt;/<span class="tagname">div</span>&gt;        
+        &lt;<span class="tagname">hr</span>/&gt;
+        &lt;<span class="tagname">div</span>&gt;
+            &lt;<span class="tagname">span</span> <span class="attname">class</span>="<span class="attvalue">next</span>"&gt;<span class="process">&lt;?_wxt xlink id="_next"  summary="yes" fragment="nextimage"?&gt;</span>&lt;/<span class="tagname">span</span>&gt;
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;/<span class="tagname">div</span>&gt;
+        &lt;<span class="tagname">hr</span>/&gt;
+        &lt;<span class="tagname">div</span>&gt;
+            &lt;<span class="tagname">span</span> <span class="attname">class</span>="<span class="attvalue">next</span>"&gt;<span class="process">&lt;?_wxt xlink id="_next"  summary="yes" fragment="_summary"?&gt;</span>&lt;/<span class="tagname">span</span>&gt;
+        &lt;/<span class="tagname">div</span>&gt;        
+&lt;/<span class="tagname">data</span>&gt;</pre>

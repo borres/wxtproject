@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="skiptranslate prettyprint lang-xml" id="prettycode14">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;velkommen&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:popup&lt;/h1&gt;
+ &lt;p&gt;
+   Testing popup for "pretty" code. 
+&lt;/p&gt;
+&lt;p&gt;
+Depending on  
+   &lt;a href="http://code.google.com/p/prettyprint/" class="external"&gt;Googles prettyprint&lt;/a&gt;.
+   See &lt;a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html" class="external"&gt;
+   Googles Readme&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+The necessary javascript is imported to this page, see source.
+&lt;/p&gt;
+&lt;h2&gt;Java&lt;/h2&gt;
+&lt;p&gt;short and simple using pages template&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt popup location="java/simple1-java.html" 
+      sourcelocation="java/simple1.java" lang="lang-j"?&gt;
+&lt;/div&gt;
+&lt;p&gt;short and simple using pages template left justifying&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt popup location="java/simple1justified-java.html" 
+      sourcelocation="java/simple1spaced.java" lang="lang-j"?&gt;
+&lt;/div&gt;
+
+&lt;p&gt;longer file using own special template&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt popup template="CODE" location="java/accessutils-java.html" 
+       sourcelocation="java/accessutils.java" lang="lang-j"?&gt;
+&lt;/div&gt;
+&lt;p&gt;extract from longer file using pages template&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt popup location="java/accessutilsextract-java.html" 
+       leftpar="// appendtotextfile" rightpar="// eofappendtotextfile"
+       sourcelocation="java/accessutils.java" lang="lang-j"?&gt;
+&lt;/div&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;p&gt;simple and pages template&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt popup location="python/domore-py.html" 
+       sourcelocation="python/domore.py" lang="lang-py"?&gt;
+&lt;/div&gt;
+&lt;h2&gt;SQL&lt;/h2&gt;
+&lt;p&gt;simple and pages template&lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt popup location="sql/do-txt.html" text="some expressions"
+       sourcelocation="sql/do.txt" lang="lang-sql"?&gt;
+&lt;/div&gt;
+
+
+&lt;hr/&gt;
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt popup location="code_xml.html" sourcelocation="code.xml" 
+       lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></body>
+</html>

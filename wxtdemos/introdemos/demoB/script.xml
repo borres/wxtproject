@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wscript version="1.0">
+<!--Script for website demoB - bs dec. 2009-->	
+<definitions>
+		<option name="output-format" value="xhtml"/>
+		
+		<fragments location="gfx/myfragments.xml"/>
+		
+		<template id="P" location="gfx/p_template.xml"/>
+		<template id="Q" location="gfx/q_template.xml"/>
+</definitions>
+
+<module name="Welcome" template="P" location="index.html" books="all"
+	description="Introduction to the site">
+	<xmlcontent location="content/b-index.xml"/>
+</module>
+
+<module name="Page2" template="Q" location="pages\page2.html" books="all"
+	description="All the modules">
+	<xmlcontent location="content\b-page2.xml"/>
+</module>
+
+<module name="The script" template="P" location="pages\page3.html" books="all"
+	description="All the modules">
+	<xmlcontent location="content\b-page3.xml"/>
+</module>
+
+
+</wscript>

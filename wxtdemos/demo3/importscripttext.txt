@@ -1,0 +1,9 @@
+﻿Dette er text
+del1
+Dette er del 1
+eofdel1
+del2
+<div style="color:red">
+DETTE ER DEL2
+</div>
+eofdel2

@@ -1,0 +1,13 @@
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                  <mrow>
+                    <mo stretchy="false">∑</mo>
+                    <mi>f</mi>
+                  </mrow>
+                  <mrow>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mrow>
+            </math>

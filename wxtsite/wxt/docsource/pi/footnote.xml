@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: footnote</h1>
+<p>
+  The purpose is to produce footnotes.
+  It is based on the existence of span-tags with class="fn" in the content
+  of the module where this PI is encountered.
+</p>
+<pre class="piline">
+&lt;?_wxt footnote form="" ?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>form</strong> (optional)</td>
+    <td>Possible values ar:
+    <br/>
+        <em>normal</em>: normal footnote strategy, this is default
+    <br/>
+    <em>show</em>: the footnote text will be integrated in the running text, enclosed i paranthesis. No footnotes
+    <br/>
+    <em>remove</em>: the footnotes will be removed from the text. No footnotes
+     </td>
+  </tr>
+
+  
+</table>
+
+<p class="stylefoot">
+Styleclass(es) describing this PI is: <em>wxtfnmarker</em>,<em>fn</em> and <em>wxtfootnote</em>.
+ See distributed std styles.
+</p>
+
+<h2>Examples:</h2>
+<p>This:</p>
+<pre  class="prettyprint lang-html">
+ Halden is situated about 100km south of 
+ Oslo&lt;span class="fn"&gt;Oslo is the capital of Norway&lt;/span&gt;.
+
+...
+
+&lt;div&gt;
+&lt;?_wxt footnote ?&gt;
+&lt;/div&gt;
+</pre>
+<p>will produce this:</p>
+<pre class="result">
+Halden is situated about 100km south of 
+ Oslo &lt;span class="fnmarker">1&lt;/span&gt;
+ &lt;span class="fn">Oslo is the capital of Norway&lt;/span&gt;
+</pre>
+...
+<pre class="result">
+&lt;div class="footnote"&gt;
+&lt;ol&gt;
+    &lt;li&gt;Oslo is the capital of Norway&lt;/li&gt;
+&lt;/ol>
+&lt;/div&gt;
+</pre>
+
+
+</body>
+</html>

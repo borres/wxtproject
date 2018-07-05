@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing languages</h1>
+<p>
+   Testing expandable for "pretty" code. 
+</p>
+ 
+ 
+<p>
+The necessary javascript is imported to this page, see source.
+</p>
+ 
+<h3>Java</h3>
+ 
+<p>short and simple</p>
+<div>
+<?_wxt expandable location="java/simple1.java" lang="lang-j"?>
+</div>
+ 
+<p>short and simple with syntax error</p>
+<div>
+<?_wxt expandable location="java/bad1.java" lang="lang-j"?>
+</div>
+
+
+<p>extract from longer file expanded</p>
+<div>
+<?_wxt expandable location="java/accessutils.java" expanded="yes"
+       leftpar="// appendtotextfile" rightpar="// eofappendtotextfile"
+       lang="lang-j"?>
+</div>
+
+<h3>Python</h3>
+<p>simple</p>
+<div>
+<?_wxt expandable location="python/domore.py" lang="lang-py"?>
+</div>
+
+<h3>SQL</h3>
+<p>simple and expanded</p>
+<div>
+<?_wxt expandable location="sql/do.txt"
+       text="some expressions" lang="lang-sql"?>
+</div>
+ 
+<h3>CSS</h3>
+<p>simple and expanded</p>
+<div>
+<?_wxt expandable location="css/css1.txt"
+       text="some style" lang="lang-css"?>
+</div>
+
+
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="code1.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Demolinks&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_demolinks.xml" 
+             sourcelocation="demolinks.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;   
+   &lt;<span class="tagname">div</span>&gt;
+       <span class="process">&lt;?_wxt demolink uri="http://www.ia.hiof.no" 
+                text="Høgskolen i Østfold" style="demo"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;    
+   &lt;<span class="tagname">hr</span>/&gt;    
+   &lt;<span class="tagname">div</span>&gt;
+       <span class="process">&lt;?_wxt demolink uri="http://www.ia.hiof.no" text="Høgskolen i Østfold" 
+                style="demo" 
+                title="Høgskolen i Østfold"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;    
+   &lt;<span class="tagname">hr</span>/&gt;    
+   &lt;<span class="tagname">div</span>&gt;
+       <span class="process">&lt;?_wxt demolink uri="http://www.ia.hiof.no" 
+                style="demo" 
+                title="Høgskolen i Østfold"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;    
+   &lt;<span class="tagname">hr</span>/&gt;    
+   &lt;<span class="tagname">div</span>&gt;
+       Du finner mer på høgskolens websider: 
+       <span class="process">&lt;?_wxt demolink uri="http://www.ia.hiof.no" 
+                style="demo" 
+                text="Høgskolen i Østfold"
+                title="Høgskolen i Østfold"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;    
+  &lt;<span class="tagname">hr</span>/&gt;    
+   &lt;<span class="tagname">div</span>&gt;
+       Du finner mer på høgskolens websidene til Høgskolen i Østfold: 
+       <span class="process">&lt;?_wxt demolink uri="http://www.ia.hiof.no" 
+                style="demo" 
+                text="HIO"
+                title="Høgskolen i Østfold"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;    
+   &lt;<span class="tagname">hr</span>/&gt;    
+   &lt;<span class="tagname">div</span>&gt;
+       Du finner mer på: 
+       <span class="process">&lt;?_wxt demolink uri="http://www.ia.hiof.no/~borres/ml" 
+                    text="Dokumenter, markup og web" 
+                    style="demo" 
+                    title="Børres sider"?&gt;</span>
+   &lt;/<span class="tagname">div</span>&gt;    
+   &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

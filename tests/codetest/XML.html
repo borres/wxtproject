@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>XML</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="http://www.it.hiof.no/~borres/allround/logos/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="wxt2" name="GENERATOR">
+	<script src="http://www.it.hiof.no/~borres/allround/prototype.js" type="text/javascript"> </script>
+	<script src="templates/wxtjs.js" type="text/javascript"> </script>
+	<link href="templates/template.css" rel="STYLESHEET">
+	<link href="templates/wxtstyle.css" rel="STYLESHEET">
+</head>
+
+<body>
+
+<!-- pagebelly -->
+<table>
+<tr>
+
+	<td id="menu" valign="top">
+		<!-- menu -->
+		<div><div class="wxtmodulemenu"><div class="level1"><a href="index.html" title="Velkommen til colorcoding">Velkommen</a></div><div class="level1"><a href="Java.html" title="Java">Java</a></div><div class="level1"><a href="Javascript.html" title="Javascript">Javascript</a></div><div class="level1"><a href="Python.html" title="Python">Python</a></div><div class="level1">XML</div><div class="level1"><a href="XSLT.html" title="XSLT">XSLT</a></div><div class="level1"><a href="CSHARP.html" title="C#">C#</a></div><div class="level1"><a href="ASPX.html" title="ASPX">ASPX</a></div><div class="level1"><a href="C.html" title="C">C</a></div><div class="level1"><a href="HTML.html" title="HTML">HTML</a></div></div></div>
+
+	</td>
+	
+	<td class="content" valign="top">
+
+		<div id="main">
+			<h1>XML</h1><p>
+   encoding
+</p><h2>textimport</h2><p> with namespace</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0"?&gt;
+&lt;bok&gt;
+   &lt;marketing&gt;
+      &lt;marked:tittel&gt;
+      Verdens beste bok
+      &lt;/marked:tittel&gt;
+      &lt;marked:innhold&gt;
+      Solgt i uttallige eksemplarer
+      &lt;/marked:innhold&gt;
+   &lt;/marketing&gt;
+   &lt;tittel&gt;
+   Ole Brum
+   &lt;/tittel&gt;
+   &lt;ingress&gt;
+   Om en teddybj&oslash;rn og vennene hans
+   &lt;/ingress&gt;
+   &lt;innhold&gt;
+   En dag Kristoffer Robin...
+   &lt;/innhold&gt;
+&lt;/bok&gt;
+</pre>
+</div><p> with namespace declared</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0"?&gt;
+&lt;<span class="tagname">bok</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.forlaget.no/std/boker.html</span>"
+     <span class="attname">xmlns:marked</span>="<span class="attvalue">http://www.forlaget.no/std/marketing.html</span>"&gt;
+   &lt;<span class="tagname">marketing</span>&gt;
+      &lt;<span class="tagname">marked:tittel</span>&gt;
+      Verdens beste bok
+      &lt;/<span class="tagname">marked:tittel</span>&gt;
+      &lt;<span class="tagname">marked:innhold</span>&gt;
+      Solgt i uttallige eksemplarer
+      &lt;/<span class="tagname">marked:innhold</span>&gt;
+   &lt;/<span class="tagname">marketing</span>&gt;
+   
+   &lt;<span class="tagname">tittel</span>&gt;
+   Ole Brum
+   &lt;/<span class="tagname">tittel</span>&gt;
+   &lt;<span class="tagname">ingress</span>&gt;
+   Om en teddybj&oslash;rn og vennene hans
+   &lt;/<span class="tagname">ingress</span>&gt;
+   &lt;<span class="tagname">innhold</span>&gt;
+   En dag Kristoffer Robin...
+   &lt;/<span class="tagname">innhold</span>&gt;
+&lt;/<span class="tagname">bok</span>&gt;</pre>
+</div><p>Simple</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">booklist</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett p&aring; sak og grei som oppslagsbok. M&aring; suppleres med W3C-oppslag.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre>
+</div><p>Incomplete</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">alpin</span>&gt;
+   &lt;<span class="tagname">skirenn</span> <span class="attname">type</span>="<span class="attvalue">WC</span>" <span class="attname">tid</span>="<span class="attvalue">2001</span>" <span class="attname">sted</span>="<span class="attvalue">Wengen</span>" <span class="attname">kj&oslash;nn</span>="<span class="attvalue">menn</span>" <span class="attname">gren</span>="<span class="attvalue">utfor</span>"&gt;
+   &lt;<span class="tagname">deltager</span>&gt;
+      &lt;<span class="tagname">navn</span>&gt;Kjuus&lt;/<span class="tagname">navn</span>&gt;
+      &lt;<span class="tagname">Nasjon</span>&gt;Norge&lt;/<span class="tagname">Nasjon</span>&gt;
+      &lt;<span class="tagname">tid1</span>&gt;130.012&lt;/<span class="tagname">tid1</span>&gt;
+      &lt;<span class="tagname">td2</span>&gt;na&lt;/<span class="tagname">td2</span>&gt;
+   &lt;/<span class="tagname">deltager</span>&gt;
+   ...
+   &lt;/<span class="tagname">skirenn</span>&gt;
+   ...
+&lt;/<span class="tagname">alpin</span>&gt;</pre>
+</div><p>With doctype-include</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE booklist SYSTEM "bokliste.dtd"&gt;
+&lt;<span class="tagname">booklist</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett p&aring; sak og grei som oppslagsbok.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre>
+</div><p>With schema-include</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">booklist</span> <span class="attname">xmlns:xsi</span>="<span class="attvalue">http://www.w3.org/2001/XMLSchema-instance</span>"
+          <span class="attname">noNamespaceSchemaLocation</span>="<span class="attvalue">bokliste.xsd</span>"&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett p&aring; sak og grei som oppslagsbok.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre> 
+</div><p>With comments</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">booklist</span>&gt;
+  &lt;!--<span class="comment"> something about each book </span>--&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;!--<span class="comment"> this is 
+  a multiline comment </span>--&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett p&aring; sak og grei som oppslagsbok. M&aring; suppleres med W3C-oppslag.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre> 
+</div><p>With syntaxerror</p><div>
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;booklist&gt;
+  &lt;!-- something about each book --&gt;
+  &lt;book isbn="0-596-00292-0" pages="600"&gt;
+    &lt;title&gt;XML in a nutshell&lt;/title&gt;
+    &lt;course&gt;Programmering for web&lt;/course&gt;
+    &lt;category&gt;XML&lt;/category&gt;
+    &lt;author&gt;Elliot Rusty Harold and W. Scott Means&lt;/author&gt;
+    &lt;publisher&gt;OReilly&lt;/publisher&gt;
+    &lt;year&gt;2002&lt;/year&gt;
+    &lt;comment&gt;Ganske mer omfattende. God bok &lt;/comment&gt;
+  &lt;/book&gt;
+  &lt;!-- this is 
+  a multiline comment --&gt;
+  &lt;book isbn="0-201-76990-5" pages="200"&gt;
+    &lt;title&gt;The web wizards guide to XML&lt;/totle&gt;
+    &lt;course&gt;Programmering for web&lt;/course&gt;
+    &lt;category&gt;XML&lt;/category&gt;
+    &lt;author&gt;Cheryl M. Hughes&lt;/author&gt;
+    &lt;publisher&gt;Addison Wesley&lt;/publisher&gt;
+    &lt;year&gt;2003&lt;/year&gt;
+    &lt;comment&gt;Enkel og rett p&aring; sak og grei som oppslagsbok. M&aring; suppleres med W3C-oppslag.&lt;/comment&gt;
+  &lt;/book&gt;
+&lt;/booklist&gt;</pre> 
+</div><h2>Dynamic </h2><p>Simple</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('xml/simple.txt',this)">_</span>xml/simple1.xml</div><div class="content"> </div></div>
+</div><p>Incomplete</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('xml/incomplete.txt',this)">_</span>xml/incomplete.xml</div><div class="content"> </div></div>
+</div><p>With doctype-include</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('xml/with_dtd.txt',this)">_</span>xml/with_dtd.xml</div><div class="content"> </div></div>
+</div><p>With schema-include</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('xml/with_schema.txt',this)">_</span>xml/with_schema.xml</div><div class="content"> </div></div> 
+</div><p>With comments</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('xml/with_comment.txt',this)">_</span>xml/with_comment.xml</div><div class="content"> </div></div> 
+</div><p>With syntaxerror</p><div>
+<div class="wxtexpand"><div class="header"><span class="off" onclick="javascript:toggleExpandAjax('xml/with_error.txt',this)">_</span>xml/with_error.xml</div><div class="content"> </div></div> 
+</div><h2>preexpand</h2><p>Simple</p><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">booklist</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett p&aring; sak og grei som oppslagsbok. M&aring; suppleres med W3C-oppslag.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre><p>Incomplete</p><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">alpin</span>&gt;
+   &lt;<span class="tagname">skirenn</span> <span class="attname">type</span>="<span class="attvalue">WC</span>" <span class="attname">tid</span>="<span class="attvalue">2001</span>" <span class="attname">sted</span>="<span class="attvalue">Wengen</span>" <span class="attname">kj&oslash;nn</span>="<span class="attvalue">menn</span>" <span class="attname">gren</span>="<span class="attvalue">utfor</span>"&gt;
+   &lt;<span class="tagname">deltager</span>&gt;
+      &lt;<span class="tagname">navn</span>&gt;Kjuus&lt;/<span class="tagname">navn</span>&gt;
+      &lt;<span class="tagname">Nasjon</span>&gt;Norge&lt;/<span class="tagname">Nasjon</span>&gt;
+      &lt;<span class="tagname">tid1</span>&gt;130.012&lt;/<span class="tagname">tid1</span>&gt;
+      &lt;<span class="tagname">td2</span>&gt;na&lt;/<span class="tagname">td2</span>&gt;
+   &lt;/<span class="tagname">deltager</span>&gt;
+   ...
+   &lt;/<span class="tagname">skirenn</span>&gt;
+   ...
+&lt;/<span class="tagname">alpin</span>&gt;</pre><p>With doctype-include</p><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE booklist SYSTEM "bokliste.dtd"&gt;
+&lt;<span class="tagname">booklist</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett p&aring; sak og grei som oppslagsbok.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre><p>With schema-include</p><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">booklist</span> <span class="attname">xmlns:xsi</span>="<span class="attvalue">http://www.w3.org/2001/XMLSchema-instance</span>"
+          <span class="attname">noNamespaceSchemaLocation</span>="<span class="attvalue">bokliste.xsd</span>"&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett p&aring; sak og grei som oppslagsbok.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre><p>With comments</p><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">booklist</span>&gt;
+  &lt;!--<span class="comment"> something about each book </span>--&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-596-00292-0</span>" <span class="attname">pages</span>="<span class="attvalue">600</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;XML in a nutshell&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Elliot Rusty Harold and W. Scott Means&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;OReilly&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2002&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Ganske mer omfattende. God bok &lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+  &lt;!--<span class="comment"> this is 
+  a multiline comment </span>--&gt;
+  &lt;<span class="tagname">book</span> <span class="attname">isbn</span>="<span class="attvalue">0-201-76990-5</span>" <span class="attname">pages</span>="<span class="attvalue">200</span>"&gt;
+    &lt;<span class="tagname">title</span>&gt;The web wizards guide to XML&lt;/<span class="tagname">title</span>&gt;
+    &lt;<span class="tagname">course</span>&gt;Programmering for web&lt;/<span class="tagname">course</span>&gt;
+    &lt;<span class="tagname">category</span>&gt;XML&lt;/<span class="tagname">category</span>&gt;
+    &lt;<span class="tagname">author</span>&gt;Cheryl M. Hughes&lt;/<span class="tagname">author</span>&gt;
+    &lt;<span class="tagname">publisher</span>&gt;Addison Wesley&lt;/<span class="tagname">publisher</span>&gt;
+    &lt;<span class="tagname">year</span>&gt;2003&lt;/<span class="tagname">year</span>&gt;
+    &lt;<span class="tagname">comment</span>&gt;Enkel og rett p&aring; sak og grei som oppslagsbok. 
+              M&aring; suppleres med W3C-oppslag.&lt;/<span class="tagname">comment</span>&gt;
+  &lt;/<span class="tagname">book</span>&gt;
+&lt;/<span class="tagname">booklist</span>&gt;</pre><p>With syntaxerror</p><pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;booklist&gt;
+  &lt;!-- something about each book --&gt;
+  &lt;book isbn="0-596-00292-0" pages="600"&gt;
+    &lt;title&gt;XML in a nutshell&lt;/title&gt;
+    &lt;course&gt;Programmering for web&lt;/course&gt;
+    &lt;category&gt;XML&lt;/category&gt;
+    &lt;author&gt;Elliot Rusty Harold and W. Scott Means&lt;/author&gt;
+    &lt;publisher&gt;OReilly&lt;/publisher&gt;
+    &lt;year&gt;2002&lt;/year&gt;
+    &lt;comment&gt;Ganske mer omfattende. God bok &lt;/comment&gt;
+  &lt;/book&gt;
+  &lt;!-- this is 
+  a multiline comment --&gt;
+  &lt;book isbn="0-201-76990-5" pages="200"&gt;
+    &lt;title&gt;The web wizards guide to XML&lt;/totle&gt;
+    &lt;course&gt;Programmering for web&lt;/course&gt;
+    &lt;category&gt;XML&lt;/category&gt;
+    &lt;author&gt;Cheryl M. Hughes&lt;/author&gt;
+    &lt;publisher&gt;Addison Wesley&lt;/publisher&gt;
+    &lt;year&gt;2003&lt;/year&gt;
+    &lt;comment&gt;Enkel og rett p&aring; sak og grei som oppslagsbok. M&aring; suppleres med W3C-oppslag.&lt;/comment&gt;
+  &lt;/book&gt;
+&lt;/booklist&gt;
+</pre>
+		</div>
+	
+	</td> <!-- eof content -->
+</tr>
+</table>
+<!-- eof pagebelly -->
+
+
+
+
+</body>
+</html>

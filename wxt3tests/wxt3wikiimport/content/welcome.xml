@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importwiki</h1>
+<p>
+   Testing import of material from Wiki, 
+   This is in an experimental stage and some work remains to be done.
+   The concept of dpath for selecting from a flat documentstructure is not waterproof, but it works on simple constructs.
+</p>
+<p>
+ This page selects material from a Wikipedia-page: 
+ <a href="http://en.wikipedia.org/wiki/Tiger" class="external">http://en.wikipedia.org/wiki/Tiger</a>
+</p>
+  
+<!-- extract a header with following text -->
+<h2>A section without references</h2>
+<div>
+<?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       dpath="/Taxonomy and etymology"
+	   usecopy="no"?>
+</div>
+
+<!-- extract a header with following text -->
+<h2>A section with references, only listelements and images</h2>
+<div>
+<?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       dpath="//Subspecies[li,img]"
+	   keeprefs="yes" usecopy="no"?>
+</div>
+
+<!-- extract a section with xpath -->
+<h2>A section accessed with xpath</h2>
+<div>
+<?_wxt importwiki location="http://en.wikipedia.org/wiki/Tiger" 
+       xpath="//table[contains(@class,'infobox')]"
+	   keeprefs="no" usecopy="yes"?>
+</div>
+ 
+<hr/>
+  
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="welcome.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

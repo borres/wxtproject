@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+
+<div id="title">Page1</div>
+
+       
+<div class="mainblock">
+<h1>Testing PI:fragments</h1>
+<p>
+Written by: <?_wxt fragment id="jb" form="short"?>
+</p>
+
+<h2>Predefined fragments</h2>
+<table>
+<tr><td>Module name: </td><td><?_wxt fragment id="_name"?> </td></tr>
+<tr><td>Module id: </td><td><?_wxt fragment id="_id"?> </td></tr>
+<tr><td>Module summary: </td><td> <?_wxt fragment id="_summary"?> </td></tr>
+<tr><td>Module description: </td><td> <?_wxt fragment id="_description"?> </td></tr>
+<tr><td>Module author: </td><td> <?_wxt fragment form="id" id="_author"?> </td></tr>
+<tr><td>Module author: </td><td> <?_wxt fragment  form="short" id="_author"?> </td></tr>
+<tr><td>Module author: </td><td> <?_wxt fragment id="_author"?> </td></tr>
+</table>
+ 
+<h2>Authors</h2>
+<div><?_wxt authorlist dropdefault="no"?></div>
+
+
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page1.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

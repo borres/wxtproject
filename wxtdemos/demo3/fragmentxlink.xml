@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Fragments in xlinks</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_fragmentxlink.xml" 
+             sourcelocation="fragmentxlink.xml" code="xmlcode"?>
+</div>
+<hr/>
+    <h2>Simple links</h2>
+        <div>
+        neste: <?_wxt xlink id="_next" fragment="_summary"?>
+        </div>
+        <div>
+        forrige: <?_wxt xlink id="_prev" fragment="_summary"?>
+        </div>
+        <div>
+        home: <?_wxt xlink id="_home" fragment="_summary"?>
+        </div>        
+        <hr/>
+        <div>
+            <span class="next"><?_wxt xlink id="_next"  summary="yes" fragment="nextimage"?></span>
+        </div>
+        </div>
+        <hr/>
+        <div>
+            <span class="next"><?_wxt xlink id="_next"  summary="yes" fragment="_summary"?></span>
+        </div>        
+</data>

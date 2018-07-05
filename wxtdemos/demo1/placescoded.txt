@@ -1,0 +1,28 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">root</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">main</span>"&gt;
+    &lt;<span class="tagname">h1</span>&gt;Places&lt;/<span class="tagname">h1</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt fragment id="_summary"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    [ <span class="process">&lt;?_wxt modulemap books="place" cols="0" summary="yes" divider=" ][ "?&gt;</span> ]
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt modulemap books="place" cols="1" fragment="_summary"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt modulemap select="_children" cols="1" summary="yes"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt; &lt;!--<span class="comment"> main </span>--&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">pagesource</span>" <span class="attname">style</span>="<span class="attvalue">clear:both</span>"&gt;
+    Inspect source:
+    &lt;<span class="tagname">div</span>&gt;
+    <span class="process">&lt;?_wxt expand location="placescoded.txt" title="places.xml" 
+             sourcelocation="places.xml" 
+             expanded="no" code="xmlcode"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">root</span>&gt;</pre>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:ref and foootnotes</h1>
+<h2>Some text</h2>
+<p>
+ Whenever you read some text relating to computers and the WWW<span class="fn">World Wide Web</span>, 
+ you find a lot of lingo<span class="fn">a characteristic language of a particular group</span>.
+ Some examples are WYSIWYG<span class="fn">what you see is what you get</span>, 
+ AJAX<span class="fn">Asynchronous JavaScript And XML</span> 
+ and CAPTCHA<span class="fn">Completely Automated Turing Test To Tell Computers and Humans Apart. 
+ More on Turing tests at The Alan Turing Home Page<?_wxt ref id="turing"?> or at <a href="http://en.wikipedia.org/wiki/Turing_test" class="external">Wikipedia</a></span>,
+ inspired from the works of Alan Turing<?_wxt ref id="turing"?>.
+ </p>
+
+<p>
+ Of course this lingo is usefull for precision and ease of discussion. We need some precision to
+ discuss the differences and similarities between for instance MVC<span class="fn">Model View Controller</span>
+ as introduced by Trygve Reenskaug<?_wxt ref id="reenskaug"?> and the more
+ recently coined principle of SoC<span class="fn">Separation of Concerns</span>, Wikipedia
+ has an introduction<?_wxt ref id="socw"?>. 
+</p>
+<p>
+ On the other hand you sometimes get the feeling that the lingo serves the same purpose as 
+ one can suspect that <?_wxt ixword word="latin" comment="with reference to medieval services"?> did in medieval services; To mystify more than to clearify.
+</p>
+
+ <p>Personally I think we should try to apply the KISS<span class="fn">Keep It Simple Stupid</span>-principle,
+ in most situations of life.
+</p>
+<div style="display:none">
+<?_wxt ixword word="footnote" comment="in connection with computer lingo"?>
+</div>
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt popup location="welcome_xml.html" sourcelocation="welcome.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

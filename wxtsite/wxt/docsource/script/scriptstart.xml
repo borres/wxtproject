@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>The Script</h1>
+<p>
+  The script is a XML-file.
+  All jobs that WXT can perform, small or big, must be described by a script.
+  The root element must be <em>wscript</em> and the only version is <em>1.0</em>.
+</p>
+<p>
+  The script consists of one <em>definitions</em> element,
+  and any number of <em>module</em> elements. A module is 
+  the basic unit built by WXT. A module is typically a webpage.
+</p>
+<p>
+  An outline of a WXT version 1.0 script:
+</p>
+
+<div>
+    <?_wxt expandable expanded="no"  location="demoscript.xml"  lang="lang-xml" title="demoscript.xml"?>
+</div>
+
+<p>
+   WXT scripts is validated according to the schema:
+</p>
+<div>
+    <?_wxt expandable expanded="no" location="../general/wxt6script.xsd"  lang="lang-xml" title="wxt6script.xsd"?>
+</div>
+
+
+</body>
+</html>

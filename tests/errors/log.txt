@@ -1,0 +1,11 @@
+
+====================================
+5. januar 2010 - 15:20:33 CET / C:/wxtweb/tests/errors/script.xml
+WXT version: 1.2010.01.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/wxtweb/tests/errors/script.xml
+Welcome
+Code
+Stop Parsing Script: C:/wxtweb/tests/errors/script.xml

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wscript version="1.0">    
+      <!-- expandable demos -->
+      <definitions>
+	  <option name="indent-output" value="yes"/>
+      <option name="expand-all" value="yes"/>
+        <template id="P" location="../templates/p_template.xml"/> 
+        <fragment id="today">
+        <![CDATA[
+        <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/datetime_v2/datetime_v2.xml&amp;up_color=blue&amp;up_dateFormat=wdm&amp;up_firstDay=1&amp;up_clocks=%5B%5B-73.986951%2C40.756054%2C%22New%20York%22%2C0%5D%5D&amp;synd=open&amp;w=320&amp;h=148&amp;&amp;lang=no&amp;country=ALL&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"> </script>
+        ]]>
+        </fragment>	
+        <fragment id="warning">
+        <![CDATA[
+        <div style="border-style:solid;padding:10px;color:red">
+        WARNING: There is always an other bug
+        </div>
+        ]]>
+        </fragment>
+        <logfile location="../buildlog.txt" />
+     </definitions>
+        
+     <module description="Demonstration of expandale" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+	<module description="Demonstration of expandable programcode" location="code.html" 
+	        name="Pretty Code" id="prettycode" template="P" books="all">
+        <xmlcontent location="content/code.xml"/>
+	</module>
+
+	
+ </wscript>

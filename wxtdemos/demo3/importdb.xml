@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">       
+    <h1>Import from database</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_importdb.xml" 
+             sourcelocation="importdb.xml" replace="&password|&amp;password"
+			 code="xmlcode"?>
+</div>
+<hr/>
+    <div>
+<div>Navn på viner fra Spania </div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&password=student"
+    sql="use vin;
+        select type,name,dice from wines where country = 'Spania';
+        select type,description,dice from wines where country = 'Frankrike';"
+    encoding="ISO-8859-1"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?>
+    </div>
+
+    <hr/>
+
+	<div>Navn på viner fra Italia </div>
+<div>
+<?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&password=student"
+    sql="use vin;
+        select type,name,dice from wines where country = 'Italia'"
+    encoding="ISO-8859-1"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?>
+    </div>
+	
+<hr/>
+
+	
+	<div>Beskrivelse av musserende viner fra Frankrike med terningkast 1</div>
+    <div>
+<?_wxt importxml 
+    location="dbdump.xml"
+    xpath="//div[@id='root']"
+    transformation="vindb2(type='sparkling',dice='1')"?>
+    </div>
+    
+    </div>
+</data>

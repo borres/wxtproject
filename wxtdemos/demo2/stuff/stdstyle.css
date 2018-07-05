@@ -1,0 +1,228 @@
+@media screen{        
+    /* date time stamp */
+    span.date{font-style: italic;font-weight: bolder;color: silver;} 
+    span.time{}
+    span.stamp{color:blue; font-style: italic; }
+    
+    /* footnotes */
+    span.fnmarker{color:black;vertical-align:30%;padding-left:2px;padding-right:2px}
+    span.fn{display:none}
+    div.footnote{font-style:italic}
+    
+    /* popups */
+    span.popup{cursor:pointer}
+    
+    /* collecting */
+    div.collect{}
+    
+    /* collecting summaries */
+    div.collectsummary{margin-left:30px}
+    div.summaryheading{font-weight:bold;margin-top:20px;text-decoration: underline;}
+    div.summarycontent{color:gray}
+    
+    /* moduletoc */
+    div.moduletoc{background-color:silver}
+    .moduletoc .level1{margin-left:20px}
+    .moduletoc .level2{margin-left:30px}
+    .moduletoc .level3{margin-left:40px}
+    .moduletoc a{color:blue; text-decoration: none;}
+    
+    /*modulemenu*/
+    div.modulemenu{}
+    .modulemenu .level1{margin-left:10px}
+    .modulemenu .level2{margin-left:20px}
+    .modulemenu .level3{margin-left:30px}
+    .modulemenu .level4{margin-left:40px}
+    .modulemenu a{text-decoration: none;}
+    .modulemenu a:link{color:black;}
+    .modulemenu a:visited{color:gray;}
+    .modulemenu a:hover{background-color:yellow;}
+    .modulemenu a:active{color:red;}
+
+    /*modulemap*/
+    span.modulemap{background-color: white;}
+    span.modulemap .level1{margin-left:0px}
+    span.modulemap .level2{margin-left:0px}
+    span.modulemap .level3{margin-left:0px}
+    
+    div.modulemap{background-color: #ccffcc;}
+    div.modulemap .level1{margin-left:20px}
+    div.modulemap .level2{margin-left:30px}
+    div.modulemap .level3{margin-left:40px}
+    
+    .modulemap a{text-decoration: none;}    
+
+    /*path*/
+    div.path{}
+    .path .level1,.level2,.level3{margin-left:5px;margin-right:5px}
+    .path a{ text-decoration: none;}
+    
+    /*ixword*/
+    .ixword{font-style:italic; font-weight:bold}
+     
+    /*ixtable*/
+    div.ixtable{}
+    .ixtable .word{font-weight:bold}
+    .ixtable .comment{color:gray; margin-left:10px;display:block}
+    .ixtable a{margin-left:10px;display:block;text-decoration: none;}
+
+    /* external link as produced when importing wiki*/
+    a.external{}
+    
+     /*demolink, or the style set in demolink*/
+    .demo{text-decoration: none;}
+    .demo .print{display:none}
+    .demo .screen{}
+    
+    /*xlink*/
+    span.xlink{}
+    .xlink a{font-style: italic;}
+    
+    /*xlinklist*/
+    div.xlinklist{}
+    .xlinklist a{ text-decoration: none;}
+    
+    /* table output from dbimport*/
+    div.db table{margin-top:80px}
+    .dbresult .sql{margin:10px;color:red}
+    .dbresult table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 320px;}
+
+    .dbresult th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    .dbresult td{border-bottom: 1px solid #CCC;	padding: 0 0.5em;}
+    .dbresult td:first-child {	width: 40px;	}
+    .dbresult td+td {	border-left: 1px solid #CCC;text-align: center;}
+
+    
+    /*code*/
+    .cppcode,.ccode,.csharpcode,.javacode,.javascriptcode,.pythoncode,.mlcode,.xmlcode,.code,.xsltcode,.aspxcode {
+	font-size:11px;
+	line-height:120%;
+	white-space: pre;
+	font-family: "Courier new","Courier",mono-space;
+	background-color: #EEEEFF;
+	display: block;
+	border-style:dashed;
+	border-width:1px;
+	padding:5px;
+    }
+	pre.xmlcode{background-color:#EEEEFF;color:black;line-height:140%}
+	.xmlcode  .attname{color:red}
+	.xmlcode  .attvalue{color:green}
+	.xmlcode  .tagname{color:blue}
+	.xmlcode  .process{font-weight:bold;color:black}
+	
+    pre.pythoncode{background-color:#FFFFE7}
+    .pythoncode .word{color:#FF7700}
+    .pythoncode .literal{color:green}
+    .pythoncode .comment{font-style:italic;color:#DD0000}
+    
+    pre.xsltcode{background-color: #EEEEFF;}
+    .xsltcode .word{color:blue}
+    .xsltcode .literal{color:green}
+    .xsltcode .comment{font-style:italic;color:gray}
+
+    pre.csharpcode{background-color: #EEEEFF;}
+    .csharpcode .word{color:blue;font-weight:bolder}
+    .csharpcode .literal{color:green}
+    .csharpcode .comment{font-style:italic;color:red}    
+
+    pre.javacode{background-color: #EEEEFF;}
+    .javacode .word{color:blue}
+    .javacode .literal{color:green}
+    .javacode .comment{font-style:italic;color:gray}    
+
+    pre.javascriptcode{background-color: #EEEEFF;}
+    .javascriptcode .word{color:blue}
+    .javascriptcode .literal{color:green}
+    .javascriptcode .comment{font-style:italic;color:gray}    
+    
+    span.expand{font-size:16px;font-weight:bold;
+                background-color:yellow;
+                border:thin outset black;
+                cursor:pointer;
+                padding:0px 5px 0px 5px}
+    .expand .on{color:green;}
+    .expand .off{color:red;}
+    /*summary acosiated with xlinks used in modulemap, modulemenu*/
+    .summary {
+            color: #000000;
+            font-size: 12px;
+            padding: 5px;
+            border: 1px solid #324C48;
+            background-color: yellow;/*#F09450;*/
+            visibility: hidden;
+            position: absolute;
+            left: 50px;
+            z-index: 2000;
+            top: 0px;
+            width: 300px;
+            -moz-opacity: 0.9; filter: alpha(opacity=100);
+        }
+    .popsummary {
+            color: #000000;
+            font-size: 12px;
+            padding: 5px;
+            border: 1px solid #324C48;
+            background-color: yellow;/*#F09450;*/
+            visibility: hidden;
+            position: absolute;
+            left: 50px;
+            z-index: 2000;
+            top: 0px;
+            width: 300px;
+            -moz-opacity: 0.9; filter: alpha(opacity=100);
+        }
+
+}
+
+
+@media print
+{  
+    .demo .screen{display:none}
+    /*code*/
+    .cppcode,.ccode,.csharpcode,.javacode,.javascriptcode,.pythoncode,.mlcode,.code,.xsltcode,.aspxcode {
+	font-size:11px;
+	line-height:120%;
+	white-space: pre;
+	font-family: "Courier new","Courier",mono-space;
+	background-color: #EEEEFF;
+	display: block;
+	border-style:dashed;
+	border-width:1px;
+	padding:5px;
+    }
+    pre.pythoncode{background-color:#FFFFE7}
+    .pythoncode .word{color:#FF7700}
+    .pythoncode .literal{color:green}
+    .pythoncode .comment{font-style:italic;color:#DD0000}
+    
+    pre.xsltcode{background-color: #EEEEFF;}
+    .xsltcode .word{color:blue}
+    .xsltcode .literal{color:green}
+    .xsltcode .comment{font-style:italic;color:gray}
+
+    pre.csharpcode{background-color: #EEEEFF;}
+    .csharpcode .word{color:blue;font-weight:bolder}
+    .csharpcode .literal{color:green}
+    .csharpcode .comment{font-style:italic;color:red}    
+
+    pre.javacode{background-color: #EEEEFF;}
+    .javacode .word{color:blue}
+    .javacode .literal{color:green}
+    .javacode .comment{font-style:italic;color:gray}    
+
+    pre.javascriptcode{background-color: #EEEEFF;}
+    .javascriptcode .word{color:blue}
+    .javascriptcode .literal{color:green}
+    .javascriptcode .comment{font-style:italic;color:gray}    
+    
+    span.expand{font-size:16px;font-weight:bold;
+                background-color:yellow;
+                border:thin outset black;
+                cursor:pointer;
+                padding:0px 5px 0px 5px}
+    .expand .on{color:green;}
+    .expand .off{color:red;}
+     
+}

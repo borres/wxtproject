@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Javascript</h1>
+    <p>WXT involves Javascript for the following reasons:
+    </p>
+    <ul>
+        <li>producing popup windows. The PI: <?_wxt xlink id="Popup"?> </li>
+        <li>realizing expansion/unexpansion of hidden fragments. The PI: <?_wxt xlink id="Expandable"?></li>
+        <li>realizing expansion/unexpansion of gadgets. The PI: <?_wxt xlink id="Gadget"?></li>
+        <li>dragging gadgets. The PI: <?_wxt xlink id="Gadget"?></li>
+		<li>expanding and collapsing images. The PI: <?_wxt xlink id="PIimagelist"?></li>
+		<li>colorcoding language. The PIs: <?_wxt xlink id="Expandable"?>, <?_wxt xlink id="ImportTXT"?>, <?_wxt xlink id="Popup"?></li>
+    </ul>
+	<p>
+	The code cited below is distributed with WXT, see catalog <em>usefull</em> in the dist catalog.
+	The script is based on jQuery <?_wxt ref id="jquery"?>
+	</p>
+    
+    <p>
+    The dragging stratgy is adopted from Quirksmode, Drag and drop <?_wxt ref id="quirksmodedd"?>.
+    </p>
+
+    <div>
+	<?_wxt importtxt location="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" lang="lang-js"?>
+	</div>
+
+	
+	
+	<p>
+	You may of course reimplement those functions as long as the 
+	function names and parameters are intact.
+	</p>
+	
+
+</body>
+</html>

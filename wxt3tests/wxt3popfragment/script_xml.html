@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="skiptranslate prettyprint lang-xml" id="welcome8">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;wscript version="1.0"&gt;    
+      &lt;!-- popfragments demos --&gt;
+      &lt;definitions&gt;
+        &lt;option name="indent-output" value="yes"/&gt;
+        &lt;template id="P" location="../templates/p_template.xml"/&gt;
+        &lt;fragment id="self"&gt;
+        &lt;![CDATA[&lt;img src="content/bs.png" alt="self"/&gt;]]&gt;
+        &lt;/fragment&gt;
+        &lt;fragments location="content/mypopfragments.xml"/&gt;
+        &lt;logfile location="../buildlog.txt" /&gt;
+     &lt;/definitions&gt;
+        
+     &lt;module description="Demonstration of popfragments" location="index.html" 
+            name="Welcome" id="welcome" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/welcome.xml"/&gt;
+    &lt;/module&gt;
+    &lt;module description="Demonstration of date, time and stamp" location="page1.html" 
+            name="Page1" id="page1" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/page1.xml"/&gt;
+    &lt;/module&gt;
+    
+ &lt;/wscript&gt;
+</pre></body>
+</html>

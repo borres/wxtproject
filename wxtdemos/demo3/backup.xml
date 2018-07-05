@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>This is a backup</h1>
+	<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_backup.xml" 
+             sourcelocation="backup.xml" code="xmlcode"?>
+</div>
+<hr/>
+    <p>
+        The file you requested for module 
+        <?_wxt fragment id="_name"?> 
+        is not availabe.
+    </p>
+   </div>
+</data>

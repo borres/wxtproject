@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<winelist>
+	<wine name="Gosset Grande Réserve Brut">
+		<type>sparkling</type>
+		<country>Frankrike</country>
+		<published>20030906</published>
+		<author>Bjørn Lyng - Dagbladet</author>
+		<description>Test. Duften minner mest om epler og har et lite streif av gjærbakst. Syrefrisk og harmonisk smak med god fylde, fin  syrefasthet i ettersmaken.</description>
+		<producer>Gosset, Frankrike, Champagne</producer>
+		<dice>5</dice>
+		<price>259.00</price>
+		<volume>75</volume>
+		<catno>32299</catno>
+	</wine>
+	<wine name="Comte de Noiron Coeur de Cuvée, Brut">
+		<type>sparkling</type>
+		<country>Frankrike</country>
+		<published>20030906</published>
+		<author>Bjørn Lyng - Dagbladet</author>
+		<description>Test. Duft av modne epler og gjær. Syrlig anslag, deretter streif av honning i smaken. Litt lite  nyansert.</description>
+		<producer>Comte de Noiron, Frankrike, Champagne</producer>
+		<dice>4</dice>
+		<price>224.90</price>
+		<volume>75</volume>
+		<catno>14693</catno>
+	</wine>
+	<wine name="Balland-Chapuis Coteaux  du Giennois 2002">
+		<type>white</type>
+		<country>Frankrike</country>
+		<published>20030906</published>
+		<author>Bjørn Lyng - Dagbladet</author>
+		<description>Test. Aromatisk duft av solbærblader, stikkelsbær, nesle og urter. Smaksrik og lang, med frisk  bitterhet i ettersmaken.</description>
+		<producer>Joseph Balland-Chapuis, Frankrike, Loire</producer>
+		<dice>6</dice>
+		<price>114.50</price>
+		<volume>75</volume>
+		<catno>32297</catno>
+	</wine>
+	
+</winelist>

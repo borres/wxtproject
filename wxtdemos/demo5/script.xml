@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wscript version="1.0">    
+      
+	<definitions>
+		<option name="indent-output" value="yes"/>
+		<option name="output-format" value="xhtml"/>
+		<template id="P" location="p_template.xml"/>
+		<formulas location="formula.odt"/>
+		<formulas location="formula2.odt"/>
+		<formulas location="http://www.ia.hiof.no/~borres/wxt_test_stuff/formula3.odt"/>
+	</definitions>
+
+	<module books="all" description="test formulas" location="index.xhtml" 
+	         name="FORMULA" template="P">
+			<xmlcontent location="formula.xml"/>
+	</module></wscript>

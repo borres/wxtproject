@@ -1,0 +1,28 @@
+﻿table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse; width: 100%;}
+
+    th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    td{border-bottom: 1px solid #FFF;padding: 0 0.5em;   line-height: 170%;
+    }
+    td:first-child {width: 250px;	}
+    td+td {	border-left: 1px solid #CCC;}
+
+
+#top
+{
+margin-top:5px;
+padding: 7px;
+background-color: #ddd;
+border-bottom: 1px solid gray;
+}
+
+
+#footer
+{
+clear: both;
+margin: 0;
+padding: .5em;
+color: #000;
+background-color: #ddd;
+border-top: 1px solid gray;
+}

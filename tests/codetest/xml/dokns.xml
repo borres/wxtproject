@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<bok>
+   <marketing>
+      <marked:tittel>
+      Verdens beste bok
+      </marked:tittel>
+      <marked:innhold>
+      Solgt i uttallige eksemplarer
+      </marked:innhold>
+   </marketing>
+   <tittel>
+   Ole Brum
+   </tittel>
+   <ingress>
+   Om en teddybjørn og vennene hans
+   </ingress>
+   <innhold>
+   En dag Kristoffer Robin...
+   </innhold>
+</bok>

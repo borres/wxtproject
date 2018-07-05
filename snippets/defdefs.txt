@@ -1,0 +1,36 @@
+// snippet separator:#
+// each snippet:name;description;value
+definitions;Produces a definitionstag;
+<definitions anchor="">
+
+</definitions>
+#
+addressing;Produces an addressing tag within definitions;<addressing tag="" attribute=""/>
+#
+command;Produces a command definition within definitions;<command id="" line="" wait=""/>
+#
+pathfragment;Produces a pathfragment definition within definitions;<pathfragmet id="" value=""/>
+#
+fragment;Produces a fragment definition within definitions;
+<fragment id="">
+    <![CDATA[
+    ]]>
+</fragment>
+#
+option expand;Produces an option definition within definitions;<option name="expand-all" value="yes|no">
+#
+option indent;Produces an option definition within definitions;<option name="indent-output" value="yes|no">
+#
+option outputformat;Produces an option definition within definitions;<option name="output-format" value="xml|html|text|xhtml">
+#
+option encoding;Produces an option definition within definitions;<option name="default-encoding" value="">
+#
+option referencing;Produces an option definition within definitions;<option name="reference-form" value="simple|ieee|harvard">
+#
+option referenceindexing;Produces an option definition within definitions;<option name="reference-indexing" value="local|global">
+#
+references;Produces a referencefile inclusion within definitions;<references location=""/>
+#
+templatedefinition;Produces a templatedefinition within definitions;<template id="" location=""/>
+#
+transformationdefinition;Produces a transformationdefinition within definitions;<transformation id="" location=""/>

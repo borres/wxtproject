@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords">
+	<meta content="wxt3" name="GENERATOR">
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="stylesheet" type="text/css">
+	<link href="../../templates/templatestyle.css" rel="stylesheet" type="text/css">
+	
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body onload="preparePage('welcome6'); "><pre class="skiptranslate prettyprint lang-xml" id="welcome6">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;welcome&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:expandable&lt;/h1&gt;
+ &lt;p&gt;
+   Testing expandable for text and html
+&lt;/p&gt;
+&lt;!-- simple text, as is --&gt;
+&lt;h2&gt;Simple text&lt;/h2&gt;
+&lt;p&gt;txt - as is &lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="sonette.txt"?&gt;
+&lt;/div&gt;
+
+&lt;!-- simple html, as is --&gt;
+&lt;h2&gt;Strait HTML&lt;/h2&gt;
+&lt;p&gt;ready html-page - as is &lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="sonette.html" parse="yes"?&gt;
+&lt;/div&gt;
+&lt;!-- extracted html, as is --&gt;
+&lt;h2&gt;Extracted HTML&lt;/h2&gt;
+&lt;p&gt;extracts from html-page - as is &lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="sonette.html" 
+       leftpar="&lt;!--start--&gt;" rightpar="&lt;!--stop--&gt;"?&gt;
+&lt;/div&gt;
+&lt;!-- extracted html, parsed --&gt;
+&lt;h2&gt;Extracted HTML&lt;/h2&gt;
+&lt;p&gt;extracts from html-page - parsed &lt;/p&gt;
+&lt;div&gt;
+&lt;?_wxt expandable location="sonette.html" 
+       leftpar="&lt;!--start--&gt;" rightpar="&lt;!--stop--&gt;" parse="yes"?&gt;
+&lt;/div&gt;
+&lt;hr/&gt;
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt popup location="welcome_xml.html" sourcelocation="welcome.xml" 
+       code="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></body>
+</html>

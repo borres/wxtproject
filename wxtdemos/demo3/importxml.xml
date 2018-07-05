@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Import XML</h1>
+
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_importxml.xml" 
+             sourcelocation="importxml.xml" code="xmlcode"?>
+</div>
+<hr/>
+    <div>
+        From iso-8859-1: 
+		<?_wxt importxml location="someiso.html" xpath="//div[@id='myname']/child::text()"?>
+    </div>
+    <div>
+        From utf-8: 
+		<?_wxt importxml location="someutf.html" xpath="//div[@id='myname']/child::text()"?>
+    </div>
+    <hr/>
+    <div>
+        From iso-8859-1: 
+		<?_wxt importxml location="isoxml.xml" xpath="//div[@id='getit']"?>
+    </div>
+    <hr/>
+    <div>
+        <?_wxt importxml location="someutf.html" xpath="//div[@class='ingress']/child::*"?>
+    </div>
+    <hr/>
+    <div>
+        <?_wxt importxml location="someutf.html" xpath="//p[@class='strait']"?>
+    </div>    
+    <hr/>
+    <ul>
+        <?_wxt importxml location="http://www.ia.hiof.no/~borres/ml/index.shtml" xpath="//li"?>
+    </ul>  
+    <hr/>
+    <h2>Transformed</h2>
+    <div>Parameters</div>
+    <div>
+        <?_wxt importxml 
+                 location="http://www.ia.hiof.no/~borres/commondata/vin/viner.xml"
+                 transformation="vin1(type='white',country='Chile',dice='3')"
+                 xpath="div[@id='root']"?>
+    </div>
+    <hr/>
+    <h2>Tidied</h2>
+    <div>
+        <?_wxt importxml location="copyofhelpfile.html" tidy="yes" xpath="//table"?>
+    </div>
+     
+    
+    
+    </div>
+</data>

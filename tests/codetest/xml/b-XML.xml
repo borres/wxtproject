@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>XML</title>
+</head>
+    <body>
+        
+        <div class="mainblock">
+		<h1>XML</h1>
+ <p>
+   encoding
+</p>
+<h2>textimport</h2>
+<p> with namespace</p>
+<div>
+<?_wxt importtxt location="dokns.xml" code="xmlcode"?>
+</div>
+<p> with namespace declared</p>
+<div>
+<?_wxt importtxt location="dokns2.xml" code="xmlcode"?>
+</div>
+<p>Simple</p>
+<div>
+<?_wxt importtxt location="simple1.xml" code="xmlcode"?>
+</div>
+<p>Incomplete</p>
+<div>
+<?_wxt importtxt location="incomplete.xml" code="xmlcode"?>
+</div>
+<p>With doctype-include</p>
+<div>
+<?_wxt importtxt location="with_dtd.xml" code="xmlcode"?>
+</div>
+<p>With schema-include</p>
+<div>
+<?_wxt importtxt location="with_schema.xml" code="xmlcode"?> 
+</div>
+<p>With comments</p>
+<div>
+<?_wxt importtxt location="with_comment.xml" code="xmlcode"?> 
+</div>
+<p>With syntaxerror</p>
+<div>
+<?_wxt importtxt location="with_error.xml" code="xmlcode"?> 
+</div>
+
+<!-- ********************************************** -->
+<h2>Dynamic </h2>
+<p>Simple</p>
+<div>
+<?_wxt expand sourcelocation="simple1.xml" location="simple.txt" code="xmlcode"?>
+</div>
+<p>Incomplete</p>
+<div>
+<?_wxt expand sourcelocation="incomplete.xml" location="incomplete.txt" code="xmlcode"?>
+</div>
+<p>With doctype-include</p>
+<div>
+<?_wxt expand sourcelocation="with_dtd.xml" location="with_dtd.txt" code="xmlcode"?>
+</div>
+<p>With schema-include</p>
+<div>
+<?_wxt expand sourcelocation="with_schema.xml" location="with_schema.txt" code="xmlcode"?> 
+</div>
+<p>With comments</p>
+<div>
+<?_wxt expand sourcelocation="with_comment.xml" location="with_comment.txt" code="xmlcode"?> 
+</div>
+<p>With syntaxerror</p>
+<div>
+<?_wxt expand sourcelocation="with_error.xml" location="with_error.txt" code="xmlcode"?> 
+</div>
+
+<!-- ************************************************ -->
+
+<h2>preexpand</h2>
+<p>Simple</p>
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;booklist&gt;
+	&lt;book isbn="0-596-00292-0" pages="600"&gt;
+		&lt;title&gt;XML in a nutshell&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Elliot Rusty Harold and W. Scott Means&lt;/author&gt;
+		&lt;publisher&gt;OReilly&lt;/publisher&gt;
+		&lt;year&gt;2002&lt;/year&gt;
+		&lt;comment&gt;Ganske mer omfattende. God bok &lt;/comment&gt;
+	&lt;/book&gt;
+	&lt;book isbn="0-201-76990-5" pages="200"&gt;
+		&lt;title&gt;The web wizards guide to XML&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Cheryl M. Hughes&lt;/author&gt;
+		&lt;publisher&gt;Addison Wesley&lt;/publisher&gt;
+		&lt;year&gt;2003&lt;/year&gt;
+		&lt;comment&gt;Enkel og rett på sak og grei som oppslagsbok. Må suppleres med W3C-oppslag.&lt;/comment&gt;
+	&lt;/book&gt;
+&lt;/booklist&gt;
+</pre>
+<p>Incomplete</p>
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;alpin&gt;
+   &lt;skirenn type="WC" tid="2001" sted="Wengen" kjønn="menn" gren="utfor"&gt;
+   &lt;deltager&gt;
+      &lt;navn&gt;Kjuus&lt;/navn&gt;
+      &lt;Nasjon&gt;Norge&lt;/Nasjon&gt;
+      &lt;tid1&gt;130.012&lt;/tid1&gt;
+      &lt;td2&gt;na&lt;/td2&gt;
+   &lt;/deltager&gt;
+   ...
+   &lt;/skirenn&gt;
+   ...
+&lt;/alpin&gt;
+</pre>
+
+<p>With doctype-include</p>
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE booklist SYSTEM "bokliste.dtd"&gt;
+&lt;booklist&gt;
+	&lt;book isbn="0-596-00292-0" pages="600"&gt;
+		&lt;title&gt;XML in a nutshell&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Elliot Rusty Harold and W. Scott Means&lt;/author&gt;
+		&lt;publisher&gt;OReilly&lt;/publisher&gt;
+		&lt;year&gt;2002&lt;/year&gt;
+		&lt;comment&gt;Ganske mer omfattende. God bok &lt;/comment&gt;
+	&lt;/book&gt;
+	&lt;book isbn="0-201-76990-5" pages="200"&gt;
+		&lt;title&gt;The web wizards guide to XML&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Cheryl M. Hughes&lt;/author&gt;
+		&lt;publisher&gt;Addison Wesley&lt;/publisher&gt;
+		&lt;year&gt;2003&lt;/year&gt;
+		&lt;comment&gt;Enkel og rett på sak og grei som oppslagsbok.&lt;/comment&gt;
+	&lt;/book&gt;
+&lt;/booklist&gt;
+
+</pre>
+<p>With schema-include</p>
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:noNamespaceSchemaLocation="bokliste.xsd"&gt;
+	&lt;book isbn="0-596-00292-0" pages="600"&gt;
+		&lt;title&gt;XML in a nutshell&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Elliot Rusty Harold and W. Scott Means&lt;/author&gt;
+		&lt;publisher&gt;OReilly&lt;/publisher&gt;
+		&lt;year&gt;2002&lt;/year&gt;
+		&lt;comment&gt;Ganske mer omfattende. God bok &lt;/comment&gt;
+	&lt;/book&gt;
+	&lt;book isbn="0-201-76990-5" pages="200"&gt;
+		&lt;title&gt;The web wizards guide to XML&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Cheryl M. Hughes&lt;/author&gt;
+		&lt;publisher&gt;Addison Wesley&lt;/publisher&gt;
+		&lt;year&gt;2003&lt;/year&gt;
+		&lt;comment&gt;Enkel og rett på sak og grei som oppslagsbok.&lt;/comment&gt;
+	&lt;/book&gt;
+&lt;/booklist&gt;
+ 
+</pre>
+<p>With comments</p>
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;booklist&gt;
+	&lt;!-- something about each book --&gt;
+	&lt;book isbn="0-596-00292-0" pages="600"&gt;
+		&lt;title&gt;XML in a nutshell&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Elliot Rusty Harold and W. Scott Means&lt;/author&gt;
+		&lt;publisher&gt;OReilly&lt;/publisher&gt;
+		&lt;year&gt;2002&lt;/year&gt;
+		&lt;comment&gt;Ganske mer omfattende. God bok &lt;/comment&gt;
+	&lt;/book&gt;
+	&lt;!-- this is 
+	a multiline comment --&gt;
+	&lt;book isbn="0-201-76990-5" pages="200"&gt;
+		&lt;title&gt;The web wizards guide to XML&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Cheryl M. Hughes&lt;/author&gt;
+		&lt;publisher&gt;Addison Wesley&lt;/publisher&gt;
+		&lt;year&gt;2003&lt;/year&gt;
+		&lt;comment&gt;Enkel og rett på sak og grei som oppslagsbok. 
+		          Må suppleres med W3C-oppslag.&lt;/comment&gt;
+	&lt;/book&gt;
+&lt;/booklist&gt;
+</pre>
+<p>With syntaxerror</p>
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;booklist&gt;
+	&lt;!-- something about each book --&gt;
+	&lt;book isbn="0-596-00292-0" pages="600"&gt;
+		&lt;title&gt;XML in a nutshell&lt;/title&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Elliot Rusty Harold and W. Scott Means&lt;/author&gt;
+		&lt;publisher&gt;OReilly&lt;/publisher&gt;
+		&lt;year&gt;2002&lt;/year&gt;
+		&lt;comment&gt;Ganske mer omfattende. God bok &lt;/comment&gt;
+	&lt;/book&gt;
+	&lt;!-- this is 
+	a multiline comment --&gt;
+	&lt;book isbn="0-201-76990-5" pages="200"&gt;
+		&lt;title&gt;The web wizards guide to XML&lt;/totle&gt;
+		&lt;course&gt;Programmering for web&lt;/course&gt;
+		&lt;category&gt;XML&lt;/category&gt;
+		&lt;author&gt;Cheryl M. Hughes&lt;/author&gt;
+		&lt;publisher&gt;Addison Wesley&lt;/publisher&gt;
+		&lt;year&gt;2003&lt;/year&gt;
+		&lt;comment&gt;Enkel og rett på sak og grei som oppslagsbok. Må suppleres med W3C-oppslag.&lt;/comment&gt;
+	&lt;/book&gt;
+&lt;/booklist&gt;
+</pre>
+
+</div>
+
+    </body>
+</html>

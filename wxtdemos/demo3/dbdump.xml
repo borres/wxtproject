@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<query id="1">
+<sql>select type,name,dice from wines where country = &apos;Italia&apos; and type=&apos;white&apos; and dice=&apos;6&apos;</sql>
+
+	<record>
+		<type>white</type>
+		<name>Soave Classico San Michele 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Il Falchetto Moscato dAsti Tenuta del Fant 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Soave Classico San Michele 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Saracco Moscato dAsti 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Bianco di Custoza 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Planeta Chardonnay 2002</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Ben Ryé Passito di Pantelleria 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Planeta La Segreta Bianco 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Pietramarina Etna Bianco Superiore 2000</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Planeta Chardonnay 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Camastra Nero dAvola Merlot 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Planeta Santa Cecilia 2001</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Campanaro Fiano di Avellino 2003</name>
+		<dice>6</dice>
+	</record>
+	<record>
+		<type>white</type>
+		<name>Poderi di Carlo Sauvignon 2004</name>
+		<dice>6</dice>
+	</record>
+</query>
+</root>

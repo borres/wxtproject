@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />	
+    <title>	<?_wxt fragment id="_name"?> </title>
+	<script src="http://www.it.hiof.no/~borres/allround/redirect/ia_to_it.js" type="text/javascript"> </script>
+	<script>
+		alert("hello");
+	</script>
+    <!-- her kan det være mange flete script-tagger -->
+	<?_wxt importxml xpath="//div[@id='localstyle']/*" ?>
+</head>
+
+<body>
+<div contenteditable> </div>
+<div id="all">
+
+<div class="hiddenwords"> 
+	<?_wxt importxml xpath="//div[@id='indexholder']/*"?> 
+</div> 
+
+</div><!-- all -->
+<?_wxt fragment id="translation"?>
+<?_wxt fragment id="translation2"?>
+</body>
+</html>

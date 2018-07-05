@@ -1,0 +1,37 @@
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">main</span>"&gt;
+&lt;<span class="tagname">h1</span>&gt;Welcome&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">p</span>&gt;
+to this site for demonstration of "book on demand".
+&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">p</span>&gt;
+ The content is some random lingo from winedescriptions.
+&lt;/<span class="tagname">p</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">pagesource</span>" <span class="attname">style</span>="<span class="attvalue">clear:both</span>"&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+  &lt;<span class="tagname">div</span>&gt;
+  <span class="process">&lt;?_wxt expand location="welcomecoded.txt" 
+       sourcelocation="welcome.xml" 
+       expanded="no" code="xmlcode"?&gt;</span>
+  &lt;/<span class="tagname">div</span>&gt;
+  &lt;<span class="tagname">hr</span>/&gt;
+  &lt;<span class="tagname">div</span>&gt;Script&lt;/<span class="tagname">div</span>&gt;
+  &lt;<span class="tagname">div</span>&gt;
+  <span class="process">&lt;?_wxt expand location="scriptcoded.txt" 
+       sourcelocation="script.xml" 
+       expanded="no" code="xmlcode"?&gt;</span>
+  &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

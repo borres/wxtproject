@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: importodf</h1>
+<p>
+  The purpose of an importodf PI is to produce an XML-fragment 
+  from extracts from an Open Office document and replace the PI with this fragment. 
+</p>
+<p>
+<strong>NOTE:</strong> That the form of this PI may change.
+Specially the use of <em>dpath</em>, and the form of the dpath may be changed.
+It is present at an experimental stage. 
+</p>
+<pre class="piline">
+&lt;?_wxt importodf dpath="" location=""?&gt;
+</pre>
+<p>
+ This import is not complete in the sense that it handles all kinds of objects that
+ may be placed in an Open Office document. WXT can identify: headings, text paragraphs, 
+ images, formulas (math), lists and tables.
+</p>
+<p>
+ WXT apply a strategy that backs up the latest
+ successfull import, and use this if an import fails. The backup strategy does not
+ consider changes in content, but if your <em>dpath</em>, se below, fails to
+ identify any material at all, the backup is used. More about <?_wxt xlink id="DPath"?>.
+</p>
+<p>
+ This backup strategy cost processing time. You may change the strategy by parameters
+ backup and usecopy, see below.
+</p>
+
+
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>dpath</strong> mandatory</td>
+    <td>The content of any header(h1, h2,.., h6) in the wikipage.
+    Content will be extracted until we meet a heading with same or higher
+    significance. dpath (documentpath) has the form:
+	h1/h2/h3. For instance /Report/summary will extract content in 
+	h3:summary "under" h2:report.<br/>
+	dpath may also have a predicate part. <br/>
+    /Report/summary[p] will collect only paragraphs in the selected part.
+	See <?_wxt xlink id="DPath"?>.
+    </td>
+  </tr>
+ <tr>
+    <td  style="vertical-align:top"><strong>xpath</strong> optional</td>
+    <td>Defaults to //body.  <br/>   
+	Either <em>dpath</em> or <em>xpath</em> must be set. 
+	If<em>dpath</em> is set, <em>xpath</em> is ignored
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong> mandatory</td>
+    <td>The location of the file we want to import from.
+	In templates the location parameter is usually skipped. 
+	In this case all content files (odtimport) owned by the module in the script are searched for 
+	appropriate content unless you reduce the search with parameter id, see below. 
+     </td>
+  </tr>
+ <tr>
+    <td  style="vertical-align:top"><strong>usecopy</strong> optional</td>
+    <td>Possible values are <em>yes</em> and <em>no</em>.
+	<em>yes</em> will load the local backup without attempting to 
+	load the source. This will save time, but it does of course only have meaning
+	if you have accessed and loaded the material at least once before.
+	Default is <em>no</em>. This setting will be overridden by the option <em>use-copy</em>,
+	see <?_wxt xlink id="Options"?>
+     </td>
+  </tr>
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (optional)</td>
+    <td>An id that match the id of the actual xmlimport 
+    in script. Has only meaning when
+    this element has no location. One reason to use an id is 
+    processing time if you have many contentfiles to a module.
+	Another reason may be that you have similar structures in different contentfiles and you
+	want to be selective.
+    </td>
+  </tr>
+
+  
+  </table>
+
+<p>
+    <strong>NOTE: </strong>
+    WXT does not consider styles, most elements are copied "as is".
+</p>
+
+
+<h2>Examples:</h2>
+<pre class="source">
+&lt;?_wxt importodf 
+         location="doc1.odf" 
+         dpath="/Illustrations"?&gt;
+</pre>
+<p>
+ will extract the header on level 2, Illustrations, and all
+ material until the next heading at level 2, or level1.
+</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">Welcome</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">France</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">France</div>More demonstration of content types</div>
+</div>
+<div class="level1">
+<a href="page2.html" onmouseout="javascript:popunpop('welcome2',event);" onmouseover="javascript:popunpop('welcome2',event);">Spain</a>
+<div class="wxtsummary" id="welcome2" style="display: none;">
+<div class="header">Spain</div>More demonstration of content types</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:import and modules content</h1>
+<p>
+   Import of material from many sources. Using a combination of 
+   module content and PIs
+   </p>
+<p>
+   A rather meaningless description of France and Spain
+   and wines from these coutries.
+   It is obvious that this could be solved in a number of ways, most of them are
+   much faster than the one presented.
+</p>
+<hr/>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>script</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="welcome5">&lt;?xml version="1.0" encoding="utf-8" standalone="no"?&gt;
+&lt;wscript version="1.0"&gt;    
+      &lt;!-- wikiimport test --&gt;
+      &lt;definitions&gt;
+      &lt;option name="indent-output" value="yes"/&gt;
+      &lt;option name="output-format" value="xhtml"/&gt;
+      &lt;template id="P" location="../templates/p_template.xml"/&gt;   
+      &lt;template id="Q" location="../templates/q_template.xml"/&gt; 
+      &lt;logfile location="../buildlog.txt" /&gt;    
+     &lt;/definitions&gt;
+         
+     &lt;module description="Demonstration of content types" location="index.html" 
+            name="Welcome" id="welcome" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/welcome.xml"/&gt;
+    &lt;/module&gt;
+ 
+    &lt;module description="More demonstration of content types" location="page1.html" 
+            name="France" id="france" template="Q" books="all"&gt;
+        &lt;xmlcontent location="content/page1.xml"/&gt;
+        &lt;txtcontent location="content/winesF.txt"/&gt;
+        &lt;wikicontent location="http://en.wikipedia.org/wiki/Flag_of_France"/&gt;
+    &lt;/module&gt;
+ 
+    &lt;module description="More demonstration of content types" location="page2.html" 
+            name="Spain" id="spain" template="Q" books="all"&gt;
+        &lt;xmlcontent location="content/page2.xml"/&gt;
+        &lt;txtcontent location="content/winesS.txt"/&gt;
+        &lt;wikicontent location="http://en.wikipedia.org/wiki/Flag_of_Spain"/&gt;
+    &lt;/module&gt;
+     
+ &lt;/wscript&gt;
+</pre>
+</div>
+</div>
+</div>
+<div>
+
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>template for France and Spain</div>
+<div class="content" style="display:none">
+<pre class="prettyprint lang-xml skiptranslate" id="welcome6">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;
+&lt;head&gt;
+    &lt;meta content="text/html; charset=utf-8" http-equiv="Content-Type"/&gt;
+    &lt;title&gt;test&lt;/title&gt;
+    &lt;meta content="WXT" name="keywords"/&gt;
+    &lt;meta content="wxt3" name="GENERATOR"/&gt;
+    
+    &lt;link href="templatestyle.css" rel="stylesheet"  type="text/css"/&gt;
+    
+    &lt;link rel="STYLESHEET" href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css"/&gt;
+    &lt;script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"&gt; &lt;/script&gt;
+    &lt;script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"&gt; &lt;/script&gt;
+    
+    &lt;script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"&gt; &lt;/script&gt;
+    &lt;script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"&gt; &lt;/script&gt;
+    &lt;script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"&gt; &lt;/script&gt;
+    &lt;script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"&gt; &lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!-- logo --&gt;
+&lt;div id="logo"&gt; 
+    &lt;a href="http://www.it.hiof.no"&gt; &lt;img alt="logo" src="logo.png" style="border:none" /&gt; &lt;/a&gt; 
+&lt;/div&gt;
+&lt;!-- banner --&gt;
+&lt;div id="banner"&gt;
+  &lt;p class="topright"&gt;Østfold University College&lt;/p&gt;
+  &lt;p class="sitename"&gt;Test package for WXT&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="all"&gt;
+
+&lt;!-- left menu --&gt;
+&lt;div class="menu" id="menu"&gt;
+    &lt;?_wxt modulemenu summary="yes" books="all"?&gt;
+&lt;/div&gt;
+
+&lt;!-- content --&gt;
+&lt;div class="content"&gt;
+    &lt;div class="collectable"&gt;
+        &lt;h1&gt;Wines from &lt;span&gt;&lt;?_wxt fragment id="_name"?&gt;&lt;/span&gt;&lt;/h1&gt;
+        
+        
+        &lt;div style="float:right;width:300px"&gt;
+        &lt;?_wxt importwiki xpath="//img[contains(@src,'200px') and contains(@src,'Civil')]" usecopy="yes"?&gt;
+        &lt;/div&gt;
+        
+        &lt;div&gt;
+        &lt;?_wxt importtxt parse="yes"?&gt;
+        &lt;/div&gt;
+        
+        &lt;h3&gt;Some good red wines from &lt;?_wxt fragment id="_name"?&gt;&lt;/h3&gt;
+        &lt;div&gt;
+        &lt;?_wxt importxml xpath="//div[@class='db']" ?&gt;
+        &lt;/div&gt;        
+        
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- content --&gt;
+
+&lt;/div&gt;&lt;!-- all --&gt;
+&lt;!-- footer --&gt;
+&lt;div class="footer"&gt;
+&lt;/div&gt;&lt;!-- eof footer --&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</div>
+</div>
+
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

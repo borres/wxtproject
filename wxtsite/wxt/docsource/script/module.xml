@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: module-element</h1>
+
+ <p>
+  A module is the targets of building. 
+  A module is normally constructed by filling extracts from content-files or fragments into a template.
+  This simple model may be modified in many ways, mainly by means of transformations.
+ </p>
+<p>
+  The script may contain any number of modules,
+  and each module may contain any number of modules.
+  The module-tree is defining the structure of the website.
+ </p>
+ 
+ <pre class="prettyprint lang"><![CDATA[<module name="" 
+          id=""
+          author=""
+          description="" 
+          location="" 
+          template=""
+          transformation=""
+          books="">
+    ...
+</module>]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>name</strong>(mandatory)</td>
+    <td>Any string that represents the Module in tables of contents etc.
+    Available as fragment <em>_name</em>
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>description</strong>(optional)</td>
+    <td>Any string that describes the module. Default is name. 
+    Available as fragment <em>_description</em>
+    </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>id</strong>(optional)</td>
+    <td>Any string that identifies the module. Default id is name.
+    Avaliable as fragment: <em>_id</em>. The id is not mandatory, 
+	but it is strongly recommanded to give a module an id and
+	to use a value that contains only <strong>ascii-letters</strong> and _. The id will be used
+	to produce anchors and links and you may want to run WXT from the commandline with specific module ids.
+	<br/>
+	The id must be <strong>unique</strong> in the context of a script.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>author</strong>(optional)</td>
+    <td>The id of an author fragment as defined in an author-element in the
+	definitions part of the script. If no author is given it defaults
+    to the default author. The default author may be set in the script as
+    &lt;author id="_defaultauthor" name="anyname"/&gt;. 
+    If this is not set it defaults to: "Site author".
+	The author is available as fragment  <em>_author</em> within the module.
+	</td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>template</strong>(optional)</td>
+    <td>Identification of a template. Either by location 
+    or by id (see: <?_wxt xlink id="Template"?>).
+    </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>transformation</strong>(optional)</td>
+    <td>A transformation identifier 
+    (see: <?_wxt xlink id="Transformation"?>).
+    This transformation is applied before the module is saved.
+    You may set parameters to the transformation, by enclosing 
+    a comma-separated list of name='value' definitions withinin (). 
+    Example for transformation with id T: 
+    T(name='ole',address='halden')
+    </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(optional)</td>
+    <td>An absolute URI identifying a filelocation,
+        or an URI relative to the script. The module will be saved to this location.
+        The location value may contain pathfragments.
+   </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>anchor</strong>(deprecated, use pathfragment)</td>
+    <td>An absolute or relative path to a catalog which will serve as anchor, 
+     referencecatalog, for this modules and child modules. All relative addresses
+     are considered relative to this anchor.
+     The anchor may contain pathfragments.
+     If the anchor is relative, it is calculated relative to the 
+     parent modules anchor. If the module is a rootmodule it is 
+     calculated relative to the catalog that contains the script.
+    You can achive the same effect by using pathfragments.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>books</strong>(optional)</td>
+    <td>A commaseparted string of books that this
+        module is considered to be a part of. 
+        Books is a way of grouping modules. Default value is <em>_all</em>.
+        The value <em>_never</em> will prevent the module from appearing
+        in any lists, like modulemap and modulemenu.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>output-format</strong>(optional)</td>
+    <td>Possible values are <em>xml</em>, <em>html</em>, <em>xhtml</em> and <em>text</em>.
+        This will override the default value ,<em>html</em>, and possible
+        value set as option in the script. It will
+        be effective only for this module.
+    </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>runbefore</strong>(optional)</td>
+    <td>Runs a named <?_wxt xlink id="Command"?> before this module is built.
+    
+    </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>runafter</strong>(optional)</td>
+    <td>Runs a named <?_wxt xlink id="Command"?> after this module is built.
+    </td>
+  </tr>
+</table>
+
+<p>A module element may contain any number of the following elements:
+</p>
+<ul>
+ <li>Module</li>
+ <li><?_wxt xlink id="XMLContent"?></li>
+ <li><?_wxt xlink id="XMLContentList"?></li>
+ <li><?_wxt xlink id="TXTContent"?></li>
+ <li><?_wxt xlink id="TextContentList"?></li>
+ </ul>
+ <p>and a module may contain one element of type 
+ <?_wxt xlink id="Summary"?>
+ </p>
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<module name="MyBook" 
+          location="{mysections}/section3/myfile.hml"
+          template="P"
+          books="mylibrary"
+          id="mybook"
+          description="some temporary stuff" >
+    ...
+</module>]]>
+</pre>
+
+
+</body>
+</html>

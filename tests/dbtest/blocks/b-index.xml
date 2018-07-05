@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Velkommen</title>
+</head>
+    <body>
+        
+<div class="mainblock">
+
+<h1>Welcome</h1>
+<p>
+	Testing database access.
+</p>
+<p>
+ databases in WXT may be used in three ways:
+</p>
+<ul>
+	<li>
+	 We can access xml-fragments from a database and move these fragments to a module.
+	<pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/fragments?user=student&amp;password=student"
+    sql="use fragments;
+        select content from material where fragid = 1;"
+    encoding="ISO-8859-1"
+    parse="yes"
+    targetlocation="dbdump4.xml"?&gt;	
+	</pre>
+	</li>
+	
+
+	
+	
+	<li>
+	 We can access any content from a database. This content is arranged in a XML-structure
+	 which may be saved for inspection, translated with xslt and the result moved to a module. 
+	<pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&amp;password=student"
+    sql="use vin;
+         select type,description,dice,name from wines where country = 'Frankrike';"
+    encoding="ISO-8859-1"
+    transformation="vindb1(type='red',dice='1')"
+    xpath="//div[@id='root']/*"
+    targetlocation="dbdump1.xml"?&gt;
+	 </pre>
+
+	</li>
+	
+	
+	
+	
+	
+	
+	<li>
+	 Same as above but the translation is a defult translation to a table,
+	 with one row for each record fetched. 
+	</li>
+	<pre>
+&lt;?_wxt importdb 
+    connection="jdbc:mysql://frigg.hiof.no/vin?user=student&amp;password=student"
+    sql="use vin;
+        select type,name,dice from wines where country = 'Spania';
+        select type,description,dice from wines where country = 'Frankrike';"
+    encoding="ISO-8859-1"
+    transformation="_table"
+    xpath="//div[@class='dbresult' and position()='1']"
+    targetlocation="dbdump.xml"?&gt;	
+	</pre>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<?_wxt fragment id="head"?>
+</head>
+
+<body>   
+	<div><?_wxt fragment id="banner"?></div>
+	<table>
+	<tr>
+	<td valign="top" style="width:160px">
+		<?_wxt fragment id="leftcolumn"?>
+	</td>
+
+	<td valign="top">
+	<p>
+	In stead of using a template that is filled with content from content-files,
+	we use the content-files as templates and wrap the content with fragments.
+	</p>
+	<p>
+	This is probably not an efficient strategy for material with many modules, but
+	in some cases it may be usefull. You may also consider a combination of 
+	the traditional template-strategy and extended use of fragments.
+	</p>
+	</td>
+   
+	</tr>
+	</table>
+	<hr/>
+	<div>
+	<?_wxt popup text="Script" sourcelocation=" ../script.xml" location="../script_xml.html" code="xmlcode"?>
+	| <?_wxt popup text="PageSource" sourcelocation="page1.xml" location="../page1_xml.html" code="xmlcode"?>
+	| <?_wxt popup text="Fragments" sourcelocation="../commons/myfragments.xml" location="../myfragments_xml.html" code="xmlcode"?>
+	| <?_wxt popup text="Images" sourcelocation="../commons/myimages.xml" location="../myimages_xml.html" code="xmlcode"?></div>
+	
+	<p><?_wxt fragment id="signature"?></p>
+</body>
+</html>

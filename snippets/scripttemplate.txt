@@ -1,0 +1,21 @@
+// snippet separator:#
+// each snippet:name;description;value
+script-template;Produces a script tag;<?xml version="1.0" encoding="utf-8"?>
+<wscript version="1.0">
+    <definitions>
+        <pathfragment id="templates" value="c:/mysites/commons/templates"/>
+        <pathfragment id="pages" value="pages"/>
+        <pathfragment id="source" value="source"/>
+        <template id="I" location="{templates}/i-template.xml"/>
+        <template id="P" location="{templates}/p-template.xml"/>
+    </definitions>
+
+    <module name="Welcome" id="welcome" location="index.html" template="T">
+        <importxml location="{source}/index.xml"/>
+
+        <module name="Page1" id="p1" location="{pages}p1.html" template="P">
+            <importxml location="{source}/p1.xml"/>
+        </module>
+    <module>
+
+</wscript>

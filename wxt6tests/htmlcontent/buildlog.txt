@@ -1,0 +1,2103 @@
+
+====================================
+Sunday, May 19, 2013 - 10:14:51 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Sunday, May 19, 2013 - 10:14:53 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome,page1,page2
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1623ms
+
+====================================
+Sunday, May 19, 2013 - 10:15:46 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Sunday, May 19, 2013 - 10:15:47 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome,page1,page2
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1700ms
+
+====================================
+Wednesday, May 22, 2013 - 9:42:48 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 9:42:49 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1147ms
+
+====================================
+Wednesday, May 22, 2013 - 9:57:50 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 9:57:51 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+	C:\web\wxt6tests\htmlcontent\content\content\simplehtml.html (The system cannot find the path specified)
+	Failed PI: <?_wxt expandable  location="content/content/simplehtml.html" lang="lang-html" ?>   
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1059ms
+
+====================================
+Wednesday, May 22, 2013 - 10:12:22 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 10:12:23 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+	C:\web\wxt6tests\htmlcontent\content\content\simplehtml.html (The system cannot find the path specified)
+	Failed PI: <?_wxt expandable  location="content/content/simplehtml.html" lang="lang-html" ?>   
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1072ms
+
+====================================
+Wednesday, May 22, 2013 - 10:18:01 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 10:23:24 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 10:26:49 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 10:31:51 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 10:31:52 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1058ms
+
+====================================
+Wednesday, May 22, 2013 - 10:56:00 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 10:59:37 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+	C:\web\wxt6tests\htmlcontent\content\content\simplehtml.html (The system cannot find the path specified)
+	Failed PI: <?_wxt expandable  location="content/content/simplehtml.html" lang="lang-html" ?>   
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+217462ms
+
+====================================
+Wednesday, May 22, 2013 - 11:01:02 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Wednesday, May 22, 2013 - 11:01:03 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1146ms
+
+====================================
+Thursday, May 23, 2013 - 9:14:48 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:14:48 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome
+Welcome
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+213ms
+
+====================================
+Thursday, May 23, 2013 - 9:16:25 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:19:19 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome
+Welcome
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+173473ms
+
+====================================
+Thursday, May 23, 2013 - 9:21:36 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:28:10 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:28:11 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome
+Welcome
+	C:\web\wxt6tests\htmlcontent\simplehtml.html (The system cannot find the file specified)
+	Failed PI: <?_wxt expandable  location="simplehtml.html" lang="lang-html" ?>   
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+169ms
+
+====================================
+Thursday, May 23, 2013 - 9:28:47 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:28:48 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome
+Welcome
+	C:\web\wxt6tests\htmlcontent\simplehtml.html (The system cannot find the file specified)
+	Failed PI: <?_wxt expandable  location="./simplehtml.html" lang="lang-html" ?>   
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+167ms
+
+====================================
+Thursday, May 23, 2013 - 9:29:02 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:29:03 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome
+Welcome
+	C:\web\wxt6tests\simplehtml.html (The system cannot find the file specified)
+	Failed PI: <?_wxt expandable  location="../simplehtml.html" lang="lang-html" ?>   
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+166ms
+
+====================================
+Thursday, May 23, 2013 - 9:29:30 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:29:31 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome
+Welcome
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+174ms
+
+====================================
+Thursday, May 23, 2013 - 9:30:36 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:30:36 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):welcome
+Welcome
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+182ms
+
+====================================
+Thursday, May 23, 2013 - 9:31:39 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:31:39 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+499ms
+
+====================================
+Thursday, May 23, 2013 - 9:34:13 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:35:31 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:35:31 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+478ms
+
+====================================
+Thursday, May 23, 2013 - 9:35:38 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:44:57 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:47:00 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:47:55 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:50:01 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:50:04 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+3065ms
+
+====================================
+Thursday, May 23, 2013 - 9:52:38 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 9:52:39 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1072ms
+
+====================================
+Thursday, May 23, 2013 - 10:03:58 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 10:04:00 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1071ms
+
+====================================
+Thursday, May 23, 2013 - 10:08:08 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 10:08:10 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1334ms
+
+====================================
+Thursday, May 23, 2013 - 11:19:16 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:19:17 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt importhtml  location="../../../../c:/web/dw/index.html" cssselector="body > p" ?>
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1334ms
+
+====================================
+Thursday, May 23, 2013 - 11:21:26 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:21:27 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1352ms
+
+====================================
+Thursday, May 23, 2013 - 11:24:40 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:24:42 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1356ms
+
+====================================
+Thursday, May 23, 2013 - 11:26:30 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:26:31 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+"	Warning:Attempt to tidy"
+	Could not tidy source file:/C:/web/wxt6tests/htmlcontent/content/page3.xml - The element type "p" must be terminated by the matching end-tag "</p>".
+	Failed PI: <?_wxt importxml  _template="ison" location="file:/C:/web/wxt6tests/htmlcontent/content/page3.xml" xpath="//div[@class='mainblock']/*" ?>  The element type "p" must be terminated by the matching end-tag "</p>".
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1368ms
+
+====================================
+Thursday, May 23, 2013 - 11:27:12 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:27:14 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Page3
+	Failed PI: <?_wxt importxml  location="content/simplexml.xml" xpath="//div[@class='source4']" ?>  File not found or loaded
+<?_wxt importxml  location="content/simplexml.xml" xpath="//div[@class='source4']" ?> is not produced
+ empty: <?_wxt importhtml  location="../../../../c:/web/dw/index.html" cssselector="body > p" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1374ms
+
+====================================
+Thursday, May 23, 2013 - 11:29:03 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:29:04 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Page3
+<?_wxt importhtml  location="../web/dw/index.html" cssselector="body > p" ?> is not produced
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1364ms
+
+====================================
+Thursday, May 23, 2013 - 11:29:54 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:29:54 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+<?_wxt importhtml  location="../web/dw/index.html" cssselector="body > p" ?> is not produced
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+95ms
+
+====================================
+Thursday, May 23, 2013 - 11:30:23 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:30:54 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+<?_wxt importhtml  location="../web/dw/index.html" cssselector="body > p" ?> is not produced
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+31151ms
+
+====================================
+Thursday, May 23, 2013 - 11:31:01 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:31:32 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:31:32 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+<?_wxt importhtml  location="../../web/dw/index.html" cssselector="body > p" ?> is not produced
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+101ms
+
+====================================
+Thursday, May 23, 2013 - 11:31:47 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:32:26 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:36:41 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:37:17 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:38:19 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 11:38:30 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+ empty: <?_wxt importhtml  location="../../dw/index.html" cssselector="body > p" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+11213ms
+
+====================================
+Thursday, May 23, 2013 - 11:39:06 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 12:22:34 PM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+ empty: <?_wxt importhtml  location="../../dw/index.html" cssselector="body > p" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+2608148ms
+
+====================================
+Thursday, May 23, 2013 - 12:24:49 PM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 12:29:35 PM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 12:29:42 PM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 12:29:42 PM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+ empty: <?_wxt importhtml  location="../../dw/index.html" cssselector="body > p" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+167ms
+
+====================================
+Thursday, May 23, 2013 - 12:29:56 PM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Thursday, May 23, 2013 - 12:29:56 PM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+ empty: <?_wxt importhtml  location="../../dw/index.html" cssselector="body > p" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+184ms
+
+====================================
+Monday, May 27, 2013 - 7:01:19 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 7:01:19 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+ empty: <?_wxt importhtml  location="../../dw/index.html" cssselector="body > p" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+169ms
+
+====================================
+Monday, May 27, 2013 - 7:02:32 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 7:04:33 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 7:09:11 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 7:09:11 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+ empty: <?_wxt importhtml  location="../../dw/index.html" cssselector="body > p" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+161ms
+
+====================================
+Monday, May 27, 2013 - 7:09:30 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 7:09:30 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+220ms
+
+====================================
+Monday, May 27, 2013 - 7:10:06 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+	Source not available  http://borrestekst.blogspot.no/2010/12/oppstart.html
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 7:10:06 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+187ms
+
+====================================
+Monday, May 27, 2013 - 10:46:02 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 10:46:03 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Page3
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1294ms
+
+====================================
+Monday, May 27, 2013 - 10:49:59 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 10:50:03 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Page3
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+3860ms
+
+====================================
+Monday, May 27, 2013 - 10:53:40 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 10:53:41 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+663ms
+
+====================================
+Monday, May 27, 2013 - 11:00:24 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:00:27 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+3031ms
+
+====================================
+Monday, May 27, 2013 - 11:01:01 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:01:02 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+677ms
+
+====================================
+Monday, May 27, 2013 - 11:01:51 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:01:51 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+668ms
+
+====================================
+Monday, May 27, 2013 - 11:02:54 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:02:55 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+668ms
+
+====================================
+Monday, May 27, 2013 - 11:03:40 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:03:41 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+678ms
+
+====================================
+Monday, May 27, 2013 - 11:04:06 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:05:53 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:05:54 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+666ms
+
+====================================
+Monday, May 27, 2013 - 11:09:05 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:09:06 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+	Warning. Duplicate image id: bits_wikimedia_org_static_1_22wmf3_skins_common_images_magnify_clip_png
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+764ms
+
+====================================
+Monday, May 27, 2013 - 11:10:29 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:10:29 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+196ms
+
+====================================
+Monday, May 27, 2013 - 11:11:54 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:11:54 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+194ms
+
+====================================
+Monday, May 27, 2013 - 11:12:17 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:12:18 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+	Warning. Duplicate image id: bits_wikimedia_org_static_1_22wmf3_skins_common_images_magnify_clip_png
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+758ms
+
+====================================
+Monday, May 27, 2013 - 11:14:02 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:14:02 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+680ms
+
+====================================
+Monday, May 27, 2013 - 11:15:43 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:15:44 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+265ms
+
+====================================
+Monday, May 27, 2013 - 11:16:22 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:16:23 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+	Warning. Duplicate image id: bits_wikimedia_org_static_1_22wmf3_skins_common_images_magnify_clip_png
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+770ms
+
+====================================
+Monday, May 27, 2013 - 11:17:07 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:17:08 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+351ms
+
+====================================
+Monday, May 27, 2013 - 11:18:01 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:18:01 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+350ms
+
+====================================
+Monday, May 27, 2013 - 11:18:28 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:18:28 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+345ms
+
+====================================
+Monday, May 27, 2013 - 11:18:59 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Monday, May 27, 2013 - 11:19:00 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+300ms
+
+====================================
+Tuesday, May 28, 2013 - 6:12:56 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:12:56 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+286ms
+
+====================================
+Tuesday, May 28, 2013 - 6:13:18 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:13:18 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+234ms
+
+====================================
+Tuesday, May 28, 2013 - 6:13:48 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:13:48 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+202ms
+
+====================================
+Tuesday, May 28, 2013 - 6:15:15 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:15:15 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+231ms
+
+====================================
+Tuesday, May 28, 2013 - 6:16:03 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:16:04 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+395ms
+
+====================================
+Tuesday, May 28, 2013 - 6:16:30 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:16:30 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+231ms
+
+====================================
+Tuesday, May 28, 2013 - 6:17:17 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:17:18 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+	The entity "oslash" was referenced, but not declared.
+"	Warning:Attempt to tidy"
+	Warning. Duplicate image id: backup_no_wikipedia_org_wiki_Halden_magnify_clip_png
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1109ms
+
+====================================
+Tuesday, May 28, 2013 - 6:17:40 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:17:41 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+399ms
+
+====================================
+Tuesday, May 28, 2013 - 6:19:26 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/htmlcontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:19:27 AM CEST / C:/web/wxt6tests/htmlcontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page1
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+231ms

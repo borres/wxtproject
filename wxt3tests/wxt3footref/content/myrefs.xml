@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<reflist version="1.0"> 
+	<ref id="reenskaug">
+        <publisher>University of Oslo</publisher>
+        <title>The Model-View-Controller</title> 
+		<year>2003</year>
+		<authors>Trygve Reenskaug</authors>
+        <categories>def</categories>
+		<uri dateread="11-12-2010">http://heim.ifi.uio.no/~trygver/2003/javazone-jaoo/MVC_pattern.pdf</uri>
+    </ref>
+	<ref id="turing">
+        <publisher>University of Oslo</publisher>
+        <title>The Alan Turing Home Page</title> 
+		<year>2003</year>
+		<authors>Andrew Hodges</authors>
+        <categories>def</categories>
+		<uri dateread="11-12-2010">http://www.turing.org.uk/turing/</uri>
+    </ref>
+	<ref id="socw">
+        <publisher>Wikipedia</publisher>
+        <title>Separation of Concerns</title> 
+		<categories>def</categories>
+		<uri dateread="11-12-2010">http://en.wikipedia.org/wiki/Separation_of_concerns</uri>
+    </ref>
+	<ref id="latinquotes">
+        <publisher>Yuni Words of Wisdom</publisher>
+        <title>Latin Quotes and Latin Phrases</title> 
+		<categories>def</categories>
+		<uri dateread="11-12-2010">http://www.yuni.com/library/latin.html</uri>
+    </ref>
+
+    
+</reflist>

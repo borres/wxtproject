@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>DPATH</h1>
+  <p>DPATH is introduced in this context as a means of addressing elements in a
+  document with a flat structure. It has some resemblance with xpath, but is much simpler and 
+  has less precision.
+  </p>
+
+  <p>The basic structure in an DPATH-expression is best considered as an
+  analogy to a unix filepath. 
+  </p>
+  <p>
+  Some examples:
+  </p>
+<table>
+<tr>
+    <td>//Results</td>
+    <td>Will select all material under heading-level 3 with name Results </td>
+</tr>
+<tr>
+    <td>*</td>
+    <td>Will attempt to select all material under headings level 1 </td>
+</tr>
+<tr>
+    <td>/Semifinal/Results</td>
+    <td>Will select all material under heading-level 3 with name Results which are under header-level 2 with name Semifinal </td>
+</tr>
+
+</table>
+
+
+
+	<p>
+	We may also have a spesification part, or selection part,  in the form []. 
+	The purpose is to filter the elements we use. 
+	</p>
+	<ul>
+	<li>[*] will have no filtering
+	effect, all elements will be included. 
+	</li>
+	<li>[p,img] wil select only elements of type p and img.
+	</li>
+	
+	</ul>
+
+<table>
+<tr>
+    <td>//Results[*]</td>
+    <td>Will select all material under heading-level 3 with name Results </td>
+</tr>
+<tr>
+    <td>//Results[table]</td>
+    <td>Will select all elements of type table under heading-level 3 with name Results </td>
+</tr>
+</table>
+
+
+	
+
+
+</body>
+</html>

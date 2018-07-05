@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>PI: formula</h1>
+<p>
+  The purpose of a formula is to fetch a formula in Image-, LaTeX- or MathML-form.
+  The former two is presented as img-elements, while the latter is presented as MathML according to HTML5.
+  LaTeX-formulas are translated to img on the fly with either WXT's internal functions
+ based on JLaTeXMath<?_wxt ref id="jlatexmath"?>  or with Google Charts Formulas<?_wxt ref id="googlechartformulas"?>.
+</p>
+<pre class="piline">
+&lt;?_wxt formula id=""?&gt;
+</pre>
+
+<p>The parameters are:</p>
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong> (mandatory)</td>
+    <td>The formula we want to fetch. The formula is supposed to be defined in
+	a formula file, <?_wxt xlink id="Formulas"?>, or an odtformula file ,<?_wxt xlink id="ODTFormulas"?>.
+	Alternatively this value will identify the formula introduced in sourse or location, se below.
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>type</strong> (optional)</td>
+    <td>This is mandatory if source or location is set.
+	Possible values are <em>image</em>, <em>latex</em>, <em>google</em> or <em>mathml</em>.	
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong> (optional)</td>
+    <td>The location may point to a file of one out of the 4 types: 
+	An image file (png,gif,jpg), a file containing a LaTeX-expression, a file containing LaTex for google or a file
+	containing a MathMl-formula.
+
+     </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>source</strong> (optional)</td>
+    <td>The source may contain LaTeX description of a formula according to the version used by 
+	Google Charts Features<?_wxt ref id="googlechartformulasfeatures"?> (type: google) or LaTex as handled by
+    JLaTeXMath<?_wxt ref id="jlatexmath"?>	(type: latex). It is sometimes possible, but not adviced to include mathml-source
+    </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>subtext</strong> (optional)</td>
+    <td>Any string describing the formula. Defaults to id.
+    </td>
+  </tr>
+  
+  
+  <tr>
+    <td  style="vertical-align:top"><strong>color</strong> (optional)</td>
+    <td>Must be specified as 6 hexdigits (#FF0000)
+    </td>
+  </tr>
+   <tr>
+    <td  style="vertical-align:top"><strong>backcolor</strong> (optional)</td>
+    <td>Must be specified as 6 hexdigits (#FF0000)
+    </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>size</strong> (optional)</td>
+    <td>Applies to TeX-formulas.  You may spesify a size for LaTex or google-Latex:
+	<em>tiny</em>, <em>small</em>,<em>large</em> or <em>huge</em>.
+    </td>
+  </tr>
+ <tr>
+    <td  style="vertical-align:top"><strong>style</strong> (optional)</td>
+    <td>Any CSS that will apply to the generated image-element.
+    </td>
+  </tr>
+
+  
+  
+  </table>
+  
+  <p class="stylefoot">
+ Styleclass(es) describing this PI is: <em>wxtformula</em>, and for MathML-formulas <em>wxtmathml</em>
+ See distributed std styles.
+</p>
+
+ <p>
+ If both <em>source</em> and <em>location</em> is set, <em>source</em> is used.
+ </p>
+ 
+ <p>
+ More about formulas in <?_wxt xlink id="aboutformulas"?>.
+</p>
+
+
+<h2>Examples:</h2>
+
+<pre  class="prettyprint lang-html">
+&lt;div&gt;
+&lt;?_wxt formula id="_formula1"?&gt;
+&lt;/div&gt;
+
+
+&lt;div&gt;
+&lt;?_wxt formula id="f2" type="latex" size="large" 
+     source="B(t)=\sum_{i=0}^{n}B_{i}^{n}t^{i}(1-t)^{n-i}P_{_{i}}"?&gt;
+&lt;/div&gt;
+
+
+&lt;div&gt;
+&lt;?_wxt formula id="f3" size="small" color="#FFFF00"?&gt;
+&lt;/div&gt;
+</pre>
+
+</body>
+</html>

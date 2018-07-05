@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Testing</title>
+	<link href="templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.min.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('page31',event);" onmouseover="javascript:popunpop('page31',event);">Welcome</a>
+<div class="wxtsummary" id="page31" style="display: none;">
+<div class="header">Welcome</div>Demonstration of simple XML-import</div>
+</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('page32',event);" onmouseover="javascript:popunpop('page32',event);">Page1</a>
+<div class="wxtsummary" id="page32" style="display: none;">
+<div class="header">Page1</div>More demonstration of HTML-import</div>
+</div>
+<div class="level1">
+<a href="page2.html" onmouseout="javascript:popunpop('page33',event);" onmouseover="javascript:popunpop('page33',event);">Page2</a>
+<div class="wxtsummary" id="page33" style="display: none;">
+<div class="header">Page2</div>Incomplete content to be tidyed</div>
+</div>
+<div class="level1 wxtselected">Page3</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+</p>
+<h2>A simple import of html</h2>
+<p>
+<article class="content"> 
+ <div class="collectable"> 
+  <div class="main"> 
+   <h1>Velkommen</h1> 
+   <div id="front"> 
+    <p> til dette nettstedet med materiale om dokumenter, dokumenttransformasjoner og nettprogrammering. Materialet er bygget primært som støttemateriell for kursvirksomhet ved Høgskolen i Østfold, Avdeling for informasjonsteknologi. </p> 
+    <div> 
+     <div onclick="this.innerHTML=''"> 
+      <!--[if IE]>
+	<div class="dropIE" style="width:500px;
+	        border-style:solid; border-width:thin;
+			padding:5px;
+	        color:#8B7D6B;background-color:#F5F5DC">
+	 <p>
+	  The content of this site may not display properly in MS IE. 
+	 You may consider using an other browser:
+	 <a href="http://www.mozilla.com/en-US/firefox/personal.html">FireFox</a> /
+	 <a href="http://www.opera.com/download/">Opera</a>/
+	 <a href="http://www.google.com/chrome/index.html?hl=en-GB&amp;brand=CHMA&amp;utm_campaign=en-GB&amp;utm_source=en-GB-ha-emea-uk-bk&amp;utm_medium=ha">Chrome</a>/
+	 others?
+	 </p>
+
+	<div margin-top:2px" style="cursor:pointer">...take this message away</div>
+	</div>
+	<![endif]--> 
+     </div> 
+    </div> 
+    <p> Materialet er satt sammen for å dekke XML-dokumenter og dokumenttransformasjoner generelt og utvikling av nettløsninger spesielt. Python brukes som generelt programmeringsspråk og til skripting på tjeneren. Nettløsninger er beskrevet enten som tradisjonelle nettløsninger eller som Ajax-løsninger. </p> 
+    <p> Du finner i tillegg til XML, (X)HTML, HTML5, CSS og Python også moduler om Javascript og XSLT. </p> 
+    <div> 
+     <div class="wxtthumbwrapper"> 
+      <img alt="Ordsky for dette vevstedet" src="../../dw/admin/wordle1.png" style="border-style:none"/> 
+     </div> 
+    </div> 
+    <p> Mange av de temaene som tas opp i dette materialet er slik at de setter nettleserne på en del prøver. (Javascript, XML, XSLT, CSS, MathML, SVG, WebGL). Jeg kan ikke love at jeg greier å varsle om alle finurligheter for alle nettlesere i alle versjoner. </p> 
+    <p> Jeg utvikler og tester på MS Windows, og bruker de nyeste versjonene jeg kommer over av MS Internet Explorer, FireFox, Google Chrome, Opera og Safari. Du vil raskt se at det er forskjell på hva disse gjør med en del sider hvis vi beveger oss litt utenom vanlig, rett fram HTML-markup. </p> 
+    <p> Spesielt bruken av HTML5 eksponerer en del forskjeller. Vevsidene er idag skrevet som velformede HTML5-sider, men inneholder relativt lite av de nye finessene i HTML5. Innslaget av HTML5-spesifikke ting vil øke etterhvert som nettleserne blir mer stabile. </p> 
+    <p> De fleste sidene validerer som HTML5 i følge W3Cs foreløpige HTML5-validator. Når det står et spørsmålstegn ved HTML5-logen nederst på siden så er det fordi det er noen avvik. Disse er ikke rettet fordi det foreløpig er noen uklare momenter i HTML5 spesifikasjonen. HTML5 er i skrivende stund, oktober 2012, ikke en endelig rekomendasjon. </p> 
+    <div> 
+     <div class="gnu"> 
+      <p> Alt materialet og programeksemplene er tilgjenglige i henhold til GNU's prinsipper for fri dokumentasjon og fri programvare, <strong>dersom ikke annet er eksplisitt angitt.</strong> </p> 
+      <p> Det betyr i korthet at det er fritt tilgjengelig under forutsetning av at det vises til kilden og at det ikke er noen garanti knyttet til materialet når det gjelder "riktighet" eller funksjonalitet. Dersom du ønsker å bidra med nytt materiale under disse betingelsene så send forslag til undertegnede. Dersom ditt bidrag passer inn, vil det bli inkludert som en eller flere moduler med referanse til forfatteren. Nærmere om GNU's lisensbetingelser: </p> 
+      <ul> 
+       <li> <a class="external" href="http://www.gnu.org/licenses/fdl.html" title="external link"> GNU Free Documentation License</a> </li> 
+       <li> <a class="external" href="http://www.gnu.org/philosophy/free-sw.html" title="external link"> GNU's definisjon av "free software</a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+    <p> Dette materialet oppdateres kontinuerlig. Det vil derfor være deler som mangler eller ikke er komplette. Vennligst rapporter alt du finner som er galt, uforståelig eller som kan forbedres til forfatteren. Se "visittkort" nederst på siden. </p> 
+   </div> 
+   <p style="margin-top:20px"> Bygget med <span class="wxtstamp"> <a class="external" href="http://www.it.hiof.no/wxt/wxtsite/">WXT 4</a> </span> <br/> <span class="wxtdate">3/29/13</span> </p> 
+   <p class="skiptranslate" style="font-weight:500;font-style:italic"> Børre Stenseth </p> 
+  </div> 
+ </div> 
+</article>
+</p>
+<hr/>
+<h3>Content file for this page</h3>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/page3.xml</div>
+<div class="content" style="display:none">
+<pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tag">root</span>&gt;
+        
+&lt;<span class="tag">div</span> <span class="atn">class</span>="<span class="atv">mainblock</span>"&gt;
+&lt;<span class="tag">h1</span>&gt;Testing PI:importxml&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+&lt;/<span class="tag">p</span>&gt;
+  
+&lt;!--<span class="com"> extract a header with following text </span>--&gt;
+&lt;<span class="tag">h2</span>&gt;A simple import of html&lt;/<span class="tag">h2</span>&gt;
+ &lt;<span class="tag">p</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">importhtml location="C:\\web\\dw\\index.html" 
+       cssselector="article"</span>?&gt;
+&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">hr</span>/&gt;
+  
+&lt;<span class="tag">h3</span>&gt;Content file for this page&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="page3.xml" 
+       lang="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">div</span>&gt; &lt;!--<span class="com"> mainblock </span>--&gt;
+&lt;/<span class="tag">root</span>&gt;</pre>
+</div>
+</div>
+</div>
+		</div>
+
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "bokliste.dtd">
+<booklist>
+	<book isbn="0-596-00292-0" pages="600">
+		<title>XML in a nutshell</title>
+		<course>Programmering for web</course>
+		<category>XML</category>
+		<author>Elliot Rusty Harold and W. Scott Means</author>
+		<publisher>OReilly</publisher>
+		<year>2002</year>
+		<comment>Ganske mer omfattende. God bok </comment>
+	</book>
+	<book isbn="0-201-76990-5" pages="200">
+		<title>The web wizards guide to XML</title>
+		<course>Programmering for web</course>
+		<category>XML</category>
+		<author>Cheryl M. Hughes</author>
+		<publisher>Addison Wesley</publisher>
+		<year>2003</year>
+		<comment>Enkel og rett på sak og grei som oppslagsbok.</comment>
+	</book>
+</booklist>

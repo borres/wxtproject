@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+
+<body>
+<h1>Fragments</h1>
+<p>
+  WXT offers an option that makes it simple to
+ prepare any number of XML-fragments that may be used repeatedly.
+</p>
+<p>
+ You may define fragments in the script, see <?_wxt xlink id="Fragment"?>.
+</p>
+<p>
+ You may prepare one or more files that describes fragments, see <?_wxt xlink id="Fragments"?>,
+ and use these fragments simply by using a fragment PI, see <?_wxt xlink id="PIFragment"?> 
+</p>
+<p>
+An fragments file is validated according to the following scheme:
+</p>
+<div>
+<?_wxt importtxt location="fragments.xsd" lang="lang-xml"?>
+</div>
+<p>
+ The relative addresses appearing in the fragments are supposed to be correct relative to the file.
+ This may be changed by the <em>catalog</em>-attribute in the root element fragments.
+</p>
+<p>
+A sample fragments file:
+</p>
+<div>
+<?_wxt importtxt location="../script/samples/myfragments.xml" lang="lang-xml"?>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Testing</title>
+	<link href="templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.min.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1 wxtselected">Welcome</div>
+<div class="level1">
+<a href="page1.html" onmouseout="javascript:popunpop('welcome1',event);" onmouseover="javascript:popunpop('welcome1',event);">Page1</a>
+<div class="wxtsummary" id="welcome1" style="display: none;">
+<div class="header">Page1</div>More demonstration of HTML-import</div>
+</div>
+<div class="level1">
+<a href="page2.html" onmouseout="javascript:popunpop('welcome2',event);" onmouseover="javascript:popunpop('welcome2',event);">Page2</a>
+<div class="wxtsummary" id="welcome2" style="display: none;">
+<div class="header">Page2</div>Incomplete content to be tidyed</div>
+</div>
+<div class="level1">
+<a href="page3.html" onmouseout="javascript:popunpop('welcome3',event);" onmouseover="javascript:popunpop('welcome3',event);">Page3</a>
+<div class="wxtsummary" id="welcome3" style="display: none;">
+<div class="header">Page3</div>Incomplete content to be tidyed</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is html and contents is xml.
+</p>
+<h2>A simple import of html</h2>
+<div>
+<div class="source1">
+<p>Hallo dette er importert tekst pakket i en p-tag, importert med xpath</p>
+</div>
+</div>
+<p>
+<div class="source2">
+  Hallo dette er importert tekst upakket, importert ved cssselector 
+</div>
+</p>
+<hr/>
+<p>
+<div class="source4"> 
+ <p>bare et bilde</p> 
+ <img src="content/images/bs1.png"/> 
+</div>
+</p>
+<hr/>
+<p>
+<div class="source3"> 
+ <p>Vil PI overleve en cssselector?</p> 
+ <div>
+  <div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/simplehtml.html</div>
+<div class="content" style="display:none">
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;!DOCTYPE <span class="tag">html</span>&gt;
+&lt;<span class="tag">html</span>&gt;
+&lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">meta</span> charset="<span class="str">UTF-8"</span>/&gt;
+    &lt;<span class="tag">title</span>&gt;Testing&lt;/<span class="tag">title</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+        
+&lt;<span class="tag">div</span> class="<span class="str">source1"</span>&gt;
+&lt;<span class="tag">p</span>&gt;Hallo dette er importert tekst pakket <span class="tag">i</span> en <span class="tag">p</span>-tag, importert med xpath&lt;/<span class="tag">p</span>&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">div</span> class="<span class="str">source2"</span>&gt;
+Hallo dette er importert tekst upakket, importert ved cssselector
+&lt;/<span class="tag">div</span>&gt;
+  
+&lt;<span class="tag">div</span> class="<span class="str">source3"</span>&gt;
+&lt;<span class="tag">p</span>&gt;Vil PI overleve en cssselector?&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;&lt;?_wxt expandable location="<span class="str">simplehtml.html"</span> 
+       lang="<span class="str">lang-html"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">div</span> class="<span class="str">source4"</span>&gt;
+&lt;<span class="tag">p</span>&gt;bare et bilde&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">img</span> src="<span class="str">images/bs1.png"</span>/&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;
+</pre>
+</div>
+</div> 
+ </div> 
+</div>
+</p>
+<hr/>
+<h3>Content file for this page</h3>
+<div>
+<div class="wxtexpandable">
+<div class="header">
+<span class="off" onclick="javascript:toggleExpand(this)">_</span>content/welcome.html</div>
+<div class="content" style="display:none">
+<pre class="lang-html readyandpretty skiptranslate">
+&lt;!DOCTYPE <span class="tag">html</span>&gt;
+&lt;<span class="tag">html</span>&gt;
+&lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">meta</span> charset="<span class="str">UTF-8"</span>/&gt;
+    &lt;<span class="tag">title</span>&gt;Testing&lt;/<span class="tag">title</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+        
+&lt;<span class="tag">div</span> class="<span class="str">mainblock"</span>&gt;
+&lt;<span class="tag">h1</span>&gt;Testing PI:importxml&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+   Testing import of material from simple xml.
+   Template is <span class="tag">html</span> and contents is xml.
+&lt;/<span class="tag">p</span>&gt;
+  
+&lt;!--<span class="com"> extract <span class="tag">a</span> header with following text </span>--&gt;
+&lt;<span class="tag">h2</span>&gt;<span class="tag">A</span> simple import of <span class="tag">html</span>&lt;/<span class="tag">h2</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?_wxt importhtml location="<span class="str">simplehtml.html"</span> 
+       xpath="<span class="str">//div[@class='source1']"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+ &lt;<span class="tag">p</span>&gt;
+&lt;?_wxt importhtml location="<span class="str">simplehtml.html"</span> 
+       cssselector="<span class="str">div.source2"</span>?&gt;
+&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">hr</span>/&gt;
+ &lt;<span class="tag">p</span>&gt;
+&lt;?_wxt importhtml location="<span class="str">simplehtml.html"</span> 
+       cssselector="<span class="str">div.source4"</span>?&gt;
+&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">hr</span>/&gt;
+ &lt;<span class="tag">p</span>&gt;
+&lt;?_wxt importhtml location="<span class="str">simplehtml.html"</span> 
+       cssselector="<span class="str">div.source3"</span>?&gt;
+&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">hr</span>/&gt;
+  
+&lt;<span class="tag">h3</span>&gt;Content file for this page&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?_wxt expandable location="<span class="str">welcome.html"</span> 
+       lang="<span class="str">lang-html"</span> keeplinks="<span class="str">no"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">div</span>&gt; &lt;!--<span class="com"> mainblock </span>--&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+		</div>
+
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

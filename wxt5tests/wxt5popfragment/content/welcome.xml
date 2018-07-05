@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:popfragment</h1>
+<h2>Some text</h2>
+<p>
+ Just move the cursor over this text and you will <?_wxt popfragment id="self" text="see what I "?>mean.
+</p>
+
+<p>
+<?_wxt popfragment id="Ronaldinho"?> and <?_wxt popfragment id="Kaka"?> are two Brazilian footballers
+ who have been for <?_wxt popfragment id="milan" text="AC Milan"?> 
+</p>
+
+
+<hr/>
+<h3>Content file for this page</h3>
+<div>
+<?_wxt popup location="welcome_xml.html" sourcelocation="welcome.xml" 
+       lang="lang-xml"?>
+</div>
+
+<h3>Script</h3>
+<div>
+<?_wxt popup location="../script_xml.html" sourcelocation="../script.xml" 
+       lang="lang-xml"?>
+</div>
+
+<h3>Defined fragments</h3>
+<div>
+<?_wxt popup location="mypopfragments_xml.html" sourcelocation="mypopfragments.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

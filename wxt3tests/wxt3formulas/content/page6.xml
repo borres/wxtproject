@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+
+<div id="title">Page1</div>
+        
+<div class="mainblock">
+<h1>Testing PI:formulas</h1>
+
+
+<h2>Google</h2>
+ <p>
+   Formulas produced as <a href="http://code.google.com/apis/chart/docs/gallery/formulas.html">GooglCharts</a>.
+   See also: <a href="http://en.wikipedia.org/wiki/Help:Displaying_a_formula">Wikipedia</a>
+   and <a href="http://www.cs.cornell.edu/Info/Misc/LaTeX-Tutorial/Fonts.html">Beginning LaTex</a>
+   and <a href="http://www.math.uiuc.edu/~hildebr/tex/course/intro2.html">Introduction to LaTeX: 2. Typing Math</a>
+</p>
+
+<h2>collected from formula-file</h2>
+<div>
+<?_wxt formula id="gf21"?>
+</div>
+
+<h2>direct source</h2>
+
+<div>
+<?_wxt formula type="google"  id="google2" 
+  source="\tiny\sqrt[3]{\frac{r}{5}}"?>
+
+<?_wxt formula type="google"  id="google3" 
+  source="\small\sqrt[3]{\frac{r}{5}}"?>
+
+<?_wxt formula type="google" id="google4" 
+  source="\sqrt[3]{\frac{r}{5}}"?>
+
+<?_wxt formula type="google"  id="google5" 
+  source="\large\sqrt[3]{\frac{r}{5}}"?>
+
+<?_wxt formula type="google" id="google6"  
+  source="\huge\sqrt[3]{\frac{r}{5}}"?>
+</div>
+
+
+<div>
+<?_wxt formula id="google4" size="tiny" color="#FF0000"?>
+<?_wxt formula id="google4"  size="small" backcolor="#00FFFF"?>
+<?_wxt formula id="google4" backcolor="#FF00FF" color="#FFFF00"?>
+<?_wxt formula id="google4"  size="large" backcolor="#FFFF00" color="#0000FF"?>
+<?_wxt formula id="google4"   size="huge" backcolor="#EEEEEE"?>
+</div>
+
+<div style="background-color:yellow">
+<?_wxt formula id="gf21"?>
+</div>
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="page6.xml" lang="lang-xml"?>
+</div>
+<h2>Formula file</h2>
+<div>
+<?_wxt expandable location="googleformulas.xml" lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+
+</html>

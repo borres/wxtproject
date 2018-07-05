@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>test</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+
+
+<!-- logo -->
+<div id="logo"> 
+	<a href="http://www.it.hiof.no"> <img alt="logo" src="../templates/logo.png" style="border:none"/> </a> 
+</div>
+<!-- banner -->
+<div id="banner">
+  <p class="topright">Østfold University College</p>
+  <p class="sitename">Test package for WXT</p>
+</div>
+
+<div id="all">
+
+
+<!-- left menu -->
+<div class="menu" id="menu">
+	<div class="wxtmodulemenu">
+<div class="level1">
+<a href="index.html" onmouseout="javascript:popunpop('transform1',event);" onmouseover="javascript:popunpop('transform1',event);">Welcome</a>
+<div class="wxtsummary" id="transform1" style="display: none;">
+<div class="header">Welcome</div>Demonstration of text import</div>
+</div>
+<div class="level1">
+<a href="code.html" onmouseout="javascript:popunpop('transform2',event);" onmouseover="javascript:popunpop('transform2',event);">Pretty Code</a>
+<div class="wxtsummary" id="transform2" style="display: none;">
+<div class="header">Pretty Code</div>Demonstration of programcode import</div>
+</div>
+<div class="level1">Transformed input</div>
+</div>
+</div>
+
+
+
+<!-- content -->
+<div class="content">
+	<div>
+<!-- empty: <?_wxt path  divider=" > " ?> -->
+</div>
+	<div class="collectable">
+		<div class="main">
+			<h1>Testing PI:importtxt</h1>
+<p>
+   Testing use of transformation and importtxt.
+   Transforming a XML-file to text before importing from that text.<br/> 
+   Two files are involved:  
+   <span>
+   <span class="wxtpopup" onclick="javascript:simplepopup('content/transform/all_results_xml.html','popup','*')" title="popup">XML file</span>
+</span>
+	and
+   <span>
+   <span class="wxtpopup" onclick="javascript:simplepopup('content/transform/trans1_xsl.html','popup','*')" title="popup">transformation</span>
+</span>
+</p>
+<div>
+<h3>Athens</h3>
+<table>
+<tr colspan="3">
+<th>400m</th>
+</tr>
+<tr>
+<td>Jeremy Wariner</td>
+<td>USA</td>
+<td>44.00</td>
+</tr>
+<tr>
+<td>Otis Harris</td>
+<td>USA</td>
+<td>44.16</td>
+</tr>
+<tr>
+<td>Derrick Brew</td>
+<td>USA</td>
+<td>44.42</td>
+</tr>
+<tr>
+<td>Alleyne Francique</td>
+<td>GRN</td>
+<td>44.66</td>
+</tr>
+<tr>
+<td>Brandon Simpson</td>
+<td>JAM</td>
+<td>44.76</td>
+</tr>
+<tr>
+<td>Davian Clarke</td>
+<td>JAM</td>
+<td>44.83</td>
+</tr>
+<tr>
+<td>Leslie Djhone</td>
+<td>FRA</td>
+<td>44.94</td>
+</tr>
+<tr>
+<td>Michael Blackwood</td>
+<td>JAM</td>
+<td>45.55</td>
+</tr>
+</table>
+</div>
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<pre class="prettyprint lang-xml skiptranslate" id="transform7">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;velkommen&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;div class="mainblock"&gt;
+&lt;h1&gt;Testing PI:importtxt&lt;/h1&gt;
+ &lt;p&gt;
+   Testing use of transformation and importtxt.
+   Transforming a XML-file to text before importing from that text.&lt;br/&gt; 
+   Two files are involved:  
+   &lt;span&gt;
+   &lt;?_wxt popup sourcelocation="transform/all_results.xml" 
+          location="transform/all_results_xml.html"
+          lang="lang-xml" text="XML file"?&gt;&lt;/span&gt;
+    and
+   &lt;span&gt;
+   &lt;?_wxt popup sourcelocation="transform/trans1.xsl" 
+          location="transform/trans1_xsl.html"
+          lang="lang-xml" text="transformation"?&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div &gt;
+&lt;?_wxt importtxt location="transform/all_results.xml" 
+       transformation="T1(OL='Athens',DISTANCE='400m')"
+       leftpar="&lt;body&gt;" rightpar="&lt;/body&gt;"
+       parse="yes"?&gt;
+&lt;/div&gt;
+
+
+&lt;hr/&gt;
+&lt;h2&gt;Content file for this page&lt;/h2&gt;
+&lt;div&gt;
+&lt;?_wxt importtxt location="transform.xml" 
+       lang="lang-xml"?&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;!-- mainblock --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+		</div>
+		<div>
+<!-- empty: <?_wxt footnote  form="normal" ?> --> </div>
+		<div>
+<div class="wxtreflist1">
+<div class="wxtreflistinner"/>
+</div> </div>
+	</div>
+</div>
+<!-- content -->
+
+
+</div>
+<!-- all -->
+
+<!-- footer -->
+<div class="footer">
+</div>
+<!-- eof footer -->
+
+
+
+</body>
+</html>

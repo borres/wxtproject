@@ -1,0 +1,1991 @@
+
+====================================
+Tuesday, May 7, 2013 - 6:29:16 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:29:16 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+127ms
+
+====================================
+Tuesday, May 7, 2013 - 6:31:33 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:31:33 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+75ms
+
+====================================
+Tuesday, May 7, 2013 - 6:32:41 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:32:41 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+75ms
+
+====================================
+Tuesday, May 7, 2013 - 6:35:03 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:35:03 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+76ms
+
+====================================
+Tuesday, May 7, 2013 - 6:35:41 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:35:41 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+79ms
+
+====================================
+Tuesday, May 7, 2013 - 6:36:42 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:36:42 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+76ms
+
+====================================
+Tuesday, May 7, 2013 - 6:39:51 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:39:51 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+	Failed PI: imporxml location="simplexml.xml" 
+       xpath="//div[class='mainsource']/*"  
+	 unknown PI 
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+100ms
+
+====================================
+Tuesday, May 7, 2013 - 6:41:56 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:41:56 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+	Failed PI: imporxml location="simplexml.xml" 
+       xpath="//div[class='mainsource']/*"  
+	 unknown PI 
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+83ms
+
+====================================
+Tuesday, May 7, 2013 - 6:42:31 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:42:31 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Empty selection
+ empty: <?_wxt importxml  location="content/simplexml.xml" xpath="//div[class='mainsource']/*" ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+89ms
+
+====================================
+Tuesday, May 7, 2013 - 6:44:39 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:44:39 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Empty selection
+ empty: <?_wxt importxml  location="content/simplexml.xml" xpath="//div[class='mainsource']/text()" ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+89ms
+
+====================================
+Tuesday, May 7, 2013 - 6:45:35 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:45:35 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Empty selection
+ empty: <?_wxt importxml  location="content/simplexml.xml" xpath="//div[class='mainsource']/*" ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+86ms
+
+====================================
+Tuesday, May 7, 2013 - 6:47:19 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:47:19 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Empty selection
+ empty: <?_wxt importxml  location="content/simplexml.xml" xpath="//div[class='mainsource']" ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+87ms
+
+====================================
+Tuesday, May 7, 2013 - 6:49:54 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:49:54 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+88ms
+
+====================================
+Tuesday, May 7, 2013 - 6:52:08 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:52:08 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Empty selection
+ empty: <?_wxt importxml  location="content/simplexml.xml" xpath="//div[@class='source2']/*" ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+91ms
+
+====================================
+Tuesday, May 7, 2013 - 6:52:36 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:52:36 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+90ms
+
+====================================
+Tuesday, May 7, 2013 - 6:54:37 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:54:37 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+ empty: <?_wxt footnote  form="normal" ?>
+ empty: <?_wxt reflist  scope="local" ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+85ms
+
+====================================
+Tuesday, May 7, 2013 - 6:55:15 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:55:16 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+84ms
+
+====================================
+Tuesday, May 7, 2013 - 6:56:02 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 6:56:03 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+83ms
+
+====================================
+Tuesday, May 7, 2013 - 7:00:46 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:00:46 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Page1
+	Cannot load template
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+84ms
+
+====================================
+Tuesday, May 7, 2013 - 7:02:54 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:02:54 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Page1
+	Cannot load template
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+84ms
+
+====================================
+Tuesday, May 7, 2013 - 7:04:45 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:06:23 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:08:12 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:08:12 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Page1
+	Cannot load template
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+85ms
+
+====================================
+Tuesday, May 7, 2013 - 7:08:39 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:10:16 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:12:56 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:12:56 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Page1
+ empty: <?_wxt path  divider=" > " ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+114ms
+
+====================================
+Tuesday, May 7, 2013 - 7:17:13 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:18:12 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Page1
+ empty: <?_wxt path  divider=" > " ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+58376ms
+
+====================================
+Tuesday, May 7, 2013 - 7:20:04 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:20:04 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Page1
+ empty: <?_wxt path  divider=" > " ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+112ms
+
+====================================
+Tuesday, May 7, 2013 - 7:30:33 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:30:33 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Page1
+ empty: <?_wxt path  divider=" > " ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+113ms
+
+====================================
+Tuesday, May 7, 2013 - 7:35:16 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:35:16 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+ empty: <?_wxt path  divider=" > " ?>
+Page1
+ empty: <?_wxt path  divider=" > " ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+133ms
+
+====================================
+Tuesday, May 7, 2013 - 7:38:08 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:39:31 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:39:31 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+ empty: <?_wxt path  divider=" > " ?>
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+129ms
+
+====================================
+Tuesday, May 7, 2013 - 7:40:07 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:40:07 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+128ms
+
+====================================
+Tuesday, May 7, 2013 - 7:48:45 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:48:45 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+161ms
+
+====================================
+Tuesday, May 7, 2013 - 7:49:09 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:49:09 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "div" must be terminated by the matching end-tag "</div>".
+	Warning: Attempt to load text and tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+222ms
+
+====================================
+Tuesday, May 7, 2013 - 7:50:26 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:50:27 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "div" must be terminated by the matching end-tag "</div>".
+	Warning: Attempt to load text and tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+221ms
+
+====================================
+Tuesday, May 7, 2013 - 7:51:06 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:54:32 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:54:32 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+224ms
+
+====================================
+Tuesday, May 7, 2013 - 7:56:46 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:56:46 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+226ms
+
+====================================
+Tuesday, May 7, 2013 - 7:59:46 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 7:59:46 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: <?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+  
+<!-- extract a header with following text -->
+<h2>A simple import of xml</h2>
+<div>
+<?_wxt importxml location="simplexml.xml" 
+       xpath="//div[@class='source3']"?>
+</div>
+<hr/>
+  
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="page3.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+</root> because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Could not parse XMLCode
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+259ms
+
+====================================
+Tuesday, May 7, 2013 - 8:01:35 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:01:35 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: <?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+  
+<!-- extract a header with following text -->
+<h2>A simple import of xml</h2>
+<div>
+<?_wxt importxml location="simplexml.xml" 
+       xpath="//div[@class='source3']"?>
+</div>
+<hr/>
+  
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="page3.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+</root> because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Could not parse XMLCode
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+251ms
+
+====================================
+Tuesday, May 7, 2013 - 8:04:05 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:04:05 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	C:\web\wxt6tests\simplecontent\content\page4.xml (The system cannot find the file specified)
+	Failed PI: <?_wxt expandable  location="content/page4.xml" lang="lang-xml" ?>   
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+247ms
+
+====================================
+Tuesday, May 7, 2013 - 8:05:07 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:05:08 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	C:\web\wxt6tests\simplecontent\content\page3xml (The system cannot find the file specified)
+	Failed PI: <?_wxt expandable  location="content/page3xml" lang="lang-xml" ?>   
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+246ms
+
+====================================
+Tuesday, May 7, 2013 - 8:05:43 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:05:43 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: <?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+  
+<!-- extract a header with following text -->
+<h2>A simple import of xml</h2>
+<div>
+<?_wxt importxml location="simplexml.xml" 
+       xpath="//div[@class='source4']"?>
+</div>
+<hr/>
+  
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="page3.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+</root> because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Could not parse XMLCode
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+252ms
+
+====================================
+Tuesday, May 7, 2013 - 8:07:29 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:07:35 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: <?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+  
+<!-- extract a header with following text -->
+<h2>A simple import of xml</h2>
+<div>
+<?_wxt importxml location="simplexml.xml" 
+       xpath="//div[@class='source4']"?>
+</div>
+<hr/>
+  
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="page3.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+</root> because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Could not parse XMLCode
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+243ms
+
+====================================
+Tuesday, May 7, 2013 - 8:10:32 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:10:32 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):Page3
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+1ms
+
+====================================
+Tuesday, May 7, 2013 - 8:11:03 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:11:03 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: <?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+  
+<!-- extract a header with following text -->
+<h2>A simple import of xml</h2>
+<div>
+<?_wxt importxml location="simplexml.xml" 
+       xpath="//div[@class='source4']"?>
+</div>
+<hr/>
+  
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="page3.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+</root> because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Could not parse XMLCode
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+159ms
+
+====================================
+Tuesday, May 7, 2013 - 8:11:13 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:15:39 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:15:39 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Could not parse XMLCode
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+158ms
+
+====================================
+Tuesday, May 7, 2013 - 8:16:44 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:17:45 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:17:45 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+158ms
+
+====================================
+Tuesday, May 7, 2013 - 8:18:14 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:18:17 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: <?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is xml and contents is xml.
+  
+<!-- extract a header with following text -->
+<h2>A simple import of xml</h2>
+<div>
+<?_wxt importxml location="simplexml.xml" 
+       xpath="//div[@class='source4']"?>
+</div>
+<hr/>
+  
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="page3.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+</root> because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Could not parse XMLCode
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+162ms
+
+====================================
+Tuesday, May 7, 2013 - 8:19:31 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:35:31 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:37:05 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+93451ms
+
+====================================
+Tuesday, May 7, 2013 - 8:37:29 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:37:32 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+159ms
+
+====================================
+Tuesday, May 7, 2013 - 8:57:06 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 8:57:07 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+	The processing instruction target matching "[xX][mM][lL]" is not allowed.
+	Warning: Attempt to load text and tidy
+Tidy of string failed
+	Trouble parsing code: lang-xml, The processing instruction target matching "[xX][mM][lL]" is not allowed.
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+161ms
+
+====================================
+Tuesday, May 7, 2013 - 8:57:54 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:04:40 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:04:40 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+165ms
+
+====================================
+Tuesday, May 7, 2013 - 9:06:26 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:06:26 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+Attempt to tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+162ms
+
+====================================
+Tuesday, May 7, 2013 - 9:07:19 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:07:19 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+
+	Warning:Attempt to tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+161ms
+
+====================================
+Tuesday, May 7, 2013 - 9:07:35 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:07:35 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Attempt to tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+163ms
+
+====================================
+Tuesday, May 7, 2013 - 9:08:00 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:08:03 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Attempt to tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+176ms
+
+====================================
+Tuesday, May 7, 2013 - 9:29:13 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:29:13 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Attempt to tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+166ms
+
+====================================
+Tuesday, May 7, 2013 - 9:32:31 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:32:31 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building selected module(s):page3
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Attempt to tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+164ms
+
+====================================
+Tuesday, May 7, 2013 - 9:32:58 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:32:59 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Attempt to tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+258ms
+
+====================================
+Tuesday, May 7, 2013 - 9:33:21 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.05.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 7, 2013 - 9:33:24 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning: Attempt to load text and tidy
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+	Warning:Attempt to tidy
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+264ms
+
+====================================
+Tuesday, May 28, 2013 - 6:49:19 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Tuesday, May 28, 2013 - 6:49:24 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+
+--------------------------
+
+Start building all modules
+Welcome
+Page1
+Page2
+	The element type "p" must be terminated by the matching end-tag "</p>".
+"	Warning:Attempt to tidy"
+Page3
+	The element type "p" must be terminated by the matching end-tag "</p>".
+"	Warning:Attempt to tidy"
+	Warning Could not prettify XML: Not well formed XML because: The element type "p" must be terminated by the matching end-tag "</p>".
+"	Warning:Attempt to tidy"
+	Warning Could not prettify XML:   because:  
+Stop building
+-----------------
+Start building second phase
+Stop building second phase
+----------------------
+158ms
+
+====================================
+Tuesday, May 28, 2013 - 6:49:44 AM CEST / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+
+====================================
+Monday, January 27, 2014 - 9:49:51 AM CET / C:/web/wxt6tests/simplecontent/script.xml
+WXT version: 6.2013.06.01
+Scriptvalidation:
+Validation:	Errors: 0	Warnings: 0
+
+Start Parsing Script: C:/web/wxt6tests/simplecontent/script.xml
+Welcome
+Page1
+Page2
+Page3
+Stop Parsing Script: C:/web/wxt6tests/simplecontent/script.xml

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: formulas-element</h1>
+<p>
+  The formulas-element must be contained in a definitions-element
+ </p>
+
+ <p> 
+ This element loads formulas from an XML-file.
+ The formulas may be in one of three forms:
+ </p>
+ <ul>
+ <li>image (png,gif,jpg)</li>
+ <li>mathml</li>
+ <li>latex</li>
+ </ul>
+ <p>
+  All this formulas is available by the PI <?_wxt xlink id="PIformula"?>
+  and they will apear in formulalists, see PI <?_wxt xlink id="PIformulaList"?>.
+ </p>
+ <p>
+  <em>image</em> and <em>latex</em> formulas will be presented as img. 
+ </p>
+ <p>
+  The present version of WXT displays <em>mathml</em> formulas as MathML.
+ </p>
+ <p>
+ See <?_wxt xlink id="aboutformulas"?> for a full description.
+</p>
+
+<pre class="prettyprint lang-html"><![CDATA[<formulas location=""/>]]>
+</pre>
+
+<table cellpadding="10px">
+
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>The location of the document containg the formulas, absolute or relative to the script (anchor).
+    </td>
+  </tr>
+
+</table>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang-html"><![CDATA[<formulas location="myformulas.xml"/>]]>
+</pre>
+<p>Example file:</p>
+<div>
+<?_wxt importtxt location="formula-sample.xml" lang="lang-xml"?>
+</div>
+
+
+
+</body>
+</html>

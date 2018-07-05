@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords">
+	<meta content="wxt3" name="GENERATOR">
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="stylesheet" type="text/css">
+	<link href="../../templates/templatestyle.css" rel="stylesheet" type="text/css">
+	
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="lang-xml readyandpretty skiptranslate">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+            "-//W3C//DTD XHTML 1.0 Strict//EN"&gt;
+&lt;<span class="tag">html</span> <span class="atn">xmlns</span>="<span class="atv">http://www.w3.org/1999/xhtml</span>" <span class="atn">lang</span>="<span class="atv">en</span>" <span class="atn">lang</span>="<span class="atv">en</span>"&gt;
+    &lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">title</span>&gt;velkommen&lt;/<span class="tag">title</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+        
+&lt;<span class="tag">div</span> <span class="atn">class</span>="<span class="atv">mainblock</span>"&gt;
+&lt;<span class="tag">h1</span>&gt;Testing languages&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">p</span>&gt;
+   Testing expandable for "pretty" code. 
+&lt;/<span class="tag">p</span>&gt;
+ 
+&lt;<span class="tag">p</span>&gt;
+Depending on  
+   &lt;<span class="tag">a</span> <span class="atn">href</span>="<span class="atv">http://code.google.com/p/prettyprint/</span>" <span class="atn">class</span>="<span class="atv">external</span>"&gt;
+   Googles prettyprint&lt;/<span class="tag">a</span>&gt;.
+   See 
+   &lt;<span class="tag">a</span>
+           <span class="atn">href</span>="<span class="atv">http://google-code-prettify.googlecode.com/svn/trunk/README.html</span>"
+           <span class="atn">class</span>="<span class="atv">external</span>"&gt;
+   Googles Readme&lt;/<span class="tag">a</span>&gt;. 
+&lt;/<span class="tag">p</span>&gt;
+ 
+&lt;<span class="tag">p</span>&gt;
+The necessary javascript is imported to this page, see source.
+&lt;/<span class="tag">p</span>&gt;
+ 
+&lt;<span class="tag">h2</span>&gt;Java&lt;/<span class="tag">h2</span>&gt;
+ 
+&lt;<span class="tag">p</span>&gt;short and simple&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="java/simple1.java" code="lang-j"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+ 
+&lt;<span class="tag">p</span>&gt;short and simple with syntax error&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="java/bad1.java" code="lang-j"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">p</span>&gt;extract from longer file expanded&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="java/accessutils.java" expanded="yes"
+       leftpar="// appendtotextfile" rightpar="// eofappendtotextfile"
+       code="lang-j"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">h2</span>&gt;Python&lt;/<span class="tag">h2</span>&gt;
+&lt;<span class="tag">p</span>&gt;simple&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="python/domore.py" code="lang-py"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">h2</span>&gt;SQL&lt;/<span class="tag">h2</span>&gt;
+&lt;<span class="tag">p</span>&gt;simple and expanded&lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="sql/do.txt"
+       text="some expressions" code="lang-sql"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">hr</span>/&gt;
+&lt;<span class="tag">h2</span>&gt;Content file for this page&lt;/<span class="tag">h2</span>&gt;
+&lt;<span class="tag">div</span>&gt;
+&lt;?<span class="atn">_wxt</span> <span class="atv">expandable location="code.xml" 
+       code="lang-xml"</span>?&gt;
+&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">div</span>&gt; &lt;!--<span class="com"> mainblock </span>--&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;</pre></body>
+</html>

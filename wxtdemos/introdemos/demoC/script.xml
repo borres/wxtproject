@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wscript version="1.0">
+<!--Script for website demoB - bs dec. 2009-->	
+<definitions>
+		<option name="output-format" value="xhtml"/>
+		
+		<fragments location="gfx/myfragments.xml"/>
+		
+		<template id="P" location="gfx/p_template.xml"/>
+		<template id="Q" location="gfx/q_template.xml"/>
+</definitions>
+
+<module name="Travelling" template="P" location="index.html" books="all"
+	description="Introduction to the site">
+	<xmlcontent location="content/b-index.xml"/>
+	<module name="How" template="P" location="pages\how.html" books="all"
+		description="How this site is built">
+		<xmlcontent location="content\b-how.xml"/>
+	</module>	
+</module>
+
+<module name="Paris" template="Q" location="pages\paris.html" books="all"
+	description="Paris">
+	<xmlcontent location="content\b-paris.xml"/>
+</module>
+
+<module name="Lisboa" template="Q" location="pages\lisboa.html" books="all"
+	description="Lisboa">
+	<xmlcontent location="content\b-lisboa.xml"/>
+</module>
+
+<module name="Hurdal" template="Q" location="pages\hurdal.html" books="all"
+	description="Hurdal">
+	<xmlcontent location="content\b-hurdal.xml"/>
+</module>
+
+</wscript>

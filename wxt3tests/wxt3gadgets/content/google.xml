@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:gadget</h1>
+
+<p>
+ Using google gadgets. There are many to choose from, see
+ <a href="http://www.google.com/ig/directory?synd=open" class="external">
+ Google gadget list</a>
+</p>
+<p>Today</p>
+<div style="padding-bottom:30px">
+<?_wxt gadget fragmentid="today"            
+        movable="yes" 
+        width="320px" height="150px" title="I dag"?>
+</div>
+
+<p>Your IP</p>
+<div style="padding-bottom:30px">
+<?_wxt gadget fragmentid="yourip"
+              movable="yes" 
+              width="320px" height="100px" title="Din IP-adresse"?>
+</div>
+
+<p>Map search</p>
+<div style="padding-bottom:30px">
+<?_wxt gadget location="http://www.gmodules.com/ig/ifr?url=http://www.google.com/uds/modules/elements/localsearch/localsearch.xml&amp;up_location=&amp;up_largeMapMode=1&amp;up_kml=0&amp;up_traffic=&amp;up_locationCacheString=&amp;up_locationCacheLat=&amp;up_locationCacheLng=&amp;up_mapType=m&amp;up_idleZoom=11&amp;up_transitionQuery=&amp;up_rawquery=&amp;up_selectedtext=&amp;synd=open&amp;w=446&amp;h=383&amp;title=__MSG_title__&amp;lang=no&amp;country=ALL&amp;border=%23ffffff%7C0px%2C1px+solid+%23ffdd00%7C0px%2C2px+solid+%23ffdd33%7C0px%2C2px+solid+%23ffee99&amp;output=js"
+              id="gm"
+              movable="yes" 
+              width="446px" height="383px" title="Google Mapsearch"?>
+</div>
+
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt expandable location="google.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

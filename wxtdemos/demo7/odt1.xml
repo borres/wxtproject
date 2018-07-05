@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head> 
+</head>
+<body>
+<div class="content">    
+<h1>ODT</h1>
+<p>testing import from Open Office document</p>
+<hr />
+<div>
+View source: 
+<?_wxt expand sourcelocation="odt1.xml" 
+             location="odt1src.txt" code="mlcode"?>
+</div>
+<hr />
+		<!--[if IE]>
+		<p>Make sure you have installed mathPlayer.<br/>
+		Test (and install) at: 
+		<a href="http://www.dessci.com/en/products/mathplayer/check.htm">
+		www.dessci.com/en/products/mathplayer/check.htm</a>
+		</p>
+		<hr/>
+		<![endif]-->
+<div>
+<?_wxt importodf local="no" 
+       location="http://www.ia.hiof.no/~borres/wxt_test_stuff/doc1.odt"
+	   dpath="/Formula"?>
+</div>
+
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/Image"?>
+</div>
+
+<div>
+<?_wxt importodf location="doc1.odt" usecopy="yes" dpath="/Table"?>
+</div>
+
+<div>
+<?_wxt importodf location="doc1.odt" dpath="/List"?>
+</div>
+
+</div>
+
+
+</body>
+</html>

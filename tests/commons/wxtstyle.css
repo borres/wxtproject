@@ -1,0 +1,361 @@
+@media screen{
+    /* date time stamp */
+    .wxtdate{color: black;}
+    .wxttime{color: black;}
+    .wxtstamp{color:blue; font-style: italic; font-weight: bolder;}
+
+    /* footnotes */
+    .wxtfnmarker{color:red;vertical-align:30%;padding-left:2px;padding-right:2px}
+    .fn{display:none}
+    .wxtfootnote{font-style:italic}
+
+    /* popups */
+    .wxtpopup{cursor:pointer;color:red}
+
+    /* popfragment*/
+    .wxtpopfragment{cursor:pointer;color:red}
+    
+    /* collecting */
+    .wxtcollect{color:green}
+
+    /* collecting summaries */
+    .wxtcollectsummary{margin-left:30px}
+    .wxtcollectsummaryheading{font-weight:bold;margin-top:20px;text-decoration: underline;}
+    .wxtcollectsummarycontent{color:gray}
+
+    /* moduletoc */
+    .wxtmoduletoc .level1{margin-left:2px}
+    .wxtmoduletoc .level2{margin-left:3px}
+    .wxtmoduletoc .level3{margin-left:4px}
+    .wxtmoduletoc a{color:blue; text-decoration: none;}
+
+    /*modulemenu*/
+    .wxtmodulemenu{margin-top:30px;font-size:12px;}
+    .wxtmodulemenu .level1{margin-left:5px;line-height:130%;font-size:12px;font-weight:bold}
+    .wxtmodulemenu .level2{margin-left:15px;line-height:120%;font-size:10px}
+    .wxtmodulemenu .level3{margin-left:25px;line-height:110%;font-size:10px}
+    .wxtmodulemenu .level4{margin-left:35px;line-height:110%;font-size:10px}
+    .wxtmodulemenu .level5{margin-left:40px;line-height:110%;font-size:10px}
+    .wxtmodulemenu a{text-decoration: none;}
+    .wxtmodulemenu a:link{color:black;}
+    .wxtmodulemenu a:visited{color:#8B795E;}
+    .wxtmodulemenu a:hover{border-style:solid;border-width:thin}
+    .wxtmodulemenu a:active{color:red;}
+
+    /*modulemap*/
+    span.wxtmodulemap{background-color: white;}
+    span.wxtmodulemap .level1{margin-left:0px}
+    span.wxtmodulemap .level2{margin-left:0px}
+    span.wxtmodulemap .level3{margin-left:0px}
+
+    div.wxtmodulemap{background-color: white;}/*top,right,bottom,left*/
+    div.wxtmodulemap .level1{padding:0px 0px 5px 10px;font-weight:bold;font-size:14px}
+    div.wxtmodulemap .level2{padding:0px 0px 5px 20px}
+    div.wxtmodulemap .level3{padding:0px 0px 5px 30px}
+    div.wxtmodulemap .level4{padding:0px 0px 5px 40px}
+    div.wxtmodulemap .level5{padding:0px 0px 5px 50px}
+    div.wxtmodulemap .level6{padding:0px 0px 5px 60px}
+
+    .wxtmodulemap a{text-decoration: none;}
+    .wxtmodulemap a:link{color:blue;}
+    .wxtmodulemap a:visited{color:#8B795E;}
+    .wxtmodulemap a:hover{border-style:solid;border-width:thin}
+    .wxtmodulemap a:active{color:red;}
+
+    .wxtmodulemap table {width:100%}
+    .wxtmodulemap table tbody th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    .wxtmodulemap table tbody td{	padding: 0 0.5em;}
+    .wxtmodulemap table tbody td:first-child {}
+    .wxtmodulemap table tbody td+td {	border-left: 1px solid #CCC;text-align: center;}
+
+    /* authorlist */
+    .wxtauthorlist dt div {padding-top:0px; padding-bottom:0px;margin-top:0px}
+    .wxtauthorlist dt div:first-child{font-weight:200;padding-top:10px}
+    .wxtauthorlist dt{margin-top:10px}
+    .wxtauthorlist dd div{padding-top:0px; padding-bottom:0px;margin-top:0px}
+    .wxtauthorlist dd div:first-child{margin-top:10px}
+    .wxtauthorlist a {text-decoration:none}
+
+    /* authors*/
+    .wxtauthors div{color:green}
+    .wxtauthors li{color:green}
+
+	/*path*/
+    .wxtpath{}
+    .wxtpath .level1,.level2,.level3{margin-left:5px;margin-right:5px}
+    .wxtpath a{ text-decoration: none;}
+
+    /*ixword*/
+    .wxtixword{font-style:italic; font-weight:bold}
+
+    /*ixtable*/
+    .wxtixtable{}
+    .wxtixtable table {width:100%}
+    .wxtixtable table tbody th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    .wxtixtable table tbody td{padding: 0 0.5em;} /*border-bottom: 1px solid #CCC;	*/
+    .wxtixtable table tbody td:first-child {}
+    .wxtixtable table tbody td+td {	border-left: 1px solid #CCC;text-align: center;}
+
+    .wxtixtable .word{font-weight:bold;font-size:12px}
+    .wxtixtable .comment{color:gray; margin-left:20px;display:block;font-size:10px}
+    .wxtixtable a{margin-left:10px;display:block;text-decoration: none;font-size:10px;display:list-item}
+
+     /*demolink, or the style(s) set in demolink PI*/
+    .demo{text-decoration: none;}
+    .demo span.print{display:none}
+    .demo .screen{}
+     a.demo:link{background: url(demo.gif) no-repeat 0% 0;padding: 0 0 0 45px;}
+     a.demo:visited{color: purple;background: url(demo.gif) no-repeat 0% -100px;padding: 0  0 0 45px;}
+     a.demo:hover{color: red;background: url(demo.gif) no-repeat 0% -200px;padding: 0 0 0 45px;}
+
+	/* pdfbook link as in demolink */
+    .pdf{text-decoration: none;}
+    .pdf span.print{display:none}
+    .pdf.screen{}
+     a.pdf:link{background: url(print.gif) no-repeat 0% 0;padding: 0 0 0 30px;}
+     a.pdf:visited{color: purple;background: url(print.gif) no-repeat 0% -100px;padding: 0  0 0 30px;}
+     a.pdf:hover{color: red;background: url(print.gif) no-repeat 0% -200px;padding: 0 0 0 30px;}
+
+    /* marking external links from demolink, and other places we use external*/
+     a.external{text-decoration: none;}
+     .external span.print{display:none}
+     .external .screen{}
+     a.external:link{
+            background: url(exicon.gif) no-repeat 100% 0;padding: 0 20px 0 0; }
+    a.external:visited {
+            color: purple; background: url(exicon.gif) no-repeat 100% -100px; padding: 0 20px 0 0; }
+    a.external:hover {
+            color: red; background: url(exicon.gif) no-repeat 100% -200px; padding: 0 20px 0 0; }
+
+    /*xlink*/
+    span.wxtxlink{}
+    .wxtxlink a{font-style: italic;}
+    .wxtxlink img {border: 0px none}
+    .wxtxlink a{ text-decoration: none;}
+
+    /*xlinklist*/
+    div.xlinklist{}
+    .xlinklist a{ text-decoration: none;}
+
+    /* table output from dbimport*/
+    div.db table{margin-top:80px}
+    .dbresult .sql{margin:10px;color:red}
+    .dbresult table{font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;width: 320px;}
+
+    .dbresult th{padding: 0 0.5em;text-align: left;border-bottom: 1px solid #CCC;}
+    .dbresult td{border-bottom: 1px solid #CCC;	padding: 0 0.5em;}
+    .dbresult td:first-child {	width: 40px;	}
+    .dbresult td+td {	border-left: 1px solid #CCC;text-align: center;}
+
+
+    /*code*/
+    .cppcode,.ccode,.csharpcode,.javacode,.javascriptcode,.pythoncode,.mlcode,
+    .xmlcode,.code,.xsltcode,.aspxcode,.csscode {
+	font-size:11px;
+	line-height:133%;
+	white-space: pre;
+	font-family: "Courier new","Courier",mono-space;
+	background-color: #EEEEFF;
+	display: block;
+	border-style:dashed;
+	border-width:1px;
+	padding:5px;
+	background: url('paperbg.gif');
+    }
+
+    pre.ccode{background-color:#F5FFFA;}
+    .ccode .word{color:blue;font-weight:bolder}
+    .ccode .literal{color:green}
+    .ccode .comment{font-style:italic;color:#DD0000}
+
+    pre.cppcode{background-color:#F5FFFA;}
+    .cppcode .word{color:blue;font-weight:bolder}
+    .cppcode .literal{color:green}
+    .cppcode .comment{font-style:italic;color:#DD0000}
+
+    pre.pythoncode{background-color:#FDFCDC}
+    .pythoncode .word{color:blue;font-weight:bold}
+    .pythoncode .literal{color:green}
+    .pythoncode .comment{font-style:italic;color:#DD0000}
+
+    pre.xsltcode{background-color: #F0FFF0;}
+    .xsltcode .word{color:blue}
+    .xsltcode .literal{color:#8B0000}
+    .xsltcode .comment{font-style:italic;color:#DD0000}
+
+    pre.aspxcode{background-color: #F0FFF0;}
+    .aspxcode .word{color:blue}
+    .aspxcode .literal{color:#8B0000}
+    .aspxcode .comment{font-style:italic;color:#DD0000}
+
+    pre.csharpcode{background-color: #F5FFFA;}
+    .csharpcode .word{color:blue;font-weight:bolder}
+    .csharpcode .literal{color:green}
+    .csharpcode .comment{font-style:italic;color:#DD0000}
+
+    pre.javacode{background-color: #F8F8FF}
+    .javacode .word{color:blue;font-weight:bold}
+    .javacode .literal{color:#228B22}
+    .javacode .comment{font-style:italic;color:#DD0000}
+
+    pre.javascriptcode{background-color: #F8F8FF}
+    .javascriptcode .word{color:blue;font-weight:bold}
+    .javascriptcode .literal{color:#228B22}
+    .javascriptcode .comment{font-style:italic;color:#DD0000}
+
+    pre.xmlcode{background-color: #F7F7F7;line-height:150%}
+    .xmlcode .tagname{font-weight:bold; color:blue;font-weight:bolder}
+    .xmlcode .attvalue{font-weight:bold; color:green}
+    .xmlcode .attname{font-weight:bold; color:#8B3A62}
+    .xmlcode .comment{font-style:italic;color:#DD0000}
+
+    pre.csscode{background-color: #F7F7F7;line-height:150%}
+    .csscode .tagname{font-weight:bold; color:blue;}
+    .csscode .word{font-weight:bold; color:green}
+    .csscode .comment{font-style:italic;color:#DD0000}
+
+    /* ajax expansion*/
+    .wxtexpand .header{font-size:12px;line-height:100%;
+               padding: 2px 2px 2px 2px;
+			   min-height:17px;
+               color:#104E8B;
+               display:inline;border-style:solid;border-width:thin}
+    .wxtexpand .on,.wxtexpand .off{
+                    cursor:pointer;
+                    text-align:left;
+                    height:24px;color:#FFF8DC;
+                    padding:0px 2px 0px 20px}
+    .wxtexpand .off{background:url(expand.jpg) no-repeat}
+    .wxtexpand .on{background:url(collapse.jpg) no-repeat}
+    .wxtexpand .content{margin:0px;padding:0px}
+    
+    /* expand by style */
+    .wxtexpandsimple .header{font-size:12px;line-height:100%;
+               padding: 2px 2px 2px 2px;
+			   min-height:17px;
+               color:#104E8B;
+               display:inline;border-style:solid;border-width:thin}
+    .wxtexpandsimple .on,.wxtexpandsimple .off{
+                    cursor:pointer;
+                    text-align:left;
+                    height:24px;color:#FFF8DC;
+                    padding:0px 2px 0px 20px}
+    .wxtexpandsimple .off{background:url(expand.jpg) no-repeat }
+    .wxtexpandsimple .on{background:url(collapse.jpg) no-repeat }
+    .wxtexpandsimple .content{margin:0px;padding:0px}
+
+    /* gadgets */
+    .wxtgadget .header{
+               border-style:solid;
+               border-width:thin;
+               font-size:14px;font-weight:bold;line-height:100%;
+               padding: 2px 0px 2px 2px;
+			   min-height:15px;
+               background:#7AC5CD}
+
+    .wxtgadget .off { cursor:pointer;float:right; min-width:25px; color:#7AC5CD; 
+                     background:#7AC5CD url(gopen.gif) no-repeat}
+    .wxtgadget .on {cursor:pointer;float:right; min-width:25px; color:#7AC5CD;  
+                   background:#7AC5CD url(gclose.gif) no-repeat;
+                   border-bottom-style:none;}
+    .wxtgadget .content{margin:0px;padding:0px}
+
+    /* masking google
+       clumsy to allow partly IE functionality
+    table.wxtgadget > tbody > tr:first-child {display:none}
+    table.wxtgadget > tbody > tr:nth-child(2){display:none}
+    table.wxtgadget  > tbody > tr:nth-child(3){display:block}
+    table.wxtgadget  > tbody > tr:nth-child(4){display:none}
+    table.wxtgadget  > tbody > tr:nth-child(5){display:none}
+    */
+
+    /* ieeelist */
+    .wxtieeelist{background-color:white;margin-left:10px}
+    .wxtieeelist .index  {font-weight:bold}
+    .wxtieeelist .refitem  {padding-left:0px}
+    .wxtieeelist .refitem  div{padding-left:2px}
+    .wxtieeelist .refitem .dateread{font-size:8px}
+    .wxtieeelist span{display:block}
+
+    /*harvard list */
+    .wxtharvardlist{background-color:white;margin-left:10px}
+    .wxtharvardlist .ref{font-weight:bold;margin-left:5px}
+    .wxtharvardlist  .refitem  {padding-left:10px;}
+    .wxtharvardlist  .refitem  div{padding-left:2px}
+    .wxtharvardlist  .refitem  .key{font-weight:bold}
+    .wxtharvardlist span{display:block}
+
+
+    /*modulewise refs in global list for local reference strategy*/
+    .wxtmodref{padding-left:2px;font-size:16px;font-weight:bold;}
+    .wxtmodref a {text-decoration:none; color:black}
+    .wxtmodref .reflist{display:inline}
+
+
+     /*summary acosiated with xlinks used in modulemap, modulemenu*/
+    .wxtsummary {
+            color: #000000;
+            font-size: 11px;
+            padding: 5px;
+            border: 1px solid #324C48;
+            background-color: #EEE8CD;/*yellow;/*#F09450;*/
+            visibility: hidden;
+            position: absolute;
+            left: 50px;
+            z-index: 2000;
+            top: 0px;
+            font-weight:normal;
+            min-width:150px
+        }
+    .wxtsummary .header{display:none}
+
+    /*summary acosiated with popfragment*/
+    .wxtpopsummary {
+            color: #000000;
+            font-size: 12px;
+            padding: 5px;
+            border: 1px solid #324C48;
+            background-color: #EEE8CD;/*yellow;/*#F09450;*/
+            visibility: hidden;
+            position: absolute;
+            left: 50px;
+            z-index: 2000;
+            top: 0px;
+            width: 300px;
+
+        }
+    .wxtimagewrapper{display:inline}
+    .wxtimagewrapper div{display:block;font-style:italic}
+}
+
+
+@media print
+{
+    .demo .screen{display:none}
+    .external .screen{display:none}
+    .wxtpath{display:none}
+
+}
+
+@media projection
+{
+    .demo .screen{display:none}
+    .external .screen{display:none}
+    .path{display:none}
+    .cppcode,.ccode,.csharpcode,.javacode,.javascriptcode,.pythoncode,
+    .mlcode,.xmlcode,.code,.xsltcode,.aspxcode,.csscode
+	{
+	font-size:18px;
+	font-weight:bold;
+	line-height:120%;
+	white-space: pre;
+	font-family: "Courier new","Courier",mono-space;
+	background-color: #EEEEFF;
+	display: block;
+	border-style:dashed;
+	border-width:1px;
+	padding:5px;
+    }
+
+}

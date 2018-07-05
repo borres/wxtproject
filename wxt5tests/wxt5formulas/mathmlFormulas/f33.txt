@@ -1,0 +1,17 @@
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <munderover>
+	<mo stretchy="false">∑</mo>
+	<mrow>
+	  <mi>i</mi>
+	  <mo stretchy="false">=</mo>
+	  <mn>0</mn>
+	</mrow>
+	<mn>99</mn>
+  </munderover>
+  <mroot>
+	<mi>i</mi>
+	<mn>3</mn>
+  </mroot>
+</mrow>
+</math>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- wikiimport test -->
+      <definitions>
+	  <option name="indent-output" value="yes"/>
+      <option name="output-format" value="xhtml"/>
+      <template id="P" location="../templates/p_template.xml"/>
+      <logfile location="../buildlog.txt" />      
+     </definitions>
+        
+     <module description="Demonstration of Wiki import" location="index.html" 
+	        name="Welcome" id="welcome" template="P" books="all">
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+	<module description="More demonstration of Wiki import" location="page1.html" 
+	        name="Page1" id="page1" template="P" books="all">
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+
+    <module description="More demonstration of Wiki import as XML" location="page2.html" 
+	        name="Page2" id="page2" template="P" books="all">
+        <xmlcontent location="content/page2.xml"/>
+	</module>
+	
+ </wscript>

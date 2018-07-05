@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="skiptranslate prettyprint lang-xml" id="welcome5">&lt;?xml version="1.0" encoding="utf-8" standalone="no"?&gt;
+&lt;wscript version="1.0"&gt;    
+      &lt;!-- toc test --&gt;
+      &lt;definitions&gt;
+      &lt;option name="indent-output" value="yes"/&gt;
+        &lt;template id="P" location="../templates/p_template.xml"/&gt; 
+        &lt;template id="AUTO" location="../templates/auto_template.xml"/&gt; 
+        &lt;template id="COLLECT" location="../templates/collect_template.xml"/&gt; 
+        &lt;logfile location="../buildlog.txt" /&gt;        
+     &lt;/definitions&gt;
+        
+     &lt;module description="Demonstration of TOCs ets" location="index.html" 
+            name="Welcome" id="welcome" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/welcome.xml"/&gt;
+    &lt;/module&gt;
+    
+     &lt;module description="Demonstration of a sitemap" location="map.html" 
+            name="Sitemap" id="sitemap" template="P" books="all"&gt;
+        &lt;xmlcontent location="content/map.xml"/&gt;
+    &lt;/module&gt;
+    
+    &lt;module name="Page1" description="Page1 description" location="page1.html"  template="AUTO" books="all"/&gt;
+
+    &lt;module name="Page2" description="Page2 description" location="page2.html"   template="AUTO" books="all,part2"&gt;
+        &lt;module name="Page21" description="Page21 description" location="page21.html"   template="AUTO" books="all,part2"/&gt;
+        &lt;module name="Page22" description="Page22 description" location="page22.html"   template="AUTO" books="all,part2"&gt;
+            &lt;module name="Page221" description="Page221 description" location="page221.html"   template="AUTO" books="all,part2"/&gt;
+         &lt;/module&gt;
+       &lt;module name="Page23" description="Page23 description" location="page23.html"   template="AUTO" books="all,part2"/&gt;
+    &lt;/module&gt;
+    &lt;module name="Page3" description="Page3 description" location="page3.html"   template="AUTO" books="all,part3"&gt;
+        &lt;module name="Page31" description="Page31 description" location="page31.html"   template="AUTO" books="all,part3"/&gt;
+        &lt;module name="Page32" description="Page32 description" location="page32.html"   template="AUTO" books="all,part3"&gt;
+            &lt;module name="Page321" description="Page321 description" location="page321.html"   template="AUTO" books="all,part3"/&gt;
+         &lt;/module&gt;
+       &lt;module name="Page33" description="Page33 description" location="page33.html"   template="AUTO" books="all,part3"/&gt;
+    &lt;/module&gt;
+    
+    &lt;module name="Collect" description="Collect description" location="collect.html"   template="COLLECT" books="collect"/&gt;
+ &lt;/wscript&gt;
+</pre></body>
+</html>

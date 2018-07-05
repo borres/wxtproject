@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: dbcontent-element</h1>
+<p>
+    A dbcontent element tells where the module shall search for its content.
+    The template of the module must have a processing instructions (PI) of type
+    importdb, see: <?_wxt xlink id="ImportDB"?>
+    to realize the actual extraction of content.
+</p>
+<p>
+  A Module may contain 1 DBContent element,
+ </p>
+<pre class="prettyprint lang"><![CDATA[  <dbcontent connection="" />]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>connection</strong>(mandatory)</td>
+    <td>A complete connectionstring.
+    </td>
+  </tr>
+
+  <!--
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong>(optional)</td>
+    <td>An id that identifies this  textcontent in 
+    importdb in a template.
+    </td>
+  </tr>  
+  -->
+  
+  </table>
+
+
+<p>A dbcontent element may not  contain any elements
+</p>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[  <dbcontent connection="jdbc:mysql://a.b.no/vin?user=student&password=student" />]]>
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- script for building demo1 -->
+<wscript version="1.0">    
+<definitions>
+	<option name="indent-output" value="no"/>
+	<option name="expand-all" value="no"/>
+	<option name="default-encoding" value="UTF-8"/>
+	<option name="output-format" value="xhtml"/>
+	<template id="P" location="p_template.xml"/>               
+	<fragments location="halden/lyrics.xml"/>
+</definitions>
+	<module books="all,first" location="index.html" name="Welcome" template="P">
+		<xmlcontent location="welcome.xml"/>
+		<summary><![CDATA[
+		<img style="float:left" src="small-map.png" alt=" "/><div>Places in Norway</div> 
+		<div> Demo of: expand, stamp, date</div>
+		]]></summary>
+	</module>
+	<module books="all,places"  location="places.html" name="Places" template="P">
+		<xmlcontent location="places.xml"/>
+		<summary>
+			<![CDATA[<div>Demo of: modulemap</div>]]>
+		</summary>
+		
+		<module books="all,place" location="halden.html" name="Halden" template="P">
+			<xmlcontent location="halden/halden.xml"/>
+			<summary location="halden/summary.txt"/>
+		</module>
+		<module books="all,place" location="eidsvoll.html" name="Eidsvoll" template="P">
+			<xmlcontent location="eidsvoll/eidsvoll.xml"/>
+			<summary>
+				<![CDATA[<div>Demo of: footnote, importxml</div>]]>
+			</summary>
+		</module>
+		
+	</module>
+</wscript>

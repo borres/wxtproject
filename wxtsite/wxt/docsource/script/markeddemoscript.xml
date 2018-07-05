@@ -1,0 +1,28 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">wscript</span> <span class="attname">version</span>="<span class="attvalue">1.0</span>"&gt;    
+&lt;<span class="tagname">definitions</span>&gt;
+&lt;<span class="tagname">template</span> <span class="attname">id</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">p_template.xml</span>"/&gt;        
+&lt;<span class="tagname">command</span> <span class="attname">id</span>="<span class="attvalue">com1</span>" <span class="attname">line</span>="<span class="attvalue">${_scriptcatalog}/compdf.bat</span>"/&gt;        
+&lt;/<span class="tagname">definitions</span>&gt;
+  
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">Velkommen</span>" <span class="attname">template</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">index.html</span>"&gt;
+  &lt;<span class="tagname">summary</span>&gt;
+    &lt;![CDATA[
+    &lt;p&gt;Welcome&lt;/p&gt;
+    &lt;img src="http://www.ia.hiof.no/~borres/self/self.gif"/&gt;
+    ]]&gt;
+  &lt;/<span class="tagname">summary</span>&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">velkommen.xml</span>"/&gt;
+  &lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">side1</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">template</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">side1.html</span>"&gt;
+    &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">side1.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+    
+  &lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">side2</span>" <span class="attname">books</span>="<span class="attvalue">all</span>" <span class="attname">template</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">side2.html</span>"&gt;
+    &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">side2.xml</span>"/&gt;
+  &lt;/<span class="tagname">module</span>&gt;
+&lt;/<span class="tagname">module</span>&gt;
+  
+&lt;<span class="tagname">module</span> <span class="attname">name</span>="<span class="attvalue">vinbok</span>" <span class="attname">template</span>="<span class="attvalue">P</span>" <span class="attname">location</span>="<span class="attvalue">vinbok.html</span>" <span class="attname">runafter</span>="<span class="attvalue">com1</span>"&gt;
+  &lt;<span class="tagname">xmlcontent</span> <span class="attname">location</span>="<span class="attvalue">vinbok.xml</span>"/&gt;
+&lt;/<span class="tagname">module</span>&gt;
+&lt;/<span class="tagname">wscript</span>&gt;</pre>

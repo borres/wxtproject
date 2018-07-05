@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Testing</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importxml</h1>
+<p>
+   Testing import of material from simple xml.
+   Template is html and contents is xml.
+</p>
+
+  
+<!-- extract a header with following text -->
+<h2>A simple import of html</h2>
+<div>
+<?_wxt importhtml location="simplehtml.html" 
+       xpath="//div[@class='source1']"?>
+</div>
+ <p>
+<?_wxt importhtml location="simplehtml.html" 
+       cssselector="div.source2"?>
+</p>
+<hr/>
+
+ <p>
+<?_wxt importhtml location="simplehtml.html" 
+       cssselector="div.source4"?>
+</p>
+<hr/>
+ <p>
+<?_wxt importhtml location="simplehtml.html" 
+       cssselector="div.source3"?>
+</p>
+<hr/>
+
+  
+<h3>Content file for this page</h3>
+<div>
+<?_wxt expandable location="welcome.html" 
+       lang="lang-html" keeplinks="no"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

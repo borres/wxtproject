@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fragments>
+	<fragment id="banner">
+	<![CDATA[
+	<div>
+	<img src="images/sigma.png" alt="sigma"/>  WXT demo: A document with many sources
+	</div>
+	<hr/>
+	<p/>
+	]]>
+	</fragment>
+	
+	<fragment id="footer">
+	<![CDATA[
+	<div style="margin-top:10px">
+	<span><a href="collected.pdf"> PDF-version</a></span>
+	<span style="margin-left:70px">BS with <?_wxt stamp?> on: <?_wxt date country="en"?></span>
+	</div>
+	]]>
+	</fragment>
+	
+	<fragment id="styles_and_scripts">
+	<![CDATA[
+	<link rel="STYLESHEET" href="../commons/wxtstyle.css"/>
+	<link rel="STYLESHEET" href="specialstyles.css"/>
+	<script type="text/javascript" src="../commons/prototype.js"> </script>
+	<script type="text/javascript" src="../commons/wxtjs.js"> </script>
+		]]>
+	</fragment>
+</fragments>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="../commons/frontstyle.css"/>
+ 	<link rel="STYLESHEET" href="../commons/helpstyle.css"/>
+    <?_wxt fragment id="resources"?>
+</head>
+<body>
+
+<?_wxt fragment id="banner"?>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1"><a href="../index.html" title="Project">Project</a></span> | 
+        <span class="level1"><a href="../wxt/wxt.html" title="Wxt">WXT</a></span> | 
+        <span class="level1"><a href="../wxt/basics.html" title="Basics">Basics</a></span> | 
+        <span class="level1"><a href="../wxt/download.html" title="download page">Download</a></span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../wxt/samples.html" title="samples page">Samples</a></span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<?_wxt modulemenu root="Documentation" cols="1"?>
+
+	</div> <!-- left menues -->
+	</div><!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <?_wxt importxml  xpath="//body/*"?>
+
+    </div><!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+<?_wxt fragment id="footer"?>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>XPath</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="../script/start.html" title="Script">Script</a>
+</div>
+<div class="level2">
+<a href="../pi/start.html" title="PI">PI</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Concepts">Concepts</a>
+</div>
+<div class="level3">
+<a href="styles.html" title="Styles">Styles</a>
+</div>
+<div class="level3">
+<a href="codefragments.html" title="Code">Code</a>
+</div>
+<div class="level3">
+<a href="aboutreferences.html" title="References">References</a>
+</div>
+<div class="level3">
+<a href="aboutformulas.html" title="Formulas">Formulas</a>
+</div>
+<div class="level3">
+<a href="aboutimages.html" title="Images">Images</a>
+</div>
+<div class="level3">
+<a href="aboutfragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level3">
+<a href="javascript.html" title="Javascript">Javascript</a>
+</div>
+<div class="level3 wxtselected">XPath</div>
+<div class="level3">
+<a href="cssselector.html" title="CSSselect">CSSselect</a>
+</div>
+<div class="level3">
+<a href="publication.html" title="Publication">Publication</a>
+</div>
+<div class="level3">
+<a href="references.html" title="References">References</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>XPATH in short</h1>
+<p>XPATH was first initiated as a integral, and necessary, part of XSLT,
+  but has been lifted out as a concept of its own that is usable in many
+  connections. XPATH is a general mechanisme to identify items in a treestructured document.
+  </p>
+<p>The basic structure in an XPATH-expression is best considered as an
+  analogy to a unix filepath. We always have to take into account what is called
+  "the context node". In other words we must be aware of where we stand in the tree
+  when we try to formulate an expression that brings us to another place.
+  When you formulate XPATH-expressions in connection with WXT we allways
+  use the root as context node. The task is allways to select a set of
+  nodes somewhere down in the tree (down since trees in the computerworld
+  for some reason allways has the root up). Below you will find some
+  explained examples of expressions that probably is typical for
+  the kind of selections we will use in connection with WXT. The examples
+  are inspired by (X)HTML to support your asossiations,
+  but are of course not limited to this XML-dialect.
+  </p>
+<table>
+ <tr>
+    <td>//div</td>
+    <td>All elements of type div in the document</td>
+ </tr>
+ <tr>
+    <td>//div/p</td>
+    <td>All elements of type p which are children of div elements</td>
+ </tr>
+  <tr>
+    <td>//div/*</td>
+    <td>All elements which are children of div elements </td>
+ </tr>
+   <tr>
+    <td>//*[@class='mlcode']</td>
+    <td>All elements which has an attribute with name class with value mlcode </td>
+ </tr>
+   <tr>
+    <td>//div/*[@class='mlcode']</td>
+    <td>All elements which are children of div-elements and has an attribute with name class with value mlcode </td>
+ </tr>
+   <tr>
+    <td>//script[@type='text/javascript'] </td>
+    <td>All javascript nodes </td>
+ </tr>
+   <tr>
+    <td>//div[@class='clevel1'][position()=2]</td>
+    <td>The second div-element with an attribute class with value clevel1 </td>
+ </tr>
+   <tr>
+    <td>//h1 | //p </td>
+    <td>All elements of type h1 or p </td>
+ </tr>
+   <tr>
+    <td>//div[contains(@class,'1')]</td>
+    <td>All div elements which has an attribute class that contains the letter 1 </td>
+ </tr>
+
+ </table>
+<p>You may find numerous examples and XSL-tutorials on the net.
+        It may be usefull to experiment with a tool
+	like XPath Explorer <span class="wxtref" title="XPath Explorer | http://sourceforge.net/">
+<a href="http://sourceforge.net/"> [22] </a>
+</span>.
+	</p>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

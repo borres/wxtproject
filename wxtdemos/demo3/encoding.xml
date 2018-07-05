@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Import Text</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_encoding.xml" 
+             sourcelocation="encoding.xml" code="xmlcode"?>
+</div>
+<hr/>
+    <div>
+        From utf-8: 
+        <?_wxt importtxt location="utftext.txt"?>
+    </div>
+    <div>
+        From ISO-8859-1(eksplisitt encoding): 
+        <?_wxt importtxt location="isotext.txt" encoding="ISO-8859-1"?>
+    </div>
+    <div>
+        From ISO-8859-1: 
+        <?_wxt importtxt location="isotext.txt"?>
+    </div>    
+    <hr/>
+    <h2>
+        Import of xml
+    </h2>
+    <div>
+        From iso-8859-1: 
+        <?_wxt importxml location="someiso.html" xpath="//div[@id='myname']/child::text()"?>
+    </div>
+    <div>
+        From utf-8: 
+        <?_wxt importxml location="someutf.html" xpath="//div[@id='myname']/child::text()"?>
+    </div>
+    
+    <hr/>
+    <h2>
+        Import of fragments defined in the script
+    </h2>
+    <div>
+        From iso-8859-1: 
+        <?_wxt fragment id="fiso"?>
+    </div>
+    
+    <div>
+        From iso-8859-1 (eksplisitt encoding): 
+        <?_wxt fragment id="fisoexplisitt"?>
+    </div>
+    <div>
+        From utf-8: 
+        <?_wxt fragment id="futf""?>
+    </div>
+    </div>
+</data>

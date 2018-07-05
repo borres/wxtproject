@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+        
+<div class="source1">
+<p>Hallo dette er importert tekst pakket i en p-tag</p>
+</div>
+
+<div class="source2">
+Hallo dette er importert tekst upakket
+</div>
+  
+<div class="source3">
+<p>Bygger på en template som ikke har xml-header, men er en ren html5 side</p>
+<p>Denne parses, uten tidy, men hvordan kommuniseres encoding ?</p>
+</div>
+
+<div class="source4">
+<p>Bygger på en template som ikke har xml-header, men er en ren html5 side</p>
+<p>templaten parses, uten tidy, men hvordan kommuniseres encoding ?</p>
+<p>Sidematerialet som importerer denne teksten er ikke well formet og må renses</p>
+</div>
+
+</root>

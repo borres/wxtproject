@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="reflist">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+               <xs:element ref="ref" maxOccurs="unbounded"/>
+            </xs:choice>
+            <xs:attribute name="version" type="xs:decimal" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ref">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="title" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="authors" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="year" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="chaptertitle" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="journal" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="editor" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="place" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="publisher" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="pages" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="isbn" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="uri" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="text" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="categories" minOccurs="0" maxOccurs="1"/>
+
+             </xs:all>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <!-- this is the definitions -->
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="authors" type="xs:string"/>
+    <xs:element name="year" type="xs:short"/>
+    <xs:element name="chaptertitle" type="xs:string"/>
+    <xs:element name="journal" type="xs:string"/>
+    <xs:element name="editor" type="xs:string"/>
+    <xs:element name="place" type="xs:string"/>
+    <xs:element name="publisher" type="xs:string"/>
+    <xs:element name="pages" type="xs:string"/>
+    <xs:element name="isbn" type="xs:string"/>
+    <xs:element name="uri">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:anyURI">
+                    <xs:attribute name="dateread" type="xs:string" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="text" type="xs:string"/>
+    <xs:element name="categories" type="xs:string"/>
+</xs:schema>

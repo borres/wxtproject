@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <div class="content">    
+    <h1>Demolinks</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_demolinks.xml" 
+             sourcelocation="demolinks.xml" code="xmlcode"?>
+</div>
+<hr/>   
+   <div>
+       <?_wxt demolink uri="http://www.ia.hiof.no" 
+                text="Høgskolen i Østfold" style="demo"?>
+   </div>    
+   <hr/>    
+   <div>
+       <?_wxt demolink uri="http://www.ia.hiof.no" text="Høgskolen i Østfold" 
+                style="demo" 
+                title="Høgskolen i Østfold"?>
+   </div>    
+   <hr/>    
+   <div>
+       <?_wxt demolink uri="http://www.ia.hiof.no" 
+                style="demo" 
+                title="Høgskolen i Østfold"?>
+   </div>    
+   <hr/>    
+   <div>
+       Du finner mer på høgskolens websider: 
+       <?_wxt demolink uri="http://www.ia.hiof.no" 
+                style="demo" 
+                text="Høgskolen i Østfold"
+                title="Høgskolen i Østfold"?>
+   </div>    
+  <hr/>    
+   <div>
+       Du finner mer på høgskolens websidene til Høgskolen i Østfold: 
+       <?_wxt demolink uri="http://www.ia.hiof.no" 
+                style="demo" 
+                text="HIO"
+                title="Høgskolen i Østfold"?>
+   </div>    
+   <hr/>    
+   <div>
+       Du finner mer på: 
+       <?_wxt demolink uri="http://www.ia.hiof.no/~borres/ml" 
+                    text="Dokumenter, markup og web" 
+                    style="demo" 
+                    title="Børres sider"?>
+   </div>    
+   </div>
+</data>

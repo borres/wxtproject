@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Javascript</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="../script/start.html" title="Script">Script</a>
+</div>
+<div class="level2">
+<a href="../pi/start.html" title="PI">PI</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Concepts">Concepts</a>
+</div>
+<div class="level3">
+<a href="styles.html" title="Styles">Styles</a>
+</div>
+<div class="level3">
+<a href="codefragments.html" title="Code">Code</a>
+</div>
+<div class="level3">
+<a href="aboutreferences.html" title="References">References</a>
+</div>
+<div class="level3">
+<a href="aboutformulas.html" title="Formulas">Formulas</a>
+</div>
+<div class="level3">
+<a href="aboutimages.html" title="Images">Images</a>
+</div>
+<div class="level3">
+<a href="aboutfragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level3 wxtselected">Javascript</div>
+<div class="level3">
+<a href="xpath.html" title="XPath">XPath</a>
+</div>
+<div class="level3">
+<a href="cssselector.html" title="CSSselect">CSSselect</a>
+</div>
+<div class="level3">
+<a href="publication.html" title="Publication">Publication</a>
+</div>
+<div class="level3">
+<a href="references.html" title="References">References</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Javascript</h1>
+<p>WXT involves Javascript for the following reasons:
+    </p>
+<ul>
+        <li>producing popup windows. The PI: <span class="wxtxlink">
+<a href="../pi/popup.html" title="Popup">Popup</a>
+</span> </li>
+        <li>realizing expansion/unexpansion of hidden fragments. The PI: <span class="wxtxlink">
+<a href="../pi/expandable.html" title="Expandable">Expandable</a>
+</span>
+</li>
+        <li>realizing expansion/unexpansion of gadgets. The PI: <span class="wxtxlink">
+<a href="../pi/gadget.html" title="Gadget">Gadget</a>
+</span>
+</li>
+        <li>dragging gadgets. The PI: <span class="wxtxlink">
+<a href="../pi/gadget.html" title="Gadget">Gadget</a>
+</span>
+</li>
+		<li>expanding and collapsing images. The PI: <span class="wxtxlink">
+<a href="../pi/imagelist.html" title="Imagelist">Imagelist</a>
+</span>
+</li>
+		<li>colorcoding language. The PIs: <span class="wxtxlink">
+<a href="../pi/expandable.html" title="Expandable">Expandable</a>
+</span>, <span class="wxtxlink">
+<a href="../pi/importtxt.html" title="ImportTXT">ImportTXT</a>
+</span>, <span class="wxtxlink">
+<a href="../pi/popup.html" title="Popup">Popup</a>
+</span>
+</li>
+    </ul>
+<p>
+	The code cited below is distributed with WXT, see catalog <em>usefull</em> in the dist catalog.
+	The script is based on jQuery <span class="wxtref" title="jQuery | http://jquery.com/">
+<a href="http://jquery.com/"> [20] </a>
+</span>
+	</p>
+<p>
+    The dragging stratgy is adopted from Quirksmode, Drag and drop <span class="wxtref" title="Quirksmode Drag Drop | http://www.quirksmode.org/js/dragdrop.html">
+<a href="http://www.quirksmode.org/js/dragdrop.html"> [21] </a>
+</span>.
+    </p>
+<div>
+	<pre class="lang-js readyandpretty skiptranslate">
+<span class="com">/*
+JS-library for wxt
+- popup as in PI popup:
+     simplepopup(url,wname,wstyle)
+- toggling visibility of popupfragments
+      getPos (obj), popunpop(targetID,e)
+- preparing prettifyed code
+      prepareCode    
+- simple inline expansions as in PI expandable:
+      toggleExpand(elt)
+- dragging gadgets
+    dragdrop-obj
+    addEventSimple
+    removeEventSimple
+- expanding and collapsing images from thumbs
+    - initImages
+Style classes for the actual elements must be set
+see sample: wxtstyles.css distributed with WXT
+B.Stenseth 2011.
+*/</span>
+<span class="com">// --------- simple page popup</span>
+<span class="kwd">function</span> simplepopup(theURL,wname,wstyle)
+{
+<span class="kwd">if</span>(wstyle=='<span class="str">*'</span>)
+    wstyle='<span class="str">scrollbars=yes,resizable=yes,width=600,height=600,status=no'</span>;
+<span class="kwd">try</span>{
+    newwindow=window.open(theURL, wname, wstyle);
+    <span class="kwd">if</span> (window.focus) {newwindow.focus()}
+}
+<span class="kwd">catch</span>(E){
+    alert('<span class="str">You may have blocked popups'</span>);
+  }
+}
+<span class="com">//eofpopup</span>
+<span class="com">// --------- popfragments</span>
+<span class="kwd">function</span> getPos (obj) {
+    <span class="kwd">var</span> output = <span class="kwd">new</span> Object();
+    <span class="kwd">var</span> mytop=0, myleft=0;
+    <span class="kwd">while</span>( obj) {
+    mytop+= obj.offsetTop;
+    myleft+= obj.offsetLeft;
+    obj= obj.offsetParent;
+    }
+    output.left = myleft;
+    output.top = mytop;
+    <span class="kwd">return</span> output;
+}
+<span class="kwd">function</span> popunpop(targetID,e)
+{
+    <span class="com">// which event</span>
+    <span class="kwd">if</span> (!e) <span class="kwd">var</span> e = window.event;
+    <span class="com">// which was the element</span>
+    <span class="kwd">var</span> targetElt=document.getElementById(targetID);
+    <span class="com">// turn on or off</span>
+    <span class="kwd">if</span> (targetElt.style.display=='<span class="str">none'</span>)
+        targetElt.style.display='<span class="str">block'</span>;
+    <span class="kwd">else</span>
+        targetElt.style.display='<span class="str">none'</span>;
+    <span class="com">// turn off</span>
+    <span class="kwd">if</span>(targetElt.style.display=='<span class="str">none'</span>)
+        <span class="kwd">return</span>;
+    <span class="com">// turn on</span>
+    <span class="com">// where was the mouseclick</span>
+    <span class="kwd">var</span> posx = 0;
+    <span class="kwd">var</span> posy = 0;
+    
+    <span class="kwd">var</span> p=getPos(e.SrcElement);
+    posx=p.left;
+    posy=p.top;
+    
+    
+    <span class="kwd">if</span> (e.pageX || e.pageY)     {
+        posx = e.pageX;
+        posy = e.pageY;
+    }
+    <span class="kwd">else</span> <span class="kwd">if</span> (e.clientX || e.clientY)     {
+        posx = e.clientX + document.body.scrollLeft
+            + document.documentElement.scrollLeft;
+        posy = e.clientY + document.body.scrollTop
+            + document.documentElement.scrollTop;
+    }
+    
+    posx=posx+10;
+    posy=posy+10;
+    <span class="com">// posx and posy now contain the mouse position relative to the document</span>
+    targetElt.style.left='<span class="str">'</span>+posx+'<span class="str">px'</span>;
+    targetElt.style.top='<span class="str">'</span>+posy+'<span class="str">px'</span>;        
+}
+<span class="com">// --------------- preparecode  </span>
+<span class="com">// avoid multiple prettifying when added calls to prettyPrint</span>
+<span class="com">// prettyprint and readyandpretty should be defined identically in stylesheet</span>
+<span class="kwd">function</span> prepareCode()
+{        
+    <span class="kwd">var</span> list=$('<span class="str">.prettyprint'</span>);
+    <span class="kwd">if</span>(list.length &gt;0)
+        prettyPrint();
+    <span class="kwd">for</span>(<span class="kwd">var</span> ix=0;ix&lt;list.length;ix++)
+    {
+        <span class="kwd">var</span> elt = list[ix];
+        <span class="kwd">var</span> C=elt.className;
+        C=C.replace('<span class="str">prettyprint'</span>,'<span class="str">readyandpretty'</span>);
+        elt.className=C;
+    };
+}
+<span class="com">// -------------- toggle expand ---------------</span>
+<span class="com">//togglegadget</span>
+<span class="com">// Toggles the visibilty og an element as in PI expandable</span>
+<span class="com">// and prepares for next toggle</span>
+<span class="kwd">function</span> toggleExpand(elt)
+{
+    contentElt=elt.parentNode.parentNode.getElementsByTagName('<span class="str">div'</span>)[1];
+    <span class="kwd">if</span>(elt.className.indexOf("<span class="str">off"</span>)!=-1)
+    {
+        contentElt.style.display="<span class="str">block"</span>;
+        elt.className="<span class="str">on"</span>;
+    }
+    <span class="kwd">else</span>
+    {
+        contentElt.style.display="<span class="str">none"</span>;
+        elt.className="<span class="str">off"</span>;
+    }
+}
+<span class="com">//eoftogglegadget</span>
+<span class="com">// those two are no longer produced by WXT:</span>
+<span class="kwd">function</span> toggleExpandSimple(elt){    toggleExpand(elt)}
+<span class="kwd">function</span> toggleGadget(elt){    toggleExpand(elt)}
+<span class="com">//eofexpand</span>
+<span class="com">//draggadget </span>
+<span class="com">// modified from: http://www.quirksmode.org/js/dragdrop.html</span>
+<span class="kwd">var</span> MAX_Z_INDEX=1;
+<span class="kwd">function</span> addEventSimple(obj,evt,fn) {
+    <span class="kwd">if</span> (obj.addEventListener)
+        obj.addEventListener(evt,fn,<span class="kwd">false</span>);
+    <span class="kwd">else</span> <span class="kwd">if</span> (obj.attachEvent)
+        obj.attachEvent('<span class="str">on'</span>+evt,fn);
+}
+<span class="kwd">function</span> removeEventSimple(obj,evt,fn) {
+    <span class="kwd">if</span> (obj.removeEventListener)
+        obj.removeEventListener(evt,fn,<span class="kwd">false</span>);
+    <span class="kwd">else</span> <span class="kwd">if</span> (obj.detachEvent)
+        obj.detachEvent('<span class="str">on'</span>+evt,fn);
+}
+dragDrop = {
+    initialMouseX: undefined,
+    initialMouseY: undefined,
+    startX: undefined,
+    startY: undefined,
+    draggedObject: undefined,
+    initElement: <span class="kwd">function</span> (element) {
+        <span class="kwd">if</span> (<span class="kwd">typeof</span> element == '<span class="str">string'</span>)
+            element = document.getElementById(element);
+        element.onmousedown = dragDrop.startDragMouse;
+    <span class="com">//-------</span>
+    <span class="kwd">if</span> (element.style.zIndex)
+    {
+        thisIndex=element.style.zIndex;
+        <span class="kwd">if</span> (thisIndex &gt; MAX_Z_INDEX)
+            MAX_Z_INDEX=thisIndex;
+    }
+    <span class="com">//-------</span>
+    },
+    startDragMouse: <span class="kwd">function</span> (e) {
+        dragDrop.startDrag(<span class="kwd">this</span>);
+        <span class="kwd">var</span> evt = e || window.event;
+        dragDrop.initialMouseX = evt.clientX;
+        dragDrop.initialMouseY = evt.clientY;
+        addEventSimple(document,'<span class="str">mousemove'</span>,dragDrop.dragMouse);
+        addEventSimple(document,'<span class="str">mouseup'</span>,dragDrop.releaseElement);
+        <span class="kwd">return</span> <span class="kwd">false</span>;
+    },
+    startDrag: <span class="kwd">function</span> (obj) {
+        <span class="kwd">if</span> (dragDrop.draggedObject)
+            dragDrop.releaseElement();
+        dragDrop.startX = obj.offsetLeft;
+        dragDrop.startY = obj.offsetTop;
+        dragDrop.draggedObject = obj;
+        obj.className += '<span class="str"> dragged'</span>;
+        dragDrop.draggedObject.style.zIndex=MAX_Z_INDEX+1;
+        MAX_Z_INDEX=MAX_Z_INDEX+1;
+    },
+    dragMouse: <span class="kwd">function</span> (e) {
+        <span class="kwd">var</span> evt = e || window.event;
+        <span class="kwd">var</span> dX = evt.clientX - dragDrop.initialMouseX;
+        <span class="kwd">var</span> dY = evt.clientY - dragDrop.initialMouseY;
+        dragDrop.setPosition(dX,dY);
+        <span class="kwd">return</span> <span class="kwd">false</span>;
+    },
+    setPosition: <span class="kwd">function</span> (dx,dy) {
+        dragDrop.draggedObject.style.left = dragDrop.startX + dx + '<span class="str">px'</span>;
+        dragDrop.draggedObject.style.top = dragDrop.startY + dy + '<span class="str">px'</span>;
+    },
+    releaseElement: <span class="kwd">function</span>() {
+        removeEventSimple(document,'<span class="str">mousemove'</span>,dragDrop.dragMouse);
+        removeEventSimple(document,'<span class="str">mouseup'</span>,dragDrop.releaseElement);
+        dragDrop.draggedObject.className = dragDrop.draggedObject.className.replace(/dragged/,'<span class="str">'</span>);
+        dragDrop.draggedObject = <span class="kwd">null</span>;
+    }
+}
+<span class="com">//eofdraggadget </span>
+<span class="com">// --------- imagelists</span>
+<span class="com">// Add popup mousemove event</span>
+<span class="com">// was:.wxtimagelist</span>
+<span class="kwd">function</span> initImages()
+{    $('<span class="str">.wxtthumbwrapper'</span>).mousemove(<span class="kwd">function</span> (e) {
+    <span class="kwd">var</span> popup = $('<span class="str">#wxt-img-popup'</span>); <span class="com">// The one and only wxt-img-popup div</span>
+    <span class="kwd">if</span> (popup.length) { <span class="com">// exist</span>
+        <span class="com">// Width and height of popup div</span>
+        <span class="kwd">var</span> width = popup.width();
+        <span class="kwd">var</span> height = popup.height() + 20;            
+        <span class="com">// Default position: upper right</span>
+        <span class="kwd">var</span> x = e.pageX + 15;
+        <span class="kwd">var</span> y = e.pageY - height;
+        <span class="com">// Move to lower position height &gt; top space</span>
+        <span class="kwd">if</span> (height &gt; e.clientY) {
+            y += height + 20;
+        }
+        <span class="com">// Move to left position if width &gt; right space</span>
+        <span class="kwd">if</span> (width &gt; ($(window).width() - e.clientX - 50)) {
+            x = x - width - 45;
+        }
+        <span class="com">// Update popup position        </span>
+        popup.css({
+            left: x,
+            top: y
+        })
+    }
+});
+<span class="com">// Add mouseover popup </span>
+<span class="com">// was: .wxtimagelist .wxtthumbwrapper a img</span>
+$('<span class="str">.wxtthumbwrapper img'</span>).each(<span class="kwd">function</span> () {
+    $(<span class="kwd">this</span>).hover(
+        <span class="kwd">function</span> (e) { <span class="com">// mouse enter</span>
+            <span class="kwd">var</span> image = $(<span class="kwd">this</span>);         <span class="com">// Get image</span>
+            <span class="kwd">var</span> alink=$(<span class="kwd">this</span>).parent();  <span class="com">// Get pagelink (if we need it)</span>
+            <span class="com">// Remove popup div if image clicked (before going to new page)</span>
+            image.click(<span class="kwd">function</span> () {
+                $('<span class="str">#wxt-img-popup'</span>).remove();
+            });
+            <span class="com">// Build popup outside viewport to avoid flickering</span>
+            html = '<span class="str">&lt;div id="wxt-img-popup" style="left: -9999px;"&gt;'</span>;
+            html += '<span class="str">&lt;h3&gt;'</span>+image.attr('<span class="str">alt'</span>)+'<span class="str">&lt;/h3&gt;'</span>;
+            html += '<span class="str">&lt;img src="'</span> + image.attr('<span class="str">src'</span>) + '<span class="str">" /&gt;'</span>;
+            html += '<span class="str">&lt;/div&gt;'</span>;                
+            $('<span class="str">body'</span>).append(html);
+        },
+        <span class="kwd">function</span> () { <span class="com">// mouse leave</span>
+            $('<span class="str">#wxt-img-popup'</span>).remove(); <span class="com">// Remove popup div</span>
+        }
+    );
+});
+}
+<span class="com">// initializing</span>
+<span class="com">// a cleaner alternative is to call inits on body.onload or with final &lt;script&gt;</span>
+<span class="kwd">var</span> initIsDone=<span class="kwd">false</span>;
+<span class="kwd">function</span> trigger()
+{
+    <span class="kwd">if</span>(!initIsDone)
+    {
+        <span class="kwd">if</span>(document.readyState === "<span class="str">complete"</span>)
+        {
+            initImages();
+            prepareCode();
+            initIsDone=<span class="kwd">true</span>;
+        }
+        <span class="kwd">else</span>
+        {
+            setTimeout(trigger,100);
+        }
+    }
+}
+trigger();
+</pre>
+	</div>
+<p>
+	You may of course reimplement those functions as long as the 
+	function names and parameters are intact.
+	</p>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

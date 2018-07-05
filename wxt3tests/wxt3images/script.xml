@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wscript version="1.0">    
+      <!-- images demos -->
+      <definitions>
+	    <option name="indent-output" value="yes"/>
+		<option name="output-format" value="xhtml"/>
+        <template id="P" location="../templates/p_template.xml"/> 
+        <images location="content/images/someimages.xml"/>
+        <logfile location="../buildlog.txt" />
+     </definitions>
+        
+     <module description="Demonstration of images" location="index.html" 
+	        name="Welcome" id="welcome"  template="P" books="all">            
+        <xmlcontent location="content/welcome.xml"/>
+	</module>
+
+	<module description="More demonstration of images" location="page1.html" 
+	        name="Page1" id="page1" template="P" books="all">
+        <xmlcontent location="content/page1.xml"/>
+	</module>
+
+	<module description="More demonstration of images" location="page2.html" 
+	        name="Page2" id="page2" template="P" books="all">
+        <xmlcontent location="content/page2.xml"/>
+	</module>
+	
+	<module description="More demonstration of images" location="page3.html" 
+	        name="Page3" id="page3" template="P" books="all">
+        <xmlcontent location="content/page3.xml"/>
+	</module>
+	
+	<module description="Thumbs" location="page4.html" 
+	        name="Page4" id="page4" template="P" books="all">
+        <xmlcontent location="content/page4.xml"/>
+	</module>
+	
+	<module description="More demonstration of images" location="illustrations.html" 
+	        name="Illustrations" id="illustrations" template="P" books="all">
+        <xmlcontent location="content/illustrations.xml"/>
+	</module>
+	
+ </wscript>

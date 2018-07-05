@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+<div class="content">    
+<h1>Pop Fragments</h1>
+<hr/>
+<div>Source:</div>
+<div><?_wxt expand location="exp_popfragments.xml" 
+             sourcelocation="popfragments.xml" code="xmlcode"?>
+</div>
+<hr/>
+<div> Author: <?_wxt popfragment id="pf1" text="Børre"?> Stenseth </div>
+<div><?_wxt popfragment id="pf2" text="Ronaldhino"?> is a known soccerplayer. </div>
+</div>
+</data>

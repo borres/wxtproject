@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fragments>
+	<!-- simple HTML -->
+	<fragment id="warning">
+	<![CDATA[
+	<div style="border-style:solid;padding:10px;color:red">
+	WARNING: There is always an other bug
+	</div>
+	]]>
+	</fragment>
+	<!-- youtube fragment -->
+	<fragment id="tombola">
+	<![CDATA[
+	<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/ZlSm-wMf2yk&hl=en_US&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ZlSm-wMf2yk&hl=en_US&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+	]]>
+	</fragment>
+	
+    <!-- today google gadget fragment -->
+	<fragment id="today">
+	<![CDATA[
+    <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/datetime_v2/datetime_v2.xml&amp;up_color=blue&amp;up_dateFormat=wdm&amp;up_firstDay=1&amp;up_clocks=%5B%5B-73.986951%2C40.756054%2C%22New%20York%22%2C0%5D%5D&amp;synd=open&amp;w=320&amp;h=148&amp;&amp;lang=no&amp;country=ALL&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"> </script>
+    ]]>
+	</fragment>	
+    
+    
+    <!-- yourip google gadget fragment -->
+	<fragment id="yourip">
+	<![CDATA[
+    <script src="http://www.gmodules.com/ig/ifr?url=http://www.padfiles.net/GoogleGadgets/YourIP.xml&amp;synd=open&amp;w=320&amp;h=100&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"> </script>
+    ]]>
+	</fragment>	
+
+    <!-- mapsearch google gadget fragment -->
+	<fragment id="mapsearch">
+	<![CDATA[
+    <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/uds/modules/elements/localsearch/localsearch.xml&amp;up_location=&amp;up_largeMapMode=1&amp;up_kml=0&amp;up_traffic=&amp;up_locationCacheString=&amp;up_locationCacheLat=59.15&amp;up_locationCacheLng=11.383333&amp;up_mapType=m&amp;up_idleZoom=11&amp;up_transitionQuery=&amp;up_rawquery=&amp;up_selectedtext=&amp;synd=open&amp;w=446&amp;h=383&amp;lang=no&amp;country=ALL&amp;border=%23ffffff%7C0px%2C1px+solid+%23ffdd00%7C0px%2C2px+solid+%23ffdd33%7C0px%2C2px+solid+%23ffee99&amp;output=js"> </script>
+    ]]>
+	</fragment>	    
+    
+    <!-- applet fragment -->
+	<fragment id="runner">
+    <![CDATA[<!--[if !IE]>-->
+        <object classid="java:a3dwalker.class" height="200" type="application/x-java-applet" width="130">
+            <param name="codebase" value="content/stuff/Fa3dwalker/"/>
+			<!--<![endif]-->
+			    <object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" height="200" width="130"> 
+			     <param name="codebase" value="content/stuff/Fa3dwalker/"/>
+			     <param name="code" value="a3dwalker.class"/>
+			    </object> 
+			<!--[if !IE]>-->
+			      </object>
+			<!--<![endif]-->
+    ]]>
+	</fragment>
+	
+</fragments>

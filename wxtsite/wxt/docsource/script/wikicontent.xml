@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../def.css" title="Style"/>
+</head>
+
+<body>
+<h1>Script: wikicontent-element</h1>
+<p>
+    A wikicontent element tells where the module shall search for its content.
+    The template of the module must have a processing instruction PI of type
+    importwiki, see: <?_wxt xlink id="ImportWIKI"?>
+    to realize the actual extraction of content.
+</p>
+<p>
+  A Module may contain any number of WIKIContent elements.
+ </p>
+<pre class="prettyprint lang"><![CDATA[<wikicontent location=""  />]]>
+</pre>
+
+<table cellpadding="10px">
+  <tr>
+    <td  style="vertical-align:top"><strong>location</strong>(mandatory)</td>
+    <td>Any string that represents a file, either as an absolute URI or 
+    as an URI relative to the active anchor.
+    </td>
+  </tr>
+  <tr>
+    <td  style="vertical-align:top"><strong>backuplocation</strong>(optional)</td>
+    <td>Any string that represents a file, either as an absolute URI or 
+        as an URI relative to the active anchor. 
+        Is used if <em>location</em> for some reason
+        is not availabe. It is not a backup in the sense that the primary file is stored here. 
+        It is up to you to supply a meaningfull backup file.
+    </td>
+  </tr>
+
+  <tr>
+    <td  style="vertical-align:top"><strong>id</strong>(optional)</td>
+    <td>An id that identifies this  wikicontent in 
+    importwiki in a template.
+    </td>
+  </tr>  
+  
+  </table>
+
+
+<p>A wikicontent element may not  contain any elements
+</p>
+
+
+<p>Examples:</p>
+<pre class="prettyprint lang"><![CDATA[<wikicontent location="http://en.wikipedia.org/wiki/Sparrow"  />]]>
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title>Styles</title>
+	<link href="../../../commons/frontstyle.css" rel="STYLESHEET"/>
+ 	<link href="../../../commons/helpstyle.css" rel="STYLESHEET"/>
+    <link href="https://borres.hiof.no/resources/wxt/wxtstyle.css" rel="STYLESHEET"/>
+    <script src="https://borres.hiof.no/resources/wxt/wxtjs.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/iframes/iframeScript.js" type="text/javascript"> </script>	
+       
+	<script src="https://borres.hiof.no/resources/jslibs/jQ/jquery-min.js" type="text/javascript"> </script>		
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="https://borres.hiof.no/resources/jslibs/google-prettify/src/lang-ml.js" type="text/javascript"> </script>
+</head>
+<body>
+
+<div id="banner">
+		<span class="bannerbig">WXT</span>
+		<span class="bannersmall"> a Web and Xml Tool</span>
+	    </div>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1">
+<a href="../../../index.html" title="Project">Project</a>
+</span> | 
+        <span class="level1">
+<a href="../../wxt.html" title="Wxt">WXT</a>
+</span> | 
+        <span class="level1">
+<a href="../../basics.html" title="Basics">Basics</a>
+</span> | 
+        <span class="level1">
+<a href="../../download.html" title="download page">Download</a>
+</span> | 
+        <span class="level1">Documentation</span> | 
+        <span class="level1"> <a href="../../samples.html" title="samples page">Samples</a>
+</span>
+      </span>
+
+
+    </div>
+
+<table>
+<tr>
+
+<td style="vertical-align:top">
+	<div class="printhide">
+	<div class="menues">
+		<div class="wxtmodulemenu">
+<div class="level1">
+<a href="../../documentation.html" title="Documentation">Documentation</a>
+</div>
+<div class="level2">
+<a href="../script/start.html" title="Script">Script</a>
+</div>
+<div class="level2">
+<a href="../pi/start.html" title="PI">PI</a>
+</div>
+<div class="level2">
+<a href="start.html" title="Concepts">Concepts</a>
+</div>
+<div class="level3 wxtselected">Styles</div>
+<div class="level3">
+<a href="codefragments.html" title="Code">Code</a>
+</div>
+<div class="level3">
+<a href="aboutreferences.html" title="References">References</a>
+</div>
+<div class="level3">
+<a href="aboutformulas.html" title="Formulas">Formulas</a>
+</div>
+<div class="level3">
+<a href="aboutimages.html" title="Images">Images</a>
+</div>
+<div class="level3">
+<a href="aboutfragments.html" title="Fragments">Fragments</a>
+</div>
+<div class="level3">
+<a href="javascript.html" title="Javascript">Javascript</a>
+</div>
+<div class="level3">
+<a href="xpath.html" title="XPath">XPath</a>
+</div>
+<div class="level3">
+<a href="cssselector.html" title="CSSselect">CSSselect</a>
+</div>
+<div class="level3">
+<a href="publication.html" title="Publication">Publication</a>
+</div>
+<div class="level3">
+<a href="references.html" title="References">References</a>
+</div>
+</div>
+
+	</div> <!-- left menues -->
+	</div>
+<!-- /printhide -->
+</td>
+
+<td style="vertical-align:top">
+<!-- main content -->
+<div class="maincontent" id="collect">
+    <div class="printable">
+
+    <!--<?_wxt importtxt  leftpar="<body>" rightpar="</body>" parse="yes"?>-->
+	 <h1>Styling</h1>
+<p>
+  WXT produces some elements which are marked with <strong>class</strong>-attribute.
+  You can, and should, control the appearance of these elements by defining the
+  appropriate styles in a stylesheet.
+</p>
+<p>
+    A basic stylesheet involving most actual styles are quoted below.
+	This is distributed with WXT, see catalog usefull in the dist catalog.
+</p>
+<p>	
+    This may not be the styling of your dreams, but it indicates the 
+    possibilities. Remember that you can always surround any fragment with a div or span 
+    that controls the styling.
+</p>
+<p>
+    <strong>Inspect</strong> the stylesheet to see which style elements you should define
+    for each produced fragment, as resulting from PI commands.
+</p>
+<div>
+<pre class="lang-css readyandpretty skiptranslate">
+@media screen{
+    <span class="com">/* PI:date PI:time PI:stamp */</span>
+    .wxtdate{<span class="kwd">color</span>: black;}
+    .wxttime{<span class="kwd">color</span>: black;}
+    .wxtstamp{<span class="kwd">color</span>:blue; <span class="kwd">font-style</span>: italic; <span class="kwd">font-weight</span>: bolder;}
+    <span class="com">/* footnotes */</span>
+    .wxtfnmarker{<span class="kwd">color</span>:red;<span class="kwd">vertical-align</span>:30%;<span class="kwd">padding-left</span>:2px;<span class="kwd">padding-right</span>:2px}
+    .fn{<span class="kwd">display</span>:none}
+    .wxtfootnote{<span class="kwd">font-style</span>:italic}
+    <span class="com">/* PI:popup */</span>
+    .wxtpopup{<span class="kwd">cursor</span>:pointer;
+     <span class="kwd">border-style</span>:outset;<span class="kwd">border-width</span>:thin;
+         <span class="kwd">background</span>:url(popup.gif) no-repeat 100% 0;<span class="kwd">padding</span>: 0 30px 0 0;
+         <span class="kwd">color</span>:#104E8B;<span class="kwd">background-color</span>:#FFF8DC;}
+    <span class="com">/* PI:collect */</span>
+    .wxtcollect{<span class="kwd">color</span>:green}
+    <span class="com">/* PI:collectsummary */</span>
+    .wxtcollectsummary{<span class="kwd">margin-left</span>:30px}
+    .wxtcollectsummaryheading{<span class="kwd">font-weight</span>:bold;<span class="kwd">margin-top</span>:20px;
+                             <span class="kwd">text-decoration</span>:underline;}
+    .wxtcollectsummarycontent{<span class="kwd">color</span>:gray}
+    
+    <span class="com">/* PI:moduletoc,columns and levels as needed */</span>
+    .wxtmoduletoc1{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+    .wxtmoduletoc2{-moz-column-count:2;-webkit-column-count:2;column-count:2;}
+    .wxtmoduletoc3{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
+    .wxtmoduletoc4{-moz-column-count:4;-webkit-column-count:4;column-count:4;}
+    .wxtmoduletoc1,.wxtmoduletoc2,.wxtmoduletoc3,.wxtmoduletoc4
+    {<span class="kwd">margin-left</span>:20px;
+    -moz-column-gap:30px;-webkit-column-gap:30px;column-gap:30px;
+    -moz-column-rule:thin solid gray;-webkit-column-rule:thin solid gray;column-rule:thin solid gray;
+    }
+    .wxtmoduletocinner .level1{<span class="kwd">padding</span>:0px 0px 5px 5px;<span class="kwd">font-weight</span>:bold;<span class="kwd">font-size</span>:14px}
+    .wxtmoduletocinner .level2{<span class="kwd">padding</span>:0px 0px 5px 10px}
+    .wxtmoduletocinner .level3{<span class="kwd">padding</span>:0px 0px 5px 30px}
+    .wxtmoduletocinner .level4{<span class="kwd">padding</span>:0px 0px 5px 40px}
+    .wxtmoduletocinner .level5{<span class="kwd">padding</span>:0px 0px 5px 50px}    
+    .wxtmoduletocinner  <span class="atn">a</span>{<span class="kwd">color</span>:blue; <span class="kwd">text-decoration</span>: none;}
+    
+    <span class="com">/* PI:moduletocfinal, columns and levels as needed */</span>
+    .wxtmoduletocfinal1{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+    .wxtmoduletocfinal2{-moz-column-count:2;-webkit-column-count:2;column-count:2;}
+    .wxtmoduletocfinal3{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
+    .wxtmoduletocfinal4{-moz-column-count:4;-webkit-column-count:4;column-count:4;}
+    .wxtmoduletocfinal1,.wxtmoduletocfinal2,.wxtmoduletocfinal3,.wxtmoduletocfinal4
+        {<span class="kwd">margin-left</span>:20px;
+       -moz-column-gap:30px;-webkit-column-gap:30px;column-gap:30px;
+    -moz-column-rule:thin solid gray;-webkit-column-rule:thin solid gray;column-rule:thin solid gray;
+    }
+    .wxtmoduletocfinalinner .level1{<span class="kwd">padding</span>:0px 0px 5px 10px;<span class="kwd">font-weight</span>:bold;<span class="kwd">font-size</span>:14px}
+    .wxtmoduletocfinalinner .level2{<span class="kwd">padding</span>:0px 0px 5px 20px}
+    .wxtmoduletocfinalinner .level3{<span class="kwd">padding</span>:0px 0px 5px 30px}
+    .wxtmoduletocfinalinner .level4{<span class="kwd">padding</span>:0px 0px 5px 40px}
+    .wxtmoduletocfinalinner .level5{<span class="kwd">padding</span>:0px 0px 5px 50px}    
+    .wxtmoduletocfinalinner  <span class="atn">a</span>{<span class="kwd">color</span>:blue; <span class="kwd">text-decoration</span>: none;}
+    
+    
+    <span class="com">/* PI:modulemenu, levels as needed*/</span>
+    .wxtmodulemenu{<span class="kwd">margin-top</span>:30px;<span class="kwd">font-size</span>:10px;}
+    .wxtmodulemenu .level1{<span class="kwd">margin-left</span>:5px;<span class="kwd">line-height</span>:110%;<span class="kwd">font-size</span>:12px;
+                           <span class="kwd">font-weight</span>:bold}
+    .wxtmodulemenu .level2{<span class="kwd">margin-left</span>:15px;<span class="kwd">line-height</span>:110%;<span class="kwd">font-size</span>:11px}
+    .wxtmodulemenu .level3{<span class="kwd">margin-left</span>:25px;<span class="kwd">line-height</span>:110%;<span class="kwd">font-size</span>:11px}
+    .wxtmodulemenu .level4{<span class="kwd">margin-left</span>:35px;<span class="kwd">line-height</span>:110%;<span class="kwd">font-size</span>:11px}
+    .wxtmodulemenu .level5{<span class="kwd">margin-left</span>:40px;<span class="kwd">line-height</span>:110%;<span class="kwd">font-size</span>:11px}
+    .wxtmodulemenu .level6{<span class="kwd">margin-left</span>:45px;<span class="kwd">line-height</span>:110%;<span class="kwd">font-size</span>:11px}
+    .wxtmodulemenu <span class="atn">a</span>{<span class="kwd">text-decoration</span>: none;}
+    .wxtmodulemenu <span class="atn">a</span>:<span class="kwd">link</span>{<span class="kwd">color</span>:black;}
+    .wxtmodulemenu <span class="atn">a</span>:<span class="kwd">visited</span>{<span class="kwd">color</span>:black;}<span class="com">/*Changed for visibility{color:#8B795E;}*/</span>
+    .wxtmodulemenu <span class="atn">a</span>:<span class="kwd">hover</span>{<span class="kwd">border-style</span>:solid;<span class="kwd">border-width</span>:thin}
+    .wxtmodulemenu <span class="atn">a</span>:<span class="kwd">active</span>{<span class="kwd">color</span>:red;}
+    <span class="com">/** the item selected */</span>
+   .wxtselected{<span class="kwd">text-decoration</span>:underline;<span class="kwd">color</span>:#990000;<span class="kwd">font-weight</span>:bold}
+    <span class="com">/* PI: modulemap. columns and levels as needed*/</span>
+    .wxtmodulemap1{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+    .wxtmodulemap2{-moz-column-count:2;-webkit-column-count:2;column-count:2;}
+    .wxtmodulemap3{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
+    .wxtmodulemap4{-moz-column-count:4;-webkit-column-count:4;column-count:4;}
+    .wxtmodulemap1,.wxtmodulemap2,.wxtmodulemap3,.wxtmodulemap4
+    {<span class="kwd">margin-left</span>:20px;
+    -moz-column-gap:30px;-webkit-column-gap:30px;column-gap:30px;
+    -moz-column-rule:thin solid gray;-webkit-column-rule:thin solid gray;column-rule:thin solid gray;
+    }
+    .wxtmodulemapinner .level1{<span class="kwd">padding</span>:0px 0px 5px 10px;<span class="kwd">font-weight</span>:bold;<span class="kwd">font-size</span>:14px}
+    .wxtmodulemapinner .level2{<span class="kwd">padding</span>:0px 0px 5px 20px}
+    .wxtmodulemapinner .level3{<span class="kwd">padding</span>:0px 0px 5px 30px}
+    .wxtmodulemapinner .level4{<span class="kwd">padding</span>:0px 0px 5px 40px}
+    .wxtmodulemapinner .level5{<span class="kwd">padding</span>:0px 0px 5px 50px}
+    .wxtmodulemapinner <span class="atn">a</span>{<span class="kwd">text-decoration</span>: none;}
+    .wxtmodulemapinner <span class="atn">a</span>:<span class="kwd">link</span>{<span class="kwd">color</span>:blue;}
+    .wxtmodulemapinner <span class="atn">a</span>:<span class="kwd">visited</span>{<span class="kwd">color</span>:#8B795E;}
+    .wxtmodulemapinner <span class="atn">a</span>:<span class="kwd">hover</span>{<span class="kwd">border-style</span>:solid;<span class="kwd">border-width</span>:thin}
+    .wxtmodulemapinner <span class="atn">a</span>:<span class="kwd">active</span>{<span class="kwd">color</span>:red;}
+    <span class="com">/* PI:authorlist columns as needed*/</span>
+    .wxtauthorlist1{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+    .wxtauthorlist2{-moz-column-count:2;-webkit-column-count:2;column-count:2;}
+    .wxtauthorlist3{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
+    .wxtauthorlist4{-moz-column-count:4;-webkit-column-count:4;column-count:4;}
+    .wxtauthorlist1,.wxtauthorlist2,.wxtauthorlist3,.wxtauthorlist4
+        {<span class="kwd">margin-left</span>:20px;
+         -moz-column-gap:30px;-webkit-column-gap:30px;column-gap:30px;
+         -moz-column-rule:thin solid gray;-webkit-column-rule:thin solid gray;column-rule:thin solid gray;
+         }
+    .wxtauthorlistinner  <span class="atn">dt</span>{<span class="kwd">font-weight</span>:bold; <span class="kwd">font-size</span>:12px;<span class="kwd">padding-top</span>:5px;<span class="kwd">padding-bottom</span>:0px;}
+    .wxtauthorlistinner  <span class="atn">dd</span>{<span class="kwd">margin-left</span>:0px;<span class="kwd">padding-left</span>:30px}
+    .wxtauthorlistinner <span class="atn">a</span> {<span class="kwd">text-decoration</span>:none;<span class="kwd">font-size</span>:12px;}
+     
+    <span class="com">/* PI:authors columns as needed*/</span>
+    .wxtauthors{}
+    .wxtauthors1{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+    .wxtauthors2{-moz-column-count:2;-webkit-column-count:2;column-count:2;}
+    .wxtauthors3{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
+    .wxtauthors4{-moz-column-count:4;-webkit-column-count:4;column-count:4;}
+    .wxtauthors1,.wxtauthors2,.wxtauthors3,.wxtauthors4
+        {<span class="kwd">margin-left</span>:20px;
+       -moz-column-gap:30px;-webkit-column-gap:30px;column-gap:30px;
+    }
+    .wxtauthorsinner  <span class="atn">li</span>{<span class="kwd">font-weight</span>:normal; <span class="kwd">font-size</span>:12px;<span class="kwd">padding-top</span>:5px;<span class="kwd">padding-bottom</span>:0px;}
+    <span class="com">/*PI:path*/</span>
+    .wxtpath{}
+    .wxtpath .level1,.level2,.level3{<span class="kwd">margin-left</span>:5px;<span class="kwd">margin-right</span>:5px}
+    .wxtpath <span class="atn">a</span>{ <span class="kwd">text-decoration</span>: none;}
+    <span class="com">/*PI:ixword*/</span>
+    .wxtixword{<span class="kwd">font-style</span>:italic;}
+    <span class="com">/* PI:ixtable columns as needed*/</span>
+    .wxtixtable1{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+    .wxtixtable2{-moz-column-count:2;-webkit-column-count:2;column-count:2;}
+    .wxtixtable3{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
+    .wxtixtable4{-moz-column-count:4;-webkit-column-count:4;column-count:4;}
+    .wxtixtable1,.wxtixtable2,.wxtixtable3,.wxtixtable4
+    {<span class="kwd">margin-left</span>:20px;
+    -moz-column-gap:30px;-webkit-column-gap:30px;column-gap:30px;
+    -moz-column-rule:thin solid gray;-webkit-column-rule:thin solid gray;column-rule:thin solid gray;
+    }    
+    .wxtixtableinner .word{<span class="kwd">font-weight</span>:bold;<span class="kwd">font-size</span>:14px}
+    .wxtixtableinner .comment{<span class="kwd">color</span>:gray; <span class="kwd">margin-left</span>:10px;<span class="kwd">display</span>:block;<span class="kwd">font-size</span>:10px;<span class="kwd">margin-top</span>:-7px}
+    .wxtixtableinner <span class="atn">a</span>{<span class="kwd">margin-left</span>:10px;<span class="kwd">text-decoration</span>: none;<span class="kwd">display</span>:block;}
+    .wxtixtableinner <span class="atn">a</span>:<span class="kwd">link</span>{<span class="kwd">color</span>:blue;}
+    .wxtixtableinner <span class="atn">a</span>:<span class="kwd">visited</span>{<span class="kwd">color</span>:#8B795E;}
+    .wxtixtableinner <span class="atn">a</span>:<span class="kwd">active</span>{<span class="kwd">color</span>:red;}
+    
+    
+    
+     <span class="com">/*PI:demolink, or the style(s) set in demolink*/</span>
+    .demo{<span class="kwd">text-decoration</span>: none;}
+    .demo <span class="atn">span</span>.print{<span class="kwd">display</span>:none}
+    .demo .screen{}
+     <span class="atn">a</span>.demo:<span class="kwd">link</span>{<span class="kwd">background</span>: url(demo.gif) no-repeat 0% 0;<span class="kwd">padding</span>: 0 0 0 45px;}
+     <span class="atn">a</span>.demo:<span class="kwd">visited</span>{<span class="kwd">color</span>: purple;<span class="kwd">background</span>: url(demo.gif) no-repeat 0% -100px;
+                    <span class="kwd">padding</span>: 0  0 0 45px;}
+     <span class="atn">a</span>.demo:<span class="kwd">hover</span>{<span class="kwd">color</span>: red;<span class="kwd">background</span>: url(demo.gif) no-repeat 0% -200px;
+                    <span class="kwd">padding</span>: 0 0 0 45px;}
+    <span class="com">/* pdfbook link as in demolink */</span>
+    .pdf{<span class="kwd">text-decoration</span>: none;}
+    .pdf <span class="atn">span</span>.print{<span class="kwd">display</span>:none}
+    .pdf.screen{}
+     <span class="atn">a</span>.pdf:<span class="kwd">link</span>{<span class="kwd">background</span>: url(print.gif) no-repeat 0% 0;<span class="kwd">padding</span>: 0 0 0 30px;}
+     <span class="atn">a</span>.pdf:<span class="kwd">visited</span>{<span class="kwd">color</span>: purple;<span class="kwd">background</span>: url(print.gif) no-repeat 0% -100px;
+                   <span class="kwd">padding</span>: 0  0 0 30px;}
+     <span class="atn">a</span>.pdf:<span class="kwd">hover</span>{<span class="kwd">color</span>: red;<span class="kwd">background</span>: url(print.gif) no-repeat 0% -200px;
+                <span class="kwd">padding</span>: 0 0 0 30px;}
+    <span class="com">/* marking external links from demolink, and other places we use external*/</span>
+     <span class="atn">a</span>.external{<span class="kwd">text-decoration</span>: none;}
+     .external <span class="atn">span</span>.print{<span class="kwd">display</span>:none}
+     .external .screen{}
+     <span class="atn">a</span>.external:<span class="kwd">link</span>{
+            <span class="kwd">background</span>: url(exicon.gif) no-repeat 100% 0;<span class="kwd">padding</span>: 0 20px 0 0; }
+     <span class="atn">a</span>.external:<span class="kwd">visited</span> {
+            <span class="kwd">color</span>: purple; <span class="kwd">background</span>: url(exicon.gif) no-repeat 100% -100px;
+            <span class="kwd">padding</span>: 0 20px 0 0; }
+     <span class="atn">a</span>.external:<span class="kwd">hover</span> {
+            <span class="kwd">color</span>: red; <span class="kwd">background</span>: url(exicon.gif) no-repeat 100% -200px;
+            <span class="kwd">padding</span>: 0 20px 0 0; }
+    <span class="com">/*PI:xlink*/</span>
+    <span class="atn">span</span>.wxtxlink{<span class="kwd">color</span>:black}
+    <span class="atn">span</span>.wxtxlinkself{<span class="kwd">color</span>:lightgray}
+    .wxtxlink <span class="atn">a</span>{<span class="kwd">font-style</span>: italic;}
+    .wxtxlink <span class="atn">img</span> {<span class="kwd">border</span>: 0px none}
+    .wxtxlink <span class="atn">a</span>{ <span class="kwd">text-decoration</span>: none;}
+    <span class="com">/*PI:xlinklist*/</span>
+    <span class="atn">div</span>.xlinklist{}
+    .xlinklist <span class="atn">a</span>{ <span class="kwd">text-decoration</span>: none;}
+    <span class="com">/*PI:formula, wrapping  one formula */</span>
+    .wxtformula{<span class="kwd">padding</span>:7px}
+    
+    <span class="com">/*PI:wxtformulalist*/</span>
+    .wxtformulalist1{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+    .wxtformulalist2{-moz-column-count:2;-webkit-column-count:2;column-count:2;}
+    .wxtformulalist3{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
+    .wxtformulalist4{-moz-column-count:4;-webkit-column-count:4;column-count:4;}
+    .wxtformulalistinner{<span class="kwd">list-style-position</span>:outside;} 
+    .wxtformulalistinner .wxtformula{<span class="kwd">padding</span>:7px}
+    .wxtformulalistinner .text{<span class="kwd">font-size</span>:13px;<span class="kwd">padding-top</span>:20px;<span class="kwd">font-weight</span>:bold}
+    .wxtformulalistinner  .link <span class="atn">a</span>{<span class="kwd">font-size</span>:10px;<span class="kwd">text-decoration</span>:none}
+    .wxtformulalistinner <span class="atn">span</span>{<span class="kwd">display</span>:block}
+    .wxtformulalistinner .link{<span class="kwd">line-height</span>:110%;<span class="kwd">padding</span>:1px}
+    .wxtformulalistinner <span class="atn">img</span>,.wxtformulalistinner .wxtmathml
+        {<span class="kwd">border-left-style</span>:solid;<span class="kwd">padding-left</span>:30px;
+        <span class="kwd">border-color</span>:#EEE8CD;<span class="kwd">border-width</span>:4px}
+    
+    <span class="com">/* table output from dbimport*/</span>
+    <span class="atn">div</span>.db <span class="atn">table</span>{<span class="kwd">margin-top</span>:80px}
+    .dbresult .sql{<span class="kwd">margin</span>:10px;<span class="kwd">color</span>:red}
+    .dbresult <span class="atn">table</span>{<span class="kwd">font</span>: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+                    <span class="kwd">border-collapse</span>: collapse;<span class="kwd">width</span>: 320px;}
+    .dbresult <span class="atn">th</span>{<span class="kwd">padding</span>: 0 0.5em;<span class="kwd">text-align</span>: <span class="kwd">left</span>;
+                 <span class="kwd">border-bottom</span>: 1px solid #CCC;}
+    .dbresult <span class="atn">td</span>{<span class="kwd">border-bottom</span>: 1px solid #CCC;    <span class="kwd">padding</span>: 0 0.5em;}
+    .dbresult <span class="atn">td</span>:<span class="kwd">first-child</span> {    <span class="kwd">width</span>: 40px;    }
+    .dbresult <span class="atn">td</span>+<span class="atn">td</span> {    <span class="kwd">border-left</span>: 1px solid #CCC;<span class="kwd">text-align</span>: <span class="atn">center</span>;}
+    <span class="com">/* PI:expand*/</span>
+    .wxtexpand .header{<span class="kwd">font-size</span>:14px;<span class="kwd">font-weight</span>:bold;<span class="kwd">line-height</span>:100%;
+               <span class="kwd">padding</span>: 2px 2px 2px 2px; <span class="kwd">min-height</span>:17px;
+               <span class="kwd">color</span>:#104E8B;<span class="kwd">background-color</span>:#FFF8DC;
+               <span class="kwd">display</span>:inline;<span class="kwd">border-style</span>:solid;<span class="kwd">border-width</span>:thin}
+    .wxtexpand .on,.wxtexpand .off{
+                <span class="kwd">cursor</span>:pointer;
+                <span class="kwd">text-align</span>:<span class="kwd">left</span>;
+                <span class="kwd">height</span>:24px;<span class="kwd">color</span>:#FFF8DC;
+                <span class="kwd">padding</span>:0px 2px 0px 20px}
+    .wxtexpand .off{<span class="kwd">background</span>:url(expand.jpg) no-repeat}
+    .wxtexpand .on{<span class="kwd">background</span>:url(collapse.jpg) no-repeat}
+    .wxtexpand .content{<span class="kwd">margin</span>:0px;<span class="kwd">padding</span>:0px}
+    <span class="com">/*PI:expandsimple */</span>
+    .wxtexpandsimple .header{<span class="kwd">font-size</span>:14px;<span class="kwd">font-weight</span>:bold;<span class="kwd">line-height</span>:100%;
+               <span class="kwd">padding</span>: 2px 2px 2px 2px; <span class="kwd">min-height</span>:17px;
+               <span class="kwd">color</span>:#104E8B;<span class="kwd">background-color</span>:#FFF8DC;
+               <span class="kwd">display</span>:inline;<span class="kwd">border-style</span>:solid;<span class="kwd">border-width</span>:thin}
+    .wxtexpandsimple .on,.wxtexpandsimple .off{
+               <span class="kwd">cursor</span>:pointer;
+               <span class="kwd">text-align</span>:<span class="kwd">left</span>;
+               <span class="kwd">height</span>:24px;<span class="kwd">color</span>:#FFF8DC;
+               <span class="kwd">padding</span>:0px 2px 0px 20px}
+    .wxtexpandsimple .off{<span class="kwd">background</span>:url(expand.jpg) no-repeat }
+    .wxtexpandsimple .on{<span class="kwd">background</span>:url(collapse.jpg) no-repeat }
+    .wxtexpandsimple .content{<span class="kwd">margin</span>:0px;<span class="kwd">padding</span>:0px}
+    <span class="com">/*PI:expandable */</span>
+    .wxtexpandable .header{<span class="kwd">font-size</span>:14px;<span class="kwd">font-weight</span>:bold;<span class="kwd">line-height</span>:100%;
+               <span class="kwd">padding</span>: 2px 2px 2px 2px; <span class="kwd">min-height</span>:17px;
+               <span class="kwd">color</span>:#104E8B;<span class="kwd">background-color</span>:#FFF8DC;
+               <span class="kwd">display</span>:inline;<span class="kwd">border-style</span>:solid;<span class="kwd">border-width</span>:thin}
+    .wxtexpandable .on,.wxtexpandable  .off{
+               <span class="kwd">cursor</span>:pointer;
+               <span class="kwd">text-align</span>:<span class="kwd">left</span>;
+               <span class="kwd">height</span>:24px;<span class="kwd">color</span>:#FFF8DC;
+               <span class="kwd">padding</span>:0px 2px 0px 20px}
+    .wxtexpandable .off{<span class="kwd">background</span>:url(expand.jpg) no-repeat }
+    .wxtexpandable .on{<span class="kwd">background</span>:url(collapse.jpg) no-repeat }
+    .wxtexpandable .content{<span class="kwd">margin</span>:0px;<span class="kwd">padding</span>:0px}
+    <span class="com">/*PI:gadget*/</span>
+    .wxtgadget .header{
+               <span class="kwd">border-style</span>:solid; <span class="kwd">border-width</span>:thin;
+               <span class="kwd">font-size</span>:14px;<span class="kwd">font-weight</span>:bold;<span class="kwd">line-height</span>:100%;
+               <span class="kwd">padding</span>: 2px 0px 2px 2px;  <span class="kwd">min-height</span>:15px;  <span class="kwd">margin</span>:0px;
+               <span class="kwd">background</span>:#7AC5CD}
+    .wxtgadget .off { <span class="kwd">cursor</span>:pointer;<span class="kwd">float</span>:<span class="kwd">right</span>; <span class="kwd">min-width</span>:25px;
+                  <span class="kwd">color</span>:#7AC5CD;<span class="kwd">background</span>:#7AC5CD url(gopen.gif) no-repeat}
+    .wxtgadget .on {<span class="kwd">cursor</span>:pointer;<span class="kwd">float</span>:<span class="kwd">right</span>; <span class="kwd">min-width</span>:25px;
+               <span class="kwd">color</span>:#7AC5CD;<span class="kwd">background</span>:#7AC5CD url(gclose.gif) no-repeat;
+                   <span class="kwd">border-bottom-style</span>:none;}
+    .wxtgadget .content{<span class="kwd">margin</span>:0px;<span class="kwd">padding</span>:0px}
+    
+    <span class="com">/* PI:ref */</span>
+    .wxtref <span class="atn">a</span>{<span class="kwd">color</span>:red}
+    <span class="com">/* PI:reflist */</span>
+    .wxtreflist1{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+    .wxtreflist2{-moz-column-count:2;-webkit-column-count:2;column-count:2;}
+    .wxtreflist3{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
+    .wxtreflist4{-moz-column-count:4;-webkit-column-count:4;column-count:4;}
+    .wxtreflist,.wxtreflist1,.wxtreflist2,.wxtreflist3,.wxtreflist4
+        {<span class="kwd">margin-left</span>:20px;
+       -moz-column-gap:30px;-webkit-column-gap:30px;column-gap:30px;
+    -moz-column-rule:thin solid gray;-webkit-column-rule:thin solid gray;column-rule:thin solid gray;
+    }
+    .wxtreflistinner <span class="atn">li</span> {<span class="kwd">font-size</span>:11px; <span class="kwd">padding-top</span>:10px;}
+    .wxtreflistinner <span class="atn">li</span> <span class="atn">span</span>{<span class="kwd">display</span>:block;<span class="kwd">line-height</span>:130%}
+    .wxtreflistinner .wxtxlink{<span class="kwd">font-size</span>:14px}
+    .wxtreflistinner .dateread{<span class="kwd">font-size</span>:8px}
+    .wxtreflistinner .publisher{<span class="kwd">font-size</span>:11px}
+    .wxtreflistinner .title{<span class="kwd">font-weight</span>:bold}
+    .wxtreflistinner .year,.wxtreflistinner .chaptertitle,
+    .wxtreflistinner .journal,.wxtreflistinner .place,
+    .wxtreflistinner .place,.wxtreflistinner .editor,
+    .wxtreflistinner .isbn,.wxtreflistinner .text{<span class="kwd">color</span>:black}
+    .wxtreflistinner  <span class="atn">ol</span>{<span class="kwd">margin-top</span>:-10px}
+    .wxtreflistinner.harvard <span class="atn">ol</span>{<span class="kwd">list-style-type</span>:square;}
+    <span class="com">/* PI:imagelist*/</span>
+    <span class="com">/* the one and only popped image*/</span>
+    #wxt-img-popup {
+        <span class="kwd">font-family</span>: Helvetica, Arial, sans-serif;    
+        -webkit-box-shadow: 1px 1px 3px #777;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        <span class="kwd">border</span>: 2px solid #ccc;
+        <span class="kwd">background</span>: #fff;
+        <span class="kwd">position</span>: absolute;
+        <span class="kwd">padding</span>: 10px 10px 5px 10px;
+        <span class="kwd">margin</span>: 0;    
+        <span class="kwd">text-align</span>: <span class="kwd">left</span>;
+        <span class="kwd">font-size</span>: 0.667em;
+        <span class="kwd">color</span>: #000;
+        <span class="kwd">font-weight</span>: normal;
+    }
+    #wxt-img-popup <span class="atn">h3</span> {
+        <span class="kwd">text-align</span>: <span class="atn">center</span>;
+        <span class="kwd">color</span>: #333;
+        <span class="kwd">margin-top</span>: 0px;
+    }
+    <span class="com">/* thumbs*/</span> 
+    .wxtthumbwrapper{<span class="kwd">position</span>:relative;
+        <span class="kwd">display</span>:inline;
+        <span class="kwd">padding</span>:5px 2px 5px 2px;
+        <span class="kwd">margin</span>:3px;    
+    }
+    .wxtimagelist .wxtthumbwrapper{<span class="kwd">line-height</span>:120px}
+    .wxtthumbwrapper <span class="atn">a</span>{
+        <span class="kwd">top</span>:50px;
+        <span class="kwd">left</span>:30px;
+    }
+        
+    .wxtthumbwrapper <span class="atn">img</span>{
+            <span class="kwd">top</span>:0px;
+            <span class="kwd">left</span>:-1px;
+            <span class="kwd">vertical-align</span>:<span class="kwd">top</span>;
+            <span class="kwd">height</span>:100px;
+            <span class="kwd">border-style</span>:solid;
+            <span class="kwd">border-color</span>:#8B7D7B;
+            <span class="kwd">border-width</span>:thin;
+            <span class="kwd">padding</span>:2px;
+    }
+    
+    <span class="com">/*PI:image*/</span>
+    .wxtimage{
+             <span class="kwd">padding</span>:7px 7px 7px 12px;
+             <span class="kwd">margin</span>:10px;
+             <span class="kwd">border-style</span>:solid;<span class="kwd">border-color</span>:#8B7D7B;
+             <span class="kwd">border-width</span>:1px}
+    .wxtimage <span class="atn">img</span>{}
+    .wxtimage <span class="atn">div</span>{<span class="kwd">color</span>:gray}
+    
+    .wxtimagewrapper{<span class="kwd">display</span>:inline}
+    .wxtimagewrapper <span class="atn">div</span>{<span class="kwd">display</span>:block;<span class="kwd">font-style</span>:italic}
+    
+    
+    <span class="com">/*summary associated with xlinks used in modulemap, modulemenu, xlink*/</span>
+    .wxtsummary {
+            <span class="kwd">color</span>: #000000;
+            <span class="kwd">font-size</span>: 11px;
+            <span class="kwd">padding</span>: 5px;
+            <span class="kwd">border</span>: 1px solid #324C48;
+            <span class="kwd">background-color</span>: #EEE8CD;
+            <span class="kwd">position</span>:absolute;
+            <span class="kwd">left</span>: 50px;
+            <span class="kwd">z-index</span>: 2000;
+            <span class="kwd">top</span>: 0px;
+            <span class="kwd">font-weight</span>:normal;
+            <span class="kwd">min-width</span>:150px
+        }
+    .wxtsummary .header{<span class="kwd">display</span>:block}
+    
+    <span class="com">/* PI:popfragment*/</span>
+    .wxtpopfragment{<span class="kwd">cursor</span>:pointer;<span class="kwd">color</span>:red}
+    <span class="com">/*summary associated with popfragment*/</span>
+    .wxtpopsummary {
+            <span class="kwd">color</span>: #000000;
+            <span class="kwd">font-size</span>: 12px;
+            <span class="kwd">padding</span>: 5px;
+            <span class="kwd">border</span>: 1px solid #324C48;
+            <span class="kwd">background-color</span>: #EEE8CD;<span class="com">/*yellow;/*#F09450;*/</span>
+            <span class="kwd">position</span>: absolute;
+            <span class="kwd">left</span>: 50px;
+            <span class="kwd">z-index</span>: 2001;
+            <span class="kwd">top</span>: 0px;
+            <span class="kwd">width</span>: 250px;
+        }
+    <span class="com">/* Pretty printing styles. Used with prettify.js. */</span>
+    <span class="com">/* changed from prettyprint since we mark them as readyandpretty as we do them */</span>
+    <span class="atn">pre</span>.readyandpretty, <span class="atn">pre</span>.prettyprint, <span class="atn">code</span>.readyandpretty, <span class="atn">code</span>.prettyprint { 
+        <span class="kwd">padding</span>: 2px; 
+        <span class="kwd">border</span>: 1px solid #888; 
+        <span class="kwd">background</span>:url(paperbg18.gif);
+        <span class="kwd">font-family</span>:courier,monospace;
+        <span class="kwd">font-size</span>:12px;
+        <span class="kwd">line-height</span>:18px; 
+        <span class="kwd">width</span>:99%;
+        <span class="kwd">overflow</span>: auto;
+        <span class="kwd">max-height</span>: 51em;
+        <span class="kwd">margin</span>: 0;
+        <span class="kwd">letter-spacing</span>:0px;
+        }
+        
+    .str { <span class="kwd">color</span>: #080; }
+    .kwd { <span class="kwd">color</span>: #008; <span class="kwd">font-weight</span>:bold} <span class="com">/*bs bold for keywords*/</span>
+    .com { <span class="kwd">color</span>: #800; <span class="kwd">font-style</span>:italic}<span class="com">/*bs italic for comments*/</span>
+    .typ { <span class="kwd">color</span>: #606; }
+    .lit { <span class="kwd">color</span>: #066; }
+    .pun { <span class="kwd">color</span>: #660; }
+    .pln { <span class="kwd">color</span>: #000; }
+    .tag { <span class="kwd">color</span>: #008; }
+    .atn { <span class="kwd">color</span>: #606; }
+    .atv { <span class="kwd">color</span>: #080; }
+    .dec { <span class="kwd">color</span>: #606; }
+    
+    <span class="com">/* try to match Visual Studio*/</span>
+    <span class="atn">pre</span>.lang-cs .kwd{<span class="kwd">color</span>: #00B}
+    <span class="atn">pre</span>.lang-cs .com{<span class="kwd">color</span>: #0B0}    
+    <span class="atn">pre</span>.lang-cs .str{<span class="kwd">color</span>: #B00}
+    <span class="atn">pre</span>.lang-cs .pun+.typ{<span class="kwd">color</span>:#000}
+    <span class="atn">pre</span>.lang-cs .typ{<span class="kwd">color</span>: #0BB}    
+    <span class="com">/*pre.lang-cs .lit{color: #000}*/</span>
+    <span class="com">/*BS change background for python*/</span>
+    <span class="atn">pre</span>.lang-py{<span class="kwd">background-color</span>:#FFFFEC}
+}
+@media print
+{
+    .wxtthumbwrapper <span class="atn">a</span>{<span class="kwd">top</span>:50px;<span class="kwd">left</span>:30px;}
+        
+    .wxtthumbwrapper <span class="atn">img</span>{
+            <span class="kwd">top</span>:0px;
+            <span class="kwd">left</span>:-1px;
+            <span class="kwd">vertical-align</span>:<span class="kwd">top</span>;
+            <span class="kwd">height</span>:100px;
+            <span class="kwd">border-style</span>:solid;
+            <span class="kwd">border-color</span>:#8B7D7B;
+            <span class="kwd">border-width</span>:thin;
+            <span class="kwd">padding</span>:2px;
+    }
+    .demo .screen{<span class="kwd">display</span>:none}
+    .external .screen{<span class="kwd">display</span>:none}
+    .wxtpath{<span class="kwd">display</span>:none}
+    .wxtimcontainer{<span class="kwd">display</span>:none}
+    <span class="atn">pre</span>.readyandpretty, <span class="atn">pre</span>.prettyprint, <span class="atn">code</span>.readyandpretty, <span class="atn">code</span>.prettyprint{ 
+    <span class="kwd">padding</span>: 2px; 
+    <span class="kwd">border</span>: 1px solid #888; 
+        <span class="kwd">background</span>:url(paperbg15.gif);
+        <span class="kwd">font-family</span>:monospace;
+        <span class="kwd">font-size</span>:11px;
+        <span class="kwd">line-height</span>:15px;
+ 
+    }
+    .str { <span class="kwd">color</span>: #060; }
+    .kwd { <span class="kwd">color</span>: #006; <span class="kwd">font-weight</span>: bold; }
+    .com { <span class="kwd">color</span>: #600; <span class="kwd">font-style</span>: italic; }
+    .typ { <span class="kwd">color</span>: #404; <span class="kwd">font-weight</span>: bold; }
+    .lit { <span class="kwd">color</span>: #044; }
+    .pun { <span class="kwd">color</span>: #440; }
+    .pln { <span class="kwd">color</span>: #000; }
+    .tag { <span class="kwd">color</span>: #006; <span class="kwd">font-weight</span>: bold; }
+    .atn { <span class="kwd">color</span>: #404; }
+    .atv { <span class="kwd">color</span>: #060; }
+}
+@media projection
+{
+    .demo .screen{<span class="kwd">display</span>:none}
+    .external .screen{<span class="kwd">display</span>:none}
+    .path{<span class="kwd">display</span>:none}
+    <span class="atn">pre</span>.readyandpretty, <span class="atn">pre</span>.prettyprint, <span class="atn">code</span>.readyandpretty, <span class="atn">code</span>.prettyprint{ 
+    <span class="kwd">padding</span>: 2px; 
+    <span class="kwd">border</span>: 1px solid #888; 
+        <span class="kwd">background</span>:url(paperbg18.gif);
+        <span class="kwd">font-family</span>:monospace;
+    <span class="kwd">font-size</span>:18px;
+    <span class="kwd">line-height</span>:18px;
+    <span class="kwd">width</span>:100%;
+    <span class="kwd">overflow</span>: auto;
+        <span class="kwd">max-height</span>: 41em;
+    <span class="kwd">margin</span>: 0; 
+    }
+    .str { <span class="kwd">color</span>: #060; }
+    .kwd { <span class="kwd">color</span>: #006; <span class="kwd">font-weight</span>: bold; }
+    .com { <span class="kwd">color</span>: #600; <span class="kwd">font-style</span>: italic; }
+    .typ { <span class="kwd">color</span>: #404; <span class="kwd">font-weight</span>: bold; }
+    .lit { <span class="kwd">color</span>: #044; }
+    .pun { <span class="kwd">color</span>: #440; }
+    .pln { <span class="kwd">color</span>: #000; }
+    .tag { <span class="kwd">color</span>: #006; <span class="kwd">font-weight</span>: bold; }
+    .atn { <span class="kwd">color</span>: #404; }
+    .atv { <span class="kwd">color</span>: #060; }
+}
+</pre>
+</div>
+
+    </div>
+<!-- printable -->
+</div> <!-- main -->
+</td>
+
+
+</tr>
+</table>
+
+
+<div id="footer">
+Generated by: WXT : <span class="wxtdate">Jun 28, 2017</span>
+</div>
+
+</body>
+</html>

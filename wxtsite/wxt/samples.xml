@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>	
+    <title><?_wxt fragment id="_name"?></title>
+	<link rel="STYLESHEET" href="../commons/frontstyle.css"/>
+ 	<!--<link rel="STYLESHEET" href="../commons/helpstyle.css"/>-->
+    <?_wxt fragment id="resources"?>
+</head>
+<body>
+
+<?_wxt fragment id="banner"?>
+
+	<div id="topselections">
+    <span class="wxtmodulemap">
+        <span class="level1"><a href="../index.html" title="Project">Project</a></span> | 
+        <span class="level1"><a href="wxt.html" title="Wxt">WXT</a></span> | 
+        <span class="level1"><a href="basics.html" title="Basics">Basics</a></span> | 
+        <span class="level1"><a href="download.html" title="download page">Download</a></span> | 
+        <span class="level1"><a href="documentation.html" title="Documentation">Documentation</a></span> | 
+        <span class="level1">Samples</span>
+      </span>
+  </div>
+
+<div class="maincontent">
+
+
+	<h2>Production samples</h2>
+	<p>
+	On the website <a href="http://borres.hiof.no/wep/"  class="external" title="external link">wep</a> you 
+	will find many sites maintained with WXT.
+	Most of them are in Norwegian. Some examples:
+	</p>
+	
+	<table>
+
+	<tr>
+
+	</tr>
+	<tr>
+	<td  style="vertical-align:top">
+	<a href="http://borres.hiof.no/graf/j3d/" class="external" title="external link">j3d</a>
+	</td>
+	<td>
+		Computer Graphics, a site with material for a basic course in Computer Graphics
+	</td>	
+	</tr>
+	<tr>
+		<td  style="vertical-align:top">
+		<a href="http://borres.hiof.no/wep/webgl/index.html" class="external" title="external link">WebGL</a>
+		</td>
+		<td>Some experiments with 3d on the web (in Norwegian)
+		</td>
+	</tr>	
+	<tr>
+		<td  style="vertical-align:top">
+		<a href="http://borres.hiof.no/wep/svg/index.html" class="external" title="external link">SVG</a>
+		</td>
+		<td>
+		Some material with SVG (in Norwegian)
+		</td>	
+	</tr>	
+	<tr>
+		<td  style="vertical-align:top">
+		<a href="http://borres.hiof.no/pedtek/" class="external" title="external link">PedTek</a>
+		</td>
+		<td>
+		A historical perspective on Pedagogy and Technologi (in Norwegian)
+		</td>	
+	</tr>	
+		
+	</table>
+
+	
+	
+	</div>
+	
+    
+
+
+    
+        <div id="footer">
+    <?_wxt fragment id="footer"?>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<pre class="xmlcode">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;<span class="tagname">html</span> <span class="attname">xmlns</span>="<span class="attvalue">http://www.w3.org/1999/xhtml</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>" <span class="attname">lang</span>="<span class="attvalue">en</span>"&gt;
+&lt;<span class="tagname">head</span>&gt;
+&lt;/<span class="tagname">head</span>&gt;
+&lt;<span class="tagname">body</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">main</span>"&gt;
+&lt;<span class="tagname">h1</span>&gt;Produce your own book&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">script</span> <span class="attname">type</span>="<span class="attvalue">text/javascript</span>"&gt;
+//&lt;![CDATA[
+function swap(a,b)
+{
+  try{
+  var aelt=document.getElementById('_modulepos'+a);
+  var aval=aelt.getElementsByTagName('input')[0].checked;
+  var belt=document.getElementById('_modulepos'+b);
+  var bval=belt.getElementsByTagName('input')[0].checked;
+
+  var T=aelt.innerHTML;
+  aelt.innerHTML=belt.innerHTML;
+  belt.innerHTML=T;
+
+  aelt.getElementsByTagName('input')[0].checked=bval;
+  belt.getElementsByTagName('input')[0].checked=aval;
+  }
+  catch(e)
+  {
+    alert('error '+e);
+  }
+}
+function moveUp(ix){
+  if(ix &lt;= 1)
+    return;
+  swap(ix,ix-1);
+}
+function moveDown(ix){
+  if(document.getElementById('_modulepos'+(ix+1))==null)
+    return;
+  swap(ix,ix+1);
+}
+// ]]&gt;
+&lt;/<span class="tagname">script</span>&gt;
+&lt;<span class="tagname">p</span>&gt;
+  Change the sequence and select the modules you want to include.
+ &lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">selecttable</span>"&gt;
+
+<span class="process">&lt;?_wxt bookondemand 
+        scriptaddress="/home/wxt/html/wxtdemos/demo2/script.xml" 
+        serveraddress="http://www.ia.hiof.no/wxt/cgi-bin/wxtservice/makebook/doit.py"
+        targetfile="/home/wxt/html/wxtdemos/demo2/stuff/book_template.xml"
+        htmlfile="/home/wxt/html/wxtdemos/demo2/stuff/collectedbook.html"
+        stylesheet="/home/wxt/html/wxtdemos/demo2/stuff/pdfstyle.css"
+        pdf="yes"?&gt;</span>
+
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span> <span class="attname">id</span>="<span class="attvalue">pagesource</span>"&gt;
+  &lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_demand.xml" 
+             sourcelocation="demand.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+
+&lt;/<span class="tagname">body</span>&gt;
+&lt;/<span class="tagname">html</span>&gt;</pre>

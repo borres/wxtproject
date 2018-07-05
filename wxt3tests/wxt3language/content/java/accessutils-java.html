@@ -1,0 +1,1444 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>WXT-popup</title>
+	<meta content="WXT" name="keywords"/>
+	<meta content="wxt3" name="GENERATOR"/>
+	
+	<link href="../../../templates/templatestyle.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://www.it.hiof.no/~borres/allround/stdstyles/wxtstyle.css" rel="STYLESHEET"/>
+	<script src="http://www.it.hiof.no/~borres/allround/jquery.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/stdjs/wxtjs.js" type="text/javascript"> </script>
+	
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/prettify.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-css.js" type="text/javascript"> </script>
+    <script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-sql.js" type="text/javascript"> </script>
+	<script src="http://www.it.hiof.no/~borres/allround/google-code-prettify/src/lang-ml.js" type="text/javascript"> </script>
+
+</head>
+
+<body><pre class="lang-j readyandpretty skiptranslate">
+<span class="kwd">package</span> utils;
+<span class="kwd">import</span> content.elementWrapper;
+<span class="kwd">import</span> java.awt.image.BufferedImage;
+<span class="kwd">import</span> java.io.BufferedReader;
+<span class="kwd">import</span> java.io.ByteArrayInputStream;
+<span class="kwd">import</span> java.io.ByteArrayOutputStream;
+<span class="kwd">import</span> java.io.CharArrayWriter;
+<span class="kwd">import</span> java.io.File;
+<span class="kwd">import</span> java.io.FileInputStream;
+<span class="kwd">import</span> java.io.FileNotFoundException;
+<span class="kwd">import</span> java.io.FileOutputStream;
+<span class="kwd">import</span> java.io.FileWriter;
+<span class="kwd">import</span> java.io.IOException;
+<span class="kwd">import</span> java.io.InputStream;
+<span class="kwd">import</span> java.io.InputStreamReader;
+<span class="kwd">import</span> java.io.OutputStream;
+<span class="kwd">import</span> java.io.OutputStreamWriter;
+<span class="kwd">import</span> java.io.PrintWriter;
+<span class="kwd">import</span> java.io.StringWriter;
+<span class="kwd">import</span> java.net.HttpURLConnection;
+<span class="kwd">import</span> java.net.URI;
+<span class="kwd">import</span> java.net.URISyntaxException;
+<span class="kwd">import</span> java.net.URL;
+<span class="kwd">import</span> java.net.URLConnection;
+<span class="kwd">import</span> java.net.URLEncoder;
+<span class="kwd">import</span> java.util.Calendar;
+<span class="kwd">import</span> java.util.Collections;
+<span class="kwd">import</span> java.util.GregorianCalendar;
+<span class="kwd">import</span> java.util.HashMap;
+<span class="kwd">import</span> java.util.Vector;
+<span class="kwd">import</span> java.util.zip.ZipEntry;
+<span class="kwd">import</span> java.util.zip.ZipInputStream;
+<span class="kwd">import</span> javax.imageio.ImageIO;
+<span class="kwd">import</span> org.w3c.tidy.Tidy;
+<span class="com">/**
+ * This is a library with utility methods for
+ * fileaccess, path and URI manipulation etc.
+ * Only static methods
+ */</span>
+<span class="kwd">public</span> <span class="kwd">class</span> accessutils {
+<span class="com">/** default encoding */</span>
+<span class="kwd">static</span> <span class="kwd">private</span> String default_encoding="<span class="str">UTF-8"</span>;
+<span class="com">/** constant for error in parse name value pairs */</span>
+<span class="kwd">static</span> <span class="kwd">public</span> String NONAME="<span class="str">_noName_"</span>;
+<span class="com">/** set default encoding
+ * 
+ * @param s The new encoding
+ */</span>
+<span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span> setDefaultEncoding(String s)
+{default_encoding=s;}
+<span class="com">/**
+ * get default encoding
+ * 
+ * @return the encoding
+ */</span>
+<span class="kwd">public</span> <span class="kwd">static</span> String getDefaultEncoding()
+{<span class="kwd">return</span> default_encoding;}
+    <span class="com">/**
+     * Check if a path is absolute dependent on operating system .
+     *@param path The path we will check
+     *@return true if it is absolute, false otherwise
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> isAbsoluteAddress(String path) {                
+         <span class="com">/* Cases to consider:
+           C:\folder\file   
+           /something/something 
+           http://www.something
+           file://something
+         */</span>      
+        <span class="kwd">try</span> {                
+            File f = <span class="kwd">new</span> File(path);  
+            <span class="com">// handles driver:\folder\file (if win) and /folder/file (if linux)</span>
+            <span class="kwd">if</span> (f.isAbsolute())
+                <span class="kwd">return</span> true; 
+            path = path.trim(); 
+            <span class="kwd">if</span> (path.startsWith("<span class="str">http"</span>) || path.startsWith("<span class="str">file"</span>)){                
+                <span class="kwd">return</span> f.toURI().isAbsolute();                
+            }             
+            <span class="kwd">return</span> false; 
+        } 
+        <span class="kwd">catch</span> (Exception e) 
+        {            
+            <span class="kwd">return</span> false;
+        }                                
+    }
+    <span class="com">/** 
+     *  Try to make necessary catalogs if the theUri (file) does not exist.
+     * 
+     * @param theUri The URI for the file
+     * @return true if the catalogpath exists when we leave, false otherwise
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> makeCatalog(URI theUri) {
+        <span class="kwd">try</span> {
+            File f = <span class="kwd">new</span> File(theUri);
+            <span class="kwd">if</span> (!f.exists()) {
+                <span class="kwd">new</span> File(f.getParent()).mkdirs();
+            }
+            <span class="kwd">return</span> true;
+        } <span class="kwd">catch</span> (Exception e) {
+            <span class="kwd">return</span> false;
+        }
+    }
+    <span class="com">/** 
+     *  Try to make necessary catalogs if the file does not exist.
+     * 
+     * @param path The path for the file
+     * @return true if the catalogpath exists when we leave, false otherwise
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> makeCatalog(String path) {
+        <span class="kwd">try</span> {
+            File f = <span class="kwd">new</span> File(path);
+            <span class="kwd">if</span> (!f.exists()) {
+                <span class="kwd">new</span> File(f.getParent()).mkdirs();
+            }
+            <span class="kwd">return</span> true;
+        } <span class="kwd">catch</span> (Exception e) {
+            <span class="kwd">return</span> false;
+        }
+    }
+    <span class="com">/**
+     * Get the digital start of a string
+     * @param s The string we will examine
+     * @return the integer part or -1 if not integer start
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">int</span> getNumericStart(String s)
+    {
+        <span class="kwd">if</span>(!Character.isDigit(s.charAt(0)))
+            <span class="kwd">return</span> -1;
+        <span class="kwd">if</span>(Character.isDigit(s.charAt(s.length()-1)))
+            <span class="kwd">return</span> Integer.parseInt(s);
+        <span class="kwd">int</span> ix=0;
+        <span class="kwd">while</span>((ix &lt; s.length()) &amp;&amp; (Character.isDigit(s.charAt(ix))))
+                ix++;
+        String tmp=s.substring(0, ix);
+        <span class="kwd">return</span> Integer.parseInt(tmp);
+    }
+    
+    <span class="com">/**
+     * Remove filepart from an URI.
+     * 
+     * @param theUri The URI we will work on
+     * @return the URI with removed filepart, i.e. a catalog
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> URI removeFilePart(URI theUri)
+    {
+        URI resUri=null;
+        String tmp=removeFilePartFromPathstring(theUri.toString());
+        <span class="kwd">try</span>{
+            <span class="com">//resUri=new URI(tmp);</span>
+            resUri=makeUri(tmp);
+            <span class="kwd">return</span> resUri;            
+        }
+        <span class="kwd">catch</span>(Exception e)
+        {
+            <span class="kwd">return</span> theUri;
+        }
+    }
+    
+     <span class="com">/**
+     * Remove filepart from a path.
+      * 
+     * @param pt The path we will work on
+     * @return the reduced path if file was identified, otherwise the path as received
+     */</span>  
+    <span class="kwd">public</span> <span class="kwd">static</span> String removeFilePartFromPathstring(String pt)
+    {
+        pt=pt.replace('<span class="str">\\'</span>, '<span class="str">/'</span>);
+        <span class="kwd">int</span> lastslash=pt.lastIndexOf('<span class="str">/'</span>);
+        <span class="kwd">int</span> lastdot=pt.lastIndexOf('<span class="str">.'</span>);
+        <span class="kwd">if</span>(lastdot &gt; lastslash) 
+            <span class="kwd">return</span> pt.substring(0,lastslash);
+        <span class="kwd">return</span> pt;     
+    }
+     <span class="com">/**
+     * Access the filepart without extension from a path.
+     *
+     * @param pt The path we will work on
+     * @return the filename, otherwise the path as received
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> String getFileNameFromPathString(String pt)
+    {
+        pt=pt.replace('<span class="str">\\'</span>, '<span class="str">/'</span>);
+        <span class="kwd">int</span> lastslash=pt.lastIndexOf('<span class="str">/'</span>);
+        <span class="kwd">int</span> lastdot=pt.lastIndexOf('<span class="str">.'</span>);
+        <span class="kwd">if</span>(lastdot &gt; lastslash)
+            <span class="kwd">return</span> pt.substring(lastslash+1, lastdot);
+        <span class="kwd">return</span> pt;
+    }
+    
+    <span class="com">/**
+     * Return the extension (string behind last .) of the file with uri uristr
+     * @param uristr The string where we try to locate the extension
+     * @return The extension. return null if no extenison is found
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> String getFileExtension(String uristr)
+    {
+        <span class="kwd">int</span> pos=uristr.lastIndexOf('<span class="str">.'</span>);
+        <span class="kwd">if</span>(pos != -1)
+        {
+            <span class="kwd">return</span> uristr.substring(pos+1);
+        }
+        <span class="kwd">return</span> null;
+    }
+    
+    
+    <span class="com">/**
+     * Build an URI which refers from one absolute URI to another absolute URI.
+     * 
+     * @param from_uri The URI we refer from
+     * @param to_uri The URI we refer to
+     * @return The relative URI, or to_uri if not both are absolute
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> URI makeRelativeURI(URI from_uri,URI to_uri){
+        <span class="com">// both are assumed to be complete absolute addresses of two files</span>
+        <span class="com">// we want to find out how we can reference to_uri from from_uri</span>
+        <span class="com">//@TODO : this method should be revised</span>
+        
+        
+        
+        <span class="com">// if either is relative we return to_uri</span>
+        <span class="kwd">if</span>((!to_uri.isAbsolute())||(!from_uri.isAbsolute()))
+            <span class="kwd">return</span> to_uri;
+        
+        <span class="com">// if they are equal, we try to return the filepath</span>
+        <span class="kwd">if</span>(from_uri.toString().compareTo(to_uri.toString())==0)
+        {
+            String thepath=to_uri.getPath();
+            <span class="kwd">int</span> pos=thepath.lastIndexOf('<span class="str">/'</span>);
+            <span class="kwd">try</span>{
+                <span class="com">//return new URI(thepath.substring(pos+1));</span>
+                <span class="kwd">return</span> makeUri(thepath.substring(pos+1));
+            }
+            <span class="kwd">catch</span>(Exception se){<span class="kwd">return</span> to_uri; }
+        }
+        <span class="com">// ok both are absolute and they are different</span>
+        <span class="com">// remove filepart, if necessary</span>
+        URI from_uri_cat=removeFilePart(from_uri);
+        URI relUri=from_uri_cat.relativize(to_uri);
+        
+        <span class="kwd">if</span>(!relUri.isAbsolute())
+            <span class="kwd">return</span> relUri;
+        
+        <span class="com">// we may not be happy with this if we get an absolute URI </span>
+        <span class="com">// we must resolve the case where the result should start with ../</span>
+        String fromHost=from_uri.getHost();
+        String toHost=to_uri.getHost();
+        <span class="kwd">if</span>((fromHost!=null)&amp;&amp;(toHost!=null))
+             <span class="kwd">if</span>(from_uri.getHost().compareToIgnoreCase(to_uri.getHost())!=0)
+                  <span class="kwd">return</span> relUri;
+        String fromScheme=from_uri.getScheme();
+        String toScheme=to_uri.getScheme();
+        <span class="kwd">if</span>(fromScheme.compareTo(toScheme)!=0)
+            <span class="kwd">return</span> to_uri;
+        String fromPath=from_uri.getPath();
+        String toiPath=to_uri.getPath();
+        String toAuhtority=to_uri.getAuthority();
+        String toQuery=to_uri.getQuery();
+        String toFragment=to_uri.getFragment();
+        String theNewPath="<span class="str">"</span>;
+        
+        <span class="com">// start reducing the paths</span>
+        String from_list[]=fromPath.split("<span class="str">/"</span>);
+        String to_list[]=toiPath.split("<span class="str">/"</span>);
+        <span class="kwd">int</span> pos=0;
+        <span class="kwd">while</span>((pos &lt; to_list.length)&amp;&amp;
+              (pos &lt; from_list.length)&amp;&amp;
+              (from_list[pos].compareTo(to_list[pos])==0))
+                    pos++;
+        <span class="kwd">if</span>((pos==from_list.length)&amp;&amp;(pos==to_list.length)){
+            <span class="kwd">try</span>{
+                <span class="com">// in same catalog</span>
+                <span class="kwd">return</span> <span class="kwd">new</span> URI(null,null,to_list[pos-1],toQuery,toFragment); 
+            }
+            <span class="kwd">catch</span>(URISyntaxException e){
+                <span class="kwd">return</span> to_uri;
+            }
+        }
+        
+        <span class="kwd">for</span>(<span class="kwd">int</span> ix=0; ix &lt; (from_list.length-pos-1);ix++)
+            theNewPath+="<span class="str">../"</span>;
+        <span class="kwd">for</span>(<span class="kwd">int</span> ix=pos; ix &lt; (to_list.length);ix++)
+            theNewPath+=to_list[ix]+"<span class="str">/"</span>;
+        theNewPath=theNewPath.substring(0,theNewPath.length()-1);        
+        
+        <span class="kwd">try</span>{
+            URI retUri=<span class="kwd">new</span> URI(null,null,theNewPath,toQuery,toFragment);
+            <span class="kwd">return</span> retUri;
+        }
+        <span class="kwd">catch</span>(URISyntaxException e){
+            System.out.println("<span class="str">accessUtils:getRelativeUri: "</span>+e.getMessage());
+            <span class="kwd">return</span> to_uri;
+        }
+    }
+    <span class="com">/**
+     * Attempts to make an URI from a string. Spaces are replaced by %20
+     * @param source The string we will interpret as an URI
+     * @return The prepared UIR
+     * @throws java.lang.Exception
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> URI makeUri(String source)
+    <span class="kwd">throws</span> Exception{
+        source=source.trim();
+        source=source.replace('<span class="str">\\'</span>, '<span class="str">/'</span>);
+        source=source.replaceAll("<span class="str"> "</span>, "<span class="str">%20"</span>);
+        <span class="kwd">if</span>(source.startsWith("<span class="str">http"</span>))
+        {
+           <span class="kwd">try</span>{
+               <span class="com">//must locate and urlencode querypart ?</span>
+               <span class="kwd">int</span> pos=source.indexOf('<span class="str">?'</span>);
+               <span class="kwd">if</span>(pos != -1)
+               {
+                    String p1=source.substring(0, pos);
+                    String p2=source.substring(pos);
+                    <span class="com">//p2=p2.replaceAll("=", "%3D");</span>
+                    <span class="com">//p2=p2.replaceAll(",", "%2C");</span>
+                    p2=p2.replaceAll("<span class="str">&amp;"</span>, "<span class="str">&amp;amp;"</span>);
+                    String tmp=p1+p2;
+                    URI tstUri=<span class="kwd">new</span> URI(tmp);
+                    <span class="kwd">return</span> tstUri;
+               }
+           }
+           <span class="kwd">catch</span>(Exception e)
+           {
+                <span class="kwd">return</span> <span class="kwd">new</span> URI(source);
+           }
+        }
+        <span class="kwd">return</span> <span class="kwd">new</span> URI(source);
+    }
+    
+    <span class="com">/**
+     * Build an absolute URI from a directorypath and a filepath.
+     * The dirpath is only used if the filepath is relative.
+     * 
+     * @return An absolute URI
+     * @param filepath The absolute or relative filepath
+     * @param dirpath The absolute directory path
+     * @throws java.lang.Exception if we dont succeed
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> URI makeAbsoluteURI(String filepath, String dirpath)
+            <span class="kwd">throws</span> Exception {
+        <span class="com">// this is hazardiuos business</span>
+        <span class="com">//@TODO: Address calculation for all seasons</span>
+        <span class="com">// what about ?:</span>
+        <span class="com">//    samba access without mapping to drive: \\</span>
+        <span class="com">//    implisit: http://wwww , as browsers guess addresses</span>
+        <span class="com">//    [scheme:][//authority][path][?query][#fragment], with authority part</span>
+        
+        URI theUri = null;
+        URI fileUri = null;
+        URI catUri = null;
+        URI tstUri = null;
+                
+        <span class="kwd">if</span>((dirpath==null) || (filepath==null))
+            <span class="kwd">throw</span> <span class="kwd">new</span> Exception(); 
+        filepath=filepath.trim();
+        dirpath=dirpath.trim();
+        
+        
+        dirpath=dirpath.replace('<span class="str">\\'</span>,'<span class="str">/'</span>);
+        filepath=filepath.replace('<span class="str">\\'</span>,'<span class="str">/'</span>);
+        
+        
+        
+        <span class="kwd">if</span> (!dirpath.endsWith("<span class="str">/"</span>))
+        {
+            dirpath=removeFilePartFromPathstring(dirpath);
+            <span class="kwd">if</span>(!dirpath.endsWith("<span class="str">/"</span>))
+                dirpath+="<span class="str">/"</span>;
+        }
+        
+        <span class="kwd">try</span>{        
+            <span class="com">// work on the directory path</span>
+            <span class="com">// must set scheme file if catalog is a file URI</span>
+            <span class="kwd">if</span>(dirpath.startsWith("<span class="str">/"</span>))
+            {
+                <span class="com">// this must be an absolute URI (unix style)</span>
+                <span class="com">// with no scheme, that is a file</span>
+                dirpath="<span class="str">file://"</span>+dirpath;
+            }
+            <span class="com">//catUri=new URI(dirpath);</span>
+            <span class="com">//catUri=new URI(dirpath.replaceAll(" ","%20"));</span>
+            catUri=makeUri(dirpath);
+            
+            String scheme=catUri.getScheme();
+           
+            <span class="kwd">if</span>((scheme!=null)&amp;&amp;(scheme.length() &lt; 2))
+            {
+                <span class="com">// this probably is a windows absolute filepath </span>
+                <span class="com">// starting with drive-letter</span>
+                <span class="com">//catUri=new URI("file:///"+catUri.toString());</span>
+                catUri=makeUri("<span class="str">file:///"</span>+catUri.toString());
+            }
+            
+            <span class="com">// work on the filepath</span>
+            
+            <span class="com">//tstUri=new URI(filepath);</span>
+            <span class="com">//tstUri=new URI(filepath.replaceAll(" ","%20"));</span>
+            tstUri=makeUri(filepath);
+            
+            
+            <span class="kwd">if</span>(tstUri.isAbsolute())
+            {
+                String tstscheme=tstUri.getScheme();
+                <span class="kwd">if</span>((tstscheme!=null)&amp;&amp;(tstscheme.length() &lt; 2))
+                {
+                    <span class="com">// this probably is a windows absolute filepath </span>
+                    <span class="com">// starting with drive-letter</span>
+                    <span class="com">//fileUri=new URI("file:///"+tstUri.toString());</span>
+                    fileUri=makeUri("<span class="str">file:///"</span>+tstUri.toString());
+                }
+                <span class="kwd">else</span>
+                    fileUri=tstUri;
+            }
+            <span class="kwd">else</span>
+                fileUri=tstUri;
+                <span class="com">//fileUri=new URI(filepath);</span>
+                        
+            theUri=catUri.resolve(fileUri);
+            theUri=accessutils.fixUriParameterEntities(theUri);
+            <span class="kwd">return</span> theUri.normalize();
+        }
+        <span class="kwd">catch</span>(Exception e)
+        {
+            String m=e.getMessage();
+            <span class="kwd">throw</span> e;
+        }
+    }
+    <span class="com">// appendtotextfile</span>
+    <span class="com">/**
+     * Append to a text file.
+     * 
+     * @param theUri The absolute URI to the file
+     * @param text The text to append
+     * @param maxFileSize When file reach this size in bytes it is reset, -1 keeps it going forever
+     * @return true if save goes ok, false otherwise
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> appendToTextFile(URI theUri, String text, <span class="kwd">long</span> maxFileSize)
+    {
+        <span class="kwd">try</span> {
+            File f = <span class="kwd">new</span> File(theUri);
+            <span class="kwd">try</span> {
+                <span class="kwd">if</span> (!f.exists()) {
+                    <span class="kwd">return</span> saveTextFile(f, text, false); <span class="com">// not append</span>
+                }
+                <span class="kwd">if</span> ((maxFileSize &gt;= 0) &amp;&amp; (f.length() &gt; maxFileSize))
+                {
+                    <span class="kwd">return</span> saveTextFile(f, text, false); <span class="com">// not append</span>
+                }
+                <span class="kwd">return</span> saveTextFile(f, text, true); <span class="com">// append</span>
+            } <span class="kwd">catch</span> (Exception ioe) {
+                <span class="kwd">throw</span> <span class="kwd">new</span> Exception(ioe.getMessage());
+            }
+        } <span class="kwd">catch</span> (Exception ex) {
+            System.out.println("<span class="str">AccessUtils:appendToTextFile, Not written: "</span> + theUri.toString());
+            <span class="kwd">return</span> false;
+        }
+    }
+    <span class="com">// eofappendtotextfile</span>
+    <span class="com">/**
+     * Save a text file.
+     * 
+     * @param bAppend true if we want to append to the file
+     * @param f A file object
+     * @param text The string to write
+     * @return true if save goes ok, false otherwise
+     */</span>
+    <span class="kwd">private</span> <span class="kwd">static</span> <span class="kwd">boolean</span> saveTextFile(File f, String text, <span class="kwd">boolean</span> bAppend) {
+        FileWriter fwriter = null;
+        <span class="kwd">try</span> {
+            <span class="kwd">if</span> (!f.exists()) {
+                <span class="kwd">try</span> {
+                    <span class="com">//URI theUri = makeAbsoluteURI(f.getAbsolutePath(), null);</span>
+                    URI theUri = f.toURI();
+                    makeCatalog(theUri);
+                } <span class="kwd">catch</span> (Exception e) {
+                    <span class="kwd">throw</span> <span class="kwd">new</span> Exception(e.getMessage());
+                }
+            }
+            fwriter = <span class="kwd">new</span> FileWriter(f, bAppend);
+            fwriter.write(text);
+            fwriter.close();
+            <span class="kwd">return</span> true;
+        } 
+        <span class="kwd">catch</span> (Exception ex) {
+            System.out.println("<span class="str">AccessUtils:saveTextFile, Not written: "</span> + f.getAbsolutePath());
+            <span class="kwd">return</span> false;
+        } <span class="kwd">finally</span> {
+            <span class="kwd">try</span> {
+                <span class="kwd">if</span> (fwriter != null) {
+                    fwriter.close();
+                }
+            } <span class="kwd">catch</span> (IOException ioe) {
+            }
+        }
+    }
+    
+ 
+    <span class="com">/** Save a text file.
+     * 
+     * @param theUri The absolute URI to the file
+     * @param text The text to write
+     * @param encoding The encoding to use
+     * @return true if save goes ok, false otherwise
+     */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> saveTFile(URI theUri, String text, String encoding)
+    {
+        File f;
+        FileOutputStream fos=null;
+        OutputStreamWriter osw=null;
+        <span class="kwd">try</span> {
+            f = <span class="kwd">new</span> File(theUri);
+            <span class="kwd">if</span> (!f.exists()) {
+                <span class="kwd">try</span> {
+                    <span class="com">//URI theUri = makeAbsoluteURI(f.getAbsolutePath(), null);</span>
+                    makeCatalog(theUri);
+                } 
+                <span class="kwd">catch</span> (Exception e) 
+                {
+                    <span class="kwd">throw</span> <span class="kwd">new</span> Exception(e.getMessage());
+                }
+            }
+            fos=<span class="kwd">new</span> FileOutputStream(f);
+            <span class="kwd">if</span>(encoding!=null)
+                osw=<span class="kwd">new</span> OutputStreamWriter(fos,encoding);
+            <span class="kwd">else</span>
+                osw=<span class="kwd">new</span> OutputStreamWriter(fos);
+            osw.write(text);
+            osw.close();
+            <span class="kwd">return</span> true;
+        } 
+        <span class="kwd">catch</span> (Exception ex) 
+        {
+            System.out.println("<span class="str">AccessUtils:saveTextFile, Not written: "</span> + theUri.toString());
+            <span class="kwd">return</span> false;
+        }
+    }
+    <span class="com">/**
+    * Trim left of a string.
+    * @param s The string we will trim
+    * @return the trimmed string
+    */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> String trimLeft(String s)
+    {
+        <span class="kwd">int</span> i = 0;
+        <span class="kwd">while</span> (i &lt; s.length() &amp;&amp; Character.isWhitespace(s.charAt(i))) {
+        i++;
+        }
+        <span class="kwd">return</span> s.substring(i);
+    }
+    <span class="com">/**
+    * Trim right of a string.
+    * @param s The string we will trim
+    * @return the trimmed string
+    */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> String trimRight(String s)
+    {
+        <span class="kwd">int</span> i = s.length()-1;
+        <span class="kwd">while</span> (i &gt; 0 &amp;&amp; Character.isWhitespace(s.charAt(i))) {
+        i--;
+        }
+        <span class="kwd">return</span> s.substring(0,i+1);
+    }
+    <span class="com">/**
+     * Finds out if a string is in a string[].
+     * 
+     * @param name The name we are searching for
+     * @param namelist The list we are searching
+     * @return the index of the found word if found, else -1
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">int</span> indexOfNameInList(String name,String[] namelist)
+    {
+        <span class="kwd">for</span>(<span class="kwd">int</span> ix=0;ix&lt;namelist.length;ix++)
+            <span class="kwd">if</span>(namelist[ix].compareTo(name)==0)
+                <span class="kwd">return</span> ix;
+        <span class="kwd">return</span> -1;
+    }
+     
+    <span class="com">/**
+     * Finds out if one of the strings in a string[] is contained in another string[].
+     * 
+     * @param names The candidate names
+     * @param namelist The list we are searching in
+     * @return true if found, false otherwise
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> isAnyNameInList(String[] names,String[] namelist)
+    {
+        <span class="kwd">for</span>(<span class="kwd">int</span> ix=0;ix&lt;names.length;ix++)
+        {
+            <span class="kwd">if</span> (indexOfNameInList(names[ix],namelist)!= -1)
+                <span class="kwd">return</span> true;
+        }
+        <span class="kwd">return</span> false;
+    }
+    
+    <span class="com">/**
+     * Produce a list of integers from a commaseparated string.
+     * 
+     * @param S The string we will parse
+     * @return A list of integers, or null if S is unparsable
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> Vector&lt;Integer&gt; getIntegerList(String S)
+    {       
+        String[]slist=S.split("<span class="str">,"</span>);
+        Vector&lt;Integer&gt; list=<span class="kwd">new</span> Vector&lt;Integer&gt;(slist.length);
+        <span class="kwd">for</span>(String s:slist)
+        {
+            <span class="kwd">try</span>{
+                Integer i=Integer.parseInt(s);
+                list.add(i);
+            }
+            <span class="kwd">catch</span>(Exception e){
+                <span class="kwd">return</span> null;
+            }
+         }
+        <span class="kwd">return</span> list;
+    }
+     
+    <span class="com">/**
+     * Produce a list of integers from a python-like slice expression.
+     * 
+     * @param slice The expression
+     * @param limit Max number of items. Only effective for slices
+     * @return A list of integers, or null if slice is unparsable
+     */</span> 
+     <span class="kwd">public</span> <span class="kwd">static</span> Vector&lt;Integer&gt; getIntegerList( String slice,<span class="kwd">int</span> limit)
+     {
+         Vector&lt;Integer&gt; list=<span class="kwd">new</span> Vector&lt;Integer&gt;();
+         <span class="com">// parse the slice</span>
+         <span class="com">// expect one of the following</span>
+         <span class="com">// a,b,c,  the named indexes </span>
+         <span class="com">// [a:b]   [a..b&gt;</span>
+         <span class="com">// [a:]    [a..limit]</span>
+         <span class="com">// [:b]    [0..b&gt;</span>
+         <span class="com">// [:-b]   [limit-b..limit]</span>
+         slice=slice.trim();
+         <span class="kwd">if</span>(slice.startsWith("<span class="str">["</span>))
+             slice=slice.substring(1).trim();
+         <span class="kwd">if</span>(slice.endsWith("<span class="str">]"</span>))
+             slice=slice.substring(0,slice.length()-1).trim();
+         
+         <span class="kwd">if</span>(slice.indexOf("<span class="str">:"</span>)==-1)
+             <span class="kwd">return</span> getIntegerList(slice);
+         
+         <span class="kwd">int</span> lo=0;
+         <span class="kwd">int</span> hi=limit+1;
+         <span class="kwd">try</span>{
+             <span class="kwd">if</span>(slice.startsWith("<span class="str">:"</span>))
+             {
+                 hi=Integer.parseInt(slice.substring(1));
+                 <span class="kwd">if</span>(hi &lt;0)
+                 {
+                     lo=limit+hi+1;
+                     hi=limit+1;
+                 }
+                 <span class="kwd">else</span>
+                     hi=hi+1;
+             }
+             <span class="kwd">else</span> <span class="kwd">if</span>(slice.endsWith("<span class="str">:"</span>))
+                 lo=Integer.parseInt(slice.substring(0,slice.length()-1));
+             <span class="kwd">else</span>
+             {
+                String[] parts=slice.split("<span class="str">:"</span>);
+                <span class="kwd">if</span>(parts.length==2) 
+                {
+                    lo=Integer.parseInt(parts[0]);
+                    hi=Integer.parseInt(parts[1]);
+                }
+             }
+         }
+         <span class="kwd">catch</span>(Exception e)
+         {
+             <span class="kwd">return</span> null;
+         }
+         <span class="kwd">for</span>(<span class="kwd">int</span> ix=lo;ix&lt; hi;ix++)
+             list.add(ix);
+         
+         <span class="kwd">return</span> list;
+     }
+    
+    <span class="com">/**
+     * Determine how we should break a list of modulereferences into columns.
+     * 
+     * @param eltList The list of elementwrappers
+     * @param cols The number of columns we want
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span> makeColumnBreaks(Vector&lt;elementWrapper&gt;eltList,<span class="kwd">int</span> cols)
+    {
+       <span class="kwd">for</span>(elementWrapper lw:eltList)
+            lw.setBreakBefore(false);
+       
+       <span class="kwd">if</span>(cols==0)
+            <span class="kwd">return</span>;
+       <span class="kwd">if</span>(cols==1)
+       {
+            <span class="kwd">for</span>(elementWrapper lw:eltList)
+                lw.setBreakBefore(true);
+            <span class="kwd">return</span>;
+        }
+        
+       <span class="com">// cols &gt; 1</span>
+       <span class="com">// raw division as a temporary solution</span>
+       <span class="kwd">int</span> collength=eltList.size()/cols;
+       <span class="kwd">int</span> rest=eltList.size()%cols;
+       <span class="kwd">if</span>(cols &gt;= eltList.size())
+       {
+           collength=1; 
+           rest=0;
+       }
+       collength=Math.max(1,collength);
+       <span class="kwd">int</span> ix=collength;
+       <span class="kwd">if</span>(rest &gt; 0)
+       {
+            ix+=1;
+            rest--;         
+       }
+       
+       <span class="kwd">while</span>((ix &gt;= 0) &amp;&amp; (ix &lt; eltList.size()))
+       {
+            eltList.elementAt(ix).setBreakBefore(true);
+            ix+=collength;
+            <span class="kwd">if</span>(rest &gt; 0)
+            {
+                ix+=1;
+                rest--;
+            }
+       }
+    }
+    
+    <span class="com">/**
+     * Parse for name-value pairs in a string and return them in a HashMap.
+     * Pairs may be , separated, values must be quoted
+     * @param data The string to parse
+     * @param quoteMark How values are quoted: ' or "
+     * @return a HashMap with names as keys
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> HashMap&lt;String,String&gt; parseNameValues(String data, <span class="kwd">char</span> quoteMark)
+    {
+         <span class="com">/* Expected input variants:
+         * (name1='value1',name2='value2')
+         * name1='value1',name2='value2'
+         * name1='value1' name2='value2'
+         * name1="value1" name2="value2"
+         */</span>
+        HashMap&lt;String,String&gt; pMap=<span class="kwd">new</span> HashMap&lt;String,String&gt;();
+        <span class="kwd">if</span>((data==null)||(data.length()&lt;3))
+            <span class="kwd">return</span> pMap;
+        data=data.trim();
+        
+        <span class="com">// we dont want to bother about linebreaks or tabs</span>
+        data=data.replaceAll("<span class="str">\r\n"</span>,"<span class="str"> "</span>);
+        data=data.replaceAll("<span class="str">\n"</span>,"<span class="str"> "</span>);
+        data=data.replaceAll("<span class="str">\t"</span>,"<span class="str"> "</span>);
+        
+        <span class="com">// get rid of opening and closing brackets if any</span>
+        <span class="com">// no check for wellfomredness</span>
+        <span class="kwd">if</span>(data.startsWith("<span class="str">("</span>)) data=data.substring(1);
+        <span class="kwd">if</span>(data.endsWith("<span class="str">)"</span>)) data=data.substring(0,data.length()-1);
+        
+        <span class="kwd">boolean</span> val_is_on=false;
+        <span class="kwd">boolean</span> nam_is_on=true;
+        String currentName=NONAME;
+        StringBuffer nam=<span class="kwd">new</span> StringBuffer(32);
+        StringBuffer val=<span class="kwd">new</span> StringBuffer(256);
+        
+        <span class="kwd">for</span>(<span class="kwd">int</span> pos=0;pos&lt;data.length();pos++){
+            <span class="kwd">char</span> c=data.charAt(pos);
+            <span class="kwd">if</span>(val_is_on){
+                <span class="com">// the only way to finish a value is a quotemark</span>
+                <span class="kwd">if</span>(c==quoteMark){
+                    <span class="kwd">if</span>(val.toString().length()&gt;0)
+                        pMap.put(currentName,val.toString());
+                    val=<span class="kwd">new</span> StringBuffer(10);
+                    val_is_on=false;
+                    nam_is_on=true; <span class="com">// since commas are ignored as part of a name</span>
+                    currentName=NONAME;
+                }
+                <span class="com">// we accept everything else as part of a value</span>
+                <span class="kwd">else</span>
+                    val.append(c);
+            }
+            <span class="kwd">else</span> <span class="kwd">if</span> (nam_is_on){
+                <span class="com">// the only way to finish a name is =</span>
+                <span class="kwd">if</span>(c=='<span class="str">='</span>){
+                    currentName=nam.toString().trim();
+                    nam=<span class="kwd">new</span> StringBuffer(10);
+                    nam_is_on=false;
+                }
+                <span class="com">// we ignore commas as potential part of name </span>
+                <span class="kwd">else</span> <span class="kwd">if</span>(c=='<span class="str">,'</span>)
+                    <span class="kwd">continue</span>;
+                <span class="com">// accept everything else</span>
+                <span class="kwd">else</span>
+                    nam.append(c);
+            }
+            <span class="com">// the only way to start a value is a quotemark</span>
+            <span class="kwd">else</span> <span class="kwd">if</span> (c==quoteMark)
+                val_is_on=true;
+        }
+        <span class="kwd">return</span> pMap;
+    }
+     <span class="com">/**
+     * Parse a string with a transformation with parameters.
+     * &lt;p&gt;
+     * Forms: T(name='Ole',address='Halden').
+      *   
+     * @param ts The string to unpack
+     * @return a hashmap with parameter name as key, and  value as value
+     * @throws Exception when we cannot parse the parameterlist
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> HashMap&lt;String,String&gt; unpackTransformationParameters(String ts)
+    <span class="kwd">throws</span> Exception{
+       HashMap&lt;String,String&gt; result=null;
+       <span class="com">// first we find out if we have parameters</span>
+      <span class="kwd">int</span> paramstartIx=ts.indexOf('<span class="str">('</span>);
+      <span class="kwd">int</span> paramstoppIx=ts.lastIndexOf('<span class="str">)'</span>);
+      <span class="kwd">if</span>((paramstartIx != -1)&amp;&amp;
+         (paramstoppIx==ts.length()-1) &amp;&amp;
+         (paramstoppIx-paramstartIx &gt;1)) <span class="com">// allow () and ( ) without generating error</span>
+      {
+          String tmp=ts.substring(paramstartIx);
+          result=parseNameValues(tmp,'<span class="str">\''</span>);
+          <span class="kwd">if</span>(result==null)
+          {
+              <span class="kwd">throw</span> <span class="kwd">new</span> Exception("<span class="str">unknown transformation"</span>);                 
+          }
+      }
+      <span class="kwd">return</span> result;
+   }
+    
+     <span class="com">/**
+     * Control if today is between two dates. 
+     * @param firstdate First legal day ,yyy:mm:dd
+     * @param lastdate Last legal day ,yyy:mm:dd
+     * @return true if today is within span
+     * @throws NumberFormatException when the dateformats is wrong. Should be:yyyy-mm-dd
+     */</span>
+    <span class="kwd">static</span> <span class="kwd">public</span> <span class="kwd">boolean</span> legalDating(String firstdate,String lastdate)
+    <span class="kwd">throws</span> Exception{
+        <span class="com">// REMEMBER that the month is 0-based</span>
+        Calendar toDay=<span class="kwd">new</span> GregorianCalendar();
+        <span class="com">// allow some different separators</span>
+        <span class="kwd">if</span>(firstdate!=null)
+        {
+            firstdate=firstdate.trim();
+            firstdate=firstdate.replace('<span class="str">-'</span>, '<span class="str">:'</span>);
+            firstdate=firstdate.replace('<span class="str">_'</span>, '<span class="str">:'</span>);
+            firstdate=firstdate.replace('<span class="str">/'</span>, '<span class="str">:'</span>);
+            String[] parts=firstdate.split("<span class="str">:"</span>);
+            <span class="kwd">if</span>(parts.length!=3)
+                <span class="kwd">return</span> false;
+            Calendar firstDATE=<span class="kwd">new</span> GregorianCalendar();
+            firstDATE.set(Integer.parseInt(parts[0]), Integer.parseInt(parts[1])-1, Integer.parseInt(parts[2]));
+            <span class="kwd">if</span>(firstDATE.after(toDay))
+                <span class="kwd">return</span> false;
+        }
+        <span class="kwd">if</span>(lastdate!=null)
+        {
+            lastdate=lastdate.trim();
+            lastdate=lastdate.replace('<span class="str">-'</span>, '<span class="str">:'</span>);
+            lastdate=lastdate.replace('<span class="str">_'</span>, '<span class="str">:'</span>);
+            lastdate=lastdate.replace('<span class="str">/'</span>, '<span class="str">:'</span>);
+            String[] parts=lastdate.split("<span class="str">:"</span>);
+            <span class="kwd">if</span>(parts.length!=3)
+                <span class="kwd">return</span> false;
+            Calendar lastDATE=<span class="kwd">new</span> GregorianCalendar();
+            lastDATE.set(Integer.parseInt(parts[0]), Integer.parseInt(parts[1])-1, Integer.parseInt(parts[2]));
+            <span class="kwd">if</span>(lastDATE.before(toDay))
+                <span class="kwd">return</span> false;
+        }
+        <span class="kwd">return</span> true;
+    }
+    
+     <span class="com">/**
+      * Read a String from an URI.
+      * 
+     * @param uri The URI to read from
+     * @return the string read
+     * @throws Exception when the text cannot be loaded or the URI is not wellformed
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> String getTextFile(URI uri,String encoding)
+    <span class="kwd">throws</span> Exception{
+        BufferedReader in=null;
+        <span class="kwd">try</span>{
+            URL url=uri.toURL();
+            <span class="kwd">if</span>(encoding == null)
+                encoding=default_encoding;
+            <span class="com">// while testing: System.out.println(url.toString());</span>
+            in = <span class="kwd">new</span> BufferedReader(<span class="kwd">new</span> InputStreamReader(url.openStream(),encoding));
+            StringBuffer result=<span class="kwd">new</span> StringBuffer();
+            String str;
+            <span class="com">//String eol=System.getProperty("line.separator");</span>
+            String eol="<span class="str">\n"</span>;
+            <span class="kwd">while</span> ((str = in.readLine()) != null) {
+                result=result.append(str+eol);
+            }
+            in.close();
+            <span class="kwd">return</span> result.toString();
+        }
+        <span class="kwd">catch</span>(Exception ex)
+        {
+            <span class="kwd">throw</span> <span class="kwd">new</span> Exception(ex.getMessage());
+        }
+        <span class="kwd">finally</span>{
+            <span class="kwd">if</span>(in!=null)
+                in.close();
+        }
+    }
+    
+    <span class="com">/**
+     * Reading a textfile. Identify and remove BOM-marks
+     * Convert encoding if necessary
+     * @param uri The URI we want to read
+     * @param encoding The encoding we want
+     * @return The found, encoded, string
+     * @throws java.lang.Exception
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> String getBOMSafeTextFile(URI uri,String encoding)
+    <span class="kwd">throws</span> Exception
+    {
+        <span class="com">// modified from:http://koti.mbnet.fi/akini/java/java_utf8_xml/</span>
+        <span class="com">// unicode reader from:http://koti.mbnet.fi/akini/java/unicodereader/UnicodeReader.java.txt</span>
+        <span class="com">// http://koti.mbnet.fi/akini/java/unicodereader/</span>
+        String s=System.getProperty("<span class="str">file.encoding"</span>);
+        <span class="com">//System.setProperty("file.encoding", "UTF8");</span>
+        BufferedReader reader=null;
+        CharArrayWriter writer=null;
+        URL url=uri.toURL();
+        UnicodeReader ur=<span class="kwd">new</span> UnicodeReader(url.openStream(),encoding );
+        <span class="kwd">char</span>[] buffer = <span class="kwd">new</span> <span class="kwd">char</span>[16 * 1024];   <span class="com">// 16k buffer</span>
+        <span class="kwd">int</span> read;
+        <span class="kwd">try</span> {
+             reader = <span class="kwd">new</span> BufferedReader(ur);
+             writer = <span class="kwd">new</span> CharArrayWriter();
+             <span class="kwd">while</span>( (read = reader.read(buffer)) != -1) {
+                writer.write(buffer, 0, read);
+             }
+             writer.flush();
+             <span class="com">// convert</span>
+             String foundEncoding=ur.getEncoding();
+             String defaultEncoding=ur.getDefaultEncoding();
+             <span class="kwd">if</span>(defaultEncoding!=null &amp;&amp; 
+                foundEncoding!=null &amp;&amp;                 
+                !encoderutils.sameEncoding(defaultEncoding, foundEncoding))
+             {
+                 String in=writer.toString();
+                 <span class="kwd">return</span> encoderutils.reEncode(in, foundEncoding, defaultEncoding, false);
+             }
+             <span class="kwd">else</span>
+             {
+                <span class="kwd">return</span> writer.toString();
+             }
+        } 
+        <span class="kwd">catch</span> (IOException ex) 
+        {
+         <span class="kwd">throw</span> ex;
+        } 
+        <span class="kwd">finally</span> 
+        {
+         <span class="kwd">try</span> {
+            writer.close(); reader.close(); 
+            ur.close();
+         } <span class="kwd">catch</span> (Exception ex) { }
+      }
+       
+    }
+    
+    
+    <span class="com">/**
+     * Produce a list of files with a certain suffix from within a catalog.
+     * 
+     * @param sourcecat The catalog we will investigate
+     * @param filesuf The suffix of the files we are interested in
+     * @return a list of filenames
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> Vector&lt;String&gt; getFileList(String sourcecat,String filesuf)
+    {
+        Vector&lt;String&gt; vs=<span class="kwd">new</span> Vector&lt;String&gt;();
+        <span class="kwd">try</span>{
+            File f=<span class="kwd">new</span> File(sourcecat);
+            String[] tmp=f.list();
+            <span class="kwd">for</span>(<span class="kwd">int</span> ix=0;ix&lt;tmp.length;ix++)
+                <span class="kwd">if</span>(tmp[ix].endsWith("<span class="str">."</span>+filesuf))
+                    vs.add(tmp[ix]);
+            <span class="kwd">return</span> vs;
+        }
+        <span class="kwd">catch</span>(Exception e)
+        {
+            <span class="kwd">return</span> vs;
+        }
+    }
+    <span class="com">/**
+     * Produce a list of sorted files with a certain suffix from within a catalog.
+     *
+     * @param sourcecat The catalog we will investigate
+     * @param filesuf The suffix of the files we are interested in
+     * @return a list of filenames
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> Vector&lt;String&gt; getSortedFileList(String sourcecat,String filesuf)
+    {
+        Vector&lt;String&gt;list=getFileList(sourcecat,filesuf);
+        <span class="kwd">if</span>(list.size()&gt;1)
+            Collections.sort(list);
+        <span class="kwd">return</span> list;
+    }
+    
+    <span class="com">/**
+     * Changing &amp; to entity &amp;amp&amp;; in string
+     * @param S The string we will work on
+     * @return The fixed string
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> String fixUriParameterEntities(String S)
+    {
+        <span class="kwd">int</span> pos=S.indexOf('<span class="str">&amp;'</span>);
+        <span class="kwd">while</span>(pos!=-1)
+        {
+            <span class="kwd">if</span>(!S.substring(pos+1).startsWith("<span class="str">amp;"</span>))
+                S=S.substring(0, pos+1)+"<span class="str">amp;"</span>+S.substring(pos+1);
+            pos=S.indexOf("<span class="str">&amp;"</span>, pos+1);
+        }
+        <span class="kwd">return</span> S;
+    }
+     
+   <span class="com">/**
+     * Changing &amp; to entity &amp;amp; in URI
+     * @param theUri The URI we will work on
+     * @return The fixed URI
+     */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> URI fixUriParameterEntities(URI theUri)
+     {
+         String theUriS=theUri.toString();
+         String fixed=fixUriParameterEntities(theUriS);
+         <span class="kwd">try</span>{
+             <span class="kwd">return</span> <span class="kwd">new</span> URI(fixed);
+         }
+         <span class="kwd">catch</span>(Exception ex)
+         {
+             <span class="kwd">return</span> theUri;
+         }
+     }
+     
+     <span class="com">/**
+      * Tidy a string 
+      * @param source The string to tidy
+      * @param encoding The encoding we use
+      * @param theReporter The reporter we will report to
+      * @return The cleaned (tidied) string
+      * @throws java.lang.Exception when cannot do it
+      */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> String tidyAndMakeXML(String source,String encoding,reporter theReporter)
+     <span class="kwd">throws</span> Exception
+     {
+         <span class="com">// http://jtidy.sourceforge.net/howto.html</span>
+         <span class="kwd">if</span>(encoding==null)
+             encoding=default_encoding;
+        source=source.trim();
+        <span class="kwd">while</span>( (!source.startsWith("<span class="str">&lt;"</span>)) &amp;&amp; (source.length()&gt;10) )
+              source=source.substring(1);           <span class="com">//StringBufferInputStream sbis=new StringBufferInputStream(source);</span>
+        ByteArrayInputStream bis=<span class="kwd">new</span> ByteArrayInputStream(source.getBytes());
+        ByteArrayOutputStream bos=<span class="kwd">new</span> ByteArrayOutputStream();
+        Tidy tidy=<span class="kwd">new</span> Tidy();
+        <span class="com">//tidy.setOnlyErrors(true);</span>
+        tidy.setShowWarnings(false);
+        tidy.setXmlOut(true);
+        tidy.setNumEntities(true);
+        <span class="com">//tidy.setInputEncoding(encoding);</span>
+        <span class="com">//tidy.setOutputEncoding(encoding);</span>
+        <span class="com">//tidy.setXHTML(true);</span>
+        <span class="com">//tidy.setCharEncoding(Configuration.DOCTYPE_STRICT);</span>
+        
+        <span class="com">//theReporter.pushSimpleMessage("\tWarning: --Tidy ");</span>
+        <span class="kwd">boolean</span> reportFromTidy=true;
+                
+        <span class="kwd">if</span>(reportFromTidy)
+        {
+            StringWriter sw=<span class="kwd">new</span> StringWriter();
+            PrintWriter pr=<span class="kwd">new</span> PrintWriter(sw);        
+            tidy.setErrout(pr);
+            tidy.setQuiet(true);
+            
+            tidy.parse(bis, bos);
+            
+            String report=sw.toString();
+            String[]lines=report.split("<span class="str">\n"</span>);
+            <span class="kwd">for</span>(<span class="kwd">int</span> ix=0;ix &lt; lines.length;ix++)
+            {
+                String line=lines[ix];
+                <span class="com">// replace to avoid message confusion for artificial &lt;root&gt; in</span>
+                <span class="com">// production of xml from fragemnt</span>
+                <span class="com">// see domer:produceDocFragmentFromString()</span>
+                line=line.replace("<span class="str">&lt;root&gt;"</span>, "<span class="str">rootnode"</span>);
+                <span class="kwd">if</span>(line.indexOf("<span class="str">Error"</span>)!=-1)
+                    theReporter.pushSimpleMessage("<span class="str">\tTidy:"</span>+line);
+                <span class="com">//if((line.indexOf("Warning")!=-1) ||(line.indexOf("Error")!=-1))</span>
+                <span class="com">//    theReporter.pushSimpleMessage(line);</span>
+            }
+        }
+        <span class="kwd">else</span>
+        {
+            tidy.parse(bis, bos); 
+        }
+        source=bos.toString();
+        
+        <span class="com">// add xml prolog if necessary</span>
+        <span class="kwd">if</span>(!source.startsWith("<span class="str">&lt;?xml"</span>))
+        {
+            String pro="<span class="str">&lt;?xml version=\"1.0\" encoding=\""</span>+encoding+"<span class="str">\"?&gt;\n"</span>;
+            source=pro+source;
+        }
+        <span class="kwd">return</span> source;
+     }
+     
+     
+     <span class="com">/**
+      * Tidy the string read from an url 
+      * @param theuri The uri to read from
+      * @param encoding The encoding we use
+      * @param theReporter The reporter we will report to
+      * @return The cleaned (tidied) string
+      * @throws java.lang.Exception when cannot do it
+      */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> String tidyAndMakeXML(URI theuri,String encoding,reporter theReporter)
+     <span class="kwd">throws</span> Exception{
+         <span class="kwd">try</span>{
+             <span class="com">//String source=getTextFile(theuri, encoding);</span>
+             String source=getBOMSafeTextFile(theuri, encoding);
+             theReporter.pushSimpleMessage("<span class="str">--Tidy :"</span>+theuri.toString());
+             <span class="kwd">return</span> tidyAndMakeXML(source,encoding,theReporter);
+         }
+         <span class="kwd">catch</span>(Exception ex)
+         {
+             <span class="kwd">throw</span> <span class="kwd">new</span> Exception(ex.getMessage());
+         }
+     }
+     
+     <span class="com">/**
+      * testing if the resource described by an URI exists
+      * @param absUri The address we will test
+      * @return true if we can open a steam, otherwise false
+      */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> resourceExists(URI absUri)
+     {
+        <span class="kwd">try</span>{
+            <span class="com">// stream or connection ?? see case in producer:makePI_ReferenceTest</span>
+            InputStream s=absUri.toURL().openStream();
+            s.close();
+            <span class="kwd">return</span> true;
+        }
+        <span class="kwd">catch</span>(Exception ex)
+        {
+            <span class="kwd">return</span> false;
+        }
+     }
+     
+     <span class="com">/**
+      * Make entities for all std entities
+      * @param S The string we will work on
+      * @return The result
+      */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> String setCommonEntities(String S)
+     {
+        <span class="kwd">int</span> p1=S.indexOf("<span class="str">&amp;"</span>);
+        <span class="kwd">while</span>(p1&gt;-1)
+        {
+            <span class="kwd">if</span>((!S.substring(p1).startsWith("<span class="str">&amp;amp;"</span>))&amp;&amp;
+               (!S.substring(p1).startsWith("<span class="str">&amp;lt;"</span>))&amp;&amp;
+               (!S.substring(p1).startsWith("<span class="str">&amp;gt;"</span>))&amp;&amp;
+               (!S.substring(p1).startsWith("<span class="str">&amp;apos;"</span>))&amp;&amp;
+               (!S.substring(p1).startsWith("<span class="str">&amp;quote;"</span>)))
+                    S=S.substring(0,p1)+"<span class="str">&amp;amp;"</span>+S.substring(p1+1);
+            p1=S.indexOf("<span class="str">&amp;"</span>,p1+1);
+        }
+        S=S.replaceAll("<span class="str">&lt;"</span>, "<span class="str">&amp;lt;"</span>);
+        S=S.replaceAll("<span class="str">&gt;"</span>, "<span class="str">&amp;gt;"</span>);
+        S=S.replaceAll("<span class="str">'"</span>, "<span class="str">&amp;apos;"</span>);
+        S=S.replaceAll("<span class="str">\""</span>, "<span class="str">&amp;quot;"</span>);  
+        <span class="kwd">return</span> S;
+     }
+     <span class="com">/**
+      * Recursively removing a directory
+      * @param dir The directory to remove
+      * @return true if we succed, otherwise false
+      */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> deleteDir(File dir)
+     {
+        <span class="kwd">if</span> (dir.isDirectory())
+        {
+            String[] children = dir.list();
+            <span class="kwd">for</span> (<span class="kwd">int</span> i=0; i&lt;children.length; i++)
+            {
+                File nF=<span class="kwd">new</span> File(dir, children[i]);
+                <span class="kwd">boolean</span> success = deleteDir(nF);
+                <span class="kwd">if</span> (!success)
+                {
+                    <span class="kwd">return</span> false;
+                }
+            }
+        }
+        <span class="com">// The directory is now empty so delete it</span>
+        <span class="kwd">return</span> dir.delete();
+     }
+     <span class="com">/**
+      * Cleans a string from everything but letters and digits.
+      * Others are replaced by _
+      * Removes Schema, in case it is an uri
+      * @param S The string to clean, may be a simple string or an URI
+      * @return The cleaned String
+      */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> String cleanStringForUseAsFilePath(String S)
+     {
+         S=S.replace("<span class="str">http://"</span>, "<span class="str">"</span>);
+         S=S.replace("<span class="str">file://"</span>, "<span class="str">"</span>);
+         StringBuffer result=<span class="kwd">new</span> StringBuffer(50);
+         <span class="kwd">for</span>(<span class="kwd">int</span> ix=0;ix&lt;S.length();ix++)
+         {
+             <span class="kwd">char</span> c=S.charAt(ix);
+             <span class="kwd">if</span>( (!Character.isDigit(c)) &amp;&amp; 
+                 (!Character.isLetter(c))&amp;&amp;
+                 (c!='<span class="str">.'</span>))
+                     result.append('<span class="str">_'</span>);
+             <span class="kwd">else</span>
+                 result.append(c);
+         }
+         String s=result.toString();
+         s=s.replace('<span class="str">.'</span>, '<span class="str">_'</span>);
+         <span class="kwd">return</span> s;
+     }
+     
+     <span class="com">/**
+      * Copy an image from an URI to a local file
+      * @param from The address to get the image
+      * @param to The address to store the image
+      * @return true if we succed, false otherwise
+      */</span>
+     <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> copyImageFromURI(String from,String to)
+     {
+        <span class="kwd">try</span>{
+            String formatname="<span class="str">*"</span>;
+            <span class="kwd">int</span> pos=from.lastIndexOf('<span class="str">.'</span>);
+            <span class="kwd">if</span>(pos!=-1)
+                formatname=from.substring(pos+1);
+            URL url = <span class="kwd">new</span> URL(from);
+            BufferedImage bi = ImageIO.read(url);
+            File f=<span class="kwd">new</span> File(to);
+            f.mkdirs();
+            ImageIO.write(bi,formatname,<span class="kwd">new</span> File(to));
+            <span class="kwd">return</span> true;
+        }
+        <span class="kwd">catch</span>(Exception ex)
+        {
+            <span class="kwd">return</span> false;
+        }
+     }
+     <span class="com">/**
+     * Unzips an OpenOffice document to a folder.
+     * @param sourceUri Address of the ODT-file
+     * @param outputDirectory Path to folder in witch to save the extracted files.
+     * @return The filecatalog where we put the unzipped material, null on failure
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> File UnzipODT(URI sourceUri, String outputDirectory)
+    {
+        ZipInputStream in;
+        OutputStream out = null;
+        File result=null;
+        <span class="kwd">try</span> {
+            <span class="com">//Creates the folder</span>
+            result=<span class="kwd">new</span> File(outputDirectory);
+            result.mkdirs();
+            <span class="kwd">if</span>(sourceUri.getScheme().startsWith("<span class="str">file"</span>))
+                in=<span class="kwd">new</span> ZipInputStream(<span class="kwd">new</span> FileInputStream(sourceUri.getPath()));
+            <span class="kwd">else</span>
+            {
+                <span class="com">// we have to deal with an absolute http source</span>
+                <span class="com">// download it</span>
+                URLConnection con = sourceUri.toURL().openConnection();
+                in=<span class="kwd">new</span> ZipInputStream(con.getInputStream());
+            }
+            ZipEntry entry = in.getNextEntry();
+            <span class="com">// Gets directories(subdirectories)/files</span>
+            <span class="kwd">while</span> (entry != null) {
+                String outFilename = outputDirectory + File.separatorChar + String.valueOf(entry.getName());
+                outFilename=outFilename.replace('<span class="str">\\'</span>, '<span class="str">/'</span>);
+                <span class="kwd">try</span> {
+                    File tempFile = <span class="kwd">new</span> File(outFilename);
+                    <span class="com">// can do delete on exit if we want to</span>
+                    <span class="com">//mark some files for delete on exit</span>
+                    <span class="com">//tempFile.deleteOnExit();</span>
+                    tempFile = tempFile.getParentFile();
+                    tempFile.mkdirs();
+                    <span class="com">//System.out.println(outFilename);</span>
+                    
+                    out = <span class="kwd">new</span> FileOutputStream(outFilename);
+                } <span class="kwd">catch</span> (FileNotFoundException fnfe) {
+                    System.err.println(fnfe.getLocalizedMessage());
+                }
+                <span class="kwd">new</span> File(outFilename).mkdirs();
+                <span class="kwd">byte</span>[] buf = <span class="kwd">new</span> <span class="kwd">byte</span>[1024];
+                <span class="kwd">int</span> len;
+                <span class="kwd">while</span> ((len = in.read(buf)) &gt; 0) {
+                    out.write(buf, 0, len);
+                }
+                entry = in.getNextEntry();
+            out.close();
+            }
+            in.close();
+            <span class="kwd">try</span>{
+                <span class="com">//URI tmpUri=new URI("file:///"+result.getPath().replace('\\', '/')+"/readme.txt");</span>
+                URI tmpUri=makeUri("<span class="str">file:///"</span>+result.getPath()+"<span class="str">/readme.txt"</span>);
+                String T="<span class="str">This directory is used (and reused) for storing unwrapped ODT-stuff. \n"</span>
+                         +"<span class="str">WXT will produce a catalog for each ODT-file that is used as acontentprovider\n"</span>
+                         +"<span class="str">The structure of the file is found in content.xml\n"</span>
+                         +"<span class="str">Pictures are referenced directly from the built Module and should not be removed"</span>;
+                accessutils.saveTFile(tmpUri, T, "<span class="str">utf-8"</span>);
+            }
+            <span class="kwd">catch</span>(Exception uex)
+            {
+                <span class="com">//should not happen</span>
+                System.out.println(uex.getMessage());
+            }
+            <span class="kwd">return</span> result;
+        }
+        <span class="kwd">catch</span> (IOException e)
+        {
+            System.out.print(e);
+            e.printStackTrace();
+            System.out.print("<span class="str">Could not unzip file."</span>);
+            <span class="kwd">return</span> null;
+        }
+    }
+    <span class="com">/**
+     * Pick one of two paths that seems to match the current op sys
+     * Using two clues :
+     * 1 : as second char to identfy windows abs path
+     * 2  \ or / existance
+     * @param val1 path1
+     * @param val2 path1
+     * @return The selected path, prepared for copy into an URI-string
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> String selectPathValue(String val1,String val2)
+    {
+        <span class="com">// get current os</span>
+        String os=System.getProperty("<span class="str">os.name"</span>).toUpperCase();
+        String selected=null;
+        <span class="kwd">if</span>((val1==null)&amp;&amp;(val2==null))
+            <span class="kwd">return</span> "<span class="str">"</span>;
+        <span class="kwd">if</span>(val2==null)
+            selected=val1;
+        <span class="kwd">else</span> <span class="kwd">if</span> (val1==null)
+            selected=val2;
+        <span class="kwd">else</span>
+        {
+            <span class="com">// neither is null</span>
+            <span class="com">// and we must find which of the two that match the op sys</span>
+            val1=val1.trim();
+            val2=val2.trim();
+            <span class="kwd">if</span>(os.indexOf("<span class="str">WINDOWS"</span>)!=-1)
+            {
+                <span class="com">// first we go for an absolute path</span>
+                <span class="kwd">if</span>(val1.indexOf('<span class="str">:'</span>)==1)
+                {
+                    <span class="com">// This is obviously a Windows abs path</span>
+                    selected=val1;
+                }
+                <span class="kwd">else</span> <span class="kwd">if</span>(val2.indexOf('<span class="str">:'</span>)==1)
+                {
+                   <span class="com">// This is obviously a Windows abs path</span>
+                   selected=val2;
+                }
+                <span class="kwd">else</span> <span class="kwd">if</span>(val1.indexOf('<span class="str">\\'</span>)!=-1)
+                    selected=val1;
+                <span class="kwd">else</span> <span class="kwd">if</span>(val2.indexOf('<span class="str">\\'</span>)!=-1)
+                    selected=val2;
+                <span class="kwd">else</span>
+                {
+                    <span class="com">// we have no clue, may be it is just a name</span>
+                    selected=val1;
+                }
+            }
+            <span class="kwd">else</span>
+            {
+                <span class="com">// any thing but windows needs a unix path</span>
+                <span class="kwd">if</span>(val1.startsWith("<span class="str">/"</span>))
+                    selected=val1;
+                <span class="kwd">else</span> <span class="kwd">if</span>(val2.startsWith("<span class="str">/"</span>))
+                    selected=val2;
+                <span class="kwd">else</span> <span class="kwd">if</span>(val1.indexOf('<span class="str">/'</span>)!=-1)
+                    selected=val1;
+                <span class="kwd">else</span> <span class="kwd">if</span>(val2.indexOf('<span class="str">/'</span>)!=-1)
+                    selected=val2;
+                <span class="kwd">else</span>
+                {
+                    <span class="com">// we dont have a clue</span>
+                    selected=val1;
+                }
+            }
+        }
+        <span class="kwd">return</span> selected;
+    }
+    <span class="com">/**
+     * Find out if one string in a csv is contained in another csv
+     * @param s1 One csv string
+     * @param s2 One csv string
+     * @return True only if a value in s1 is contained in s2, or vica versa
+     */</span>
+    <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">boolean</span> compareCSV(String s1, String s2)
+    {
+        <span class="kwd">if</span>((s1==null)||(s1.length()==0))
+            <span class="kwd">return</span> false;
+        <span class="kwd">if</span>((s2==null)||(s2.length()==0))
+            <span class="kwd">return</span> false;
+        s2="<span class="str">,"</span>+s2+"<span class="str">,"</span>;
+        String[] list1=s1.split("<span class="str">,"</span>);
+        <span class="kwd">for</span>( <span class="kwd">int</span> ix=0;ix&lt;list1.length;ix++)
+        {
+            String sx="<span class="str">,"</span>+list1[ix]+"<span class="str">,"</span>;
+            <span class="kwd">if</span>(s2.indexOf(sx)!=-1)
+                <span class="kwd">return</span> true;
+        }
+        <span class="kwd">return</span> false;
+    }    
+}
+</pre></body>
+</html>

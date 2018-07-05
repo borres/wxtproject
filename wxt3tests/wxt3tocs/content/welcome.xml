@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>welcome</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Welcome</h1>
+<div>
+    <?_wxt moduletoc tags="h2" cols="0"?>
+</div>
+
+<h2>Testing Table of contents</h2>
+<p>
+ This site demonstrates some of the features for generating sitemaps, 
+ module maps and in-module table of content. The site as such is
+ rather messy, the idea is to deonstrate possibilities.
+</p>
+
+<h2>Script</h2>
+<div>
+<?_wxt popup sourcelocation="../script.xml" 
+       location="script_xml.html" lang="lang-xml" text="script"?>
+</div>
+<h2>Templates</h2>
+<div>
+<?_wxt popup sourcelocation="../../templates/auto_template.xml" 
+       location="auto_template_xml.html"  lang="lang-xml" text="auto-template"?>
+<?_wxt popup sourcelocation="../../templates/collect_template.xml" 
+       location="collect_template_xml.html"  lang="lang-xml" text="colelct-template"?>
+</div>
+
+</div> <!-- mainblock -->
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>velkommen</title>
+</head>
+<body>
+        
+<div class="mainblock">
+<h1>Testing PI:importtxt</h1>
+ <p>
+   Testing importtxt for "pretty" code. 
+</p>
+<p>
+Depending on  
+   <a href="http://code.google.com/p/prettyprint/" class="external">Googles prettyprint</a>.
+   See <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html" class="external">
+   Googles Readme</a>. 
+</p>
+<p>
+The necessary javascript is imported to this page, see source.
+</p>
+
+<h2>Java</h2>
+
+<p>short and simple</p>
+<div>
+<?_wxt importtxt location="java/simple1.java" lang="lang-j"?>
+</div>
+
+<p>short and simple with syntax error</p>
+<div>
+<?_wxt importtxt location="java/bad1.java" lang="lang-j"?>
+</div>
+
+
+<p>extract from longer file expanded</p>
+<div>
+<?_wxt importtxt location="java/accessutils.java" expanded="yes"
+       leftpar="// appendtotextfile" rightpar="// eofappendtotextfile"
+       lang="lang-j"?>
+</div>
+
+<h2>Python</h2>
+<p>simple and pages template</p>
+<div>
+<?_wxt importtxt location="python/domore.py" lang="lang-py"?>
+</div>
+
+<h2>SQL</h2>
+<p>simple and expanded</p>
+<div>
+<?_wxt importtxt location="sql/do.txt" 
+       text="some expressions" lang="lang-sql"?>
+</div>
+
+
+
+
+
+<hr/>
+<h2>Content file for this page</h2>
+<div>
+<?_wxt importtxt location="code.xml" 
+       lang="lang-xml"?>
+</div>
+</div> <!-- mainblock -->
+
+</body>
+</html>

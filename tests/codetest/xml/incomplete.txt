@@ -1,0 +1,13 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;<span class="tagname">alpin</span>&gt;
+   &lt;<span class="tagname">skirenn</span> <span class="attname">type</span>="<span class="attvalue">WC</span>" <span class="attname">tid</span>="<span class="attvalue">2001</span>" <span class="attname">sted</span>="<span class="attvalue">Wengen</span>" <span class="attname">kjønn</span>="<span class="attvalue">menn</span>" <span class="attname">gren</span>="<span class="attvalue">utfor</span>"&gt;
+   &lt;<span class="tagname">deltager</span>&gt;
+      &lt;<span class="tagname">navn</span>&gt;Kjuus&lt;/<span class="tagname">navn</span>&gt;
+      &lt;<span class="tagname">Nasjon</span>&gt;Norge&lt;/<span class="tagname">Nasjon</span>&gt;
+      &lt;<span class="tagname">tid1</span>&gt;130.012&lt;/<span class="tagname">tid1</span>&gt;
+      &lt;<span class="tagname">td2</span>&gt;na&lt;/<span class="tagname">td2</span>&gt;
+   &lt;/<span class="tagname">deltager</span>&gt;
+   ...
+   &lt;/<span class="tagname">skirenn</span>&gt;
+   ...
+&lt;/<span class="tagname">alpin</span>&gt;</pre>

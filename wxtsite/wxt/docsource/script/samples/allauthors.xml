@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fragments>
+<fragment id="ob" short="Ole Brum">
+	<![CDATA[
+	<?_wxt image id="bs-2"?>
+	<hr/>
+	]]>
+</fragment>
+
+<fragment id="hb" short="Ibsen">
+	<![CDATA[
+	<div style="margin-left:20px; margin-top:20px">
+	Henrik Ibsen
+	</div>
+	]]>
+</fragment>
+
+</fragments>

@@ -1,0 +1,125 @@
+<!--?xml version="1.0" encoding="utf-8"?--><!DOCTYPE html>
+<html>
+    <head>
+        <title>jada</title>
+        <meta charset="UTF-8" />
+        <script type="text/javascript">alert("hallo")</script>
+        <script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+        <script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tiger","wgTitle":"Tiger","wgCurRevisionId":525650130,"wgArticleId":30075,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with Latin language external links","Articles with German language external links","Wikipedia indefinitely semi-protected pages","Wikipedia indefinitely move-protected pages","IUCN Red List endangered species","Articles with \'species\' microformats","Articles needing more detailed references","All articles with unsourced statements","Articles with unsourced statements from December 2011","Articles with unsourced statements from August 2011","Articles with peacock terms from August 2012","All articles with peacock terms","Articles with unsourced statements from August 2012","All pages needing factual verification","Wikipedia articles needing factual verification from June 2011","Articles containing Chinese language text","Tigers","Animals described in 1758","Big cats of India","Carnivora of Malaysia","Conservation reliant species","EDGE species","Mammals of Asia","Megafauna of Eurasia","Fauna of East Asia","Fauna of South Asia","Fauna of Southeast Asia","National symbols of India","National symbols of Malaysia","National symbols of Singapore"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tiger","wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"],"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"editwarning":true,"expandablesearch":false,"footercleanup":true,"sectioneditlinks":false,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgTrackingToken":"be23f6845c49ebf7ce203e078be44bdf","wgArticleFeedbackv5Permissions":{"aft-reader":true,"aft-member":false,"aft-editor":false,"aft-monitor":false,"aft-administrator":false,"aft-oversighter":false},"wgVisualEditor":{"isPageWatched":false},"wikilove-recipient":"","wikilove-anon":0,"mbEmailEnabled":true,"mbUserEmail":false,"mbIsEmailConfirmationPending":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","Geo":{"city":"","country":""},"wgNoticeProject":"wikipedia","aftv5Article":{"id":30075,"title":"Tiger","namespace":0,"categories":["All articles with peacock terms","All articles with unsourced statements","All pages needing factual verification","Animals described in 1758","Articles containing Chinese language text","Articles needing more detailed references","Articles with \'species\' microformats","Articles with German language external links","Articles with Latin language external links","Articles with peacock terms from August 2012","Articles with unsourced statements from August 2011","Articles with unsourced statements from August 2012","Articles with unsourced statements from December 2011","Big cats of India","Carnivora of Malaysia","Conservation reliant species","EDGE species","Fauna of East Asia","Fauna of South Asia","Fauna of Southeast Asia","IUCN Red List endangered species","Mammals of Asia","Megafauna of Eurasia","National symbols of India","National symbols of Malaysia","National symbols of Singapore","Tigers","Wikipedia articles needing factual verification from June 2011","Wikipedia indefinitely move-protected pages","Wikipedia indefinitely semi-protected pages"],"permissionLevel":"aft-reader"}});
+}</script>
+        <script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3
+,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikilove-enabled":1,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"gadget-teahouse":1,
+"gadget-ReferenceTooltips":1,"gadget-HotCat":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-mySandbox":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:013a65dbaca8076556d129e802aa8c3c */
+}</script>
+        <script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.vector.footerCleanup","ext.wikimediaShopLink.core","ext.centralNotice.bannerController"]);
+}</script>
+        <script src="//bits.wikimedia.org/geoiplookup"></script>
+    </head>
+    <body>
+        <table class="infobox biota" style="text-align: left; width: 200px; font-size: 100%"> 
+            <tbody> 
+                <tr> 
+                    <th colspan="2" style="text-align: center; background-color: rgb(211,211,164)">Tiger<br /> <small>Temporal range: Early <a href="/wiki/Pleistocene" title="Pleistocene">Pleistocene</a> – Recent</small></th> 
+                </tr> 
+                <tr> 
+                    <td colspan="2" style="text-align: center"><a href="/wiki/File:Tiger_in_Ranthambhore.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tiger_in_Ranthambhore.jpg/220px-Tiger_in_Ranthambhore.jpg" width="220" height="148" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tiger_in_Ranthambhore.jpg/330px-Tiger_in_Ranthambhore.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tiger_in_Ranthambhore.jpg/440px-Tiger_in_Ranthambhore.jpg 2x" /></a></td> 
+                </tr> 
+                <tr> 
+                    <td colspan="2" style="text-align: center; font-size: 88%">A <a href="/wiki/Bengal_tiger" title="Bengal tiger">Bengal tiger</a> (<i>P. tigris tigris</i>) in India&apos;s <a href="/wiki/Ranthambhore_National_Park" title="Ranthambhore National Park" class="mw-redirect">Ranthambhore National Park</a>.</td> 
+                </tr> 
+                <tr style="text-align: center; background-color: rgb(211,211,164)"> 
+                    <th colspan="2"><a href="/wiki/Conservation_status" title="Conservation status">Conservation status</a></th> 
+                </tr> 
+                <tr> 
+                    <td colspan="2"> 
+                        <div style="text-align: center"> 
+                            <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/70/Status_iucn3.1_EN.svg/220px-Status_iucn3.1_EN.svg.png" width="220" height="59" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/70/Status_iucn3.1_EN.svg/330px-Status_iucn3.1_EN.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/70/Status_iucn3.1_EN.svg/440px-Status_iucn3.1_EN.svg.png 2x" /> 
+                            <br /> 
+                            <a href="/wiki/Endangered_species" title="Endangered species">Endangered</a> 
+                            <small> (<a href="/wiki/IUCN_Red_List" title="IUCN Red List">IUCN 3.1</a>)<sup id="cite_ref-IUCN_1-0" class="reference"><a href="#cite_note-IUCN-1"><span>[</span>1<span>]</span></a></sup></small> 
+                        </div> </td> 
+                </tr> 
+                <tr> 
+                    <th colspan="2" style="text-align: center; background-color: rgb(211,211,164)"><a href="/wiki/Biological_classification" title="Biological classification">Scientific classification</a></th> 
+                </tr> 
+                <tr> 
+                    <td>Kingdom:</td> 
+                    <td><span class="kingdom" style="white-space:nowrap;"><a href="/wiki/Animal" title="Animal">Animalia</a></span></td> 
+                </tr> 
+                <tr> 
+                    <td>Phylum:</td> 
+                    <td><span class="phylum" style="white-space:nowrap;"><a href="/wiki/Chordate" title="Chordate">Chordata</a></span></td> 
+                </tr> 
+                <tr> 
+                    <td>Class:</td> 
+                    <td><span class="class" style="white-space:nowrap;"><a href="/wiki/Mammal" title="Mammal">Mammalia</a></span></td> 
+                </tr> 
+                <tr> 
+                    <td>Order:</td> 
+                    <td><span class="order" style="white-space:nowrap;"><a href="/wiki/Carnivora" title="Carnivora">Carnivora</a></span></td> 
+                </tr> 
+                <tr> 
+                    <td>Family:</td> 
+                    <td><span class="family" style="white-space:nowrap;"><a href="/wiki/Felidae" title="Felidae">Felidae</a></span></td> 
+                </tr> 
+                <tr> 
+                    <td>Genus:</td> 
+                    <td><span class="genus" style="white-space:nowrap;"><i><a href="/wiki/Panthera" title="Panthera">Panthera</a></i></span></td> 
+                </tr> 
+                <tr> 
+                    <td>Species:</td> 
+                    <td><span class="species" style="white-space:nowrap;"><i><b>P. tigris</b></i></span></td> 
+                </tr> 
+                <tr> 
+                    <th colspan="2" style="text-align: center; background-color: rgb(211,211,164)"><a href="/wiki/Binomial_nomenclature" title="Binomial nomenclature">Binomial name</a></th> 
+                </tr> 
+                <tr> 
+                    <td colspan="2" style="text-align: center"><b><span class="binomial"><i>Panthera tigris</i></span></b><br /> <small>(<a href="/wiki/Carl_Linnaeus" title="Carl Linnaeus">Linnaeus</a>, 1758)</small></td> 
+                </tr> 
+                <tr> 
+                    <th colspan="2" style="text-align: center; background-color: rgb(211,211,164)"><a href="/wiki/Subspecies" title="Subspecies">Subspecies</a></th> 
+                </tr> 
+                <tr> 
+                    <td colspan="2" style="text-align: left"> <p><i><a href="/wiki/Bengal_tiger" title="Bengal tiger">P. t. tigris</a></i><br /> <i><a href="/wiki/Indochinese_tiger" title="Indochinese tiger">P. t. corbetti</a></i><br /> <i><a href="/wiki/Malayan_tiger" title="Malayan tiger">P. t. jacksoni</a></i><br /> <i><a href="/wiki/Sumatran_tiger" title="Sumatran tiger">P. t. sumatrae</a></i><br /> <i><a href="/wiki/Siberian_tiger" title="Siberian tiger">P. t. altaica</a></i><br /> <i><a href="/wiki/South_China_tiger" title="South China tiger">P. t. amoyensis</a></i><br /> †<i><a href="/wiki/Caspian_tiger" title="Caspian tiger">P. t. virgata</a></i><br /> †<i><a href="/wiki/Bali_tiger" title="Bali tiger">P. t. balica</a></i><br /> †<i><a href="/wiki/Javan_tiger" title="Javan tiger">P. t. sondaica</a></i></p> </td> 
+                </tr> 
+                <tr> 
+                    <td colspan="2" style="text-align: center"><a href="/wiki/File:Tiger_map.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Tiger_map.jpg/220px-Tiger_map.jpg" width="220" height="168" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Tiger_map.jpg/330px-Tiger_map.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Tiger_map.jpg/440px-Tiger_map.jpg 2x" /></a></td> 
+                </tr> 
+                <tr> 
+                    <td colspan="2" style="text-align: center; font-size: 88%">Tiger&apos;s historic range in ca. 1850 (pale yellow) and range in 2006 (in green).<sup id="cite_ref-dinerstein07_2-0" class="reference"><a href="#cite_note-dinerstein07-2"><span>[</span>2<span>]</span></a></sup></td> 
+                </tr> 
+                <tr> 
+                    <th colspan="2" style="text-align: center; background-color: rgb(211,211,164)"><a href="/wiki/Synonym_(taxonomy)" title="Synonym (taxonomy)">Synonyms</a></th> 
+                </tr> 
+                <tr> 
+                    <td colspan="2" style="text-align: left"> 
+                        <center> 
+                            <i><b>Felis tigris</b></i> 
+                            <small><a href="/wiki/Carl_Linnaeus" title="Carl Linnaeus">Linnaeus</a>, 1758</small> 
+                            <sup id="cite_ref-Linn1758_3-0" class="reference"><a href="#cite_note-Linn1758-3"><span>[</span>3<span>]</span></a></sup> 
+                            <br /> 
+                            <p><i><b>Tigris striatus</b></i> <small><a href="/wiki/Nikolai_Severtzov" title="Nikolai Severtzov">Severtzov</a>, 1858</small><br /></p> 
+                            <i><b>Tigris regalis</b></i> 
+                            <small><a href="/wiki/John_Edward_Gray" title="John Edward Gray">Gray</a>, 1867</small> 
+                        </center> </td> 
+                </tr> 
+            </tbody> 
+        </table>
+        <script>
+	mw.loader.using( 'ext.centralNotice.bannerController', function() { mw.centralNotice.initialize(); } );
+</script>
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+        <script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*"></script>
+        <script>if(window.mw){
+mw.loader.load(["mw.PopUpMediaTransform","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","mobile.desktop","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.vector.collapsibleNav","ext.vector.collapsibleTabs","ext.vector.editWarning","ext.UserBuckets","ext.articleFeedback.startup","ext.articleFeedbackv5.startup","ext.markAsHelpful","ext.Experiments.lib","ext.Experiments.experiments"], null, true);
+}</script>
+        <script src="/w/index.php?title=MediaWiki:Gadget-ReferenceTooltips.js&amp;action=raw&amp;ctype=text/javascript&amp;508635914"></script>
+        <script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+    </body>
+</html>

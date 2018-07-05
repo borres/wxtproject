@@ -1,0 +1,55 @@
+<pre class="xmlcode">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;<span class="tagname">data</span>&gt;
+    &lt;<span class="tagname">div</span> <span class="attname">class</span>="<span class="attvalue">content</span>"&gt;    
+    &lt;<span class="tagname">h1</span>&gt;Import XML&lt;/<span class="tagname">h1</span>&gt;
+
+&lt;<span class="tagname">hr</span>/&gt;
+&lt;<span class="tagname">div</span>&gt;Source:&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">div</span>&gt;<span class="process">&lt;?_wxt expand location="exp_importxml.xml" 
+             sourcelocation="importxml.xml" code="xmlcode"?&gt;</span>
+&lt;/<span class="tagname">div</span>&gt;
+&lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">div</span>&gt;
+        From iso-8859-1: 
+        <span class="process">&lt;?_wxt importxml location="someiso.html" xpath="//div[@id='myname']/child::text()"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+        From utf-8: 
+        <span class="process">&lt;?_wxt importxml location="someutf.html" xpath="//div[@id='myname']/child::text()"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">div</span>&gt;
+        From iso-8859-1: 
+        <span class="process">&lt;?_wxt importxml location="isoxml.xml" xpath="//div[@id='getit']"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">div</span>&gt;
+        <span class="process">&lt;?_wxt importxml location="someutf.html" xpath="//div[@class='ingress']/child::*"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">div</span>&gt;
+        <span class="process">&lt;?_wxt importxml location="someutf.html" xpath="//p[@class='strait']"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;    
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">ul</span>&gt;
+        <span class="process">&lt;?_wxt importxml location="http://www.ia.hiof.no/~borres/ml/index.shtml" xpath="//li"?&gt;</span>
+    &lt;/<span class="tagname">ul</span>&gt;  
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">h2</span>&gt;Transformed&lt;/<span class="tagname">h2</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;Parameters&lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+        <span class="process">&lt;?_wxt importxml 
+                 location="http://www.ia.hiof.no/~borres/commondata/vin/viner.xml"
+                 transformation="vin1(type='white',country='Chile',dice='3')"
+                 xpath="div[@id='root']"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+    &lt;<span class="tagname">hr</span>/&gt;
+    &lt;<span class="tagname">h2</span>&gt;Tidied&lt;/<span class="tagname">h2</span>&gt;
+    &lt;<span class="tagname">div</span>&gt;
+        <span class="process">&lt;?_wxt importxml location="copyofhelpfile.html" tidy="yes" xpath="//table"?&gt;</span>
+    &lt;/<span class="tagname">div</span>&gt;
+     
+    
+    
+    &lt;/<span class="tagname">div</span>&gt;
+&lt;/<span class="tagname">data</span>&gt;</pre>

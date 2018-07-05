@@ -1,0 +1,394 @@
+
+<h1>Vinliste</h1>
+<p>white wines from Frankrike</p>
+<hr size="1"/>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Cuvée Christer Berens  Alsace 2001</div>
+<div>
+<span>
+     kr 114.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Lite tiltalende duft som gir assosiasjoner til våt papp blir mindre påtrengende etter at vinen har fått lufte seg en  stund. Smaken er bedre, med stilren syre, men fruktigheten mangler  karakter.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Chablis Premier Cru Vau de Vey 2001</div>
+<div>
+<span>
+     kr 207.00 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Test. Frisk duft av sitrus og mineraler. Enkel fruktighet i den ganske tørre smaken, syrlig ettersmak.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Mégalithe Sancerre 2000</div>
+<div>
+<span>
+     kr 241.40 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Test. Et dempet preg av sitrus, toast og litt mineraler i duft og smak. Elegant og velbalansert smak, men prisen er 70-80 kroner for høy.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Perle du Sud Marsanne 2002</div>
+<div>
+<span>
+     kr 82.20 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Duften har streif av fersken og aprikos. Bløt og litt slapp smak med middels fylde og ganske kort ettersmak.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Domaine du Tariquet 2002</div>
+<div>
+<span>
+     kr 85.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Blomstersødme og sitrus i duften. Bløt fruktighet uten syrespenst, enkel vin med veldig kort ettersmak. To flasker prøvet, skuffende utgave av Tariquet.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Ch. Grinou 2002</div>
+<div>
+<span>
+     kr 99.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Duft av nøtter, mineraler og urter. Ikke så frisk fruktighet i smaken som sist sommer, ettersmaken virker litt vandig og kort.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Sélection Dammen Sauvignon 2003</div>
+<div>
+<span>
+     kr 89.50 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Svakt søtlig duft uten karakteristiske trekk. Bløt og enkel smak som burde hatt litt større syrefriskhet. Vi forventer mer smak og større spenst i en vin laget av sauvignon blanc-druer.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Domaine des Ardailloux Cuvée Tradition 2001</div>
+<div>
+<span>
+     kr 89.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Duften minner om sitronmelisse og grønne epler. Smaken er enkel, anonym og syrlig, med et vegetalt preg av umodne druer i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Collection Frithjof Nicolaysen Viognier</div>
+<div>
+<span>
+     kr 297.00 / 300cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Søtlig duft med nyanser av melon, fersken og aprikos. Utviklet, marmeladeaktig fruktighet i smaken og utpreget bitterhet i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Xl Les Grès Chardonnay Viognier 2003</div>
+<div>
+<span>
+     kr 319.00 / 300cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Søtlig krydret og litt emmen duft. Bløt smak med litt tropisk fruktsødme, men vinen mangler syrefriskhet og slutter ganske bittert.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Bourgogne Chardonnay</div>
+<div>
+<span>
+     kr 399.90 / 300cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Preg av våt ull, anis og toast i duften. Vinen taper seg i glasset og det oksyderte preget blir tydeligere. Stilkbitter ettersmak. La Chablisienne Bourgogne Chardonnay 2001 på flaske til kr 119,90 er fyldigere og friskere.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Brocard Petit Chablis 2002</div>
+<div>
+<span>
+     kr 446.00 / 300cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Svakt søtlig fruktkarakter i duften med litt toast og mineralpreg. Lett vandig smak, og mineralsk tørrhet i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Domaine du Tariquet 2003</div>
+<div>
+<span>
+     kr 85.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Syrlig duft av sitrus og grønne epler. Sødme og syre i smaken spriker, syrligheten blir for dominerende og gnager i magen på dem som er ømfintlige for syre.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Ch. Bonnet 2002</div>
+<div>
+<span>
+     kr 59.90 / 37.5cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Søtlig duft med hint av stikkelsbær, melon og urter. Vegetal og litt vandig smak, Lurton Sauvignon 2003 på kartong har mye større smaksrikdom. Kort ettersmak med en liten bitterhet.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Domaine du Tariquet  2003</div>
+<div>
+<span>
+     kr 89.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Syrlig duft av sitrus og grønne epler. Syrligere og fastere smak enn Tariquet på kartong. Sødme og syre i smaken spriker syrligheten blir for dominerende og gnager i magen på dem som er ømfintlige for syre.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Bourgogne Côtes dAuxerre Chardonnay</div>
+<div>
+<span>
+     kr 398.80 / 300cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Duften virker lett oksydert med en mineralsk undertone. Vandig frukt med lite sødme i den ganske tamme smaken, mineralsk tørrhet i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Tariquet 2003</div>
+<div>
+<span>
+     kr 299.90 / 300cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Sursøt duft som virker ufrisk og har duftnyanser som minner om sukat og smørmalt. Flat og slapp smak med kort ettersmak.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>St. Armand Mâcon Blanc-Villages 2003</div>
+<div>
+<span>
+     kr 99.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Billig til å være hvit burgunder, med tropisk fruktsødme og et svakt mineralpreg i duften. Smaken blir litt konturløs på grunn av for lite syre, og av samme grunn er ettersmaken svært kort. Årgang 2002 var bedre, synd at den ble så fort utsolgt.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Ch. des Armuseries Vouvray 1998</div>
+<div>
+<span>
+     kr 149.40 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Test. Duften minner om hermetiske clementiner. Søtlig, slapp smak med overmoden fruktsødme og lav syre. Litt grape-bitterhet i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Millet Sancerre Cuvée Arcande 2003</div>
+<div>
+<span>
+     kr 154.50 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Test. Duft av stikkelsbærsødme med mindre friskhet enn vi forventer av en vin fra Sancerre. Fyldig smak med en mineralsk undertone, men syrefriskheten mangler og ettersmaken blir kort.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Collection Frithjof Nicolaysen Viognier</div>
+<div>
+<span>
+     kr 315.00 / 300cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Blomsteraktig duft med sødme av melon, fersken og aprikos. Smaken har innslag av lime og noe søtlig parfymert over seg som ikke harmonerer med bitterheten i ettersmaken. Og prisen er økt med 18 kroner på ett år...</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Réserve du Domaine Nigri 2003</div>
+<div>
+<span>
+     kr 250.40 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Partikjøp</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Les Jamelles Sauvignon Blanc 2004</div>
+<div>
+<span>
+     kr 96.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Enkel vin i en tung og rustikk stil med svak aroma av sauvignon blanc-druer. Grov og litt uren smak med for mye bitterhet i ettersmaken.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Domaine Montrose Chardonnay 2004</div>
+<div>
+<span>
+     kr 93.00 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Test.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Josmeyer Pinot Auxerrois 2004</div>
+<div>
+<span>
+     kr 135.30 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Test.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Les Valery Chablis 2004</div>
+<div>
+<span>
+     kr 142.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Testsalg.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Laroche Chardonnay Terret 2004</div>
+<div>
+<span>
+     kr 92.90 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Sødme som minner om pærer med et hint av honning i duften. Smaken er pregløs og for bitter, totalinntrykket blir uharmonisk.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Fleur de Pranzac 2004</div>
+<div>
+<span>
+     kr 85.60 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Basis.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Chassagne-Montrachet 1er Cru La Maltroie 2004</div>
+<div>
+<span>
+     kr 370.10 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Partikjøp 480 flasker. Mest fatpreg (nøtter og toast) og litt sitrus i duft og smak. Fyldig vin med lang ettersmak, men forventer mer eleganse i en vin til denne prisen.</div>
+</div>
+<div style="margin-top:20px">
+<div style="float:left">
+<img style="margin:10px" src="http://www.ia.hiof.no/~borres/commondata/vin/white3.gif" alt="dice"/>
+</div>
+<div>Ch. Coutet 1996</div>
+<div>
+<span>
+     kr 395.60 / 75cl
+   </span>
+</div>
+<div style="clear:left"/>
+<div>Partikjøp 240 flasker. Litt gasbindaktig tørrhet og honningsødme i duften. Søtlig krydret smak med litt bitter tretørrhet i ettersmaken.</div>
+</div>
